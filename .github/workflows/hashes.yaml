@@ -80,7 +80,7 @@ jobs:
           mkdir validate_sources
           cd validate_sources
           # Download / verify git-archive-all.sh
-          curl -O https://raw.githubusercontent.com/fabacab/git-archive-all.sh/master/git-archive-all.sh
+          curl -O https://raw.githubusercontent.com/fabacab/git-archive-all.sh/fc86194f00b678438f9210859597f6eead28e765/git-archive-all.sh
           echo "db62e9a824866989c9d080f008ec06d81421cf94bed3762acba3b9148607af2d git-archive-all.sh" | sha256sum -c
           chmod +x git-archive-all.sh
           echo -e "--> Generating tarballs..."
