@@ -123,6 +123,12 @@ This list has been updated on a frozen code on 2018-09-14 after merged commit bb
 * [sign_multisig](#sign_multisig)
 * [submit_multisig](#submit_multisig)
 * [get_version](#get_version)
+* [freeze](#freeze)
+* [frozen](#frozen)
+* [thaw](#thaw)
+* [exchange_multisig_keys](#exchange_multisig_keys)
+* [estimate_tx_size_and_weight](#estimate_tx_size_and_weight)
+* [scan_tx](#scan_tx)
 
 ---
 
@@ -131,6 +137,8 @@ This list has been updated on a frozen code on 2018-09-14 after merged commit bb
 ### **set_daemon**
 
 Connect the RPC server to a Monero daemon.
+
+Alias: *None*.
 
 Inputs:
 
@@ -142,8 +150,11 @@ Inputs:
 * *ssl_ca_file* - string; (Optional) The file path location of the certificate authority file.
 * *ssl_allowed_fingerprints* - array of string; (Optional) The SHA1 fingerprints accepted by the SSL certificate.
 * *ssl_allow_any_cert* - boolean; (Optional; Default: false) If false, the certificate must be signed by a trusted certificate authority.
+* *username* - string; (Optional) 
+* *password* - string; (Optional)
 
 Outputs:
+
 * *None*
 
 Example:
@@ -169,19 +180,26 @@ Inputs:
 
 * *account_index* - unsigned int; Return balance for this account.
 * *address_indices* - array of unsigned int; (Optional) Return balance detail for those subaddresses.
+* *all_accounts* - boolean; (Defaults to false)
+* *strict* - boolean; (Defaults to false) all changes go to 0-th subaddress (in the current subaddress account)
 
 Outputs:
 
 * *balance* - unsigned int; The total balance of the current monero-wallet-rpc in session.
 * *unlocked_balance* - unsigned int; Unlocked funds are those funds that are sufficiently deep enough in the Monero blockchain to be considered safe to spend.
 * *multisig_import_needed* - boolean; True if importing multisig data is needed for returning a correct balance.
+* *time_to_unlock* - unsigned int; Time (in seconds) before balance is safe to spend.
+* *blocks_to_unlock* - unsigned int; Number of blocks before balance is safe to spend.
 * *per_subaddress* - array of subaddress information; Balance information for each subaddress in an account.
+  * *account_index* - unsigned int;
   * *address_index* - unsigned int; Index of the subaddress in the account.
   * *address* - string; Address at this index. Base58 representation of the public keys.
   * *balance* - unsigned int; Balance for the subaddress (locked or unlocked).
   * *unlocked_balance* - unsigned int; Unlocked balance for the subaddress.
   * *label* - string; Label for the subaddress.
   * *num_unspent_outputs* - unsigned int; Number of unspent outputs available for the subaddress.
+  * *time_to_unlock* - unsigned int;
+  * *blocks_to_unlock* - unsigned int;
 
 Example:
 
@@ -192,22 +210,30 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
   "jsonrpc": "2.0",
   "result": {
     "balance": 157443303037455077,
+    "blocks_to_unlock": 0,
     "multisig_import_needed": false,
     "per_subaddress": [{
+      "account_index": 0,
       "address": "55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt",
       "address_index": 0,
       "balance": 157360317826255077,
+      "blocks_to_unlock": 0,
       "label": "Primary account",
       "num_unspent_outputs": 5281,
+      "time_to_unlock": 0,
       "unlocked_balance": 157360317826255077
     },{
+      "account_index": 0,
       "address": "7BnERTpvL5MbCLtj5n9No7J5oE5hHiB3tVCK5cjSvCsYWD2WRJLFuWeKTLiXo5QJqt2ZwUaLy2Vh1Ad51K7FNgqcHgjW85o",
       "address_index": 1,
       "balance": 59985211200000,
+      "blocks_to_unlock": 0,
       "label": "",
       "num_unspent_outputs": 1,
+      "time_to_unlock": 0,
       "unlocked_balance": 59985211200000
     }],
+    "time_to_unlock": 0,
     "unlocked_balance": 157443303037455077
   }
 }
@@ -3113,4 +3139,180 @@ $ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
     "version": 65539
   }
 }
+```
+
+
+### **freeze**
+
+Freeze a single output by key image so it will not be used
+
+Alias: *None*.
+
+Inputs:
+
+* *key_image* - string;
+
+Outputs:
+
+* *None*
+
+Example:
+
+```
+$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"freeze","params":{"key_image":"d0071ab34ab7f567f9b54303ed684de6cd5ed969a6b6c4bf352d25242f0b3da9"}}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
+
+### **frozen**
+
+Checks whether a given output is currently frozen by key image
+
+Alias: *None*.
+
+Inputs:
+
+* *key_image* - string;
+
+Outputs:
+
+* *frozen* - bool;
+
+Example:
+
+```
+$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"frozen","params":{"key_image":"d0071ab34ab7f567f9b54303ed684de6cd5ed969a6b6c4bf352d25242f0b3da9"}}' -H 'Contentt-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "frozen": true
+  }
+}
+```
+
+
+### **thaw**
+
+Thaw a single output by key image so it may be used again
+
+Alias: *None*.
+
+Inputs:
+
+* *key_image* - string;
+
+Outputs:
+
+* *None*
+
+Example:
+
+```
+$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"thaw","params":{"key_image":"d0071ab34ab7f567f9b54303ed684de6cd5ed969a6b6c4bf352d25242f0b3da9"}}' -H 'Contentt-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
+
+### **exchange_multisig_keys**
+
+Performs extra multisig keys exchange rounds. Needed for arbitrary M/N multisig wallets
+
+Alias: *None*.
+
+Inputs:
+
+* *password* - string;
+* *multisig_info* - string;
+* *force_update_use_with_caution* - bool; (Optional; Default false) only require the minimum number of signers to complete this round (including local signer) ( minimum = num_signers - (round num - 1).
+
+Outputs:
+
+* *address* - string;
+* *multisig_info* - string;
+
+Example:
+
+```
+$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"exchange_multisig_keys","params":{"password":"","multisig_info":"MultisigxV2R1hSyd7Zdx5A92zWF7E9487XQg8zZRDYM6c9aNfEShmCKoUx9ftccXZvH9cRcadd5veh6mwk9sXuGzWZRo57MdvSkJi3ABLt8wZPv8FTkBqVDVcgUdXm4tS81HdJ5WQXboQJJQQd5JKoySKJ4S9xHGojL2i3VUvbWAyduaWGjMK4hrLQA1"}}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "address": "55TZyExQSnbiTrJCrgZZucFAmvfyaKK9vMca7tNmzP3NLdykxBrYvdsWPQbM7aw52HQ4VsvBxJDKuKGuuaTZw8DqFdhsJrL",
+    "multisig_info": "MultisigxV2Rn1LVZfU8ySEo1APrEQz2G5jYLLyEabZ8a2KK7C4uak9KT7wCdTjztLy8A9XUiregzXU5STWvNJwuDURA7zuw7wLQxcYaJctpXt1pCUmPQnciHoNd8NcxvYKUCbeAnER2UGcrQFYwrX9ftXLb5mSrfRQ6ieL1PUSfvcw5kV8LCTQvpc5FqMaX5LHU196NDTwEmD9UkYnjgsmgFpGR5ZPpMUr6ky56vHyH"
+  }
+}
+```
+
+
+### **estimate_tx_size_and_weight**
+
+Alias: *None*.
+
+Inputs:
+
+* *n_inputs* - unsigned int;
+* *n_outputs* - unsigned int;
+* *ring_size* - unsigned int;
+* *rct* - bool; Is this a Ring Confidential Transaction (post blockheight 1220516)
+
+Outputs:
+
+* *size* - int;
+* *weight* - int;
+
+Example:
+
+```
+$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"estimate_tx_size_and_weight","params":{"n_inputs":1,"n_outputs":2,"ring_size":16,"rct":true}}' -H 'Contentt-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "size": 1630,
+    "weight": 1630
+  }
+}
+```
+
+
+### **scan_tx**
+
+Given list of txids, scan each for outputs belonging to your wallet. Note that the node will see these specific requests and may be a privacy concern.
+
+Alias: *None*.
+
+Inputs:
+
+* *txids* - string list;
+
+Outputs: *None*.
+
+Example:
+
+```
+$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"scan_tx","params":{"txids":["7313fb7f9d26454866abacc98d17662bea468421178ec577661610003bf0193e"]}}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
+Logfile output:
+
+```
+2022-10-13 15:23:24.065 W Received money: 4.900000000000, with tx: <7313fb7f9d26454866abacc98d17662bea468421178ec577661610003bf0193e>
 ```
