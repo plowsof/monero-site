@@ -2246,6 +2246,7 @@ Inputs:
 
 Outputs:
 
+* *offset* - unsigned int
 * *signed_key_images* - array of signed key images:
   * *key_image* - string;
   * *signature* - string;
@@ -2278,6 +2279,7 @@ Alias: *None*.
 
 Inputs:
 
+* *offset* - unsigned int (optional)
 * *signed_key_images* - array of signed key images:
   * *key_image* - string;
   * *signature* - string;
