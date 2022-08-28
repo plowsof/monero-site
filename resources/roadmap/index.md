@@ -211,14 +211,14 @@ permalink: /resources/roadmap/index.html
                                     <li class="completed"><a href="{{ site.baseurl }}/2022/04/29/monero-0.17.3.2-released.html">{% t roadmap.released-0-17-3-2-cli %}</a></li>
                                     <li class="completed"><a href="{{ site.baseurl }}/2022/04/29/monero-GUI-0.17.3.2-released.html">{% t roadmap.released-0-17-3-2-gui %}</a></li>
                                 <h3 class="months">{% t roadmap.jul %}</h3>
-                                    <li class="completed">{% t roadmap.released-0-18 %}</li>
+                                    <li class="completed"><a href="{{ site.baseurl_root }}/2022/07/19/monero-0.18.0.0-released.html" target="_blank" rel="noreferrer noopener">{% t roadmap.released-0-18 %}</a></li>
                                 <h3 class="months">{% t roadmap.aug %}</h3>
                                     <li class="completed"><a href="{{ site.baseurl }}/2022/04/20/network-upgrade-july-2022.html">{% t roadmap.hardfork-v15 %}</a></li>
                                     <li class="completed">{% t roadmap.ringsize-11-16 %}</li>
                                     <li class="completed">{% t roadmap.bplus %}</li>
                                     <li class="completed">{% t roadmap.viewtags %}</li>
                                     <li class="completed">{% t roadmap.feechanges %}</li>
-                                    <li class="completed">{% t roadmap.released-0-18-1 %}</li>
+                                    <li class="completed"><a href="{{ site.baseurl_root }}/2022/08/11/monero-0.18.1.0-released.html" target="_blank" rel="noreferrer noopener">{% t roadmap.released-0-18-1 %}</a></li>
                             </ul>
                     </div>
                     <label for="tab-7" tabindex="0"></label>
