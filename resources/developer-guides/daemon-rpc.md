@@ -42,6 +42,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [get_txpool_backlog](#get_txpool_backlog)
 * [get_output_distribution](#get_output_distribution)
 * [get_miner_data](#get_miner_data)
+* [prune_blockchain](#prune_blockchain)
 
 ### [Other RPC Methods](#other-daemon-rpc-calls):
 
@@ -1509,6 +1510,37 @@ $ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
       "id": "b6000b02bbec71e18ad704bcae09fb6e5ae86d897ced14a718753e76e86c0a0a",
       "weight": 2214
     }],
+    "untrusted": false
+}
+```
+
+
+### **prune_blockchain** 
+
+Alias: *None*.
+
+Inputs:
+
+* *check* - boolean; Optional (`false` by default) - If set to `true` then pruning status is checked instead of initiating pruning.
+
+Outputs:
+
+* *pruned* - boolean;
+* *pruning_seed* - unsigned int; Blockheight at which pruning began.
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"prune_blockchain","params":{"check":true}}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "pruned": true,
+    "pruning_seed": 387,
+    "status": "OK",
     "untrusted": false
 }
 ```
