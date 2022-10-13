@@ -128,6 +128,7 @@ This list has been updated on a frozen code on 2018-09-14 after merged commit bb
 * [thaw](#thaw)
 * [exchange_multisig_keys](#exchange_multisig_keys)
 * [estimate_tx_size_and_weight](#estimate_tx_size_and_weight)
+* [scan_tx](#scan_tx)
 
 ---
 
@@ -3282,4 +3283,35 @@ $ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"e
     "weight": 1630
   }
 }
+```
+
+
+### **scan_tx**
+
+Given list of txids, scan each for outputs belonging to your wallet. Note that the node will see these specific requests and may be a privacy concern.
+
+Alias: *None*.
+
+Inputs:
+
+* *txids* - string list;
+
+Outputs: *None*.
+
+Example:
+
+```
+$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"scan_tx","params":{"txids":["7313fb7f9d26454866abacc98d17662bea468421178ec577661610003bf0193e"]}}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
+Logfile output:
+
+```
+2022-10-13 15:23:24.065 W Received money: 4.900000000000, with tx: <7313fb7f9d26454866abacc98d17662bea468421178ec577661610003bf0193e>
 ```
