@@ -33,6 +33,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [set_bans](#set_bans)
 * [get_bans](#get_bans)
 * [banned](#banned)
+* [flush_txpool](#flush_txpool)
 * [get_output_histogram](#get_output_histogram)
 * [get_version](#get_version)
 * [get_coinbase_tx_sum](#get_coinbase_tx_sum)
@@ -45,6 +46,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [get_miner_data](#get_miner_data)
 * [prune_blockchain](#prune_blockchain)
 * [calc_pow](#calc_pow)
+* [flush_cache](#flush_cache)
 
 ### [Other RPC Methods](#other-daemon-rpc-calls):
 
@@ -1611,6 +1613,37 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"c
   "id": "0",
   "jsonrpc": "2.0",
   "result": "d0402d6834e26fb94a9ce38c6424d27d2069896a9b8b1ce685d79936bca6e0a8"
+}
+```
+
+
+### **flush_cache**
+
+Flush bad transactions / blocks from the cache.
+
+Alias: *None*.
+
+Inputs:
+
+* *bad_txs* - boolean; Optional (`false` by default).
+* *bad_blocks* - boolean; Optional (`false` by default).
+
+Outputs:
+
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"flush_cache","params":{"bad_txs":true,"bad_blocks":true}}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "status": "OK",
+    "untrusted": false
+  }
 }
 ```
 
