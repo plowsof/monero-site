@@ -933,29 +933,29 @@ Alias: *None*.
 Inputs:
 
 * *address* - string; Destination public address.
-* *account_index* - unsigned int; Sweep transactions from this account.
-* *subaddr_indices* - array of unsigned int; (Optional) Sweep from this set of subaddresses in the account.
 * *priority* - unsigned int; (Optional) Priority for sending the sweep transfer, partially determines fee.
-* *mixin* - unsigned int; Number of outputs from the blockchain to mix with (0 means no mixing).
 * *ring_size* - unsigned int; Sets ringsize to n (mixin + 1).
+* *outputs* - unsigned int; specify the number of separate outputs of smaller denomination that will be created by sweep operation.
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
-* *get_tx_keys* - boolean; (Optional) Return the transaction keys after sending.
+* *payment_id* - string; (Optional) 64 or 256-bit long number that carries additional information between parties.
+* *get_tx_key* - boolean; (Optional) Return the transaction keys after sending.
 * *key_image* - string; Key image of specific output to sweep.
-* *below_amount* - unsigned int; (Optional) Include outputs below this amount.
 * *do_not_relay* - boolean; (Optional) If true, do not relay this sweep transfer. (Defaults to false)
 * *get_tx_hex* - boolean; (Optional) return the transactions as hex encoded string. (Defaults to false)
 * *get_tx_metadata* - boolean; (Optional) return the transaction metadata as a string. (Defaults to false)
 
 Outputs:
 
-* *tx_hash_list* - array of: string. The tx hashes of every transaction.
-* *tx_key_list* - array of: string. The transaction keys for every transaction.
-* *amount_list* - array of: integer. The amount transferred for every transaction.
-* *fee_list* - array of: integer. The amount of fees paid for every transaction.
-* *tx_blob_list* - array of: string. The tx as hex string for every transaction.
-* *tx_metadata_list* - array of: string. List of transaction metadata needed to relay the transactions later.
+* *tx_hash* - array of: string. The tx hashes of every transaction.
+* *tx_key* - array of: string. The transaction keys for every transaction.
+* *amount* - array of: integer. The amount transferred for every transaction.
+* *fee* - array of: integer. The amount of fees paid for every transaction.
+* *weight* - 
+* *tx_blob* - array of: string. The tx as hex string for every transaction.
+* *tx_metadata* - array of: string. List of transaction metadata needed to relay the transactions later.
 * *multisig_txset* - string. The set of signing keys used in a multisig transaction (empty for non-multisig).
 * *unsigned_txset* - string. Set of unsigned tx for cold-signing purposes.
+* *spent_key_images* - array of: string. Key images of spent outputs.
 
 Example:
 
