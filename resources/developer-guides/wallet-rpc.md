@@ -1049,6 +1049,7 @@ Outputs:
   * *amount* - unsigned int; Amount for this payment.
   * *block_height* - unsigned int; Height of the block that first confirmed this payment.
   * *unlock_time* - unsigned int; Time (in block height) until this payment is safe to spend.
+  * *locked* - boolean; Is the output spendable.
   * *subaddr_index* - subaddress index:
     * *major* - unsigned int; Account index for the subaddress.
     * *minor* - unsigned int; Index of the subaddress in the account.
@@ -1072,7 +1073,8 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
         "minor": 0
       },
       "tx_hash": "3292e83ad28fc1cc7bc26dbd38862308f4588680fbf93eae3e803cddd1bd614f",
-      "unlock_time": 0
+      "unlock_time": 0,
+      "locked": false
     }]
   }
 }
