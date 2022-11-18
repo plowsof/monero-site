@@ -950,7 +950,7 @@ Outputs:
 * *tx_key* - array of: string. The transaction keys for every transaction.
 * *amount* - array of: integer. The amount transferred for every transaction.
 * *fee* - array of: integer. The amount of fees paid for every transaction.
-* *weight* - 
+* *weight* - unsigned int; Metric used for adjusting fee.
 * *tx_blob* - array of: string. The tx as hex string for every transaction.
 * *tx_metadata* - array of: string. List of transaction metadata needed to relay the transactions later.
 * *multisig_txset* - string. The set of signing keys used in a multisig transaction (empty for non-multisig).
