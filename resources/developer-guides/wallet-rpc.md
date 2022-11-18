@@ -952,7 +952,7 @@ Outputs:
 * *fee* - array of: integer. The amount of fees paid for every transaction.
 * *weight* - unsigned int; Metric used for adjusting fee.
 * *tx_blob* - array of: string. The tx as hex string for every transaction.
-* *tx_metadata* - array of: string. List of transaction metadata needed to relay the transactions later.
+* *tx_metadata* - string. Transaction metadata needed to relay the transactions later.
 * *multisig_txset* - string. The set of signing keys used in a multisig transaction (empty for non-multisig).
 * *unsigned_txset* - string. Set of unsigned tx for cold-signing purposes.
 * *spent_key_images* - array of: string. Key images of spent outputs.
@@ -960,23 +960,24 @@ Outputs:
 Example:
 
 ```
-$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sweep_single","params":{"address":"74Jsocx8xbpTBEjm3ncKE5LBQbiJouyCDaGhgSiebpvNDXZnTAbW2CmUR5SsBeae2pNk9WMVuz6jegkC4krUyqRjA6VjoLD","ring_size":7,"unlock_time":0,"key_image":"a7834459ef795d2efb6f665d2fd758c8d9288989d8d4c712a68f8023f7804a5e","get_tx_keys":true}}' -H 'Content-Type: application/json'
+$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sweep_single","params":{"address":"74Jsocx8xbpTBEjm3ncKE5LBQbiJouyCDaGhgSiebpvNDXZnTAbW2CmUR5SsBeae2pNk9WMVuz6jegkC4krUyqRjA6VjoLD","key_image":"a7834459ef795d2efb6f665d2fd758c8d9288989d8d4c712a68f8023f7804a5e","get_tx_keys":true}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
     "amount": 27126892247503,
+    "spent_key_images": {"key_images": ["a7834459ef795d2efb6f665d2fd758c8d9288989d8d4c712a68f8023f7804a5e"]},
     "fee": 14111630000,
     "multisig_txset": "",
     "tx_blob": "",
     "tx_hash": "106d4391a031e5b735ded555862fec63233e34e5fa4fc7edcfdbe461c275ae5b",
-    "tx_key": "",
+    "tx_key": "222e62ffd46a15c92184d6d9cccec5eafbddd19884c0f4f8f10e068015947e05",
     "tx_metadata": "",
-    "unsigned_txset": ""
+    "unsigned_txset": "",
+    "weight": 1528
   }
 }
 ```
-
 
 ### **relay_tx**
 
