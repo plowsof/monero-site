@@ -401,6 +401,8 @@ Alias: *None*.
 Inputs:
 
 * *tag* - string; (Optional) Tag for filtering accounts.
+* *regex* - boolean; (Optional) allow regular expression filters if set to true (Defaults to false).
+* *strict_balances* - boolean; (Optional) when `true`, balance only considers the blockchain, when `false` it considers both the blockchain and some recent actions, such as a recently created transaction which spent some outputs, which isn't yet mined.
 
 Outputs:
 
