@@ -1137,9 +1137,14 @@ Outputs:
   * *global_index* - unsigned int; Mostly internal use, can be ignored by most users.
   * *key_image* - string; Key image for the incoming transfer's unspent output.
   * *spent* - boolean; Indicates if this transfer has been spent.
-  * *subaddr_index* - unsigned int; Subaddress index for incoming transfer.
+  * *subaddr_index* - JSON object containing the major & minor subaddress index:
+    * *major* - unsigned int; Account index for the subaddress.
+    * *minor* - unsigned int; Index of the subaddress under the account.
   * *tx_hash* - string; Several incoming transfers may share the same hash if they were in the same transaction.
-  * *tx_size* - unsigned int; Size of transaction in bytes.
+  * *frozen* - boolean; has the output been frozen by `freeze`.
+  * *unlocked* - boolean; is the output spendable.
+  * *block_height* - unsigned int;
+  * *pubkey* - string; public key of our owned output.
 
 Example, get all transfers:
 
@@ -1151,28 +1156,37 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"i
   "result": {
     "transfers": [{
       "amount": 60000000000000,
+      "block_height": 2758159,
       "global_index": 122405,
       "key_image": "768f5144777eb23477ab7acf83562581d690abaf98ca897c03a9d2b900eb479b",
       "spent": true,
-      "subaddr_index": 3,
+      "subaddr_index": {"major": 0, "minor": 3},
       "tx_hash": "f53401f21c6a43e44d5dd7a90eba5cf580012ad0e15d050059136f8a0da34f6b",
-      "tx_size": 159
+      "pubkey": "253c35abc9e88268df40e622376572adedd391f667ef8db9f3d20789f733b35a",
+      "frozen": false,
+      "unlocked": talse
     },{
       "amount": 27126892247503,
+      "block_height": 2758161,
       "global_index": 594994,
       "key_image": "7e561394806afd1be61980cc3431f6ef3569fa9151cd8d234f8ec13aa145695e",
       "spent": false,
-      "subaddr_index": 3,
+      "subaddr_index": {"major": 0, "minor": 3},
       "tx_hash": "106d4391a031e5b735ded555862fec63233e34e5fa4fc7edcfdbe461c275ae5b",
-      "tx_size": 157
+      "pubkey": "c1544f7fe535a643bb2c4bebdcbcfd2b7c16681de298c2f4712d4f67273e9472",
+      "frozen": false,
+      "unlocked": true
     },{
       "amount": 27169374733655,
+      "block_height": 2758670,
       "global_index": 594997,
       "key_image": "e76c0a3bfeaae35e4173712f782eb34011198e26b990225b71aa787c8ba8a157",
       "spent": false,
-      "subaddr_index": 3,
+      "subaddr_index": {"major": 0, "minor": 3},
       "tx_hash": "0bd959b59117ee1254bd8e5aa8e77ec04ef744144a1ffb2d5c1eb9380a719621",
-      "tx_size": 158
+      "pubkey": "99cb6ec639ee514c00758934aab69c965c4ff0dbc136d9199011a683be1e6df1",
+      "frozen": false,
+      "unlocked": true
     }]
   }
 }
