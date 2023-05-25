@@ -45,10 +45,16 @@ permalink: /library/index.html
         <div class="info-block text-adapt">
             <h2>{% t library.newsletters %}</h2>
             <div>
-                <h3><a href="https://localmonero.co/the-monero-standard">The Monero Standard</a></h3>
-                  <p>{% t library.themonerostandard %}</p>
-                <h3><a href="https://monero.observer/tag/blitz/">Monero Observer Blitz</a></h3>
-                  <p>{% t library.moneroobserverblitz %}</p>
+                {% for newsletter_key in site.translations[site.lang].library.newsletterslist %}
+                    {% for newsletters_data in site.data.library.newsletters %}
+                        {% for newsletter_data in newsletters_data %}
+                            {% if newsletter_data[0] == newsletter_key[0] %}
+                                <h3><a href="{{ newsletters_data.link }}">{{ newsletters_data.name }}</a></h3>
+                                <p>{% t library.newsletterslist.{{ newsletter_data[0] }} %}</p>
+                           {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                {% endfor %}
             </div>
         </div>
     </section>
