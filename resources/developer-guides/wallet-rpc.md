@@ -2239,6 +2239,9 @@ Alias: *None*.
 Inputs:
 
 * *data* - string; Anything you need to sign.
+* *account_index* - unsigned int; (defaults to 0)
+* *address_index* - unsigned int; (defaults to 0)
+* *signature_type* - string; Sign data with the `spend` or `view` key.
 
 Outputs:
 
@@ -2247,7 +2250,7 @@ Outputs:
 Example:
 
 ```
-$ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sign","params":{"data":"This is sample data to be signed"}}' -H 'Content-Type: application/json'
+$ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sign","params":{"data":"This is sample data to be signed", "signature_type": "spend"}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -2273,6 +2276,9 @@ Inputs:
 Outputs:
 
 * *good* - boolean;
+* *old* - boolean; Using old signature algorithm.
+* *signature_type* - string; Key the message was signed with (spend/view).
+* *version* - unsigned int;
 
 Example:
 
@@ -2282,11 +2288,13 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"v
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
-    "good": true
+    "good": true,
+    "old": true,
+    "signature_type": "spend",
+    "version": 1
   }
 }
 ```
-
 
 ### **export_outputs**
 
