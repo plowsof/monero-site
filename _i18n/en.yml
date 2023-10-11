@@ -45,6 +45,21 @@ titles:
   blogbytag: Blog
   library: Library
 
+meta_descr:
+  whatismonero: A thorough explanation of what is Monero and how to get started
+  accepting: A guide on how to accept a payment in Monero using the GUI wallet
+  contributing: There are many ways to contribute to Monero and for every skillset
+  mining: Information, software and resources about mining Monero
+  blog: News, release notices and communications from the Monero Project and its community
+  workgroups: Find out where the hundreds of volunteers working on Monero meet and coordinate
+  sponsorships: The current and past sponsors of the Monero project.
+  about: History, values and basic structure of the Monero project and technology
+  roadmap: A browsable overview of what Monero achieved since its creation, what is currently being developed and plans for the future
+  mrl: Monero's research corner, with research papers, whitepaper and other research-related information
+  userguides: A collection of guides and manuals to guide you through using Monero and fixing common issues
+  tools: Links to third-party tools, like block explorers, payment gateways and generators to interact with the Monero ecosystem
+  presskit: Logos, marketing material, contacts and press documentation about Monero
+
 navigation:
   getstarted: Get Started
   whatis: What is Monero?
@@ -80,7 +95,7 @@ home:
   getcoins: Get Some Coins
   getcoins_para: After you install a wallet, you need to get some Monero. There are multiple ways to acquire some coins to spend, like mining or working in exchange for Monero, but the easiest way is to use an exchange and convert your fiat money into XMR. Many exchanges, centralized and decentralized, list Monero (XMR).
   exchanges: Exchanges
-  useit: "It's a Currency: Use It!"
+  useit: "It's a Currency; Use It!"
   useit_para: Monero is a currency and can be exchanged for goods, services and other currencies, privately and with very low fees. Many entities will gladly accept XMR for payments; take a look at our 'Merchants' page.
   merchants: Merchants
   answers: Find Answers to Your Questions
@@ -138,6 +153,7 @@ merchants:
   cardkyc: "<b>No KYC</b> (Know Your Customer):"
   cardbtcfiat: (BTC &#8596; fiat possible)
   cardonion: "Onion address:"
+  cardi2p: "I2P address:"
   noncustodial: "Non-custodial:"
   hodlhodldescr: P2P trading platform with non-custodial escrow.
   locmondescr: Online P2P exchange offering person-to-person trades.
@@ -190,8 +206,6 @@ team:
   localization_descr: One of the oldest Monero Workgroups, it's formed by contributors working on translating Monero-related software and documentation. It's strongly suggested to contact the workgroup before working on translations.
   localization_start: Contact the workgroup on the chatroom or open an issue on the GitHub repository. You can also start translating immediately using the Weblate platform. Just make sure to read the guide for translators first.
   locplatform: "Localization platform:"
-  outreach_descr: This workgroup is focused on getting Monero out there, gathering artists, writers, and anyone who wishes to make Monero known to the world.
-  outreach_start: The members of the Outreach Workgroup heavily use Telegram for coordination and matrix/freenode in minor part. If you want to help, you can contact the workgroup on one of these channels. It is quite structured, so you'll probably be directed to a coordinator.
   telegram: "Telegram chat:"
   mrl_descr: As the name suggests, the Monero Research Lab is the workgroup focused on Monero-related research. It's formed by scientists finding ways to improve Monero's protocol and features. Most of the protocol improvements that make Monero amazing, like CLSAG and @Bulletproofs, are the result of the efforts of this workgroup.
   mrl_start: Join the chatroom below and state your interests and your skills. Research is always ongoing, and somebody will point you in the right direction.
@@ -204,6 +218,8 @@ team:
   mpwg: Monero Policy Working Group
   mpwg_descr: Monero Policy Working Group is a loosely formed quorum of individuals with an interest in interacting with regulators, policy makers, and the wider financial services sector to ensure broad understanding of Monero’s component technologies, especially with regards to its compatibility with evolving regulatory and compliance requirements.
   mpwg_start: If you would like to take part or follow policy discussions, join Matrix/Libera chatroom.
+  nwlb_descr: The Seraphis wallet workgroup is a group of developers working on implementing Seraphis and Jamtis in Monero, through developing a completely new type of wallet that will improve drastically Monero's privacy capabilities and usability.
+  nwlb_start: The workgroup meets frequently and coordinates in the Matrix room (relayed to IRC). They are always looking for contributors willing to help.
 
 downloads:
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
@@ -428,11 +444,14 @@ contributing:
   altqrbitcoin: Bitcoin QR code
 
 faq:
+  basics: Basics
+  privacy: Privacy
+  security: Security
+  economics: Economics
+  wallets: Wallets
+  node: Node
   intro: Find answers to recurring questions and concerns about Monero.
   toc: Table Of Contents
-  general: General
-  advanced: Advanced
-  nodeandwallet: Node and Wallet
   additional: "More Info:"
   resandhelp: Resources & Help
   stackexchange: One of the most complete resources about Monero. If you have a question which is not in this FAQ, you will likely find the answer on the Monero StackExchange.
@@ -558,7 +577,7 @@ mining:
   conpolcent: Too many people mining on a single pool might lead on the pool having >50% of the total hashrate, which is dangerous
   choosepol: "If you need help choosing a pool or you just want more information about them, use:"
   hardware: Hardware
-  hardwarep: Monero can be mined on both CPUs and GPUs, but the latter is much less efficient than the former. You can get an idea of how your hardware performs compared to others, using <a href="https://monerobenchmarks.info/">monerobanchmarks</a> (some results might be out of date).
+  hardwarep: Monero can be mined on both CPUs and GPUs, but the latter is much less efficient than the former. You can get an idea of how your hardware performs compared to others, using <a href="https://xmrig.com/benchmark">xmrig benchmarks page</a> (some results might be out of date).
   software: Software
   softwarep: >
     There are several options when it comes to mining software. As already said, to solo mine, the CLI or GUI wallets can be used (CPU only). If you want to mine to a pool or mine with a GPU, you'll need dedicated software. Miners supporting Monero:
@@ -584,7 +603,7 @@ what-is-monero:
   need-to-know: What you need to know
   leading: Monero is the leading cryptocurrency focused on private and censorship-resistant transactions.
   leading_para1: The majority of existing @cryptocurrencies, including Bitcoin and Ethereum, have transparent @blockchains. Transactions can be verified and/or traced by anyone in the world. This means that the sending and receiving @addresses of these @transactions could potentially be linked to real-world identities.
-  leading_para2: Monero, on the other hand, uses various privacy-enhancing technologies to ensure the anonymity of its users. 
+  leading_para2: Monero, on the other hand, uses various technologies to ensure the privacy of its users. 
   confidential: Monero transactions are confidential and untraceable.
   confidential_para1: "Unlike selectively transparent alternatives (e.g. Zcash), Monero is the only major cryptocurrency where every user is anonymous by default. The sender, receiver, and amount of every single transaction are hidden through the use of three important technologies: @Stealth-Addresses, @Ring-Signatures, and @RingCT."
   confidential_para2: Because every transaction is private, Monero cannot be traced. This makes it a true, @fungible currency. Merchants and individuals accepting Monero do not need to worry about blacklisted or tainted coins.
@@ -686,6 +705,7 @@ user-guides:
   make-payment: How to make a payment
   change-restore-height: How to change the wallet restore height
   back: Back to the list
+  scan-txid: How to scan for a missing transaction CLI/GUI
 
 roadmap:
   completed: Completed task
@@ -888,12 +908,13 @@ library:
   books: Books
   zerotomonerov2: "Zero to Monero: Second Edition"
   zerotomonerov2p: >
-    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a><br>
+    Published: 4 April 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a><br>
     A comprehensive conceptual (and technical) explanation of Monero.<br>
     We endeavor to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
+  zerotomonerov2langs: Available in <a href="Zero-to-Monero-2-0-0-ru.pdf">Russian</a> and <a href="Zero-to-Monero-2-0-0-pt.pdf">Portuguese</a>.
   zerotomonerov1: "Zero to Monero: First Edition"
   zerotomonerov1p: >
-    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a>
+    Published: 26 June 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a>
   masteringmonerop: >
     A guide through the seemingly complex world of Monero.<br>
     It includes:
@@ -919,17 +940,16 @@ library:
   zkbasicscheatsheet20220621: "ZK Basics Cheatsheet"
   zkbasicscheatsheet20220621p: >
     A lightly theoretical interlude (hopefully still gentle, trying to stress concepts more than formalism and selecting the approached topics) to lay the foundations for Bulletproof and other future Zero-Knowledge-related features, if any.
-  magazines: Magazines
-  revuoq4p: >
-    Quarterly Monero magazine, Q4 2017 edition.<br>
-    In this issue, updates about: development, Monero Research Lab, Kovri, and community.
-  revuoq3p: >
-    Quarterly Monero magazine, Q3 2017 edition.<br>
-    In this issue, updates about: development, Monero Research Lab, Kovri, community, Hardware, and Monerujo.
-
+  newsletters: Newsletters
+  themonerostandard: >
+    Monero Standard is a weekly publication by recanman, providing up-to-date news and information on the Monero protocol.
+    In addition to covering the latest developments in the Monero community, The Monero Standard also includes a weekly price chart, mining pool chart, blockchain statistics, and even a Meme of the Week.
+  moneroobserverblitz: >
+    Monero Observer Blitz provides monthly updates on the latest developments in the Monero community and protocol.
+    Written by escapethe3RA, this publication covers news related to Monero's ongoing development, community events, and notable achievements within the space.
 moneropedia:
   description: >
-    The terminology around Monero can be very complex and technical. The Moneropedia is a tool created by the Monero community to provide an explanation of these terms in a simple way. Listed below you'll find all the Moneropedia entries in alphabetic order. If you wish to edit an existing voice or to add a new one, click the button at the bottom of the page.
+    The terminology around Monero can be very complex and technical. The Moneropedia is a tool created by the Monero community to provide an explanation of these terms in a simple way. Listed below you'll find all the Moneropedia entries in alphabetic order.
   instructions: Instructions for adding a Moneropedia entry are in the
   add_new_text1: If there is an entry you'd like to modify or be added, please
   add_new_link: open an issue on this website's GitHub repository

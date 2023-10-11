@@ -2,6 +2,7 @@
 layout: custom
 title: titles.merchants
 permalink: /community/merchants/index.html
+meta_descr: merchants.descr
 ---
 {% t global.lang_tag %}
 <section class="container">
@@ -16,7 +17,6 @@ permalink: /community/merchants/index.html
         <p>{% t merchants.dirdescr %}</p>
         <ul class="logo">
           <li><a href="https://cryptwerk.com/pay-with/xmr/">cryptwerk.com</a></li>
-          <li><a href="https://www.acceptedhere.io/catalog/currency/xmr/">acceptedhere.io</a></li>
         </ul>
       </div>
     </div>
@@ -40,6 +40,7 @@ permalink: /community/merchants/index.html
             <p>{% t merchants.cardkyc %} <span class="check"></span></p>
             <p><b>XMR &#8596; fiat:</b> <span class="cross"></span> {% t merchants.cardbtcfiat %}</p>
             <p><b>{% t merchants.cardonion %}</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
           </div>
           <div class="center-xs">
           <p><a href="https://bisq.network/" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitbisq %}</a></p>
@@ -58,6 +59,7 @@ permalink: /community/merchants/index.html
             <p>{% t merchants.cardkyc %} {% t merchants.depsell %}</p>
             <p><b>XMR &#8596; fiat:</b> <span class="check"></span></p>
             <p><b>{% t merchants.cardonion %}</b> <span class="check"></span></p>
+            <p><b>{% t merchants.cardi2p %}</b> <span class="check"></span></p>
           </div>
           <div class="center-xs">
             <p><a href="https://localmonero.co" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitlocalmonero %}</a></p>
@@ -76,6 +78,7 @@ permalink: /community/merchants/index.html
             <p>{% t merchants.cardkyc %} <span class="check"></span></p>
             <p><b>XMR &#8596; fiat:</b> <span class="cross"></span> {% t merchants.cardbtcfiat %}</p>
             <p><b>{% t merchants.cardonion %}</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
           </div>
           <div class="center-xs">
             <p><a href="https://hodlhodl.com" class="btn-link btn-fixed btn-primary-top">{% t merchants.visithodlhodl %}</a></p>
@@ -99,6 +102,7 @@ permalink: /community/merchants/index.html
         <h3>Swappers</h3>
         <p>{% t merchants.swappersp %}</p>
         <ul class="logo">
+            <li><a href="https://fixedfloat.com/">Fixedfloat</a></li>
             <li><a href="https://sideshift.ai/">Sideshift.ai</a></li>
             <li><a href="https://simpleswap.io/">SimpleSwap</a></li>
             <li><a href="https://changenow.io/">ChangeNow</a></li>

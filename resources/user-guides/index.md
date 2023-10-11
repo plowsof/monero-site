@@ -1,6 +1,7 @@
 ---
 layout: custom
 title: titles.userguides
+meta_descr: meta_descr.userguides
 ---
 {% t global.lang_tag %}
 <div class="guides">
@@ -80,6 +81,7 @@ title: titles.userguides
                             <p><a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md">{% t user-guides.guiguide %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/change-restore-height.html">{% t user-guides.change-restore-height %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/view_only.html">{% t user-guides.view-only %}</a></p>
+                            <p><a href="{{site.baseurl}}/resources/user-guides/scan-txid.html">{% t user-guides.scan-txid %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/verification-allos-advanced.html">{% t user-guides.verify-allos %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/verification-windows-beginner.html">{% t user-guides.verify-windows %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/multisig-messaging-system.html">{% t user-guides.multisig-messaging-system %}</a></p>

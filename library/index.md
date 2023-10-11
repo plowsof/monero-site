@@ -2,6 +2,7 @@
 layout: custom
 title: titles.library
 permalink: /library/index.html
+meta_descr: library.description
 ---
 {% t global.lang_tag %}
 <div class="about-monero">
@@ -14,6 +15,7 @@ permalink: /library/index.html
             <div>
                 <h3><a href="Zero-to-Monero-2-0-0.pdf">{% t library.zerotomonerov2 %}</a></h3>
                     <p>{% t library.zerotomonerov2p %}</p>
+                    <p>{% t library.zerotomonerov2langs %}</p>
                 <h3><a href="Zero-to-Monero-1-0-0.pdf">{% t library.zerotomonerov1 %}</a></h3>
                     <p>{% t library.zerotomonerov1p %}</p>
                 <h3><a href="https://masteringmonero.com/free-download.html">Mastering Monero</a></h3>
@@ -43,12 +45,12 @@ permalink: /library/index.html
     </section>
     <section class="container full">
         <div class="info-block text-adapt">
-            <h2>{% t library.magazines %}</h2>
+            <h2>{% t library.newsletters %}</h2>
             <div>
-                <h3><a href="{{ site.baseurl_root }}/library/Revuo-2017-Q4.pdf">Revuo Monero Q4 2017</a></h3>
-                    <p>{% t library.revuoq4p %}</p>
-                <h3><a href="{{ site.baseurl_root }}/library/Monero-Revuo-3Q-2017.pdf">Revuo Monero Q3 2017</a></h3>
-                    <p>{% t library.revuoq3p %}</p>
+                <h3><a href="https://localmonero.co/the-monero-standard">The Monero Standard</a></h3>
+                  <p>{% t library.themonerostandard %}</p>
+                <h3><a href="https://monero.observer/tag/blitz/">Monero Observer Blitz</a></h3>
+                  <p>{% t library.moneroobserverblitz %}</p>
             </div>
         </div>
     </section>

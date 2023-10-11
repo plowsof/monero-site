@@ -2,6 +2,7 @@
 layout: custom
 title: titles.downloads
 permalink: /downloads/index.html
+meta_descr: downloads.intro
 ---
 
 {% t global.lang_tag %}
@@ -74,7 +75,7 @@ permalink: /downloads/index.html
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
                       <li class="downloads"><span class="icon-linux"></span><a class="orange" href="https://downloads.getmonero.org/gui/linux64">Linux 64-bit</a></li>
-                      <li class="downloads"><span class="icon-apple"></span><a class="orange" href="https://downloads.getmonero.org/gui/mac64">macOS Intel</a></li>
+                      <li class="downloads"><span class="icon-apple"></span><a class="orange" href="https://downloads.getmonero.org/gui/mac64">macOS Intel</a> | <a class="orange" href="https://downloads.getmonero.org/gui/macarm8">macOS ARM</a></li>
                     </ul>
                   </div>
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
@@ -244,7 +245,7 @@ permalink: /downloads/index.html
                         <tr>
                             <td><img class="small" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
-                            <td>X</td>
+                            <td><span class="icon-linux"></span><span class="icon-apple"></span></td>
                             <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>

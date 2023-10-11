@@ -57,7 +57,6 @@ moneropedia:
     coinbase: Coinbase-transaksjon
     clearnet: Clearnet
     change: Endre
-    canonically-unique-host: Kanonisk-unik vert
     bootstrap-node: Oppstartsprogram-node
     block: Blokk
     blockchain: Blokkjede
@@ -118,12 +117,6 @@ blog:
   urgent: Hastende
   allposts: Alle innlegg
 library:
-  revuoq3p: "Quarterly Monero magazine, Q3 2017-utgave.<br> I denne utgaven finnes\
-    \ oppdateringer om: utvikling, Moneros forskningslab, Kovri, samfunnet, maskinvare\
-    \ og Monerujo.\n"
-  revuoq4p: "Quarterly Monero magazine, Q4 2017-utgave.<br> I denne utgaven finnes\
-    \ oppdateringer om: utvikling, Moneros forskningslab, Kovri og samfunnet.\n"
-  magazines: Tidsskrifter
   masteringmonerop: "En veiledning til den tilsynelatende komplekse verden bak Monero.<br>\
     \ Det inkluderer: <ul><li>En bred introduksjon til blokkjeder og viktigheten av\
     \ personvern – ideelt for brukere med lite teknisk kunnskap.</li> <li>Drøfting\
@@ -531,8 +524,6 @@ what-is-monero:
   need-to-know: Hva du trenger å vite
 mining:
   software: Utvinningsprogramvare
-  pools_para2: her.
-  support_para1: Se
   support: Støtte
   intro2: Monero-prosjektet gir ikke tilslutning til en spesifikk pool, programvare
     eller maskinvare, og innholdet under er kun gitt i informasjonsøyemed.
@@ -735,9 +726,6 @@ faq:
     på Monero StackExchange.
   resandhelp: Ressurser og hjelp
   additional: 'Mer informasjon:'
-  nodeandwallet: Node og lommebok
-  advanced: Avansert
-  general: Generelt
   toc: Innholdsfortegnelse
   intro: Liste over typiske spørsmål med tilhørende svar og ressurser
   amoneromeaning: Monero er et esperanto-ord som betyr «mynt». Monero ble opprinnelig
@@ -916,7 +904,6 @@ downloads:
   mobilelight1: Følgende er mobil- eller light-lommebøker som anses som trygge av
     respekterende medlemmer av samfunnet. Hvis det finnes en lommebok som ikke står
     oppført her, kan du be samfunnet om å ta en titt på den. Gå til
-  hardware2: dedikert maskinvarelommebok (Kastelo)
   showhash4: 'To veiledninger er tilgjengelige for å veilede deg gjennom verifiseringsprosessen:'
   showhash3: i kildekoden
   showhash2: og bør behandles som kanonisk, der signaturen kontrolleres opp mot den
@@ -1086,13 +1073,11 @@ sponsorships:
     Hvis du ønsker å sponse Monero-prosjektet og bli oppført på denne siden, kan du
     sende en e-post til dev@getmonero.org.
   macstadium: MacStadium sponser en egen Mac Mini som brukes til macOS-relatert utvikling.
-  globee: GloBee sponser Moneros hovednettside-infrastruktur.
   tari: Tari Labs sponser innholdsleveransenettverket som brukes på denne nettsiden.
   forknetworking: Fork Networking tilbyr en server som brukes til utvikling.
   symas: Symas sponser sin teknikkansvarlige, Howard Chu (hyc) for hans arbeid på
     Monero-kodebasen.
 merchants:
-  onion: Onion-adresse (trenger Tor)
   disclaimer: "«Vennligst merk: disse lenkene gjøres tilgjengelig som en bekvemmelighet\
     \ og kun i informasjonsøyemed; de utgjør ikke en tilslutning av Monero-samfunnet\
     \ for produkter, tjenester eller meninger av selskaper eller organisasjoner eller\
@@ -1101,14 +1086,6 @@ merchants:
     \ eksterne sidene for svar til spørsmål knyttet til dets innhold. Og som alltid:\
     \ caveat emptor (kjøper, vær på vakt). Du står ansvarlig for å gjøre din egen\
     \ gransking. Bruk alltid dømmekraften din når du foretar deg kjøp på nett.»\n"
-  intro3: (velg «Forhandler»-malen og fyll inn seksjonene).
-  intro2: åpne en GitHub-sak og gi oss beskjed
-  intro1: Forhandlere av alle slag har funnet verdien i det økonomiske personvernet
-    som Monero gir dem. Nedenfor er en liste over forhandlere som vi vet om som for
-    tiden aksepterer Monero for sine varer og tjenester. Disse forhandlerne har ikke
-    tilslutning fra samfunnet, så ta en titt på ansvarsfraskrivelsen nederst på denne
-    siden. Hvis et selskap ikke lenger aksepterer Monero eller du vil at forretningen
-    din blir oppført, ber vi deg
 home:
   moneropedia_button: Les Moneropedia
   moneropedia_para: Ønsker du å søke opp betydningene av vilkårene og konseptene som

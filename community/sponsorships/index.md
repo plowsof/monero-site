@@ -2,6 +2,7 @@
 layout: custom
 title: titles.sponsorships
 permalink: /community/sponsorships/index.html
+meta_descr: meta_descr.sponsorships
 ---
 
 {% t global.lang_tag %}
@@ -96,4 +97,7 @@ permalink: /community/sponsorships/index.html
             </div>
         </div>
     </section>
+    <div class="text-center container description">
+      <p><em>{% t merchants.disclaimer %}</em></p>
+    </div>
 </div>
