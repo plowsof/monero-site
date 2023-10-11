@@ -152,10 +152,11 @@ jobs:
                   echo "$hash  $filename" | sha256sum -c
                   curl -sLo ./verify_redirects/$filename $url
                   echo "actual hash: $actual_hash"
-                  echo "expected hash: $hash"                  
-                  actual_hash=$(sha256sum "verify_redirects/$filename" | awk '{print $1}')
+                  echo "expected hash: $hash"     
+                  sha256sum verify_redirects/$filename
+                  actual_hash=$(sha256sum verify_redirects/$filename | awk '{print $1}')
                   if [ "$actual_hash" != "$hash" ]; then
-                      echo "::warning Redirect hash mismatch \n url: $url \n filename: $filename"
+                      echo "::warning ::Redirect hash mismatch \n url: $url \n filename: $filename"
                   else
                       echo "$url OK"
                   fi
