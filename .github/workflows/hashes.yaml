@@ -149,6 +149,13 @@ jobs:
                   esac
                   filename=$(awk "/${filename}/ {print \$2}" downloads/hashes.txt)
                   echo "$hash  $filename" | sha256sum -c
+                  mkdir verify_redirects
+                  curl -L -o ./verify_redirects/$filename $url
+                  echo "$hash  verify_redirects/$filename" | sha256sum -c
+                  actual_hash=$(sha256sum "verify_redirects/$filename" | awk '{print $1}')
+                  if [ "$actual_hash" != "$hash" ]; then
+                      echo "::warning Redirect hash mismatch \n url: $url \n filename: $filename"
+                  fi
               done
       - name: Validate source integrity
         run: |
