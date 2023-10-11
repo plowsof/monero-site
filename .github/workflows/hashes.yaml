@@ -118,6 +118,7 @@ jobs:
           grep monero- downloads/hashes.txt | sha256sum -c
       - name: Verify downloads.yml hashes
         run: |
+          mkdir verify_redirects
           yq -r '.[] | .[0].downloads[] | "\(.link)|\(.hash)"' _data/downloads.yml | grep -v github |
               while read line; do
                   [ -z "$line" ] && continue
@@ -149,7 +150,6 @@ jobs:
                   esac
                   filename=$(awk "/${filename}/ {print \$2}" downloads/hashes.txt)
                   echo "$hash  $filename" | sha256sum -c
-                  mkdir verify_redirects
                   curl -L -o ./verify_redirects/$filename $url
                   # echo "$hash  verify_redirects/$filename" | sha256sum -c
                   actual_hash=$(sha256sum "verify_redirects/$filename" | awk '{print $1}')
