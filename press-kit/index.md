@@ -122,6 +122,8 @@ meta_descr: meta_descr.presskit
     <div>
         <h3><a href="Monero Quick Facts_May2019.pdf">{% t press-kit.quickfacts %}</a></h3>
         <p>{% t press-kit.quickfactsp %}</p>
+        <h3><a href="https://resilience365.com/monero-timeline">{% t press-kit.johnr365timeline %}</a></h3>
+        <p>{% t press-kit.johnr365timelinep %}</p>
     </div>
   </div>
 
