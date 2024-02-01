@@ -81,7 +81,7 @@ meta_descr: meta_descr.workgroups
           <p>{% t team.web_start %}</p>
           <h4>{% t team.contacts %}</h4>
           <ul class="logo">
-            <li>{% t team.chat %} <code>#monero-site</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-site"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-site:monero.social?via=matrix.org"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
+            <li>{% t team.chat %} <code>#monero-site</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-site"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/%23monero-site:monero.social?via=matrix.org"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
           </ul>
           <div class="row center-xs icons">
             <a class="ext-noicon" href="https://github.com/monero-project/monero-site" target="_blank" rel="noreferrer, noopener" aria-label="GitHub logo"><div class="col social-icon github"></div></a>
