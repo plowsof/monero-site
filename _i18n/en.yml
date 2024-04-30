@@ -169,6 +169,9 @@ merchants:
   centrexchangesp: If you prefer to use centralized exchanges, here is a list of renowned CEXes and swappers. Many more exchanges support Monero, we list here only a few reputable ones.
   cexp: Centralized exchanges that offer exchanging Monero for national currencies and cryptocurrencies.
   swappersp: Swappers let users exchange XMR for other cryptocurrencies.
+  basicswapdexdesc: Decentralized P2P atomic swaps with a strong focus on the user experience.
+  visitbasicswapdex: Visit BasicSwapDEX
+  setreq: Setup required
 
 sponsorships:
   intro: The following businesses actively support the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
@@ -339,7 +342,7 @@ press-kit:
   contactwg: "To contact a specific Monero workgroup:"
   contactcomm: "To contact the many subcommunities:"
   whymonero: Why Monero?
-  whycommunity: Monero has one of the largest communities of any open-source project. Monero researches, audits, and implements critical security and privacy technologies, which are user by millions worldwide.
+  whycommunity: Monero has one of the largest communities of any open-source project. Monero researches, audits, and implements critical security and privacy technologies, which are used by millions worldwide.
   whycommunity1: Monero is trusted for more private transactions than all other cryptocurrencies combined.
   whyconf: The Monero community has substantial involvement at Defcon, Grayhat and the CCC (Chaos Computer Club). The Monero Konferenco, an academic conference, is hosted annually.
   whyconf1: We encourage everyone to include community members from the largest privacy project in related news articles and events.
@@ -834,6 +837,8 @@ roadmap:
   xmr-eth-atomicswaps: Monero <-> Ethereum Atomic Swaps
   bp++: Bulletproofs++
   lws-subaddress: Light Wallet Server subaddress support
+
+  genimprov: "Multiple improvements like: block propagation delay reduced, tx_extra limited, wallet refresh and startup speedups"
    
 research-lab:
   intro: Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.
@@ -942,6 +947,8 @@ library:
   zkbasicscheatsheet20220621p: >
     A lightly theoretical interlude (hopefully still gentle, trying to stress concepts more than formalism and selecting the approached topics) to lay the foundations for Bulletproof and other future Zero-Knowledge-related features, if any.
   newsletters: Newsletters
+  revuomonero: >
+    Revuo Monero is a weekly newsletter where you can find the most recent Monero news.
   themonerostandard: >
     Monero Standard is a weekly publication by recanman, providing up-to-date news and information on the Monero protocol.
     In addition to covering the latest developments in the Monero community, The Monero Standard also includes a weekly price chart, mining pool chart, blockchain statistics, and even a Meme of the Week.
