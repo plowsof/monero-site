@@ -1,0 +1,56 @@
+# This workflow will build po4a on linux using Module::Build and run a custom script
+name: Build and Use po4a on Linux CI
+
+on:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - '*'
+  pull_request:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Clone po4a repository at specific commit
+      run: |
+        git clone https://github.com/mquinson/po4a.git
+        cd po4a
+        git checkout fe2d7d1
+
+    - name: Install Debian dependencies
+      run: |
+        sudo apt update 
+        sudo apt install -y liblocale-gettext-perl libtext-wrapi18n-perl libunicode-linebreak-perl libpod-parser-perl libtest-pod-perl libyaml-tiny-perl libsyntax-keyword-try-perl
+        sudo apt install -y cpanminus gettext docbook-xml docbook-xsl docbook xsltproc 
+        sudo apt install -y texlive-binaries texlive-latex-base opensp libsgmls-perl
+
+    - name: Install CPAN dependencies
+      run: |
+        cpanm Locale::gettext
+        cpanm http://search.cpan.org/CPAN/authors/id/R/RA/RAAB/SGMLSpm-1.1.tar.gz
+        cpanm Text::WrapI18N
+        cpanm Unicode::GCString
+        cpanm -v --installdeps --notest .
+
+    - name: Build
+      run: |
+        cd po4a
+        perl Build.PL
+        COLUMNS=120 ./Build verbose=1
+
+    - name: Install po4a
+      run: |
+        cd po4a
+        sudo ./Build install
+
+    - name: Run custom po4a script
+      run: |
+        cd ../po
+        chmod +x po-update.sh
+        ./po-update.sh
