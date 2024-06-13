@@ -35,7 +35,7 @@ jobs:
         cpanm http://search.cpan.org/CPAN/authors/id/R/RA/RAAB/SGMLSpm-1.1.tar.gz
         cpanm Text::WrapI18N
         cpanm Unicode::GCString
-
+        cd po4a
         cpanm -v --installdeps --notest .
 
     - name: Build
@@ -51,6 +51,6 @@ jobs:
 
     - name: Run custom po4a script
       run: |
-        cd ../po
+        cd po
         chmod +x po-update.sh
         ./po-update.sh
