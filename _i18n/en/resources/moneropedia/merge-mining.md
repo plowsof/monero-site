@@ -1,6 +1,10 @@
 ---
 entry: "Merge Mining"
-terms: ["merge-mine", "merge-mining", "merged-mining","merge-mined"]
+terms:
+  - "merge-mine"
+  - "merge-mining"
+  - "something-works"
+  - "merge-mined"
 summary: "The process of mining two or more blockchains at the same time"
 ---
 
