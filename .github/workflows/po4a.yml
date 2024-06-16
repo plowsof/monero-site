@@ -21,7 +21,7 @@ jobs:
       run: |
         git clone https://github.com/mquinson/po4a.git
         cd po4a
-        git checkout fe2d7d1
+        git checkout v0.69
 
     - name: Install Debian dependencies
       run: |
