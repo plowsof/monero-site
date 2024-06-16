@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Clone po4a repository at specific commit
       run: |
@@ -53,4 +53,7 @@ jobs:
       run: |
         cd po
         chmod +x po-update.sh
-        ./po-update.sh
+        ./po-update.sha
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v6
