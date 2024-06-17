@@ -105,13 +105,13 @@ jobs:
         script: |
           const { repo, owner } = context.repo;
           const branchName = context.ref.replace('refs/heads/', '');
-          const { data: pullRequests } = await github.pulls.list({
+          const pullRequests = await github.pulls.list({
             owner,
             repo,
             head: `${owner}:${branchName}`,
             state: 'open',
           });
-          return pullRequests.length > 0 ? 'true' : 'false';
+          return pullRequests.data.length > 0 ? 'true' : 'false';
 
     - name: Create Pull Request
       if: steps.check-pr.outputs.result == 'false'
