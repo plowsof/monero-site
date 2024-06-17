@@ -10,7 +10,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -102,10 +101,9 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const github = require('@actions/github');
-          const { repo, owner } = github.context.repo;
-          const branchName = github.context.ref.replace('refs/heads/', '');
-          const { data: pullRequests } = await github.pulls.list({
+          const { repo, owner } = require('@actions/github').context.repo;
+          const branchName = require('@actions/github').context.ref.replace('refs/heads/', '');
+          const { data: pullRequests } = await require('@actions/github').pulls.list({
             owner,
             repo,
             head: `${owner}:${branchName}`,
