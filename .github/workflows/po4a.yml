@@ -53,7 +53,7 @@ jobs:
     - name: Run po4a on corresponding config files and commit updates
       run: |
         PREVIOUS_COMMIT=${{github.event.before}}
-        LATEST_COMMIT=$(git rev-parse HEAD)
+        LATEST_COMMIT=${{github.sha}}
         git diff-tree --no-commit-id --name-only -r $PREVIOUS_COMMIT..$LATEST_COMMIT
         echo $LATEST_COMMIT
         CHANGED_PO_FILES=$(git diff-tree --no-commit-id --name-only -r $PREVIOUS_COMMIT..$LATEST_COMMIT | grep -E '\.po$|\.pot$' || true)
