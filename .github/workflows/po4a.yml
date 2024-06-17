@@ -52,7 +52,7 @@ jobs:
 
     - name: Run po4a on corresponding config files and commit updates
       run: |
-        PREVIOUS_COMMIT="${git rev-parse HEAD^}"
+        PREVIOUS_COMMIT="$(git rev-parse HEAD^)"
         LATEST_COMMIT=$(git rev-parse HEAD)
         git diff-tree --no-commit-id --name-only -r $PREVIOUS_COMMIT..$LATEST_COMMIT
         echo $LATEST_COMMIT
