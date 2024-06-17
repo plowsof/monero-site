@@ -55,8 +55,8 @@ jobs:
       uses: tj-actions/changed-files@v44
       with:
         files: |
-          - '*.po'
-          - '*.pot'
+          - '**.po'
+          - '**.pot'
   
     - name: Run step if po file(s) change
       # NOTE: Ensure all outputs are prefixed by the same key used above e.g. `test_(...)` | `doc_(...)` | `src_(...)` when trying to access the `any_changed` output.
