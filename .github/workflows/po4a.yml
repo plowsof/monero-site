@@ -65,6 +65,7 @@ jobs:
         else
           git config --global user.name "weblate-po4a"
           git config --global user.email "weblate-po4a@example.com"
+          ERROR=0
           for po_file in $CHANGED_FILES; do
             # Determine the corresponding config file
             config_file=$(echo "$po_file" | sed -E 's|_i18n/.*/resources/(.*)/weblate/.*|\1|').config
@@ -83,11 +84,14 @@ jobs:
               else
                 echo "ERROR: something went wrong, po4a didn't run successfully on ${config_file_path}"
                 cd ..
+                ERROR=1
               fi
             else
-              echo "Config file ${config_file_path} not found, skipping."
+              echo "ERROR: Config file ${config_file_path} not found, exiting."
+              ERROR=1
             fi
           done
+          exit $ERROR
         fi
       shell: bash
       env:
@@ -98,9 +102,9 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const { context, github } = require('@actions/github');
-          const { repo, owner } = context.repo;
-          const branchName = context.ref.replace('refs/heads/', '');
+          const github = require('@actions/github');
+          const { repo, owner } = github.context.repo;
+          const branchName = github.context.ref.replace('refs/heads/', '');
           const { data: pullRequests } = await github.pulls.list({
             owner,
             repo,
