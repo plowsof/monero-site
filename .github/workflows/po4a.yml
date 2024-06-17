@@ -97,21 +97,22 @@ jobs:
       shell: bash
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Get current branch name
+      id: branch-name
+      run: echo "::set-output name=branch::$(git rev-parse --abbrev-ref HEAD)"  
 
     - name: Check for existing pull request
       id: check-pr
-      uses: actions/github-script@v6
-      with:
-        script: |
-          const { repo, owner } = context.repo;
-          const branchName = context.ref.replace('refs/heads/', '');
-          const pullRequests = await github.pulls.list({
-            owner,
-            repo,
-            head: `${owner}:${branchName}`,
-            state: 'open',
-          });
-          return pullRequests.data.length > 0 ? 'true' : 'false';
+      run: |
+        BRANCH=$(echo "${{ steps.branch-name.outputs.branch }}")
+        PR_LIST=$(gh pr list --repo plowsof/monero-site --state open --head $BRANCH)
+        if [[ -n "$PR_LIST" ]]; then
+          echo "::set-output name=prExists::true"
+        else
+          echo "::set-output name=prExists::false"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Create Pull Request
       if: steps.check-pr.outputs.result == 'false'
