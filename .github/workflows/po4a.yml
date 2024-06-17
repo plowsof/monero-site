@@ -50,17 +50,10 @@ jobs:
         cd po4a
         sudo ./Build install
 
-    - name: Get list of changed .po and .pot files in the latest commit
-      id: changed-files
-      run: |
-        git fetch origin
-        LATEST_COMMIT=$(git rev-parse HEAD)
-        CHANGED_PO_FILES=$(git diff-tree --no-commit-id --name-only -r $LATEST_COMMIT | grep -E '\.po$|\.pot$' || true)
-        echo "::set-output name=changedFiles::$CHANGED_PO_FILES"
-
     - name: Run po4a on corresponding config files and commit updates
       run: |
-        CHANGED_FILES="${{ steps.changed-files.outputs.changedFiles }}"
+        LATEST_COMMIT=$(git rev-parse HEAD)
+        CHANGED_PO_FILES=$(git diff-tree --no-commit-id --name-only -r $LATEST_COMMIT | grep -E '\.po$|\.pot$' || true)
         if [ -z "$CHANGED_FILES" ]; then
           echo "No .po or .pot files changed."
         else
