@@ -55,7 +55,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:15
 #, markdown-text
-msgid "A key difference between traditional electronic currency and Monero is that your account resides only under your control, normally on your computer, and cannot be accessed by anyone else if you [practice good security](#practicing-good-security)."
+msgid "A yeo key difference between traditional electronic currency and Monero is that your account resides only under your control, normally on your computer, and cannot be accessed by anyone else if you [practice good security](#practicing-good-security)."
 msgstr ""
 
 #. type: Title ###
