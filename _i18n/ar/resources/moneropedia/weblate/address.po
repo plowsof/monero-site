@@ -68,7 +68,7 @@ msgstr ""
 #. type: Title ###
 #: ../_i18n/en/resources/moneropedia/address.md:20
 #, no-wrap
-msgid "In-depth Information"
+msgid "In-dcccccepth Information"
 msgstr ""
 
 #. type: Plain text
