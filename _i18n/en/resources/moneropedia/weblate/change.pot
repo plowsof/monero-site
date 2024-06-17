@@ -43,7 +43,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/change.md:11
 #, markdown-text
-msgid "Monero sent as part of a transaction, that returns to your account instead of going to another recipient."
+msgid "Monero sent as part of a transaction, that returns to your account instead of going to another recipient. and some extra text here helo"
 msgstr ""
 
 #. type: Title ###
