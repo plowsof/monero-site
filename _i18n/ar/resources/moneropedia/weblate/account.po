@@ -36,7 +36,7 @@ msgstr ""
 #. type: Title ###
 #: ../_i18n/en/resources/moneropedia/account.md:8
 #, no-wrap
-msgid "The Basics"
+msgid "The Basics an edit"
 msgstr ""
 
 #. type: Plain text
