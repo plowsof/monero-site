@@ -54,16 +54,15 @@ jobs:
       id: changed-po-files
       uses: tj-actions/changed-files@v44
       with:
-        files_yaml: |
-          po:
-            - '*.po'
-            - '*.pot'
+        files: |
+          - '*.po'
+          - '*.pot'
   
     - name: Run step if po file(s) change
       # NOTE: Ensure all outputs are prefixed by the same key used above e.g. `test_(...)` | `doc_(...)` | `src_(...)` when trying to access the `any_changed` output.
-      if: steps.changed-po-files.outputs.po_any_changed == 'true'  
+      if: steps.changed-po-files.outputs.any_changed == 'true'  
       env:
-        PO_CHANGED_FILES: ${{ steps.changed-files-yaml.outputs.po_all_changed_files }}
+        PO_CHANGED_FILES: ${{ steps.changed-files-yaml.outputs.all_changed_files }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         echo "One or more po/ file(s) has changed."
@@ -71,10 +70,7 @@ jobs:
         git config --global user.name "weblate-po4a"
         git config --global user.email "weblate-po4a@example.com"
         ERROR=0
-        for file in ${PO_CHANGED_FILES}; do
-          echo "$file was changed"
-        done
-        for po_file in $CHANGED_FILES; do
+        for po_file in ${ALL_CHANGED_FILES}; do
           # Determine the corresponding config file
           config_file=$(echo "$po_file" | sed -E 's|_i18n/.*/resources/(.*)/weblate/.*|\1|').config
           config_file_path="po/$config_file"
