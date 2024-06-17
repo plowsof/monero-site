@@ -108,7 +108,6 @@ jobs:
             state: 'open',
           });
           return pullRequests.length > 0 ? 'true' : 'false';
-      result-encoding: string
 
     - name: Create Pull Request
       if: steps.check-pr.outputs.result == 'false'
