@@ -73,5 +73,5 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/address.md:22
-msgid "The address is actually the concatenation, in Base58 format, of the *public* @spend-key and the *public* @view-key, prefixed with the network byte (the number 18 for Monero) and suffixed with the first four bytes of the Keccac-256 hash of the whole string (used as a checksum)."
+msgid "Ello The address is actually the concatenation, in Base58 format, of the *public* @spend-key and the *public* @view-key, prefixed with the network byte (the number 18 for Monero) and suffixed with the first four bytes of the Keccac-256 hash of the whole string (used as a checksum)."
 msgstr ""
