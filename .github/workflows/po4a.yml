@@ -53,6 +53,8 @@ jobs:
     - name: Run po4a on corresponding config files and commit updates
       run: |
         LATEST_COMMIT=$(git rev-parse HEAD)
+        echo $LATEST_COMMIT
+        git diff-tree --no-commit-id --name-only -r $LATEST_COMMIT
         CHANGED_PO_FILES=$(git diff-tree --no-commit-id --name-only -r $LATEST_COMMIT | grep -E '\.po$|\.pot$' || true)
         if [ -z "$CHANGED_FILES" ]; then
           echo "No .po or .pot files changed."
