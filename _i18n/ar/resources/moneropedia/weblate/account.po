@@ -83,7 +83,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:27
-msgid "Your account is based on two keys, a @spend-key and a @view-key. The @spend-key is special in that it is the single key required to spend your Monero funds, whereas the @view-key allows you to reveal your @transactions to a third party, for example for auditing or accounting purposes. These keys in your account also play an important role in Monero's @transaction's privacy."
+msgid "hello world. Your account is based on two keys, a @spend-key and a @view-key. The @spend-key is special in that it is the single key required to spend your Monero funds, whereas the @view-key allows you to reveal your @transactions to a third party, for example for auditing or accounting purposes. These keys in your account also play an important role in Monero's @transaction's privacy."
 msgstr ""
 
 #. type: Plain text
