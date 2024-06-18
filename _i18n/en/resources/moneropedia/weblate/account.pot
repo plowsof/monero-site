@@ -19,7 +19,7 @@ msgstr ""
 #. type: YAML Front Matter: summary
 #: ../_i18n/en/resources/moneropedia/account.md:1
 #, no-wrap
-msgid "similar in function to a bank account, contains all of your sent and received transactions"
+msgid "some edit! weeee. similar in function to a bank account, contains all of your sent and received transactions"
 msgstr ""
 
 #. type: YAML Front Matter: terms
