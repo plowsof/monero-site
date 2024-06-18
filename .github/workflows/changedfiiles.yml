@@ -7,15 +7,6 @@ on:
     - '**.pot'
 
 jobs:
-  # -------------------------------------------------------------
-  # Using GitHub's API is not supported for push events
-  # -------------------------------------------------------------
-  # 
-  # ----------------------------------------------------------------------------------------------
-  # Using local .git history
-  # ----------------------------------------------------------------------------------------------
-  # Event `push`: Compare the preceding remote commit -> to the current commit of the main branch 
-  # ----------------------------------------------------------------------------------------------
   changed_files:
     runs-on: ubuntu-latest  # windows-latest || macos-latest
     permissions:
@@ -86,8 +77,8 @@ jobs:
           for po_file in ${ALL_CHANGED_FILES}; do
             directory=$(echo "$po_file" | sed -E 's|_i18n/.*/resources/([^/]+)/.*|\1|')
             base_filename=$(basename "$po_file" | sed -E 's/\.(po|pot)$//')
-            config_file_path="po/$directory/${base_filename}.config"        
-            if [ -f "$config_file_path" ]; then
+            config_file_path="$directory/${base_filename}.config"        
+            if [ -f "po/$config_file_path" ]; then
               echo "-> Running po4a on ${config_file_path}"
               cd po
               if po4a "${config_file_path}"; then
