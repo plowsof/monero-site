@@ -2,8 +2,6 @@ name: CI
 
 on:
   push:
-    branches:
-      - master
 
 jobs:
   # -------------------------------------------------------------
@@ -24,6 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          branch: ${{ github.ref }}
           fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
 
       - name: Get changed files
@@ -48,8 +47,9 @@ jobs:
           ERROR=0
           for po_file in ${ALL_CHANGED_FILES}; do
             # Determine the corresponding config file
-            config_file=$(echo "$po_file" | sed -E 's|_i18n/.*/resources/(.*)/weblate/.*|\1|').config
-            config_file_path="po/$config_file"
+            directory=$(echo "$po_file" | sed -E 's|_i18n/.*/resources/([^/]+)/.*|\1|')
+            config_file=$(basename "$po_file" .po).config
+            config_file_path="po/$directory/$config_file"
             
             if [ -f "$config_file_path" ]; then
               echo "-> Running po4a on ${config_file_path}"
@@ -76,3 +76,9 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
