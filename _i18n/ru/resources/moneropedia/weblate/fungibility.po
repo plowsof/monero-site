@@ -62,4 +62,4 @@ msgstr "Взаимозаменяемость является преимущес
 #: ../_i18n/en/resources/moneropedia/fungibility.md:17
 #
 msgid "Monero has been built specifically to address the problem of traceability and non-fungibility inherent in other cryptocurrencies.  By having completely private transactions Monero is truly fungible and there can be no blacklisting of certain XMR, while at the same time providing all the benefits of a secure, decentralized, permanent blockchain."
-msgstr "Monero была разработана специально для того, чтобы решить проблему отслеживаемости и отсутствия взаимозаменяемости, присущей другим криптовалютам. Благодаря возможности проведения абсолютно анонимных транзакций Monero является действительно взаимозаменяемой, поэтому определённые XMR никогда не попадут в чёрные списки. В то же время обеспечиваются все преимущества, которыми обладает безопасный, децентрализованный и постоянный блокчейн."
+msgstr "a string edited"
