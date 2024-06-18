@@ -108,4 +108,6 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          branch: po4a-
+          branch-suffix: random
         continue-on-error: true
