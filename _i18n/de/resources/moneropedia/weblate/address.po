@@ -50,7 +50,7 @@ msgstr "Wenn du Monero an jemanden versenden möchtest, benötigst du nur eine e
 #: ../_i18n/en/resources/moneropedia/address.md:13
 #
 msgid "Because those addresses are long and complex, you will often encounter an @OpenAlias address instead. For example, Monero donations can be sent to donate@getmonero.org or donate.getmonero.org."
-msgstr "Da diese Adressen lang und komplex sind, wird dir stattdessen häufig eine @OpenAlias-Adresse begegnen. So können Spenden an Monero zum Beispiel an donate@getmonero.org oder donate.getmonero.org gesendet werden."
+msgstr "DYeaaaaaa diese Adressen lang und komplex sind, wird dir stattdessen häufig eine @OpenAlias-Adresse begegnen. So können Spenden an Monero zum Beispiel an donate@getmonero.org oder donate.getmonero.org gesendet werden."
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/address.md:15
