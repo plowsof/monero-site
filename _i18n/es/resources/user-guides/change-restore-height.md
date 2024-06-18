@@ -2,7 +2,7 @@
 
 ### Table of contents
 
-- [What is the wallet restore height?](#what-is-the-wallet-restore-height)
+- some translted string yay
 - [Why Monero wallets have a restore
   height?](#why-monero-wallets-have-a-restore-height)
 - [What happens if I set a wrong restore
