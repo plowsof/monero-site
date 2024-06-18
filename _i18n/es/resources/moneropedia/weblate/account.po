@@ -6,11 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 12:18+0200\n"
+"POT-Creation-Date: 2024-06-18 16:32+0000\n"
 "PO-Revision-Date: 2022-06-24 00:34+0000\n"
 "Last-Translator: felipebrunet <felipe.brunet@gmail.com>\n"
-"Language-Team: Spanish <https://translate.getmonero.org/projects/"
-"getmonero-moneropedia/account/es/>\n"
+"Language-Team: Spanish <https://translate.getmonero.org/projects/getmonero-moneropedia/account/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,25 +17,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.8\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/account.md:1
 #, no-wrap
 msgid "similar in function to a bank account, contains all of your sent and received transactions"
 msgstr ""
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/account.md:1
 #, no-wrap
 msgid "[\"account\", \"accounts\", \"wallet\", \"wallets\"]"
-msgstr ""
-"[\"account\", \"accounts\", \"wallet\", \"wallets\", \"cuenta\", \"cuentas\""
-", \"monedero\", \"monederos\"]"
+msgstr "[\"account\", \"accounts\", \"wallet\", \"wallets\", \"cuenta\", \"cuentas\", \"monedero\", \"monederos\"]"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:7
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr ""
-"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Title ###
 #: ../_i18n/en/resources/moneropedia/account.md:8
@@ -51,7 +47,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:13
-msgid "new text. Your account contains all of the Monero @transactions you have sent and received. Your account balance is a sum of all the Monero you've received, less the Monero you've sent. When using Monero you may notice that your account has two balances, a locked and an unlocked balance. The unlocked balance contains funds that can be spent immediately, and the locked balance contains funds that you can't spend right now. You may receive a transaction that has an @unlock-time set, or you may have sent some Monero and are waiting for the @change to come back to your wallet, both situations that could lead to those funds being locked for a time."
+msgid "Your account contains all of the Monero @transactions you have sent and received. Your account balance is a sum of all the Monero you've received, less the Monero you've sent. When using Monero you may notice that your account has two balances, a locked and an unlocked balance. The unlocked balance contains funds that can be spent immediately, and the locked balance contains funds that you can't spend right now. You may receive a transaction that has an @unlock-time set, or you may have sent some Monero and are waiting for the @change to come back to your wallet, both situations that could lead to those funds being locked for a time."
 msgstr ""
 
 #. type: Plain text
