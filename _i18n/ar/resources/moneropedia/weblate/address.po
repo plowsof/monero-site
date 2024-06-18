@@ -58,7 +58,7 @@ msgstr ""
 #: ../_i18n/en/resources/moneropedia/address.md:16
 #, no-wrap
 msgid "Integrated address"
-msgstr ""
+msgstr "Pretend as though i have edited/removed some fuzzy translations"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/address.md:19
