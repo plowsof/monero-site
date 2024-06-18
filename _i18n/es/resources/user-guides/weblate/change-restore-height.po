@@ -32,7 +32,7 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/change-restore-height.md:10
 msgid ""
 "[What is the wallet restore height?](#what-is-the-wallet-restore-height)"
-msgstr ""
+msgstr "some translted string yay"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/change-restore-height.md:10
