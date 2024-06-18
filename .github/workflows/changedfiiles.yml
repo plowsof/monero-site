@@ -86,8 +86,8 @@ jobs:
           for po_file in ${ALL_CHANGED_FILES}; do
             # Determine the corresponding config file
             directory=$(echo "$po_file" | sed -E 's|_i18n/.*/resources/([^/]+)/.*|\1|')
-            config_file=$(basename "$po_file" .po).config
-            config_file_path="po/$directory/$config_file"
+            base_filename=$(basename "$po_file" | sed -E 's|\.(po|pot)$||')
+            config_file_path="po/$directory/${base_filename}.config"
             
             if [ -f "$config_file_path" ]; then
               echo "-> Running po4a on ${config_file_path}"
