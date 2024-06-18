@@ -21,7 +21,7 @@ the bottom of this page.
 
 ---
 
-##### Other Resources
+##### yeah lol
 
 <sub>1. The [monerod reference on Monerodocs.org](https://monerodocs.org/interacting/monerod-reference/)</sub><br>
 
