@@ -47,7 +47,7 @@ msgstr ""
 #: ../_i18n/en/resources/moneropedia/daemon.md:14
 #, no-wrap
 msgid "Other Resources"
-msgstr ""
+msgstr "yeah lol"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/daemon.md:17
