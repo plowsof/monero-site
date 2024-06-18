@@ -37,7 +37,7 @@ msgstr ""
 #: ../_i18n/en/resources/moneropedia/airgap.md:8
 #, no-wrap
 msgid "The Basics"
-msgstr ""
+msgstr "basics the"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/airgap.md:11
