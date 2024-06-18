@@ -17,14 +17,13 @@ jobs:
   # Event `push`: Compare the preceding remote commit -> to the current commit of the main branch 
   # ----------------------------------------------------------------------------------------------
   changed_files:
-    needs: compile-po4a
     runs-on: ubuntu-latest  # windows-latest || macos-latest
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
       contents: write
     name: Test changed-files
     steps:
-          - name: Clone po4a repository at specific commit
+      - name: Clone po4a repository at specific commit
         run: |
           git clone https://github.com/mquinson/po4a.git
           cd po4a
