@@ -126,14 +126,14 @@ jobs:
               if po4a "${config_file_path}"; then
                 echo "po4a ran successfully on ${config_file_path}"
               else
-                ::warning file=${config_file_path}::"po4a didnt run successfully"
+                echo "::warning file=${config_file_path}::po4a didnt run successfully"
               fi
                 cd ..
                 git add .
                 COMMIT_MESSAGE="po4a: ${config_file_path} updates"
                 git commit -m "${COMMIT_MESSAGE}" || echo "No changes to commit for ${config_file_path}"
             else
-              ::warning file=${config_file_path}::"not found"
+              echo "::warning file=${config_file_path}::not found"
             fi
           done  
       # Create pull request pushes commited changes to branch: and ceates the PR to master i think
