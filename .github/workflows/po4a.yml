@@ -125,14 +125,14 @@ jobs:
               cd po
               if po4a "${config_file_path}"; then
                 echo "po4a ran successfully on ${config_file_path}"
-                cd ..
-                git add .
-                COMMIT_MESSAGE="po4a: ${config_file_path} updates"
-                git commit -m "${COMMIT_MESSAGE}" || echo "No changes to commit for ${config_file_path}"
               else
                 echo "ERROR: something went wrong, po4a didn't run successfully on ${config_file_path}"
                 ERROR=1
               fi
+                cd ..
+                git add .
+                COMMIT_MESSAGE="po4a: ${config_file_path} updates"
+                git commit -m "${COMMIT_MESSAGE}" || echo "No changes to commit for ${config_file_path}"
             else
               echo "ERROR: Config file ${config_file_path} not found, exiting."
               ERROR=1
