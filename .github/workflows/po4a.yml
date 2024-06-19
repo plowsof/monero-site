@@ -1,0 +1,156 @@
+name: run-po4a
+
+on:
+  push:
+    paths:
+    - '**.po'
+    - '**.pot'
+  workflow_dispatch:
+    inputs:
+      run_on_all:
+        description: 'Run po4a on all files'
+        required: false
+        default: 'false'
+
+jobs:
+  changed_files:
+    runs-on: ubuntu-latest  # windows-latest || macos-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
+      contents: write
+      pull-requests: write
+    name: Test changed-files
+    steps:
+      - name: Clone po4a repository at specific commit
+        run: |
+          git clone https://github.com/mquinson/po4a.git
+          cd po4a
+          git checkout v0.69
+  
+      - name: Install Debian dependencies
+        run: |
+          sudo apt update 
+          sudo apt install -y liblocale-gettext-perl libtext-wrapi18n-perl libunicode-linebreak-perl libpod-parser-perl libtest-pod-perl libyaml-tiny-perl libsyntax-keyword-try-perl
+          sudo apt install -y cpanminus gettext docbook-xml docbook-xsl docbook xsltproc 
+          sudo apt install -y texlive-binaries texlive-latex-base opensp libsgmls-perl
+  
+      - name: Install CPAN dependencies
+        run: |
+          cpanm Locale::gettext
+          cpanm http://search.cpan.org/CPAN/authors/id/R/RA/RAAB/SGMLSpm-1.1.tar.gz
+          cpanm Text::WrapI18N
+          cpanm Unicode::GCString
+          cd po4a
+          cpanm -v --installdeps --notest .
+  
+      - name: Build
+        run: |
+          cd po4a
+          perl Build.PL
+          COLUMNS=120 ./Build verbose=1
+  
+      - name: Install po4a
+        run: |
+          cd po4a
+          sudo ./Build install
+          cd ..
+          rm -rf po4a
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: |
+             **.po
+             **.pot
+      # NOTE: `since_last_remote_commit: true` is implied by default and falls back to the previous local commit.
+      - name: Run step if po/pot files are changed
+        if: ${{ github.event.inputs.run_on_all == 'true' || steps.changed-files.outputs.any_changed == 'true' }}
+        env:
+          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+          RUN_ON_ALL: ${{ github.event.inputs.run_on_all }}
+        run: |
+          ALL_CHANGED_FILES_ARRAY=()
+          
+          # Check if RUN_ON_ALL is set to 'true'
+          if [ "$RUN_ON_ALL" == "true" ]; then
+            echo "Running po4a on all config files..."
+          
+            # Add all user-guides config files
+            cd po
+            for guide in user-guides/*.config; do
+              if [ -f "$guide" ]; then
+                echo "-> Adding ${guide} to file list"
+                ALL_CHANGED_FILES_ARRAY+=("${guide}")
+              fi
+            done
+          
+            # Add all moneropedia config files
+            for entry in moneropedia/*.config; do
+              if [ -f "$entry" ]; then
+                echo "-> Adding ${entry} to file list"
+                ALL_CHANGED_FILES_ARRAY+=("${entry}")
+              fi
+            done
+          else
+            echo "Running po4a on modified po/pot files only..."
+          
+            # Split ALL_CHANGED_FILES into an array
+            IFS=' ' read -r -a ALL_CHANGED_FILES_ARRAY <<< "$ALL_CHANGED_FILES"
+          fi
+          for file in ${ALL_CHANGED_FILES_ARRAY}; do
+            echo "$file was changed"
+          done
+          cd ..
+          git config --global user.name "weblate-po4a"
+          git config --global user.email "weblate-po4a@example.com"
+          ERROR=0
+          for po_file in "${ALL_CHANGED_FILES_ARRAY[@]}"; do            
+            #TODO: skip config_file_path building
+            if [ "$RUN_ON_ALL" == "false" ]; then
+              directory=$(echo "$po_file" | sed -E 's|_i18n/.*/resources/([^/]+)/.*|\1|')
+              base_filename=$(basename "$po_file" | sed -E 's/\.(po|pot)$//')
+              config_file_path="$directory/${base_filename}.config"        
+            else
+              config_file_path=$po_file
+            fi
+            
+            if [ -f "po/$config_file_path" ]; then
+              echo "-> Running po4a on ${config_file_path}"
+              cd po
+              if po4a "${config_file_path}"; then
+                echo "po4a ran successfully on ${config_file_path}"
+                cd ..
+                git add .
+                COMMIT_MESSAGE="po4a: ${config_file_path} updates"
+                git commit -m "${COMMIT_MESSAGE}" || echo "No changes to commit for ${config_file_path}"
+              else
+                echo "ERROR: something went wrong, po4a didn't run successfully on ${config_file_path}"
+                ERROR=1
+              fi
+            else
+              echo "ERROR: Config file ${config_file_path} not found, exiting."
+              ERROR=1
+            fi
+          done
+          exit $ERROR
+  
+      # Create pull request pushes commited changes to branch: and ceates the PR to master i think
+      #- name: Push changes
+      #  uses: ad-m/github-push-action@master
+      #  with:
+      #    github_token: ${{ secrets.GITHUB_TOKEN }}
+      #    branch: ${{ github.ref }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: po4a-final
+          branch-suffix: random
+        continue-on-error: true
