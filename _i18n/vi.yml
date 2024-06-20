@@ -6,3 +6,5 @@ global:
   getting_started: Bắt đầu
   monero: Monero
   date: '%Y/%m/%d'
+titles:
+  themoneroproject: Dự án Monero
