@@ -121,9 +121,9 @@ jobs:
           git config --global user.name "weblate-po4a"
           git config --global user.email "weblate-po4a@example.com"
           ERROR=0
-          cd po
-          for md_file in "${ALL_CHANGED_FILES_ARRAY[@]}"; do            
-           # Determine the base directory and base filename
+          for md_file in "${ALL_CHANGED_FILES_ARRAY[@]}"; do
+            cd po
+            # Determine the base directory and base filename
             directory=$(echo "$md_file" | sed -E 's|_i18n/en/resources/([^/]+)/.*|\1|')
             base_filename=$(basename "$md_file" | sed -E 's/\.md$//')
             
@@ -143,13 +143,15 @@ jobs:
         
             # Run po4a using the dynamically generated configuration
             echo "Generating po4a config for ${md_file}"
-            if echo "${po4a_config}" | po4a - ; then
+            echo "$po4a_config" > po4a-config.txt
+            if po4a po4a-config.txt; then
               echo "po4a ran successfully on ${md_file}"
             else
               echo "::warning file=${md_file}::po4a didn't run successfully"
               ERROR=1
             fi
-        
+            rm po4a-config.txt
+            cd ..
             git add .
             COMMIT_MESSAGE="po4a: ${directory}/${base_filename} updates"
             git commit -m "${COMMIT_MESSAGE}" || echo "No changes to commit for ${directory}/${base_filename}"
