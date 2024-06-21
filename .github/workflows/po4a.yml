@@ -137,7 +137,7 @@ jobs:
             po4a_config+="[options] opt:\"--msgmerge-opt='--no-wrap'\"\n"
             po4a_config+="[options] opt:\"--wrap-po=newlines\"\n"
             po4a_config+="[po4a_alias:markdown] text opt:\"--option markdown\"\n"
-            po4a_config+="[type: markdown] ../_i18n/en/resources/${directory}/weblate/${base_filename}.md \$lang:../_i18n/\$lang/resources/${directory}/weblate/${base_filename}.md\n"
+            po4a_config+="[type: markdown] ../_i18n/en/resources/${directory}/${base_filename}.md \$lang:../_i18n/\$lang/resources/${directory}/${base_filename}.md\n"
             
             echo -e "${po4a_config}" > po4a-config.txt
             cat po4a-config.txt
