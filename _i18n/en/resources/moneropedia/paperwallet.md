@@ -7,4 +7,4 @@ summary: "A paper wallet stores the information necessary to send and receive Mo
 
 ### The Basics
 
-A paper wallet stores the information necessary to send and receive Monero.
+A paper wallet stores the information necessary to send and receive Monero. much information, wow
