@@ -138,7 +138,9 @@ jobs:
             po4a_config+="[options] opt:\"--wrap-po=newlines\"\n"
             po4a_config+="[po4a_alias:markdown] text opt:\"--option markdown\"\n"
             po4a_config+="[type: markdown] ../_i18n/en/resources/${directory}/${base_filename}.md \$lang:../_i18n/\$lang/resources/${directory}/${base_filename}.md\n"
-
+            echo "Generated po4a config:"
+            echo "${po4a_config}"
+        
             # Run po4a using the dynamically generated configuration
             echo "Generating po4a config for ${md_file}"
             if echo "${po4a_config}" | po4a - ; then
@@ -147,7 +149,7 @@ jobs:
               echo "::warning file=${md_file}::po4a didn't run successfully"
               ERROR=1
             fi
-
+        
             git add .
             COMMIT_MESSAGE="po4a: ${directory}/${base_filename} updates"
             git commit -m "${COMMIT_MESSAGE}" || echo "No changes to commit for ${directory}/${base_filename}"
