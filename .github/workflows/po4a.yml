@@ -127,22 +127,16 @@ jobs:
             base_filename=$(basename "$md_file" | sed -E 's/\.md$//')
             
             # Construct the po4a configuration dynamically
-            po4a_config=$(cat <<EOF
-[po4a_langs] es it pl fr ar ru de nl pt-br tr zh-cn zh-tw nb-no
-[po4a_paths] ../_i18n/en/resources/${directory}/${base_filename}.pot \$lang:../_i18n/\$lang/resources/${directory}/${base_filename}.po
-
-[options] opt:"--keep=0"
-[options] opt:"--localized-charset=UTF-8"
-[options] opt:"--master-charset=UTF-8"
-[options] opt:"--master-language=en_US"
-[options] opt:"--msgmerge-opt='--no-wrap'"
-[options] opt:"--wrap-po=newlines"
-
-[po4a_alias:markdown] text opt:"--option markdown"
-
-[type: markdown] ../_i18n/en/resources/${directory}/${base_filename}.md \$lang:../_i18n/\$lang/resources/${directory}/${base_filename}.md
-EOF
-)
+            po4a_config="[po4a_langs] es it pl fr ar ru de nl pt-br tr zh-cn zh-tw nb-no\n"
+            po4a_config+="[po4a_paths] ../_i18n/en/resources/${directory}/${base_filename}.pot \$lang:../_i18n/\$lang/resources/${directory}/${base_filename}.po\n"
+            po4a_config+="[options] opt:\"--keep=0\"\n"
+            po4a_config+="[options] opt:\"--localized-charset=UTF-8\"\n"
+            po4a_config+="[options] opt:\"--master-charset=UTF-8\"\n"
+            po4a_config+="[options] opt:\"--master-language=en_US\"\n"
+            po4a_config+="[options] opt:\"--msgmerge-opt='--no-wrap'\"\n"
+            po4a_config+="[options] opt:\"--wrap-po=newlines\"\n"
+            po4a_config+="[po4a_alias:markdown] text opt:\"--option markdown\"\n"
+            po4a_config+="[type: markdown] ../_i18n/en/resources/${directory}/${base_filename}.md \$lang:../_i18n/\$lang/resources/${directory}/${base_filename}.md\n"
 
             # Run po4a using the dynamically generated configuration
             echo "Generating po4a config for ${md_file}"
