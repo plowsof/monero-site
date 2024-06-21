@@ -5,12 +5,11 @@ terms: ["account", "accounts", "wallet", "wallets", "compte", "comptes", "portef
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Les Bases
+### The Basicsssss
 
-Ceux qui sont familiers avec les prédécesseurs de Monero seront plus
-familiers avec le terme de *portefeuille* pour décrire ceci. Dans Monero
-nous appelons cela un compte, et c'est un compte privé détenu et utilisé par
-un utilisateur de Monero.
+Those familiar with Monero's predecessors will be more familiar with the
+term *wallet* to describe this. In Monero we call this an account, and it's
+a private account owned and operated by a Monero user.
 
 Votre compte contient toutes les @transactions Monero que vous avez envoyées
 et reçues. Le solde de votre compte correspond à la somme de tous les
