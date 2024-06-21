@@ -77,33 +77,43 @@ jobs:
         run: |
           RUN_ON_ALL=${RUN_ON_ALL:="false"}
           ALL_CHANGED_FILES_ARRAY=()
+          CHANGED_MD_FILES_ARRAY=()
           
           # Check if RUN_ON_ALL is set to 'true'
           if [ "$RUN_ON_ALL" == "true" ]; then
-            echo "Running po4a on all config files..."
-          
-            # Add all user-guides config files
-            cd po
-            for guide in user-guides/*.config; do
-              if [ -f "$guide" ]; then
+              echo "list of all .md files in user-guides and moneropedia..."
+            
+              # Add all user-guides and moneropedia .md files
+              for guide in _i18n/en/resources/user-guides/*.md; do
                 echo "-> Adding ${guide} to file list"
                 ALL_CHANGED_FILES_ARRAY+=("${guide}")
-              fi
-            done
-          
-            # Add all moneropedia config files
-            for entry in moneropedia/*.config; do
-              if [ -f "$entry" ]; then
+              done
+            
+              for entry in _i18n/en/resources/moneropedia/*.md; do
                 echo "-> Adding ${entry} to file list"
                 ALL_CHANGED_FILES_ARRAY+=("${entry}")
-              fi
-            done
-            cd ..
+              done
           else
             echo "Running po4a on modified po/pot files only..."
           
             # Split ALL_CHANGED_FILES into an array
             IFS=' ' read -r -a ALL_CHANGED_FILES_ARRAY <<< "$ALL_CHANGED_FILES"
+            for file in "${ALL_CHANGED_FILES_ARRAY[@]}"; do
+              if [[ "$file" == *.po || "$file" == *.pot ]]; then
+                directory=$(echo "$file" | sed -E 's|_i18n/[^/]+/resources/([^/]+)/.*|\1|')
+                base_filename=$(basename "$file" | sed -E 's/\.(po|pot)$//')
+                md_file="_i18n/en/resources/${directory}/${base_filename}.md"
+                if [ -f "$md_file" ]; then
+                  echo "-> Adding ${md_file} to file list"
+                  CHANGED_MD_FILES_ARRAY+=("${md_file}")
+                fi
+              else
+                CHANGED_MD_FILES_ARRAY+=("${file}")
+              fi
+              #remove duplicates
+              ALL_CHANGED_FILES_ARRAY=($(printf "%s\n" "${CHANGED_MD_FILES_ARRAY[@]}" | sort -u))
+
+            done
           fi
           for file in ${ALL_CHANGED_FILES_ARRAY}; do
             echo "$file was changed"
@@ -111,42 +121,42 @@ jobs:
           git config --global user.name "weblate-po4a"
           git config --global user.email "weblate-po4a@example.com"
           ERROR=0
-          for po_file in "${ALL_CHANGED_FILES_ARRAY[@]}"; do            
-            #TODO: skip config_file_path building
-            echo "run_on_all: ${RUN_ON_ALL}"
-            if [ "$RUN_ON_ALL" == "false" ]; then
-              echo "run on all false"
-              directory=$(echo "$po_file" | sed -E 's|_i18n/.*/resources/([^/]+)/.*|\1|')
-              base_filename=$(basename "$po_file" | sed -E 's/\.(po|pot)$//')
-              config_file_path="$directory/${base_filename}.config"        
-            else
-              echo "run on all not false"
-              config_file_path=$po_file
-            fi
-            echo "config file is now ${config_file_path}" now moneropedia/clsag.config
+          for md_file in "${ALL_CHANGED_FILES_ARRAY[@]}"; do            
+           # Determine the base directory and base filename
+            directory=$(echo "$md_file" | sed -E 's|_i18n/en/resources/([^/]+)/.*|\1|')
+            base_filename=$(basename "$md_file" | sed -E 's/\.md$//')
             
-            if [ -f "po/$config_file_path" ]; then
-              echo "-> Running po4a on ${config_file_path}"
-              cd po
-              if po4a "${config_file_path}"; then
-                echo "po4a ran successfully on ${config_file_path}"
-              else
-                echo "::warning file=${config_file_path}::po4a didnt run successfully"
-              fi
-                cd ..
-                git add .
-                COMMIT_MESSAGE="po4a: ${config_file_path} updates"
-                git commit -m "${COMMIT_MESSAGE}" || echo "No changes to commit for ${config_file_path}"
+            # Construct the po4a configuration dynamically
+            po4a_config=$(cat <<EOF
+[po4a_langs] es it pl fr ar ru de nl pt-br tr zh-cn zh-tw nb-no
+[po4a_paths] ../_i18n/en/resources/${directory}/${base_filename}.pot \$lang:../_i18n/\$lang/resources/${directory}/${base_filename}.po
+
+[options] opt:"--keep=0"
+[options] opt:"--localized-charset=UTF-8"
+[options] opt:"--master-charset=UTF-8"
+[options] opt:"--master-language=en_US"
+[options] opt:"--msgmerge-opt='--no-wrap'"
+[options] opt:"--wrap-po=newlines"
+
+[po4a_alias:markdown] text opt:"--option markdown"
+
+[type: markdown] ../_i18n/en/resources/${directory}/${base_filename}.md \$lang:../_i18n/\$lang/resources/${directory}/${base_filename}.md
+EOF
+)
+
+            # Run po4a using the dynamically generated configuration
+            echo "Generating po4a config for ${md_file}"
+            if echo "${po4a_config}" | po4a - ; then
+              echo "po4a ran successfully on ${md_file}"
             else
-              echo "::warning file=${config_file_path}::not found"
+              echo "::warning file=${md_file}::po4a didn't run successfully"
+              ERROR=1
             fi
-          done  
-      # Create pull request pushes commited changes to branch: and ceates the PR to master i think
-      #- name: Push changes
-      #  uses: ad-m/github-push-action@master
-      #  with:
-      #    github_token: ${{ secrets.GITHUB_TOKEN }}
-      #    branch: ${{ github.ref }}
+
+            git add .
+            COMMIT_MESSAGE="po4a: ${directory}/${base_filename} updates"
+            git commit -m "${COMMIT_MESSAGE}" || echo "No changes to commit for ${directory}/${base_filename}"
+          done
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
