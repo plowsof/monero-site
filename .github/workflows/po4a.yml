@@ -5,6 +5,7 @@ on:
     paths:
     - '**.po'
     - '**.pot'
+    - '**.md' #temp for all md files.
   workflow_dispatch:
     inputs:
       run_on_all:
