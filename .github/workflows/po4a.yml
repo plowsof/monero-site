@@ -1,4 +1,4 @@
-  name: run-po4a
+name: run-po4a
 
 on:
   push:
