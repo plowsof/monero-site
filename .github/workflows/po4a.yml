@@ -129,7 +129,7 @@ jobs:
             
             # Construct the po4a configuration dynamically
             po4a_config="[po4a_langs] es it pl fr ar ru de nl pt-br tr zh-cn zh-tw nb-no\n"
-            po4a_config+="[po4a_paths] ../_i18n/en/resources/${directory}/${base_filename}.pot \$lang:../_i18n/\$lang/resources/${directory}/${base_filename}.po\n"
+            po4a_config+="[po4a_paths] ../_i18n/en/resources/${directory}/weblate/${base_filename}.pot \$lang:../_i18n/\$lang/resources/${directory}/weblate/${base_filename}.po\n"
             po4a_config+="[options] opt:\"--keep=0\"\n"
             po4a_config+="[options] opt:\"--localized-charset=UTF-8\"\n"
             po4a_config+="[options] opt:\"--master-charset=UTF-8\"\n"
@@ -137,13 +137,11 @@ jobs:
             po4a_config+="[options] opt:\"--msgmerge-opt='--no-wrap'\"\n"
             po4a_config+="[options] opt:\"--wrap-po=newlines\"\n"
             po4a_config+="[po4a_alias:markdown] text opt:\"--option markdown\"\n"
-            po4a_config+="[type: markdown] ../_i18n/en/resources/${directory}/${base_filename}.md \$lang:../_i18n/\$lang/resources/${directory}/${base_filename}.md\n"
-            echo "Generated po4a config:"
-            echo "${po4a_config}"
-        
-            # Run po4a using the dynamically generated configuration
-            echo "Generating po4a config for ${md_file}"
-            echo -e "$po4a_config" > po4a-config.txt
+            po4a_config+="[type: markdown] ../_i18n/en/resources/${directory}/weblate/${base_filename}.md \$lang:../_i18n/\$lang/resources/${directory}/weblate/${base_filename}.md\n"
+            
+            echo -e "${po4a_config}" > po4a-config.txt
+            cat po4a-config.txt
+
             if po4a po4a-config.txt; then
               echo "po4a ran successfully on ${md_file}"
             else
