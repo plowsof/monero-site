@@ -143,7 +143,7 @@ jobs:
         
             # Run po4a using the dynamically generated configuration
             echo "Generating po4a config for ${md_file}"
-            echo "$po4a_config" > po4a-config.txt
+            echo -e "$po4a_config" > po4a-config.txt
             if po4a po4a-config.txt; then
               echo "po4a ran successfully on ${md_file}"
             else
