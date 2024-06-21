@@ -121,6 +121,7 @@ jobs:
           git config --global user.name "weblate-po4a"
           git config --global user.email "weblate-po4a@example.com"
           ERROR=0
+          cd po
           for md_file in "${ALL_CHANGED_FILES_ARRAY[@]}"; do            
            # Determine the base directory and base filename
             directory=$(echo "$md_file" | sed -E 's|_i18n/en/resources/([^/]+)/.*|\1|')
