@@ -73,7 +73,7 @@ jobs:
         if: ${{ github.event.inputs.run_on_all == 'true' || steps.changed-files.outputs.any_changed == 'true' }}
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-          RUN_ON_ALL: ${{ github.event.inputs.run_on_all }}
+          RUN_ON_ALL: ${{ github.event.inputs.run_on_all }} || "false"
         run: |
           ALL_CHANGED_FILES_ARRAY=()
           
@@ -112,6 +112,7 @@ jobs:
           ERROR=0
           for po_file in "${ALL_CHANGED_FILES_ARRAY[@]}"; do            
             #TODO: skip config_file_path building
+            echo "run_on_all: ${RUN_ON_ALL}"
             if [ "$RUN_ON_ALL" == "false" ]; then
               echo "run on all false"
               directory=$(echo "$po_file" | sed -E 's|_i18n/.*/resources/([^/]+)/.*|\1|')
@@ -122,7 +123,6 @@ jobs:
               config_file_path=$po_file
             fi
             echo "config file is now ${config_file_path}"
-            
             
             if [ -f "po/$config_file_path" ]; then
               echo "-> Running po4a on ${config_file_path}"
