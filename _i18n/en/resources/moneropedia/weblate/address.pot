@@ -19,7 +19,7 @@ msgstr ""
 #. type: YAML Front Matter: summary
 #: ../_i18n/en/resources/moneropedia/address.md:1
 #, no-wrap
-msgid "either an alias, such as donate.getmonero.org, or a set of 95 characters starting with a 4"
+msgid "yes either an alias, such as donate.getmonero.org, or a set of 95 characters starting with a 4"
 msgstr ""
 
 #. type: YAML Front Matter: terms
