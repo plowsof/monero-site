@@ -59,19 +59,8 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
+          ref: ${{ github.head }}
           fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
-
-      - name: Ensure po4a-staged branch exists and sync with master
-        id: sync_branch
-        run: |
-          git fetch origin
-          if git show-ref --verify --quiet refs/heads/po4a-staged; then
-            git checkout po4a-staged
-            git reset --hard origin/master
-          else
-            git checkout -b po4a-staged origin/master
-          fi
 
       - name: Get changed files
         id: changed-files
@@ -183,7 +172,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: po4a-staged
-          force_with_lease: true
+          force: true
           
       - name: Create pull request
         if: '!steps.check.outputs.skip'
