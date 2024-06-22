@@ -5,7 +5,7 @@ summary: "a container of transactions, a sequence of which forms a blockchain"
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### The Basics
+### The Basics wat now
 
 A block is a container of @transactio and another test with a new block being added to the @blockchain once every 2 minutes (see constant `DIFFICULTY_TARGET_V2` defined as 120 seconds), on average.
 
