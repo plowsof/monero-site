@@ -4,7 +4,7 @@
 
 ### Application de portefeuille : Simplewallet
 
-#### Ressource pour la création d'un disque bootable : [Linux](http://www.pendrivelinux.com/), [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
+#### Ressource hello world pour la création d'un disque bootable : [Linux](http://www.pendrivelinux.com/), [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 
 #### Ressource pour les binaires Monero : [Binaires Monero]({{ site.baseurl }}/downloads/)
 
