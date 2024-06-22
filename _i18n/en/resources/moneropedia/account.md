@@ -5,7 +5,7 @@ summary: "similar in function to a bank account, contains all of your sent and r
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### The Basicsssss
+### The Basicssssss
 
 Those familiar with Monero's predecessors will be more familiar with the term *wallet* to describe this. In Monero we call this an account, and it's a private account owned and operated by a Monero user.
 
