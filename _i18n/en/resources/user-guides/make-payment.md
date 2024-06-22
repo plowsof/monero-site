@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### Table of contents
+### Table of contentsss
 
 - [What is important to know about Monero payments?](#what-is-important-to-know-about-monero-payments)
 - [How to make a payment using Monero GUI](#how-to-make-a-payment-using-monero-gui)
