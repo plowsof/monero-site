@@ -121,7 +121,7 @@ jobs:
           for md_file in "${ALL_CHANGED_FILES_ARRAY[@]}"; do
             cd po
             # Determine the base directory and base filename
-            directory=$(echo "$md_file" | sed -E 's|_i18n/en/resources/([^/]+)/.*|\1|')
+            directory=$(echo "$md_file" | sed -E 's|_i18n/[^/]+/resources/([^/]+)/.*|\1|')
             base_filename=$(basename "$md_file" | sed -E 's/\.md$//')
             
             # Construct the po4a configuration dynamically
