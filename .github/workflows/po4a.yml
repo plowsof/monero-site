@@ -59,7 +59,7 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref }}
+          ref: po4a-staged
           fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
 
       - name: Get changed files
@@ -71,7 +71,6 @@ jobs:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
           RUN_ON_ALL: ${{ github.event.inputs.run_on_all }}
         run: |
-          git checkout -b po4a-staged
           RUN_ON_ALL=${RUN_ON_ALL:="false"}
           ALL_CHANGED_FILES_ARRAY=()
           CHANGED_MD_FILES_ARRAY=()
