@@ -5,12 +5,11 @@ terms: ["account", "accounts", "wallet", "wallets", "Konto", "Konten", "Kontos",
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Grundlagen
+### The Basicssssss
 
-Für jene, die mit Moneros Vorgängern vertraut sind, wird zur Beschreibung
-der Begriff *Wallet* geläufiger sein. Bei Monero nennen wir dies ein Konto,
-welches ein privates, von einem Monero-Nutzer geführtes und in dessen Besitz
-befindliches Konto ist.
+Those familiar with Monero's predecessors will be more familiar with the
+term *wallet* to describe this. In Monero we call this an account, and it's
+a private account owned and operated by a Monero user.
 
 Dein Konto enthält die @Transaktionen aller Monero, welche du gesendet und
 empfangen hast. Dein Kontoguthaben ist die Summe aller Monero, die du

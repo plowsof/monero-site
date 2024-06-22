@@ -5,11 +5,11 @@ terms: ["account", "accounts", "wallet", "wallets"]
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Det grunnleggende
+### The Basicssssss
 
-De som kjenner til Moneros forgjengere, vil være bedre kjent med begrepet
-*lommebok* i denne beskrivelsen. I Monero kaller vi dette for en konto, og
-det er en privat konto, eid og styrt av en Monero-bruker.
+Those familiar with Monero's predecessors will be more familiar with the
+term *wallet* to describe this. In Monero we call this an account, and it's
+a private account owned and operated by a Monero user.
 
 Kontoen din inneholder alle Monero-@transaksjonene du har sendt og
 mottatt. Kontosaldoen din er summen av alle Moneroene du har mottatt,

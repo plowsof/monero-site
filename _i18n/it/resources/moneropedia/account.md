@@ -5,13 +5,11 @@ terms: ["account", "accounts", "wallet", "wallets", "conto", "conti", "portafogl
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Le Basi
+### The Basicssssss
 
-Coloro che hanno familiarità con i predecessori di Monero, e con le
-criptovalute in generale, conosceranno probabilmente il termine
-*portafoglio*. In Monero il portafoglio viene descritto più propriamente col
-termine account, ed esso costituisce un conto privato di proprietà di e
-gestito da un utente Monero.
+Those familiar with Monero's predecessors will be more familiar with the
+term *wallet* to describe this. In Monero we call this an account, and it's
+a private account owned and operated by a Monero user.
 
 Un account di tua proprietà contiene tutte le @transazioni Monero che hai
 inviato e ricevuto. Il saldo del tuo account è pari alla somma di tutti i
