@@ -166,13 +166,13 @@ jobs:
               echo "skip=true" >> "$GITHUB_OUTPUT"
           fi
   
-      - name: Update existing PR
-        if: 'steps.check.outputs.skip'
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: po4a-staged
-          force: true
+     # - name: Update existing PR
+     #   if: 'steps.check.outputs.skip'
+     #   uses: ad-m/github-push-action@master
+     #   with:
+     #     github_token: ${{ secrets.GITHUB_TOKEN }}
+     #     branch: po4a-staged
+     #    force: true
           
       - name: Create pull request
         if: '!steps.check.outputs.skip'
