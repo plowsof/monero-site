@@ -62,13 +62,15 @@ jobs:
           ref: ${{ github.ref }}
           fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
 
-      - name: Determine branch to checkout
-        id: determine_branch
+      - name: Ensure po4a-staged branch exists and sync with master
+        id: sync_branch
         run: |
+          git fetch origin
           if git show-ref --verify --quiet refs/heads/po4a-staged; then
-            echo "::set-output name=branch::po4a-staged"
+            git checkout po4a-staged
+            git reset --hard origin/master
           else
-            echo "::set-output name=branch::master"  # Change 'master' to 'main' if your default branch is 'main'
+            git checkout -b po4a-staged origin/master
           fi
 
       - name: Get changed files
