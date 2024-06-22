@@ -71,7 +71,7 @@ jobs:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
           RUN_ON_ALL: ${{ github.event.inputs.run_on_all }}
         run: |
-          git checkout po4a-staged
+          git checkout -b po4a-staged
           RUN_ON_ALL=${RUN_ON_ALL:="false"}
           ALL_CHANGED_FILES_ARRAY=()
           CHANGED_MD_FILES_ARRAY=()
@@ -152,9 +152,32 @@ jobs:
             git commit -m "${COMMIT_MESSAGE}" || echo "No changes to commit for ${directory}/${base_filename}"
           done
 
-      - name: Create Pull Request
+      - name: Check if PR exists
+        id: check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          prs=$(gh pr list \
+              --repo "$GITHUB_REPOSITORY" \
+              --head 'po4a-staged' \
+              --base 'master' \
+              --json title \
+              --jq 'length')
+          if ((prs > 0)); then
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+      
+      - name: Create pull request
+        if: '!steps.check.outputs.skip'
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: po4a-staged
         continue-on-error: true
+
+      - name: Update existing PR
+        if: 'steps.check.outputs.skip'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: po4a-staged
