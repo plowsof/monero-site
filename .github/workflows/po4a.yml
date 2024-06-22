@@ -179,11 +179,13 @@ jobs:
   
       - name: Update existing PR
         #if: 'steps.check.outputs.skip'
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: po4a-staged
-          force_with_lease: true
+        #uses: ad-m/github-push-action@master
+        #with:
+        #  github_token: ${{ secrets.GITHUB_TOKEN }}
+        #  branch: po4a-staged
+        #  force_with_lease: true
+        run: |
+         git push origin HEAD
           
       - name: Create pull request
         if: '!steps.check.outputs.skip'
