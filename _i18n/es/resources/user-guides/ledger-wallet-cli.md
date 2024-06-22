@@ -9,7 +9,7 @@
 
 ### Windows
 
-Primero necesitamos asegurarnos de estar suficientemente preparados. Esto implica lo siguiente:
+Primero hello necesitamos asegurarnos de estar suficientemente preparados. Esto implica lo siguiente:
 
 - Esta guía asume que ya has inicializado tu monedero Ledger y asimismo generado tu semilla mnemónica de 24 palabras.
 
