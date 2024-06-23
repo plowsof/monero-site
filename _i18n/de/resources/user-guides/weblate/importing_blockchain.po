@@ -40,7 +40,7 @@ msgstr "Die in dieser Anleitung beschriebene Option ist vorwiegend zur Entwicklu
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:10
 #, no-wrap
 msgid "**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet, including the official site. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.\n"
-msgstr "Verwende **niemals** die gefährliche, ungeprüfte Importoption; diese ist ausschließlich für Experten gedacht. Insbesondere solltest du sie nicht bei einer aus dem Internet, einschließlich von der offiziellen Webseite heruntergeladen Blockchain verwenden. Nur wenn du a) eine Datei importierst, die du eigenhändig lokal exportiert hast *und* b) du absolut sicher bist, dass die Datei vor dem Exportieren gründlich und vollständig überprüft wurde, ist ihr Gebrauch wirklich sicher."
+msgstr "Verwende **niemals** die gefährliche, ungeprüfte Importoption; diese ist ausschließlich für Experten gedacht. Insbesondere solltest du sie nicht bei einer aus dem Internet, einschließlich von der offiziellen Webseite heruntergeladen Blockchain verwenden. Nur wenn du a) eine Datei importierst, die du eigenhändig lokal exportiert hast *und* b) du absolut sicher bist, dass die Datei vor dem Exportieren gründlich und vollständig überprüft wurde, ist ihr Gebrauch wirklich sicher.\n"
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:11
