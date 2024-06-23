@@ -19,9 +19,10 @@ Qubes [qrexec](https://www.qubes-os.org/doc/qrexec3/).
 подключения к демону. Таким образом, не требуется какое-либо сетевое
 соединение на кошельке, вы передаете весь трафик через сеть Tor.
 
-## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):
+## 1. [Создание виртуальной машины Whonix AppVM](https://www.whonix.org/wiki/Qubes/Install):
 
-+ Using a Whonix workstation template, create two workstations as follows:
++ Используя шаблон рабочей станции Whonix, создаем две рабочие станции
+  следующим образом:
 
   - Первая рабочая станция будет использоваться для вашего кошелька, она
     будет называться `monero-wallet-ws`. `NetVM` оставляем не установленным,
@@ -35,9 +36,9 @@ Qubes [qrexec](https://www.qubes-os.org/doc/qrexec3/).
     }}/downloads/#blockchain). Keep in mind that the blockchain will take up
     more space with time.
 
-## 2. In the AppVM `monerod-ws`:
+## 2. В виртуальной машине AppVM `monerod-ws` делаем следующее:
 
-+ Create a `systemd` file.
++ Создаем файл `systemd`.
 
 ```
 user@host:~$ sudo nano /home/user/monerod.service
@@ -68,7 +69,7 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-+ Make `monerod` daemon run on startup by editing the file
++ Добавляем демон `monerod` в автозагрузку, отредактировав файл
   `/rw/config/rc.local`.
 
 ```
@@ -78,8 +79,7 @@ user@host:~$ sudo nano /rw/config/rc.local
 Добавляем эти строки в конец текста:
 
 ```
-cp /home/user/monerod.service /lib/systemd/system/
-systemctl start monerod.service
+cp /home/user/monerod.service /lib/systemd/system/ systemctl start monerod.service
 ```
 
 Создаем исполняемый файл.
@@ -88,11 +88,11 @@ systemctl start monerod.service
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Create rpc action file.
++ Создаем файл действий для rpc.
 
 ```
 user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
-user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
+ user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
 Добавляем строку:
@@ -101,11 +101,11 @@ user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 socat STDIO TCP:localhost:18081
 ```
 
-+ Shutdown `monerod-ws`.
++ Выключаем виртуальную машину `monerod-ws`.
 
-## 3. In the AppVM `monero-wallet-ws`:
+## 3. В виртуальной машине AppVM `monero-wallet-ws` делаем следующее:
 
-+ Edit the file `/rw/config/rc.local`.
++ Редактируем файл `/rw/config/rc.local`.
 
 ```
 user@host:~$ sudo nano /rw/config/rc.local
@@ -123,11 +123,11 @@ socat TCP-LISTEN:18081,fork,bind=127.0.0.1 EXEC:"qrexec-client-vm monerod-ws use
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Shutdown `monero-wallet-ws`.
++ Выключаем виртуальную машину `monero-wallet-ws`.
 
-## 4. In `dom0`:
+## 4. В `dom0` делаем следующее:
 
-+ Create the file `/etc/qubes-rpc/policy/user.monerod`:
++ Создаем файл `/etc/qubes-rpc/policy/user.monerod`:
 
 ```
 [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod
