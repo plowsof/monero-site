@@ -27,24 +27,22 @@ msgstr "Av og til vil midlene dine bli «sittende fast» – du vil ha noen lås
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:6
-#, fuzzy
 #| msgid "- Load your wallet in monero-wallet-cli."
 msgid "Load your wallet in monero-wallet-cli."
-msgstr "- Last inn lommeboken din i monero-wallet-cli."
+msgstr "Last inn lommeboken din i monero-wallet-cli."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:8
-#, fuzzy
 #| msgid "- Type"
 msgid "Type"
-msgstr "- Tast inn"
+msgstr "Tast inn"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:10
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> seed"
 msgid "> seed\n"
-msgstr "> seed"
+msgstr "> seed\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:12
@@ -53,34 +51,35 @@ msgstr "i ledeteksten. Skriv ned frøet ditt på 25 ord dersom du ikke allerede 
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:14
-#, fuzzy
 #| msgid "- Close monero-wallet-cli by typing"
 msgid "Close monero-wallet-cli by typing"
-msgstr "- Lukk monero-wallet-cli ved å taste inn"
+msgstr "Lukk monero-wallet-cli ved å taste inn"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:16
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> exit"
 msgid "> exit\n"
-msgstr "> exit"
+msgstr "> exit\n"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:18
-#, fuzzy
 #| msgid "- Backup all of your wallet related files. These include:"
 msgid "Backup all of your wallet related files. These include:"
-msgstr "- Sikkerhetskopier alle de lommebokrelaterte filene dine. Disse inkluderer:"
+msgstr "Sikkerhetskopier alle de lommebokrelaterte filene dine. Disse inkluderer:"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:22
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> yourwalletname.bin > yourwalletname.bin.keys > yourwalletname.bin.address.txt"
 msgid ""
 "> yourwalletname.bin\n"
 "> yourwalletname.bin.keys\n"
 "> yourwalletname.bin.address.txt\n"
-msgstr "> dinlommebok.bin > dinlommebok.bin.keys > dinlommebok.bin.address.txt"
+msgstr ""
+"> yourwalletname.bin\n"
+"> yourwalletname.bin.keys\n"
+"> yourwalletname.bin.address.txt\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:24
@@ -94,21 +93,18 @@ msgstr "Av og til, når du oppretter lommeboken din, må du gi den et navn uten 
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:28
-#, fuzzy
 #| msgid "- Delete yourwallet.bin"
 msgid "Delete yourwallet.bin"
-msgstr "- Slett dinlommebok.bin"
+msgstr "Slett dinlommebok.bin"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:30
-#, fuzzy
 #| msgid "- Load monero-wallet-cli, type in the name of the wallet you just deleted"
 msgid "Load monero-wallet-cli, type in the name of the wallet you just deleted"
-msgstr "- Last inn monero-wallet-cli, og tast inn navnet på lommeboken du nettopp slettet."
+msgstr "Last inn monero-wallet-cli, og tast inn navnet på lommeboken du nettopp slettet."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:32
-#, fuzzy
 #| msgid "- Enter password. The wallet will now refresh and hopefully your locked funds will now become unlocked."
 msgid "Enter password. The wallet will now refresh and hopefully your locked funds will now become unlocked."
-msgstr "- Skriv inn passordet. Lommeboken vil nå oppdateres, og forhåpentligvis vil de låste midlene dine nå bli ulåst."
+msgstr "Skriv inn passordet. Lommeboken vil nå oppdateres, og forhåpentligvis vil de låste midlene dine nå bli ulåst."
