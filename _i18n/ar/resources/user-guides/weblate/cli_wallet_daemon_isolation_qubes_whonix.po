@@ -129,7 +129,7 @@ msgid ""
 "systemctl start monerod.service\n"
 msgstr ""
 "cp /home/user/monerod.service /lib/systemd/system/\n"
-"systemctl start monerod.service \n"
+"systemctl start monerod.service\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:64
