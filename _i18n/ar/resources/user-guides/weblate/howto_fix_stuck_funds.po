@@ -27,24 +27,22 @@ msgstr "في بعض الأحيان سوف تتعلق أموالك - سيكون �
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:6
-#, fuzzy
 #| msgid "- Load your wallet in monero-wallet-cli."
 msgid "Load your wallet in monero-wallet-cli."
-msgstr "- شغل محفظتك في واجهه سطر الأوامر (monero-wallet-cli)"
+msgstr "شغل محفظتك في واجهه سطر الأوامر (monero-wallet-cli)"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:8
-#, fuzzy
 #| msgid "- Type"
 msgid "Type"
-msgstr "- إكتب"
+msgstr "إكتب"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:10
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> seed"
 msgid "> seed\n"
-msgstr "> seed"
+msgstr "> seed\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:12
@@ -53,34 +51,32 @@ msgstr "في سطر الأوامر قم بكتابه ال25 كلمه المخص�
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:14
-#, fuzzy
 #| msgid "- Close monero-wallet-cli by typing"
 msgid "Close monero-wallet-cli by typing"
-msgstr "- إغلق واجهه سطر الأوامر بكتابه"
+msgstr "إغلق واجهه سطر الأوامر بكتابه"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:16
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> exit"
 msgid "> exit\n"
-msgstr "> exit"
+msgstr "> exit\n"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:18
-#, fuzzy
 #| msgid "- Backup all of your wallet related files. These include:"
 msgid "Backup all of your wallet related files. These include:"
-msgstr "- قم بعمل نسخة احتياطية من جميع ملفاتك المتعلقة بالمحفظة. وتشمل :"
+msgstr "قم بعمل نسخة احتياطية من جميع ملفاتك المتعلقة بالمحفظة. وتشمل :"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:22
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> yourwalletname.bin > yourwalletname.bin.keys > yourwalletname.bin.address.txt"
 msgid ""
 "> yourwalletname.bin\n"
 "> yourwalletname.bin.keys\n"
 "> yourwalletname.bin.address.txt\n"
-msgstr "> yourwalletname.bin > yourwalletname.bin.keys > yourwalletname.bin.address.txt"
+msgstr "> yourwalletname.bin > yourwalletname.bin.keys > yourwalletname.bin.address.txt\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:24
@@ -94,21 +90,18 @@ msgstr "في بعض الأحيان عند إنشائك للمحفظه قد تك�
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:28
-#, fuzzy
 #| msgid "- Delete yourwallet.bin"
 msgid "Delete yourwallet.bin"
-msgstr "- إحذف yourwallet.bin"
+msgstr "إحذف yourwallet.bin"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:30
-#, fuzzy
 #| msgid "- Load monero-wallet-cli, type in the name of the wallet you just deleted"
 msgid "Load monero-wallet-cli, type in the name of the wallet you just deleted"
-msgstr "- شَغِل واجهه سطر الأوامر الخاصه بمونيرو, وإكتب إسم المحفظه الذي حذفته للتو"
+msgstr "شَغِل واجهه سطر الأوامر الخاصه بمونيرو, وإكتب إسم المحفظه الذي حذفته للتو"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:32
-#, fuzzy
 #| msgid "- Enter password. The wallet will now refresh and hopefully your locked funds will now become unlocked."
 msgid "Enter password. The wallet will now refresh and hopefully your locked funds will now become unlocked."
-msgstr "- أدخل كلمه السر . ستقوم المحفظه الأن بالمزامنه ونأمل أن تكون الأموال متاحه لك الأن."
+msgstr "أدخل كلمه السر . ستقوم المحفظه الأن بالمزامنه ونأمل أن تكون الأموال متاحه لك الأن."
