@@ -118,6 +118,7 @@ msgstr "user@host:~$ sudo nano /rw/config/rc.local\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:57
+#, markdown-text
 msgid "Add these lines to the bottom:"
 msgstr "Agrega estas líneas al final:"
 
