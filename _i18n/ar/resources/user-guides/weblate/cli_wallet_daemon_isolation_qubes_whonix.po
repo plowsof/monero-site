@@ -128,7 +128,7 @@ msgid ""
 "cp /home/user/monerod.service /lib/systemd/system/\n"
 "systemctl start monerod.service\n"
 msgstr ""
-"cp /home/user/monerod.service /lib/systemd/system/\n" 
+"cp /home/user/monerod.service /lib/systemd/system/\n"
 "systemctl start monerod.service \n"
 
 #. type: Plain text
@@ -156,7 +156,7 @@ msgid ""
 "user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc\n"
 "user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod\n"
 msgstr ""
-"user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc\n" 
+"user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc\n"
 "user@host:~$ sudo gedit /rw/usrlocal/etc/qubes-rpc/user.monerod\n"
 
 #. type: Plain text
@@ -210,14 +210,12 @@ msgstr "4. في `dom0`:"
 
 #. type: Bullet: '+ '
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:109
-#| msgid "+ Create the file `/etc/qubes-rpc/policy/user.monerod`:"
 msgid "Create the file `/etc/qubes-rpc/policy/user.monerod`:"
 msgstr "إنشيء ملف `/etc/qubes-rpc/policy/user.monerod`:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:110
 #, no-wrap
-#| msgid "``` [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod ```"
 msgid "[user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod\n"
 msgstr "[user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod\n"
 
@@ -229,7 +227,6 @@ msgstr "قم بإضافه هذا السطر:"
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:116
 #, no-wrap
-#| msgid "``` monero-wallet-ws monerod-ws allow ```"
 msgid "monero-wallet-ws monerod-ws allow\n"
 msgstr "monero-wallet-ws monerod-ws allow\n"
 

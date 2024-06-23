@@ -15,9 +15,9 @@
 الإنترنت للإتصال بالخادم. بهذه الطريقه لا تحتاج أي إتصال شبكي بالمحفظه, فإنك
 تُحافظ علي موارد شبكة تور(Tor) ، ووقت الإستجابة أقل.
 
-## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):
+## 1. [إنشاء مكنه إفتراضي للتطبيقات علي وونكس (Whonix AppVMs)](https://www.whonix.org/wiki/Qubes/Install):
 
-+ Using a Whonix workstation template, create two workstations as follows:
++ بإستخدام قالب مكن وونكس الإفتراضي , إنشيء مكنتين كما التالي :
 
   - أول مكنه سيتم إستخدامها للمحفظه, سيُشار إليها بـ`monero-wallet-ws`. قم
     بإختيار`none` في `NetVM`.
@@ -29,12 +29,12 @@
     }}/downloads/#blockchain). Keep in mind that the blockchain will take up
     more space with time.
 
-## 2. In the AppVM `monerod-ws`:
+## 2. في مكنه تطبيق `monerod-ws`:
 
-+ Create a `systemd` file.
++ إنشاء ملف `systemd`.
 
 ```
-user@host:~$ sudo nano /home/user/monerod.service
+user@host:~$ sudo gedit /home/user/monerod.service
 ```
 
 إنسخ المُحتوي التالي :
@@ -62,18 +62,18 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-+ Make `monerod` daemon run on startup by editing the file
++ إجعل `monerod` الخادم يبدأ فور التشغيل تلقائياً بتعديل ملف
   `/rw/config/rc.local`.
 
 ```
-user@host:~$ sudo nano /rw/config/rc.local
+user@host:~$ sudo gedit /rw/config/rc.local
 ```
 
 ضِف هذه السطور بآخر الملف:
 
 ```
 cp /home/user/monerod.service /lib/systemd/system/
-systemctl start monerod.service
+systemctl start monerod.service 
 ```
 
 إجعل الملف قابل للتشغيل.
@@ -82,11 +82,11 @@ systemctl start monerod.service
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Create rpc action file.
++ إنشاء ملف (RPC).
 
 ```
 user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
-user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
+user@host:~$ sudo gedit /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
 أضف هذا السطر:
@@ -95,14 +95,14 @@ user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 socat STDIO TCP:localhost:18081
 ```
 
-+ Shutdown `monerod-ws`.
++ إِغلِق `monerod-ws`.
 
-## 3. In the AppVM `monero-wallet-ws`:
+## 3. في مكنه تطبيق `monero-wallet-ws`:
 
-+ Edit the file `/rw/config/rc.local`.
++ عَدِل ملف `/rw/config/rc.local`.
 
 ```
-user@host:~$ sudo nano /rw/config/rc.local
+user@host:~$ sudo gedit /rw/config/rc.local
 ```
 
 أضف هذا السطر بالآخر:
@@ -117,11 +117,11 @@ socat TCP-LISTEN:18081,fork,bind=127.0.0.1 EXEC:"qrexec-client-vm monerod-ws use
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Shutdown `monero-wallet-ws`.
++ إِغلِق `monero-wallet-ws`.
 
-## 4. In `dom0`:
+## 4. في `dom0`:
 
-+ Create the file `/etc/qubes-rpc/policy/user.monerod`:
++ إنشيء ملف `/etc/qubes-rpc/policy/user.monerod`:
 
 ```
 [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod
