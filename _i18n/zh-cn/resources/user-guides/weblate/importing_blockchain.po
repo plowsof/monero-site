@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 08:33+0000\n"
+"POT-Creation-Date: 2024-06-23 22:38+0000\n"
 "PO-Revision-Date: 2022-12-13 16:36+0000\n"
 "Last-Translator: Winslow Hee <i@winsloweric.cn>\n"
 "Language-Team: Chinese (Simplified) <https://translate.getmonero.org/projects/getmonero-user-guides/importing_blockchain/zh_Hans/>\n"
@@ -173,5 +173,5 @@ msgstr "第一步"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:59
-msgid "After the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted."
+msgid "After the the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted."
 msgstr ""

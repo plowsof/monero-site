@@ -72,5 +72,5 @@ C:\Users\KeeJef\Downloads\blockchain.raw`
 
 ### Trinn 7
 
-Etter blokkjeden er ferdig med å synkronisere, kan du åpne Monero-lommeboken
-din som normalt. Din nedlastede blockchain.raw kan slettes.
+After the the blockchain has finished syncing up you can open your Monero
+wallet normally. Your downloaded blockchain.raw can be deleted.
