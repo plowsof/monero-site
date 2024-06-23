@@ -127,7 +127,7 @@ msgstr "Legg til disse linjene nederst:"
 msgid ""
 "cp /home/user/monerod.service /lib/systemd/system/\n"
 "systemctl start monerod.service\n"
-msgstr "cp /home/user/monerod.service /lib/systemd/system/ systemctl start monerod.service\n"
+msgstr "cp /home/user/monerod.service /lib/systemd/system/\nsystemctl start monerod.service\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:64
@@ -155,7 +155,7 @@ msgid ""
 "user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod\n"
 msgstr ""
 "user@host:~$ sudo mkdir /rw/usrlocal/etc/qubesp-rpc\n"
-" user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod\n"
+"user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:77
