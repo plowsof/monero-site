@@ -18,7 +18,9 @@
 
 - قم بعمل نسخة احتياطية من جميع ملفاتك المتعلقة بالمحفظة. وتشمل :
 
-> yourwalletname.bin > yourwalletname.bin.keys > yourwalletname.bin.address.txt
+> yourwalletname.bin
+> yourwalletname.bin.keys
+> yourwalletname.bin.address.txt
 
 يمكن القيام بذلك عن طريق نسخ الملفات إلى مجلد جديد.
 
