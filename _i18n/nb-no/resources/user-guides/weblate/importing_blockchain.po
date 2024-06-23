@@ -23,7 +23,6 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:3
 #, no-wrap
-#| msgid "### Purpose and Warning"
 msgid "Purpose and Warning"
 msgstr "Hensikt og advarsel"
 
@@ -46,7 +45,6 @@ msgstr "**Aldri** bruk uverifiserte importeringsvalg da dette kun er for ekspert
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:11
 #, no-wrap
-#| msgid "### Step 1"
 msgid "Step 1"
 msgstr "Trinn 1"
 
@@ -58,7 +56,6 @@ msgstr "Last ned det gjeldende oppstartsprogrammet fra https://downloads.getmone
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:15
 #, no-wrap
-#| msgid "### Step 2"
 msgid "Step 2"
 msgstr "Trinn 2"
 
@@ -80,7 +77,6 @@ msgstr "Stien din kan være en annen, avhengig av hvor du bestemte deg for å in
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:23
 #, no-wrap
-#| msgid "### Step 3"
 msgid "Step 3"
 msgstr "Trinn 3"
 
@@ -102,7 +98,6 @@ msgstr "Din er kanskje en annen, avhengig av hvor du valgte å lagre blokkjeden.
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:31
 #, no-wrap
-#| msgid "### Step 4"
 msgid "Step 4"
 msgstr "Trinn 4"
 
@@ -114,7 +109,6 @@ msgstr "Åpne kommandolinjevinduet. Du kan gjøre dette ved å holde inne Window
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:35
 #, no-wrap
-#| msgid "### Step 5"
 msgid "Step 5"
 msgstr "Trinn 5"
 
@@ -146,7 +140,6 @@ msgstr "Hvis Monero-programvaren din ligger på en annen disk, kan du bruke `Dri
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:47
 #, no-wrap
-#| msgid "### Step 6"
 msgid "Step 6"
 msgstr "Trinn 6"
 
@@ -173,7 +166,6 @@ msgstr "`monero-blockchain-import --input-file C:\\Users\\KeeJef\\Downloads\\blo
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:57
 #, no-wrap
-#| msgid "### Step 7"
 msgid "Step 7"
 msgstr "Trinn 7"
 

@@ -25,7 +25,6 @@ msgstr "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:3
 #, no-wrap
-#| msgid "### Purpose and Warning"
 msgid "Purpose and Warning"
 msgstr "Цель и предупреждение"
 
@@ -48,7 +47,6 @@ msgstr "**Никогда** не используйте опцией импорт
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:11
 #, no-wrap
-#| msgid "### Step 1"
 msgid "Step 1"
 msgstr "Шаг 1"
 
@@ -60,7 +58,6 @@ msgstr "Скачайте актуальный Bootstrap (фреймворк) с 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:15
 #, no-wrap
-#| msgid "### Step 2"
 msgid "Step 2"
 msgstr "Шаг 2"
 
@@ -82,7 +79,6 @@ msgstr "Путь может быть и другим, в зависимости 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:23
 #, no-wrap
-#| msgid "### Step 3"
 msgid "Step 3"
 msgstr "Шаг 3"
 
@@ -104,7 +100,6 @@ msgstr "Вы можете выбрать и другую директорию в
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:31
 #, no-wrap
-#| msgid "### Step 4"
 msgid "Step 4"
 msgstr "Шаг 4"
 
@@ -116,7 +111,6 @@ msgstr "Откройте окно командной строки. Это мож
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:35
 #, no-wrap
-#| msgid "### Step 5"
 msgid "Step 5"
 msgstr "Шаг 5"
 
@@ -148,7 +142,6 @@ msgstr "Если ваше программное обеспечение Monero �
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:47
 #, no-wrap
-#| msgid "### Step 6"
 msgid "Step 6"
 msgstr "Шаг 6"
 
@@ -175,7 +168,6 @@ msgstr "`monero-blockchain-import --input-file C:\\Users\\KeeJef\\Downloads\\blo
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:57
 #, no-wrap
-#| msgid "### Step 7"
 msgid "Step 7"
 msgstr "Шаг 7"
 
