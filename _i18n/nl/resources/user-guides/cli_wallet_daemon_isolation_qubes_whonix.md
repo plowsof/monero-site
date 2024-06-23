@@ -78,7 +78,8 @@ user@host:~$ sudo gedit /rw/config/rc.local
 Voeg onderaan deze regels toe:
 
 ```
-cp /home/user/monerod.service /lib/systemd/system/ systemctl start monerod.service
+cp /home/user/monerod.service /lib/systemd/system/
+systemctl start monerod.service
 ```
 
 Maak het bestand uitvoerbaar.

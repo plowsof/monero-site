@@ -78,7 +78,8 @@ user@host:~$ sudo nano /rw/config/rc.local
 Legg til disse linjene nederst:
 
 ```
-cp /home/user/monerod.service /lib/systemd/system/ systemctl start monerod.service
+cp /home/user/monerod.service /lib/systemd/system/
+systemctl start monerod.service
 ```
 
 Gjør filen kjørbar.
@@ -91,7 +92,7 @@ user@host:~$ sudo chmod +x /rw/config/rc.local
 
 ```
 user@host:~$ sudo mkdir /rw/usrlocal/etc/qubesp-rpc
- user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
+user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
 Legg til denne linjen:
