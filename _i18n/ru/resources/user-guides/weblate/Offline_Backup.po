@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 08:33+0000\n"
+"POT-Creation-Date: 2024-06-23 12:30+0000\n"
 "PO-Revision-Date: 2021-12-13 15:33+0000\n"
 "Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
 "Language-Team: Russian <https://translate.getmonero.org/projects/getmonero-user-guides/offline_backup/ru/>\n"
@@ -129,7 +129,7 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:29
 #, fuzzy, no-wrap
 #| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
-msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever"
+msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
 msgstr "- **КРИТИЧЕСКИ ВАЖНЫЙ ЭТАП**: запишите (на бумаге) свою @мнемоническую-фразу из 25 слов. **ВНИМАНИЕ!**: Если вы не запишите эту информацию, ваши средства могут оказаться утрачены навсегда"
 
 #
