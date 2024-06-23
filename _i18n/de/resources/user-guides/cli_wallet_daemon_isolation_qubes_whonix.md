@@ -18,9 +18,10 @@ dennoch im Netzbetrieb sind, um zum Hintergrunddienst zu verbinden. Du
 benötigst auf diese Weise keine Netzwerkverbindung für dein Wallet, du
 schützt die Ressourcen des Tor-Netzwerks und es gibt weniger Verzögerung.
 
-## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):
+## 1. [Erstellen von Whonix-AppVMs](https://www.whonix.org/wiki/Qubes/Install):
 
-+ Using a Whonix workstation template, create two workstations as follows:
++ Erstelle unter Verwendung einer Whonix-Workstation-Vorlage zwei
+  Workstations auf die folgende Weise:
 
   - Die erste Workstation wird für dein Wallet genutzt und als
     `monero-wallet-ws` bezeichnet. `NetVM` wird hier auf `none` festgelegt.
@@ -34,9 +35,9 @@ schützt die Ressourcen des Tor-Netzwerks und es gibt weniger Verzögerung.
     }}/downloads/#blockchain) überprüfst. Behalte im Hinterkopf, dass die
     Blockchain mit der Zeit mehr Platz einnehmen wird.
 
-## 2. In the AppVM `monerod-ws`:
+## 2. In der AppVM `monerod-ws`:
 
-+ Create a `systemd` file.
++ Erstelle eine `systemd`-Datei.
 
 ```
 user@host:~$ sudo nano /home/user/monerod.service
@@ -67,8 +68,8 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-+ Make `monerod` daemon run on startup by editing the file
-  `/rw/config/rc.local`.
++ Stelle durch Abändern der Datei `/rw/config/rc.local` ein, dass der
+  `monerod`-Hintergrunddienst bei Systemstart ausgeführt wird.
 
 ```
 user@host:~$ sudo nano /rw/config/rc.local
@@ -77,8 +78,7 @@ user@host:~$ sudo nano /rw/config/rc.local
 Füge die folgenden Zeilen am unteren Ende hinzu:
 
 ```
-cp /home/user/monerod.service /lib/systemd/system/
-systemctl start monerod.service
+cp /home/user/monerod.service /lib/systemd/system/ systemctl start monerod.service
 ```
 
 Mache die Datei lauffähig.
@@ -87,11 +87,11 @@ Mache die Datei lauffähig.
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Create rpc action file.
++ Erstelle eine RPC-Action-File.
 
 ```
 user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
-user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
+ user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
 Füge folgende Zeile hinzu:
@@ -100,11 +100,11 @@ Füge folgende Zeile hinzu:
 socat STDIO TCP:localhost:18081
 ```
 
-+ Shutdown `monerod-ws`.
++ Fahre `monerod-ws` herunter.
 
-## 3. In the AppVM `monero-wallet-ws`:
+## 3. In der AppVM `monero-wallet-ws`:
 
-+ Edit the file `/rw/config/rc.local`.
++ Bearbeite die Datei `/rw/config/rc.local`.
 
 ```
 user@host:~$ sudo nano /rw/config/rc.local
@@ -122,11 +122,11 @@ Mache die Datei lauffähig.
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Shutdown `monero-wallet-ws`.
++ Fahre `monero-wallet-ws` herunter.
 
 ## 4. In `dom0`:
 
-+ Create the file `/etc/qubes-rpc/policy/user.monerod`:
++ Erstelle die Datei `/etc/qubes-rpc/policy/user.monerod`:
 
 ```
 [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod
