@@ -105,16 +105,13 @@ msgstr "**PASO CRÍTICO**: Escribe (en papel) tu semilla mnemónica de 25 palabr
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:29
-#, fuzzy, no-wrap
-#| msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever"
+#, no-wrap
 msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
-msgstr "**ADVERTENCIA**: Si olvidas escribir esta información tus fondos podrán perderse para siempre"
+msgstr "**ADVERTENCIA**: Si olvidas escribir esta información tus fondos podrán perderse para siempre\n"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:31
-#, fuzzy
-#| msgid "Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
 msgid "Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
 msgstr "Escribe (en tu teléfono, papel, otra computadora, o donde tú quieras) tu dirección y llave de visualización"
 
