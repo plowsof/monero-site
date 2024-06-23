@@ -23,7 +23,6 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:3
 #, no-wrap
-#| msgid "### Purpose and Warning"
 msgid "Purpose and Warning"
 msgstr "Gegenstand und Warnung"
 
@@ -46,7 +45,6 @@ msgstr "Verwende **niemals** die gefährliche, ungeprüfte Importoption; diese i
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:11
 #, no-wrap
-#| msgid "### Step 1"
 msgid "Step 1"
 msgstr "Schritt 1"
 
@@ -58,7 +56,6 @@ msgstr "Lade die aktuelle Bootstrap von https://downloads.getmonero.org/blockcha
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:15
 #, no-wrap
-#| msgid "### Step 2"
 msgid "Step 2"
 msgstr "Schritt 2"
 
@@ -80,7 +77,6 @@ msgstr "Je nach dem, welche Version der Software du heruntergeladen und wo du di
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:23
 #, no-wrap
-#| msgid "### Step 3"
 msgid "Step 3"
 msgstr "Schritt 3"
 
@@ -102,7 +98,6 @@ msgstr "Deiner kann abhängig davon, wo du die Blockchain abgespeichert hast, ei
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:31
 #, no-wrap
-#| msgid "### Step 4"
 msgid "Step 4"
 msgstr "Schritt 4"
 
@@ -114,7 +109,6 @@ msgstr "Öffne die Befehlszeile. Dies tust du, indem du die Windows-Taste + R dr
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:35
 #, no-wrap
-#| msgid "### Step 5"
 msgid "Step 5"
 msgstr "Schritt 5"
 
@@ -146,7 +140,6 @@ msgstr "Sollte deine Monero-Software auf einem anderen Laufwerk liegen, kannst d
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:47
 #, no-wrap
-#| msgid "### Step 6"
 msgid "Step 6"
 msgstr "Schritt 6"
 
@@ -173,7 +166,6 @@ msgstr "`monero-blockchain-import --input-file C:\\Users\\KeeJef\\Downloads\\blo
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:57
 #, no-wrap
-#| msgid "### Step 7"
 msgid "Step 7"
 msgstr "Schritt 7"
 
