@@ -27,20 +27,17 @@ msgstr "Manchmal kann es passieren, dass dein Geld feststeckt - du hast gesperrt
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:6
-#| msgid "- Load your wallet in monero-wallet-cli."
 msgid "Load your wallet in monero-wallet-cli."
 msgstr "Lade dein Wallet in monero-wallet-cli."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:8
-#| msgid "- Type"
 msgid "Type"
 msgstr "Tippe"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:10
 #, no-wrap
-#| msgid "> seed"
 msgid "> seed\n"
 msgstr "> seed\n"
 
@@ -51,27 +48,23 @@ msgstr "in die Befehlszeile ein. Falls noch nicht geschehen, schreibe deinen 25-
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:14
-#| msgid "- Close monero-wallet-cli by typing"
 msgid "Close monero-wallet-cli by typing"
 msgstr "Schließe monero-wallet-cli durch die Eingabe von"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:16
 #, no-wrap
-#| msgid "> exit"
 msgid "> exit\n"
 msgstr "> exit\n"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:18
-#| msgid "- Backup all of your wallet related files. These include:"
 msgid "Backup all of your wallet related files. These include:"
 msgstr "Sichere alle dem Wallet zugehörigen Dateien. Diese beinhalten:"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:22
 #, no-wrap
-#| msgid "> yourwalletname.bin > yourwalletname.bin.keys > yourwalletname.bin.address.txt"
 msgid ""
 "> yourwalletname.bin\n"
 "> yourwalletname.bin.keys\n"
@@ -93,18 +86,15 @@ msgstr "Beim Erstellen deines Wallets könntest du einen Namen ohne das \".bin\"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:28
-#| msgid "- Delete yourwallet.bin"
 msgid "Delete yourwallet.bin"
 msgstr "Lösche yourwallet.bin."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:30
-#| msgid "- Load monero-wallet-cli, type in the name of the wallet you just deleted"
 msgid "Load monero-wallet-cli, type in the name of the wallet you just deleted"
 msgstr "Lade monero-wallet-cli und gib den Namen deines gerade gelöschten Wallets ein."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:32
-#| msgid "- Enter password. The wallet will now refresh and hopefully your locked funds will now become unlocked."
 msgid "Enter password. The wallet will now refresh and hopefully your locked funds will now become unlocked."
 msgstr "Gib das Passwort ein. Das Wallet wird nun aktualisieren, danach wird dein gesperrtes Guthaben hoffentlich freigegeben und verfügbar sein."
