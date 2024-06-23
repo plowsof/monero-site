@@ -73,7 +73,7 @@ user@host:~$ sudo gedit /rw/config/rc.local
 
 ```
 cp /home/user/monerod.service /lib/systemd/system/
-systemctl start monerod.service 
+systemctl start monerod.service
 ```
 
 إجعل الملف قابل للتشغيل.
