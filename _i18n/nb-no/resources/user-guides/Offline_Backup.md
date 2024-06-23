@@ -1,48 +1,49 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Operating Systems:  Various versions of Linux and Windows 7, 8
+## Operativsystemer: Ulike versjoner av Linux og Windows 7 og 8
 
-### Wallet Software:  Simplewallet
+### Lommebokprogramvare: Simplewallet
 
-#### Resource for Creating Bootable Disks:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
+#### Ressurser for å opprette oppstartbare disker:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 
-#### Resource for Monero Binaries:  [Monero Binaries]({{ site.baseurl_root }}/downloads/)
+#### Ressurser for Monero-binærfiler: [Monero Binaries]({{ site.baseurl_root }}/downloads/)
 
-- Take any computer you have lying around, even your normal workstation. You
-  may find it easier to use an older computer that has no wifi or bluetooth
-  if you're particularly paranoid
+- Bruk en hvilken som helst PC som du har liggende, selv din
+  arbeidsstasjon. Du synes kanskje det er lettere å bruke en eldre PC som
+  ikke har WiFi eller Bluetooth dersom du er spesielt paranoid
 
-- Create a Linux or Windows bootable disk, and make sure you have the Monero
-  binaries on the same disk or on a second disk (for Linux make sure you
-  have also downloaded copies of the dependencies you will need,
-  libboost1.55 and miniupnpc for instance)
+- Opprett en oppstartbar disk med Linux eller Windows, og sørg for at du har
+  Monero-binærfilene på den samme disken eller på en sekundær disk (for
+  Linux bør du sørge for at du også har lastet ned kopier av
+  avhengighetsfilene du trenger, f.eks. libboost1.55 og miniupnpc)
 
-- Disconnect the network and/or Internet cables from your computer,
-  physically remove the wifi card or switch the wifi/bluetooth off on a
-  laptop if possible
+- Koble fra nettverket og/eller internettkablene fra PC-en din og fysisk
+  fjern WiFi-kortet eller skru om mulig av Wifi/Bluetooth
 
-- Boot into your bootable OS, install the dependencies if necessary
+- Start opp i ditt oppstartbare operativsystem og installer
+  avhengighetsfiler om nødvendig
 
-- Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows
-  bootable ISOs normally have a Z: drive or something)
+- Kopier Monero-binærfilene til en RAM-disk (/dev/shm i Linux. Oppstartbare
+  ISO-er i Windows har normalt en Z:-stasjon eller noe)
 
-- Don't run the Monero @daemon. Instead, using the command line, use
-  monero-wallet-cli to create a new Monero @account
+- Ikke kjør Monero @daemon. Bruk i stedet kommandolinjen, og bruk
+  monero-wallet-cli for å opprette en ny Monero @konto
 
-- When prompted for a name, give it any name, it doesn't really matter
+- Når du blir bedt om et navn, kan du gi det et. Det har uansett ikke noe å
+  si
 
-- When prompted for a password, type in like 50 - 100 random
-  characters. Don't worry that you don't know the password, just make it
-  LONG
+- Når du blir bedt om å oppgi et passord, tast inn 50–100 tilfeldige
+  tegn. Ikke bekymre deg om at du ikke husker passordet, bare gjøre det
+  LANGT
 
-- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed
-**WARNING**:  If you forget to write down this information your funds may be lost forever
+- **KRITISK TRINN**: Skriv ned (på papir) ditt @mnemoniske frø på 25 ord.
+**ADVARSEL**: Hvis du glemmer å skrive ned denne informasjonen, kan pengene dine gå tapt for alltid
 
-- Write down (on your phone, on paper, on another computer, wherever you
-  want) your address and view key
+- Skriv ned (på telefonen din, på papir, på en annen PC eller hvor enn du
+  vil) adressen og visningsnøkkelen din
 
-- Switch off the computer, remove the battery if there is one, and leave it
-  physically off for a few hours
+- Slå av PC-en, fjern batteriet om det er mulig, og la den være fysisk slått
+  av i noen timer
 
 Kontoen du har opprettet ble opprettet i RAM, og de digitale filene er nå
 utilgjengelige. Hvis en uvedkommende på en eller annen måte klarer å få
@@ -53,4 +54,4 @@ har du ditt @mnemoniske frø på 25 ord, og du kan nå skrive ut flere kopier
 av den, inkludert en kopi som befinner seg på et annet område (f.eks. i en
 bankboks).
 
-Related: [Offline Account Generator]({{ site.baseurl}}/generator)
+Relatert innhold: [Offline kontogenerator]({{ site.baseurl}}/generator)
