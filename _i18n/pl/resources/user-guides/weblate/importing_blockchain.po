@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 08:33+0000\n"
+"POT-Creation-Date: 2024-06-23 22:38+0000\n"
 "PO-Revision-Date: 2022-04-22 14:34+0000\n"
 "Last-Translator: Patix0331 <patix0331@gmail.com>\n"
 "Language-Team: Polish <https://translate.getmonero.org/projects/getmonero-user-guides/importing_blockchain/pl/>\n"
@@ -173,5 +173,7 @@ msgstr "Krok 7"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:59
-msgid "After the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted."
+#, fuzzy
+#| msgid "After the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted."
+msgid "After the the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted."
 msgstr "Po zakończeniu synchronizacji blockchain możesz normalnie otworzyć swój portfel Monero. Pobrany blockchain.raw może zostać usunięty."

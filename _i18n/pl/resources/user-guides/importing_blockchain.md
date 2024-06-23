@@ -72,5 +72,5 @@ C:\Users\KeeJef\Downloads\blockchain.raw`
 
 ### Krok 7
 
-Po zakończeniu synchronizacji blockchain możesz normalnie otworzyć swój
-portfel Monero. Pobrany blockchain.raw może zostać usunięty.
+After the the blockchain has finished syncing up you can open your Monero
+wallet normally. Your downloaded blockchain.raw can be deleted.
