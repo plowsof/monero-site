@@ -1,36 +1,56 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-## Операционные системы: разные версии для Linux и Windows 7, 8
+## Operating Systems:  Various versions of Linux and Windows 7, 8
 
-### Кошелёк: Simplewallet
+### Wallet Software:  Simplewallet
 
-#### Источник для создания загрузочных дисков:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
+#### Resource for Creating Bootable Disks:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 
-#### Источник двоичных файлов Monero:  [Monero Binaries](https://getmonero.org/downloads/)
+#### Resource for Monero Binaries:  [Monero Binaries]({{ site.baseurl_root }}/downloads/)
 
-- Используйте любой доступный компьютер. Подойдет даже ваша обычная рабочая машина. Если вы склонны к паранойе, возможно, вам будет лучше использовать более старый компьютер без Wi-Fi или Bluetooth.
+- Take any computer you have lying around, even your normal workstation. You
+  may find it easier to use an older computer that has no wifi or bluetooth
+  if you're particularly paranoid
 
-- Создайте загрузочный диск Linux или Windows и убедитесь в наличии на нём или на втором диске двоичных файлов Monero (в случае с Linux также следует убедиться в наличии загруженных копий необходимых зависимостей, таких как libboost1.55 или miniupnpc, например).
+- Create a Linux or Windows bootable disk, and make sure you have the Monero
+  binaries on the same disk or on a second disk (for Linux make sure you
+  have also downloaded copies of the dependencies you will need,
+  libboost1.55 and miniupnpc for instance)
 
-- Следует отсоединить от компьютера сетевые и/или интернет-кабели, физически снять сетевую Wi-Fi карту или, если это возможно, отключить Wi-Fi/Bluetooth на ноутбуке.
+- Disconnect the network and/or Internet cables from your computer,
+  physically remove the wifi card or switch the wifi/bluetooth off on a
+  laptop if possible
 
-- Запустить ОС с загрузочного диска и, при необходимости, установить зависимости.
+- Boot into your bootable OS, install the dependencies if necessary
 
-- Скопировать двоичные файлы Monero на RAM диск (для Linux в /dev/shm; Windows обычно создаёт ISO как «диск Z:» или как-то так).
+- Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows
+  bootable ISOs normally have a Z: drive or something)
 
-- Не запускайте демон-программу Monero. Вместо этого при помощи командной строки используйте monero-wallet-cli для создания нового @аккаунта Monero.
+- Don't run the Monero @daemon. Instead, using the command line, use
+  monero-wallet-cli to create a new Monero @account
 
-- При запросе имени — введите любое, оно не имеет значения.
+- When prompted for a name, give it any name, it doesn't really matter
 
-- При запросе пароля введите примерно 50–100 случайных символов. Не следует беспокоиться, что вы не знаете пароль, просто сделайте его ДЛИННЫМ.
+- When prompted for a password, type in like 50 - 100 random
+  characters. Don't worry that you don't know the password, just make it
+  LONG
 
-- **КРИТИЧЕСКИ ВАЖНЫЙ ЭТАП**: запишите (на бумаге) свою @мнемоническую-фразу из 25 слов.  
-**ВНИМАНИЕ!**:  Если вы не запишите эту информацию, ваши средства могут оказаться утрачены навсегда.
+- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed
+**WARNING**:  If you forget to write down this information your funds may be lost forever
 
-- Запишите (в телефон, на бумаге, на другом компьютере, как вам будет угодно) ваш адрес и ключ просмотра.
+- Write down (on your phone, on paper, on another computer, wherever you
+  want) your address and view key
 
-- Выключите компьютер, снимите батарею (если таковая имеется) и оставьте его в таком физически отключённом состоянии на несколько часов.
+- Switch off the computer, remove the battery if there is one, and leave it
+  physically off for a few hours
 
-Ваш аккаунт был создан на RAM диске, и цифровые файлы теперь недоступны. Если какой-то злоумышленник решит каким-либо образом заполучить ваши данные, у него не будет длинного пароля, необходимого, чтобы открыть их. Для получения платежей у вас есть публичный адрес и на всякий случай ключ просмотра. Для получения доступа к аккаунту у вас есть @мнемоническая-фраза из 25 слов, и теперь вы можете записать несколько её копий, включая копию для хранения в каком-нибудь удалённом месте (например, в банковской ячейке).
+Ваш аккаунт был создан на RAM диске, и цифровые файлы теперь
+недоступны. Если какой-то злоумышленник решит каким-либо образом заполучить
+ваши данные, у него не будет длинного пароля, необходимого, чтобы открыть
+их. Для получения платежей у вас есть публичный адрес и на всякий случай
+ключ просмотра. Для получения доступа к аккаунту у вас есть
+@мнемоническая-фраза из 25 слов, и теперь вы можете записать несколько её
+копий, включая копию для хранения в каком-нибудь удалённом месте (например,
+в банковской ячейке).
 
-Связанная тема:  [Offline Account Generator](http://moneroaddress.org/)
+Related: [Offline Account Generator]({{ site.baseurl}}/generator)
