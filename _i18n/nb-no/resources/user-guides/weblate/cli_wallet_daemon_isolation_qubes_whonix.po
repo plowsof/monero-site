@@ -37,17 +37,16 @@ msgstr "Dette er tryggere enn andre tilnærminger som ruter lommebokens rpc over
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:9
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):"
 msgid "1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):"
-msgstr "## 1. [Opprett Whonix AppVM-er](https://www.whonix.org/wiki/Qubes/Install):"
+msgstr "1. [Opprett Whonix AppVM-er](https://www.whonix.org/wiki/Qubes/Install):"
 
 #. type: Bullet: '+ '
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:12
-#, fuzzy
 #| msgid "+ Using a Whonix workstation template, create two workstations as follows:"
 msgid "Using a Whonix workstation template, create two workstations as follows:"
-msgstr "+ Opprett følgende to arbeidsstasjoner ved å bruke en Whonix-arbeidsstasjonmal:"
+msgstr "Opprett følgende to arbeidsstasjoner ved å bruke en Whonix-arbeidsstasjonmal:"
 
 #. type: Bullet: '  - '
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:14
@@ -61,24 +60,23 @@ msgstr "Den andre arbeidsstasjonen vil være for `monerod`-daemonen, og vil refe
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:17
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## 2. In the AppVM `monerod-ws`:"
 msgid "2. In the AppVM `monerod-ws`:"
-msgstr "## 2. I AppVM-en `monerod-ws`:"
+msgstr "2. I AppVM-en `monerod-ws`:"
 
 #. type: Bullet: '+ '
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:20
-#, fuzzy
 #| msgid "+ Create a `systemd` file."
 msgid "Create a `systemd` file."
-msgstr "+ Opprett en `systemd`-fil."
+msgstr "Opprett en `systemd`-fil."
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:21
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` user@host:~$ sudo nano /home/user/monerod.service ```"
 msgid "user@host:~$ sudo nano /home/user/monerod.service\n"
-msgstr "``` user@host:~$ sudo nano /home/user/monerod.service ```"
+msgstr "user@host:~$ sudo nano /home/user/monerod.service\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:26
@@ -87,7 +85,7 @@ msgstr "Lim inn følgende innhold:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:27
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid ""
 #| "ExecStart=/usr/bin/monerod --detach --data-dir=/home/user/.bitmonero \\\n"
 #| "    --no-igd --pidfile=/home/user/.bitmonero/monerod.pid \\\n"
@@ -114,24 +112,20 @@ msgid ""
 "[Install]\n"
 "WantedBy=multi-user.target\n"
 msgstr ""
-"ExecStart=/usr/bin/monerod --detach --data-dir=/home/user/.bitmonero \\\n"
-"    --no-igd --pidfile=/home/user/.bitmonero/monerod.pid \\\n"
-"    --log-file=/home/user/.bitmonero/bitmonero.log --p2p-bind-ip=127.0.0.1\n"
 
 #. type: Bullet: '+ '
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:51
-#, fuzzy
 #| msgid "+ Make `monerod` daemon run on startup by editing the file `/rw/config/rc.local`."
 msgid "Make `monerod` daemon run on startup by editing the file `/rw/config/rc.local`."
-msgstr "+ Få `monerod` daemon til å kjøre på oppstart ved å redigere filen `/rw/config/rc.local`."
+msgstr "Få `monerod` daemon til å kjøre på oppstart ved å redigere filen `/rw/config/rc.local`."
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:52
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:88
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` user@host:~$ sudo nano /rw/config/rc.local ```"
 msgid "user@host:~$ sudo nano /rw/config/rc.local\n"
-msgstr "``` user@host:~$ sudo nano /rw/config/rc.local ```"
+msgstr "user@host:~$ sudo nano /rw/config/rc.local\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:57
@@ -140,12 +134,12 @@ msgstr "Legg til disse linjene nederst:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:58
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` cp /home/user/monerod.service /lib/systemd/system/ systemctl start monerod.service ```"
 msgid ""
 "cp /home/user/monerod.service /lib/systemd/system/\n"
 "systemctl start monerod.service\n"
-msgstr "``` cp /home/user/monerod.service /lib/systemd/system/ systemctl start monerod.service ```"
+msgstr "cp /home/user/monerod.service /lib/systemd/system/ systemctl start monerod.service\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:64
@@ -156,26 +150,25 @@ msgstr "Gjør filen kjørbar."
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:65
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:100
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` user@host:~$ sudo chmod +x /rw/config/rc.local ```"
 msgid "user@host:~$ sudo chmod +x /rw/config/rc.local\n"
-msgstr "``` user@host:~$ sudo chmod +x /rw/config/rc.local ```"
+msgstr "user@host:~$ sudo chmod +x /rw/config/rc.local\n"
 
 #. type: Bullet: '+ '
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:70
-#, fuzzy
 #| msgid "+ Create rpc action file."
 msgid "Create rpc action file."
-msgstr "+ Opprett en rpc-handlingsfil."
+msgstr "Opprett en rpc-handlingsfil."
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:71
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod ```"
 msgid ""
 "user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc\n"
 "user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod\n"
-msgstr "``` user@host:~$ sudo mkdir /rw/usrlocal/etc/qubesp-rpc user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod ```"
+msgstr "user@host:~$ sudo mkdir /rw/usrlocal/etc/qubesp-rpc\n user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:77
@@ -184,31 +177,29 @@ msgstr "Legg til denne linjen:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:78
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` socat STDIO TCP:localhost:18081 ```"
 msgid "socat STDIO TCP:localhost:18081\n"
-msgstr "``` socat STDIO TCP:localhost:18081 ```"
+msgstr "socat STDIO TCP:localhost:18081\n"
 
 #. type: Bullet: '+ '
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:83
-#, fuzzy
 #| msgid "+ Shutdown `monerod-ws`."
 msgid "Shutdown `monerod-ws`."
-msgstr "+ Skru av `monerod-ws`."
+msgstr "Skru av `monerod-ws`."
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:84
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## 3. In the AppVM `monero-wallet-ws`:"
 msgid "3. In the AppVM `monero-wallet-ws`:"
-msgstr "## 3. I AppVM-en `monero-wallet-ws`:"
+msgstr "3. I AppVM-en `monero-wallet-ws`:"
 
 #. type: Bullet: '+ '
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:87
-#, fuzzy
 #| msgid "+ Edit the file `/rw/config/rc.local`."
 msgid "Edit the file `/rw/config/rc.local`."
-msgstr "+ Rediger filen `/rw/config/rc.local`."
+msgstr "Rediger filen `/rw/config/rc.local`."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:93
@@ -217,38 +208,36 @@ msgstr "Legg til følgende linje nederst:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:94
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` socat TCP-LISTEN:18081,fork,bind=127.0.0.1 EXEC:\"qrexec-client-vm monerod-ws user.monerod\" ```"
 msgid "socat TCP-LISTEN:18081,fork,bind=127.0.0.1 EXEC:\"qrexec-client-vm monerod-ws user.monerod\"\n"
-msgstr "``` socat TCP-LISTEN:18081,fork,bind=127.0.0.1 EXEC:\"qrexec-client-vm monerod-ws user.monerod\" ```"
+msgstr "socat TCP-LISTEN:18081,fork,bind=127.0.0.1 EXEC:\"qrexec-client-vm monerod-ws user.monerod\"\n"
 
 #. type: Bullet: '+ '
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:105
-#, fuzzy
 #| msgid "+ Shutdown `monero-wallet-ws`."
 msgid "Shutdown `monero-wallet-ws`."
-msgstr "+ Slå av `monero-wallet-ws`."
+msgstr "Slå av `monero-wallet-ws`."
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:106
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## 4. In `dom0`:"
 msgid "4. In `dom0`:"
-msgstr "## 4. I `dom0`:"
+msgstr "4. I `dom0`:"
 
 #. type: Bullet: '+ '
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:109
-#, fuzzy
 #| msgid "+ Create the file `/etc/qubes-rpc/policy/user.monerod`:"
 msgid "Create the file `/etc/qubes-rpc/policy/user.monerod`:"
-msgstr "+ Opprett filen `/etc/qubes-rpc/policy/user.monerod`:"
+msgstr "Opprett filen `/etc/qubes-rpc/policy/user.monerod`:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:110
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod ```"
 msgid "[user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod\n"
-msgstr "``` [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod ```"
+msgstr "[user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:115
@@ -257,10 +246,10 @@ msgstr "Legg til følgende linje:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:116
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` monero-wallet-ws monerod-ws allow ```"
 msgid "monero-wallet-ws monerod-ws allow\n"
-msgstr "``` monero-wallet-ws monerod-ws allow ```"
+msgstr "monero-wallet-ws monerod-ws allow\n"
 
 #~ msgid "``` [Unit] Description=Monero Full Node After=network.target"
 #~ msgstr "``` [Unit] Description=Monero Full Node After=network.target"
