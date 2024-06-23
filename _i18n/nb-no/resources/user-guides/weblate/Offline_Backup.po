@@ -40,7 +40,7 @@ msgstr "Lommebokprogramvare: Simplewallet"
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:7
 #, no-wrap
 msgid "Resource for Creating Bootable Disks:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)"
-msgstr "Ressurser for å opprette oppstartbare disker:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)\n"
+msgstr "Ressurser for å opprette oppstartbare disker:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)"
 
 #
 #. type: Title ####
@@ -130,5 +130,6 @@ msgstr "Kontoen du har opprettet ble opprettet i RAM, og de digitale filene er n
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:36
+#| msgid "Related: [Offline Account Generator](http://moneroaddress.org/)"
 msgid "Related: [Offline Account Generator]({{ site.baseurl}}/generator)"
 msgstr "Relatert innhold: [Offline kontogenerator]({{ site.baseurl}}/generator)"
