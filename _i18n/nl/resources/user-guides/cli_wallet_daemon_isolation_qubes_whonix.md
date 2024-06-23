@@ -19,9 +19,10 @@ communicatie met de node. Met deze methode is er helemaal geen
 netwerkverbinding nodig voor de portemonnee, ga je zuiniger om met het
 Tor-netwerk en is er minder vertraging.
 
-## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):
+## 1. [Maak Whonix AppVM's](https://www.whonix.org/wiki/Qubes/Install):
 
-+ Using a Whonix workstation template, create two workstations as follows:
++ Met een sjabloon voor Whonix-werkstations maak je op de volgende manier
+  twee werkstations:
 
   - Het eerste werkstation wordt gebruikt voor je portemonnee. We noemen het
     `monero-wallet-ws`. Hier stel je `NetVM` in op `none`.
@@ -34,12 +35,12 @@ Tor-netwerk en is er minder vertraging.
     }}/downloads/#blockchain). Keep in mind that the blockchain will take up
     more space with time.
 
-## 2. In the AppVM `monerod-ws`:
+## 2. In de AppVM `monerod-ws`:
 
-+ Create a `systemd` file.
++ Maak een `systemd`-bestand.
 
 ```
-user@host:~$ sudo nano /home/user/monerod.service
+user@host:~$ sudo gedit /home/user/monerod.service
 ```
 
 Plak de volgende gegevens:
@@ -67,18 +68,17 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-+ Make `monerod` daemon run on startup by editing the file
-  `/rw/config/rc.local`.
++ Zorg dat de daemon `monerod` wordt uitgevoerd bij het opstarten door het
+  bestand `/rw/config/rc.local` te bewerken.
 
 ```
-user@host:~$ sudo nano /rw/config/rc.local
+user@host:~$ sudo gedit /rw/config/rc.local
 ```
 
 Voeg onderaan deze regels toe:
 
 ```
-cp /home/user/monerod.service /lib/systemd/system/
-systemctl start monerod.service
+cp /home/user/monerod.service /lib/systemd/system/ systemctl start monerod.service
 ```
 
 Maak het bestand uitvoerbaar.
@@ -87,11 +87,11 @@ Maak het bestand uitvoerbaar.
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Create rpc action file.
++ Maak het RPC-actiebestand.
 
 ```
 user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
-user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
+ user@host:~$ sudo gedit /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
 Voeg deze regel toe:
@@ -100,14 +100,14 @@ Voeg deze regel toe:
 socat STDIO TCP:localhost:18081
 ```
 
-+ Shutdown `monerod-ws`.
++ Sluit `monerod-ws` af.
 
-## 3. In the AppVM `monero-wallet-ws`:
+## 3. In de AppVM `monero-wallet-ws`:
 
-+ Edit the file `/rw/config/rc.local`.
++ Bewerk het bestand `/rw/config/rc.local`.
 
 ```
-user@host:~$ sudo nano /rw/config/rc.local
+user@host:~$ sudo gedit /rw/config/rc.local
 ```
 
 Voeg onderaan deze regel toe:
@@ -122,11 +122,11 @@ Maak het bestand uitvoerbaar.
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Shutdown `monero-wallet-ws`.
++ Sluit `monero-wallet-ws` af.
 
 ## 4. In `dom0`:
 
-+ Create the file `/etc/qubes-rpc/policy/user.monerod`:
++ Maak het bestand `/etc/qubes-rpc/policy/user.monerod`:
 
 ```
 [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod
