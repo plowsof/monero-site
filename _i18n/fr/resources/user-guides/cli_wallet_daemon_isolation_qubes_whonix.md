@@ -1,23 +1,43 @@
 {% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
-Avec [Qubes](https://qubes-os.org) et [Whonix](https://whonix.org) vous pouvez disposer d'un portefeuille Monero hors connexion fonctionnant sur un système virtuel isolé du démon Monero dont tout le trafic est forcé à passer à travers [Tor](https://torproject.org).
+Avec [Qubes](https://qubes-os.org) et [Whonix](https://whonix.org) vous
+pouvez disposer d'un portefeuille Monero hors connexion fonctionnant sur un
+système virtuel isolé du démon Monero dont tout le trafic est forcé à passer
+à travers [Tor](https://torproject.org).
 
-Qubes permet de créer facilement des machines virtuelles pour différents besoins. Tout d'abord, vous crérez une station de travail Whonix sans réseau pour le portefeuille. Ensuite, une seconde station de travail Whonix pour le démon qui utilisera votre passerelle Whonix comme réseau de machine virtuelle. La communication dentre le portefeuille et le démon pourra être réalisée en utilisant Qubes [qrexec](https://www.qubes-os.org/doc/qrexec3/).
+Qubes permet de créer facilement des machines virtuelles pour différents
+besoins. Tout d'abord, vous crérez une station de travail Whonix sans réseau
+pour le portefeuille. Ensuite, une seconde station de travail Whonix pour le
+démon qui utilisera votre passerelle Whonix comme réseau de machine
+virtuelle. La communication dentre le portefeuille et le démon pourra être
+réalisée en utilisant Qubes [qrexec](https://www.qubes-os.org/doc/qrexec3/).
 
-Il s'agit d'une approche plus sûre que d'autres solutions routant les appels de procédure distantes du portefeuille à travers un service Tor caché, ou utilisant une isolation physique mais disposant toujours du réseau pour le raccordement au démon. De cette manière vou sn'avez besoin d'aucune connectivité réseau sur le portefeuille, vous préserver les ressources du réseau Tor et vous minimisez la latence.
+Il s'agit d'une approche plus sûre que d'autres solutions routant les appels
+de procédure distantes du portefeuille à travers un service Tor caché, ou
+utilisant une isolation physique mais disposant toujours du réseau pour le
+raccordement au démon. De cette manière vou sn'avez besoin d'aucune
+connectivité réseau sur le portefeuille, vous préserver les ressources du
+réseau Tor et vous minimisez la latence.
 
+## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):
 
-## 1. [Créer une machine virtuelle applicative Whonix](https://www.whonix.org/wiki/Qubes/Install):
++ Using a Whonix workstation template, create two workstations as follows:
 
-+ En utilisant un modèle Whonix de station de travail, créez deux stations de travail comme suit :
+  - La première station de travail sera utilisé pour le portefeuille, on s'y
+    réfèrera en tant que `monero-wallet-ws`. Vous aurez `NetVM` définit à
+    `none`.
 
-  - La première station de travail sera utilisé pour le portefeuille, on s'y réfèrera en tant que `monero-wallet-ws`. Vous aurez `NetVM` définit à `none`.
+  - La seconde station de travail sera pour le démon `monerod`, on s'y
+    réfèrera en tant que `monerod-ws`. Vous aurez `NetVM` définit sur la
+    passerelle Whonix `sys-whonix`. Before moving on, make sure this
+    workstation has enough private storage. You can estimate how much space
+    you need by checking the size of the [raw blockchain]({{ site.baseurl
+    }}/downloads/#blockchain). Keep in mind that the blockchain will take up
+    more space with time.
 
-  - La seconde station de travail sera pour le démon `monerod`, on s'y réfèrera en tant que `monerod-ws`. Vous aurez `NetVM` définit sur la passerelle Whonix `sys-whonix`. Before moving on, make sure this workstation has enough private storage. You can estimate how much space you need by checking the size of the [raw blockchain]({{ site.baseurl }}/downloads/#blockchain). Keep in mind that the blockchain will take up more space with time.
+## 2. In the AppVM `monerod-ws`:
 
-## 2. Dans la machine virtuelle applicative `monerod-ws`:
-
-+ Créez un fichier `systemd`.
++ Create a `systemd` file.
 
 ```
 user@host:~$ sudo nano /home/user/monerod.service
@@ -37,7 +57,7 @@ Group=user
 Type=forking
 PIDFile=/home/user/.bitmonero/monerod.pid
 
-ExecStart=/usr/local/bin/monerod --detach --data-dir=/home/user/.bitmonero \
+ExecStart=/usr/bin/monerod --detach --data-dir=/home/user/.bitmonero \
     --no-igd --pidfile=/home/user/.bitmonero/monerod.pid \
     --log-file=/home/user/.bitmonero/bitmonero.log --p2p-bind-ip=127.0.0.1
 
@@ -48,7 +68,8 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-+ Configurez le lancement du démon `monerod` au démarrage en éditant le fichier `/rw/config/rc.local`.
++ Make `monerod` daemon run on startup by editing the file
+  `/rw/config/rc.local`.
 
 ```
 user@host:~$ sudo nano /rw/config/rc.local
@@ -67,7 +88,7 @@ Rendez le fichier exécutable.
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Créez le fichier d'action d'appel de procédure distante.
++ Create rpc action file.
 
 ```
 user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
@@ -80,11 +101,11 @@ Ajoutez cette ligne :
 socat STDIO TCP:localhost:18081
 ```
 
-+ Éteignez `monerod-ws`.
++ Shutdown `monerod-ws`.
 
-## 3. Dans la machine virtuelle applicative `monero-wallet-ws`:
+## 3. In the AppVM `monero-wallet-ws`:
 
-+ Éditez le fichier `/rw/config/rc.local`.
++ Edit the file `/rw/config/rc.local`.
 
 ```
 user@host:~$ sudo nano /rw/config/rc.local
@@ -102,11 +123,11 @@ Rendez le fichier exécutable.
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Éteignez `monero-wallet-ws`.
++ Shutdown `monero-wallet-ws`.
 
-## 4. Dans `dom0`:
+## 4. In `dom0`:
 
-+ Créez le fichier `/etc/qubes-rpc/policy/user.monerod`:
++ Create the file `/etc/qubes-rpc/policy/user.monerod`:
 
 ```
 [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod
