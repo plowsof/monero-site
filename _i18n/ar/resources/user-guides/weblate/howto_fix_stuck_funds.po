@@ -69,7 +69,10 @@ msgid ""
 "> yourwalletname.bin\n"
 "> yourwalletname.bin.keys\n"
 "> yourwalletname.bin.address.txt\n"
-msgstr "> yourwalletname.bin > yourwalletname.bin.keys > yourwalletname.bin.address.txt\n"
+msgstr ""
+"> yourwalletname.bin\n"
+"> yourwalletname.bin.keys\n"
+"> yourwalletname.bin.address.txt\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:24
