@@ -39,10 +39,10 @@
 
 - **PASO CRÍTICO**: Escribe (en papel) tu semilla mnemónica de 25 palabras
   (@mnemonic-seed)
-**WARNING**:  If you forget to write down this information your funds may be lost forever
+**ADVERTENCIA**: Si olvidas escribir esta información tus fondos podrán perderse para siempre
 
-- Write down (on your phone, on paper, on another computer, wherever you
-  want) your address and view key
+- Escribe (en tu teléfono, papel, otra computadora, o donde tú quieras) tu
+  dirección y llave de visualización
 
 - Apaga la computadora, remueve la batería si hay alguna, y déjala
   físicamente apagada por algunas horas

@@ -1,48 +1,51 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Operating Systems:  Various versions of Linux and Windows 7, 8
+## Système d'exploitations : Différentes versions de Linux et Windows 7, 8
 
-### Wallet Software:  Simplewallet
+### Application de portefeuille : Simplewallet
 
-#### Resource for Creating Bootable Disks:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
+#### Ressource pour la création d'un disque bootable : [Linux](http://www.pendrivelinux.com/), [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 
-#### Resource for Monero Binaries:  [Monero Binaries]({{ site.baseurl_root }}/downloads/)
+#### Ressource pour les binaires Monero : [Binaires Monero]({{ site.baseurl }}/downloads/)
 
-- Take any computer you have lying around, even your normal workstation. You
-  may find it easier to use an older computer that has no wifi or bluetooth
-  if you're particularly paranoid
+- Prenez n'importe quel ordinateur se trouvant à votre disposition, aussi
+  bien votre station de travail habituelle. Vous pourriez trouver plus
+  simple d'utiliser un vieil ordinateur qui n'ait ni wifi ni bluetooth si
+  vous êtes particulièrement paranoiac.
 
-- Create a Linux or Windows bootable disk, and make sure you have the Monero
-  binaries on the same disk or on a second disk (for Linux make sure you
-  have also downloaded copies of the dependencies you will need,
-  libboost1.55 and miniupnpc for instance)
+- Créez un disque bootable Linux ou Windows, et assurez-vous d'avoir les
+  binaires Monero sur le même disque ou sur un second disque (pour linux,
+  assurez-vous d'avoir également copié les dépendances dont vous aurez
+  besoin, libboost1.55 et miniupnpc notament).
 
-- Disconnect the network and/or Internet cables from your computer,
-  physically remove the wifi card or switch the wifi/bluetooth off on a
-  laptop if possible
+- Déconnectez le réseau et/ou la connexion internet de votre ordinateur,
+  enlever physiquement la carte wifi ou désactivez le wifi/bluetooth si
+  possible sur un portable.
 
-- Boot into your bootable OS, install the dependencies if necessary
+- Démarrez sur le disque bootable, installez les dépendances si nécessaire.
 
-- Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows
-  bootable ISOs normally have a Z: drive or something)
+- Copiez les binaires Monero sur un disque en RAM (/dev/shm sur Linux, une
+  ISO bootable Windows devrait normalement avoir un disque comme Z:).
 
-- Don't run the Monero @daemon. Instead, using the command line, use
-  monero-wallet-cli to create a new Monero @account
+- Ne lancez pas le démon Monero. A la place, lancez monero-wallet-cli depuis
+  un terminal en ligne de commande pour créer un nouveau @account Monero.
 
-- When prompted for a name, give it any name, it doesn't really matter
+- Lorsqu'un nom vous est demandé, donnez n'importe lequel, cela n'a aucune
+  importance.
 
-- When prompted for a password, type in like 50 - 100 random
-  characters. Don't worry that you don't know the password, just make it
-  LONG
+- Lorsqu'on vous demande un mot de passe, saisissez de 50 à 100 caractères
+  aléatoires. Ne vous souciez pas de devoir connaître le mot de passe,
+  saisissez-en juste un long.
 
-- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed
-**WARNING**:  If you forget to write down this information your funds may be lost forever
+- **ÉTAPE CRITIQUE** : Notez (sur un papier) votre @mnemonic-seed de 25
+  mots.
+**ATTENTION**: Si vous oubliez de notez cette information, vos fonds pourraient être perdus pour toujours.
 
-- Write down (on your phone, on paper, on another computer, wherever you
-  want) your address and view key
+- Notez (sur votre smartphone, un papier, un autre ordinateur, n'importe où)
+  votre adresse et votre clef d'audit.
 
-- Switch off the computer, remove the battery if there is one, and leave it
-  physically off for a few hours
+- Éteignez votre ordinateur, enlevez la batterie s'il y en a une, et laissez
+  le physiquement arrêté pendant quelques heures.
 
 Le compte que vous avez créé se trouvait en mémoire vive, et les fichiers
 sont maintenant inaccessible. Si un ennemi parvenait d'une quelconque
@@ -53,4 +56,4 @@ vous avez besoin d'y accéder, vous avez votre @mnemonic-seed de 25 mots, et
 vous pouvez maintenant en faire quelques copies, dont une copie externe (par
 exemple, dans le coffre d'une banque).
 
-Related: [Offline Account Generator]({{ site.baseurl}}/generator)
+Lié : [Générateur de Compte Hors-Ligne]({{ site.baseurl}}/generator)
