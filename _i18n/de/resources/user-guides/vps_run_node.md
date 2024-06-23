@@ -1,35 +1,42 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# Monerod
+# monerod
 
-`monerod` ist die Hintergrunddienst-Software, die mit der Monero-Basissoftware einhergeht. Es ist ein Konsolenprogramm, das die Blockchain managt. Während ein Bitcoin-Wallet gleichzeitig das Konto wie auch die Blockchain managt, ist dies bei Monero separiert: `monerod` bewerkstelligt die Blockchain und `monero-wallet-cli` das Konto.
+`monerod` ist die Hintergrunddienst-Software, die mit der
+Monero-Basissoftware einhergeht. Es ist ein Konsolenprogramm, das die
+Blockchain managt. Während ein Bitcoin-Wallet gleichzeitig das Konto wie
+auch die Blockchain managt, ist dies bei Monero separiert: `monerod`
+bewerkstelligt die Blockchain und `monero-wallet-cli` das Konto.
 
-Diese Anleitung setzt voraus, dass du bereits einen VPS-Account angelegt hast und dich via SSH-Tunnel zur Server-Konsole verbinden kannst. 
+Diese Anleitung setzt voraus, dass du bereits einen VPS-Account angelegt
+hast und dich via SSH-Tunnel zur Server-Konsole verbinden kannst.
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
-### Stelle sicher, dass Port 18080 geöffnet ist
+### Make sure that port 18080 is open
 
-`monerod` nutzt diesen Port zur Kommunikation mit anderen Nodes innerhalb des Monero-Netzwerks.
+`monerod` nutzt diesen Port zur Kommunikation mit anderen Nodes innerhalb
+des Monero-Netzwerks.
 
-Beispiel bei Verwendung von `ufw`: `sudo ufw allow 18080`
-Beispiel bei Verwendung von `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
+Beispiel bei Verwendung von `ufw`: `sudo ufw allow 18080` Beispiel bei
+Verwendung von `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j
+ACCEPT`
 
-### Lade die aktuelle Monero-Kernsoftware herunter
+### Download the current Monero Core binaries
 
     wget https://downloads.getmonero.org/linux64
 
-### Erstelle ein Verzeichnis und extrahiere die Dateien
+### Make a directory and extract the files.
 
     mkdir monero
     tar -xjvf linux64 -C monero
 
-### Starte den Hintergrunddienst
+### Launch the daemon
 
     cd monero
     ./monerod
 
-### Optionen:
+### Options:
 
 Zeige eine Liste aller Optionen und Einstellungen an:
 
