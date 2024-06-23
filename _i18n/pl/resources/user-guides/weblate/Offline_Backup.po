@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 12:55+0000\n"
+"POT-Creation-Date: 2024-06-23 13:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,17 +124,23 @@ msgstr ""
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:30
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:29
 #, fuzzy, no-wrap
+#| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
+msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+msgstr "- **KLUCZOWY KROK**: Zapisz na kartce swój kod mnemoniczny składający się z 25 słów **UWAGA**: Jeśli zapomnisz zapisać swojego kodu, twoje środki mogą zostać utracone na zawsze!"
+
+#
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:31
+#, fuzzy
 #| msgid "- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
-msgid ""
-"**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
-"- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key\n"
+msgid "Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
 msgstr "- Zapisz w telefonie, na kartce, na innym komputerze lub w innym miejscu swój adres i klucz widoczności."
 
 #
 #. type: Bullet: '- '
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:32
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:33
 #, fuzzy
 #| msgid "- Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
 msgid "Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
@@ -142,20 +148,14 @@ msgstr "- Wyłącz komputer, wyciągnij baterię i zostaw go fizycznie wyłączo
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:34
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
 msgid "The account you've created was created in RAM, and the digital files are now inaccessible. If some adversary manages to somehow obtain the data, they will lack the long password to open it. If you need to receive payments, you have your public address, and you have the view key if needed. If you need access to it, you have your 25 word @mnemonic-seed, and you can now write out several copies of it, including an offsite copy (e.g. a bank deposit box)."
 msgstr " Konto, które założyłeś, zostało zapisane w pamięci RAM i pliki cyfrowe są teraz niedostępne. Jeśli ktoś niepożądany w jakikolwiek sposób wejdzie w posiadanie tych danych, nie będzie posiadał długiego hasła niezbędnego do ich otworzenia. Aby otrzymać płatność, użyj swojego publicznego adresu lub klucza widoczności. Jeżeli potrzebujesz dostępu do swoich danych, użyj swojego 25-słownego kodu mnemonicznego, którego kopie możesz teraz zapisać w różnych miejscach, na przykład w skrytce bankowej."
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:36
 #, fuzzy
 #| msgid "Related: [Offline Account Generator](http://moneroaddress.org/)"
 msgid "Related: [Offline Account Generator]({{ site.baseurl}}/generator)"
 msgstr "Powiązane: [Generator Konta Offline](http://moneroaddress.org/)"
-
-#
-#, fuzzy, no-wrap
-#~| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
-#~ msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
-#~ msgstr "- **KLUCZOWY KROK**: Zapisz na kartce swój kod mnemoniczny składający się z 25 słów **UWAGA**: Jeśli zapomnisz zapisać swojego kodu, twoje środki mogą zostać utracone na zawsze!"
