@@ -27,20 +27,17 @@ msgstr "Het kan gebeuren dat je geld vast komt te zitten. Je Monero wordt vergre
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:6
-#| msgid "- Load your wallet in monero-wallet-cli."
 msgid "Load your wallet in monero-wallet-cli."
 msgstr "Laad je portemonnee in monero-wallet-cli."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:8
-#| msgid "- Type"
 msgid "Type"
 msgstr "Typ"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:10
 #, no-wrap
-#| msgid "> seed"
 msgid "> seed\n"
 msgstr "> seed\n"
 
@@ -51,27 +48,23 @@ msgstr "op de opdrachtregel. Schrijf je hersteltekst van 25 woorden op, als je d
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:14
-#| msgid "- Close monero-wallet-cli by typing"
 msgid "Close monero-wallet-cli by typing"
 msgstr "Typ het volgende om monero-wallet-cli af te sluiten:"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:16
 #, no-wrap
-#| msgid "> exit"
 msgid "> exit\n"
 msgstr "> exit"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:18
-#| msgid "- Backup all of your wallet related files. These include:"
 msgid "Backup all of your wallet related files. These include:"
 msgstr "Maak een back-up van alle bestanden die bij je portemonnee horen. Dit zijn:"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:22
 #, no-wrap
-#| msgid "> yourwalletname.bin > yourwalletname.bin.keys > yourwalletname.bin.address.txt"
 msgid ""
 "> yourwalletname.bin\n"
 "> yourwalletname.bin.keys\n"
@@ -93,18 +86,15 @@ msgstr "Het is mogelijk dat je je portemonnee een naam hebt gegeven zonder de to
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:28
-#| msgid "- Delete yourwallet.bin"
 msgid "Delete yourwallet.bin"
 msgstr "Verwijder portemonnee.bin"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:30
-#| msgid "- Load monero-wallet-cli, type in the name of the wallet you just deleted"
 msgid "Load monero-wallet-cli, type in the name of the wallet you just deleted"
 msgstr "Laad monero-wallet-cli en typ daarbij de naam in van de portemonnee die je net hebt verwijderd."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:32
-#| msgid "- Enter password. The wallet will now refresh and hopefully your locked funds will now become unlocked."
 msgid "Enter password. The wallet will now refresh and hopefully your locked funds will now become unlocked."
 msgstr "- Voer je wachtwoord in. De portemonnee wordt nu vernieuwd. Hopelijk wordt je vergrendelde geld daardoor ontgrendeld."
