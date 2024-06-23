@@ -1,20 +1,23 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-Manchmal kann es passieren, dass dein Geld feststeckt - du hast gesperrtes Guthaben, das niemals freigegeben wird. So löst du das Problem:
+Manchmal kann es passieren, dass dein Geld feststeckt - du hast gesperrtes
+Guthaben, das niemals freigegeben wird. So löst du das Problem:
 
-- Lade dein Wallet in monero-wallet-cli.
+- Load your wallet in monero-wallet-cli.
 
-- Tippe
+- Type
 
 > seed
 
-in die Befehlszeile ein. Falls noch nicht geschehen, schreibe deinen 25-Wort-Seed nieder. Dies ist der beste Weg um sicherzustellen, dass du den Zugriff auf dein Vermögen nicht verlierst.
+in die Befehlszeile ein. Falls noch nicht geschehen, schreibe deinen
+25-Wort-Seed nieder. Dies ist der beste Weg um sicherzustellen, dass du den
+Zugriff auf dein Vermögen nicht verlierst.
 
-- Schließe monero-wallet-cli durch die Eingabe von
+- Close monero-wallet-cli by typing
 
 > exit
 
-- Sichere alle dem Wallet zugehörigen Dateien. Diese beinhalten:
+- Backup all of your wallet related files. These include:
 
 > yourwalletname.bin
 > yourwalletname.bin.keys
@@ -22,11 +25,14 @@ in die Befehlszeile ein. Falls noch nicht geschehen, schreibe deinen 25-Wort-See
 
 Du kannst dies tun, indem du die Dateien in einen neuen Ordner kopierst.
 
-Beim Erstellen deines Wallets könntest du einen Namen ohne das ".bin"-Element gewählt haben. In diesem Fall wird sich die Wallet-Datei schlicht "yourwalletname" (ohne ".bin") nennen.
+Beim Erstellen deines Wallets könntest du einen Namen ohne das
+".bin"-Element gewählt haben. In diesem Fall wird sich die Wallet-Datei
+schlicht "yourwalletname" (ohne ".bin") nennen.
 
-- Lösche yourwallet.bin.
+- Delete yourwallet.bin
 
-- Lade monero-wallet-cli und gib den Namen deines gerade gelöschten Wallets ein.
+- Load monero-wallet-cli, type in the name of the wallet you just deleted
 
-- Gib das Passwort ein. Das Wallet wird nun aktualisieren, danach wird dein gesperrtes Guthaben hoffentlich freigegeben und verfügbar sein.
+- Enter password. The wallet will now refresh and hopefully your locked
+  funds will now become unlocked.
 

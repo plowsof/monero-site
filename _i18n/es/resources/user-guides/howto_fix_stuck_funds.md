@@ -1,32 +1,38 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-Algunas veces, tus fondos estarán estancados - tendrás fondos bloqueados que nunca se podrán desbloquear. Esta es la forma de arreglarlo.
+Algunas veces, tus fondos estarán estancados - tendrás fondos bloqueados que
+nunca se podrán desbloquear. Esta es la forma de arreglarlo.
 
-- Carga tu monedero en monero-wallet-cli.
+- Load your wallet in monero-wallet-cli.
 
-- Escribe
+- Type
 
 > seed
 
-en la consola. Escribe tu semilla de 25 palabras si aún no lo has hecho. Esta es la mejor forma de asegurar que no pierdas acceso a tus fondos.
+en la consola. Escribe tu semilla de 25 palabras si aún no lo has
+hecho. Esta es la mejor forma de asegurar que no pierdas acceso a tus
+fondos.
 
-- Cierra monero-wallet-cli escribiendo
+- Close monero-wallet-cli by typing
 
 > exit
 
-- Respalda todos los archivos relacionados con tu monedero. Estos incluyen:
+- Backup all of your wallet related files. These include:
 
-> nombredetumonedero.bin
-> nombredetumonedero.bin.keys
-> nombredetumonedero.bin.address.txt
+> yourwalletname.bin
+> yourwalletname.bin.keys
+> yourwalletname.bin.address.txt
 
 Esto se logra copiando los archivos a una nueva carpeta.
 
-Algunas veces, cuando creas un monedero, la pudiste haber llamado de alguna forma sin el final como .bin. En ese caso, el archivo del monedero será llamado nombredetumonedero sin .bin al final.
+Algunas veces, cuando creas un monedero, la pudiste haber llamado de alguna
+forma sin el final como .bin. En ese caso, el archivo del monedero será
+llamado nombredetumonedero sin .bin al final.
 
-- Elimina tumonedero.bin
+- Delete yourwallet.bin
 
-- Abre monero-wallet-cli, escribe el nombre del monedero que acabas de eliminar.
+- Load monero-wallet-cli, type in the name of the wallet you just deleted
 
-- Ingresa la contraseña. El monedero se actualizará y posiblemente tus fondos bloqueados estarán ahora desbloqueados.
+- Enter password. The wallet will now refresh and hopefully your locked
+  funds will now become unlocked.
 
