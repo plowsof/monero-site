@@ -70,7 +70,6 @@ msgstr "Rozłącz sieć i/lub kable internetowe, fizycznie usuń kartę WiFi lub
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:18
-#| msgid "- Boot into your bootable OS, install the dependencies if necessary"
 msgid "Boot into your bootable OS, install the dependencies if necessary"
 msgstr "Uruchom swój rozruchowy system operacyjny, zainstaluj zależności, jeśli to konieczne."
 
