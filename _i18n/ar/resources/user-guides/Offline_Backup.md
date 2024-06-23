@@ -1,48 +1,46 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Operating Systems:  Various versions of Linux and Windows 7, 8
+## نظام التشغيل : إصدارات مُختلِفه من ليُنكس وويندوز 7 و 8
 
-### Wallet Software:  Simplewallet
+### برنامج المحفظه : Simplewallet
 
-#### Resource for Creating Bootable Disks:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
+#### موارد إنشاء أقراص الإقلاع:  [لينكس](http://www.pendrivelinux.com/),       [ويندوز](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 
-#### Resource for Monero Binaries:  [Monero Binaries]({{ site.baseurl_root }}/downloads/)
+#### موارد تحميل برامج مونيرو: [برامج مونيرو]({{ site.baseurl }}/downloads/)
 
-- Take any computer you have lying around, even your normal workstation. You
-  may find it easier to use an older computer that has no wifi or bluetooth
-  if you're particularly paranoid
+- إستخدم أي حاسوب لديك , حتي لو كان جهازك الشخصي. إذا كنت من الشكاكين بدرجه
+  جنونيه ربما تجد أن من الأسهل إستخدام حاسوب قديم لا يحتوي علي واي-فاي أو
+  بلوتوث.
 
-- Create a Linux or Windows bootable disk, and make sure you have the Monero
-  binaries on the same disk or on a second disk (for Linux make sure you
-  have also downloaded copies of the dependencies you will need,
-  libboost1.55 and miniupnpc for instance)
+- قم بإنشاء قرص إقلاع سواء ليُنكس أو ويندوز وتأكد من تحمل ملفات تثبيت مونيرو
+  علي نفس القرص أو قرص آخر ( لليُنكس سوف تحتاج لتنزيل بعض ملفات التثبيت
+  المُساعده مثال libboost1.55 و miniupnpc.
 
-- Disconnect the network and/or Internet cables from your computer,
-  physically remove the wifi card or switch the wifi/bluetooth off on a
-  laptop if possible
+- إفصل إتصال الحاسوب بالإنترنت تماما ( إفصل الكابلات - عطّل الواي-فاي
+  والبلوتوث - او حتي قم بإزاله بطاقه الواي-فاي إن أمكن)
 
-- Boot into your bootable OS, install the dependencies if necessary
+- قم بالدخول إلي نظام التشغيل المُجهز سابقاً وقم بتثبيت البرامج المُساعده إن
+  لزم الأمر
 
-- Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows
-  bootable ISOs normally have a Z: drive or something)
+- إنسخ برامج تثبيت مونيرو علي قرص الذاكره العشوائيه ( في ليُنكس موجود في
+  /dev/shm وفي ويندوز غالباً ستجده يُسمي Z: )
 
-- Don't run the Monero @daemon. Instead, using the command line, use
-  monero-wallet-cli to create a new Monero @account
+- لا تقوم بتشغيل خادم مونيرو. بدلاً من ذلك إستخدم سطر الأوامر الخاص بمونيرو
+  لإنشاء @حساب جديد
 
-- When prompted for a name, give it any name, it doesn't really matter
+- عِندما يُطلب منك إسماً إكتب أي أسم لا يُهم.
 
-- When prompted for a password, type in like 50 - 100 random
-  characters. Don't worry that you don't know the password, just make it
-  LONG
+- عِند طًلب كِلمه سر قم بكتابه 50 - 100 حرف. لا تقلق إذ لم تعرفها فقط إجعلها
+  طويله بقدر الإمكان.
 
-- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed
-**WARNING**:  If you forget to write down this information your funds may be lost forever
+- **خطوه هامه جداً** : إكتب علي ورقه ال25 كلمه من @كَلِمات-الإستعاده
+**تحذير**: إذا نسيت كتابه هذه الكلمات سوف تضيع أموالك للأبد
 
-- Write down (on your phone, on paper, on another computer, wherever you
-  want) your address and view key
+- إكتب ( حيثما تريد سواء علي هاتفك أو علي ورقه أو حاسوب آخر) عنوان حسابك
+  ومفتاح الرؤيه الخاص بك
 
-- Switch off the computer, remove the battery if there is one, and leave it
-  physically off for a few hours
+- إغلق الحاسوب و قم بفصل البطاريه إذ كان هُناك واحده و إترك الجهاز مُغلق
+  لِعِده ساعات
 
 تم إنشاء الحساب في الذاكره العشوائيه ولا يمكن الوصول للملفات الأن. إذا
 تَمَكَن أحد الأخصام من الوصول للبيانات لن يتمكن من الحصول علي كلمه السر
@@ -50,4 +48,5 @@
 الرؤيه. إذا كنت تريد الدخول للحساب لديك ال25 كلمه الخاصين بإستعاده حسابك. قم
 بإنشاء عِده نُسخ منها في أماكن مُتفرقه وإحذر أن تقع في حوزه أي شخص .
 
-Related: [Offline Account Generator]({{ site.baseurl}}/generator)
+مُرتبط بالموضوع: [مُنشيء حساب بِدون إتصال بالإنترنت]({{
+site.baseurl}}/generator)
