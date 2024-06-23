@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Содержание
+### Table of Content
 
 * [Windows](#windows)
 * [Mac OS X](#mac-os-x)
@@ -9,149 +9,257 @@
 
 ### Windows
 
-Сначала мы должны убедиться, что мы достаточно подготовлены. Это влечет за собой следующее:
+Сначала мы должны убедиться, что мы достаточно подготовлены. Это влечет за
+собой следующее:
 
-- В этом руководстве предполагается, что вы уже инициализировали свой Ledger кошелек и, таким образом, создали мнемоническую seed-фразу из 24 слов.
+- This guide assumes you have already initialized your Ledger wallet and
+  thus generated a 24 word mnemonic seed.
 
-- Вам нужно запустить / использовать клиент CLI версии v0.12.2.0 или новее, который можно скачать <a href="{{site.baseurl}}/downloads/">здесь</a>.
+- You need to run / use CLI v0.12.2.0, which can be found <a
+  href="{{site.baseurl}}/downloads/">here</a>.
 
-- Вам необходимо установить приложение Ledger Monero и настроить свою систему. Инструкции можно найти [здесь](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) в частности, разделы 3.1.1 и 3.2.3). Кроме того, убедитесь, что сеть переключена в `Mainnet`
+- You need to install the Ledger Monero app and configure your
+  system. Instructions can be found
+  [here](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf)
+  (sections 3.1.1 and 3.2.3 in particular). In addition, make sure to set
+  the network to `Mainnet`
 
-- Ваш Ledger должен быть подключен, и приложение Ledger Monero должно работать.
+- Your Ledger needs to be plugged in and the Ledger Monero app should be
+  running.
 
-- Ваш демон (`monerod.exe`) должен корректно работать и быть полностью синхронизированным, либо вы должны подключиться к удаленной  ноде.
+- Either your @daemon (`monerod.exe`) should be running and preferably be
+  fully synced or you should connect to a remote node.
 
 Теперь, когда мы подготовлены, давайте начинать!
 
-- Перейдите в каталог / папку где находятся файлы monerod.exe и monero-wallet-cli.exe.
+- Go to the directory / folder monerod.exe and monero-wallet-cli.exe are
+  located.
 
-- Откройте cmd / powershell. Убедитесь, что ваш курсор не находится ни на одном из файлов, затем нажимается SHIFT + ПКМ (щелчок правой кнопкой мыши). Это даст вам возможность "Open command window here" (Открыть окно командной строки здесь). Если вы используете Windows 10, это даст вам возможность "open the PowerShell window here" (Открыть окно PowerShell здесь).
+- Open a new command prompt / powershell. This is done by first making sure
+  your cursor isn't located on any of the files and subsequently doing SHIFT
+  + right click. It will give you an option to "Open command window
+  here". If you're using Windows 10 in latest version, it'll give you an
+  option to "open the PowerShell window here".
 
-- Введите:
+- Now type:
 
 `monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 7 + 8)
 
 `.\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 10)
 
-Обратите внимание, что <new-wallet-name> это параметр для фактического имени кошелька. Если вы, например, хотите назвать свой кошелек `MoneroWallet`, то команда будет следующей:
+Обратите внимание, что <new-wallet-name> это параметр для фактического имени
+кошелька. Если вы, например, хотите назвать свой кошелек `MoneroWallet`, то
+команда будет следующей:
 
-`monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 7 + 8)
+`monero-wallet-cli.exe --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200` (Win 7 + 8)
 
-`.\monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 10)
+`.\monero-wallet-cli.exe --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200` (Win 10)
 
-- CLI после выполнения вышеупомянутой команды запросит пароль. Обязательно установите надежный пароль и подтвердите его.
+- The CLI will, after executing aforementioned command, prompt your for a
+  password. Make sure to set a strong password and confirm it thereafter.
 
-- Ledger спросит, хотите ли вы экспортировать приватный ключ просмотра. Прежде всего, стоит понимать, что ваши средства не могут быть скомпрометированы только с помощью приватного ключа просмотра. Экспорт приватного ключа просмотра позволяет клиенту (на компьютере - Monero v0.12.2.0) сканировать блоки, принадлежащие вашему кошельку / адресу. Если этот параметр не используется, устройство (Ledger) сканирует все блоки, что будет значительно медленнее. Однако есть одно предостережение - если приватный ключ просмотра экспортирован и ваша система будет скомпрометирована, злоумышленник потенциально сможет нанести ущерб вашей конфиденциальности. Это практически невозможно, если ключ приватного просмотра не экспортируется в Ledger.
+- The Ledger will ask whether you want to export the private view key or
+  not. First and foremost, your funds cannot be compromised with merely the
+  private view key. Exporting the private view key enables the client (on
+  the computer - Monero v0.12.2.0) to scan blocks looking for transactions
+  that belong to your wallet / address. If this option is not utilized, the
+  device (Ledger) will scan blocks, which will be significantly
+  slower. There is, however, one caveat. That is, if your system gets
+  compromised, the adversary will potentially be able to compromise your
+  private view key as well, which is detrimental to privacy. This is
+  virtually impossible when the private view key is not exported.
 
-- Возможно, вам потребуется дважды подтвердить операцию, прежде чем начнется процесс.
+- You may have to hit confirm twice before it proceeds.
 
-- Теперь будет создан ваш Ledger Monero кошелек. Обратите внимание, что это может занять до 5-10 минут. Кроме того, следует понимать, что немедленной синхронизации с CLI и с Ledger не будет.
+- Your Ledger Monero wallet will now be generated. Note that this may take
+  up to 5-10 minutes. Furthermore, there will be no immediate feedback in
+  the CLI nor on the Ledger.
 
-- `monero-wallet-cli` начнет обновлять данные. Подождите, пока он полностью не закончит.
+- `monero-wallet-cli` will start refreshing. Wait until it has fully
+  refreshed.
 
-Поздравляем, теперь вы можете использовать Ledger Monero кошелек совместно с CLI.
+Поздравляем, теперь вы можете использовать Ledger Monero кошелек совместно с
+CLI.
 
 ### Mac OS X
 
-Сначала мы должны убедиться, что мы достаточно подготовлены. Это влечет за собой следующее:
+Сначала мы должны убедиться, что мы достаточно подготовлены. Это влечет за
+собой следующее:
 
-- В этом руководстве предполагается, что вы уже инициализировали свой Ledger кошелек и, таким образом, создали мнемоническую seed-фразу из 24 слов.
+- This guide assumes you have already initialized your Ledger wallet and
+  thus generated a 24 word mnemonic seed.
 
-- Вам нужно запустить / использовать клиент CLI версии v0.12.2.0 или новее, который можно скачать <a href="{{site.baseurl}}/downloads/">здесь</a>.
+- You need to run / use CLI v0.12.2.0, which can be found <a
+  href="{{site.baseurl}}/downloads/">here</a>.
 
-- Вам необходимо установить приложение Ledger Monero и настроить свою систему. Инструкции можно найти [здесь](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) в частности, разделы 3.1.1 и 3.2.3). Кроме того, убедитесь, что сеть переключена в `Mainnet`
+- You need to install the Ledger Monero app and configure your
+  system. Instructions can be found
+  [here](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf)
+  (sections 3.1.1 and 3.2.2 in particular). In addition, make sure to set
+  the network to `Mainnet`
 
-- Обратите внимание на то, что инструкции по конфигурированию системы (раздел --2) в Mac OS X достаточно сложны и могут восприниматься как слегка запутанные. К счастью, tficharmers создал простое и понятное руководство, которое находится [здесь](https://monero.stackexchange.com/questions/8438/how-do-i-make-my-macos-detect-my-ledger-nano-s-when-plugged-in). Вы можете воспользоваться им, если у вас возникнут проблемы.
+- Note that the instructions for system configuration (section 3.2.2) on Mac
+  OS X are quite elaborate and can be perceived as slightly
+  convoluted. Fortunately, tficharmers has created a guide
+  [here](https://monero.stackexchange.com/questions/8438/how-do-i-make-my-macos-detect-my-ledger-nano-s-when-plugged-in)
+  that you can use for assistance.
 
-- Ваш Ledger должен быть подключен, и приложение Ledger Monero должно работать.
+- Your Ledger needs to be plugged in and the Ledger Monero app should be
+  running.
 
-- Ваш демон (`monerod.exe`) должен корректно работать и быть полностью синхронизированным, либо вы должны подключиться к удаленной  ноде.
+- Either your daemon (`monerod`) should be running and preferably be fully
+  synced or you should connect to a remote node.
 
 Теперь, когда мы подготовлены, давайте начинать!
 
-- Используйте Finder для перехода в каталог / папку где находится `monero-wallet-cli` (CLI v0.12.2.0).
+- Use Finder to browse to the directory / folder `monero-wallet-cli` (CLI
+  v0.12.2.0) is located.
 
-- Перейдите на рабочий стол.
+- Go to your desktop.
 
-- Откройте окно терминала (если вы не знаете, как открыть терминал, ознакомьтесь со следующим руководством [здесь](https://apple.stackexchange.com/a/256263)).
+- Open a new terminal (if don't know how to open a terminal, see
+  [here](https://apple.stackexchange.com/a/256263)).
 
-- Перетащите папку с `monero-wallet-cli` в терминал. Он должен добавить полный путь к окне терминала. Не нажимайте enter.
+- Drag `monero-wallet-cli` in the terminal. It should add the full path to
+  the terminal. Do not hit enter.
 
-- Введите:
+- Now type:
 
 `--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
 
-Обратите внимание, что <new-wallet-name> это параметр для фактического имени кошелька. Если вы, например, хотите назвать свой кошелек `MoneroWallet`, то команда будет следующей:
+Обратите внимание, что <new-wallet-name> это параметр для фактического имени
+кошелька. Если вы, например, хотите назвать свой кошелек `MoneroWallet`, то
+команда будет следующей:
 
 `--generate-from-device MoneroWallet --subaddress-lookahead 3:200`
 
-Обратите внимание, что вышеупомянутый текст будет добавлен к полному пути `monero-wallet-cli`. Таким образом, прежде чем вы нажмете enter, ваш текст в окне терминала должен выглядеть следующим образом:
+Обратите внимание, что вышеупомянутый текст будет добавлен к полному пути
+`monero-wallet-cli`. Таким образом, прежде чем вы нажмете enter, ваш текст в
+окне терминала должен выглядеть следующим образом:
 
 `/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
 
 Где полный путь - это фактически путь к каталогу на вашем Mac OS X.
 
-- CLI после выполнения вышеупомянутой команды запросит пароль. Обязательно установите надежный пароль и подтвердите его.
+- The CLI will, after executing aforementioned command, prompt you for a
+  password. Make sure to set a strong password and confirm it thereafter.
 
-- Ledger спросит, хотите ли вы экспортировать приватный ключ просмотра. Прежде всего, стоит понимать, что ваши средства не могут быть скомпрометированы только с помощью приватного ключа просмотра. Экспорт приватного ключа просмотра позволяет клиенту (на компьютере - Monero v0.12.2.0) сканировать блоки, принадлежащие вашему кошельку / адресу. Если этот параметр не используется, устройство (Ledger) сканирует все блоки, что будет значительно медленнее. Однако есть одно предостережение - если приватный ключ просмотра экспортирован и ваша система будет скомпрометирована, злоумышленник потенциально сможет нанести ущерб вашей конфиденциальности. Это практически невозможно, если ключ приватного просмотра не экспортируется в Ledger.
+- The Ledger will ask whether you want to export the private view key or
+  not. First and foremost, your funds cannot be compromised with merely the
+  private view key. Exporting the private view key enables the client (on
+  the computer - Monero v0.12.2.0) to scan blocks looking for transactions
+  that belong to your wallet / address. If this option is not utilized, the
+  device (Ledger) will scan blocks, which will be significantly
+  slower. There is, however, one caveat. That is, if your system gets
+  compromised, the adversary will potentially be able to compromise your
+  private view key as well, which is detrimental to privacy. This is
+  virtually impossible when the private view key is not exported.
 
-- Возможно, вам потребуется дважды подтвердить операцию, прежде чем начнется процесс.
+- You may have to hit confirm twice before it proceeds.
 
-- Теперь будет создан ваш Ledger Monero кошелек. Обратите внимание, что это может занять до 5-10 минут. Кроме того, следует понимать, что немедленной синхронизации с CLI и с Ledger не будет.
+- Your Ledger Monero wallet will now be generated. Note that this may take
+  up to 5-10 minutes. Furthermore, there will be no immediate feedback in
+  the CLI nor on the Ledger.
 
-- `monero-wallet-cli` начнет обновлять данные. Подождите, пока он полностью не закончит.
+- `monero-wallet-cli` will start refreshing. Wait until it has fully
+  refreshed.
 
-- Поздравляем, теперь вы можете использовать Ledger Monero кошелек совместно с CLI.
+- Поздравляем, теперь вы можете использовать Ledger Monero кошелек совместно
+  с CLI.
 
 ### Linux
 
-Сначала мы должны убедиться, что мы достаточно подготовлены. Это влечет за собой следующее:
+Сначала мы должны убедиться, что мы достаточно подготовлены. Это влечет за
+собой следующее:
 
-- В этом руководстве предполагается, что вы уже инициализировали свой Ledger кошелек и, таким образом, создали мнемоническую seed-фразу из 24 слов.
+- This guide assumes you have already initialized your Ledger wallet and
+  thus generated a 24 word mnemonic seed.
 
-- Вам нужно запустить / использовать клиент CLI версии v0.12.2.0 или новее, который можно скачать <a href="{{site.baseurl}}/downloads/">здесь</a>.
+- You need to run / use CLI v0.12.2.0, which can be found <a
+  href="{{site.baseurl}}/downloads/">here</a>.
 
-- Вам необходимо установить приложение Ledger Monero и настроить свою систему. Инструкции можно найти [здесь](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) в частности, разделы 3.1.1 и 3.2.3). Кроме того, убедитесь, что сеть переключена в `Mainnet`
+- You need to install the Ledger Monero app and configure your
+  system. Instructions can be found
+  [here](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf)
+  (sections 3.1.1 and 3.2.1 in particular). In addition, make sure to set
+  the network to `Mainnet`
 
-- Ваш Ledger должен быть подключен, и приложение Ledger Monero должно работать.
+- Your Ledger needs to be plugged in and the Ledger Monero app should be
+  running.
 
-- Ваш демон (`monerod.exe`) должен корректно работать и быть полностью синхронизированным, либо вы должны подключиться к удаленной  ноде.
+- Either your daemon (`monerod`) should be running and preferably be fully
+  synced or you should connect to a remote node.
 
 Теперь, когда мы подготовлены, давайте начинать!
 
-- Перейдите в каталог / папку где находятся файлы monerod.exe и monero-wallet-cli.exe.
+- Go to the directory / folder monero-wallet-cli and monerod are located.
 
-- Откройте новое окно терминала
+- Open a new terminal
 
-- Введите:
+- Now type:
 
 `./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
 
-Обратите внимание, что <new-wallet-name> это параметр для фактического имени кошелька. Если вы, например, хотите назвать свой кошелек `MoneroWallet`, то команда будет следующей:
+Обратите внимание, что <new-wallet-name> это параметр для фактического имени
+кошелька. Если вы, например, хотите назвать свой кошелек `MoneroWallet`, то
+команда будет следующей:
 
-`./monero-wallet-cli --generate-from-device MoneroWallet --subaddress-lookahead 3:200`
+`./monero-wallet-cli --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200`
 
-- CLI после выполнения вышеупомянутой команды запросит пароль. Обязательно установите надежный пароль и подтвердите его.
+- The CLI will, after executing aforementioned command, prompt your for a
+  password. Make sure to set a strong password and confirm it thereafter.
 
-- Ledger спросит, хотите ли вы экспортировать приватный ключ просмотра. Прежде всего, стоит понимать, что ваши средства не могут быть скомпрометированы только с помощью приватного ключа просмотра. Экспорт приватного ключа просмотра позволяет клиенту (на компьютере - Monero v0.12.2.0) сканировать блоки, принадлежащие вашему кошельку / адресу. Если этот параметр не используется, устройство (Ledger) сканирует все блоки, что будет значительно медленнее. Однако есть одно предостережение - если приватный ключ просмотра экспортирован и ваша система будет скомпрометирована, злоумышленник потенциально сможет нанести ущерб вашей конфиденциальности. Это практически невозможно, если ключ приватного просмотра не экспортируется в Ledger.
+- The Ledger will ask whether you want to export the private view key or
+  not. First and foremost, your funds cannot be compromised with merely the
+  private view key. Exporting the private view key enables the client (on
+  the computer - Monero v0.12.2.0) to scan blocks looking for transactions
+  that belong to your wallet / address. If this option is not utilized, the
+  device (Ledger) will scan blocks, which will be significantly
+  slower. There is, however, one caveat. That is, if your system gets
+  compromised, the adversary will potentially be able to compromise your
+  private view key as well, which is detrimental to privacy. This is
+  virtually impossible when the private view key is not exported.
 
-- Возможно, вам потребуется дважды подтвердить операцию, прежде чем начнется процесс.
+- You may have to hit confirm twice before it proceeds.
 
-- Теперь будет создан ваш Ledger Monero кошелек. Обратите внимание, что это может занять до 5-10 минут. Кроме того, следует понимать, что немедленной синхронизации с CLI и с Ledger не будет.
+- Your Ledger Monero wallet will now be generated. Note that this may take
+  up to 5-10 minutes. Furthermore, there will be no immediate feedback in
+  the CLI nor on the Ledger.
 
-- `monero-wallet-cli` начнет обновлять данные. Подождите, пока он полностью не закончит.
+- `monero-wallet-cli` will start refreshing. Wait until it has fully
+  refreshed.
 
-Поздравляем, теперь вы можете использовать Ledger Monero кошелек совместно с CLI.
+Поздравляем, теперь вы можете использовать Ledger Monero кошелек совместно с
+CLI.
 
-### Несколько заключительных замечаний
+### A few final notes
 
-Мы настоятельно рекомендуем сначала протестировать полный процесс. То есть отправьте небольшое количество монет на кошелек и затем восстановите его (используя вышеупомянутое руководство). Обратите внимание, что после создания / восстановления кошелька вы должны добавить флаг `-restore-height` (с высотой блока до совершения вашей первой транзакции на кошелек) к команде на шаге 3 (Windows), шаге 5 (Mac OS X) или шаге 3 (Linux). Более подробную информацию о высоте восстановления и порядке ее масштабирования можно найти [здесь](https://monero.stackexchange.com/questions/7581/what-is-the-relevance-of-the-restore-height).
+- We'd strongly advise to test the full process first. That is, send a small
+  amount to the wallet and subsequently restore it (using aforementioned
+  guide) to verify that you can recover the wallet. Note that, upon
+  recreating / restoring the wallet, you ought to append the
+  `--restore-height` flag (with a block height before the height of your
+  first transaction to the wallet) to the command in step 3 (Windows), step
+  5 (Mac OS X), or step 3 (Linux). More information about the restore height
+  and how to approximate it can be found
+  [here](https://monero.stackexchange.com/questions/7581/what-is-the-relevance-of-the-restore-height).
 
-- Если вы используете удаленную ноду, добавьте флаг `-daemon-address host:port` к команде на шаге 3 (Windows), шаге 5 (Mac OS X) или шаге 3 (Linux).
+- If you use a remote node, append the `--daemon-address host:port` flag to
+  the command in step 3 (Windows), step 5 (Mac OS X), or step 3 (Linux).
 
-- При желании вы можете вручную настроить значение `--subaddress-lookahead`. Первое значение - это количество учетных записей, а второе значение - количество субадрессов на одну учетную запись. Таким образом, если вы хотите, создать 5 учетных записей со 100 субадрессами, используйте `--subaddress-lookahead 5: 100`. Имейте в виду, что чем больше субадрессов вы создаете, тем больше времени уйдет на то, чтобы Ledger сгенерировал ваш кошелек.
+- If desired, you can manually tweak the `--subaddress-lookahead` value. The
+  first value is the number of accounts and the second value is the number
+  of subaddresses per account. Thus, if you, for instance, want to
+  pregenerate 5 accounts with 100 subaddresses each, use
+  `--subaddress-lookahead 5:100`. Bear in mind that, the more subaddresses
+  you pregenerate, the longer it takes for the Ledger to create your wallet.
 
-- Вам нужно только один раз использовать флаг -generate-from-device (т. е. при создании кошелька). После этого вы можете воспользоваться им точно так же, как в CLI. То есть:
+- Вам нужно только один раз использовать флаг `--generate-from-device`
+  (т. е. при создании кошелька). После этого вы можете воспользоваться им
+  точно так же, как в CLI. То есть:
    - Убедитесь, что ваш Ledger включен, а приложение Monero запущено.
    - Откройте `monero-wallet-cli`.
    - Введите имя вашего Ledger Monero кошелька.
@@ -159,4 +267,7 @@
 
    Если файлы кошелька Ledger находятся не в том же каталоге, где располагается `monero-wallet-cli`, вы должны открыть файл `monero-wallet-cli` с флагом `-wallet-file /path/to/wallet.keys/file`. Вы можете скопировать файлы кошелька Ledger в тот же каталог, что и `monero-wallet-cli`.
 
-- Если у вас есть дополнительные вопросы или вам нужна помощь, пожалуйста, оставьте комментарий к оригинальному ответу на [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli).
+- If you have any further questions or need assistance, please leave a
+  comment to the original
+  [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli)
+  answer.
