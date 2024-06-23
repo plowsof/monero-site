@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 12:30+0000\n"
+"POT-Creation-Date: 2024-06-23 12:55+0000\n"
 "PO-Revision-Date: 2021-12-18 09:33+0000\n"
 "Last-Translator: netrik182 <netrik@tuta.io>\n"
 "Language-Team: Italian <https://translate.getmonero.org/projects/getmonero-user-guides/offline_backup/it/>\n"
@@ -93,27 +93,24 @@ msgid "**CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed"
 msgstr ""
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:29
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:30
 #, no-wrap
-msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+msgid ""
+"**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+"- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key\n"
 msgstr ""
 
 #. type: Bullet: '- '
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:31
-msgid "Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
-msgstr ""
-
-#. type: Bullet: '- '
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:33
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:32
 msgid "Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
 msgstr ""
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:34
 msgid "The account you've created was created in RAM, and the digital files are now inaccessible. If some adversary manages to somehow obtain the data, they will lack the long password to open it. If you need to receive payments, you have your public address, and you have the view key if needed. If you need access to it, you have your 25 word @mnemonic-seed, and you can now write out several copies of it, including an offsite copy (e.g. a bank deposit box)."
 msgstr ""
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:36
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
 msgid "Related: [Offline Account Generator]({{ site.baseurl}}/generator)"
 msgstr ""

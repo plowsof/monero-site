@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 12:30+0000\n"
+"POT-Creation-Date: 2024-06-23 12:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,31 +104,33 @@ msgstr "**PASO CRÍTICO**: Escribe (en papel) tu semilla mnemónica de 25 palabr
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:29
-#, no-wrap
-msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever"
-msgstr "**ADVERTENCIA**: Si olvidas escribir esta información tus fondos podrán perderse para siempre"
-
-#
-#. type: Bullet: '- '
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:31
-msgid "Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:30
+#, fuzzy, no-wrap
+#| msgid "Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
+msgid ""
+"**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+"- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key\n"
 msgstr "Escribe (en tu teléfono, papel, otra computadora, o donde tú quieras) tu dirección y llave de visualización"
 
 #
 #. type: Bullet: '- '
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:33
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:32
 msgid "Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
 msgstr "Apaga la computadora, remueve la batería si hay alguna, y déjala físicamente apagada por algunas horas"
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:34
 msgid "The account you've created was created in RAM, and the digital files are now inaccessible. If some adversary manages to somehow obtain the data, they will lack the long password to open it. If you need to receive payments, you have your public address, and you have the view key if needed. If you need access to it, you have your 25 word @mnemonic-seed, and you can now write out several copies of it, including an offsite copy (e.g. a bank deposit box)."
 msgstr "La cuenta que acabas de crear fue creada en la RAM, y los archivos digitales ahora son inaccesibles. Si algún adversario se las arregla para de alguna forma obtener los datos, no contarán con la larga contraseña para abrirla. Si necesitas recibir pagos, cuentas con tu dirección pública, y tienes la llave de visualización por si acaso. Si necesitas acceder a tu cuenta, cuentas con la semilla mnemónica (@mnemonic-seed) de 25 palabras, y puedes escribir varias copias de ella, incluyendo una copia fuera de sitio (e.g. una caja de depósito bancaria)."
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:36
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
 msgid "Related: [Offline Account Generator]({{ site.baseurl}}/generator)"
 msgstr "Relacionado: [Generador de cuenta offline]({{ site.baseurl}}/generator)"
+
+#
+#, no-wrap
+#~ msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever"
+#~ msgstr "**ADVERTENCIA**: Si olvidas escribir esta información tus fondos podrán perderse para siempre"

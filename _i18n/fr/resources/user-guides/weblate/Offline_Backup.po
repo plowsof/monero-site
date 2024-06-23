@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 12:30+0000\n"
+"POT-Creation-Date: 2024-06-23 12:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,23 +124,17 @@ msgstr ""
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:29
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:30
 #, fuzzy, no-wrap
-#| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
-msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
-msgstr "- **ÉTAPE CRITIQUE** : Notez (sur un papier) votre @mnemonic-seed de 25 mots.  **ATTENTION**: Si vous oubliez de notez cette information, vos fonds pourraient être perdus pour toujours."
-
-#
-#. type: Bullet: '- '
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:31
-#, fuzzy
 #| msgid "- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
-msgid "Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
+msgid ""
+"**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+"- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key\n"
 msgstr "- Notez (sur votre smartphone, un papier, un autre ordinateur, n'importe où) votre adresse et votre clef d'audit."
 
 #
 #. type: Bullet: '- '
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:33
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:32
 #, fuzzy
 #| msgid "- Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
 msgid "Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
@@ -148,14 +142,20 @@ msgstr "- Éteignez votre ordinateur, enlevez la batterie s'il y en a une, et la
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:34
 msgid "The account you've created was created in RAM, and the digital files are now inaccessible. If some adversary manages to somehow obtain the data, they will lack the long password to open it. If you need to receive payments, you have your public address, and you have the view key if needed. If you need access to it, you have your 25 word @mnemonic-seed, and you can now write out several copies of it, including an offsite copy (e.g. a bank deposit box)."
 msgstr "Le compte que vous avez créé se trouvait en mémoire vive, et les fichiers sont maintenant inaccessible. Si un ennemi parvenait d'une quelconque manière à obtenir ces données, il lui manquerait le long mot de passe pour pouvoir l'ouvrir. Si vous avez besoin de recevoir des paiements, vous avez votre adresse publique, et vous avez votre clef d'audit si nécessaire. Si vous avez besoin d'y accéder, vous avez votre @mnemonic-seed de 25 mots, et vous pouvez maintenant en faire quelques copies, dont une copie externe (par exemple, dans le coffre d'une banque)."
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:36
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
 #, fuzzy
 #| msgid "Related: [Offline Account Generator](http://moneroaddress.org/)"
 msgid "Related: [Offline Account Generator]({{ site.baseurl}}/generator)"
 msgstr "Lié : [Générateur de Compte Hors-Ligne](http://moneroaddress.org/)"
+
+#
+#, fuzzy, no-wrap
+#~| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
+#~ msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+#~ msgstr "- **ÉTAPE CRITIQUE** : Notez (sur un papier) votre @mnemonic-seed de 25 mots.  **ATTENTION**: Si vous oubliez de notez cette information, vos fonds pourraient être perdus pour toujours."

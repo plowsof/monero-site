@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 12:30+0000\n"
+"POT-Creation-Date: 2024-06-23 12:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,23 +124,17 @@ msgstr ""
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:29
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:30
 #, fuzzy, no-wrap
-#| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
-msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
-msgstr "- **ONMISBARE STAP**: Schrijf je hersteltekst (@mnemonic-seed) van 25 woorden op (op papier).  **LET OP**: Als je vergeet deze gegevens op te schrijven, kun je je geld voor altijd kwijtraken."
-
-#
-#. type: Bullet: '- '
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:31
-#, fuzzy
 #| msgid "- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
-msgid "Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
+msgid ""
+"**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+"- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key\n"
 msgstr "- Noteer je adres en je alleen-lezen sleutel (op je telefoon, op papier, op een andere computer, of waar je maar wilt)."
 
 #
 #. type: Bullet: '- '
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:33
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:32
 #, fuzzy
 #| msgid "- Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
 msgid "Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
@@ -148,14 +142,20 @@ msgstr "- Schakel de computer uit, haal de accu eruit als die erin zit, en laat 
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:34
 msgid "The account you've created was created in RAM, and the digital files are now inaccessible. If some adversary manages to somehow obtain the data, they will lack the long password to open it. If you need to receive payments, you have your public address, and you have the view key if needed. If you need access to it, you have your 25 word @mnemonic-seed, and you can now write out several copies of it, including an offsite copy (e.g. a bank deposit box)."
 msgstr "Je nieuwe account is in RAM gemaakt en de digitale bestanden zijn nu verdwenen. Zelfs een aanvaller die op een of andere manier deze gegevens zou krijgen, zou het lange wachtwoord missen om de portemonnee te openen. Voor het ontvangen van betalingen heb je je openbare adres, en je alleen-lezen sleutel om ze te bekijken. Voor toegang tot je portemonnee heb je je hersteltekst (@mnemonic-seed) van 25 woorden. Je kunt nu meerdere exemplaren hiervan opschrijven, waaronder een om elders te bewaren (bijvoorbeeld in een bankkluis)."
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:36
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
 #, fuzzy
 #| msgid "Related: [Offline Account Generator](http://moneroaddress.org/)"
 msgid "Related: [Offline Account Generator]({{ site.baseurl}}/generator)"
 msgstr "Gerelateerd: [Offline account-generator](http://moneroaddress.org/)"
+
+#
+#, fuzzy, no-wrap
+#~| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
+#~ msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+#~ msgstr "- **ONMISBARE STAP**: Schrijf je hersteltekst (@mnemonic-seed) van 25 woorden op (op papier).  **LET OP**: Als je vergeet deze gegevens op te schrijven, kun je je geld voor altijd kwijtraken."
