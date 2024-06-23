@@ -39,10 +39,10 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:10
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> seed"
 msgid "> seed\n"
-msgstr "> semente"
+msgstr "> semente\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:12
