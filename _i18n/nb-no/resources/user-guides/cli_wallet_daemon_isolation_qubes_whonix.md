@@ -18,9 +18,10 @@ trenger nettverking for å koble seg til daemonen. På denne måten trenger du
 ikke en nettverksforbindelse til lommeboken. Du bevarer ressursene til
 Tor-nettverket, og det er også mindre latens.
 
-## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):
+## 1. [Opprett Whonix AppVM-er](https://www.whonix.org/wiki/Qubes/Install):
 
-+ Using a Whonix workstation template, create two workstations as follows:
++ Opprett følgende to arbeidsstasjoner ved å bruke en
+  Whonix-arbeidsstasjonmal:
 
   - Den første arbeidsstasjonen vil brukes for lommeboken din, og vil
     refereres til som `monero-wallet-ws`. Du må sette din `NetVM` til
@@ -34,9 +35,9 @@ Tor-nettverket, og det er også mindre latens.
     blokkjeden]({{ site.baseurl }}/downloads/#blockchain). Husk at
     blokkjeden over tid vil bruke oppta lagringsplass.
 
-## 2. In the AppVM `monerod-ws`:
+## 2. I AppVM-en `monerod-ws`:
 
-+ Create a `systemd` file.
++ Opprett en `systemd`-fil.
 
 ```
 user@host:~$ sudo nano /home/user/monerod.service
@@ -67,7 +68,7 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-+ Make `monerod` daemon run on startup by editing the file
++ Få `monerod` daemon til å kjøre på oppstart ved å redigere filen
   `/rw/config/rc.local`.
 
 ```
@@ -77,8 +78,7 @@ user@host:~$ sudo nano /rw/config/rc.local
 Legg til disse linjene nederst:
 
 ```
-cp /home/user/monerod.service /lib/systemd/system/
-systemctl start monerod.service
+cp /home/user/monerod.service /lib/systemd/system/ systemctl start monerod.service
 ```
 
 Gjør filen kjørbar.
@@ -87,11 +87,11 @@ Gjør filen kjørbar.
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Create rpc action file.
++ Opprett en rpc-handlingsfil.
 
 ```
-user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
-user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
+user@host:~$ sudo mkdir /rw/usrlocal/etc/qubesp-rpc
+ user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
 Legg til denne linjen:
@@ -100,11 +100,11 @@ Legg til denne linjen:
 socat STDIO TCP:localhost:18081
 ```
 
-+ Shutdown `monerod-ws`.
++ Skru av `monerod-ws`.
 
-## 3. In the AppVM `monero-wallet-ws`:
+## 3. I AppVM-en `monero-wallet-ws`:
 
-+ Edit the file `/rw/config/rc.local`.
++ Rediger filen `/rw/config/rc.local`.
 
 ```
 user@host:~$ sudo nano /rw/config/rc.local
@@ -122,11 +122,11 @@ Gjør filen kjørbar.
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Shutdown `monero-wallet-ws`.
++ Slå av `monero-wallet-ws`.
 
-## 4. In `dom0`:
+## 4. I `dom0`:
 
-+ Create the file `/etc/qubes-rpc/policy/user.monerod`:
++ Opprett filen `/etc/qubes-rpc/policy/user.monerod`:
 
 ```
 [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod
