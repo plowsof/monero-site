@@ -79,7 +79,8 @@ user@host:~$ sudo nano /rw/config/rc.local
 Добавляем эти строки в конец текста:
 
 ```
-cp /home/user/monerod.service /lib/systemd/system/ systemctl start monerod.service
+cp /home/user/monerod.service /lib/systemd/system/
+systemctl start monerod.service
 ```
 
 Создаем исполняемый файл.
@@ -92,7 +93,7 @@ user@host:~$ sudo chmod +x /rw/config/rc.local
 
 ```
 user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
- user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
+user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
 Добавляем строку:

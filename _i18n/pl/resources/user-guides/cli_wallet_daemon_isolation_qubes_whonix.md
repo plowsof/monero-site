@@ -76,7 +76,8 @@ user@host:~$ sudo nano /rw/config/rc.local
 Dodaj te linie na samym dole:
 
 ```
-cp /home/user/monerod.service /lib/systemd/system/ systemctl start monerod.service
+cp /home/user/monerod.service /lib/systemd/system/
+systemctl start monerod.service
 ```
 
 Zezwól na uruchamianie pliku.
@@ -89,7 +90,7 @@ user@host:~$ sudo chmod +x /rw/config/rc.local
 
 ```
 user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
- user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
+user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
 Dodaj linię:
