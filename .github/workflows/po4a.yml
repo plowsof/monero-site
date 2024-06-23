@@ -125,7 +125,12 @@ jobs:
             base_filename=$(basename "$md_file" | sed -E 's/\.md$//')
             
             # Construct the po4a configuration dynamically
-            po4a_config="[po4a_langs] es it pl fr ar ru de nl pt-br tr zh-cn zh-tw nb-no\n"
+            if [ "$RUN_ON_ALL" == "true" ]; then
+              po4a_config="[po4a_langs] es it pl fr ar ru de nl pt-br tr zh-cn zh-tw nb-no\n"
+            else
+              lang=$(echo "$md_file" | sed -E 's|_i18n/([^/]+)/resources/.*|\1|')
+              po4a_config="[po4a_langs] ${lang}\n"
+            fi
             po4a_config+="[po4a_paths] ../_i18n/en/resources/${directory}/weblate/${base_filename}.pot \$lang:../_i18n/\$lang/resources/${directory}/weblate/${base_filename}.po\n"
             po4a_config+="[options] opt:\"--keep=0\"\n"
             po4a_config+="[options] opt:\"--localized-charset=UTF-8\"\n"
