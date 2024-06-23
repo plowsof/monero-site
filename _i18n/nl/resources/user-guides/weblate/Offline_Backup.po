@@ -25,126 +25,101 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:3
-#, fuzzy, no-wrap
-#| msgid "## Operating Systems: Various versions of Linux and Windows 7, 8"
+#, no-wrap
 msgid "Operating Systems:  Various versions of Linux and Windows 7, 8"
-msgstr "## Besturingssystemen: diverse Linux-versies en Windows 7/8"
+msgstr "Besturingssystemen: diverse Linux-versies en Windows 7/8"
 
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:5
-#, fuzzy, no-wrap
-#| msgid "### Wallet Software: Simplewallet"
+#, no-wrap
 msgid "Wallet Software:  Simplewallet"
-msgstr "### Portemonneesoftware Simplewallet"
+msgstr "Portemonneesoftware Simplewallet"
 
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:7
-#, fuzzy, no-wrap
-#| msgid "#### Resource for Creating Bootable Disks:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)\n"
+#, no-wrap
 msgid "Resource for Creating Bootable Disks:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)"
-msgstr "### Tool voor het maken van opstartbare schijven:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)\n"
+msgstr "Tool voor het maken van opstartbare schijven:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)"
 
 #
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:9
-#, fuzzy, no-wrap
-#| msgid "#### Resource for Monero Binaries: [Monero Binaries]({{ site.baseurl_root }}/downloads/)"
+#, no-wrap
 msgid "Resource for Monero Binaries:  [Monero Binaries]({{ site.baseurl_root }}/downloads/)"
-msgstr "### Monero-binaries downloaden: [Binaire bestanden voor Monero]({{ site.baseurl }}/downloads/)"
+msgstr "Monero-binaries downloaden: [Binaire bestanden voor Monero]({{ site.baseurl }}/downloads/)"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:12
-#, fuzzy
-#| msgid "- Take any computer you have lying around, even your normal workstation. You may find it easier to use an older computer that has no wifi or bluetooth if you're particularly paranoid"
 msgid "Take any computer you have lying around, even your normal workstation. You may find it easier to use an older computer that has no wifi or bluetooth if you're particularly paranoid"
-msgstr "- Gebruik een willekeurige computer, desnoods de computer waar je normaal op werkt. Als je extra voorzichtig bent, is het handig om een oudere computer te gebruiken zonder wifi of bluetooth."
+msgstr "Gebruik een willekeurige computer, desnoods de computer waar je normaal op werkt. Als je extra voorzichtig bent, is het handig om een oudere computer te gebruiken zonder wifi of bluetooth."
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:14
-#, fuzzy
-#| msgid "- Create a Linux or Windows bootable disk, and make sure you have the Monero binaries on the same disk or on a second disk (for Linux make sure you have also downloaded copies of the dependencies you will need, libboost1.55 and miniupnpc for instance)"
 msgid "Create a Linux or Windows bootable disk, and make sure you have the Monero binaries on the same disk or on a second disk (for Linux make sure you have also downloaded copies of the dependencies you will need, libboost1.55 and miniupnpc for instance)"
-msgstr "- Maak een opstartbare schijf voor Linux of Windows, en zet de Monero-binaries op dezelfde schijf of een tweede schrijf. (Maak voor Linux ook kopieën van de gedownloade afhankelijkheden die je nodig hebt, bijvoorbeeld libboost1.55 en miniupnpc.)"
+msgstr "Maak een opstartbare schijf voor Linux of Windows, en zet de Monero-binaries op dezelfde schijf of een tweede schrijf. (Maak voor Linux ook kopieën van de gedownloade afhankelijkheden die je nodig hebt, bijvoorbeeld libboost1.55 en miniupnpc.)"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:16
-#, fuzzy
-#| msgid "- Disconnect the network and/or Internet cables from your computer, physically remove the wifi card or switch the wifi/bluetooth off on a laptop if possible"
 msgid "Disconnect the network and/or Internet cables from your computer, physically remove the wifi card or switch the wifi/bluetooth off on a laptop if possible"
-msgstr "- Maak de netwerk-/internetkabels los van de computer, haal de wifi-kaart eruit of schakel de wifi en bluetooth uit op een laptop, voor zover dat mogelijk is."
+msgstr "Maak de netwerk-/internetkabels los van de computer, haal de wifi-kaart eruit of schakel de wifi en bluetooth uit op een laptop, voor zover dat mogelijk is."
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:18
-#, fuzzy
-#| msgid "- Boot into your bootable OS, install the dependencies if necessary"
 msgid "Boot into your bootable OS, install the dependencies if necessary"
-msgstr "- Start op met het besturingssysteem op de schijf en installeer eventueel de afhankelijkheden."
+msgstr "Start op met het besturingssysteem op de schijf en installeer eventueel de afhankelijkheden."
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:20
-#, fuzzy
-#| msgid "- Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows bootable ISOs normally have a Z: drive or something)"
 msgid "Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows bootable ISOs normally have a Z: drive or something)"
-msgstr "- Kopieer de Monero-binaries naar een RAM-schijf (/dev/shm in Linux, in Windows meestal een station Z: of zoiets op een opstartbare ISO)."
+msgstr "Kopieer de Monero-binaries naar een RAM-schijf (/dev/shm in Linux, in Windows meestal een station Z: of zoiets op een opstartbare ISO)."
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:22
-#, fuzzy
-#| msgid "- Don't run the Monero @daemon. Instead, using the command line, use monero-wallet-cli to create a new Monero @account"
 msgid "Don't run the Monero @daemon. Instead, using the command line, use monero-wallet-cli to create a new Monero @account"
-msgstr "- Voer de Monero-daemon niet uit. Gebruik in plaats daarvan monero-wallet-cli in een opdrachtregelvenster om een nieuw Monero-@account aan te maken."
+msgstr "Voer de Monero-daemon niet uit. Gebruik in plaats daarvan monero-wallet-cli in een opdrachtregelvenster om een nieuw Monero-@account aan te maken."
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:24
-#, fuzzy
-#| msgid "- When prompted for a name, give it any name, it doesn't really matter"
 msgid "When prompted for a name, give it any name, it doesn't really matter"
-msgstr "- Geef een naam uit wanneer daarom gevraagd wordt. Het maakt niet uit wat voor naam."
+msgstr "Geef een naam uit wanneer daarom gevraagd wordt. Het maakt niet uit wat voor naam."
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:26
-#, fuzzy
-#| msgid "- When prompted for a password, type in like 50 - 100 random characters. Don't worry that you don't know the password, just make it LONG"
 msgid "When prompted for a password, type in like 50 - 100 random characters. Don't worry that you don't know the password, just make it LONG"
-msgstr "- Typ 50 tot 100 willekeurige tekens wanneer om een wachtwoord wordt gevraagd. Maak je geen zorgen, je hoeft het wachtwoord niet te onthouden, als het maar LANG is."
+msgstr "Typ 50 tot 100 willekeurige tekens wanneer om een wachtwoord wordt gevraagd. Maak je geen zorgen, je hoeft het wachtwoord niet te onthouden, als het maar LANG is."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:27
 msgid "**CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed"
-msgstr ""
+msgstr "**ONMISBARE STAP**: Schrijf je hersteltekst (@mnemonic-seed) van 25 woorden op (op papier)."
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:29
-#, fuzzy, no-wrap
-#| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
+#, no-wrap
 msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
-msgstr "- **ONMISBARE STAP**: Schrijf je hersteltekst (@mnemonic-seed) van 25 woorden op (op papier).  **LET OP**: Als je vergeet deze gegevens op te schrijven, kun je je geld voor altijd kwijtraken."
+msgstr "**LET OP**: Als je vergeet deze gegevens op te schrijven, kun je je geld voor altijd kwijtraken.\n"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:31
-#, fuzzy
-#| msgid "- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
 msgid "Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
-msgstr "- Noteer je adres en je alleen-lezen sleutel (op je telefoon, op papier, op een andere computer, of waar je maar wilt)."
+msgstr "Noteer je adres en je alleen-lezen sleutel (op je telefoon, op papier, op een andere computer, of waar je maar wilt)."
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:33
-#, fuzzy
-#| msgid "- Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
 msgid "Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
-msgstr "- Schakel de computer uit, haal de accu eruit als die erin zit, en laat de computer een paar uur zonder stroom uit staan."
+msgstr "Schakel de computer uit, haal de accu eruit als die erin zit, en laat de computer een paar uur zonder stroom uit staan."
 
 #
 #. type: Plain text
@@ -155,7 +130,5 @@ msgstr "Je nieuwe account is in RAM gemaakt en de digitale bestanden zijn nu ver
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:36
-#, fuzzy
-#| msgid "Related: [Offline Account Generator](http://moneroaddress.org/)"
 msgid "Related: [Offline Account Generator]({{ site.baseurl}}/generator)"
-msgstr "Gerelateerd: [Offline account-generator](http://moneroaddress.org/)"
+msgstr "Gerelateerd: [Offline account-generator]({{ site.baseurl}}/generator)"
