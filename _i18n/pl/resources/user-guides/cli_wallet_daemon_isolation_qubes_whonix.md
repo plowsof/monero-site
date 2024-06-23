@@ -1,19 +1,36 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-With [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) you can have a Monero wallet that is without networking and running on a virtually isolated system from the Monero daemon which has all of its traffic forced over [Tor](https://torproject.org).
+Z [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) możesz mieć
+portfel Monero, który jest odłączony od sieci i działa na wirtualnie
+izolowanym systemie gdzie cały ruch jest wymuszany przez
+[Tor](https://torproject.org).
 
-Qubes gives the flexibility to easily create separate VMs for different purposes. First you will create a Whonix workstation for the wallet with no networking. Next, another Whonix workstation for the @daemon which will use your Whonix gateway as it's NetVM. For communication between the wallet and daemon you can make use of Qubes [qrexec](https://www.qubes-os.org/doc/qrexec3/).
+Qubes daje możliwość łatwego tworzenia oddzielnych maszyn wirtualnych dla
+różnych celów. Najpierw musisz stworzyć stację roboczą Whonix dla portfela
+bez dostępu do sieci. Następnie, kolejną stację roboczą dla @daemon, który
+użyje bramki Whonix-a jako NetVM. Do komunikacji między portfelem, a daemon
+możesz użyć Qubes[qrexec](https://www.qubes-os.org/doc/qrexec3/).
 
-This is safer than other approaches which route the wallets rpc over a Tor hidden service, or that use physical isolation but still have networking to connect to the daemon. In this way you don't need any network connection on the wallet, you preserve resources of the Tor network, and there is less latency.
-
+Jest to bezpieczniejsze niż inne sposoby, które kierują rpc portfela przez
+ukrytą usługę Tor, lub które używają fizycznej izolacji, ale nadal są
+podłączone do sieci. W ten sposób nie potrzebujesz żadnego połączenia z
+siecią, zachowujesz dostęp do Tor-a i masz mniejsze opóźnienia.
 
 ## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):
 
 + Using a Whonix workstation template, create two workstations as follows:
 
-  - The first workstation will be used for your wallet, it will referred to as `monero-wallet-ws`. You will have `NetVM` set to `none`.
+  - Pierwsza stacja robocza będzie używana dla Twojego portfela, będzie ona
+    określana jako `monero-wallet-ws`. Będziesz miał `NetVM` ustawiony na
+    `none`.
 
-  - The second workstation will be for the `monerod` daemon, it will be referred to as `monerod-ws`. You will have `NetVM` set to the Whonix gateway `sys-whonix`. Before moving on, make sure this workstation has enough private storage. You can estimate how much space you need by checking the size of the [raw blockchain]({{ site.baseurl }}/downloads/#blockchain). Keep in mind that the blockchain will take up more space with time.
+  - Druga stacja robocza będzie przeznaczona dla demona `monerod`, będzie
+    ona określana jako `monerod-ws`. Będziesz miał `NetVM` ustawiony na
+    bramę Whonixa `sys-whonix`. Zanim przejdziesz dalej, upewnij się, że ta
+    stacja robocza ma wystarczającą ilość prywatnej pamięci masowej. Możesz
+    oszacować, ile miejsca potrzebujesz, sprawdzając rozmiar [surowego
+    blockchaina]({{ site.baseurl }}/downloads/#blockchain). Należy pamiętać,
+    że blockchain z czasem będzie zajmował coraz więcej miejsca.
 
 ## 2. In the AppVM `monerod-ws`:
 
@@ -23,7 +40,7 @@ This is safer than other approaches which route the wallets rpc over a Tor hidde
 user@host:~$ sudo nano /home/user/monerod.service
 ```
 
-Paste the following contents:
+Wklej następującą treść:
 
 ```
 [Unit]
@@ -48,20 +65,21 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-+ Make `monerod` daemon run on startup by editing the file `/rw/config/rc.local`.
++ Make `monerod` daemon run on startup by editing the file
+  `/rw/config/rc.local`.
 
 ```
 user@host:~$ sudo nano /rw/config/rc.local
 ```
 
-Add these lines to the bottom:
+Dodaj te linie na samym dole:
 
 ```
 cp /home/user/monerod.service /lib/systemd/system/
 systemctl start monerod.service
 ```
 
-Make file executable.
+Zezwól na uruchamianie pliku.
 
 ```
 user@host:~$ sudo chmod +x /rw/config/rc.local
@@ -74,7 +92,7 @@ user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
 user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
-Add this line:
+Dodaj linię:
 
 ```
 socat STDIO TCP:localhost:18081
@@ -90,13 +108,13 @@ socat STDIO TCP:localhost:18081
 user@host:~$ sudo nano /rw/config/rc.local
 ```
 
-Add the following line to the bottom:
+Dodaj następującą linię na samym dole:
 
 ```
 socat TCP-LISTEN:18081,fork,bind=127.0.0.1 EXEC:"qrexec-client-vm monerod-ws user.monerod"
 ```
 
-Make file executable.
+Zezwól na uruchamianie pliku.
 
 ```
 user@host:~$ sudo chmod +x /rw/config/rc.local
@@ -112,7 +130,7 @@ user@host:~$ sudo chmod +x /rw/config/rc.local
 [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod
 ```
 
-Add the following line:
+Dodaj następującą linię:
 
 ```
 monero-wallet-ws monerod-ws allow
