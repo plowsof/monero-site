@@ -127,7 +127,7 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:29
 #, fuzzy, no-wrap
 #| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
-msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever"
 msgstr "- **خطوه هامه جداً** : إكتب علي ورقه ال25 كلمه من @كَلِمات-الإستعاده **تحذير**: إذا نسيت كتابه هذه الكلمات سوف تضيع أموالك للأبد"
 
 #
