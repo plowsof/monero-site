@@ -173,5 +173,5 @@ msgstr "Paso 7"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:59
-msgid "After the the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted."
+msgid "After the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted."
 msgstr ""
