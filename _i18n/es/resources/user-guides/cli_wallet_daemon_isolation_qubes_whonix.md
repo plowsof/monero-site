@@ -90,6 +90,7 @@ user@host:~$ sudo chmod +x /rw/config/rc.local
 + Crear archivo de acción rpc.
 
 ```
+user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
 user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
