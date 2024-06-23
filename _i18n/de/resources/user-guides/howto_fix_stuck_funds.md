@@ -3,9 +3,9 @@
 Manchmal kann es passieren, dass dein Geld feststeckt - du hast gesperrtes
 Guthaben, das niemals freigegeben wird. So löst du das Problem:
 
-- Load your wallet in monero-wallet-cli.
+- Lade dein Wallet in monero-wallet-cli.
 
-- Type
+- Tippe
 
 > seed
 
@@ -13,11 +13,11 @@ in die Befehlszeile ein. Falls noch nicht geschehen, schreibe deinen
 25-Wort-Seed nieder. Dies ist der beste Weg um sicherzustellen, dass du den
 Zugriff auf dein Vermögen nicht verlierst.
 
-- Close monero-wallet-cli by typing
+- Schließe monero-wallet-cli durch die Eingabe von
 
 > exit
 
-- Backup all of your wallet related files. These include:
+- Sichere alle dem Wallet zugehörigen Dateien. Diese beinhalten:
 
 > yourwalletname.bin
 > yourwalletname.bin.keys
@@ -29,10 +29,11 @@ Beim Erstellen deines Wallets könntest du einen Namen ohne das
 ".bin"-Element gewählt haben. In diesem Fall wird sich die Wallet-Datei
 schlicht "yourwalletname" (ohne ".bin") nennen.
 
-- Delete yourwallet.bin
+- Lösche yourwallet.bin.
 
-- Load monero-wallet-cli, type in the name of the wallet you just deleted
+- Lade monero-wallet-cli und gib den Namen deines gerade gelöschten Wallets
+  ein.
 
-- Enter password. The wallet will now refresh and hopefully your locked
-  funds will now become unlocked.
+- Gib das Passwort ein. Das Wallet wird nun aktualisieren, danach wird dein
+  gesperrtes Guthaben hoffentlich freigegeben und verfügbar sein.
 
