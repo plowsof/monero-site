@@ -18,9 +18,10 @@ tienen conexión a la red para conectarse al daemon. En este enfoque no
 necesitas ninguna conexión al monedero, conservas los recursos de la red de
 Tor y se tiene menos latencia.
 
-## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):
+## 1. [Crear AppVMs Whonix](https://www.whonix.org/wiki/Qubes/Install):
 
-+ Using a Whonix workstation template, create two workstations as follows:
++ Utilizando una estación de trabajo Whonix, crea dos estaciones de trabajo
+  como sigue:
 
   - La primera estación de trabajo se usará para tu monedero, se referirá a
     ella como `monero-wallet-ws`. Tendrás `NetVM` ajustado como `none`.
@@ -33,9 +34,9 @@ Tor y se tiene menos latencia.
     }}/downloads/#blockchain). Keep in mind that the blockchain will take up
     more space with time.
 
-## 2. In the AppVM `monerod-ws`:
+## 2. En la AppVM `monerod-ws`:
 
-+ Create a `systemd` file.
++ Crea un archivo `systemd`.
 
 ```
 user@host:~$ sudo nano /home/user/monerod.service
@@ -66,7 +67,7 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-+ Make `monerod` daemon run on startup by editing the file
++ Hacer ejecutable a `monerod` en arranque editando el archivo
   `/rw/config/rc.local`.
 
 ```
@@ -77,7 +78,7 @@ Agrega estas líneas al final:
 
 ```
 cp /home/user/monerod.service /lib/systemd/system/
-systemctl start monerod.service
+ systemctl start monerod.service
 ```
 
 Hacer ejecutable el archivo.
@@ -86,11 +87,11 @@ Hacer ejecutable el archivo.
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Create rpc action file.
++ Crear archivo de acción rpc.
 
 ```
 user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
-user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
+ user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
 Agrega esta línea:
@@ -99,11 +100,11 @@ Agrega esta línea:
 socat STDIO TCP:localhost:18081
 ```
 
-+ Shutdown `monerod-ws`.
++ Apaga `monerod-ws`.
 
-## 3. In the AppVM `monero-wallet-ws`:
+## 3. En la AppVM `monero-wallet-ws`:
 
-+ Edit the file `/rw/config/rc.local`.
++ Edita el archivo `/rw/config/rc.local`.
 
 ```
 user@host:~$ sudo nano /rw/config/rc.local
@@ -121,11 +122,11 @@ Hacer ejecutable el archivo.
 user@host:~$ sudo chmod +x /rw/config/rc.local
 ```
 
-+ Shutdown `monero-wallet-ws`.
++ Apaga `monero-wallet-ws`.
 
-## 4. In `dom0`:
+## 4. En `dom0`:
 
-+ Create the file `/etc/qubes-rpc/policy/user.monerod`:
++ Crea el archivo `/etc/qubes-rpc/policy/user.monerod`:
 
 ```
 [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod
