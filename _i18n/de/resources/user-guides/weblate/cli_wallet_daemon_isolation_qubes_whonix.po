@@ -71,7 +71,7 @@ msgstr "Erstelle eine `systemd`-Datei."
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:21
 #, no-wrap
 msgid "user@host:~$ sudo nano /home/user/monerod.service\n"
-msgstr "user@host:~$ sudo nano /home/user/monerod.service"
+msgstr "user@host:~$ sudo nano /home/user/monerod.service\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:26
