@@ -127,7 +127,7 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:29
 #, fuzzy, no-wrap
 #| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
-msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever"
 msgstr "- **KRITISK TRINN**: Skriv ned (på papir) ditt @mnemoniske frø på 25 ord.  **ADVARSEL**: Hvis du glemmer å skrive ned denne informasjonen, kan pengene dine gå tapt for alltid"
 
 #
