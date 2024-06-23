@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 12:30+0000\n"
+"POT-Creation-Date: 2024-06-23 12:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,23 +124,17 @@ msgstr ""
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:29
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:30
 #, fuzzy, no-wrap
-#| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
-msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
-msgstr "- **KRITISK TRINN**: Skriv ned (på papir) ditt @mnemoniske frø på 25 ord.  **ADVARSEL**: Hvis du glemmer å skrive ned denne informasjonen, kan pengene dine gå tapt for alltid"
-
-#
-#. type: Bullet: '- '
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:31
-#, fuzzy
 #| msgid "- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
-msgid "Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
+msgid ""
+"**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+"- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key\n"
 msgstr "- Skriv ned (på telefonen din, på papir, på en annen PC eller hvor enn du vil) adressen og visningsnøkkelen din"
 
 #
 #. type: Bullet: '- '
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:33
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:32
 #, fuzzy
 #| msgid "- Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
 msgid "Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
@@ -148,14 +142,20 @@ msgstr "- Slå av PC-en, fjern batteriet om det er mulig, og la den være fysisk
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:34
 msgid "The account you've created was created in RAM, and the digital files are now inaccessible. If some adversary manages to somehow obtain the data, they will lack the long password to open it. If you need to receive payments, you have your public address, and you have the view key if needed. If you need access to it, you have your 25 word @mnemonic-seed, and you can now write out several copies of it, including an offsite copy (e.g. a bank deposit box)."
 msgstr "Kontoen du har opprettet ble opprettet i RAM, og de digitale filene er nå utilgjengelige. Hvis en uvedkommende på en eller annen måte klarer å få tilgang til dataene, vil de mangle det lange passordet for å åpne det. Hvis du må motta betalinger, har du din offentlige adresse, og du har visningsnøkkelen om det blir behov for den. Hvis du trenger tilgang til den, har du ditt @mnemoniske frø på 25 ord, og du kan nå skrive ut flere kopier av den, inkludert en kopi som befinner seg på et annet område (f.eks. i en bankboks)."
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:36
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
 #, fuzzy
 #| msgid "Related: [Offline Account Generator](http://moneroaddress.org/)"
 msgid "Related: [Offline Account Generator]({{ site.baseurl}}/generator)"
 msgstr "Relatert innhold: [Offline kontogenerator](http://moneroaddress.org/)"
+
+#
+#, fuzzy, no-wrap
+#~| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
+#~ msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+#~ msgstr "- **KRITISK TRINN**: Skriv ned (på papir) ditt @mnemoniske frø på 25 ord.  **ADVARSEL**: Hvis du glemmer å skrive ned denne informasjonen, kan pengene dine gå tapt for alltid"

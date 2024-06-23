@@ -37,9 +37,7 @@
 
 - **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed
 **WARNING**:  If you forget to write down this information your funds may be lost forever
-
-- Write down (on your phone, on paper, on another computer, wherever you
-  want) your address and view key
+- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key
 
 - Switch off the computer, remove the battery if there is one, and leave it
   physically off for a few hours

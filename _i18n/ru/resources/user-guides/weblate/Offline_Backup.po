@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 12:30+0000\n"
+"POT-Creation-Date: 2024-06-23 12:55+0000\n"
 "PO-Revision-Date: 2021-12-13 15:33+0000\n"
 "Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
 "Language-Team: Russian <https://translate.getmonero.org/projects/getmonero-user-guides/offline_backup/ru/>\n"
@@ -126,23 +126,17 @@ msgstr ""
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:29
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:30
 #, fuzzy, no-wrap
-#| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
-msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
-msgstr "- **КРИТИЧЕСКИ ВАЖНЫЙ ЭТАП**: запишите (на бумаге) свою @мнемоническую-фразу из 25 слов. **ВНИМАНИЕ!**: Если вы не запишите эту информацию, ваши средства могут оказаться утрачены навсегда"
-
-#
-#. type: Bullet: '- '
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:31
-#, fuzzy
 #| msgid "- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
-msgid "Write down (on your phone, on paper, on another computer, wherever you want) your address and view key"
+msgid ""
+"**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+"- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key\n"
 msgstr "- Запишите (в телефон, на бумаге, на другом компьютере, как вам будет угодно) ваш адрес и ключ просмотра"
 
 #
 #. type: Bullet: '- '
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:33
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:32
 #, fuzzy
 #| msgid "- Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
 msgid "Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours"
@@ -150,14 +144,20 @@ msgstr "- Выключите компьютер, снимите батарею (
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:34
 msgid "The account you've created was created in RAM, and the digital files are now inaccessible. If some adversary manages to somehow obtain the data, they will lack the long password to open it. If you need to receive payments, you have your public address, and you have the view key if needed. If you need access to it, you have your 25 word @mnemonic-seed, and you can now write out several copies of it, including an offsite copy (e.g. a bank deposit box)."
 msgstr "Ваш аккаунт был создан на RAM диске, и цифровые файлы теперь недоступны. Если какой-то злоумышленник решит каким-либо образом заполучить ваши данные, у него не будет длинного пароля, необходимого, чтобы открыть их. Для получения платежей у вас есть публичный адрес и на всякий случай ключ просмотра. Для получения доступа к аккаунту у вас есть @мнемоническая-фраза из 25 слов, и теперь вы можете записать несколько её копий, включая копию для хранения в каком-нибудь удалённом месте (например, в банковской ячейке)."
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/Offline_Backup.md:36
+#: ../_i18n/en/resources/user-guides/Offline_Backup.md:35
 #, fuzzy
 #| msgid "Related: [Offline Account Generator](http://moneroaddress.org/)"
 msgid "Related: [Offline Account Generator]({{ site.baseurl}}/generator)"
 msgstr "Связанная тема: [Offline Account Generator](http://moneroaddress.org/)"
+
+#
+#, fuzzy, no-wrap
+#~| msgid "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed **WARNING**: If you forget to write down this information your funds may be lost forever"
+#~ msgid "**WARNING**:  If you forget to write down this information your funds may be lost forever\n"
+#~ msgstr "- **КРИТИЧЕСКИ ВАЖНЫЙ ЭТАП**: запишите (на бумаге) свою @мнемоническую-фразу из 25 слов. **ВНИМАНИЕ!**: Если вы не запишите эту информацию, ваши средства могут оказаться утрачены навсегда"
