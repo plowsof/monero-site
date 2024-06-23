@@ -2,34 +2,39 @@
 
 # monerod
 
-`monerod` является демон-программой в составе дерева Monero. Это консольная программа, используемая для управления блокчейном. Если кошелек Bitcoin позволяет управлять как аккаунтом, так и блокчейном, то в Monero эти функции разделены: `monerod` работает с блокчейном, а `monero-wallet-cli` управляет аккаунтом.
+`monerod` является демон-программой в составе дерева Monero. Это консольная
+программа, используемая для управления блокчейном. Если кошелек Bitcoin
+позволяет управлять как аккаунтом, так и блокчейном, то в Monero эти функции
+разделены: `monerod` работает с блокчейном, а `monero-wallet-cli` управляет
+аккаунтом.
 
-Настоящее руководство подразумевает, что у вас уже создан VPS аккаунт, и вы используете SSH для получения доступа к серверной консоли.
+Настоящее руководство подразумевает, что у вас уже создан VPS аккаунт, и вы
+используете SSH для получения доступа к серверной консоли.
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
-### Убедитесь в том, что порт 18080 открыт
+### Make sure that port 18080 is open
 
 `monerod` использует этот порт для связи с другими узлами сети Monero.
 
-Пример использования `ufw`: `sudo ufw allow 18080`
-Пример использования `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
+Пример использования `ufw`: `sudo ufw allow 18080` Пример использования
+`iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
 
-### Загрузить актуальные двоичные файлы Monero Core
+### Download the current Monero Core binaries
 
     wget https://downloads.getmonero.org/linux64
 
-### Создать директорию и извлечь файлы.
+### Make a directory and extract the files.
 
     mkdir monero
     tar -xjvf linux64 -C monero
 
-### Запустить демон-программу
+### Launch the daemon
 
     cd monero
     ./monerod
 
-### Опции:
+### Options:
 
 Открыть список всех опций и настроек:
 
@@ -46,3 +51,5 @@
 Обезопасить VPS посредством автоматического обновления:
 
 https://help.ubuntu.com/community/AutomaticSecurityUpdates
+
+

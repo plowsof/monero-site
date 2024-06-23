@@ -2,34 +2,39 @@
 
 # monerod
 
-`monerod` jest oprogramowaniem daemona, które współpracuje z Monero. To program konsoli zarządzający łańcuchem bloków. Podczas gdy portfel Bitcoina zarządza zarówno kontem, jak i łańcuchem bloków, Monero rozdzielił je, aby `monerod` operował łańcuchem, a `monero-wallet-cli` kontem.
+`monerod` jest oprogramowaniem daemona, które współpracuje z Monero. To
+program konsoli zarządzający łańcuchem bloków. Podczas gdy portfel Bitcoina
+zarządza zarówno kontem, jak i łańcuchem bloków, Monero rozdzielił je, aby
+`monerod` operował łańcuchem, a `monero-wallet-cli` kontem.
 
-Ten przewodnik zakłada, że już założyłeś swoje konto VPS i używasz SSH do tunelowania do konsoli serwerowej.
+Ten przewodnik zakłada, że już założyłeś swoje konto VPS i używasz SSH do
+tunelowania do konsoli serwerowej.
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
-### Upewnij się, że port 18080 jest otwarty
+### Make sure that port 18080 is open
 
-`monerod` korzysta z tego portu do komunikacji z innymi węzłami w sieci Monero.
+`monerod` korzysta z tego portu do komunikacji z innymi węzłami w sieci
+Monero.
 
-Przykład przy użyciu `ufw`: `sudo ufw allow 18080`
-Przykład przy użyciu `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
+Przykład przy użyciu `ufw`: `sudo ufw allow 18080` Przykład przy użyciu
+`iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
 
-### Ściągnij aktualne pliki binarne Centrum Monero
+### Download the current Monero Core binaries
 
     wget https://downloads.getmonero.org/linux64
 
-### Załóż folder i wypakuj pliki
+### Make a directory and extract the files.
 
     mkdir monero
     tar -xjvf linux64 -C monero
 
-### Uruchom daemona
+### Launch the daemon
 
     cd monero
     ./monerod
 
-### Opcje:
+### Options:
 
 Pokaż całą listę opcji i ustawień:
 
