@@ -3,9 +3,9 @@
 Algunas veces, tus fondos estarán estancados - tendrás fondos bloqueados que
 nunca se podrán desbloquear. Esta es la forma de arreglarlo.
 
-- Load your wallet in monero-wallet-cli.
+- Carga tu monedero en monero-wallet-cli.
 
-- Type
+- Escribe
 
 > seed
 
@@ -13,11 +13,11 @@ en la consola. Escribe tu semilla de 25 palabras si aún no lo has
 hecho. Esta es la mejor forma de asegurar que no pierdas acceso a tus
 fondos.
 
-- Close monero-wallet-cli by typing
+- Cierra monero-wallet-cli escribiendo
 
 > exit
 
-- Backup all of your wallet related files. These include:
+- Respalda todos los archivos relacionados con tu monedero. Estos incluyen:
 
 > yourwalletname.bin
 > yourwalletname.bin.keys
@@ -29,10 +29,11 @@ Algunas veces, cuando creas un monedero, la pudiste haber llamado de alguna
 forma sin el final como .bin. En ese caso, el archivo del monedero será
 llamado nombredetumonedero sin .bin al final.
 
-- Delete yourwallet.bin
+- Elimina tumonedero.bin
 
-- Load monero-wallet-cli, type in the name of the wallet you just deleted
+- Abre monero-wallet-cli, escribe el nombre del monedero que acabas de
+  eliminar.
 
-- Enter password. The wallet will now refresh and hopefully your locked
-  funds will now become unlocked.
+- Ingresa la contraseña. El monedero se actualizará y posiblemente tus
+  fondos bloqueados estarán ahora desbloqueados.
 
