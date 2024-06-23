@@ -40,7 +40,6 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:10
 #, no-wrap
-#| msgid "> seed"
 msgid "> seed\n"
 msgstr "> semente\n"
 
