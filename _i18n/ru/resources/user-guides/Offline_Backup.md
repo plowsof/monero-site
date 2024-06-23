@@ -1,48 +1,49 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-## Operating Systems:  Various versions of Linux and Windows 7, 8
+## Операционные системы: разные версии для Linux и Windows 7, 8
 
-### Wallet Software:  Simplewallet
+### Кошелёк: Simplewallet
 
-#### Resource for Creating Bootable Disks:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
+#### Источник для создания загрузочных дисков:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 
-#### Resource for Monero Binaries:  [Monero Binaries]({{ site.baseurl_root }}/downloads/)
+#### Источник двоичных файлов Monero: [Monero Binaries](https://getmonero.org/downloads/)
 
-- Take any computer you have lying around, even your normal workstation. You
-  may find it easier to use an older computer that has no wifi or bluetooth
-  if you're particularly paranoid
+- Используйте любой доступный компьютер. Подойдет даже ваша обычная рабочая
+  машина. Если вы склонны к паранойе, возможно, вам будет лучше использовать
+  более старый компьютер без Wi-Fi или Bluetooth
 
-- Create a Linux or Windows bootable disk, and make sure you have the Monero
-  binaries on the same disk or on a second disk (for Linux make sure you
-  have also downloaded copies of the dependencies you will need,
-  libboost1.55 and miniupnpc for instance)
+- Создайте загрузочный диск Linux или Windows и убедитесь в наличии на нём
+  или на втором диске двоичных файлов Monero (в случае с Linux также следует
+  убедиться в наличии загруженных копий необходимых зависимостей, таких как
+  libboost1.55 или miniupnpc, например)
 
-- Disconnect the network and/or Internet cables from your computer,
-  physically remove the wifi card or switch the wifi/bluetooth off on a
-  laptop if possible
+- Следует отсоединить от компьютера сетевые и/или интернет-кабели, физически
+  снять сетевую Wi-Fi карту или, если это возможно, отключить
+  Wi-Fi/Bluetooth на ноутбуке
 
-- Boot into your bootable OS, install the dependencies if necessary
+- Запустить ОС с загрузочного диска и, при необходимости, установить
+  зависимости
 
-- Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows
-  bootable ISOs normally have a Z: drive or something)
+- Скопировать двоичные файлы Monero на RAM диск (для Linux в /dev/shm;
+  Windows обычно создаёт ISO как «диск Z:» или как-то так)
 
-- Don't run the Monero @daemon. Instead, using the command line, use
-  monero-wallet-cli to create a new Monero @account
+- Не запускайте демон-программу Monero. Вместо этого при помощи командной
+  строки используйте monero-wallet-cli для создания нового @аккаунта Monero
 
-- When prompted for a name, give it any name, it doesn't really matter
+- При запросе имени — введите любое, оно не имеет значения
 
-- When prompted for a password, type in like 50 - 100 random
-  characters. Don't worry that you don't know the password, just make it
-  LONG
+- При запросе пароля введите примерно 50–100 случайных символов. Не следует
+  беспокоиться, что вы не знаете пароль, просто сделайте его ДЛИННЫМ
 
-- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed
-**WARNING**:  If you forget to write down this information your funds may be lost forever
+- **КРИТИЧЕСКИ ВАЖНЫЙ ЭТАП**: запишите (на бумаге) свою @мнемоническую-фразу
+  из 25 слов.
+**ВНИМАНИЕ!**: Если вы не запишите эту информацию, ваши средства могут оказаться утрачены навсегда
 
-- Write down (on your phone, on paper, on another computer, wherever you
-  want) your address and view key
+- Запишите (в телефон, на бумаге, на другом компьютере, как вам будет
+  угодно) ваш адрес и ключ просмотра
 
-- Switch off the computer, remove the battery if there is one, and leave it
-  physically off for a few hours
+- Выключите компьютер, снимите батарею (если таковая имеется) и оставьте его
+  в таком физически отключённом состоянии на несколько часов
 
 Ваш аккаунт был создан на RAM диске, и цифровые файлы теперь
 недоступны. Если какой-то злоумышленник решит каким-либо образом заполучить
@@ -53,4 +54,4 @@
 копий, включая копию для хранения в каком-нибудь удалённом месте (например,
 в банковской ячейке).
 
-Related: [Offline Account Generator]({{ site.baseurl}}/generator)
+Связанная тема: [Offline Account Generator]({{ site.baseurl}}/generator)
