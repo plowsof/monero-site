@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Tabla de Contenido
+### Table of Content
 
 * [Windows](#windows)
 * [Mac OS X](#mac-os-x)
@@ -9,154 +9,268 @@
 
 ### Windows
 
-Primero necesitamos asegurarnos de estar suficientemente preparados. Esto implica lo siguiente:
+Primero necesitamos asegurarnos de estar suficientemente preparados. Esto
+implica lo siguiente:
 
-- Esta guía asume que ya has inicializado tu monedero Ledger y asimismo generado tu semilla mnemónica de 24 palabras.
+- This guide assumes you have already initialized your Ledger wallet and
+  thus generated a 24 word mnemonic seed.
 
-- Necesitas ejecutar / usar monero-wallet-cli v0.12.2.0, que puede encontrarse <a href="{{site.baseurl}}/downloads/">aquí</a>.
+- You need to run / use CLI v0.12.2.0, which can be found <a
+  href="{{site.baseurl}}/downloads/">here</a>.
 
-- Necesitas instalar la aplicación Ledger Monero y configurar tu sistema. Las instrucciones se pueden encontrar [aquí](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (secciones 3.1.1 y 3.2.3 en particular). Adicionalmente, asegúrate de tener la red en `Mainnet` (red principal).
+- You need to install the Ledger Monero app and configure your
+  system. Instructions can be found
+  [here](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf)
+  (sections 3.1.1 and 3.2.3 in particular). In addition, make sure to set
+  the network to `Mainnet`
 
-- Tu Ledger necesita estar conectada y la aplicación Ledger Monero debe estar en ejecución.
+- Your Ledger needs to be plugged in and the Ledger Monero app should be
+  running.
 
-- `monerod.exe` debe estar en ejecución y sincronizado totalmente o debes conectarte a un nodo remoto.
+- Either your @daemon (`monerod.exe`) should be running and preferably be
+  fully synced or you should connect to a remote node.
 
 Ahora que estamos lo suficientemente preparados, ¡comencemos!
 
-- Ve al directorio / carpeta donde se encuentra monerod.exe y monero-wallet-cli.exe.
+- Go to the directory / folder monerod.exe and monero-wallet-cli.exe are
+  located.
 
-- Abre una nueva consola de comandos / powershell. Esto se logra asegurando que el cursor no se encuentra en ningún archivo y presionando en SHIFT + click derecho. Se te dará una opción de "Abrir una consola de comandos aquí". Si estás utilizando Windows 10 en su última versión, se te dará una opción de "Abrir una ventana de PowerShell aquí".
+- Open a new command prompt / powershell. This is done by first making sure
+  your cursor isn't located on any of the files and subsequently doing SHIFT
+  + right click. It will give you an option to "Open command window
+  here". If you're using Windows 10 in latest version, it'll give you an
+  option to "open the PowerShell window here".
 
-- Ahora escribe:
+- Now type:
 
-`monero-wallet-cli.exe --generate-from-device <nuevo-nombre-de-monedero> --subaddress-lookahead 3:200` (Win 7 + 8)
+`monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 7 + 8)
 
-`.\monero-wallet-cli.exe --generate-from-device <nuevo-nombre-de-monedero> --subaddress-lookahead 3:200` (Win 10)
+`.\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 10)
 
-Ten en cuenta que es simplemente un marcador para el nombre actual del monedero. Si, por ejemplo, deseas llamar a tu monedero `MoneroWallet`, el comando sería como se muestra a continuación:
+Ten en cuenta que es simplemente un marcador para el nombre actual del
+monedero. Si, por ejemplo, deseas llamar a tu monedero `MoneroWallet`, el
+comando sería como se muestra a continuación:
 
-`monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 7 + 8)
+`monero-wallet-cli.exe --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200` (Win 7 + 8)
 
-`.\monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 10)
+`.\monero-wallet-cli.exe --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200` (Win 10)
 
-- monero-wallet-cli te preguntará, después de ejecutar el comando anterior, por una contraseña. Asegúrate de establecer una contraseña fuerte y de confirmarla después de ello.
+- The CLI will, after executing aforementioned command, prompt your for a
+  password. Make sure to set a strong password and confirm it thereafter.
 
-- Ledger preguntará si deseas exportar la clave privada o no. Primero y ante todo, tus fondos no pueden ser comprometidos con simplemente tu clave privada de visualización. Exportar la clave privada de visualización permite al cliente (en el ordenador - Monero v0.12.2.0) escanear bloques en busca de transacciones pertenecientes a tu monedero / dirección. Si esta opción no es utilizada, el dispositivo (Ledger) escaneará bloques, lo que será significativamente más lento. Sin embargo, hay una advertencia. Si tu sistema se ve comprometido, el adversario será potencialmente capaz de también comprometer tu clave privada, lo que es perjudicial para tu privacidad. Esto es virtualmente imposible cuando la clave privada no es exportada.
+- The Ledger will ask whether you want to export the private view key or
+  not. First and foremost, your funds cannot be compromised with merely the
+  private view key. Exporting the private view key enables the client (on
+  the computer - Monero v0.12.2.0) to scan blocks looking for transactions
+  that belong to your wallet / address. If this option is not utilized, the
+  device (Ledger) will scan blocks, which will be significantly
+  slower. There is, however, one caveat. That is, if your system gets
+  compromised, the adversary will potentially be able to compromise your
+  private view key as well, which is detrimental to privacy. This is
+  virtually impossible when the private view key is not exported.
 
-- Tendrás que hacer clic en confirmar dos veces antes de proceder.
+- You may have to hit confirm twice before it proceeds.
 
-- Tu monedero Ledger Monero será ahora generado. Ten en cuenta que esto puede tomar de 5 a 10 minutos. Además, no habrá realimentación inmediata en monero-wallet-cli o en la Ledger.
+- Your Ledger Monero wallet will now be generated. Note that this may take
+  up to 5-10 minutes. Furthermore, there will be no immediate feedback in
+  the CLI nor on the Ledger.
 
-- `monero-wallet-cli` comenzará a refrescarse. Espera a que se haya refrescado totalmente.
+- `monero-wallet-cli` will start refreshing. Wait until it has fully
+  refreshed.
 
-Felicidades, ahora puedes utilizar tu monedero Ledger Monero en conjunto con monero-wallet-cli.
+Felicidades, ahora puedes utilizar tu monedero Ledger Monero en conjunto con
+monero-wallet-cli.
 
 ### Mac OS X
 
-Primero necesitamos asegurarnos de estar suficientemente preparados. Esto implica lo siguiente:
+Primero necesitamos asegurarnos de estar suficientemente preparados. Esto
+implica lo siguiente:
 
-- Esta guía asume que ya has inicializado tu monedero Ledger y asimismo generado tu semilla mnemónica de 24 palabras.
+- This guide assumes you have already initialized your Ledger wallet and
+  thus generated a 24 word mnemonic seed.
 
-- Necesitas ejecutar / usar monero-wallet-cli v0.12.2.0, que puede encontrarse <a href="{{site.baseurl}}/downloads/">aquí</a>.
+- You need to run / use CLI v0.12.2.0, which can be found <a
+  href="{{site.baseurl}}/downloads/">here</a>.
 
-- Necesitas instalar la aplicación Ledger Monero y configurar tu sistema. Las instrucciones se pueden encontrar [aquí](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (secciones --1 y --2 en particular). Adicionalmente, asegúrate de tener la red en `Mainnet` (red principal).
+- You need to install the Ledger Monero app and configure your
+  system. Instructions can be found
+  [here](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf)
+  (sections 3.1.1 and 3.2.2 in particular). In addition, make sure to set
+  the network to `Mainnet`
 
-- Ten en cuenta que las instrucciones para la configuración del sistema (sección --2) en Mac OS X están bastante elaboradas y pueden ser percibidas como ligeramente complejas. Afortunadamente, tficharmers ha creado una guía [aquí](https://monero.stackexchange.com/questions/8438/how-do-i-make-my-macos-detect-my-ledger-nano-s-when-plugged-in) que puedes utilizar para asistencia.
+- Note that the instructions for system configuration (section 3.2.2) on Mac
+  OS X are quite elaborate and can be perceived as slightly
+  convoluted. Fortunately, tficharmers has created a guide
+  [here](https://monero.stackexchange.com/questions/8438/how-do-i-make-my-macos-detect-my-ledger-nano-s-when-plugged-in)
+  that you can use for assistance.
 
-- Tu Ledger necesita estar conectada y la aplicación Ledger Monero debe estar en ejecución.
+- Your Ledger needs to be plugged in and the Ledger Monero app should be
+  running.
 
-- `monerod` debe estar en ejecución y sincronizado totalmente o debes conectarte a un nodo remoto.
+- Either your daemon (`monerod`) should be running and preferably be fully
+  synced or you should connect to a remote node.
 
 Ahora que estamos lo suficientemente preparados, ¡comencemos!
 
-- Utiliza el buscador para localizar el directorio / carpeta en donde se encuentra `monero-wallet-cli` (CLI v0.12.2.0).
+- Use Finder to browse to the directory / folder `monero-wallet-cli` (CLI
+  v0.12.2.0) is located.
 
-- Ve a tu escritorio.
+- Go to your desktop.
 
-- Abre una nueva terminal (si no sabes cómo abrir una terminal, ve [aquí](https://apple.stackexchange.com/a/256263)).
+- Open a new terminal (if don't know how to open a terminal, see
+  [here](https://apple.stackexchange.com/a/256263)).
 
-- Arrastra `monero-wallet-cli` a la terminal. Debería agregar la dirección completa a la terminal. No presiones Enter.
+- Drag `monero-wallet-cli` in the terminal. It should add the full path to
+  the terminal. Do not hit enter.
 
-- Ahora escribe:
+- Now type:
 
-`--generate-from-device <nuevo-nombre-de-monedero> --subaddress-lookahead 3:200`
+`--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
 
-Ten en cuenta que es simplemente un marcador para el nombre actual del monedero. Si, por ejemplo, deseas llamar a tu monedero `MoneroWallet`, el comando sería como se muestra a continuación:
+Ten en cuenta que es simplemente un marcador para el nombre actual del
+monedero. Si, por ejemplo, deseas llamar a tu monedero `MoneroWallet`, el
+comando sería como se muestra a continuación:
 
 `--generate-from-device MoneroWallet --subaddress-lookahead 3:200`
 
-Ten en cuenta que el texto anteriormente mencionado se adjuntará a la dirección de `monero-wallet-cli`. Así, antes de que presiones Enter, tu terminal se debería ver como:
+Ten en cuenta que el texto anteriormente mencionado se adjuntará a la
+dirección de `monero-wallet-cli`. Así, antes de que presiones Enter, tu
+terminal se debería ver como:
 
-`/dirección/completa/de/monero-wallet-cli --generate-from-device <nuevo-nombre-de-monedero> --subaddress-lookahead 3:200`
+`/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
 
-Donde la dirección completa es, intuitivamente, la dirección actual en tu Mac OS X.
+Donde la dirección completa es, intuitivamente, la dirección actual en tu
+Mac OS X.
 
-- monero-wallet-cli te preguntará después de ejecutar el comando anterior por una contraseña. Asegúrate de establecer una contraseña fuerte y de confirmarla después de ello.
+- The CLI will, after executing aforementioned command, prompt you for a
+  password. Make sure to set a strong password and confirm it thereafter.
 
-- Ledger preguntará si deseas exportar la clave privada o no. Primero y ante todo, tus fondos no pueden ser comprometidos con simplemente tu clave privada de visualización. Exportar la clave privada de visualización permite al cliente (en el ordenador - Monero v0.12.2.0) escanear bloques en busca de transacciones pertenecientes a tu monedero / dirección. Si esta opción no es utilizada, el dispositivo (Ledger) escaneará bloques, lo que será significativamente más lento. Sin embargo, hay una advertencia. Si tu sistema se ve comprometido, el adversario será potencialmente capaz de también comprometer tu clave privada, lo que es perjudicial para tu privacidad. Esto es virtualmente imposible cuando la clave privada no es exportada.
+- The Ledger will ask whether you want to export the private view key or
+  not. First and foremost, your funds cannot be compromised with merely the
+  private view key. Exporting the private view key enables the client (on
+  the computer - Monero v0.12.2.0) to scan blocks looking for transactions
+  that belong to your wallet / address. If this option is not utilized, the
+  device (Ledger) will scan blocks, which will be significantly
+  slower. There is, however, one caveat. That is, if your system gets
+  compromised, the adversary will potentially be able to compromise your
+  private view key as well, which is detrimental to privacy. This is
+  virtually impossible when the private view key is not exported.
 
-- Tendrás que hacer clic en confirmar dos veces antes de proceder.
+- You may have to hit confirm twice before it proceeds.
 
-- Tu monedero Ledger Monero será ahora generado. Ten en cuenta que esto puede tomar de 5 a 10 minutos. Además, no habrá realimentación inmediata en monero-wallet-cli o en la Ledger.
+- Your Ledger Monero wallet will now be generated. Note that this may take
+  up to 5-10 minutes. Furthermore, there will be no immediate feedback in
+  the CLI nor on the Ledger.
 
-- `monero-wallet-cli` comenzará a refrescarse. Espera a que se haya refrescado totalmente.
+- `monero-wallet-cli` will start refreshing. Wait until it has fully
+  refreshed.
 
-- Felicidades, ahora puedes utilizar tu monedero Ledger Monero en conjunto con monero-wallet-cli.
+- Felicidades, ahora puedes utilizar tu monedero Ledger Monero en conjunto
+  con monero-wallet-cli.
 
 ### Linux
 
-Primero necesitamos asegurarnos de estar suficientemente preparados. Esto implica lo siguiente:
+Primero necesitamos asegurarnos de estar suficientemente preparados. Esto
+implica lo siguiente:
 
-- Esta guía asume que ya has inicializado tu monedero Ledger y asimismo generado tu semilla mnemónica de 24 palabras.
+- This guide assumes you have already initialized your Ledger wallet and
+  thus generated a 24 word mnemonic seed.
 
-- Necesitas ejecutar / usar monero-wallet-cli v0.12.2.0, que puede encontrarse <a href="{{site.baseurl}}/downloads/">aquí</a>.
+- You need to run / use CLI v0.12.2.0, which can be found <a
+  href="{{site.baseurl}}/downloads/">here</a>.
 
-- Necesitas instalar la aplicación Ledger Monero y configurar tu sistema. Las instrucciones se pueden encontrar [aquí](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (secciones --1 y --1 en particular). Adicionalmente, asegúrate de tener la red en `Mainnet` (red principal).
+- You need to install the Ledger Monero app and configure your
+  system. Instructions can be found
+  [here](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf)
+  (sections 3.1.1 and 3.2.1 in particular). In addition, make sure to set
+  the network to `Mainnet`
 
-- Tu Ledger necesita estar conectada y la aplicación Ledger Monero debe estar en ejecución.
+- Your Ledger needs to be plugged in and the Ledger Monero app should be
+  running.
 
-- `monerod` debe estar en ejecución y sincronizado totalmente o debes conectarte a un nodo remoto.
+- Either your daemon (`monerod`) should be running and preferably be fully
+  synced or you should connect to a remote node.
 
 Ahora que estamos lo suficientemente preparados, ¡comencemos!
 
-- Ve al directorio / carpeta donde se encuentra monero-wallet-cli y monerod.
+- Go to the directory / folder monero-wallet-cli and monerod are located.
 
-- Abre una nueva terminal
+- Open a new terminal
 
-- Ahora escribe:
+- Now type:
 
-`./monero-wallet-cli --generate-from-device <nuevo-nombre-de-monedero> --subaddress-lookahead 3:200`
+`./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
 
-Ten en cuenta que es simplemente un marcador para el nombre actual del monedero. Si, por ejemplo, deseas llamar a tu monedero `MoneroWallet`, el comando sería como se muestra a continuación:
+Ten en cuenta que es simplemente un marcador para el nombre actual del
+monedero. Si, por ejemplo, deseas llamar a tu monedero `MoneroWallet`, el
+comando sería como se muestra a continuación:
 
-`./monero-wallet-cli --generate-from-device MoneroWallet --subaddress-lookahead 3:200`
+`./monero-wallet-cli --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200`
 
-- monero-wallet-cli te preguntará, después de ejecutar el comando anterior, por una contraseña. Asegúrate de establecer una contraseña fuerte y de confirmarla después de ello.
+- The CLI will, after executing aforementioned command, prompt your for a
+  password. Make sure to set a strong password and confirm it thereafter.
 
-- Ledger preguntará si deseas exportar la clave privada o no. Primero y ante todo, tus fondos no pueden ser comprometidos con simplemente tu clave privada de visualización. Exportar la clave privada de visualización permite al cliente (en el ordenador - Monero v0.12.2.0) escanear bloques en busca de transacciones pertenecientes a tu monedero / dirección. Si esta opción no es utilizada, el dispositivo (Ledger) escaneará bloques, lo que será significativamente más lento. Sin embargo, hay una advertencia. Si tu sistema se ve comprometido, el adversario será potencialmente capaz de también comprometer tu clave privada, lo que es perjudicial para tu privacidad. Esto es virtualmente imposible cuando la clave privada no es exportada.
+- The Ledger will ask whether you want to export the private view key or
+  not. First and foremost, your funds cannot be compromised with merely the
+  private view key. Exporting the private view key enables the client (on
+  the computer - Monero v0.12.2.0) to scan blocks looking for transactions
+  that belong to your wallet / address. If this option is not utilized, the
+  device (Ledger) will scan blocks, which will be significantly
+  slower. There is, however, one caveat. That is, if your system gets
+  compromised, the adversary will potentially be able to compromise your
+  private view key as well, which is detrimental to privacy. This is
+  virtually impossible when the private view key is not exported.
 
-- Tendrás que hacer clic en confirmar dos veces antes de proceder.
+- You may have to hit confirm twice before it proceeds.
 
-- Tu monedero Ledger Monero será ahora generado. Ten en cuenta que esto puede tomar de 5 a 10 minutos. Además, no habrá realimentación inmediata en monero-wallet-cli o en la Ledger.
+- Your Ledger Monero wallet will now be generated. Note that this may take
+  up to 5-10 minutes. Furthermore, there will be no immediate feedback in
+  the CLI nor on the Ledger.
 
-- `monero-wallet-cli` comenzará a refrescarse. Espera a que se haya refrescado totalmente.
+- `monero-wallet-cli` will start refreshing. Wait until it has fully
+  refreshed.
 
-Felicidades, ahora puedes utilizar tu monedero Ledger Monero en conjunto con monero-wallet-cli.
+Felicidades, ahora puedes utilizar tu monedero Ledger Monero en conjunto con
+monero-wallet-cli.
 
-### Notas finales
+### A few final notes
 
-- Recomendamos fuertemente probar el proceso completo primero. Esto es, enviar una pequeña cantidad al monedero y después restaurarlo (utilizando la guía ya mencionada) para verificar que puedes recuperar el monedero. Ten en cuenta que, al recrear / restaurar el monedero, deberás adjuntar el marcador `--restore-height` (con una altura de bloque anterior a la altura de tu primera transacción al monedero) al comando en el paso 3 (Windows), paso 5 (Mac OS X), o paso 3 (Linux). Más información acerca de la altura de restauración y cómo aproximarla puede encontrarse [aquí](https://monero.stackexchange.com/questions/7581/what-is-the-relevance-of-the-restore-height).
+- We'd strongly advise to test the full process first. That is, send a small
+  amount to the wallet and subsequently restore it (using aforementioned
+  guide) to verify that you can recover the wallet. Note that, upon
+  recreating / restoring the wallet, you ought to append the
+  `--restore-height` flag (with a block height before the height of your
+  first transaction to the wallet) to the command in step 3 (Windows), step
+  5 (Mac OS X), or step 3 (Linux). More information about the restore height
+  and how to approximate it can be found
+  [here](https://monero.stackexchange.com/questions/7581/what-is-the-relevance-of-the-restore-height).
 
-- Si utilizar un nodo remoto, adjunta el marcador `--daemon-address host:port` al comando en el paso 3 (Windows), paso 5 (Mac OS X), o paso 3 (Linux).
+- If you use a remote node, append the `--daemon-address host:port` flag to
+  the command in step 3 (Windows), step 5 (Mac OS X), or step 3 (Linux).
 
-- Si lo deseas, puedes ajustar el valor de `--subaddress-lookahead`. El primer valor es el número de cuentas y el segundo valor es el número de subdirecciones por cuenta. Así, si por ejemplo deseas pre-generar 5 cuentas con 100 subdirecciones cada una, utiliza `--subaddress-lookahead 5:100`. Ten en mente que, entre más subdirecciones pre-generes, más tiempo le tomará a la Ledger el crear tu monedero.
+- If desired, you can manually tweak the `--subaddress-lookahead` value. The
+  first value is the number of accounts and the second value is the number
+  of subaddresses per account. Thus, if you, for instance, want to
+  pregenerate 5 accounts with 100 subaddresses each, use
+  `--subaddress-lookahead 5:100`. Bear in mind that, the more subaddresses
+  you pregenerate, the longer it takes for the Ledger to create your wallet.
 
-- Sólo tienes que utilizar el marcador `--generate-from-device` una vez (e.g. sobre creación de monedero). Después de eso, básicamente lo utilizarás de manera similar a como normalmente utilizas la consola de comandos. Esto es:
-   - Asegúrate de que tu Ledger está conectada y la aplicación Monero está en ejecución.
+- Sólo tienes que utilizar el marcador `--generate-from-device` una vez
+  (e.g. sobre creación de monedero). Después de eso, básicamente lo
+  utilizarás de manera similar a como normalmente utilizas la consola de
+  comandos. Esto es:
+   - Asegúrate de que tu Ledger está conectada y la aplicación Monero está
+     en ejecución.
    - Abre `monero-wallet-cli`.
    - Ingresa el nombre de tu monedero Ledger Monero.
    - Ingresa la contraseña para abrir el monedero.
 
    Si los archivos del monedero Ledger no se encuentran en la misma dirección que `monero-wallet-cli`, debes abrir `monero-wallet-cli` con el marcador `--wallet-file /path/to/wallet.keys/file`. De manera alternativa, puedes copiar los archivos del monedero Ledger al mismo directorio de `monero-wallet-cli`.
 
-- Si tienes más preguntas o necesitas asistencia, por favor deja un comentario en la respuesta original en [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli).
+- If you have any further questions or need assistance, please leave a
+  comment to the original
+  [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli)
+  answer.
