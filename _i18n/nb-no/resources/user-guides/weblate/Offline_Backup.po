@@ -130,6 +130,5 @@ msgstr "Kontoen du har opprettet ble opprettet i RAM, og de digitale filene er n
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/Offline_Backup.md:36
-#| msgid "Related: [Offline Account Generator](http://moneroaddress.org/)"
 msgid "Related: [Offline Account Generator]({{ site.baseurl}}/generator)"
 msgstr "Relatert innhold: [Offline kontogenerator]({{ site.baseurl}}/generator)"
