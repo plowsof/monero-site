@@ -25,10 +25,10 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/prove-payment.md:3
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Prove payments"
 msgid "Prove payments"
-msgstr "### Prouver un paiement"
+msgstr "Prouver un paiement"
 
 #
 #. type: Plain text
@@ -67,10 +67,9 @@ msgstr ""
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/prove-payment.md:18
-#, fuzzy
 #| msgid "- the transaction ID, as is done in Bitcoin - Bob's address, as is done with Bitcoin - the transaction's key, which is new with Monero and other CryptoNote currencies"
 msgid "the transaction's key, which is new with Monero and other CryptoNote currencies"
-msgstr "- L'ID de transaction, comme c'est le cas avec Bitcoin ; - L'adresse de Bob, comme c'est le cas avec Bitcoin ; - La clef de la transaction, qui est une nouveauté de Monero et d'autres monnaies CryptoNote."
+msgstr "L'ID de transaction, comme c'est le cas avec Bitcoin ; - L'adresse de Bob, comme c'est le cas avec Bitcoin ; - La clef de la transaction, qui est une nouveauté de Monero et d'autres monnaies CryptoNote."
 
 #
 #. type: Plain text
@@ -94,10 +93,10 @@ msgstr "Alice peut la demander dans monero-wallet-cli (nouveau nom de l'ancien s
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:26
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> get_tx_key TXID"
 msgid "> get_tx_key TXID\n"
-msgstr "> get_tx_key IDTX"
+msgstr "> get_tx_key IDTX\n"
 
 #
 #. type: Plain text
@@ -114,10 +113,10 @@ msgstr "Notez que cela ne fonctionnera que si monero-wallet-cli est configuré p
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:33
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> set"
 msgid "> set\n"
-msgstr "> set"
+msgstr "> set\n"
 
 #
 #. type: Plain text
@@ -128,10 +127,10 @@ msgstr "Si la valeur est fixée à 0, positionnez-la à 1 :"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:37
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> set store-tx-info 1"
 msgid "> set store-tx-info 1\n"
-msgstr "> set store-tx-info 1"
+msgstr "> set store-tx-info 1\n"
 
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/prove-payment.md:38
@@ -180,10 +179,10 @@ msgstr "Notez : si plusieurs transactions ont été effectuées, il faudra rép�
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/prove-payment.md:56
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Check payments"
 msgid "Check payments"
-msgstr "### Vérifier un paiement"
+msgstr "Vérifier un paiement"
 
 #
 #. type: Plain text
@@ -200,10 +199,10 @@ msgstr "Charlie entre dans monero-wallet-cli :"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:66
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> check_tx_key TXID TXKEY ADDRESS"
 msgid "> check_tx_key TXID TXKEY ADDRESS\n"
-msgstr "> check_tx_key IDTX CLEFTX ADRESSE"
+msgstr "> check_tx_key IDTX CLEFTX ADRESSE\n"
 
 #
 #. type: Plain text
@@ -221,10 +220,10 @@ msgstr "Évidemment, Charlie voudra vérifier si l'adresse de Bob est bien la si
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:75
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:"
 msgid "Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:\n"
-msgstr "Charlie ouvre son monero-wallet-gui et va à la page Avancé > Prouver/vérifier afin de remplir la section Vérifier avec les éléments transmis par Alice :"
+msgstr "Charlie ouvre son monero-wallet-gui et va à la page Avancé > Prouver/vérifier afin de remplir la section Vérifier avec les éléments transmis par Alice :\n"
 
 #
 #. type: Plain text
