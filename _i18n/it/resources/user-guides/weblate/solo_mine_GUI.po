@@ -27,18 +27,18 @@ msgstr "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:4
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href=\"{{site.baseurl}}/downloads/\">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays \"Connected\" in the lower left corner."
 msgid "It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href=\"{{site.baseurl}}/downloads/\">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays \"Connected\" in the lower left corner.\n"
-msgstr "Minare con la GUI ufficiale è molto semplice. Se non l'hai ancora fatto, vai sulla <a href=\"{{site.baseurl}}/downloads/\">pagina dei download di Monero</a> e scarica la GUI ufficiale per il tuo sistema operativo. Avvia la GUI e attendi che Monero si sincronizzi con la rete. Dovresti vedere \"Connesso\" nell'angolo in basso a sinistra."
+msgstr "Minare con la GUI ufficiale è molto semplice. Se non l'hai ancora fatto, vai sulla <a href=\"{{site.baseurl}}/downloads/\">pagina dei download di Monero</a> e scarica la GUI ufficiale per il tuo sistema operativo. Avvia la GUI e attendi che Monero si sincronizzi con la rete. Dovresti vedere \"Connesso\" nell'angolo in basso a sinistra.\n"
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:6
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>\n"
-msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>"
+msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>\n"
 
 #
 #. type: Plain text
@@ -49,10 +49,10 @@ msgstr "Clicca sulla categoria \"Avanzate\". Dovresti veder comparire alcune opz
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:10
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>\n"
-msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>"
+msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>\n"
 
 #
 #. type: Plain text
@@ -63,10 +63,10 @@ msgstr "Adesso dovresti avere un'opzione per avviare il mining. Inoltre hai la p
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:14
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>\n"
-msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>"
+msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>\n"
 
 #
 #. type: Plain text
