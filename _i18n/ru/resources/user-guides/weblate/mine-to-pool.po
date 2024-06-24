@@ -95,13 +95,11 @@ msgstr "Прокрутите вниз до 'Assets', пока не увидит�
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:43
 #, no-wrap
-#| msgid "Other distributions and operative systems"
 msgid "Other distributions and operating systems"
 msgstr "Другие дистрибутивы и операционные системы"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:46
-#| msgid "Binaries are available for multiple distributions and operative systems, but you can also build the miner by yourself. Take a loot at [XMrig's docs](https://xmrig.com/docs/miner)"
 msgid "Binaries are available for various distributions and operating systems, but you can also build the miner by yourself. Take a look at [XMrig's docs](https://xmrig.com/docs/miner)"
 msgstr "Бинарные файлы доступны для нескольких дистрибутивов и операционных систем, но вы также можете собрать майнер самостоятельно. Воспользуйтесь [документацией на веб-сайте XMrig](https://xmrig.com/docs/miner)"
 
