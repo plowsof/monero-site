@@ -171,7 +171,6 @@ msgstr "Schritt 7"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:59
-#, fuzzy
-#| msgid "After the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted."
+
 msgid "After the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted."
 msgstr "Nachdem die Blockchain die Synchronisation abgeschlossen hat, kannst du dein Monero-Wallet ganz normal öffnen. Die heruntergeladene \"rohe\" Blockchain (blockchain.raw) kann gelöscht werden."
