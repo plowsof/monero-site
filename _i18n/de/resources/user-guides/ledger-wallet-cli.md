@@ -7,7 +7,7 @@
 * [Linux](#linux)
 * [Schlussbemerkungen](#Schlussbemerkungen)
 
-###  Windows
+### Windows
 
 Zunächst muss sichergestellt werden, dass wir ausreichend vorbereitet
 sind. Dazu gehören die folgenden Punkte:

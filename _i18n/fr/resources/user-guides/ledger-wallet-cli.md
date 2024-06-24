@@ -7,7 +7,7 @@
 * [Linux](#linux)
 * [Remarques Finales](#quelques-remarques-finales)
 
-###  Windows
+### Windows
 
 Nous devons nous assurer d'être suffisamment préparé. Cela implique ce qui
 suit :

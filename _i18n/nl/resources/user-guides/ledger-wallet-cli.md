@@ -7,7 +7,7 @@
 * [Linux](#linux)
 * [Ten slotte](#ten-slotte)
 
-###  Windows
+### Windows
 
 Eerst moeten we ons voldoende voorbereiden. Daar is het volgende voor nodig:
 

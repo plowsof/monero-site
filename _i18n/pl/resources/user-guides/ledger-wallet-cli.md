@@ -7,7 +7,7 @@
 * [Linux](#linux)
 * [Uwagi końcowe](#a-few-final-notes)
 
-###  Windows
+### Windows
 
 Najpierw musimy się upewnić, że jesteśmy wystarczająco przygotowani. Wiąże
 się to z następującymi kwestiami:

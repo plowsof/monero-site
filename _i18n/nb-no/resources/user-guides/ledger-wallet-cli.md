@@ -7,7 +7,7 @@
 * [Linux](#linux)
 * [Sluttmerknader](#a-few-final-notes)
 
-###  Windows
+### Windows
 
 Vi må først sørge for at vi er tilstrekkelig forberedt. Dette innebærer
 følgende:
