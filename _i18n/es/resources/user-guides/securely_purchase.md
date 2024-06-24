@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-## Step 1: Acquire Monero
+## Paso 1: Adquiere Monero
 
 There are multiple ways to acquire Monero: You can mine it, you can exchange
 services or goods for it, or you can convert other cryptocurrencies and fiat
@@ -19,16 +19,16 @@ terceros.
 An incomplete list of Exchanges that support Monero is on our [Merchants
 page]({{ site.baseurl }}/community/merchants/#exchanges).
 
-## Step 2: Download and create a Paper Wallet on a secure and air-gapped computer.
+## Paso 2: Descarga y crea un Monedero en Papel en un ordenador aislado y seguro.
 
 Download the @paper-wallet generator at: [getmonero.org/generator]({{
 site.baseurl}}/generator) and copy it to a USB stick (direct link:
 [wallet-generator.zip]({{ site.baseurl
 }}/resources/wallet-generator/wallet-generator.zip)).
 
-Unzip and open the paper wallet generator (wallet-generator.html) into a web
-browser on an air-gapped (@airgap) computer that hasn't been used before, or
-has had a clean installation of the operative system.
+Extra y abre el generador de monedero en papel (wallet-generator.html) en un
+navegador en una computadora aislada (@airgap) que no haya sido usada antes,
+o que haya tenido una instalación limpia del sistema operativo.
 
 Tu monedero en papel tendrá cuatro puntos importantes:
 
@@ -63,7 +63,7 @@ copy in memory.
 
 *If you lose access to your Monero paper wallet the Monero will not be available to you or anyone else, ever. You wont be able to recover them!*
 
-#### Side Note
+#### Nota Aparte
 
 Option to encrypt an XMR mnemonic seed: https://xmr.llcoins.net/  
 Download the html page and place it on your airgapped computer. Check the

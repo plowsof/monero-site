@@ -26,7 +26,6 @@ msgstr "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:3
 #, no-wrap
-#| msgid "## Step 1: Acquire Monero"
 msgid "Step 1: Acquire Monero"
 msgstr "Paso 1: Adquiere Monero"
 
@@ -48,7 +47,6 @@ msgstr ""
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:11
 #, no-wrap
-#| msgid "## Step 2: Download and create a Paper Wallet on a secure and air-gapped computer."
 msgid "Step 2: Download and create a Paper Wallet on a secure and air-gapped computer."
 msgstr "Paso 2: Descarga y crea un Monedero en Papel en un ordenador aislado y seguro."
 
@@ -59,7 +57,6 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:16
-#| msgid "Unzip and open the paper wallet generator (monero-wallet-generator.html) into a web browser on an air-gapped (@airgap) computer that hasn't been used before, or has had a clean installation of the operative system."
 msgid "Unzip and open the paper wallet generator (wallet-generator.html) into a web browser on an air-gapped (@airgap) computer that hasn't been used before, or has had a clean installation of the operative system."
 msgstr "Extra y abre el generador de monedero en papel (wallet-generator.html) en un navegador en una computadora aislada (@airgap) que no haya sido usada antes, o que haya tenido una instalación limpia del sistema operativo."
 
@@ -107,7 +104,6 @@ msgstr ""
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:33
 #, no-wrap
-#| msgid "#### Side Note"
 msgid "Side Note"
 msgstr "Nota Aparte"
 

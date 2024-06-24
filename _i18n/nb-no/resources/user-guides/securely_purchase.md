@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Step 1: Acquire Monero
+## Steg 1: Å oppdrive Monero
 
 Det er flere måter å oppdrive Monero på. Du kan utvinne det, veksle varer
 eller tjenester for det, eller du kan veksle andre kryptovalutaer og
@@ -17,33 +17,35 @@ mennesker møte og handle uten at en tredjepart er involvert.
 En ufullstendig liste over børser som støtter Monero finnes på vår
 [Forhandler-side]({{ site.baseurl }}/community/merchants/#exchanges).
 
-## Step 2: Download and create a Paper Wallet on a secure and air-gapped computer.
+## Steg 2: Last ned og opprett en papirlommebok på en sikker PC som ikke er koblet til internett.
 
-Download the @paper-wallet generator at: [getmonero.org/generator]({{
-site.baseurl}}/generator) and copy it to a USB stick (direct link:
+Last ned @papirlommebokgeneratoren på: [getmonero.org/generator]({{
+site.baseurl}}/generator) og kopier den til en USB-minnepinne (direktelenke:
 [wallet-generator.zip]({{ site.baseurl
 }}/resources/wallet-generator/wallet-generator.zip)).
 
-Unzip and open the paper wallet generator (wallet-generator.html) into a web
-browser on an air-gapped (@airgap) computer that hasn't been used before, or
-has had a clean installation of the operative system.
+Pakk opp og åpne papirlommebokgeneratoren (wallet-generator.html) i en
+nettleser på en (@airgap)-PC som ikke er koblet til internett som ikke
+tidligere har blitt brukt eller som har en ren installasjon av
+operativsystemet.
 
 Papirlommeboken din vil inneholde fire viktige elementer:
 
-- Monero Public @Address: The public address is used to receive funds to the
-  @wallet. You give this to anyone who will be sending funds to your wallet.
+- Offentlig Monero-@adresse: Den offentlige adressen brukes til å motta
+  midler til @lommeboken. Du gir denne til de som vil sende midler til
+  lommeboken din.
 
-- Monero @Mnemonic-Seed: The mnemonic seed is a method of storing the entire
-  wallet that is easily recognizable to humans.  This is all you need to
-  restore your wallet at a later date.
+- @Mnemonisk Monero-frø: Det mnemoniske frøet er en metode å lagre hele
+  lommeboken på som er enkelt gjenkjennelig for mennesker. Dette er alt du
+  trenger for å gjenopprette lommeboken din senere.
 
-- Monero @Spend-Key: The private spend key is used to send funds from the
-  wallet.
+- Monero-@forbruksnøkkel: Den private forbruksnøkkelen brukes til å sende
+  midler fra lommebøkene.
 
-- Monero @View-Key: The private view key is to view transactions entering
-  the wallet. Commonly this is used to setup a view-only wallet which can
-  see incoming transactions live on the blockchain as they are sent to a
-  cold storage wallet.
+- Monero-@visningsnøkkel: Den private visningsnøkkelen brukes til å se
+  transaksjoner som går inn i lommeboken. Den brukes vanligvis til å sette
+  opp en visningslommebok som kan se innkommende transaksjoner på blokkjeden
+  i sanntid mens de sendes til en kald lommebok.
 
 På dette stadiet har du mange valg. Du kan skrive ut lommeboken på papir,
 lagre den som PDF eller tekst på en USB-minnepinne, brenne den til CD/DVD
@@ -61,18 +63,18 @@ sørge for at printeren din ikke lagrer kopier av utskrifter.
 
 *Hvis du mister tilgangen til Monero-papirlommeboken din, vil ikke Moneroene bli tilgjengelig for deg eller noen andre. Du vil ikke kunne gjenvinne dem!*
 
-#### Side Note
+#### Sidemerknad
 
-Option to encrypt an XMR mnemonic seed: https://xmr.llcoins.net/  
-Download the html page and place it on your airgapped computer. Check the
-part "Encrypt/Decrypt Mnemonic Seed" and make sure you use "CN Add" with a
-decent password. Thanks manicminer5.
+Mulighet for å kryptere et XMR-mnemonisk frø: https://xmr.llcoins.net/ 
+Last ned html-siden og sett den på PC-en din som ikke er koblet til
+internett. Se delen om «Kryptering/avkoding av mnemoniske frø» og sørg for
+at du bruker «CN Add» med et godt passord. Takk til manicminer5.
 
-## Step 3: Send your Moneroj to the paper wallet
+## Steg 3: Send dine Moneroj til papirlommeboken
 
-Now that you have everything you need, you are ready to send your XMR to your paper wallet. Simply send the coins to the wallet address you noted earlier. Make sure the address is correct, even if you copy-pasted it! Remember that if you send the coins to a wrong address, there is no way to have them back!  
+Nå som du har alt du trenger, er du klar til å sende dine XMR til papirlommeboken din. Bare send myntene til lommebok-adressen du skrev ned tidligere. Sørg for at adressen er riktig, selv om du har kopiert og limt den! Husk at hvis du sender myntene til en feil adresse, er det ingen måte å få dem tilbake på! 
 
-#### Notes and How to Verify Funds
+#### Merknader og hvordan å verifisere midler
 
 Fordi Monero-blokkjeden er privat og usporbar, vil du ikke kunne sjekke din
 offentlige Monero-adresse og bekrefte at midlene har ankommet slik som med
