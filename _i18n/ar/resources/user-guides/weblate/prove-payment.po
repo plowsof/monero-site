@@ -25,10 +25,10 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/prove-payment.md:3
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Prove payments"
 msgid "Prove payments"
-msgstr "### إثبات المدفوعات"
+msgstr "إثبات المدفوعات"
 
 #
 #. type: Plain text
@@ -67,10 +67,9 @@ msgstr ""
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/prove-payment.md:18
-#, fuzzy
 #| msgid "- the transaction ID, as is done in Bitcoin - Bob's address, as is done with Bitcoin - the transaction's key, which is new with Monero and other CryptoNote currencies"
 msgid "the transaction's key, which is new with Monero and other CryptoNote currencies"
-msgstr "- مُعرّف المعامله , كما في البتكوين.  - عنوان حساب عبدالحميد , كما في البتكوين.  - مفتاح المعامله, وهذه التقنيه موجوده فقط في مونيرو وعملات كريبتونوت الأخري (CryptoNote)."
+msgstr "مُعرّف المعامله , كما في البتكوين.  - عنوان حساب عبدالحميد , كما في البتكوين.  - مفتاح المعامله, وهذه التقنيه موجوده فقط في مونيرو وعملات كريبتونوت الأخري (CryptoNote)."
 
 #
 #. type: Plain text
@@ -94,10 +93,10 @@ msgstr "يُمكن لمريم الإستعلام عن مفتاح المعامل�
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:26
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> get_tx_key TXID"
 msgid "> get_tx_key TXID\n"
-msgstr "> get_tx_key TXID"
+msgstr "> get_tx_key TXID\n"
 
 #
 #. type: Plain text
@@ -114,10 +113,10 @@ msgstr "لاحظ: يجب تفعيل تخزين مفاتيح المعاملات �
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:33
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> set"
 msgid "> set\n"
-msgstr "> set"
+msgstr "> set\n"
 
 #
 #. type: Plain text
@@ -128,10 +127,10 @@ msgstr "إذا كانت القيمه 0 فإجعلها 1:"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:37
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> set store-tx-info 1"
 msgid "> set store-tx-info 1\n"
-msgstr "> set store-tx-info 1"
+msgstr "> set store-tx-info 1\n"
 
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/prove-payment.md:38
@@ -180,10 +179,10 @@ msgstr "لاحظ: إذا كان هُناك أكثر من مُعامله يجب �
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/prove-payment.md:56
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Check payments"
 msgid "Check payments"
-msgstr "### تحقق من المدفوعات"
+msgstr "تحقق من المدفوعات"
 
 #
 #. type: Plain text
@@ -200,10 +199,10 @@ msgstr "يكتب محمود في واجهه سطر الأوامر :"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:66
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> check_tx_key TXID TXKEY ADDRESS"
 msgid "> check_tx_key TXID TXKEY ADDRESS\n"
-msgstr "> check_tx_key TXID TXKEY ADDRESS"
+msgstr "> check_tx_key TXID TXKEY ADDRESS\n"
 
 #
 #. type: Plain text
@@ -221,10 +220,10 @@ msgstr "جب أن يتأكد محمود من أن عنوان الحساب يخص
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:75
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:"
 msgid "Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:\n"
-msgstr "يفتح محمود إلي الواجهه الرسوميه ويذهب إلي صفحه مُتقدم > صفحه إثبات/تحقق ويملأ البيانات اللازمه :"
+msgstr "يفتح محمود إلي الواجهه الرسوميه ويذهب إلي صفحه مُتقدم > صفحه إثبات/تحقق ويملأ البيانات اللازمه :\n"
 
 #
 #. type: Plain text

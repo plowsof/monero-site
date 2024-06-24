@@ -25,10 +25,10 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/prove-payment.md:3
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Prove payments"
 msgid "Prove payments"
-msgstr "### Bevis betalinger"
+msgstr "Bevis betalinger"
 
 #
 #. type: Plain text
@@ -67,10 +67,9 @@ msgstr ""
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/prove-payment.md:18
-#, fuzzy
 #| msgid "- the transaction ID, as is done in Bitcoin - Bob's address, as is done with Bitcoin - the transaction's key, which is new with Monero and other CryptoNote currencies"
 msgid "the transaction's key, which is new with Monero and other CryptoNote currencies"
-msgstr "- Transaksjons-ID-en (som i bitcoin)  - Bobs adresse (som i bitcoin)  - Transaksjonsnøkkelen, noe som er nytt med Monero og andre CryptoNote-valutaer"
+msgstr "Transaksjons-ID-en (som i bitcoin)  - Bobs adresse (som i bitcoin)  - Transaksjonsnøkkelen, noe som er nytt med Monero og andre CryptoNote-valutaer"
 
 #
 #. type: Plain text
@@ -94,10 +93,10 @@ msgstr "Alice kan altså forespørre den i sin monero-wallet-cli (nytt navn for 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:26
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> get_tx_key TXID"
 msgid "> get_tx_key TXID\n"
-msgstr "> get_tx_key TXID"
+msgstr "> get_tx_key TXID\n"
 
 #
 #. type: Plain text
@@ -114,10 +113,10 @@ msgstr "Merk at dette kun vil fungere dersom monero-wallet-cli er satt opp til �
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:33
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> set"
 msgid "> set\n"
-msgstr "> set"
+msgstr "> set\n"
 
 #
 #. type: Plain text
@@ -128,10 +127,10 @@ msgstr "Hvis den er satt til 0, setter du den til 1:"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:37
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> set store-tx-info 1"
 msgid "> set store-tx-info 1\n"
-msgstr "> set store-tx-info 1"
+msgstr "> set store-tx-info 1\n"
 
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/prove-payment.md:38
@@ -180,10 +179,10 @@ msgstr "Merk: Hvis flere transaksjoner har blitt gjort, må dette gjentas for hv
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/prove-payment.md:56
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Check payments"
 msgid "Check payments"
-msgstr "### Sjekk betalinger"
+msgstr "Sjekk betalinger"
 
 #
 #. type: Plain text
@@ -200,10 +199,10 @@ msgstr "taster Charlie inn i monero-wallet-cli:"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:66
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> check_tx_key TXID TXKEY ADDRESS"
 msgid "> check_tx_key TXID TXKEY ADDRESS\n"
-msgstr "> check_tx_key TXID TXKEY ADDRESS"
+msgstr "> check_tx_key TXID TXKEY ADDRESS\n"
 
 #
 #. type: Plain text
@@ -221,10 +220,10 @@ msgstr "Charlie ønsker åpenbart å dobbeltsjekke med Bob at adressen virkelig 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:75
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:"
 msgid "Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:\n"
-msgstr "Charlie vil åpne sin monero-wallet-gui og gå til Avansert > Bevis/Sjekk-siden for å fylle inn Sjekk-seksjonen med opplysningene som Alice har oppgitt:"
+msgstr "Charlie vil åpne sin monero-wallet-gui og gå til Avansert > Bevis/Sjekk-siden for å fylle inn Sjekk-seksjonen med opplysningene som Alice har oppgitt:\n"
 
 #
 #. type: Plain text
