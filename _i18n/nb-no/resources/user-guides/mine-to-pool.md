@@ -1,13 +1,13 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Wallet
+## Lommebok
 
 Før du begynner, må du allerede ha en konfigurert lommebok som
 virker. Monero-poolen må vite lommebokadressen din for å kunne sende
 betalinger dit. Se [Å ta imot Monero-guiden]({{
 site.baseurl}}/get-started/accepting) for mer informasjon.
 
-## Profitability
+##  Lønnsomhet
 
 Før du utvinner, bør du avgjøre om det er verdt det eller ikke for deg. Du
 må avgjøre dette på egenhånd, på grunnlag strømkostnadene og maskinvaren du
@@ -16,11 +16,11 @@ f.eks. [CryptoCompare](https://www.cryptocompare.com/mining/calculator/xmr),
 som lar deg legge inn hastigheten og strømforbruket på utvinneren din, og
 den viser seg også forventet profitt (eller tap) per uke/måned.
 
-## Download Miner
+##  Nedlasting av utvinneren
 
 Det første steget er å laste ned utvinningsprogramvaren til PC-en din.
 
-### Windows
+###  Windows
 
 XMRig-utvikleren gir forhåndsbyggede binærfiler for Windows-brukere. De er
 tilgjengelige på [GitHub
@@ -29,7 +29,7 @@ release-siden](https://github.com/xmrig/xmrig/releases/latest).
 Bla ned til du ser `xmrig-VERSION-msvc-win64.zip`. Last ned denne filen og
 pakk ut arkivene til et sted du husker, som f.eks. skrivebordet ditt.
 
-### Ubuntu Linux
+###  Ubuntu Linux
 
 The XMRig developer provides pre-built binaries for Ubuntu Bionic (18.04)
 and Focal (20.04). They may work on other Ubuntu versions, and on other
