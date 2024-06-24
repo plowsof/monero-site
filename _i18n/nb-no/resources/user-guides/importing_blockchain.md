@@ -72,5 +72,5 @@ C:\Users\KeeJef\Downloads\blockchain.raw`
 
 ### Trinn 7
 
-After the the blockchain has finished syncing up you can open your Monero
-wallet normally. Your downloaded blockchain.raw can be deleted.
+After the blockchain has finished syncing up you can open your Monero wallet
+normally. Your downloaded blockchain.raw can be deleted.
