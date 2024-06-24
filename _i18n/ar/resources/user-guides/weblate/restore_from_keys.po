@@ -53,7 +53,7 @@ msgstr "**مفتاح الرؤيه الخاص**"
 #: ../_i18n/en/resources/user-guides/restore_from_keys.md:12
 #, no-wrap
 msgid "CLI"
-msgstr ""
+msgstr "واجهه سطر الأوامر (CLI)"
 
 #
 #. type: Plain text
@@ -89,7 +89,7 @@ msgstr "إذا واجهت أي مشكله تشغيل الأمر `./monero-wallet
 #: ../_i18n/en/resources/user-guides/restore_from_keys.md:24
 #, no-wrap
 msgid "GUI"
-msgstr ""
+msgstr "الواجهه الرسوميه (GUI)"
 
 #
 #. type: Plain text
@@ -174,11 +174,3 @@ msgstr "إنقر علي 'إستخدم مونيرو' للإستمتاع بمحف�
 #: ../_i18n/en/resources/user-guides/restore_from_keys.md:52
 msgid "![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)"
 msgstr "![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)"
-
-#
-#~ msgid "#### CLI"
-#~ msgstr "#### واجهه سطر الأوامر (CLI)"
-
-#
-#~ msgid "#### GUI"
-#~ msgstr "#### الواجهه الرسوميه (GUI)"
