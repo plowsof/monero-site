@@ -54,7 +54,6 @@ msgstr "[Remarques Finales](#quelques-remarques-finales)"
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:10
 #, no-wrap
-#| msgid "### Windows"
 msgid "Windows"
 msgstr " Windows"
 
