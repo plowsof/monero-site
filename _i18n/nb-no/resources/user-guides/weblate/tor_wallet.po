@@ -31,10 +31,10 @@ msgstr "Under viser vi deg et eksempel på konfigurasjon som lar deg kjøre en M
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:5
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Create a Tor hidden service for RPC"
 msgid "Create a Tor hidden service for RPC"
-msgstr "## Å opprette et Tor-nettverk for RPC"
+msgstr "Å opprette et Tor-nettverk for RPC"
 
 #
 #. type: Plain text
@@ -57,36 +57,38 @@ msgstr "Fil: `/etc/torrc`"
 #
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:13
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` HiddenServiceDir /var/lib/tor/monero-service/ HiddenServicePort 18081 127.0.0.1:18081 ``` Restart Tor: ``` sudo systemctl restart tor@default ```"
 msgid ""
 "HiddenServiceDir /var/lib/tor/monero-service/\n"
 "HiddenServicePort 18081 127.0.0.1:18081\n"
-msgstr "``` HiddenServiceDir /var/lib/tor/monero-service/ HiddenServicePort 18081 127.0.0.1:18081 ``` Start Tor på nytt: ``` sudo systemctl restart tor@default ```"
+msgstr ""
+"HiddenServiceDir /var/lib/tor/monero-service/\n" 
+"HiddenServicePort 18081 127.0.0.1:18081\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:18
 msgid "Restart Tor:"
-msgstr ""
+msgstr "Start Tor på nytt:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:18
 #, no-wrap
 msgid "sudo systemctl restart tor@default\n"
-msgstr ""
+msgstr "sudo systemctl restart tor@default\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:23
 msgid "Make sure Tor started correctly:"
-msgstr ""
+msgstr "Sørg for at Tor har startet opp riktig:"
 
 #
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:23
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "Make sure Tor started correctly: ``` sudo systemctl status tor@default.service ```"
 msgid "sudo systemctl status tor@default.service\n"
-msgstr "Sørg for at Tor har startet opp riktig: ``` sudo systemctl status tor@default.service ```"
+msgstr "sudo systemctl status tor@default.service\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:28
@@ -107,10 +109,10 @@ msgstr ""
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:33
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Configure Daemon to allow RPC"
 msgid "Configure Daemon to allow RPC"
-msgstr "### Å konfigurere Daemon til å tillate RPC"
+msgstr "Å konfigurere Daemon til å tillate RPC"
 
 #
 #. type: Plain text
@@ -127,21 +129,23 @@ msgstr "Fil: `~/.bitmonero/bitmonero.conf` (i hjemkatalogen til Monero-brukeren)
 #
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:39
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` no-igd=1 restricted-rpc=1 rpc-login=USERNAME:PASSWORD ``` (Make up a USERNAME and PASSWORD to use for RPC)"
 msgid ""
 "no-igd=1\n"
 "restricted-rpc=1\n"
 "rpc-login=USERNAME:PASSWORD\n"
-msgstr "``` no-igd=1 restricted-rpc=1 rpc-login=USERNAME:PASSWORD ``` (Finn på et brukernavn (USERNAME) og passord (PASSWORD) som brukes med RPC-en)"
+msgstr ""
+"no-igd=1\n"
+"restricted-rpc=1\n"
+"rpc-login=USERNAME:PASSWORD\n"
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:45
-#, fuzzy
 #| msgid "``` no-igd=1 restricted-rpc=1 rpc-login=USERNAME:PASSWORD ``` (Make up a USERNAME and PASSWORD to use for RPC)"
 msgid "(Make up a USERNAME and PASSWORD to use for RPC)"
-msgstr "``` no-igd=1 restricted-rpc=1 rpc-login=USERNAME:PASSWORD ``` (Finn på et brukernavn (USERNAME) og passord (PASSWORD) som brukes med RPC-en)"
+msgstr "(Finn på et brukernavn (USERNAME) og passord (PASSWORD) som brukes med RPC-en)"
 
 #
 #. type: Plain text
@@ -152,24 +156,23 @@ msgstr "Start daemon på nytt: `monerod stop_daemon; sleep 10; monerod --detach`
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:49
-#, fuzzy
 #| msgid "Make sure the daemon started correctly: ``` tail -f ~/.bitmonero/bitmonero.log ```"
 msgid "Make sure the daemon started correctly:"
-msgstr "Sørg for at daemon startet ordentlig: ``` tail -f ~/.bitmonero/bitmonero.log ```"
+msgstr "Sørg for at daemon startet ordentlig:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:49
 #, no-wrap
 msgid "tail -f ~/.bitmonero/bitmonero.log\n"
-msgstr ""
+msgstr "tail -f ~/.bitmonero/bitmonero.log\n"
 
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:53
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Connecting to your node from a local wallet"
 msgid "Connecting to your node from a local wallet"
-msgstr "## Å koble til en node fra en lokal lommebok"
+msgstr "Å koble til en node fra en lokal lommebok"
 
 #
 #. type: Plain text
@@ -180,20 +183,20 @@ msgstr "Sørg for at du har Tor som kjører lokalt slik at du kan koble til Tor-
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:58
 msgid "Then test a simple RPC command, eg:"
-msgstr ""
+msgstr "Deretter kan du teste en enkel RPC-kommando, f.eks.:"
 
 #
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:58
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "Then test a simple RPC command, eg: ``` curl --socks5-hostname 127.0.0.1:9150 -u USERNAME:PASSWORD --digest -X POST http://HIDDEN_SERVICE.onion:18081/json_rpc -d '{\"jsonrpc\":\"2.0\",\"id\":\"0\",\"method\":\"get_info\"}' -H 'Content-Type: application/json' ``` Replace `USERNAME`, `PASSWORD`, and `HIDDEN_SERVICE` with values from above.  Change `9150` to another port if needed by your local Tor daemon."
 msgid "curl --socks5-hostname 127.0.0.1:9150 -u USERNAME:PASSWORD --digest -X POST http://HIDDEN_SERVICE.onion:18081/json_rpc -d '{\"jsonrpc\":\"2.0\",\"id\":\"0\",\"method\":\"get_info\"}' -H 'Content-Type: application/json'\n"
-msgstr "Deretter kan du teste en enkel RPC-kommando, f.eks.: ``` curl --socks5-hostname 127.0.0.1:9150 -u USERNAME:PASSWORD --digest -X POST http://HIDDEN_SERVICE.onion:18081/json_rpc -d '{\"jsonrpc\":\"2.0\",\"id\":\"0\",\"method\":\"get_info\"}' -H 'Content-Type: application/json' ``` Bytt ut `USERNAME`, `PASSWORD`, og `HIDDEN_SERVICE` med verdiene over. Endre `9150` til en annen port hvis det trengs av din lokale Tor daemon."
+msgstr "curl --socks5-hostname 127.0.0.1:9150 -u USERNAME:PASSWORD --digest -X POST http://HIDDEN_SERVICE.onion:18081/json_rpc -d '{\"jsonrpc\":\"2.0\",\"id\":\"0\",\"method\":\"get_info\"}' -H 'Content-Type: application/json'\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:62
 msgid "Replace `USERNAME`, `PASSWORD`, and `HIDDEN_SERVICE` with values from above.  Change `9150` to another port if needed by your local Tor daemon."
-msgstr ""
+msgstr "Bytt ut `USERNAME`, `PASSWORD`, og `HIDDEN_SERVICE` med verdiene over. Endre `9150` til en annen port hvis det trengs av din lokale Tor daemon."
 
 #
 #. type: Plain text
@@ -204,50 +207,49 @@ msgstr "Når du utfører kommandoen, bør du få litt informasjon om den ekstern
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:66
 msgid "Once it is working, you can connect using your cli wallet:"
-msgstr ""
+msgstr "Når den fungerer, kan du koble til ved å bruke CLI-lommeboken din:"
 
 #
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:66
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "Once it is working, you can connect using your cli wallet: ``` ./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET ``` Replace values above as needed."
 msgid "./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET\n"
-msgstr "Når den fungerer, kan du koble til ved å bruke CLI-lommeboken din: ``` ./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET ``` Bytt ut verdiene over etter behov."
+msgstr "./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:70
 msgid "Replace values above as needed."
-msgstr ""
+msgstr "Bytt ut verdiene over etter behov."
 
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:71
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## GUI"
 msgid "GUI"
-msgstr "## GUI"
+msgstr "GUI"
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:74
-#, fuzzy
 #| msgid "If you are interested in experimenting with the GUI over Tor, you can try `torsocks` (note this may leak info -- do not rely on it if your life depends on maintaining anonymity).  Here is an example on MacOS, adjust as needed for the Linux GUI: ``` torsocks --port 9150 /Applications/monero-wallet-gui.app/Contents/MacOS/monero-wallet-gui ```"
 msgid "If you are interested in experimenting with the GUI over Tor, you can try `torsocks` (note this may leak info -- do not rely on it if your life depends on maintaining anonymity).  Here is an example on MacOS, adjust as needed for the Linux GUI:"
-msgstr "Hvis du er interessert i å eksperimentere med GUI-en over Tor, kan du prøve `torsocks` (merk at denne kan lekke informasjon -- ikke stol på den hvis livet ditt avhenger av å opprettholde anonymitet).  Her er et eksempel på MacOS. Juster verdiene etter behov for Linux GUI-en: ``` torsocks --port 9150 /Applications/monero-wallet-gui.app/Contents/MacOS/monero-wallet-gui ```"
+msgstr "Hvis du er interessert i å eksperimentere med GUI-en over Tor, kan du prøve `torsocks` (merk at denne kan lekke informasjon -- ikke stol på den hvis livet ditt avhenger av å opprettholde anonymitet).  Her er et eksempel på MacOS. Juster verdiene etter behov for Linux GUI-en:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:74
 #, no-wrap
 msgid "torsocks --port 9150 /Applications/monero-wallet-gui.app/Contents/MacOS/monero-wallet-gui\n"
-msgstr ""
+msgstr "torsocks --port 9150 /Applications/monero-wallet-gui.app/Contents/MacOS/monero-wallet-gui\n
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:79
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "This will allow the GUI to communicate with the Tor network.  Once the GUI is open and a wallet loaded, you must configure it to connect to your Tor hidden service by adding your onion address to: \"Settings > Node > Remote node > Address\"."
 msgid "This will allow the GUI to communicate with the Tor network.  Once the GUI is open and a wallet loaded, you must configure it to connect to your Tor hidden service by adding your onion address to:  \"Settings > Node > Remote node > Address\".\n"
-msgstr "Dette lar GUI-en kommunisere med Tor-nettverket. Når GUI-en er åpen og lommeboken lastet inn, må du konfigurere den til å koble til Tor-nettverket ditt ved å legge til onion-adressen din i: \"Innstillinger > Node > Ekstern node > Adresse\"."
+msgstr "Dette lar GUI-en kommunisere med Tor-nettverket. Når GUI-en er åpen og lommeboken lastet inn, må du konfigurere den til å koble til Tor-nettverket ditt ved å legge til onion-adressen din i: \"Innstillinger > Node > Ekstern node > Adresse\".\n"
 
 #
 #. type: Plain text
@@ -258,17 +260,16 @@ msgstr "I fremtidige versjoner av GUI-en forventer vi å legge til direkte støt
 #
 #. type: Title #
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:82
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "# Additional resources"
 msgid "Additional resources"
-msgstr "# Flere ressurser"
+msgstr "Flere ressurser"
 
 #. type: Bullet: '* '
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:85
-#, fuzzy
 #| msgid "[ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/ANONYMITY_NETWORKS.md)"
 msgid "[ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)"
-msgstr "[ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/ANONYMITY_NETWORKS.md)"
+msgstr "[ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)"
 
 #. type: Bullet: '* '
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:85

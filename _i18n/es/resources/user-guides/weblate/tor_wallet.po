@@ -71,14 +71,14 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:23
 msgid "Make sure Tor started correctly:"
-msgstr ""
+msgstr "Asegúrate de que Tor se inició correctamente:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:23
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "Make sure Tor started correctly: ``` sudo systemctl status tor@default.service ```"
 msgid "sudo systemctl status tor@default.service\n"
-msgstr "Asegúrate de que Tor se inició correctamente: ``` sudo systemctl status tor@default.service ```"
+msgstr "sudo systemctl status tor@default.service\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:28
@@ -98,10 +98,10 @@ msgstr ""
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:33
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Configure Daemon to allow RPC"
 msgid "Configure Daemon to allow RPC"
-msgstr "### Configurar Daemon para permitir RPC"
+msgstr "Configurar Daemon para permitir RPC"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:36
@@ -134,23 +134,22 @@ msgstr "Reinicia el Daemon: `monerod stop_daemon; sleep 10; monerod --detach`"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:49
-#, fuzzy
 #| msgid "Make sure the daemon started correctly: ``` tail -f ~/.bitmonero/bitmonero.log ```"
 msgid "Make sure the daemon started correctly:"
-msgstr "Asegúrate de que el daemon se inició correctamente: ``` tail -f ~/.bitmonero/bitmonero.log ```"
+msgstr "Asegúrate de que el daemon se inició correctamente:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:49
 #, no-wrap
 msgid "tail -f ~/.bitmonero/bitmonero.log\n"
-msgstr ""
+msgstr "tail -f ~/.bitmonero/bitmonero.log\n"
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:53
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Connecting to your node from a local wallet"
 msgid "Connecting to your node from a local wallet"
-msgstr "## Conectando a tu nodo desde un monedero local"
+msgstr "Conectando a tu nodo desde un monedero local"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:56
@@ -181,14 +180,14 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:66
 msgid "Once it is working, you can connect using your cli wallet:"
-msgstr ""
+msgstr "Una vez que esté funcionando, puedes conectarte usando tu monedero cli:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:66
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "Once it is working, you can connect using your cli wallet: ``` ./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET ``` Replace values above as needed."
 msgid "./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET\n"
-msgstr "Una vez que esté funcionando, puedes conectarte usando tu monedero cli: ``` ./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET ``` Reemplaza los valores de arriba como sea necesario."
+msgstr "./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET ``` Reemplaza los valores de arriba como sea necesario.\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:70
@@ -197,10 +196,10 @@ msgstr ""
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:71
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## GUI"
 msgid "GUI"
-msgstr "## GUI"
+msgstr "GUI"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:74
@@ -226,10 +225,10 @@ msgstr ""
 
 #. type: Title #
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:82
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "# Additional resources"
 msgid "Additional resources"
-msgstr "# Recursos adicionales"
+msgstr "Recursos adicionales"
 
 #. type: Bullet: '* '
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:85
