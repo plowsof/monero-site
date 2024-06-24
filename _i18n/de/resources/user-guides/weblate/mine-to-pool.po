@@ -66,7 +66,7 @@ msgstr "Der erste Schritt ist der Download der Mining-Software auf deinen Rechne
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:23
 #, no-wrap
 msgid "Windows"
-msgstr " Windows"
+msgstr "Windows"
 
 #
 #. type: Plain text

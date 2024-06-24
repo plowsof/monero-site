@@ -54,7 +54,7 @@ msgstr "[Uwagi końcowe](#a-few-final-notes)"
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:10
 #, no-wrap
 msgid "Windows"
-msgstr " Windows"
+msgstr "Windows"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:13
