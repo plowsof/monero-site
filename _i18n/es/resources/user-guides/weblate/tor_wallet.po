@@ -76,7 +76,6 @@ msgstr "Asegúrate de que Tor se inició correctamente:"
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:23
 #, no-wrap
-#| msgid "Make sure Tor started correctly: ``` sudo systemctl status tor@default.service ```"
 msgid "sudo systemctl status tor@default.service\n"
 msgstr "sudo systemctl status tor@default.service\n"
 
@@ -99,7 +98,6 @@ msgstr ""
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:33
 #, no-wrap
-#| msgid "### Configure Daemon to allow RPC"
 msgid "Configure Daemon to allow RPC"
 msgstr "Configurar Daemon para permitir RPC"
 
@@ -134,7 +132,6 @@ msgstr "Reinicia el Daemon: `monerod stop_daemon; sleep 10; monerod --detach`"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:49
-#| msgid "Make sure the daemon started correctly: ``` tail -f ~/.bitmonero/bitmonero.log ```"
 msgid "Make sure the daemon started correctly:"
 msgstr "Asegúrate de que el daemon se inició correctamente:"
 
@@ -147,7 +144,6 @@ msgstr "tail -f ~/.bitmonero/bitmonero.log\n"
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:53
 #, no-wrap
-#| msgid "## Connecting to your node from a local wallet"
 msgid "Connecting to your node from a local wallet"
 msgstr "Conectando a tu nodo desde un monedero local"
 
@@ -185,7 +181,6 @@ msgstr "Una vez que esté funcionando, puedes conectarte usando tu monedero cli:
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:66
 #, no-wrap
-#| msgid "Once it is working, you can connect using your cli wallet: ``` ./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET ``` Replace values above as needed."
 msgid "./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET\n"
 msgstr "./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET ``` Reemplaza los valores de arriba como sea necesario.\n"
 
@@ -197,7 +192,6 @@ msgstr ""
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:71
 #, no-wrap
-#| msgid "## GUI"
 msgid "GUI"
 msgstr "GUI"
 
@@ -226,7 +220,6 @@ msgstr ""
 #. type: Title #
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:82
 #, no-wrap
-#| msgid "# Additional resources"
 msgid "Additional resources"
 msgstr "Recursos adicionales"
 
