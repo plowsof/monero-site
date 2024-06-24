@@ -26,7 +26,6 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:3
 #, no-wrap
-#| msgid "## Wallet"
 msgid "Wallet"
 msgstr "Lommebok"
 
@@ -40,7 +39,6 @@ msgstr "Før du begynner, må du allerede ha en konfigurert lommebok som virker.
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:10
 #, no-wrap
-#| msgid "## Profitability"
 msgid "Profitability"
 msgstr " Lønnsomhet"
 
@@ -54,7 +52,6 @@ msgstr "Før du utvinner, bør du avgjøre om det er verdt det eller ikke for de
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:19
 #, no-wrap
-#| msgid "## Download Miner"
 msgid "Download Miner"
 msgstr " Nedlasting av utvinneren"
 
@@ -68,7 +65,6 @@ msgstr "Det første steget er å laste ned utvinningsprogramvaren til PC-en din.
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:23
 #, no-wrap
-#| msgid "### Windows"
 msgid "Windows"
 msgstr " Windows"
 
@@ -88,7 +84,6 @@ msgstr "Bla ned til du ser `xmrig-VERSION-msvc-win64.zip`. Last ned denne filen 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:32
 #, no-wrap
-#| msgid "### Ubuntu Linux"
 msgid "Ubuntu Linux"
 msgstr " Ubuntu Linux"
 
