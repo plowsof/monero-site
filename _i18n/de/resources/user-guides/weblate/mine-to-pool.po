@@ -25,10 +25,10 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:3
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Wallet"
 msgid "Wallet"
-msgstr "## Wallet"
+msgstr "Wallet"
 
 #
 #. type: Plain text
@@ -39,10 +39,10 @@ msgstr "Bevor du startest, musst du bereits über ein konfiguriertes, funktionie
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:10
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Profitability"
 msgid "Profitability"
-msgstr "## Profitabilität"
+msgstr " Profitabilität"
 
 #
 #. type: Plain text
@@ -53,10 +53,10 @@ msgstr "Vor dem Mining solltest du entscheiden, ob sich dieses für dich lohnt o
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:19
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Download Miner"
 msgid "Download Miner"
-msgstr "## Miner herunterladen"
+msgstr " Miner herunterladen"
 
 #
 #. type: Plain text
@@ -67,10 +67,10 @@ msgstr "Der erste Schritt ist der Download der Mining-Software auf deinen Rechne
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:23
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Windows"
 msgid "Windows"
-msgstr "### Windows"
+msgstr " Windows"
 
 #
 #. type: Plain text
@@ -87,18 +87,17 @@ msgstr "Scrolle nach unten, bis du `xmrig-VERSION-msvc-win64.zip` siehst. Lade d
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:32
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Ubuntu Linux"
 msgid "Ubuntu Linux"
-msgstr "### Ubuntu (Linux)"
+msgstr " Ubuntu (Linux)"
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:36
-#, fuzzy
 #| msgid "The XMRig developer provides pre-built binaries for Ubuntu Xenial Xerus (16.04). They may work on other Ubuntu versions, and on other distributions, but this is not guaranteed."
 msgid "The XMRig developer provides pre-built binaries for Ubuntu Bionic (18.04) and Focal (20.04). They may work on other Ubuntu versions, and on other distributions, but this is not guaranteed."
-msgstr "Der Entwickler von XMRig stellt vorgefertigte Binärdateien für Ubuntu Xenial Xerus (16.04) bereit, die auch auf anderen Versionen von Ubuntu und anderen Distributionen funktionieren könnten. Dies kann allerdings nicht garantiert werden."
+msgstr "Der Entwickler von XMRig stellt vorgefertigte Binärdateien für Ubuntu Bionic (18.04) / Focal (20.04) bereit, die auch auf anderen Versionen von Ubuntu und anderen Distributionen funktionieren könnten. Dies kann allerdings nicht garantiert werden."
 
 #
 #. type: Plain text
@@ -109,10 +108,9 @@ msgstr "Diese Binärdateien sind auf der [Versionsseite auf GitHub](https://gith
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:42
-#, fuzzy
 #| msgid "Scroll down until you see `xmrig-VERSION-xenial-x64.tar.gz`. Download this file, extract the archive somewhere memorable, like your desktop."
 msgid "Scroll down to 'Assets' until you see the correct version for your system. Download this file, extract the archive somewhere memorable, like your desktop."
-msgstr "Scrolle nach unten, bis du `xmrig-VERSION-xenial-x64.tar.gz` siehst. Lade diese Datei herunter und extrahiere das Archiv zu einem einprägsamen Ort, etwa deinen Desktop."
+msgstr ""
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:43
@@ -128,10 +126,10 @@ msgstr ""
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:47
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Selecting a pool"
 msgid "Selecting a pool"
-msgstr "## Einen Pool wählen"
+msgstr " Einen Pool wählen"
 
 #
 #. type: Plain text
@@ -148,10 +146,10 @@ msgstr "Die Wahl eines größeren Pools bedeutet häufigere (aber kleinere) Ausz
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:57
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Configuring the miner"
 msgid "Configuring the miner"
-msgstr "## Den Miner konfigurieren"
+msgstr "Den Miner konfigurieren"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:60
@@ -161,10 +159,10 @@ msgstr ""
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:61
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Starting the miner"
 msgid "Starting the miner"
-msgstr "## Den Miner starten"
+msgstr "Den Miner starten"
 
 #
 #. type: Plain text
@@ -181,18 +179,18 @@ msgstr "Wenn du grüne Nachrichten siehst, die dir mitteilen, dass Freigaben akz
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:70
-#, fuzzy, no-wrap
-#| msgid "## Troubleshooting"
+#, no-wrap
+#| msgid "Troubleshooting"
 msgid "Troubleshooting"
-msgstr "## Fehlerbehebung"
+msgstr "Fehlerbehebung"
 
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:72
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Anti-virus keeps removing XMRig"
 msgid "Anti-virus keeps removing XMRig"
-msgstr "### Antivirenprogramm entfernt wiederholt XMRig"
+msgstr "Antivirenprogramm entfernt wiederholt XMRig"
 
 #
 #. type: Plain text
@@ -203,10 +201,10 @@ msgstr "Manche Antivirenprogramme markieren XMRig als Malware, weil es häufig a
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:79
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Cannot read/set MSR"
 msgid "Cannot read/set MSR"
-msgstr "### MSR kann nicht gelesen/eingerichtet werden"
+msgstr "MSR kann nicht gelesen/eingerichtet werden"
 
 #
 #. type: Plain text
@@ -217,10 +215,10 @@ msgstr "Bei manchen CPUs versucht XMRig es, die Leistung durch Deaktivierung bes
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:87
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Algo not known"
 msgid "Algo not known"
-msgstr "### Algo nicht bekannt"
+msgstr "Algo nicht bekannt"
 
 #
 #. type: Plain text
@@ -231,18 +229,18 @@ msgstr "Suche in der \"config.json\"-Datei nach der Zeile, die `algo: null` enth
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:93
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Huge Pages 0%"
 msgid "Huge Pages 0%"
-msgstr "### Große Seiten 0%"
+msgstr "Große Seiten 0%"
 
 #
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:95
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "#### Allowing large pages on Windows"
 msgid "Allowing large pages on Windows"
-msgstr "#### Große Seiten auf Windows erlauben"
+msgstr "Große Seiten auf Windows erlauben"
 
 #
 #. type: Plain text
@@ -282,7 +280,6 @@ msgstr "Doppelklicke im Detailbereich auf \"Sperren von Seiten im Speicher\"."
 
 #. type: Bullet: '7. '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:108
-#, fuzzy
 #| msgid "In the Local Security Setting â Lock pages in memory dialog box, click Add User or Group."
 msgid "In the Local Security Setting – Lock pages in memory dialog box, click Add User or Group."
 msgstr "Klicke im Dialogfeld \"Lokale Sicherheitseinstellung\" > \"Sperren von Seiten im Speicher auf Benutzer oder Gruppe hinzufügen\"."
@@ -306,10 +303,10 @@ msgstr "Es kann zudem sein, dass du den Miner als Administrator starten musst."
 #
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:111
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "#### Allowing large pages on Linux"
 msgid "Allowing large pages on Linux"
-msgstr "#### Große Seiten auf Linux erlauben"
+msgstr "Große Seiten auf Linux erlauben"
 
 #
 #. type: Plain text
@@ -336,10 +333,10 @@ msgstr "Es kann sein, dass du 1168 erhöhen musst; dies ist abhängig von der An
 #
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:122
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "#### Allowing large pages on macOS"
 msgid "Allowing large pages on macOS"
-msgstr "#### Große Seiten auf macOS erlauben"
+msgstr "Große Seiten auf macOS erlauben"
 
 #
 #. type: Plain text
@@ -350,15 +347,15 @@ msgstr "Große Seiten werden auf macOS nicht unterstützt."
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:126
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Balance Not Increasing"
 msgid "Balance Not Increasing"
-msgstr "### Guthaben erhöht sich nicht"
+msgstr "Guthaben erhöht sich nicht"
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:132
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "Most pools are <abbr title=\"Pay Per Last N Shares\">PPLNS</abbr> pools, which means that you only get paid when a miner on the pool finds a block. If the pool you are mining on is small, this can take a few days to weeks."
 msgid ""
 "Most pools are <abbr title=\"Pay Per Last N Shares\">PPLNS</abbr> pools,\n"
@@ -376,26 +373,25 @@ msgstr "Außerdem müssen Blöcke mehrfach bestätigt werden, bevor sie ausbezah
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:136
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Getting Help"
 msgid "Getting Help"
-msgstr "## Hilfe erhalten"
+msgstr "Hilfe erhalten"
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:142
-#, fuzzy
 #| msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-pools on freenode](https://webchat.freenode.net/?channel=#monero-pools)."
 msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-pools on Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix (#monero-pools:monero.social)."
-msgstr "Es gibt auf Reddit eine aktive Monero-Mining-Community: [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Du kannst außerdem [#monero-pools auf Freenode](https://webchat.freenode.net/?channel=#monero-pools) beitreten."
+msgstr ""
 
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:143
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Going Futher"
 msgid "Going Futher"
-msgstr "## Darüber hinausgehend"
+msgstr "Darüber hinausgehend"
 
 #. type: Bullet: '* '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:151
