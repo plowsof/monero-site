@@ -25,10 +25,10 @@ msgstr "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" 
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:3
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Step 1: Acquire Monero"
 msgid "Step 1: Acquire Monero"
-msgstr "## Paso 1: Adquiere Monero"
+msgstr "Paso 1: Adquiere Monero"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:6
@@ -47,10 +47,10 @@ msgstr ""
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:11
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Step 2: Download and create a Paper Wallet on a secure and air-gapped computer."
 msgid "Step 2: Download and create a Paper Wallet on a secure and air-gapped computer."
-msgstr "## Paso 2: Descarga y crea un Monedero en Papel en un ordenador aislado y seguro."
+msgstr "Paso 2: Descarga y crea un Monedero en Papel en un ordenador aislado y seguro."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:14
@@ -59,10 +59,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:16
-#, fuzzy
 #| msgid "Unzip and open the paper wallet generator (monero-wallet-generator.html) into a web browser on an air-gapped (@airgap) computer that hasn't been used before, or has had a clean installation of the operative system."
 msgid "Unzip and open the paper wallet generator (wallet-generator.html) into a web browser on an air-gapped (@airgap) computer that hasn't been used before, or has had a clean installation of the operative system."
-msgstr "Extra y abre el generador de monedero en papel (monero-wallet-generator.html) en un navegador en una computadora aislada (@airgap) que no haya sido usada antes, o que haya tenido una instalación limpia del sistema operativo."
+msgstr "Extra y abre el generador de monedero en papel (wallet-generator.html) en un navegador en una computadora aislada (@airgap) que no haya sido usada antes, o que haya tenido una instalación limpia del sistema operativo."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:18
@@ -107,10 +106,10 @@ msgstr ""
 
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:33
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "#### Side Note"
 msgid "Side Note"
-msgstr "#### Nota Aparte"
+msgstr "Nota Aparte"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:35
