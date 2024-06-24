@@ -20,7 +20,7 @@ den viser seg også forventet profitt (eller tap) per uke/måned.
 
 Det første steget er å laste ned utvinningsprogramvaren til PC-en din.
 
-###  Windows
+### Windows
 
 XMRig-utvikleren gir forhåndsbyggede binærfiler for Windows-brukere. De er
 tilgjengelige på [GitHub
@@ -31,9 +31,9 @@ pakk ut arkivene til et sted du husker, som f.eks. skrivebordet ditt.
 
 ###  Ubuntu Linux
 
-The XMRig developer provides pre-built binaries for Ubuntu Bionic (18.04)
-and Focal (20.04). They may work on other Ubuntu versions, and on other
-distributions, but this is not guaranteed.
+MRig-utvikleren gir forhåndsbyggede binærfiler for Ubuntu Bionic (18.04) /
+Focal (20.04). De kan fungere på andre Ubuntu-versjoner og på andre
+distribusjoner, men det er ikke garantert.
 
 Disse binærfilene er tilgjengelig på [GitHub
 release-siden](https://github.com/xmrig/xmrig/releases/latest).
@@ -48,7 +48,7 @@ Binaries are available for various distributions and operating systems, but
 you can also build the miner by yourself. Take a look at [XMrig's
 docs](https://xmrig.com/docs/miner)
 
-## Selecting a pool
+## Å velge en pool
 
 Det er mange pools å velge blant. Du kan finne en liste på
 [miningpoolstats.stream/monero](https://miningpoolstats.stream/monero).
@@ -58,12 +58,12 @@ utbetalinger, men å velge en mindre pool holder nettverket
 desentralisert. [Utvinnere vil ikke miste inntekt ved å utvinne på en mindre
 pool](https://redd.it/g6uh2l).
 
-## Configuring the miner
+## Konfigurering av utvinneren
 
 See the [official docs](https://xmrig.com/docs/miner/config), for
 instructions and suggestions.
 
-## Starting the miner
+## Å starte utvinneren
 
 Windows-brukere kan dobbeltklikke på xmrig.exe. Brukere til andre
 operativsystemer bør bruke `cd`-kommandoen til de ender opp i mappen som
@@ -72,31 +72,31 @@ inneholder XMRig, og deretter taste inn `./xmrig` etterfulgt av enter.
 Hvis du ser grønne meldinger som sier at andelene har blitt godkjent –
 gratulerer, alt funker!
 
-## Troubleshooting
+## Feilsøking
 
-### Anti-virus keeps removing XMRig
+### Antiviruset fjerner stadig XMRig
 
 Noen antivirus flagger XMRig som skadevare fordi den ofte utplasseres i
 PC-en for å infisere PC-en din til å utvinne uten eierens samtykke. I og med
 at dette er din PC og du konfigurerer utvinneren til å utvinne for deg, er
 det trygt å legge XMRig til antivirus-tillatelseslisten din.
 
-### Cannot read/set MSR
+### Kan ikke lese / stille inn MSR
 
 På noen CPU-er prøver XMRig å øke ytelsen ved å deaktivere visse funksjoner
 som forhåndshenting av instruksjonene til CPU-en din. Disse operasjonene
 krever root/administrator, så prøv å høyreklikke på xmrig.exe og kjøre den
 som administrator eller kjøre `sudo ./xmrig` på andre systemer.
 
-### Algo not known
+### Ukjent algoritme
 
 Finn linjen i config.json som sier `algo: null` og endre den til `algo:
 "rx/0"`. XMRig forventer som standard at poolen forteller den hvilken
 hashing-algoritme som skal benyttes.
 
-### Huge Pages 0%
+### Store sider 0 %
 
-#### Allowing large pages on Windows
+#### Å tillate store sider på Windows
 
 Tatt fra
 [MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15):
@@ -109,15 +109,15 @@ Tatt fra
 4. Velg den tildelte mappen for brukerrettigheter.
 5. Retningslinjene vil vises i detaljruta.
 6. I ruten dobbeltklikker du på «Lock pages in Memory» (Lås sider i minnet).
-7. In the Local Security Setting – Lock pages in memory dialog box, click
-   Add User or Group.
+7. I den lokale sikkerhetsinnstillingen «Lås sider i minnet»-dialogboksen,
+   trykker du på «Legg til bruker eller gruppe.»
 8. Legg til en konto under «Velg brukere»-, «Tjenestekontoer»- eller
    «Gruppedialog»-boksen som du vil kjøre utvinneren på.
 9. Start på nytt for at endringene skal tre i kraft.
 
 Du må også kanskje starte utvinneren som administrator.
 
-#### Allowing large pages on Linux
+#### Å tillate store sider på Linux
 
 Til å begynne med, kan du stoppe utvinneren (hvis den er i gang), kjøre
 følgende kommandoer for å muliggjøre store sider, og deretter starte
@@ -129,29 +129,26 @@ utvinneren som root:
 Du må kanskje øke til 1168, avhengig av hvor mange NUMA-noder CPU-en(e) din
 har.
 
-#### Allowing large pages on macOS
+#### Å tillate store sider på macOS
 
 Store sider støttes ikke på macOS.
 
-### Balance Not Increasing
+### Saldoen øker ikke
 
-Most pools are <abbr title="Pay Per Last N Shares">PPLNS</abbr> pools,
-which means that you only get paid when a miner on the pool finds a
-block. If the pool you are mining on is small, this can take a few
-days to weeks.
+De fleste pools er <abbr title="Pay Per Last N Shares">PPLNS</abbr> (Betal per siste N andeler)-pools, som betyr at du kun får betalt når en utvinner i poolen finner en blokk. Hvis poolen du utvinner på er liten, kan dette ta noen dager til uker.
 
 Eventuelle blokker som blir funnet må i tillegg modnes før de kan
 utbetales. Dette tar 60 blokker (omlag to timer).
 
-## Getting Help
+## Å få hjelp
 
-An active Monero mining community on Reddit is
-[/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also
-join [#monero-pools on
-Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix
-(#monero-pools:monero.social).
+Det finnes et aktivt samfunn for Monero-utvinning på Reddit som du finner i
+underforumet [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Du
+kan også bli med i [#monero-pools på
+libera](https://web.libera.chat/?channel=#monero-pools) / Matrix
+(#monero-pools:monero.social)
 
-## Going Futher
+## Å gå mer i dybden
 
 * Vurder å bruke en underadresse kun for utvinning for å hindre at adressen
   din blir lenket til forskjellige tjenester.

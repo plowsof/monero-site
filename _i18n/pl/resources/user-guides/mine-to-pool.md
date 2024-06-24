@@ -42,11 +42,11 @@ Przewiń w dół do 'Assets' aż zobaczysz odpowiednią wersję dla Twojego
 systemu. Pobierz ten plik i rozpakuj archiwum gdzieś łatwo do zapamiętania,
 na przykład na pulpit.
 
-### Other distributions and operating systems
+### Inne dystrybucje i systemy operacyjne
 
-Binaries are available for various distributions and operating systems, but
-you can also build the miner by yourself. Take a look at [XMrig's
-docs](https://xmrig.com/docs/miner)
+Binarki są dostępne dla wielu dystrybucji i systemów operacyjnych, ale
+możesz również zbudować koparkę samodzielnie. Zajrzyj do [dokumentacji
+XMrig](https://xmrig.com/docs/miner)
 
 ## Wybór puli
 

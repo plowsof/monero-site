@@ -46,11 +46,11 @@ GitHub](https://github.com/xmrig/xmrig/releases/latest).
 операционной системы. Скачайте этот файл и извлеките его содержимое в
 какое-нибудь место, например, на рабочий стол.
 
-### Other distributions and operating systems
+### Другие дистрибутивы и операционные системы
 
-Binaries are available for various distributions and operating systems, but
-you can also build the miner by yourself. Take a look at [XMrig's
-docs](https://xmrig.com/docs/miner)
+Бинарные файлы доступны для нескольких дистрибутивов и операционных систем,
+но вы также можете собрать майнер самостоятельно. Воспользуйтесь
+[документацией на веб-сайте XMrig](https://xmrig.com/docs/miner)
 
 ## Выбор пула
 

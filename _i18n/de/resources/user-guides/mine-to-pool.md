@@ -22,7 +22,7 @@ um dir den Gewinn (oder Verlust) pro Woche/Monat anzeigen zu lassen.
 
 Der erste Schritt ist der Download der Mining-Software auf deinen Rechner.
 
-###  Windows
+### Windows
 
 Der Entwickler von XMRig stellt vorgefertigte Binärdateien für
 Windows-Nutzer bereit. Diese sind auf der [Versionsseite auf
@@ -154,10 +154,10 @@ benötigt.
 
 ## Hilfe erhalten
 
-An active Monero mining community on Reddit is
-[/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also
-join [#monero-pools on
-Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix
+Es gibt auf Reddit eine aktive Monero-Mining-Community:
+[/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Du kannst
+außerdem [#monero-pools auf
+Libera](https://web.libera.chat/?channel=#monero-pools) beitreten / Matrix
 (#monero-pools:monero.social).
 
 ## Darüber hinausgehend

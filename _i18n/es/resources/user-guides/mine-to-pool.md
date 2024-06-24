@@ -42,7 +42,7 @@ Baja hasta 'Assets' hasta que veas la versión correcta para tu
 sistema. Descarga este archivo y extráelo en algún lugar fácil de recordar,
 como tu escritorio.
 
-### Other distributions and operating systems
+### Otras distribuciones y sistemas operativos
 
 Binaries are available for various distributions and operating systems, but
 you can also build the miner by yourself. Take a look at [XMrig's
