@@ -95,7 +95,7 @@ msgstr "Baja hasta 'Assets' hasta que veas la versión correcta para tu sistema.
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:43
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "Other distributions and operative systems"
 msgid "Other distributions and operating systems"
 msgstr "Otras distribuciones y sistemas operativos"
