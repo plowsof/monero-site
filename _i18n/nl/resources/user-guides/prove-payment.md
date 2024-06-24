@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Prove payments
+### Betalingen bewijzen
 
 Wanneer iemand naar wie je geld hebt gestuurd beweert dat de betaling niet
 is uitgevoerd, moet je kunnen bewijzen dat je hebt betaald.
@@ -16,8 +16,9 @@ Alice drie gegevens aan Charlie laten zien:
 
 - the transaction ID, as is done in Bitcoin
 - Bob's address, as is done with Bitcoin
-- the transaction's key, which is new with Monero and other CryptoNote
-  currencies
+- de transactie-ID, net als bij Bitcoin - het adres van Bob, net als bij
+  Bitcoin - de transactiesleutel, een nieuwe uitvinding bij Monero en andere
+  Cryptonote-coins
 
 Toen Alice de transactie uitvoerde, is er automatisch een sleutel speciaal
 voor deze transactie gegenereerd.
@@ -64,7 +65,7 @@ naar Charlie sturen.
 Opmerking: als het om meerdere transacties gaat, moeten deze stappen worden
 herhaald voor elke transactie.
 
-### Check payments
+### Betalingen controleren
 
 Nu heeft Charlie die drie gegevens ontvangen en wil hij controleren of Alice
 de waarheid vertelt. Daarvoor heeft hij een bijgewerkte blockchain nodig.
@@ -73,7 +74,7 @@ de waarheid vertelt. Daarvoor heeft hij een bijgewerkte blockchain nodig.
 
 Charlie typt het volgende in monero-wallet-cli:
 
-> check_tx_key TXID TXKEY ADDRESS
+> check_tx_key TXID SLEUTEL ADRES
 
 Daarbij vult hij de door Alice verstrekte gegevens in plaats van de
 variabelen in. monero-wallet-cli gebruikt de transactiesleutel om de
@@ -85,7 +86,7 @@ is, net als bij Bitcoin.
 
 #### GUI
 
-Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:
+Charlie opent monero-wallet-gui en gaat naar de pagina Geavanceerd > Bewijzen/controleren om de gegevens van Alice in te vullen in het gedeelte Transactie controleren.
 
 ![Check
 payment](/img/resources/user-guides/en/prove-payment/check-payment.png)

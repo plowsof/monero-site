@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Prove payments
+### Prouver un paiement
 
 Lorsque vous envoyez un paiement à une partie qui conteste qu'il ait été
 effectué, vous devez pouvoir prouver qu'il a bien été effectué.
@@ -18,8 +18,9 @@ données :
 
 - the transaction ID, as is done in Bitcoin
 - Bob's address, as is done with Bitcoin
-- the transaction's key, which is new with Monero and other CryptoNote
-  currencies
+- L'ID de transaction, comme c'est le cas avec Bitcoin ; - L'adresse de Bob,
+  comme c'est le cas avec Bitcoin ; - La clef de la transaction, qui est une
+  nouveauté de Monero et d'autres monnaies CryptoNote.
 
 Lorsqu'Alice a réalisé la transaction, une clef à usage unique a été
 automatiquement générée pour cette unique transaction.
@@ -29,7 +30,7 @@ automatiquement générée pour cette unique transaction.
 Alice peut la demander dans monero-wallet-cli (nouveau nom de l'ancien
 simplewallet) :
 
-> get_tx_key TXID
+> get_tx_key IDTX
 
 Alice va indiquer son ID de transaction en lieu et place de ce IDTX. Une
 fois fait, la clef de transaction à usage unique sera affichée.
@@ -66,7 +67,7 @@ transaction et l'adresse de Bob.
 Notez : si plusieurs transactions ont été effectuées, il faudra répéter
 l'opération pour chacune de ces transactions.
 
-### Check payments
+### Vérifier un paiement
 
 Charlie a maintenant reçu les trois données et veut vérifier qu'Alice dit la
 vérité à Bob : sur une chaîne de blocs à jour,
@@ -75,7 +76,7 @@ vérité à Bob : sur une chaîne de blocs à jour,
 
 Charlie entre dans monero-wallet-cli :
 
-> check_tx_key TXID TXKEY ADDRESS
+> check_tx_key IDTX CLEFTX ADRESSE
 
 Les données fournies par Alice entrées en lieux et place de leurs
 identifiants respectifs. monero-wallet-clu va se servir de la clef de
@@ -87,7 +88,7 @@ comme avec Bitcoin.
 
 #### GUI
 
-Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:
+Charlie ouvre son monero-wallet-gui et va à la page Avancé > Prouver/vérifier afin de remplir la section Vérifier avec les éléments transmis par Alice :
 
 ![Check
 payment](/img/resources/user-guides/en/prove-payment/check-payment.png)

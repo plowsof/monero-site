@@ -28,7 +28,6 @@ msgstr "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/prove-payment.md:3
 #, no-wrap
-#| msgid "### Prove payments"
 msgid "Prove payments"
 msgstr "Доказательство платежей"
 
@@ -69,7 +68,6 @@ msgstr ""
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/prove-payment.md:18
-#| msgid "- the transaction ID, as is done in Bitcoin - Bob's address, as is done with Bitcoin - the transaction's key, which is new with Monero and other CryptoNote currencies"
 msgid "the transaction's key, which is new with Monero and other CryptoNote currencies"
 msgstr "идентификатор транзакции, как это делается в Bitcoin - адрес Боба, как это делается в Bitcoin - ключ транзакции, который является новшеством в криптовалютном мире, характерным для Monero и других монет на протоколе CryptoNote"
 
@@ -96,7 +94,6 @@ msgstr "Алиса может запросить его следующим об�
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:26
 #, no-wrap
-#| msgid "> get_tx_key TXID"
 msgid "> get_tx_key TXID\n"
 msgstr "> get_tx_key TXID\n"
 
@@ -116,7 +113,6 @@ msgstr "Обратите внимание, что эта функция буде
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:33
 #, no-wrap
-#| msgid "> set"
 msgid "> set\n"
 msgstr "> set\n"
 
@@ -130,7 +126,6 @@ msgstr "Если установлено на 0, изменить на 1:"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:37
 #, no-wrap
-#| msgid "> set store-tx-info 1"
 msgid "> set store-tx-info 1\n"
 msgstr "> set store-tx-info 1\n"
 
@@ -182,7 +177,6 @@ msgstr "Примечание: если было сделано нескольк�
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/prove-payment.md:56
 #, no-wrap
-#| msgid "### Check payments"
 msgid "Check payments"
 msgstr "Проверка платежа"
 
@@ -202,7 +196,6 @@ msgstr "Чарли вводит в monero-wallet-cli:"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:66
 #, no-wrap
-#| msgid "> check_tx_key TXID TXKEY ADDRESS"
 msgid "> check_tx_key TXID TXKEY ADDRESS\n"
 msgstr "> check_tx_key TXID TXKEY ADDRESS\n"
 
@@ -222,7 +215,7 @@ msgstr "Очевидно, Чарли с Бобом захочет дважды �
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:75
-#| msgid "Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:"
+#, no-wrap
 msgid "Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:\n"
 msgstr "Чарли необходимой открыть свой monero-wallet-gui и перейдет на страницу Advanced (Дополнительно), перейти в пункт Prove / Check (Подтвердить / Проверить), заполнить поля с информацией предоставленной Алисой в разделе Check (Проверить):\n"
 

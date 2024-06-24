@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Prove payments
+### Probar pagos
 
 Cuando envías dinero a una parte quien después reclama que el pago haya sido
 realizado, necesitas ser capaz de probar que el pago fue realizado.
@@ -18,8 +18,9 @@ Charlie con tres piezas de información:
 
 - the transaction ID, as is done in Bitcoin
 - Bob's address, as is done with Bitcoin
-- the transaction's key, which is new with Monero and other CryptoNote
-  currencies
+- el ID de transacción, como es hecho en Bitcoin - la dirección de Bob, como
+  es hecho en Bitcoin - la llave de transacción, que es algo nuevo con
+  Monero y otras criptomonedas CryptoNote
 
 Cuando Alicia hizo la transacción, una llave de un solo uso fue
 automáticamente generada para esa transacción.
@@ -66,7 +67,7 @@ transacción y la dirección de Bob.
 Nota: si varias transacciones fueron hechas, esto debe repetirse para cada
 transacción.
 
-### Check payments
+### Revisar pagos
 
 Charlie ahora recibió esas tres piezas de información, y quiere revisar si
 Alicia está diciendo la verdad: en una blockchain actualizada,
@@ -86,7 +87,7 @@ realmente de él - al igual que con Bitcoin.
 
 #### GUI
 
-Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:
+Charlie abrirá su monero-wallet-gui e irá a la página en Avanzado > Probar/verificar para llenar la sección Comprobar con la información provista por Alicia:
 
 ![Prueba de
 pago](/img/resources/user-guides/en/prove-payment/check-payment.png)
