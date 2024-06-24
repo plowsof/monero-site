@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 08:33+0000\n"
+"POT-Creation-Date: 2024-06-24 20:06+0000\n"
 "PO-Revision-Date: 2021-12-20 22:33+0000\n"
 "Last-Translator: Paul Janowitz <janowitz@gmail.com>\n"
 "Language-Team: Polish <https://translate.getmonero.org/projects/getmonero-user-guides/ledger-wallet-cli/pl/>\n"
@@ -139,14 +139,14 @@ msgstr "- Teraz wpisz:"
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:33
 #, fuzzy, no-wrap
 #| msgid "`monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 7 + 8)"
-msgid "`monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 7 + 8)\n"
+msgid "```monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 7 + 8)\n"
 msgstr "`monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 7 + 8)"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:35
 #, fuzzy, no-wrap
 #| msgid "`.\\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 10)"
-msgid "`.\\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 10)\n"
+msgid "```.\\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 10)\n"
 msgstr "`.\\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 10)"
 
 #. type: Plain text
@@ -158,12 +158,16 @@ msgstr "Zauważ, że jest to po prostu zmienna dla rzeczywistej nazwy portfela. 
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:39
-msgid "`monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 7 + 8)"
+#, fuzzy
+#| msgid "`monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 7 + 8)"
+msgid "```monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200``` (Win 7 + 8)"
 msgstr "`monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 7 + 8)"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:41
-msgid "`.\\monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 10)"
+#, fuzzy
+#| msgid "`.\\monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 10)"
+msgid "```.\\monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200``` (Win 10)"
 msgstr "`.\\monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 10)"
 
 #. type: Bullet: '- '
@@ -278,12 +282,14 @@ msgstr "- Przeciągnij `monero-wallet-cli` do terminala. Powinno to dodać pełn
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:83
 #, fuzzy, no-wrap
 #| msgid "`--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
-msgid "`--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`\n"
+msgid "```--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```\n"
 msgstr "`--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:87
-msgid "`--generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
+#, fuzzy
+#| msgid "`--generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
+msgid "```--generate-from-device MoneroWallet --subaddress-lookahead 3:200```"
 msgstr "`--generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
 
 #. type: Plain text
@@ -295,7 +301,7 @@ msgstr "Zauważ, że powyższy tekst zostanie dołączony do ścieżki `monero-w
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:91
 #, fuzzy, no-wrap
 #| msgid "`/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
-msgid "`/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`\n"
+msgid "```/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```\n"
 msgstr "`/pełna/ścieżka/do/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
 
 #. type: Plain text
@@ -342,12 +348,14 @@ msgstr "- Otwórz nowy terminal"
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:129
 #, fuzzy, no-wrap
 #| msgid "`./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
-msgid "`./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`\n"
+msgid "```./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```\n"
 msgstr "`./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:133
-msgid "`./monero-wallet-cli --generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
+#, fuzzy
+#| msgid "`./monero-wallet-cli --generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
+msgid "```./monero-wallet-cli --generate-from-device MoneroWallet --subaddress-lookahead 3:200```"
 msgstr "`./monero-wallet-cli --generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
 
 #. type: Title ###
