@@ -26,7 +26,6 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:4
 #, no-wrap
-#| msgid "It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href=\"{{site.baseurl}}/downloads/\">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays \"Connected\" in the lower left corner."
 msgid "It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href=\"{{site.baseurl}}/downloads/\">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays \"Connected\" in the lower left corner.\n"
 msgstr "Het is heel makkelijk om solo te minen met de officiële grafische interface (GUI). Als je het nog niet gedaan hebt, ga dan naar de pagina <a href=\"{{site.baseurl}}/downloads/\">Monero-downloads</a> en download de officiële GUI voor je besturingssysteem. Voer de installatie uit en wacht terwijl Monero wordt gesynchroniseerd met het netwerk. Als het goed is, staat er \"Verbonden\" in de linkerbenedenhoek.\n"
 
@@ -34,7 +33,6 @@ msgstr "Het is heel makkelijk om solo te minen met de officiële grafische inter
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:6
 #, no-wrap
-#| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>\n"
 msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>\n"
 
@@ -48,7 +46,6 @@ msgstr "Klik op het tabblad \"Geavanceerd\". Dan verschijnen er verschillende op
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:10
 #, no-wrap
-#| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>\n"
 msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>\n"
 
@@ -62,7 +59,6 @@ msgstr "Daar vind je een optie om te beginnen met minen. Eventueel kun je aanpas
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:14
 #, no-wrap
-#| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>\n"
 msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>\n"
 

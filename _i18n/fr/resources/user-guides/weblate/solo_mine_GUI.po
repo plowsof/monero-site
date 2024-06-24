@@ -26,7 +26,6 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:4
 #, no-wrap
-#| msgid "It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href=\"{{site.baseurl}}/downloads/\">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays \"Connected\" in the lower left corner."
 msgid "It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href=\"{{site.baseurl}}/downloads/\">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays \"Connected\" in the lower left corner.\n"
 msgstr "Il est très facile de miner en solo avec la GUI officielle. Si vous ne l'avez pas déjà fait, allez sur la <a href=\"{{site.baseurl}}/downloads/\">page de téléchargement Monero</a> et téléchargez la GUI officielle pour votre système d'exploitation. Puis, lancez l'installation et patientez pendant que Monero se synchronise avec le réseau. Vous devriez voir qu'elle indique \"Connecté\" dans le coin en bas à gauche.\n"
 
@@ -34,7 +33,6 @@ msgstr "Il est très facile de miner en solo avec la GUI officielle. Si vous ne 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:6
 #, no-wrap
-#| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>\n"
 msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>\n"
 
@@ -48,7 +46,6 @@ msgstr "Cliquez sur l'onglet \"Avancé\". Vous devriez voir apparaître d'autres
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:10
 #, no-wrap
-#| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>\n"
 msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>\n"
 
@@ -62,7 +59,6 @@ msgstr "Vous devriez maintenant avoir une option pour démarrer l'extraction min
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:14
 #, no-wrap
-#| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>\n"
 msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>\n"
 

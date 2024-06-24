@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href="{{site.baseurl}}/downloads/">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays "Connected" in the lower left corner.
+Das Solomining ist mit dem offiziellen GUI ziemlich einfach. Solltest du das offizielle GUI-Wallet noch nicht heruntergeladen haben, besuche die <a href="{{site.baseurl}}/downloads/">Monero-Downloads-Seite</a> und lade die für dein Betriebssystem passende Version herunter. Führe die Einrichtung durch und übe dich dabei in Geduld - Monero muss zunächst mit dem Netzwerk synchronisieren. Dir sollte dann in der unteren linken Ecke "Verbunden" angezeigt werden.
 
 <img src="/img/resources/user-guides/en/solo_mine_GUI/01.PNG" style="width: 600px;"/>
 

@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href="{{site.baseurl}}/downloads/">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays "Connected" in the lower left corner.
+من السهل جداً التعدين منفرداً بإستخدام الواجهه الرسوميه. إذا لم تقم بتنزيل الواجهه الرسوميه بعد توجه إلي <a href="{{site.baseurl}}/downloads/">صفحه تنزيلات مونيرو </a> وقم بتنزيل الواجهه الرسوميه الخاصه بنظام تشغيلك. بعد ذلك قم بتشغيلها وكُن صبوراً خلال قيام مونيرو بالتزامن مع الشبكه. يجب أن تري كلمه " مُتصل " في أسفل اليسار .
 
 <img src="/img/resources/user-guides/en/solo_mine_GUI/01.PNG" style="width: 600px;"/>
 

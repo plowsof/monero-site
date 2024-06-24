@@ -26,7 +26,6 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:4
 #, no-wrap
-#| msgid "It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href=\"{{site.baseurl}}/downloads/\">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays \"Connected\" in the lower left corner."
 msgid "It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href=\"{{site.baseurl}}/downloads/\">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays \"Connected\" in the lower left corner.\n"
 msgstr "من السهل جداً التعدين منفرداً بإستخدام الواجهه الرسوميه. إذا لم تقم بتنزيل الواجهه الرسوميه بعد توجه إلي <a href=\"{{site.baseurl}}/downloads/\">صفحه تنزيلات مونيرو </a> وقم بتنزيل الواجهه الرسوميه الخاصه بنظام تشغيلك. بعد ذلك قم بتشغيلها وكُن صبوراً خلال قيام مونيرو بالتزامن مع الشبكه. يجب أن تري كلمه \" مُتصل \" في أسفل اليسار .\n"
 
@@ -34,7 +33,6 @@ msgstr "من السهل جداً التعدين منفرداً بإستخدام 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:6
 #, no-wrap
-#| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>\n"
 msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>\n"
 
@@ -48,7 +46,6 @@ msgstr "إضغط علي خيار \"مُتقدم\" يجب أن تري العدي�
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:10
 #, no-wrap
-#| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>\n"
 msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>\n"
 
@@ -62,7 +59,6 @@ msgstr "لديك الآن خيار لبدء التعدين يمكنك اختيا
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:14
 #, no-wrap
-#| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>\n"
 msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>\n"
 
