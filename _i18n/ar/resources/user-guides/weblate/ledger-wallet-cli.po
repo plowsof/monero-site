@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 08:33+0000\n"
+"POT-Creation-Date: 2024-06-24 20:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,13 +118,13 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:33
 #, no-wrap
-msgid "`monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 7 + 8)\n"
+msgid "```monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 7 + 8)\n"
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:35
 #, no-wrap
-msgid "`.\\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 10)\n"
+msgid "```.\\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 10)\n"
 msgstr ""
 
 #. type: Plain text
@@ -136,12 +136,12 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:39
-msgid "`monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 7 + 8)"
+msgid "```monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200``` (Win 7 + 8)"
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:41
-msgid "`.\\monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 10)"
+msgid "```.\\monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200``` (Win 10)"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -230,12 +230,12 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:83
 #, no-wrap
-msgid "`--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`\n"
+msgid "```--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```\n"
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:87
-msgid "`--generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
+msgid "```--generate-from-device MoneroWallet --subaddress-lookahead 3:200```"
 msgstr ""
 
 #. type: Plain text
@@ -246,7 +246,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:91
 #, no-wrap
-msgid "`/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`\n"
+msgid "```/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```\n"
 msgstr ""
 
 #. type: Plain text
@@ -283,12 +283,12 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:129
 #, no-wrap
-msgid "`./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`\n"
+msgid "```./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```\n"
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:133
-msgid "`./monero-wallet-cli --generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
+msgid "```./monero-wallet-cli --generate-from-device MoneroWallet --subaddress-lookahead 3:200```"
 msgstr ""
 
 #. type: Title ###

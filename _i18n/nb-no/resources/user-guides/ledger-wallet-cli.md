@@ -43,19 +43,19 @@ Nå som vi er ordentlig forberedt, la oss sette i gang!
 
 - Now type:
 
-`monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 7 + 8)
+```monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 7 + 8)
 
-`.\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 10)
+```.\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 10)
 
 Merk at dette er en plassholder for det faktiske lommeboknavnet. Hvis du for
 eksempel vil kalle lommeboken din for `MoneroWallet`, er kommandoen som
 følger:
 
-`monero-wallet-cli.exe --generate-from-device MoneroWallet
---subaddress-lookahead 3:200` (Win 7 + 8)
+```monero-wallet-cli.exe --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200``` (Win 7 + 8)
 
-`.\monero-wallet-cli.exe --generate-from-device MoneroWallet
---subaddress-lookahead 3:200` (Win 10)
+```.\monero-wallet-cli.exe --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200``` (Win 10)
 
 - The CLI will, after executing aforementioned command, prompt your for a
   password. Make sure to set a strong password and confirm it thereafter.
@@ -126,19 +126,19 @@ Nå som vi er ordentlig forberedt, la oss sette i gang!
 
 - Now type:
 
-`--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
+```--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```
 
 Merk at dette er en plassholder for det faktiske lommeboknavnet. Hvis du for
 eksempel vil kalle lommeboken din for `MoneroWallet`, er kommandoen som
 følger:
 
-`--generate-from-device MoneroWallet --subaddress-lookahead 3:200`
+```--generate-from-device MoneroWallet --subaddress-lookahead 3:200```
 
 Merk at den ovennevnte teksten vil føyes til stien til
 `monero-wallet-cli`. Før du trykker på Enter, bør terminalen din altså se
 slik ut:
 
-`/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
+```/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```
 
 Den fulle stien er den faktiske stien på din Mac OS X.
 
@@ -199,14 +199,14 @@ Nå som vi er ordentlig forberedt, la oss sette i gang!
 
 - Now type:
 
-`./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
+```./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```
 
 Merk at dette er en plassholder for det faktiske lommeboknavnet. Hvis du for
 eksempel vil kalle lommeboken din for `MoneroWallet`, er kommandoen som
 følger:
 
-`./monero-wallet-cli --generate-from-device MoneroWallet
---subaddress-lookahead 3:200`
+```./monero-wallet-cli --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200```
 
 - The CLI will, after executing aforementioned command, prompt your for a
   password. Make sure to set a strong password and confirm it thereafter.

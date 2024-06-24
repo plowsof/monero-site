@@ -43,19 +43,19 @@
 
 - Now type:
 
-`monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 7 + 8)
+```monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 7 + 8)
 
-`.\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 10)
+```.\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 10)
 
 Обратите внимание, что <new-wallet-name> это параметр для фактического имени
 кошелька. Если вы, например, хотите назвать свой кошелек `MoneroWallet`, то
 команда будет следующей:
 
-`monero-wallet-cli.exe --generate-from-device MoneroWallet
---subaddress-lookahead 3:200` (Win 7 + 8)
+```monero-wallet-cli.exe --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200``` (Win 7 + 8)
 
-`.\monero-wallet-cli.exe --generate-from-device MoneroWallet
---subaddress-lookahead 3:200` (Win 10)
+```.\monero-wallet-cli.exe --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200``` (Win 10)
 
 - The CLI will, after executing aforementioned command, prompt your for a
   password. Make sure to set a strong password and confirm it thereafter.
@@ -127,19 +127,19 @@ CLI.
 
 - Now type:
 
-`--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
+```--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```
 
 Обратите внимание, что <new-wallet-name> это параметр для фактического имени
 кошелька. Если вы, например, хотите назвать свой кошелек `MoneroWallet`, то
 команда будет следующей:
 
-`--generate-from-device MoneroWallet --subaddress-lookahead 3:200`
+```--generate-from-device MoneroWallet --subaddress-lookahead 3:200```
 
 Обратите внимание, что вышеупомянутый текст будет добавлен к полному пути
 `monero-wallet-cli`. Таким образом, прежде чем вы нажмете enter, ваш текст в
 окне терминала должен выглядеть следующим образом:
 
-`/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
+```/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```
 
 Где полный путь - это фактически путь к каталогу на вашем Mac OS X.
 
@@ -200,14 +200,14 @@ CLI.
 
 - Now type:
 
-`./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
+```./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```
 
 Обратите внимание, что <new-wallet-name> это параметр для фактического имени
 кошелька. Если вы, например, хотите назвать свой кошелек `MoneroWallet`, то
 команда будет следующей:
 
-`./monero-wallet-cli --generate-from-device MoneroWallet
---subaddress-lookahead 3:200`
+```./monero-wallet-cli --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200```
 
 - The CLI will, after executing aforementioned command, prompt your for a
   password. Make sure to set a strong password and confirm it thereafter.

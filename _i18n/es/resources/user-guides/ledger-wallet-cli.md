@@ -43,19 +43,19 @@ Ahora que estamos lo suficientemente preparados, ¡comencemos!
 
 - Now type:
 
-`monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 7 + 8)
+```monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 7 + 8)
 
-`.\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 10)
+```.\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 10)
 
 Ten en cuenta que es simplemente un marcador para el nombre actual del
 monedero. Si, por ejemplo, deseas llamar a tu monedero `MoneroWallet`, el
 comando sería como se muestra a continuación:
 
-`monero-wallet-cli.exe --generate-from-device MoneroWallet
---subaddress-lookahead 3:200` (Win 7 + 8)
+```monero-wallet-cli.exe --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200``` (Win 7 + 8)
 
-`.\monero-wallet-cli.exe --generate-from-device MoneroWallet
---subaddress-lookahead 3:200` (Win 10)
+```.\monero-wallet-cli.exe --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200``` (Win 10)
 
 - The CLI will, after executing aforementioned command, prompt your for a
   password. Make sure to set a strong password and confirm it thereafter.
@@ -127,19 +127,19 @@ Ahora que estamos lo suficientemente preparados, ¡comencemos!
 
 - Now type:
 
-`--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
+```--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```
 
 Ten en cuenta que es simplemente un marcador para el nombre actual del
 monedero. Si, por ejemplo, deseas llamar a tu monedero `MoneroWallet`, el
 comando sería como se muestra a continuación:
 
-`--generate-from-device MoneroWallet --subaddress-lookahead 3:200`
+```--generate-from-device MoneroWallet --subaddress-lookahead 3:200```
 
 Ten en cuenta que el texto anteriormente mencionado se adjuntará a la
 dirección de `monero-wallet-cli`. Así, antes de que presiones Enter, tu
 terminal se debería ver como:
 
-`/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
+```/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```
 
 Donde la dirección completa es, intuitivamente, la dirección actual en tu
 Mac OS X.
@@ -201,14 +201,14 @@ Ahora que estamos lo suficientemente preparados, ¡comencemos!
 
 - Now type:
 
-`./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`
+```./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```
 
 Ten en cuenta que es simplemente un marcador para el nombre actual del
 monedero. Si, por ejemplo, deseas llamar a tu monedero `MoneroWallet`, el
 comando sería como se muestra a continuación:
 
-`./monero-wallet-cli --generate-from-device MoneroWallet
---subaddress-lookahead 3:200`
+```./monero-wallet-cli --generate-from-device MoneroWallet
+--subaddress-lookahead 3:200```
 
 - The CLI will, after executing aforementioned command, prompt your for a
   password. Make sure to set a strong password and confirm it thereafter.
