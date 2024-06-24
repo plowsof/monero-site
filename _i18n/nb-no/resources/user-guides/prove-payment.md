@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Prove payments
+### Bevis betalinger
 
 Når du sender penger til en part som omdiskuterer at betalingen har blitt
 gjort, må du kunne bevise at betalingen har skjedd.
@@ -16,8 +16,9 @@ Alice forsyne Charlie med tre opplysninger:
 
 - the transaction ID, as is done in Bitcoin
 - Bob's address, as is done with Bitcoin
-- the transaction's key, which is new with Monero and other CryptoNote
-  currencies
+- Transaksjons-ID-en (som i bitcoin)  - Bobs adresse (som i bitcoin)  -
+  Transaksjonsnøkkelen, noe som er nytt med Monero og andre
+  CryptoNote-valutaer
 
 Når Alice har gjennomført transaksjonen, ble en éngangsnøkkel automatisk
 generert for akkurat den ene transaksjonen.
@@ -65,7 +66,7 @@ transaksjons-ID-en og Bobs adresse.
 Merk: Hvis flere transaksjoner har blitt gjort, må dette gjentas for hver
 transaksjon.
 
-### Check payments
+### Sjekk betalinger
 
 Charlie har nå mottatt de tre opplysningene og vil sikre at Alice forteller
 sannheten. På en oppdatert blokkjede,
@@ -86,7 +87,7 @@ Charlie ønsker åpenbart å dobbeltsjekke med Bob at adressen virkelig er hans
 
 #### GUI
 
-Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:
+Charlie vil åpne sin monero-wallet-gui og gå til Avansert > Bevis/Sjekk-siden for å fylle inn Sjekk-seksjonen med opplysningene som Alice har oppgitt:
 
 ![Check
 payment](/img/resources/user-guides/en/prove-payment/check-payment.png)

@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Prove payments
+### Udowodnij płatności
 
 Jeżeli dokonasz płatności osobie, która później ją zakwestionuje, musisz być
 w stanie udowodnić, że pieniądze zostały przesłane.
@@ -17,8 +17,9 @@ przekazać Pawłowi trzy informacje:
 
 - the transaction ID, as is done in Bitcoin
 - Bob's address, as is done with Bitcoin
-- the transaction's key, which is new with Monero and other CryptoNote
-  currencies
+- numer identyfikacyjny transakcji, tak jak się to dzieje w przypadku
+  Bitcoina - adres Jacka, tak jak się to dzieje w przypadku Bitcoina - klucz
+  transakcji, który jest wyłącznością Monero i innych walut CryptoNote.
 
 Gdy Ewa dokonywała transakcji, jendorazowy klucz został wygenerowany tylko
 dla tej płatności.
@@ -65,7 +66,7 @@ identyfikacyjnym transakcji oraz adresem Jacka.
 Zauważ, że jeśli zostało dokonanych wiele transakcji, cały proces musi
 zostać powtórzony dla każdej transakcji.
 
-### Check payments
+### Sprawdź płatności
 
 Paweł otrzymał trzy informacje i chce sprawdzić, czy Ewa mówi prawdę - w
 aktualnym łańcuchu bloków
@@ -85,7 +86,7 @@ niego należy - tak samo jak w przypadku Bitcoina.
 
 #### GUI
 
-Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:
+Paweł otworzy swój Graficzny Interfejs Użytkownika i przejdzie do strony Advanced > Prove/Check, aby wypełnić pole Check informacjami dostarczonymi przez Ewę.
 
 ![Check
 payment](/img/resources/user-guides/en/prove-payment/check-payment.png)

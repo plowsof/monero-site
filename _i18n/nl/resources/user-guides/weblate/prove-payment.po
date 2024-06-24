@@ -26,7 +26,6 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/prove-payment.md:3
 #, no-wrap
-#| msgid "### Prove payments"
 msgid "Prove payments"
 msgstr "Betalingen bewijzen"
 
@@ -67,7 +66,6 @@ msgstr ""
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/prove-payment.md:18
-#| msgid "- the transaction ID, as is done in Bitcoin - Bob's address, as is done with Bitcoin - the transaction's key, which is new with Monero and other CryptoNote currencies"
 msgid "the transaction's key, which is new with Monero and other CryptoNote currencies"
 msgstr "de transactie-ID, net als bij Bitcoin - het adres van Bob, net als bij Bitcoin - de transactiesleutel, een nieuwe uitvinding bij Monero en andere Cryptonote-coins"
 
@@ -94,7 +92,6 @@ msgstr "Alice kan deze sleutel als volgt opvragen in monero-wallet-cli (voorheen
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:26
 #, no-wrap
-#| msgid "> get_tx_key TXID"
 msgid "> get_tx_key TXID\n"
 msgstr "> get_tx_key TXID\n"
 
@@ -114,7 +111,6 @@ msgstr "Dit werkt alleen als monero-wallet-cli is ingesteld op het bewaren van t
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:33
 #, no-wrap
-#| msgid "> set"
 msgid "> set\n"
 msgstr "> set\n"
 
@@ -128,7 +124,6 @@ msgstr "Stel het in op 1 als de instelling 0 is:"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:37
 #, no-wrap
-#| msgid "> set store-tx-info 1"
 msgid "> set store-tx-info 1\n"
 msgstr "> set store-tx-info 1\n"
 
@@ -180,7 +175,6 @@ msgstr "Opmerking: als het om meerdere transacties gaat, moeten deze stappen wor
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/prove-payment.md:56
 #, no-wrap
-#| msgid "### Check payments"
 msgid "Check payments"
 msgstr "Betalingen controleren"
 
@@ -200,7 +194,6 @@ msgstr "Charlie typt het volgende in monero-wallet-cli:"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:66
 #, no-wrap
-#| msgid "> check_tx_key TXID TXKEY ADDRESS"
 msgid "> check_tx_key TXID TXKEY ADDRESS\n"
 msgstr "> check_tx_key TXID SLEUTEL ADRES\n"
 
@@ -221,7 +214,6 @@ msgstr "Uiteraard zal Charlie bij Bob willen navragen of het adres inderdaad van
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:75
 #, no-wrap
-#| msgid "Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:"
 msgid "Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:\n"
 msgstr "Charlie opent monero-wallet-gui en gaat naar de pagina Geavanceerd > Bewijzen/controleren om de gegevens van Alice in te vullen in het gedeelte Transactie controleren.\n"
 

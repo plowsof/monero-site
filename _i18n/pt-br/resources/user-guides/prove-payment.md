@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### Prove payments
+### Provando pagamentos
 
 Se você enviou dinheiro para alguém, e essa pessoa precisa que você confirme
 para ela que o pagamento foi feito, você precisa ser capaz de provar isso.
@@ -18,8 +18,9 @@ fornecer a Charlie três informações:
 
 - the transaction ID, as is done in Bitcoin
 - Bob's address, as is done with Bitcoin
-- the transaction's key, which is new with Monero and other CryptoNote
-  currencies
+- o ID da transação, assim como é feito no Bitcoin - a chave da transação,
+  que é uma chave usada pelo Monero e outras moedas que usam o protocolo
+  CryptoNote - o endereço do Bob, assim como é feito no Bitcoin
 
 Quando a Alice faz uma transação, uma chave de uso único é gerada
 automaticamente para cada transação.
@@ -28,7 +29,7 @@ automaticamente para cada transação.
 
 Alice pode requisitar a chave da transação (tx_key) na monero-wallet-cli:
 
-> get_tx_key TXID
+> get_tx_key ID_DA_TRANSAÇÃO
 
 A ID da transação deve ser inserida no lugar de ID_DA_TRANSAÇÃO. Se tudo der
 certo, a chave da transação será exibida.
@@ -66,7 +67,7 @@ e o endereço do Bob.
 Nota: se várias transações forem feitas, o procedimento precisa ser repetido
 para cada transação.
 
-### Check payments
+### Verificando pagamentos
 
 Agora que Charlie recebeu essas três informações, ele pode verificar se a
 Alice está falando a verdade: em uma blockchain atualizada,
@@ -75,7 +76,7 @@ Alice está falando a verdade: em uma blockchain atualizada,
 
 Charlie digita na monero-wallet-cli:
 
-> check_tx_key TXID TXKEY ADDRESS
+> check_tx_key ID_DA_TRANSAÇÃO CHAVE_DA_TRANSAÇÃO ENDEREÇO
 
 As informações que a Alice forneceu devem ser substituídas nos campos
 ID_DA_TRANSAÇÃO, CHAVE_DA_TRANSAÇÃO e ENDEREÇO. A monero-wallet-cli irá usar
@@ -87,7 +88,7 @@ dele, assim como seria necessário com Bitcoin.
 
 #### GUI
 
-Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:
+Charlie irá abrir sua monero-wallet-gui e ir até a página Avançado > Provar/Conferir, preenchendo a seção "Verificar transação" com as informações fornecidas pela Alice:
 
 ![Check
 payment](/img/resources/user-guides/en/prove-payment/check-payment.png)

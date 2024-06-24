@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Prove payments
+### Zahlungen nachweisen
 
 Sollte jemand bestreiten, eine von dir gesendete Zahlung erhalten zu haben,
 musst du in der Lage sein, nachzuweisen, dass diese Zahlung tatsächlich
@@ -19,8 +19,9 @@ Alice Charlie drei Informationen bereitstellen:
 
 - the transaction ID, as is done in Bitcoin
 - Bob's address, as is done with Bitcoin
-- the transaction's key, which is new with Monero and other CryptoNote
-  currencies
+- die Transaktions-ID (wie bei Bitcoin)  - Bobs Adresse (wie bei Bitcoin)  -
+  den Transaktionsschlüssel, eine Neuheit, die mit Monero und anderen
+  CryptoNote-Währungen einhergeht
 
 Als Alice die Transaktion getätigt hat, wurde automatisch ein
 Einmalschlüssel erstellt, der nur für diese Transaktion gilt.
@@ -69,7 +70,7 @@ und Bobs Adresse an Charlie senden.
 Info: Wenn mehrere Transaktionen getätigt wurden, muss dieser Vorgang für
 jede einzelne dieser Transaktionen wiederholt werden.
 
-### Check payments
+### Zahlungen überprüfen
 
 Charlie hat nun alle drei Infos erhalten und möchte jetzt - in einer
 aktualisierten Blockchain - überprüfen, ob Alice die Wahrheit sagt.
@@ -90,7 +91,7 @@ mit Bob gegenprüfen, ob es sich tatsächlich um dessen Adresse handelt.
 
 #### GUI
 
-Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:
+Charlie kann sein monero-wallet-gui öffnen und über die "Erweitert"-Seite zur "Nachweisen/prüfen"-Seite gehen. Im "Prüfen"-Abschnitt kann er anschließend die von Alice bereitgestellten Informationen einfügen:
 
 ![Check
 payment](/img/resources/user-guides/en/prove-payment/check-payment.png)

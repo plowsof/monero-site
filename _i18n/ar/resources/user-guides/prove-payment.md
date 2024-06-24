@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Prove payments
+### إثبات المدفوعات
 
 عند إرسال أموال إلى أحد الأطراف ويتم التنازع علي أن المعامله قد تمت أم لا
 يجب أن تكون قادرًا على إثبات الدفع.
@@ -16,8 +16,9 @@
 
 - the transaction ID, as is done in Bitcoin
 - Bob's address, as is done with Bitcoin
-- the transaction's key, which is new with Monero and other CryptoNote
-  currencies
+- مُعرّف المعامله , كما في البتكوين.  - عنوان حساب عبدالحميد , كما في
+  البتكوين.  - مفتاح المعامله, وهذه التقنيه موجوده فقط في مونيرو وعملات
+  كريبتونوت الأخري (CryptoNote).
 
 حينما قامت مريم بالمُعامله تم تلقائياً إنشاء مفتاح مميز فقط لهذه المعامله.
 
@@ -61,7 +62,7 @@ proof](/img/resources/user-guides/en/prove-payment/payment-proof.png)
 
 لاحظ: إذا كان هُناك أكثر من مُعامله يجب إعاده هذه الخطوات لكل معامله منهم.
 
-### Check payments
+### تحقق من المدفوعات
 
 إستلم محمود الأن البيانات ويُريد التأكد من صحه المعامله علي سلسله كتل
 متزامنه مع الشبكه
@@ -81,7 +82,7 @@ proof](/img/resources/user-guides/en/prove-payment/payment-proof.png)
 
 #### GUI
 
-Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:
+يفتح محمود إلي الواجهه الرسوميه ويذهب إلي صفحه مُتقدم > صفحه إثبات/تحقق ويملأ البيانات اللازمه :
 
 ![Check
 payment](/img/resources/user-guides/en/prove-payment/check-payment.png)

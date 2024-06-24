@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### Prove payments
+### Доказательство платежей
 
 Когда вы отправляете деньги стороне, которая затем оспаривает платеж, вы
 должны быть в состоянии доказать, что платеж был действительно совершен.
@@ -17,8 +17,10 @@
 
 - the transaction ID, as is done in Bitcoin
 - Bob's address, as is done with Bitcoin
-- the transaction's key, which is new with Monero and other CryptoNote
-  currencies
+- идентификатор транзакции, как это делается в Bitcoin - адрес Боба, как это
+  делается в Bitcoin - ключ транзакции, который является новшеством в
+  криптовалютном мире, характерным для Monero и других монет на протоколе
+  CryptoNote
 
 Когда Алиса совершила платеж, одноразовый ключ был автоматически
 сгенерирован только для этой транзакции.
@@ -66,7 +68,7 @@ proof](/img/resources/user-guides/en/prove-payment/payment-proof.png)
 Примечание: если было сделано несколько транзакций, данную процедуру
 необходимо повторить для каждой из них.
 
-### Check payments
+### Проверка платежа
 
 Чарли получил эти три части информации и хочет проверить, что Алиса
 действительно говорит правду:
@@ -87,7 +89,7 @@ proof](/img/resources/user-guides/en/prove-payment/payment-proof.png)
 
 #### GUI
 
-Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:
+Чарли необходимой открыть свой monero-wallet-gui и перейдет на страницу Advanced (Дополнительно), перейти в пункт Prove / Check (Подтвердить / Проверить), заполнить поля с информацией предоставленной Алисой в разделе Check (Проверить):
 
 ![Check
 payment](/img/resources/user-guides/en/prove-payment/check-payment.png)
