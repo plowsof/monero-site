@@ -90,10 +90,9 @@ msgstr " Ubuntu Linux"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:36
-#, fuzzy
 #| msgid "The XMRig developer provides pre-built binaries for Ubuntu Xenial Xerus (16.04). They may work on other Ubuntu versions, and on other distributions, but this is not guaranteed."
 msgid "The XMRig developer provides pre-built binaries for Ubuntu Bionic (18.04) and Focal (20.04). They may work on other Ubuntu versions, and on other distributions, but this is not guaranteed."
-msgstr "MRig-utvikleren gir forhåndsbyggede binærfiler for Ubuntu Xenial Xerus (16.04). De kan fungere på andre Ubuntu-versjoner og på andre distribusjoner, men det er ikke garantert."
+msgstr "MRig-utvikleren gir forhåndsbyggede binærfiler for Ubuntu Bionic (18.04) / Focal (20.04). De kan fungere på andre Ubuntu-versjoner og på andre distribusjoner, men det er ikke garantert."
 
 #
 #. type: Plain text
@@ -104,10 +103,9 @@ msgstr "Disse binærfilene er tilgjengelig på [GitHub release-siden](https://gi
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:42
-#, fuzzy
 #| msgid "Scroll down until you see `xmrig-VERSION-xenial-x64.tar.gz`. Download this file, extract the archive somewhere memorable, like your desktop."
 msgid "Scroll down to 'Assets' until you see the correct version for your system. Download this file, extract the archive somewhere memorable, like your desktop."
-msgstr "Bla ned til du ser `xmrig-VERSION-xenial-x64.tar.gz`. Last ned denne filen og pakk ut arkivene til et sted du husker, som f.eks. skrivebordet ditt."
+msgstr ""
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:43
@@ -123,10 +121,10 @@ msgstr ""
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:47
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Selecting a pool"
 msgid "Selecting a pool"
-msgstr "## Å velge en pool"
+msgstr "Å velge en pool"
 
 #
 #. type: Plain text
@@ -143,10 +141,10 @@ msgstr "Å velge en større pool betyr at du vil se hyppigere (men mindre) utbet
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:57
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Configuring the miner"
 msgid "Configuring the miner"
-msgstr "## Konfigurering av utvinneren"
+msgstr "Konfigurering av utvinneren"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:60
@@ -156,10 +154,10 @@ msgstr ""
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:61
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Starting the miner"
 msgid "Starting the miner"
-msgstr "## Å starte utvinneren"
+msgstr "Å starte utvinneren"
 
 #
 #. type: Plain text
@@ -176,18 +174,18 @@ msgstr "Hvis du ser grønne meldinger som sier at andelene har blitt godkjent �
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:70
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Troubleshooting"
 msgid "Troubleshooting"
-msgstr "## Feilsøking"
+msgstr "Feilsøking"
 
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:72
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Anti-virus keeps removing XMRig"
 msgid "Anti-virus keeps removing XMRig"
-msgstr "### Antiviruset fjerner stadig XMRig"
+msgstr "Antiviruset fjerner stadig XMRig"
 
 #
 #. type: Plain text
@@ -198,10 +196,10 @@ msgstr "Noen antivirus flagger XMRig som skadevare fordi den ofte utplasseres i 
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:79
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Cannot read/set MSR"
 msgid "Cannot read/set MSR"
-msgstr "### Kan ikke lese / stille inn MSR"
+msgstr "Kan ikke lese / stille inn MSR"
 
 #
 #. type: Plain text
@@ -212,10 +210,10 @@ msgstr "På noen CPU-er prøver XMRig å øke ytelsen ved å deaktivere visse fu
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:87
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Algo not known"
 msgid "Algo not known"
-msgstr "### Ukjent algoritme"
+msgstr "Ukjent algoritme"
 
 #
 #. type: Plain text
@@ -226,18 +224,18 @@ msgstr "Finn linjen i config.json som sier `algo: null` og endre den til `algo: 
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:93
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Huge Pages 0%"
 msgid "Huge Pages 0%"
-msgstr "### Store sider 0 %"
+msgstr "Store sider 0 %"
 
 #
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:95
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "#### Allowing large pages on Windows"
 msgid "Allowing large pages on Windows"
-msgstr "#### Å tillate store sider på Windows"
+msgstr "Å tillate store sider på Windows"
 
 #
 #. type: Plain text
@@ -277,7 +275,6 @@ msgstr "I ruten dobbeltklikker du på «Lock pages in Memory» (Lås sider i min
 
 #. type: Bullet: '7. '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:108
-#, fuzzy
 #| msgid "In the Local Security Setting â Lock pages in memory dialog box, click Add User or Group."
 msgid "In the Local Security Setting – Lock pages in memory dialog box, click Add User or Group."
 msgstr "I den lokale sikkerhetsinnstillingen «Lås sider i minnet»-dialogboksen, trykker du på «Legg til bruker eller gruppe.»"
@@ -301,10 +298,10 @@ msgstr "Du må også kanskje starte utvinneren som administrator."
 #
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:111
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "#### Allowing large pages on Linux"
 msgid "Allowing large pages on Linux"
-msgstr "#### Å tillate store sider på Linux"
+msgstr "Å tillate store sider på Linux"
 
 #
 #. type: Plain text
@@ -331,10 +328,10 @@ msgstr "Du må kanskje øke til 1168, avhengig av hvor mange NUMA-noder CPU-en(e
 #
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:122
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "#### Allowing large pages on macOS"
 msgid "Allowing large pages on macOS"
-msgstr "#### Å tillate store sider på macOS"
+msgstr "Å tillate store sider på macOS"
 
 #
 #. type: Plain text
@@ -345,22 +342,22 @@ msgstr "Store sider støttes ikke på macOS."
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:126
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Balance Not Increasing"
 msgid "Balance Not Increasing"
-msgstr "### Saldoen øker ikke"
+msgstr "Saldoen øker ikke"
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:132
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "Most pools are <abbr title=\"Pay Per Last N Shares\">PPLNS</abbr> pools, which means that you only get paid when a miner on the pool finds a block. If the pool you are mining on is small, this can take a few days to weeks."
 msgid ""
 "Most pools are <abbr title=\"Pay Per Last N Shares\">PPLNS</abbr> pools,\n"
 "which means that you only get paid when a miner on the pool finds a\n"
 "block. If the pool you are mining on is small, this can take a few\n"
 "days to weeks.\n"
-msgstr "De fleste pools er <abbr title=\"Pay Per Last N Shares\">PPLNS</abbr> (Betal per siste N andeler)-pools, som betyr at du kun får betalt når en utvinner i poolen finner en blokk. Hvis poolen du utvinner på er liten, kan dette ta noen dager til uker."
+msgstr "De fleste pools er <abbr title=\"Pay Per Last N Shares\">PPLNS</abbr> (Betal per siste N andeler)-pools, som betyr at du kun får betalt når en utvinner i poolen finner en blokk. Hvis poolen du utvinner på er liten, kan dette ta noen dager til uker.\n"
 
 #
 #. type: Plain text
@@ -371,26 +368,25 @@ msgstr "Eventuelle blokker som blir funnet må i tillegg modnes før de kan utbe
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:136
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Getting Help"
 msgid "Getting Help"
-msgstr "## Å få hjelp"
+msgstr "Å få hjelp"
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:142
-#, fuzzy
 #| msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-pools on freenode](https://webchat.freenode.net/?channel=#monero-pools)."
 msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-pools on Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix (#monero-pools:monero.social)."
-msgstr "Det finnes et aktivt samfunn for Monero-utvinning på Reddit som du finner i underforumet [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Du kan også bli med i [#monero-pools på freenode](https://webchat.freenode.net/?channel=#monero-pools)."
+msgstr "Det finnes et aktivt samfunn for Monero-utvinning på Reddit som du finner i underforumet [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Du kan også bli med i [#monero-pools på libera](https://web.libera.chat/?channel=#monero-pools) / Matrix (#monero-pools:monero.social)"
 
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:143
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Going Futher"
 msgid "Going Futher"
-msgstr "## Å gå mer i dybden"
+msgstr "Å gå mer i dybden"
 
 #. type: Bullet: '* '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:151

@@ -360,7 +360,7 @@ msgstr "Hilfe erhalten"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:142
 msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-pools on Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix (#monero-pools:monero.social)."
-msgstr ""
+msgstr "Es gibt auf Reddit eine aktive Monero-Mining-Community: [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Du kannst außerdem [#monero-pools auf Libera](https://web.libera.chat/?channel=#monero-pools) beitreten / Matrix (#monero-pools:monero.social)."
 
 #
 #. type: Title ##
