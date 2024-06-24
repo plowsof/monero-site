@@ -25,18 +25,18 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:4
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href=\"{{site.baseurl}}/downloads/\">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays \"Connected\" in the lower left corner."
 msgid "It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href=\"{{site.baseurl}}/downloads/\">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays \"Connected\" in the lower left corner.\n"
-msgstr "Det er veldig enkelt å solo-utvinne med den offisielle GUI-en. Hvis du ikke allerede har gjort det, kan du gå til <a href=\"{{site.baseurl}}/downloads/\">Monero-nedlastingssiden</a> og laste ned denne offisielle GUI-en for operativsystemet ditt. Deretter kan du kjøre oppsettet og smøre deg med tålmodighet mens Monero synkroniseres med nettverket. Du bør se at den viser «Tilkoblet» nederst til venstre."
+msgstr "Det er veldig enkelt å solo-utvinne med den offisielle GUI-en. Hvis du ikke allerede har gjort det, kan du gå til <a href=\"{{site.baseurl}}/downloads/\">Monero-nedlastingssiden</a> og laste ned denne offisielle GUI-en for operativsystemet ditt. Deretter kan du kjøre oppsettet og smøre deg med tålmodighet mens Monero synkroniseres med nettverket. Du bør se at den viser «Tilkoblet» nederst til venstre.\n"
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:6
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>\n"
-msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>"
+msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" style=\"width: 600px;\"/>\n"
 
 #
 #. type: Plain text
@@ -47,10 +47,10 @@ msgstr "Trykk på «Avansert»-fanen. Du bør se at flere andre valg dukker opp.
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:10
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>\n"
-msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>"
+msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" style=\"width: 600px;\"/>\n"
 
 #
 #. type: Plain text
@@ -61,10 +61,10 @@ msgstr "Nå bør du ha valget om å begynne å utvinne. Du kan som alternativ en
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/solo_mine_GUI.md:14
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>"
 msgid "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>\n"
-msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>"
+msgstr "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" style=\"width: 600px;\"/>\n"
 
 #
 #. type: Plain text
