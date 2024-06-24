@@ -341,7 +341,7 @@ msgid ""
 "which means that you only get paid when a miner on the pool finds a\n"
 "block. If the pool you are mining on is small, this can take a few\n"
 "days to weeks.\n"
-msgstr "Die meisten Pools sind <abbr title=\"Pay Per Last N Shares\">PPLNS</abbr>-Pools. Dies bedeutet, dass du nur bezahlt wirst, wenn ein Miner im Pool einen Block findet. Wenn der Pool, innerhalb dessen du minest, klein ist, kann dies einige Tage bis hin zu Wochen dauern."
+msgstr "Die meisten Pools sind <abbr title=\"Pay Per Last N Shares\">PPLNS</abbr>-Pools. Dies bedeutet, dass du nur bezahlt wirst, wenn ein Miner im Pool einen Block findet. Wenn der Pool, innerhalb dessen du minest, klein ist, kann dies einige Tage bis hin zu Wochen dauern.\n"
 
 #
 #. type: Plain text
