@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-## Step 1: Acquire Monero
+## Шаг 1: получение Monero
 
 Существует множество способов получить Monero: можно заняться майнингом,
 можно принимать оплату за оказание услуг или за товары в Monero, или же
@@ -20,33 +20,37 @@
 Неполный список бирж, поддерживающих Monero, можно найти на нашей [Странице
 предпринимателей]({{ site.baseurl }}/community/merchants/#exchanges).
 
-## Step 2: Download and create a Paper Wallet on a secure and air-gapped computer.
+## Шаг 2: скачивание и создание бумажного кошелька на безопасном, изолированном компьютере.
 
-Download the @paper-wallet generator at: [getmonero.org/generator]({{
-site.baseurl}}/generator) and copy it to a USB stick (direct link:
+Генератор @бумажного-кошелька можно скачать на сайте
+[getmonero.org/generator]({{ site.baseurl}}/generator) , после чего его
+следует скопировать на USB-накопитель (прямая ссылка:
 [wallet-generator.zip]({{ site.baseurl
 }}/resources/wallet-generator/wallet-generator.zip)).
 
-Unzip and open the paper wallet generator (wallet-generator.html) into a web
-browser on an air-gapped (@airgap) computer that hasn't been used before, or
-has had a clean installation of the operative system.
+Генератор бумажного кошелька (wallet-generator.html) необходимо
+разархивировать и открыть в браузере на изолированном компьютере (@airgap),
+который не использовался ранее, или же на котором установлена исключительно
+операционная система.
 
 У бумажного кошелька есть четыре важных элемента:
 
-- Monero Public @Address: The public address is used to receive funds to the
-  @wallet. You give this to anyone who will be sending funds to your wallet.
+- @Публичный-адрес Monero. Публичный адрес используется для получения
+  средств в @кошелёк. Этот адрес можно давать любому, кто будет отправлять
+  средства на ваш кошелёк.
 
-- Monero @Mnemonic-Seed: The mnemonic seed is a method of storing the entire
-  wallet that is easily recognizable to humans.  This is all you need to
-  restore your wallet at a later date.
+- @Мнемоническая-фраза Monero. Мнемоническая фраза является понятным для
+  человека способом сохранения всего кошелька.  Она - это всё, что вам
+  понадобится, чтобы восстановить кошелёк впоследствии.
 
-- Monero @Spend-Key: The private spend key is used to send funds from the
-  wallet.
+- @Ключ-траты Monero. Приватный ключ траты используется для отправки средств
+  из кошелька.
 
-- Monero @View-Key: The private view key is to view transactions entering
-  the wallet. Commonly this is used to setup a view-only wallet which can
-  see incoming transactions live on the blockchain as they are sent to a
-  cold storage wallet.
+- @Ключ-просмотра Monero. Приватный ключ просмотра используется для
+  просмотра транзакций, поступающих на ваш кошелёк. Как правило, он
+  используется для создания кошелька, предназначенного исключительно для
+  просмотра и позволяющего просматривать поступающие в блокчейн транзакции
+  «в живую» по мере их отправки в холодный кошелёк.
 
 На этом этапе у вас есть множество опций. Вы можете распечатать кошелёк на
 бумаге, сохранить его в формате PDF или в текстовом формате на
@@ -68,18 +72,20 @@ Monero. Возможно, вам придётся удалить кошелёк 
 
 *Если вы потеряете доступ к своему бумажному кошельку, то ни вы, ни кто-либо другой уже никогда не сможет получить ваши monero. Вы никак не сможете восстановить их!*
 
-#### Side Note
+#### Заметка на полях
 
-Option to encrypt an XMR mnemonic seed: https://xmr.llcoins.net/  
-Download the html page and place it on your airgapped computer. Check the
-part "Encrypt/Decrypt Mnemonic Seed" and make sure you use "CN Add" with a
-decent password. Thanks manicminer5.
+Существует опция шифрования мнемонической фразы XMR: https://xmr.llcoins.net/ 
+Скачайте страницу html и скопируйте её на свой изолированный
+компьютер. Зайдите в раздел Encrypt/Decrypt Mnemonic Seed
+(Зашифровать/расшифровать мнемоническую фразу) и убедитесь в том, что вы
+можете воспользоваться опцией CN Add (Добавить CN), задав надёжный
+пароль. Благодарим за эту возможность manicminer5.
 
-## Step 3: Send your Moneroj to the paper wallet
+## Шаг 3. Перевод ваших Monero в бумажный кошелёк
 
-Now that you have everything you need, you are ready to send your XMR to your paper wallet. Simply send the coins to the wallet address you noted earlier. Make sure the address is correct, even if you copy-pasted it! Remember that if you send the coins to a wrong address, there is no way to have them back!  
+Теперь, когда у вас есть всё, что нужно, вы готовы перевести ваши XMR в свой бумажный кошелёк. Просто отправьте монеты на адрес кошелька, который вы записали ранее. Убедитесь в правильности адреса, даже если вы скопировали и вставили его! Следует помнить о том, что если вы отправите монеты на неправильный адрес, вы уже не сможете вернуть их обратно!
 
-#### Notes and How to Verify Funds
+#### Примечания и способ проверки средств
 
 Поскольку блокчейн Monero является анонимным и неотслеживаемым, вы не
 сможете найти свой публичный адрес Monero и убедиться в том, что вы

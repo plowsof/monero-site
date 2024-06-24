@@ -1,6 +1,6 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Step 1: Acquire Monero
+## Schritt 1: Monero beschaffen
 
 Es gibt verschiedene Möglichkeiten, mit welchen du du Monero bekommen
 kannst. Du kannst Coins minen, sie gegen Güter oder Dienstleistungen
@@ -21,33 +21,37 @@ Eine unvollständige Liste von Börsen, die Monero unterstützen, findet sich
 auf unserer [Händlerseite]({{ site.baseurl
 }}/community/merchants/#exchanges).
 
-## Step 2: Download and create a Paper Wallet on a secure and air-gapped computer.
+## Schritt 2: Ein Paper-Wallet auf einem sicheren, mittels Airgap isolierten Computer herunterladen und erstellen
 
-Download the @paper-wallet generator at: [getmonero.org/generator]({{
-site.baseurl}}/generator) and copy it to a USB stick (direct link:
-[wallet-generator.zip]({{ site.baseurl
+Lade einen Generator für @Paper-Wallets auf [getmonero.org/generator]({{
+site.baseurl}}/generator) herunter und kopiere ihn auf einen USB-Stick
+(direkter Link: [wallet-generator.zip]({{ site.baseurl
 }}/resources/wallet-generator/wallet-generator.zip)).
 
-Unzip and open the paper wallet generator (wallet-generator.html) into a web
-browser on an air-gapped (@airgap) computer that hasn't been used before, or
-has had a clean installation of the operative system.
+Entpacke den Paper-Wallet-Generator (wallet-generator.html) und öffne ihn in
+einem Webbrowser auf einem mittels @Airgap isolierten Computer, der zuvor
+nicht verwendet worden ist oder auf welchem das Betriebssystem sauber
+neuinstalliert wurde.
 
 Dein Paper-Wallet hat vier wichtige Dinge:
 
-- Monero Public @Address: The public address is used to receive funds to the
-  @wallet. You give this to anyone who will be sending funds to your wallet.
+- Eine öffentliche Monero-@Adresse: Die öffentliche Adresse wird zum
+  Empfangen von Geldern im @Wallet genutzt. Du gibst diese Adresse jedem,
+  der Gelder auf dein Wallet senden wird.
 
-- Monero @Mnemonic-Seed: The mnemonic seed is a method of storing the entire
-  wallet that is easily recognizable to humans.  This is all you need to
-  restore your wallet at a later date.
+- Moneros @mnemonischer-Seed: Der mnemonische Seed ist eine klar erkennbare
+  Methode, mit welcher du dein Wallet sicherst. Mit diesem Seed hast du
+  alles, was du brauchst, um dein Wallet zu einem späteren Zeitpunkt
+  wiederherzustellen.
 
-- Monero @Spend-Key: The private spend key is used to send funds from the
-  wallet.
+- Moneros @Spend-Key: Der private Spend-Key wird zum Senden von Geldern aus
+  dem Wallet genutzt.
 
-- Monero @View-Key: The private view key is to view transactions entering
-  the wallet. Commonly this is used to setup a view-only wallet which can
-  see incoming transactions live on the blockchain as they are sent to a
-  cold storage wallet.
+- Moneros @View-Key: Zum Anzeigen von auf dem Wallet eingehenden
+  Transaktionen dient der private View-Key, welcher häufig zur Einrichtung
+  eines View-Only-Wallets genutzt wird. Dieses kann eingehende Transaktionen
+  live auf der Blockchain, während diese an ein Spar-Wallet ("Cold-Wallet")
+  gesendet werden, einsehen.
 
 An dieser Stelle hast du einige Möglichkeiten: Du kannst das Wallet auf
 Papier ausdrucken, es als PDF oder im Textdateiformat auf einem USB-Stick
@@ -68,18 +72,19 @@ dein Drucker keine Kopie in seinem Speicher sichert.
 
 *Wenn du den Zugriff auf dein Monero-Paper-Wallet verlierst, werden die in ihm liegenden Monero niemals wieder dir oder irgendjemandem sonst zur Verfügung stehen.*
 
-#### Side Note
+#### Randbemerkung
 
-Option to encrypt an XMR mnemonic seed: https://xmr.llcoins.net/  
-Download the html page and place it on your airgapped computer. Check the
-part "Encrypt/Decrypt Mnemonic Seed" and make sure you use "CN Add" with a
-decent password. Thanks manicminer5.
+Möglichkeit zur Verschlüsselung eines mnemonischen Seeds von Monero: https://xmr.llcoins.net/ 
+Lade die HTML-Seite und lege es auf deinen mittels Airgap isolierten
+Rechner. Überprüfe den Teil "Encrypt/Decrypt Mnemonic Seed" und stelle
+sicher, dass du "CN Add" mit einem geeigneten Passwort nutzt. Dank an
+manicminer5.
 
-## Step 3: Send your Moneroj to the paper wallet
+## Schritt 3: Sende deine Monero an dein Paper-Wallet
 
-Now that you have everything you need, you are ready to send your XMR to your paper wallet. Simply send the coins to the wallet address you noted earlier. Make sure the address is correct, even if you copy-pasted it! Remember that if you send the coins to a wrong address, there is no way to have them back!  
+Jetzt, da du all das hast, was du brauchst, bist du bereit, deine XMR an dein Paper-Wallet zu senden. Schicke die Coins einfach an die von dir zuvor notierte Wallet-Adresse. Stelle sicher, dass die Adresse richtig ist - selbst, wenn du sie kopiert und eingefügt hast! Vergiss nicht, dass es keinen Weg zurück gibt, wenn du die Coins versehentlich an eine falsche Adresse schickst! 
 
-#### Notes and How to Verify Funds
+#### Anmerkungen und die Verifizierung von Guthaben
 
 Weil Moneros Blockchain privat und nicht nachverfolgbar ist, wirst du nicht
 in der Lage sein, deine öffentliche Monero-Adresse darin ausfindig zu machen

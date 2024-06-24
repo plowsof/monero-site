@@ -26,7 +26,6 @@ msgstr "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:3
 #, no-wrap
-#| msgid "## Step 1: Acquire Monero"
 msgid "Step 1: Acquire Monero"
 msgstr "Шаг 1: получение Monero"
 
@@ -48,19 +47,16 @@ msgstr "Неполный список бирж, поддерживающих Mon
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:11
 #, no-wrap
-#| msgid "## Step 2: Download and create a Paper Wallet on a secure and air-gapped computer."
 msgid "Step 2: Download and create a Paper Wallet on a secure and air-gapped computer."
 msgstr "Шаг 2: скачивание и создание бумажного кошелька на безопасном, изолированном компьютере."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:14
-#| msgid "Download the @paper-wallet generator at: [moneroaddress.org](https://moneroaddress.org) and copy it to a USB stick (Direct link: [https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip](https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip))."
 msgid "Download the @paper-wallet generator at: [getmonero.org/generator]({{ site.baseurl}}/generator) and copy it to a USB stick (direct link: [wallet-generator.zip]({{ site.baseurl }}/resources/wallet-generator/wallet-generator.zip))."
 msgstr "Генератор @бумажного-кошелька можно скачать на сайте [getmonero.org/generator]({{ site.baseurl}}/generator) , после чего его следует скопировать на USB-накопитель (прямая ссылка: [wallet-generator.zip]({{ site.baseurl }}/resources/wallet-generator/wallet-generator.zip))."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:16
-#| msgid "Unzip and open the paper wallet generator (monero-wallet-generator.html) into a web browser on an air-gapped (@airgap) computer that hasn't been used before, or has had a clean installation of the operative system."
 msgid "Unzip and open the paper wallet generator (wallet-generator.html) into a web browser on an air-gapped (@airgap) computer that hasn't been used before, or has had a clean installation of the operative system."
 msgstr "Генератор бумажного кошелька (wallet-generator.html) необходимо разархивировать и открыть в браузере на изолированном компьютере (@airgap), который не использовался ранее, или же на котором установлена исключительно операционная система."
 
@@ -71,25 +67,21 @@ msgstr "У бумажного кошелька есть четыре важны�
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:20
-#| msgid "- Monero Public @Address: The public address is used to receive funds to the @wallet. You give this to anyone who will be sending funds to your wallet."
 msgid "Monero Public @Address: The public address is used to receive funds to the @wallet. You give this to anyone who will be sending funds to your wallet."
 msgstr "@Публичный-адрес Monero. Публичный адрес используется для получения средств в @кошелёк. Этот адрес можно давать любому, кто будет отправлять средства на ваш кошелёк."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:22
-#| msgid "- Monero @Mnemonic-Seed: The mnemonic seed is a method of storing the entire wallet that is easily recognizable to humans.  This is all you need to restore your wallet at a later date."
 msgid "Monero @Mnemonic-Seed: The mnemonic seed is a method of storing the entire wallet that is easily recognizable to humans.  This is all you need to restore your wallet at a later date."
 msgstr "@Мнемоническая-фраза Monero. Мнемоническая фраза является понятным для человека способом сохранения всего кошелька.  Она - это всё, что вам понадобится, чтобы восстановить кошелёк впоследствии."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:24
-#| msgid "- Monero @Spend-Key: The private spend key is used to send funds from the wallet."
 msgid "Monero @Spend-Key: The private spend key is used to send funds from the wallet."
 msgstr "@Ключ-траты Monero. Приватный ключ траты используется для отправки средств из кошелька."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:26
-#| msgid "- Monero @View-Key: The private view key is to view transactions entering the wallet. Commonly this is used to setup a view-only wallet which can see incoming transactions live on the blockchain as they are sent to a cold storage wallet."
 msgid "Monero @View-Key: The private view key is to view transactions entering the wallet. Commonly this is used to setup a view-only wallet which can see incoming transactions live on the blockchain as they are sent to a cold storage wallet."
 msgstr "@Ключ-просмотра Monero. Приватный ключ просмотра используется для просмотра транзакций, поступающих на ваш кошелёк. Как правило, он используется для создания кошелька, предназначенного исключительно для просмотра и позволяющего просматривать поступающие в блокчейн транзакции «в живую» по мере их отправки в холодный кошелёк."
 
@@ -112,7 +104,6 @@ msgstr "*Если вы потеряете доступ к своему бума�
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:33
 #, no-wrap
-#| msgid "#### Side Note"
 msgid "Side Note"
 msgstr "Заметка на полях"
 
@@ -124,28 +115,24 @@ msgstr "Существует опция шифрования мнемониче�
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:37
-#| msgid "Option to encrypt an XMR mnemonic seed: https://xmr.llcoins.net/ Download the html page and place it on your airgapped computer. Check the part \"Encrypt/Decrypt Mnemonic Seed\" and make sure you use \"CN Add\" with a decent password. Thanks manicminer5."
 msgid "Download the html page and place it on your airgapped computer. Check the part \"Encrypt/Decrypt Mnemonic Seed\" and make sure you use \"CN Add\" with a decent password. Thanks manicminer5."
 msgstr "Скачайте страницу html и скопируйте её на свой изолированный компьютер. Зайдите в раздел Encrypt/Decrypt Mnemonic Seed (Зашифровать/расшифровать мнемоническую фразу) и убедитесь в том, что вы можете воспользоваться опцией CN Add (Добавить CN), задав надёжный пароль. Благодарим за эту возможность manicminer5."
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:38
 #, no-wrap
-#| msgid "## Step 3: Send your Moneroj to the paper wallet"
 msgid "Step 3: Send your Moneroj to the paper wallet"
 msgstr "Шаг 3. Перевод ваших Monero в бумажный кошелёк"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:40
 #, no-wrap
-#| msgid "Now that you have everything you need, you are ready to send your XMR to your paper wallet. Simply send the coins to the wallet address you noted earlier. Make sure the address is correct, even if you copy-pasted it! Remember that if you send the coins to a wrong address, there is no way to have them back!"
 msgid "Now that you have everything you need, you are ready to send your XMR to your paper wallet. Simply send the coins to the wallet address you noted earlier. Make sure the address is correct, even if you copy-pasted it! Remember that if you send the coins to a wrong address, there is no way to have them back!  \n"
 msgstr "Теперь, когда у вас есть всё, что нужно, вы готовы перевести ваши XMR в свой бумажный кошелёк. Просто отправьте монеты на адрес кошелька, который вы записали ранее. Убедитесь в правильности адреса, даже если вы скопировали и вставили его! Следует помнить о том, что если вы отправите монеты на неправильный адрес, вы уже не сможете вернуть их обратно!\n"
 
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/securely_purchase.md:42
 #, no-wrap
-#| msgid "#### Notes and How to Verify Funds"
 msgid "Notes and How to Verify Funds"
 msgstr "Примечания и способ проверки средств"
 
