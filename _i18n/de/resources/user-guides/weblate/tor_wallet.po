@@ -159,7 +159,7 @@ msgstr "Starte den Hintergrunddienst neu: `monerod stop_daemon; sleep 10; monero
 #| msgid "Make sure the daemon started correctly: ``` tail -f ~/.bitmonero/bitmonero.log ```"
 msgid "Make sure the daemon started correctly:"
 msgstr "Stelle sicher, dass der Hintergrunddienst richtig gestartet hat:"
-"
+
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:49
 #, no-wrap
