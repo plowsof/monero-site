@@ -53,10 +53,10 @@ msgstr "[Ten slotte](#ten-slotte)"
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:10
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Windows"
 msgid "Windows"
-msgstr "### Windows"
+msgstr " Windows"
 
 #
 #. type: Plain text
