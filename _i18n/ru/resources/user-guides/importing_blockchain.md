@@ -78,5 +78,5 @@ C:\Users\KeeJef\Downloads\blockchain.raw`
 
 ### Шаг 7
 
-After the blockchain has finished syncing up you can open your Monero wallet
-normally. Your downloaded blockchain.raw can be deleted.
+После того, как синхронизация блокчейна будет завершена, вы сможете открыть
+свой кошелёк в обычном режиме. Скачанный файл blockchain.raw можно удалить.
