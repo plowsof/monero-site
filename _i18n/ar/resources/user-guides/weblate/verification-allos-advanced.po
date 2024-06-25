@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 08:34+0000\n"
+"POT-Creation-Date: 2024-06-23 08:34+0001\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -338,8 +338,7 @@ msgstr "إذا كان الناتج يُظهر ** Good signature ** كما هو �
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:150
 msgid "If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead delete the file `hashes.txt` and go back to [section Get Hash File](#get-hash-file)."
-msgstr "إذا كان الناتج **BAD signature** **لا تُكمل** بل قم بحذف ملف `hashes.txt`
-وإرجع إلي [ القسم إحصل علي ملف الهاش ](#إحصل-علي-ملف-الهاش)."
+msgstr "إذا كان الناتج **BAD signature** **لا تُكمل** بل قم بحذف ملف `hashes.txt`وإرجع إلي [ القسم إحصل علي ملف الهاش ](#إحصل-علي-ملف-الهاش)."
 
 #
 #. type: Title ##
