@@ -23,13 +23,14 @@ Monero. Если вами был получен поддельный двоич�
 
 ## Содержание:
 
-1. [Install GnuPG](#installing-gnupg)
+1. - [Установка GnuPG](#Установка-GnuPG)
 
-2. [Verify & Import Signing Key](#verify-and-import-signing-key)
+2. - [Проверка и импорт ключа подписи](#Верификация-и-импорт ключа-подписи)
 
-3. [Download & Verify Hash File](#download-and-verify-hash-file)
+3. - [Загрузка и проверка хешей файла](#Загрузка-и-верификация-хеш-файла)
 
-4. [Download & Verify Binary](#download-and-verify-binary)
+4. - [Загрузка и верификация двоичного
+   файла](#Загрузка-и-верификация-двоичного-файла)
 
 ## Установка GnuPG
 
@@ -79,9 +80,9 @@ uid                           binaryFate <binaryfate@getmonero.org>
 
 Если отпечаток **СОВПАДЕТ**, можно продолжать.
 
-If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete
-the file `binaryfate.asc` and go back to [section Get Signing
-Key](#get-signing-key).
+В случае **НЕСОВПАДЕНИЯ** отпечатка, **ПРОДОЛЖАТЬ НЕ СЛЕДУЕТ**. Вместо этого
+необходимо удалить файл `binaryfate.asc` и вернуться к [пунктом пункту
+Получение ключа подписи](#Получение-ключа-подписи).
 
 ### Импорт ключа подписи
 
@@ -107,7 +108,7 @@ gpg: Total number processed: 1
 gpg:              unchanged: 1
 ```
 
-## Загрузка и верификация хеш-файла
+## Загрузка и верификация хеш файла
 
 В данном разделе рассматривается вопрос загрузки хеш-файла и проверки его
 аутентичности.
@@ -147,9 +148,9 @@ Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92
 Если в выходе видно, что подпись является **ПРАВИЛЬНОЙ**, как в примере,
 показанном выше, можно продолжать.
 
-If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead
-delete the file `hashes.txt` and go back to [section Get Hash
-File](#get-hash-file).
+Если подпись в выходе является **НЕПРАВИЛЬНОЙ**, **ПРОДОЛЖАТЬ НЕ СЛЕДУЕТ.**
+Необходимо удалить файл `hashes.txt` и вернуться к [пунктом пункту Получение
+хеш-файла](#Получение-хеш-файла).
 
 ## Загрузка и верификация двоичного файла
 
@@ -173,11 +174,12 @@ wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/l
 
 ### Верификация двоичного файла в Linux и Mac
 
-The steps for both Linux and Mac are the same. From a terminal, get the
-`SHA256` hash of your downloaded Monero binary. As an example this guide
-will use the `Linux, 64bit` GUI binary. Substitute
-`monero-gui-linux-x64-v0.15.0.1.tar.bz2` with the name of the binary that
-you downloaded in [section Get Monero binary](#get-monero-binary).
+Этапы проверки для Linux и Mac ничем не отличаются. Используя консоль,
+необходимо получить хеш `SHA256` загруженного двоичного файла Monero. Для
+примера в этом руководстве взят двоичный файл для `Linux 64-bit`
+GUI. Следует заменить `monero-gui-linux-x64-v0.15.0.1.tar.bz2` на имя
+двоичного файла, загруженного в соответствии с [пунктом Получение двоичного
+файла Monero](#Получение-двоичного-файла-Monero).
 
 ```
 shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2
@@ -195,16 +197,17 @@ monero-linux-x64-v0.15.0.1.tar.bz2
 При **СОВПАДЕНИИ** хеша можно завершить работу с настоящим руководством!
 Теперь файлы можно извлечь и установить.
 
-If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the
-binary you downloaded and go back to [section Get Monero
-binary](#get-monero-binary).
+В случае **НЕСОВПАДЕНИЯ** хеша, **ПРОДОЛЖАТЬ НЕ СЛЕДУЕТ.** Необходимо
+удалить загруженный двоичный файл и вернуться к [пункту Получение двоичного
+файла Monero](#Получение-двоичного-файла-Monero).
 
 ### Верификация двоичного файла под Windows
 
-From a terminal, get the `SHA256` hash of your downloaded Monero binary. As
-an example this guide will use the `Windows, 64bit` GUI binary. Substitute
-`monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you
-downloaded in [section Get Monero binary](#get-monero-binary).
+Используя терминал, необходимо получить хеш `SHA256` загруженного двоичного
+файла Monero. Для примера в этом руководстве взят двоичный файл для
+`Windows, 64bit` GUI. Следует заменить `monero-gui-win-x64-v0.15.0.1.zip` на
+имя двоичного файла, загруженного в соответствии с [пунктом Получение
+двоичного файла Monero](#Получение-двоичного-файла-Monero).
 
 ``` certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256 ```
 
@@ -221,6 +224,6 @@ ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18
 При **СОВПАДЕНИИ** хеша можно завершить работу с настоящим руководством!
 Теперь файлы можно извлечь и установить.
 
-If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the
-binary you downloaded and go back to [section Get Monero
-binary](#get-monero-binary).
+В случае **НЕСОВПАДЕНИЯ** хеша, **ПРОДОЛЖАТЬ НЕ СЛЕДУЕТ.** Необходимо
+удалить загруженный двоичный файл и вернуться к [пункту Получение двоичного
+файла Monero](#Получение-двоичного-файла-Monero).

@@ -51,25 +51,21 @@ msgstr "Содержание:"
 
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:24
-#| msgid "- [Install GnuPG](#installing-gnupg)"
 msgid "[Install GnuPG](#installing-gnupg)"
 msgstr "- [Установка GnuPG](#Установка-GnuPG)"
 
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:26
-#| msgid "- [Verify & Import Signing Key](#verify-and-import-signing-key)"
 msgid "[Verify & Import Signing Key](#verify-and-import-signing-key)"
 msgstr "- [Проверка и импорт ключа подписи](#Верификация-и-импорт ключа-подписи)"
 
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:28
-#| msgid "- [Download & Verify Hash File](#download-and-verify-hash-file)"
 msgid "[Download & Verify Hash File](#download-and-verify-hash-file)"
 msgstr "- [Загрузка и проверка хешей файла](#Загрузка-и-верификация-хеш-файла)"
 
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:30
-#| msgid "- [Download & Verify Binary](#download-and-verify-binary)"
 msgid "[Download & Verify Binary](#download-and-verify-binary)"
 msgstr "- [Загрузка и верификация двоичного файла](#Загрузка-и-верификация-двоичного-файла)"
 
@@ -187,7 +183,6 @@ msgstr "Если отпечаток **СОВПАДЕТ**, можно продо�
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:82
-#| msgid "If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the file `binaryfate.asc` and go back to [section 2.1](#21-get-signing-key)."
 msgid "If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the file `binaryfate.asc` and go back to [section Get Signing Key](#get-signing-key)."
 msgstr "В случае **НЕСОВПАДЕНИЯ** отпечатка, **ПРОДОЛЖАТЬ НЕ СЛЕДУЕТ**. Вместо этого необходимо удалить файл `binaryfate.asc` и вернуться к [пунктом пункту Получение ключа подписи](#Получение-ключа-подписи)."
 
@@ -344,7 +339,6 @@ msgstr "Если в выходе видно, что подпись являет�
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:150
-#| msgid "If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead delete the file `hashes.txt` and go back to [section 3.1](#31-get-hash-file)."
 msgid "If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead delete the file `hashes.txt` and go back to [section Get Hash File](#get-hash-file)."
 msgstr "Если подпись в выходе является **НЕПРАВИЛЬНОЙ**, **ПРОДОЛЖАТЬ НЕ СЛЕДУЕТ.** Необходимо удалить файл `hashes.txt` и вернуться к [пунктом пункту Получение хеш-файла](#Получение-хеш-файла)."
 
@@ -397,7 +391,6 @@ msgstr "Верификация двоичного файла в Linux и Mac"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:177
-#| msgid "The steps for both Linux and Mac are the same. From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Linux, 64bit` GUI binary. Substitute `monero-gui-linux-x64-v0.15.0.1.tar.bz2` with the name of the binary that you downloaded in [section 4.1](#41-get-monero-binary)."
 msgid "The steps for both Linux and Mac are the same. From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Linux, 64bit` GUI binary. Substitute `monero-gui-linux-x64-v0.15.0.1.tar.bz2` with the name of the binary that you downloaded in [section Get Monero binary](#get-monero-binary)."
 msgstr "Этапы проверки для Linux и Mac ничем не отличаются. Используя консоль, необходимо получить хеш `SHA256` загруженного двоичного файла Monero. Для примера в этом руководстве взят двоичный файл для `Linux 64-bit` GUI. Следует заменить `monero-gui-linux-x64-v0.15.0.1.tar.bz2` на имя двоичного файла, загруженного в соответствии с [пунктом Получение двоичного файла Monero](#Получение-двоичного-файла-Monero)."
 
@@ -437,7 +430,6 @@ msgstr "При **СОВПАДЕНИИ** хеша можно завершить �
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:196
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:220
-#| msgid "If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the binary you downloaded and go back to [section 4.1](#41-get-monero-binary)."
 msgid "If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the binary you downloaded and go back to [section Get Monero binary](#get-monero-binary)."
 msgstr "В случае **НЕСОВПАДЕНИЯ** хеша, **ПРОДОЛЖАТЬ НЕ СЛЕДУЕТ.** Необходимо удалить загруженный двоичный файл и вернуться к [пункту Получение двоичного файла Monero](#Получение-двоичного-файла-Monero)."
 
@@ -451,7 +443,6 @@ msgstr "Верификация двоичного файла под Windows"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:203
-#| msgid "From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Windows, 64bit` GUI binary. Substitute `monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you downloaded in [section 4.1](#41-get-monero-binary)."
 msgid "From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Windows, 64bit` GUI binary. Substitute `monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you downloaded in [section Get Monero binary](#get-monero-binary)."
 msgstr "Используя терминал, необходимо получить хеш `SHA256` загруженного двоичного файла Monero. Для примера в этом руководстве взят двоичный файл для `Windows, 64bit` GUI. Следует заменить `monero-gui-win-x64-v0.15.0.1.zip` на имя двоичного файла, загруженного в соответствии с [пунктом Получение двоичного файла Monero](#Получение-двоичного-файла-Monero)."
 
