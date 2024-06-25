@@ -99,7 +99,6 @@ msgstr "+ Для Mac: посетите [страницу загрузки Gpgtoo
 #
 #. type: Bullet: '+ '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:41
-#| msgid "+ On Linux, GnuPG is installed by default."
 msgid "On Linux, GnuPG is installed by default."
 msgstr "Для Linux: GnuPG устанавливается по умолчанию."
 
