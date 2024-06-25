@@ -52,22 +52,22 @@ msgstr "Índice:"
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:24
 msgid "[Install GnuPG](#installing-gnupg)"
-msgstr ""
+msgstr "[Instalar o GnuPG](#Instalar-o-GnuPG)"
 
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:26
 msgid "[Verify & Import Signing Key](#verify-and-import-signing-key)"
-msgstr ""
+msgstr "[Verificar & Importar a Chave de Assinatura](#Verificar-&-Importar-a-Chave-de-Assinatura)"
 
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:28
 msgid "[Download & Verify Hash File](#download-and-verify-hash-file)"
-msgstr ""
+msgstr "[Baixar & Verificar o Arquivo de Hashes](#Baixar-&-Verificar-o-Arquivo-de-Hashes)"
 
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:30
 msgid "[Download & Verify Binary](#download-and-verify-binary)"
-msgstr ""
+msgstr "[Baixar & Verificar o Binário](#Baixar-&-Verificar-o-Binário)"
 
 #
 #. type: Title ##
@@ -183,10 +183,9 @@ msgstr "Se a impressão digital **CORRESPONDE**, então você pode continuar."
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:82
-#, fuzzy
 #| msgid "If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the file `binaryfate.asc` and go back to [section 2.1](#21-get-signing-key)."
 msgid "If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the file `binaryfate.asc` and go back to [section Get Signing Key](#get-signing-key)."
-msgstr "Se a impressão digital **NÃO CORRESPONDE**, **NÃO CONTINUE** a instalação. Delete o arquivo `binaryfate.asc` e volte para a [seção 2.1](#21-get-signing-key)."
+msgstr "Se a impressão digital **NÃO CORRESPONDE**, **NÃO CONTINUE** a instalação. Delete o arquivo `binaryfate.asc` e volte para a [seção Baixar a Chave de Assinatura](#Baixar-a-Chave-de-Assinatura)."
 
 #
 #. type: Title ###
@@ -344,7 +343,7 @@ msgstr "Se o resultado exibir **Assinatura válida (Good signature)**, como no e
 #, fuzzy
 #| msgid "If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead delete the file `hashes.txt` and go back to [section 3.1](#31-get-hash-file)."
 msgid "If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead delete the file `hashes.txt` and go back to [section Get Hash File](#get-hash-file)."
-msgstr "Se o resultado exibir **Assinatura inválida (BAD signature)**, **NÃO CONTINUE.** Delete o arquivo `hashes.txt` e volte para a [seção 3.1](#31-get-hash-file)."
+msgstr "Se o resultado exibir **Assinatura inválida (BAD signature)**, **NÃO CONTINUE.** Delete o arquivo `hashes.txt` e volte para a [seção Baixar o Arquivo de Hashes](#Baixar-o-Arquivo-de-Hashes)."
 
 #
 #. type: Title ##
@@ -369,7 +368,6 @@ msgstr "Baixar o Binário do Monero"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:162
-#, fuzzy
 #| msgid "On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/) and download the correct file for your operating system. Save the file to your home directory. **Do not extract the files yet.**"
 msgid "On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/)  and download the correct file for your operating system. Save the file to your home directory. **Do not extract the files yet.**"
 msgstr "No Windows ou Mac, vá para [getmonero.org]({{ site.baseurl }}/downloads/) e baixe o arquivo correto para o seu sistema operacional. Salve o arquivo em seu computador. **Não extraia os arquivos ainda.**"
@@ -383,10 +381,10 @@ msgstr "No Linux, você pode baixar as ferramentas de linha de comando usando o 
 #
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:166
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64 ```"
 msgid "wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64\n"
-msgstr "``` wget -O monero-linux-x64-v0.15.0.5.tar.bz2 https://downloads.getmonero.org/cli/linux64 ```"
+msgstr "wget -O monero-linux-x64-v0.15.0.5.tar.bz2 https://downloads.getmonero.org/cli/linux64\n"
 
 #
 #. type: Title ###
@@ -401,15 +399,15 @@ msgstr "Verificação de Binário no Linux ou Mac"
 #, fuzzy
 #| msgid "The steps for both Linux and Mac are the same. From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Linux, 64bit` GUI binary. Substitute `monero-gui-linux-x64-v0.15.0.1.tar.bz2` with the name of the binary that you downloaded in [section 4.1](#41-get-monero-binary)."
 msgid "The steps for both Linux and Mac are the same. From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Linux, 64bit` GUI binary. Substitute `monero-gui-linux-x64-v0.15.0.1.tar.bz2` with the name of the binary that you downloaded in [section Get Monero binary](#get-monero-binary)."
-msgstr "Os passos para o Linux e para o Mac são os mesmos. Em um terminal, obtenha o hash `SHA256` do binário do Monero que você baixou. Como exemplo, esse guia irá usar o binário do GUI para `Linux, 64bit`. Substitua `monero-gui-linux-x64-v0.15.0.4.tar.bz2` com o nome do binário que você baixou na [seção 4.1](#41-get-monero-binary)."
+msgstr "Os passos para o Linux e para o Mac são os mesmos. Em um terminal, obtenha o hash `SHA256` do binário do Monero que você baixou. Como exemplo, esse guia irá usar o binário do GUI para `Linux, 64bit`. Substitua `monero-gui-linux-x64-v0.15.0.4.tar.bz2` com o nome do binário que você baixou na [seção Baixar o Binário do Monero](#Baixar-o-Binário-do-Monero)."
 
 #
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:178
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2 ```"
 msgid "shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2\n"
-msgstr "``` shasum -a 256 monero-gui-linux-x64-v0.15.0.4.tar.bz2 ```"
+msgstr "shasum -a 256 monero-gui-linux-x64-v0.15.0.4.tar.bz2\n"
 
 #
 #. type: Plain text
@@ -421,12 +419,13 @@ msgstr "O resultado será algo parecido com o exibido abaixo, mas será diferent
 #
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:186
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "``` 8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad monero-linux-x64-v0.15.0.1.tar.bz2 ```"
 msgid ""
 "8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad \n"
 "monero-linux-x64-v0.15.0.1.tar.bz2\n"
-msgstr "``` 2d105c792b46ec03739d39aaa6db3801f268e074814ab26e3824435f954c6a1c monero-gui-linux-x64-v0.15.0.4.tar.bz2 ```"
+msgstr "2d105c792b46ec03739d39aaa6db3801f268e074814ab26e3824435f954c6a1c \n" 
+"monero-gui-linux-x64-v0.15.0.4.tar.bz2\n"
 
 #
 #. type: Plain text
@@ -442,7 +441,7 @@ msgstr "Se o hash **CORRESPONDE**, então você pode prosseguir! Extraia os arqu
 #, fuzzy
 #| msgid "If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the binary you downloaded and go back to [section 4.1](#41-get-monero-binary)."
 msgid "If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the binary you downloaded and go back to [section Get Monero binary](#get-monero-binary)."
-msgstr "Se o hash **NÃO CORRESPONDE**, **NÃO CONTINUE.** Delete o binário que você baixou e volte para a [seção 4.1](#41-get-monero-binary)."
+msgstr "Se o hash **NÃO CORRESPONDE**, **NÃO CONTINUE.** Delete o binário que você baixou e volte para a [seção Baixar o Binário do Monero](#Baixar-o-Binário-do-Monero)."
 
 #
 #. type: Title ###
@@ -454,10 +453,9 @@ msgstr "Verificação do Binário no Windows"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:203
-#, fuzzy
 #| msgid "From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Windows, 64bit` GUI binary. Substitute `monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you downloaded in [section 4.1](#41-get-monero-binary)."
 msgid "From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Windows, 64bit` GUI binary. Substitute `monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you downloaded in [section Get Monero binary](#get-monero-binary)."
-msgstr "Em um terminal, obtenha o hash `SHA256` do binário do Monero que você baixou. Como exemplo, esse guia irá usar o binário do GUI para `Windows, 64bit`. Substitua `monero-gui-win-x64-v0.15.0.4.zip` com o nome do binário que você baixou na [seção 4.1](#41-get-monero-binary)."
+msgstr "Em um terminal, obtenha o hash `SHA256` do binário do Monero que você baixou. Como exemplo, esse guia irá usar o binário do GUI para `Windows, 64bit`. Substitua `monero-gui-win-x64-v0.15.0.4.zip` com o nome do binário que você baixou na [seção Baixar o Binário do Monero](#Baixar-o-Binário-do-Monero)."
 
 #
 #. type: Plain text
@@ -474,7 +472,10 @@ msgid ""
 "SHA256 hash of file monero-gui-win-x64-v0.12.0.0.zip: 4b 9f 31 68 6e ca\n"
 "ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18\n"
 "64 CertUtil: -hashfile command completed successfully. \n"
-msgstr "``` SHA256 hash of file monero-gui-win-x64-v0.15.0.4.zip: 9b 61 fa 80 7c 66 eb e3 01 08 69 d1 fa 92 6f e0 33 a2 c8 2e 6e 66 0c a8 ac b7 5a 8f ba 02 48 a0 CertUtil: -hashfile command completed successfully.  ```"
+msgstr 
+"SHA256 hash of file monero-gui-win-x64-v0.15.0.4.zip: 9b 61 fa 80 7c 66\n" 
+"eb e3 01 08 69 d1 fa 92 6f e0 33 a2 c8 2e 6e 66 0c a8 ac b7 5a 8f ba 02 48\n" 
+"a0 CertUtil: -hashfile command completed successfully.\n"
 
 #, no-wrap
 #~ msgid ""
