@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 La verificación de los archivos binarios de Monero debería ser hecha antes
 de extraer, instalar o usar el software Monero. Esta es la única forma de
@@ -27,7 +27,7 @@ necesarios, y finalmente verificar que tu binario es auténtico.
 
 3. [Descargar y Verificar Archivo Hash](#descargar-y-verificar-archivo-hash)
 
-4. Descargar y Verificar Binarios](#descargar-y-verificar-binarios)
+4. [Descargar y Verificar Binarios](#descargar-y-verificar-binarios)
 
 ## Instalar GnuPG
 
