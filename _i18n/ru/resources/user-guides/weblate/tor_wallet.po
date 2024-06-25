@@ -158,7 +158,7 @@ msgstr "Перезапустите демон: `monerod stop_daemon; sleep 10; m
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:49
 #| msgid "Make sure the daemon started correctly: ``` tail -f ~/.bitmonero/bitmonero.log ```"
 msgid "Make sure the daemon started correctly:"
-msgstr "Убедитесь в том, что демон запустился правильно:""
+msgstr "Убедитесь в том, что демон запустился правильно:"
 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:49
