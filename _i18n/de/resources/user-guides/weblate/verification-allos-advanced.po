@@ -55,7 +55,7 @@ msgstr "[GnuPG installieren](#gnupg-installieren)"
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:26
 msgid "[Verify & Import Signing Key](#verify-and-import-signing-key)"
-msgstr "Verifikation und Import des Signaturschlüssels](#verifikation-und-import-des-signaturschlüssels)"
+msgstr "[Verifikation und Import des Signaturschlüssels](#verifikation-und-import-des-signaturschlüssels)"
 
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:28
@@ -442,7 +442,7 @@ msgstr "Verifikation der Binärdatei auf Windows"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:203
 msgid "From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Windows, 64bit` GUI binary. Substitute `monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you downloaded in [section Get Monero binary](#get-monero-binary)."
-msgstr "Erhalte durch ein Terminal den `SHA256`-Hashwert deiner heruntergeladenen Monero-Binärdatei. Als Beispiel nutzt diese Anleitung die `Windows, 64bit`-Binärdatei des GUIs. Ersetze `monero-gui-win-x64-v0.15.0.1.zip` durch den Namen der von dir in [Abschnitt Monero Binärdatei herunterladen](monero-binärdatei-herunterladen) heruntergeladenen Binärdatei."
+msgstr "Erhalte durch ein Terminal den `SHA256`-Hashwert deiner heruntergeladenen Monero-Binärdatei. Als Beispiel nutzt diese Anleitung die `Windows, 64bit`-Binärdatei des GUIs. Ersetze `monero-gui-win-x64-v0.15.0.1.zip` durch den Namen der von dir in [Abschnitt Monero Binärdatei herunterladen](#monero-binärdatei-herunterladen) heruntergeladenen Binärdatei."
 
 #
 #. type: Plain text
