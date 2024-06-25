@@ -40,7 +40,7 @@ Gpg4win](https://gpg4win.org/download.html) и следуйте инструкц
 + Для Mac: посетите [страницу загрузки Gpgtools](https://gpgtools.org/) и
 следуйте инструкциям по установке.
 
-+ On Linux, GnuPG is installed by default.
++ Для Linux: GnuPG устанавливается по умолчанию.
 
 ## Верификация и импорт ключа подписи
 
