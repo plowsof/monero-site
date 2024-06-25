@@ -44,7 +44,6 @@ msgstr "Dit is een geavanceerde handleiding voor de besturingssystemen Linux, Ma
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:21
 #, no-wrap
-#| msgid "## Table of Contents:"
 msgid "Table of Contents:"
 msgstr "Inhoud"
 
@@ -72,7 +71,6 @@ msgstr ""
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:31
 #, no-wrap
-#| msgid "## 1. Installing GnuPG"
 msgid "Installing GnuPG"
 msgstr "GnuPG installeren"
 
@@ -91,7 +89,6 @@ msgstr "+ Op een Mac ga je naar de [downloadpagina voor Gpgtools](https://gpgtoo
 #
 #. type: Bullet: '+ '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:41
-#| msgid "+ On Linux, GnuPG is installed by default."
 msgid "On Linux, GnuPG is installed by default."
 msgstr "Op Linux is GnuPG standaard geïnstalleerd."
 
@@ -99,7 +96,6 @@ msgstr "Op Linux is GnuPG standaard geïnstalleerd."
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:42
 #, no-wrap
-#| msgid "## 2. Verify and Import Signing Key"
 msgid "Verify and Import Signing Key"
 msgstr "Ondertekeningssleutel verifiëren en importeren"
 
@@ -113,7 +109,6 @@ msgstr "In dit gedeelte leggen we uit hoe je de Monero-ondertekeningssleutel oph
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:47
 #, no-wrap
-#| msgid "### 2.1. Get Signing Key"
 msgid "Get Signing Key"
 msgstr "Ondertekeningssleutel ophalen"
 
@@ -133,7 +128,6 @@ msgstr "Op Linux kun je de ondertekeningssleutel van binaryFate downloaden door 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:57
 #, no-wrap
-#| msgid "``` wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc ```"
 msgid ""
 "wget -O binaryfate.asc\n"
 "https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc\n"
@@ -145,7 +139,6 @@ msgstr ""
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:62
 #, no-wrap
-#| msgid "### 2.2. Verify Signing Key"
 msgid "Verify Signing Key"
 msgstr "Ondertekeningssleutel verifiëren"
 
@@ -170,12 +163,6 @@ msgstr "Controleer of de vingerafdruk overeenkomt:"
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:72
 #, no-wrap
-#| msgid ""
-#| "```\n"
-#| "pub   rsa4096/F0AF4D462A0BDF92 2019-12-12 [SCEA]\n"
-#| "      Key fingerprint = 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
-#| "uid                           binaryFate <binaryfate@getmonero.org>\n"
-#| "```\n"
 msgid ""
 "pub   rsa4096/F0AF4D462A0BDF92 2019-12-12 [SCEA]\n"
 "      Key fingerprint = 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
@@ -203,7 +190,6 @@ msgstr "**GA NIET VERDER** als de vingerafdruk **NIET** overeenkomt. Verwijder d
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:83
 #, no-wrap
-#| msgid "### 2.3. Import Signing Key"
 msgid "Import Signing Key"
 msgstr "Ondertekeningssleutel importeren"
 
@@ -228,14 +214,6 @@ msgstr "Als dit de eerste keer is dat je de sleutel hebt geïmporteerd, ziet de 
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:92
 #, no-wrap
-#| msgid ""
-#| "```\n"
-#| "gpg: key F0AF4D462A0BDF92: 2 signatures not checked due to missing keys\n"
-#| "gpg: key F0AF4D462A0BDF92: public key \"binaryFate <binaryfate@getmonero.org>\" imported\n"
-#| "gpg: Total number processed: 1\n"
-#| "gpg:               imported: 1\n"
-#| "gpg: marginals needed: 3  completes needed: 1  trust model: pgp\n"
-#| "```\n"
 msgid ""
 "gpg: key F0AF4D462A0BDF92: 2 signatures not checked due to missing keys\n"
 "gpg: key F0AF4D462A0BDF92: public key \"binaryFate <binaryfate@getmonero.org>\" imported\n"
@@ -258,12 +236,6 @@ msgstr "Als je de sleutel eerder hebt geïmporteerd, ziet de uitvoer er als volg
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:102
 #, no-wrap
-#| msgid ""
-#| "```\n"
-#| "gpg: key F0AF4D462A0BDF92: \"binaryFate <binaryfate@getmonero.org>\" not changed\n"
-#| "gpg: Total number processed: 1\n"
-#| "gpg:              unchanged: 1\n"
-#| "```\n"
 msgid ""
 "gpg: key F0AF4D462A0BDF92: \"binaryFate <binaryfate@getmonero.org>\" not changed\n"
 "gpg: Total number processed: 1\n"
@@ -277,7 +249,6 @@ msgstr ""
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:108
 #, no-wrap
-#| msgid "## 3. Download and Verify Hash File"
 msgid "Download and Verify Hash File"
 msgstr "Hashbestand downloaden en verifiëren"
 
@@ -291,7 +262,6 @@ msgstr "In dit gedeelte leggen we uit hoe je het hashbestand downloadt en de aut
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:113
 #, no-wrap
-#| msgid "### 3.1. Get Hash File"
 msgid "Get Hash File"
 msgstr "Hashbestand ophalen"
 
@@ -317,7 +287,6 @@ msgstr "``` wget -O hashes.txt https://www.getmonero.org/downloads/hashes.txt ``
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:124
 #, no-wrap
-#| msgid "### 3.2. Verify Hash File"
 msgid "Verify Hash File"
 msgstr "Hashbestand verifiëren"
 
@@ -348,14 +317,6 @@ msgstr "Als het bestand authentiek is, ziet de uitvoer er als volgt uit:"
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:136
 #, no-wrap
-#| msgid ""
-#| "```\n"
-#| "gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92\n"
-#| "gpg: Good signature from \"binaryFate <binaryfate@getmonero.org>\" [unknown]\n"
-#| "gpg: WARNING: This key is not certified with a trusted signature!\n"
-#| "gpg:          There is no indication that the signature belongs to the owner.\n"
-#| "Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
-#| "```\n"
 msgid ""
 "gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92\n"
 "gpg: Good signature from \"binaryFate <binaryfate@getmonero.org>\" [unknown]\n"
@@ -387,7 +348,6 @@ msgstr "**GA NIET VERDER** als er **BAD signature** in de uitvoer staat. Verwijd
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:151
 #, no-wrap
-#| msgid "## 4. Download and Verify Binary"
 msgid "Download and Verify Binary"
 msgstr "Binary downloaden en verifiëren"
 
@@ -401,7 +361,6 @@ msgstr "In dit gedeelte leggen we uit hoe je de Monero-binary voor je besturings
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:157
 #, no-wrap
-#| msgid "### 4.1. Get Monero binary"
 msgid "Get Monero binary"
 msgstr "Monero-binary ophalen"
 
@@ -423,7 +382,6 @@ msgstr "Op Linux kun je de opdrachtregelversie downloaden door de volgende opdra
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:166
 #, no-wrap
-#| msgid "``` wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64 ```"
 msgid "wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64\n"
 msgstr "wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64\n"
 
@@ -431,7 +389,6 @@ msgstr "wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.o
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:170
 #, no-wrap
-#| msgid "### 4.2. Binary Verification on Linux or Mac"
 msgid "Binary Verification on Linux or Mac"
 msgstr "Binary verifiëren op Linux of Mac"
 
@@ -447,7 +404,6 @@ msgstr "De stappen op zowel Linux als Mac zijn hetzelfde. In een terminal bereke
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:178
 #, no-wrap
-#| msgid "``` shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2 ```"
 msgid "shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2\n"
 msgstr "shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2\n"
 
@@ -462,12 +418,11 @@ msgstr "De uitvoer ziet er uit als volgt, maar met verschillende details per bin
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:186
 #, no-wrap
-#| msgid "``` 8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad monero-linux-x64-v0.15.0.1.tar.bz2 ```"
 msgid ""
 "8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad \n"
 "monero-linux-x64-v0.15.0.1.tar.bz2\n"
 msgstr ""
-"8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad\n" 
+"8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad\n"
 "monero-linux-x64-v0.15.0.1.tar.bz2\n"
 
 #
@@ -490,7 +445,6 @@ msgstr "**GA NIET VERDER** als de hash **NIET** overeenkomt. Verwijder dan de bi
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:197
 #, no-wrap
-#| msgid "### 4.3. Binary Verification on Windows"
 msgid "Binary Verification on Windows"
 msgstr "Binary verifiëren op Windows"
 
