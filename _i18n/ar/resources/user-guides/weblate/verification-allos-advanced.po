@@ -60,7 +60,7 @@ msgstr "[ تأكيد & إستيراد ملف مفتاح التوقيع ](#تأك
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:28
 msgid "[Download & Verify Hash File](#download-and-verify-hash-file)"
-msgstr ""
+msgstr "[ تنزيل & تأكد من ملف الهاش ](#تنزيل-&-تأكد-من-ملف-الهاش)"
 
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:30
