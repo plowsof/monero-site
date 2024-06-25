@@ -84,7 +84,7 @@ msgstr "+ في ويندوز انتقل إلى صفحة التنزيل [Gpg4win](
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:39
 msgid "+ On Mac, go to the [Gpgtools download page](https://gpgtools.org/) and follow the instructions for installation."
-msgstr "+ في ماك انتقل إلى صفحة تنزيل [Gpgtools] (https://gpgtools.org/) واتبع الإرشادات الخاصة بالتثبيت."
+msgstr "+ في ماك انتقل إلى صفحة تنزيل [Gpgtools](https://gpgtools.org/) واتبع الإرشادات الخاصة بالتثبيت."
 
 #
 #. type: Bullet: '+ '
@@ -338,7 +338,8 @@ msgstr "إذا كان الناتج يُظهر ** Good signature ** كما هو �
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:150
 msgid "If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead delete the file `hashes.txt` and go back to [section Get Hash File](#get-hash-file)."
-msgstr "إذا كان الناتج **BAD signature** **لا تُكمل** بل قم بحذف ملف `hashes.txt` وإرجع إلي [ إحصل علي ملف الهاش ](#إحصل-علي-ملف-الهاش)."
+msgstr "إذا كان الناتج **BAD signature** **لا تُكمل** بل قم بحذف ملف `hashes.txt`
+وإرجع إلي [ القسم إحصل علي ملف الهاش ](#إحصل-علي-ملف-الهاش)."
 
 #
 #. type: Title ##
