@@ -14,7 +14,7 @@
 خلال عملية تثبيت البرامج المطلوبه واستيراد مفتاح التوقيع وتنزيل الملفات
 الضرورية وأخيرًا التحقق من صحة ملفات التثبيت.
 
-## Table of Contents:
+## قائمه المحتوي:
 
 1. [Install GnuPG](#installing-gnupg)
 
@@ -24,7 +24,7 @@
 
 4. [Download & Verify Binary](#download-and-verify-binary)
 
-## Installing GnuPG
+## تثبيت GnuPG
 
 + في ويندوز انتقل إلى صفحة التنزيل [Gpg4win]
 (https://gpg4win.org/download.html) واتبع الإرشادات الخاصة بالتثبيت.
@@ -32,14 +32,14 @@
 + في ماك انتقل إلى صفحة تنزيل [Gpgtools] (https://gpgtools.org/) واتبع
 الإرشادات الخاصة بالتثبيت.
 
-+ On Linux, GnuPG is installed by default.
++ في ليُنكس ، GnuPG مُثبّت افتراضيًا.
 
-## Verify and Import Signing Key
+## تأكيد & إستيراد ملف مفتاح التوقيع
 
 سيغطي هذا القسم الحصول على مفتاح توقيع مونيرو والتأكد من صحته واستيراد
 المفتاح إلى GnuPG.
 
-### Get Signing Key
+### إحصل علي مفتاح التوقيع
 
 علي ويندوز أو ماك إذهب إلي [binaryFate's GPG
 key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc)
@@ -53,7 +53,7 @@ wget -O binaryfate.asc
 https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 ```
 
-### Verify Signing Key
+### تأكد من مفتاح التوقيع
 
 في جميع أنظمة التشغيل ، تحقق من بصمة `binaryfate.asc` بإصدار الأمر التالي في
 سطر الأوامر :
@@ -75,7 +75,7 @@ If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete
 the file `binaryfate.asc` and go back to [section Get Signing
 Key](#get-signing-key).
 
-### Import Signing Key
+### إستيراد مفتاح التوقيع
 
 من سطر الأوامر ، قم باستيراد مفتاح التوقيع:
 
@@ -100,11 +100,11 @@ gpg: Total number processed: 1
 gpg:              unchanged: 1
 ```
 
-## Download and Verify Hash File
+## تنزيل & تأكد من ملف الهاش
 
 سيغطي هذا القسم تنزيل ملف الهاش والتحقق من صحته.
 
-### Get Hash File
+### إحصل علي ملف الهاش
 
 على نظام ويندوز أو ماك انتقل إلى [ملف الهاشات على getmonero.org] ({{
 site.baseurl }}/downloads/hashes.txt) واحفظ الصفحة كـ `hashes.txt` إلى مجلدك
@@ -114,7 +114,7 @@ site.baseurl }}/downloads/hashes.txt) واحفظ الصفحة كـ `hashes.txt` 
 
 ``` wget -O hashes.txt https://www.getmonero.org/downloads/hashes.txt ```
 
-### Verify Hash File
+### تأكد من ملف الهاش
 
 ملف الهاش موقع بمفتاح `81AC 591F E9C4 B65C 5806 AFC3 F0AF 4D46 2A0B DF92`,
 كما هو موضح في الناتج أدناه.
@@ -141,12 +141,12 @@ If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead
 delete the file `hashes.txt` and go back to [section Get Hash
 File](#get-hash-file).
 
-## Download and Verify Binary
+## تحميل & تأكد من ملفات التسطيب
 
 سيغطي هذا القسم تنزيل برنامج مونيرو لنظام التشغيل الخاص بك ، والحصول على هاش
 `SHA256` من التنزيل الخاص بك ، والتحقق من صحته.
 
-### Get Monero binary
+### الحصول علي ملفات التسطيب
 
 On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/)
 and download the correct file for your operating system. Save the file to
@@ -158,7 +158,7 @@ your home directory. **Do not extract the files yet.**
 wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64
 ```
 
-### Binary Verification on Linux or Mac
+### تأكد من الملفات علي ليُنكس اوماك
 
 The steps for both Linux and Mac are the same. From a terminal, get the
 `SHA256` hash of your downloaded Monero binary. As an example this guide
@@ -184,7 +184,7 @@ If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the
 binary you downloaded and go back to [section Get Monero
 binary](#get-monero-binary).
 
-### Binary Verification on Windows
+### تأكد من الملفات علي ويندوز
 
 From a terminal, get the `SHA256` hash of your downloaded Monero binary. As
 an example this guide will use the `Windows, 64bit` GUI binary. Substitute

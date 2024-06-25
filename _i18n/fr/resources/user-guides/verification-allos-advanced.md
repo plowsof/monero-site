@@ -19,7 +19,7 @@ processus d'installation des applications requises, d'import de la clef de
 signature, de téléchargement des fichiers nécessaires et enfin de
 vérification de l'authenticité de votre binaire.
 
-## Table of Contents:
+## Table des matières
 
 1. [Install GnuPG](#installing-gnupg)
 
@@ -29,7 +29,7 @@ vérification de l'authenticité de votre binaire.
 
 4. [Download & Verify Binary](#download-and-verify-binary)
 
-## Installing GnuPG
+## Installation de GnuPG
 
 + Sur Windows, rendez-vous sur la [page de téléchargement de
 Gpg4win](https://gpg4win.org/download.html) et suivez les instructions
@@ -38,14 +38,14 @@ d'installation.
 + Sur Mac, rendez-vous sur la [page de téléchargement de
 Gpgtools](https://gpgtools.org/) et suivez les instructions d'installation.
 
-+ On Linux, GnuPG is installed by default.
++ Sur Linux, GnuPG est installé par défaut.
 
-## Verify and Import Signing Key
+## Vérifier et Importer la Clef de Signature
 
 Cette rubrique couvre le téléchargement de la clef de signature Monero, la
 vérification que cette clef est correcte et l'import de la clef dans GnuPG.
 
-### Get Signing Key
+### Obtenir la Clef de Signature
 
 Sur Windows et Mac, rendez-vous sur [la clef GPG de
 binaryFate](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc),
@@ -60,7 +60,7 @@ wget -O binaryfate.asc
 https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 ```
 
-### Verify Signing Key
+### Vérifier la Clef de Signature
 
 Sur l'ensemble des systèmes d'exploitation, vérifiez l'empreinte de
 `binaryfate.asc` en tapant la commande suivante dans un terminal :
@@ -82,7 +82,7 @@ If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete
 the file `binaryfate.asc` and go back to [section Get Signing
 Key](#get-signing-key).
 
-### Import Signing Key
+### Importer la Clef de Signature
 
 Depuis un terminal, importez la clef de signature :
 
@@ -108,12 +108,12 @@ gpg: Total number processed: 1
 gpg:              unchanged: 1
 ```
 
-## Download and Verify Hash File
+## Télécharger et Vérifier le Fichier de Hachage
 
 Cette rubrique couvre le téléchargement du fichier signé des hachages
 valides et la vérification de son authenticité.
 
-### Get Hash File
+### Télécharger le Fichier de Hachage
 
 Sur Windows et Mac, rendez-vous sur sur la [page de haches
 getmonero.org](https://getmonero.org/fr/downloads/hashes.txt) et sauvegardez
@@ -124,7 +124,7 @@ commande suivante :
 
 ``` wget -O hashes.txt https://www.getmonero.org/downloads/hashes.txt ```
 
-### Verify Hash File
+### Vérifier le Fichier de Hachage
 
 Le fichier de hachage est signé avec la clef `81AC 591F E9C4 B65C 5806 AFC3
 F0AF 4D46 2A0B DF92`, comme vous pouvez le voir dans la sortie ci-dessous.
@@ -151,13 +151,13 @@ If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead
 delete the file `hashes.txt` and go back to [section Get Hash
 File](#get-hash-file).
 
-## Download and Verify Binary
+## Télécharger et Vérifier les binaires
 
 Cette rubrique couvre le téléchargement du binaire Monero pour votre système
 d'exploitation, la récupération du hachage `SHA256` de votre téléchargement
 et la vérification de son authenticité.
 
-### Get Monero binary
+### Télécharger les binaires Monero
 
 On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/)
 and download the correct file for your operating system. Save the file to
@@ -170,7 +170,7 @@ commande suivante :
 wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64
 ```
 
-### Binary Verification on Linux or Mac
+### Vérifier les binaires sur Linux et Mac
 
 The steps for both Linux and Mac are the same. From a terminal, get the
 `SHA256` hash of your downloaded Monero binary. As an example this guide
@@ -187,7 +187,7 @@ binaire. Votre hachage `SHA256` deoit correspondre à celui indiqué dans le
 fichier `hashes.txt` pour votre binaire.
 
 ```
-8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad 
+8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad
 monero-linux-x64-v0.15.0.1.tar.bz2
 ```
 
@@ -198,7 +198,7 @@ If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the
 binary you downloaded and go back to [section Get Monero
 binary](#get-monero-binary).
 
-### Binary Verification on Windows
+### Vérifier les binaires sur Windows
 
 From a terminal, get the `SHA256` hash of your downloaded Monero binary. As
 an example this guide will use the `Windows, 64bit` GUI binary. Substitute
