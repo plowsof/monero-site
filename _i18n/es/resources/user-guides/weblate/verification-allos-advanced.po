@@ -22,7 +22,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"yes\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
 #
 #. type: Plain text
@@ -67,7 +67,7 @@ msgstr "[Descargar y Verificar Archivo Hash](#descargar-y-verificar-archivo-hash
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:30
 msgid "[Download & Verify Binary](#download-and-verify-binary)"
-msgstr "Descargar y Verificar Binarios](#descargar-y-verificar-binarios)"
+msgstr "[Descargar y Verificar Binarios](#descargar-y-verificar-binarios)"
 
 #
 #. type: Title ##
