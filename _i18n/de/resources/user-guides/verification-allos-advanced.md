@@ -26,7 +26,7 @@ Binärdatei.
 
 1. [GnuPG installieren](#gnupg-installieren)
 
-2. Verifikation und Import des
+2. [Verifikation und Import des
    Signaturschlüssels](#verifikation-und-import-des-signaturschlüssels)
 
 3. [Download und Verifikation der
@@ -215,7 +215,7 @@ Erhalte durch ein Terminal den `SHA256`-Hashwert deiner heruntergeladenen
 Monero-Binärdatei. Als Beispiel nutzt diese Anleitung die `Windows,
 64bit`-Binärdatei des GUIs. Ersetze `monero-gui-win-x64-v0.15.0.1.zip` durch
 den Namen der von dir in [Abschnitt Monero Binärdatei
-herunterladen](monero-binärdatei-herunterladen) heruntergeladenen
+herunterladen](#monero-binärdatei-herunterladen) heruntergeladenen
 Binärdatei.
 
 ``` certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256 ```
