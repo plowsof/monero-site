@@ -37,7 +37,7 @@ Restart Tor:
 sudo systemctl restart tor@default
 ```
 
-Make sure Tor started correctly:
+Asegúrate de que Tor se inició correctamente:
 ```
 sudo systemctl status tor@default.service
 ```
@@ -50,7 +50,7 @@ sudo cat /var/lib/tor/monero-service/hostname
 It will be something like 4dcj312uxag2r6ye.onion -- use this for
 `HIDDEN_SERVICE` below.
 
-### Configure Daemon to allow RPC
+### Configurar Daemon para permitir RPC
 
 En este ejemplo, no usamos Tor para interactuar con la red p2p, solo para
 conectar con el nodo de monero, así que solo se necesita el servicio oculto
@@ -68,12 +68,12 @@ rpc-login=USERNAME:PASSWORD
 
 Reinicia el Daemon: `monerod stop_daemon; sleep 10; monerod --detach`
 
-Make sure the daemon started correctly:
+Asegúrate de que el daemon se inició correctamente:
 ```
 tail -f ~/.bitmonero/bitmonero.log
 ```
 
-## Connecting to your node from a local wallet
+## Conectando a tu nodo desde un monedero local
 
 Make sure you have Tor running locally so you can connect to the Tor
 network. One simple way on the Mac is to just start the Tor browser and use
@@ -91,9 +91,9 @@ daemon if everything is working correctly.  If not, add a ` -v ` to the
 beginning and try to debug why it's not connecting, check firewalls,
 password, etc.
 
-Once it is working, you can connect using your cli wallet:
+Una vez que esté funcionando, puedes conectarte usando tu monedero cli:
 ```
-./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET
+./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET ``` Reemplaza los valores de arriba como sea necesario.
 ```
 Replace values above as needed.
 
@@ -112,7 +112,7 @@ This will allow the GUI to communicate with the Tor network.  Once the GUI is op
 In future versions of the GUI, we expect to add direct Tor / I2P support so
 that `torsocks` + commandline are not needed.
 
-# Additional resources
+# Recursos adicionales
 
 * [ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)
 * [Using Tor](https://github.com/monero-project/monero#using-tor) (Monero

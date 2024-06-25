@@ -32,7 +32,6 @@ msgstr "Ниже нами приводится пример конфигурац
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:5
 #, no-wrap
-#| msgid "## Create a Tor hidden service for RPC"
 msgid "Create a Tor hidden service for RPC"
 msgstr "Создание скрытой службы Tor для RPC"
 
@@ -58,7 +57,6 @@ msgstr "Файл: `/etc/torrc`"
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:13
 #, no-wrap
-#| msgid "``` HiddenServiceDir /var/lib/tor/monero-service/ HiddenServicePort 18081 127.0.0.1:18081 ``` Restart Tor: ``` sudo systemctl restart tor@default ```"
 msgid ""
 "HiddenServiceDir /var/lib/tor/monero-service/\n"
 "HiddenServicePort 18081 127.0.0.1:18081\n"
@@ -86,7 +84,6 @@ msgstr "Убедитесь в том, что Tor запустился прави
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:23
 #, no-wrap
-#| msgid "Make sure Tor started correctly: ``` sudo systemctl status tor@default.service ```"
 msgid "sudo systemctl status tor@default.service\n"
 msgstr "sudo systemctl status tor@default.service\n"
 
@@ -110,7 +107,6 @@ msgstr ""
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:33
 #, no-wrap
-#| msgid "### Configure Daemon to allow RPC"
 msgid "Configure Daemon to allow RPC"
 msgstr "Конфигурирование демона для использования RPC"
 
@@ -130,7 +126,6 @@ msgstr "Файл: `~/.bitmonero/bitmonero.conf` (в домашней дирек�
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:39
 #, no-wrap
-#| msgid "``` no-igd=1 restricted-rpc=1 rpc-login=USERNAME:PASSWORD ``` (Make up a USERNAME and PASSWORD to use for RPC)"
 msgid ""
 "no-igd=1\n"
 "restricted-rpc=1\n"
@@ -143,7 +138,6 @@ msgstr ""
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:45
-#| msgid "``` no-igd=1 restricted-rpc=1 rpc-login=USERNAME:PASSWORD ``` (Make up a USERNAME and PASSWORD to use for RPC)"
 msgid "(Make up a USERNAME and PASSWORD to use for RPC)"
 msgstr "(Чтобы использовать RPC придумайте ИМЯ ПОЛЬЗОВАТЕЛЯ (USERNAME) и ПАРОЛЬ (PASSWORD))"
 
@@ -156,7 +150,6 @@ msgstr "Перезапустите демон: `monerod stop_daemon; sleep 10; m
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:49
-#| msgid "Make sure the daemon started correctly: ``` tail -f ~/.bitmonero/bitmonero.log ```"
 msgid "Make sure the daemon started correctly:"
 msgstr "Убедитесь в том, что демон запустился правильно:"
 
@@ -170,7 +163,6 @@ msgstr "tail -f ~/.bitmonero/bitmonero.log\n"
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:53
 #, no-wrap
-#| msgid "## Connecting to your node from a local wallet"
 msgid "Connecting to your node from a local wallet"
 msgstr "Подключение к вашему узлу с локального кошелька"
 
@@ -189,7 +181,6 @@ msgstr "Затем следует протестировать простую к
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:58
 #, no-wrap
-#| msgid "Then test a simple RPC command, eg: ``` curl --socks5-hostname 127.0.0.1:9150 -u USERNAME:PASSWORD --digest -X POST http://HIDDEN_SERVICE.onion:18081/json_rpc -d '{\"jsonrpc\":\"2.0\",\"id\":\"0\",\"method\":\"get_info\"}' -H 'Content-Type: application/json' ``` Replace `USERNAME`, `PASSWORD`, and `HIDDEN_SERVICE` with values from above.  Change `9150` to another port if needed by your local Tor daemon."
 msgid "curl --socks5-hostname 127.0.0.1:9150 -u USERNAME:PASSWORD --digest -X POST http://HIDDEN_SERVICE.onion:18081/json_rpc -d '{\"jsonrpc\":\"2.0\",\"id\":\"0\",\"method\":\"get_info\"}' -H 'Content-Type: application/json'\n"
 msgstr "curl --socks5-hostname 127.0.0.1:9150 -u USERNAME:PASSWORD --digest -X POST http://HIDDEN_SERVICE.onion:18081/json_rpc -d '{\"jsonrpc\":\"2.0\",\"id\":\"0\",\"method\":\"get_info\"}' -H 'Content-Type: application/json'\n"
 
@@ -213,7 +204,6 @@ msgstr "Как только всё заработает, можно подсое
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:66
 #, no-wrap
-#| msgid "Once it is working, you can connect using your cli wallet: ``` ./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET ``` Replace values above as needed."
 msgid "./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET\n"
 msgstr "./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET\n"
 
@@ -226,14 +216,12 @@ msgstr "По необходимости можно заменить значен
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:71
 #, no-wrap
-#| msgid "## GUI"
 msgid "GUI"
 msgstr "GUI"
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:74
-#| msgid "If you are interested in experimenting with the GUI over Tor, you can try `torsocks` (note this may leak info -- do not rely on it if your life depends on maintaining anonymity).  Here is an example on MacOS, adjust as needed for the Linux GUI: ``` torsocks --port 9150 /Applications/monero-wallet-gui.app/Contents/MacOS/monero-wallet-gui ```"
 msgid "If you are interested in experimenting with the GUI over Tor, you can try `torsocks` (note this may leak info -- do not rely on it if your life depends on maintaining anonymity).  Here is an example on MacOS, adjust as needed for the Linux GUI:"
 msgstr "Если вам хочется поэкспериментировать с соединением GUI через Tor, вы можете попытаться воспользоваться `torsocks` (следует отметить, что это может привести к утечке информации — не стоит особо полагаться на этот вариант, если от вашей анонимности будет зависеть ваша жизнь). Мы приводим пример для MacOS, который при необходимости можно адаптировать по Linux GUI:"
 
@@ -247,7 +235,6 @@ msgstr " torsocks --port 9150 /Applications/monero-wallet-gui.app/Contents/MacOS
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:79
 #, no-wrap
-#| msgid "This will allow the GUI to communicate with the Tor network.  Once the GUI is open and a wallet loaded, you must configure it to connect to your Tor hidden service by adding your onion address to: \"Settings > Node > Remote node > Address\"."
 msgid "This will allow the GUI to communicate with the Tor network.  Once the GUI is open and a wallet loaded, you must configure it to connect to your Tor hidden service by adding your onion address to:  \"Settings > Node > Remote node > Address\".\n"
 msgstr "Это позволит GUI связаться с сетью Tor. Как только будет открыт GUI и кошелёк будет запущен, будет необходимо конфигурировать его для соединения с вашей скрытой службой Tor, добавив соответствующий луковый адрес: \"Settings > Node > Remote node > Address\".\n"
 
@@ -261,13 +248,11 @@ msgstr "Мы надеемся, что в следующих версиях GUI �
 #. type: Title #
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:82
 #, no-wrap
-#| msgid "# Additional resources"
 msgid "Additional resources"
 msgstr "Дополнительные ссылки"
 
 #. type: Bullet: '* '
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:85
-#| msgid "[ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/ANONYMITY_NETWORKS.md)"
 msgid "[ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)"
 msgstr "[ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)"
 
