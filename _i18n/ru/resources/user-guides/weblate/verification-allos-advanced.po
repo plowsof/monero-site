@@ -52,22 +52,22 @@ msgstr "Содержание:"
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:24
 msgid "[Install GnuPG](#installing-gnupg)"
-msgstr "[Установка GnuPG](#Установка-GnuPG)"
+msgstr "[Установка GnuPG](#установка-gnupg)"
 
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:26
 msgid "[Verify & Import Signing Key](#verify-and-import-signing-key)"
-msgstr "[Проверка и импорт ключа подписи](#Верификация-и-импорт-ключа-подписи)"
+msgstr "[Проверка и импорт ключа подписи](#верификация-и-импорт-ключа-подписи)"
 
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:28
 msgid "[Download & Verify Hash File](#download-and-verify-hash-file)"
-msgstr "[Загрузка и проверка хешей файла](#Загрузка-и-верификация-хеш-файла)"
+msgstr "[Загрузка и проверка хешей файла](#загрузка-и-верификация-хеш-файла)"
 
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:30
 msgid "[Download & Verify Binary](#download-and-verify-binary)"
-msgstr "[Загрузка и верификация двоичного файла](#Загрузка-и-верификация-двоичного-файла)"
+msgstr "[Загрузка и верификация двоичного файла](#загрузка-и-верификация-двоичного-файла)"
 
 #
 #. type: Title ##
