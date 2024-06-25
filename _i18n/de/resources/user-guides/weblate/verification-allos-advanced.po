@@ -51,7 +51,7 @@ msgstr "Inhaltsverzeichnis:"
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:24
 msgid "[Install GnuPG](#installing-gnupg)"
-msgstr [GnuPG installieren](#gnupg-installieren)"
+msgstr "[GnuPG installieren](#gnupg-installieren)"
 
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:26
