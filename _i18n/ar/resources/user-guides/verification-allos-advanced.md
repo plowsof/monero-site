@@ -71,9 +71,8 @@ uid                           binaryFate <binaryfate@getmonero.org>
 
 إذا كانت البصمه **صحيحه** يمكنك المُتابعه.
 
-If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete
-the file `binaryfate.asc` and go back to [section Get Signing
-Key](#get-signing-key).
+إذا كانت البصمه ** غير متطابقه ** **لا تُكمل** بل قم بحذف ملف
+`binaryfate.asc` وإذهب إلي [إحصل علي مفتاح التوقيع](#get-signing-key).
 
 ### إستيراد مفتاح التوقيع
 
@@ -137,9 +136,8 @@ Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92
 إذا كان الناتج يُظهر ** Good signature ** كما هو موضح في المثال فيمكنك
 المتابعة.
 
-If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead
-delete the file `hashes.txt` and go back to [section Get Hash
-File](#get-hash-file).
+إذا كان الناتج **BAD signature** **لا تُكمل** بل قم بحذف ملف `hashes.txt`
+وإرجع إلي [إحصل علي ملف الهاش](#get-hash-file).
 
 ## تحميل & تأكد من ملفات التسطيب
 
@@ -148,9 +146,9 @@ File](#get-hash-file).
 
 ### الحصول علي ملفات التسطيب
 
-On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/)
-and download the correct file for your operating system. Save the file to
-your home directory. **Do not extract the files yet.**
+علي ويندوز أو ماك توجه إلي [getmonero.org]({{ site.baseurl }}/downloads/)
+وقم بتنزيل الملف الخاص بنظام التشغيل الخاص بك. قم بحفظ الملف لمجلدك
+الرئيسي. **لا تقم بفك الضغط **
 
 في Linux ، يمكنك تنزيل واجهه سطر الأوامر عن طريق إصدار الأمر التالي:
 
@@ -160,36 +158,33 @@ wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/l
 
 ### تأكد من الملفات علي ليُنكس اوماك
 
-The steps for both Linux and Mac are the same. From a terminal, get the
-`SHA256` hash of your downloaded Monero binary. As an example this guide
-will use the `Linux, 64bit` GUI binary. Substitute
-`monero-gui-linux-x64-v0.15.0.1.tar.bz2` with the name of the binary that
-you downloaded in [section Get Monero binary](#get-monero-binary).
+هذه الخطوات لنظامي تشغيل لينُكس وماك. من سطر الأوامر إحصل علي هاش `SHA256`
+لملف التثبيت. كمثال سيستخدم هذا الدليل واجهه المستخدم الرسوميه علي ليُنكس ,
+إستبدل `monero-gui-linux-x64-v0.15.0.1.tar.bz2` بإسم ملف التثبيت الذي قمت
+بتنزيله في [الحصول علي ملفات التسطيب](#get-monero-binary).
 
 ```
-shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2
+shasum -a 256 monero-gui-linux-x64-v0.15.0.1.tar.bz2
 ```
 
 سيبدو الناتج كهذا ، ولكن سيكون مختلفًا لكل ملف. يجب أن يتطابق هاش `SHA256`
 الخاصة بك مع الهاش في القائمة المدرجة في ملف` hashes.txt` لملف التثبيت.
 
 ```
-8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad 
-monero-linux-x64-v0.15.0.1.tar.bz2
+b0f43387b31202f381c918660d9bc32a3d28a4733d391b1625a0e15737c5388 monero-gui-linux-x64-v0.15.0.1.tar.bz2
 ```
 
 إذا كان الهاش **مُتطابق** يمكنك الأن فك الضفط والتثبيت.
 
-If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the
-binary you downloaded and go back to [section Get Monero
-binary](#get-monero-binary).
+إذا كان الهاش **غير مُتطابق** , ** لا تُكمل ** بل إحذف ملف التثبيت وإرجع إلي
+[الحصول علي ملفات التسطيب](#get-monero-binary).
 
 ### تأكد من الملفات علي ويندوز
 
-From a terminal, get the `SHA256` hash of your downloaded Monero binary. As
-an example this guide will use the `Windows, 64bit` GUI binary. Substitute
-`monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you
-downloaded in [section Get Monero binary](#get-monero-binary).
+من سطر الأوامر احصل على هاش `SHA256` من ملف التثبيت الذي تم تنزيله. على سبيل
+المثال ، سيستخدم هذا الدليل ثنائي واجهة المستخدم الرسومية لنظام ويندوز ، 64
+بت. استبدل `monero-gui-win-x64-v0.15.0.1.zip` باسم الملف الذي قمت بتنزيله في
+[الحصول علي ملفات التسطيب](#get-monero-binary).
 
 ``` certUtil -hashfile monero-gui-win-x64-v0.12.0.0.zip SHA256 ```
 
@@ -204,6 +199,5 @@ ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18
 
 إذا كان الهاش **مُتطابق** يمكنك الأن فك الضفط والتثبيت.
 
-If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the
-binary you downloaded and go back to [section Get Monero
-binary](#get-monero-binary).
+إذا كان الهاش **غير مُتطابق** , ** لا تُكمل ** بل إحذف ملف التثبيت وإرجع إلي
+[الحصول علي ملفات التسطيب](#get-monero-binary).
