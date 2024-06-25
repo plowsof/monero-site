@@ -32,7 +32,7 @@ msgstr "التأكد من صحه ملفات التثبيت يجب أن يكون 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:15
 msgid "To protect the integrity of the binaries the Monero team provides a cryptographically signed list of all the [SHA256](https://en.wikipedia.org/wiki/SHA-2) hashes. If your downloaded binary has been tampered with it will be produce a [different hash](https://en.wikipedia.org/wiki/File_verification) than the one in the file."
-msgstr "لحماية تكامل الثنائيات ، يوفر فريق مونيرو قائمة موقعة مشفرة لكل الملفات [SHA256] (https://en.wikipedia.org/wiki/SHA-2). إذا تم العبث بالملف الذي تم تنزيله ، فسيتم إنتاجه [هاش مختلف] (https://en.wikipedia.org/wiki/File_verification) عن الموجود في الملف."
+msgstr "لحماية تكامل الثنائيات ، يوفر فريق مونيرو قائمة موقعة مشفرة لكل الملفات [ SHA256 ](https://en.wikipedia.org/wiki/SHA-2). إذا تم العبث بالملف الذي تم تنزيله ، فسيتم إنتاجه [ هاش مختلف ](https://en.wikipedia.org/wiki/File_verification) عن الموجود في الملف."
 
 #
 #. type: Plain text
@@ -267,7 +267,7 @@ msgstr "إحصل علي ملف الهاش"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:118
 msgid "On Windows or Mac, go to the [hashes file on getmonero.org]({{ site.baseurl_root }}/downloads/hashes.txt) and save the page as `hashes.txt` to your home directory."
-msgstr "على نظام ويندوز أو ماك انتقل إلى [ملف الهاشات على getmonero.org] ({{ site.baseurl }}/downloads/hashes.txt) واحفظ الصفحة كـ `hashes.txt` إلى مجلدك الرئيسي."
+msgstr "على نظام ويندوز أو ماك انتقل إلى [ملف الهاشات على getmonero.org]({{ site.baseurl }}/downloads/hashes.txt) واحفظ الصفحة كـ `hashes.txt` إلى مجلدك الرئيسي."
 
 #
 #. type: Plain text
