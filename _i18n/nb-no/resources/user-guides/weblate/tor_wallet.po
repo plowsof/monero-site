@@ -241,7 +241,7 @@ msgstr "Hvis du er interessert i å eksperimentere med GUI-en over Tor, kan du p
 #: ../_i18n/en/resources/user-guides/tor_wallet.md:74
 #, no-wrap
 msgid "torsocks --port 9150 /Applications/monero-wallet-gui.app/Contents/MacOS/monero-wallet-gui\n"
-msgstr "torsocks --port 9150 /Applications/monero-wallet-gui.app/Contents/MacOS/monero-wallet-gui\n
+msgstr "torsocks --port 9150 /Applications/monero-wallet-gui.app/Contents/MacOS/monero-wallet-gui\n"
 
 #
 #. type: Plain text
