@@ -60,7 +60,7 @@ msgstr " [Vérifier & Importer la Clef de Signature](#vérifier-et-importer-la-c
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:28
 msgid "[Download & Verify Hash File](#download-and-verify-hash-file)"
-msgstr "Télécharger & Vérifier le Fichier de Hachage](#télécharger-et-vérifier-le-fichier-de-hachage)"
+msgstr "[Télécharger & Vérifier le Fichier de Hachage](#télécharger-et-vérifier-le-fichier-de-hachage)"
 
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:30
