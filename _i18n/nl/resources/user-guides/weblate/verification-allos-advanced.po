@@ -181,7 +181,6 @@ msgstr "Als de vingerafdruk **WEL** overeenkomt, kun je verder gaan."
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:82
-#| msgid "If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the file `binaryfate.asc` and go back to [section 2.1](#21-get-signing-key)."
 msgid "If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the file `binaryfate.asc` and go back to [section Get Signing Key](#get-signing-key)."
 msgstr "**GA NIET VERDER** als de vingerafdruk **NIET** overeenkomt. Verwijder dan het bestand `binaryfate.asc` en ga terug naar [paragraaf Ondertekeningssleutel ophalen](#ondertekeningssleutel-ophalen)."
 
@@ -338,7 +337,6 @@ msgstr "Als er **Good signature** in de uitvoer staat, zoals in het voorbeeld, k
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:150
-#| msgid "If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead delete the file `hashes.txt` and go back to [section 3.1](#31-get-hash-file)."
 msgid "If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead delete the file `hashes.txt` and go back to [section Get Hash File](#get-hash-file)."
 msgstr "**GA NIET VERDER** als er **BAD signature** in de uitvoer staat. Verwijder dan het bestand `hashes.txt` en ga terug naar [paragraaf Hashbestand ophalen](#hashbestand-ophalen)."
 
@@ -365,7 +363,6 @@ msgstr "Monero-binary ophalen"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:162
-#| msgid "On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/) and download the correct file for your operating system. Save the file to your home directory. **Do not extract the files yet.**"
 msgid "On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/)  and download the correct file for your operating system. Save the file to your home directory. **Do not extract the files yet.**"
 msgstr "Op Windows of een Mac ga je naar [getmonero.org]({{ site.baseurl }}/downloads/) en download je het juiste bestand voor je besturingssysteem. Sla het bestand op in je homedirectory. **Pak de bestanden nog niet uit.**"
 
@@ -392,7 +389,6 @@ msgstr "Binary verifiëren op Linux of Mac"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:177
-#| msgid "The steps for both Linux and Mac are the same. From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Linux, 64bit` GUI binary. Substitute `monero-gui-linux-x64-v0.15.0.1.tar.bz2` with the name of the binary that you downloaded in [section 4.1](#41-get-monero-binary)."
 msgid "The steps for both Linux and Mac are the same. From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Linux, 64bit` GUI binary. Substitute `monero-gui-linux-x64-v0.15.0.1.tar.bz2` with the name of the binary that you downloaded in [section Get Monero binary](#get-monero-binary)."
 msgstr "De stappen op zowel Linux als Mac zijn hetzelfde. In een terminal bereken je de `SHA256`-hash van je gedownloade Monero-binary. Als voorbeeld gebruiken we hier het binaire bestand voor 64-bits Linux. Vervang `monero-gui-linux-x64-v0.15.0.1.tar.bz2` door de naam van het binaire bestand dat je hebt gedownload in [paragraaf Monero-binary ophalen](#monero-binary-ophalen)."
 
@@ -432,7 +428,6 @@ msgstr "Als de hash **WEL** overeenkomt, ben je klaar met deze handleiding! Dan 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:196
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:220
-#| msgid "If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the binary you downloaded and go back to [section 4.1](#41-get-monero-binary)."
 msgid "If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the binary you downloaded and go back to [section Get Monero binary](#get-monero-binary)."
 msgstr "**GA NIET VERDER** als de hash **NIET** overeenkomt. Verwijder dan de binary die je hebt gedowload en ga terug naar [paragraaf Monero-binary ophalen](#monero-binary-ophalen)."
 
@@ -446,7 +441,6 @@ msgstr "Binary verifiëren op Windows"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:203
-#| msgid "From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Windows, 64bit` GUI binary. Substitute `monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you downloaded in [section 4.1](#41-get-monero-binary)."
 msgid "From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Windows, 64bit` GUI binary. Substitute `monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you downloaded in [section Get Monero binary](#get-monero-binary)."
 msgstr "In een terminal bereken je de `SHA256`-hash van je gedownloade Monero-binary. Als voorbeeld gebruiken we hier het binaire bestand voor de 64-bits Windows GUI. Vervang `monero-gui-win-x64-v0.12.0.0.zip` door de naam van het binaire bestand dat je hebt gedownload in [paragraaf Monero-binary ophalen](#monero-binary-ophalen)."
 
@@ -460,7 +454,6 @@ msgstr "``` certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256 ```"
 #. type: Fenced code block
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:210
 #, no-wrap
-#| msgid "``` SHA256 hash of file monero-gui-win-x64-v0.12.0.0.zip: 4b 9f 31 68 6e ca ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18 64 CertUtil: -hashfile command completed successfully.  ```"
 msgid ""
 "SHA256 hash of file monero-gui-win-x64-v0.12.0.0.zip: 4b 9f 31 68 6e ca\n"
 "ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18\n"
