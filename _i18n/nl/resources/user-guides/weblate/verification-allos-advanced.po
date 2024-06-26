@@ -20,7 +20,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"yes\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
 #
 #. type: Plain text
@@ -55,17 +55,17 @@ msgstr "[GnuPG installeren](#gnupg-installeren)"
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:26
 msgid "[Verify & Import Signing Key](#verify-and-import-signing-key)"
-msgstr "[Ondertekeningssleutel verifiëren en importeren](#)"
+msgstr "[Ondertekeningssleutel verifiëren en importeren](#ondertekeningssleutel-verifiëren-en-importeren)"
 
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:28
 msgid "[Download & Verify Hash File](#download-and-verify-hash-file)"
-msgstr "[Hashbestand downloaden en verifiëren](#)"
+msgstr "[Hashbestand downloaden en verifiëren](#hashbestand-downloaden-en-verifiëren)"
 
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-allos-advanced.md:30
 msgid "[Download & Verify Binary](#download-and-verify-binary)"
-msgstr "[Binary downloaden en verifiëren](#)"
+msgstr "[Binary downloaden en verifiëren](#binary-downloaden-en-verifiëren)"
 
 #
 #. type: Title ##
