@@ -26,7 +26,7 @@ vérification de l'authenticité de votre binaire.
 2.  [Vérifier & Importer la Clef de
    Signature](#vérifier-et-importer-la-clef-de-signature)
 
-3. Télécharger & Vérifier le Fichier de
+3. [Télécharger & Vérifier le Fichier de
    Hachage](#télécharger-et-vérifier-le-fichier-de-hachage)
 
 4. [Télécharger & Vérifier les
