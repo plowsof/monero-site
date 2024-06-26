@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 Voordat je de Monero-software uitpakt, installeert en gebruikt, moet je de
 binaire bestanden van Monero verifiëren. Dit is de enige manier om er zeker
@@ -22,11 +22,13 @@ je binaire bestand authentiek is.
 
 1. [GnuPG installeren](#gnupg-installeren)
 
-2. [Ondertekeningssleutel verifiëren en importeren](#)
+2. [Ondertekeningssleutel verifiëren en
+   importeren](#ondertekeningssleutel-verifiëren-en-importeren)
 
-3. [Hashbestand downloaden en verifiëren](#)
+3. [Hashbestand downloaden en
+   verifiëren](#hashbestand-downloaden-en-verifiëren)
 
-4. [Binary downloaden en verifiëren](#)
+4. [Binary downloaden en verifiëren](#binary-downloaden-en-verifiëren)
 
 ## GnuPG installeren
 
