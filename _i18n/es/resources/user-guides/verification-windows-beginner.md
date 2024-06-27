@@ -20,33 +20,21 @@ necesarios, y finalmente verificar que tu binario es auténtico.
 
 ## Table of Contents
 
-### [1. Gpg4win Installer](#1-using-gpg4win-installer)
-  - [1.1. Getting Gpg4win Installer](#11-getting-gpg4win-installer)
-    + [1.1.1. Download Gpg4win](#111-download-gpg4win)
-    + [1.1.2. Launch Gpg4win](#112-launch-gpg4win)
-  - [1.2. Use Gpg4win Installer](#12-use-gpg4win-installer)
-### [2. Import Signing Key](#2-monero-signing-key)
-  - [2.1. Download Signing Key](#21-download-signing-key)
-  - [2.2. Initialize Kleopatra](#22-initialize-kleopatra)
-    + [2.2.1. Import Signing Key](#221-import-signing-key)
-    + [2.2.2. Create Key Pair](#222-create-key-pair)
-  - [2.3. Verify Signing Key](#23-verify-signing-key)
-### [3. Verify Hash File](#3-hash-file-verification)
-  - [3.1. Download Hash File](#31-download-hash-file)
-  - [3.2. Verify Hash File](#32-verify-hash-file)
-### [4. Verify Binary File](#4-binary-file-verification)
-  - [4.1. Download Binary](#41-download-binary)
-  - [4.2. Verify Binary](#42-verify-binary)
+1. [Gpg4win Installer](#using-gpg4win-installer)
 
-## 1. Using Gpg4win Installer
+2. [Import Signing Key](#monero-signing-key)
+
+3. [Verify Hash File](#hash-file-verification)
+
+4. [Verify Binary File](#binary-file-verification)
+
+## Using Gpg4win Installer
 
 Esta sección cubre la instalación de software criptográfico. Windows no
 viene con las herramientas requeridas para verificar tus binarios. Para
 instalar estas herramientas puedes utilizar el instalador Gpg4win.
 
-### 1.1. Getting Gpg4win Installer
-
-#### 1.1.1. Download Gpg4win
+### Download Gpg4win
 
 En un navegador web, ve a [gpg4win.org](https://gpg4win.org) y descarga el
 instalador haciendo clic en el botón verde.
@@ -70,7 +58,7 @@ Elige una dirección de descarga, y haz clic en `Guardar`.
 ![gpg4win site download
 location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
 
-#### 1.1.2. Launch Gpg4win
+### Launch Gpg4win
 
 Cuando la descarga termine, abre la carpeta contenedora.
 
@@ -82,7 +70,7 @@ Haz doble clic en el ejecutable descargado para abrirlo.
 ![gpg4win
 launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)
 
-### 1.2. Use Gpg4win Installer
+### Use Gpg4win Installer
 
 Serás presentado con una pantalla de verificación de seguridad. Haz clic en
 `Run`.
@@ -122,7 +110,7 @@ Haz clic en `Finish`.
 ![gpg4win installer
 finish](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
 
-## 2. Monero Signing Key
+## Monero Signing Key
 
 Esta sección cubrirá la descarga de la clave de firma Monero, verificar que
 la clave sea correcta, e importar la clave a tu llavero. El archivo hash que
@@ -130,7 +118,7 @@ será usado para verificar tus binarios está criptográficamente firmado con
 la clave de firma Monero. Para revisar la validez del archivo debes tener la
 versión pública de la clave de firma.
 
-### 2.1. Download Signing Key
+### Download Signing Key
 
 En un navegador web, ve a [Fluffypony's GPG
 key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc),
@@ -145,7 +133,7 @@ Deja la ubicación por defecto, y haz clic en `Save`.
 ![getkey save
 file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)
 
-### 2.2. Initialize Kleopatra
+### Initialize Kleopatra
 
 Si es tu primera vez usando Kleopatra tendrás que crear un par de clave para
 para ti.
@@ -155,7 +143,7 @@ Abre Kleopatra.
 ![kleo
 launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)
 
-#### 2.2.1. Import Signing Key
+### Import Signing Key
 
 Haz clic en `Importar`.
 
@@ -173,7 +161,7 @@ Inicia el proceso de certificación de la clave presionando `Yes`.
 ![kleo firstrun start
 process](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)
 
-#### 2.2.2. Create Key Pair
+### Create Key Pair
 
 Inicia el proceso de creación de clave presionando `Yes`.
 
@@ -200,7 +188,7 @@ Haz clic en `Finish`.
 ![kleo firstrun finish create
 key](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
 
-### 2.3. Verify Signing Key
+### Verify Signing Key
 
 Revisa visualmente que la huella de la clave perteneciente a Riccardo Spagni
 es `BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9`.
@@ -221,12 +209,12 @@ pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kl
 
 Haz clic en `Finish`.
 
-## 3. Hash File Verification
+## Hash File Verification
 
 Esta sección cubrirá la descarga del archivo firmado conocido de buenos
 hashes y la verificación de su autenticidad.
 
-### 3.1. Download Hash File
+### Download Hash File
 
 En un navegador web, ve a la [página de hashes en getmonero.org]({{
 site.baseurl }}/downloads/hashes.txt). Haz un clic derecho en la página, y
@@ -240,7 +228,7 @@ Deja la ubicación por defecto, y haz clic en `Save`.
 ![hashes save
 file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
 
-### 3.2. Verify Hash File
+### Verify Hash File
 
 En Kleopatra, haz clic en el botón de `Decrypt/Verify`.
 
@@ -270,12 +258,12 @@ Si recibes una firma **INVÁLIDA**, **NO CONTINÚES.** En su lugar elimina el
 archivo `hashes` de `Descargas` y regresa a la [sección
 3.1](#31-descargar-archivo-hash).
 
-## 4. Binary File Verification
+## Binary File Verification
 
 Esta sección cubrirá la descarga del archivo binario Monero y la
 verificación de su autenticidad.
 
-### 4.1. Download Binary
+### Download Binary
 
 En un navegador web, ve a la [página de descargas de getmonero.org]({{
 site.baseurl }}/downloads/#windows). Selecciona el binario correcto para tu
@@ -294,7 +282,7 @@ Deja la ubicación por defecto, y haz clic en `Save`.
 ![binary getmonero save
 location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
 
-### 4.2. Verify Binary
+### Verify Binary
 
 En un administrador de archivos, navega a `Descargas`. Abre el archivo
 `hashes` con un editor de texto.
