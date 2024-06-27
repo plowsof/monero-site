@@ -16,32 +16,20 @@
 
 ## Table of Contents
 
-### [1. Gpg4win Installer](#1-using-gpg4win-installer)
-  - [1.1. Getting Gpg4win Installer](#11-getting-gpg4win-installer)
-    + [1.1.1. Download Gpg4win](#111-download-gpg4win)
-    + [1.1.2. Launch Gpg4win](#112-launch-gpg4win)
-  - [1.2. Use Gpg4win Installer](#12-use-gpg4win-installer)
-### [2. Import Signing Key](#2-monero-signing-key)
-  - [2.1. Download Signing Key](#21-download-signing-key)
-  - [2.2. Initialize Kleopatra](#22-initialize-kleopatra)
-    + [2.2.1. Import Signing Key](#221-import-signing-key)
-    + [2.2.2. Create Key Pair](#222-create-key-pair)
-  - [2.3. Verify Signing Key](#23-verify-signing-key)
-### [3. Verify Hash File](#3-hash-file-verification)
-  - [3.1. Download Hash File](#31-download-hash-file)
-  - [3.2. Verify Hash File](#32-verify-hash-file)
-### [4. Verify Binary File](#4-binary-file-verification)
-  - [4.1. Download Binary](#41-download-binary)
-  - [4.2. Verify Binary](#42-verify-binary)
+1. [Gpg4win Installer](#using-gpg4win-installer)
 
-## 1. Using Gpg4win Installer
+2. [Import Signing Key](#monero-signing-key)
+
+3. [Verify Hash File](#hash-file-verification)
+
+4. [Verify Binary File](#binary-file-verification)
+
+## Using Gpg4win Installer
 
 سيغطي هذا القسم تثبيت برنامج التشفير. لا يأتي مع ويندوز الأدوات المطلوبة
 للتحقق من الملفات. لتثبيت هذه الأدوات يمكنك استخدام مثبت Gpg4win.
 
-### 1.1. Getting Gpg4win Installer
-
-#### 1.1.1. Download Gpg4win
+### Download Gpg4win
 
 في المتصفح إذهب إلي [gpg4win.org](https://gpg4win.org) وقم بتنزيل المُثبت
 بالضغط علي الزر الأخضر.
@@ -65,7 +53,7 @@ file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gp
 ![gpg4win site download
 location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
 
-#### 1.1.2. Launch Gpg4win
+### Launch Gpg4win
 
 عند انتهاء التنزيل ، افتح المجلد المُحدد.
 
@@ -77,7 +65,7 @@ folder](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_
 ![gpg4win
 launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)
 
-### 1.2. Use Gpg4win Installer
+### Use Gpg4win Installer
 
 سيتم عرض شاشة التحقق الأمني ، انقر فوق "Run".
 
@@ -115,14 +103,14 @@ complete](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-wi
 ![gpg4win installer
 finish](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
 
-## 2. Monero Signing Key
+## Monero Signing Key
 
 سيٌغطي هذا القسم تنزيل مفتاح توقيع مونيرو والتأكد من أن المفتاح صحيح و
 إستيراد المفتاح إلي برنامج التوقيع الخاص بك. ملف الهاش الذي يُستخدم للتحقق
 من ملفات التثبيت يتم توقيعه بواسطه مفتاح توقيع مونيرو. حتي تتمكن من التحقق
 من الملفات يجب الحصول علي مفتاح التوقيع.
 
-### 2.1. Download Signing Key
+### Download Signing Key
 
 في متصفح الويب إذهب إلي [Fluffypony's GPG
 key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc)
@@ -137,7 +125,7 @@ click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_g
 ![getkey save
 file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)
 
-### 2.2. Initialize Kleopatra
+### Initialize Kleopatra
 
 إذا كانت هذه هي المرة الأولى التي تستخدم فيها Kleopatra ، فسيتعين عليك إنشاء
 زوج مفاتيح لنفسك.
@@ -147,7 +135,7 @@ file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_ge
 ![kleo
 launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)
 
-#### 2.2.1. Import Signing Key
+### Import Signing Key
 
 أنقر `Import`.
 
@@ -164,7 +152,7 @@ location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-wi
 ![kleo firstrun start
 process](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)
 
-#### 2.2.2. Create Key Pair
+### Create Key Pair
 
 ابدأ عملية إنشاء المفتاح بالنقر فوق `Yes`.
 
@@ -191,7 +179,7 @@ pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kl
 ![kleo firstrun finish create
 key](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
 
-### 2.3. Verify Signing Key
+### Verify Signing Key
 
 تحقق بصريا أن بصمة المفتاح الذي ينتمي إلى ريكاردو هو
 `BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9`.
@@ -211,11 +199,11 @@ pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kl
 
 إنقر `Finish`.
 
-## 3. Hash File Verification
+## Hash File Verification
 
 سيغطي هذا القسم تنزيل الملف الموقّع للهاشات المعروفة والتحقق من صحته.
 
-### 3.1. Download Hash File
+### Download Hash File
 
 في متصفح الويب ، انتقل إلى [صفحة الهاش getmonero.org] ({{ site.baseurl
 }}/downloads/hashes.txt). انقر بزر الماوس الأيمن على الصفحة ، وحدد `Save
@@ -229,7 +217,7 @@ click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_h
 ![hashes save
 file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
 
-### 3.2. Verify Hash File
+### Verify Hash File
 
 في Kleopatra إنقر علي زر `Decrypt/Verify`.
 
@@ -258,11 +246,11 @@ badsig](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_
 إذا كان التوقيع **غير صحيح** , **لا تُكمل** وإحذف ملف hashes` من مجلد
 `Downloads` وعد إلي [القسم 3.1](#31-download-hash-file).
 
-## 4. Binary File Verification
+## Binary File Verification
 
 سيغطي هذا القسم تنزيل ملف تثبيت مونيرو والتحقق من صحته.
 
-### 4.1. Download Binary
+### Download Binary
 
 في المتصفح إذهب إلي [getmonero.org فصحه التنزيلات ]({{ site.baseurl
 }}/downloads/#windows), وإختر الملف المناسب لنظام تشغيلك.
@@ -280,7 +268,7 @@ save](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_bi
 ![binary getmonero save
 location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
 
-### 4.2. Verify Binary
+### Verify Binary
 
 في مدير الملفات انتقل إلى دليل "Downloads" وافتح ملف `hashes` باستخدام معالج
 النصوص.

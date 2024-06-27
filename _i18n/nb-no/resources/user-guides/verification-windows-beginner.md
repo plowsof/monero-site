@@ -20,34 +20,22 @@ autentiske.
 
 ## Table of Contents
 
-### [1. Gpg4win Installer](#1-using-gpg4win-installer)
-  - [1.1. Getting Gpg4win Installer](#11-getting-gpg4win-installer)
-    + [1.1.1. Download Gpg4win](#111-download-gpg4win)
-    + [1.1.2. Launch Gpg4win](#112-launch-gpg4win)
-  - [1.2. Use Gpg4win Installer](#12-use-gpg4win-installer)
-### [2. Import Signing Key](#2-monero-signing-key)
-  - [2.1. Download Signing Key](#21-download-signing-key)
-  - [2.2. Initialize Kleopatra](#22-initialize-kleopatra)
-    + [2.2.1. Import Signing Key](#221-import-signing-key)
-    + [2.2.2. Create Key Pair](#222-create-key-pair)
-  - [2.3. Verify Signing Key](#23-verify-signing-key)
-### [3. Verify Hash File](#3-hash-file-verification)
-  - [3.1. Download Hash File](#31-download-hash-file)
-  - [3.2. Verify Hash File](#32-verify-hash-file)
-### [4. Verify Binary File](#4-binary-file-verification)
-  - [4.1. Download Binary](#41-download-binary)
-  - [4.2. Verify Binary](#42-verify-binary)
+1. [Gpg4win Installer](#using-gpg4win-installer)
 
-## 1. Using Gpg4win Installer
+2. [Import Signing Key](#monero-signing-key)
+
+3. [Verify Hash File](#hash-file-verification)
+
+4. [Verify Binary File](#binary-file-verification)
+
+## Using Gpg4win Installer
 
 Denne seksjonen tar for seg installasjon av den kryptografiske
 programvaren. Windows kommer ikke med de nødvendige verktøyene for å
 verifisere binærene dine. Du kan bruke Gpg4win-installatøren for å
 installere disse verktøyene.
 
-### 1.1. Getting Gpg4win Installer
-
-#### 1.1.1. Download Gpg4win
+### Download Gpg4win
 
 Gå til [gpg4win.org](https://gpg4win.org) i nettleseren og last ned
 installatøren ved å trykke på den grønne knappen.
@@ -71,7 +59,7 @@ Velg et sted å laste ned filen til og trykk på `Lagre`.
 ![gpg4win site download
 site](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
 
-#### 1.1.2. Launch Gpg4win
+### Launch Gpg4win
 
 Når nedlastingen er ferdig, kan du åpne mappen som filen ligger i.
 
@@ -83,7 +71,7 @@ Dobbeltklikk på den nedlastede, eksekverbare gpg4win-filen for å starte den.
 ![gpg4win
 launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)
 
-### 1.2. Use Gpg4win Installer
+### Use Gpg4win Installer
 
 Du vil bli fremlagt en sikkerhetsverifiseringsskjerm. Trykk på `Kjør`.
 
@@ -123,7 +111,7 @@ Trykk på `Ferdig`.
 ![gpg4win install
 completed](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
 
-## 2. Monero Signing Key
+## Monero Signing Key
 
 Denne seksjonen tar for seg nedlasting av Monero-signeringsnøkkelen,
 verifisering av at nøkkelen er riktig, og deretter import av nøkkelen til
@@ -132,7 +120,7 @@ kryptografisk signert med Monero-signeringsnøkkelen. For å kontrollere
 gyldigheten av denne filen, trenger du den offentlige versjonen av
 signeringsnøkkelen.
 
-### 2.1. Download Signing Key
+### Download Signing Key
 
 Åpne nettleseren og gå til [binaryFates GPG
 key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc),
@@ -147,7 +135,7 @@ La standardplasseringen være som den er og trykk på `Lagre`.
 ![getkey save
 file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)
 
-### 2.2. Initialize Kleopatra
+### Initialize Kleopatra
 
 Hvis dette er første gang du bruker Kleopatra, må du opprette et nøkkelpar
 for deg selv.
@@ -157,7 +145,7 @@ Start Kleopatra.
 ![kleo
 launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)
 
-#### 2.2.1. Import Signing Key
+### Import Signing Key
 
 Trykk på `Import`.
 
@@ -174,7 +162,7 @@ Start prosessen av å sertifisere nøkkelen ved å trykke på `Ja`.
 ![kleo firstrun start
 process](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)
 
-#### 2.2.2. Create Key Pair
+### Create Key Pair
 
 Start prosessen av nøkkelopprettelsen ved å trykke på `Ja`.
 
@@ -201,7 +189,7 @@ Trykk på `Ferdig`.
 ![kleo firstrun finish create
 key](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
 
-### 2.3. Verify Signing Key
+### Verify Signing Key
 
 Sjekk visuelt at fingeravtrykket til nøkkelen som tilhører binaryFate er
 `81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92`.
@@ -222,12 +210,12 @@ pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kl
 
 Trykk på `Ferdig`.
 
-## 3. Hash File Verification
+## Hash File Verification
 
 Denne seksjonen tar for seg nedlasting av den signerte filen med et kjent
 antall gode hasher og verifisering av dens autentisitet.
 
-### 3.1. Download Hash File
+### Download Hash File
 
 Åpne en nettleser og gå til [hash-siden til getmonero.org]({{
 site.baseurl_root }}/downloads/hashes.txt). Høyreklikk på siden og velg
@@ -241,7 +229,7 @@ La standardplasseringen være som den er og trykk på `Lagre`.
 ![hashes save
 file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
 
-### 3.2. Verify Hash File
+### Verify Hash File
 
 Trykk på `Decrypt/Verify`-knappen i Kleopatra.
 
@@ -272,12 +260,12 @@ Hvis du mottar en **UGYLDIG** signatur, **IKKE FORTSETT.** Slett i stedet
 `hashes`-filen fra `Nedlastinger`-katalogen og gå tilbake til [seksjon
 3.1](#31-download-hash-file).
 
-## 4. Binary File Verification
+## Binary File Verification
 
 Denne seksjonen tar for seg nedlasting av Monero-binærfilene og verifisering
 av dens autentisitet.
 
-### 4.1. Download Binary
+### Download Binary
 
 Åpne nettleseren og gå til [nedlastingssiden på getmonero.org]({{
 site.baseurl_root }}/downloads/#windows). Velg den riktige binærfilen for
@@ -296,7 +284,7 @@ La standardplasseringen være som den er og trykk på `Lagre`.
 ![binary getmonero save
 location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
 
-### 4.2. Verify Binary
+### Verify Binary
 
 I en filbehandler kan du navigere til `Nedlastinger`-katalogen. Åpne
 `hashes`-filen med et tekstbehandlingsprogram.
