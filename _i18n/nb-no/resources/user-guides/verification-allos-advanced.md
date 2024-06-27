@@ -20,13 +20,16 @@ autentiske.
 
 ## Innholdsfortegnelse:
 
-1. [Installering av GnuPG](#installing-gnupg)
+1. [Installering av GnuPG](#installering-av-gnupg)
 
-2. [Verifisering og import av signaturnøkkel](#)
+2. [Verifisering og import av
+   signaturnøkkel](#verifisering-og-import-av-signaturnøkkel)
 
-3. [Nedlasting og verifisering av hash-fil](#)
+3. [Nedlasting og verifisering av
+   hash-fil](#nedlasting-og-verifisering-av-hashfil)
 
-4. [Nedlasting og verifisering av binærfiler](#)
+4. [Nedlasting og verifisering av
+   binærfiler](#nedlasting-og-verifisering-av-binærfiler)
 
 ## Installering av GnuPG
 
@@ -80,7 +83,7 @@ Dersom fingeravtrykket **MATCHER**, kan du fortsette.
 
 Dersom fingeravtrykket **IKKE MATCHER**, **IKKE FORTSETT.** Slett istedenfor
 `binaryfate.asc`-filen og gå tilbake til [seksjon Å få tak i
-signaturnøkkel](#).
+signaturnøkkel](#å-få-tak-i-signaturnøkkelen).
 
 ### Import av signaturnøkkel
 
@@ -148,7 +151,7 @@ fortsette.
 
 Dersom du ser **BAD signature** i utdataen, **IKKE FORTSETT.** Slett
 istedenfor `hashes.txt`-filen og gå tilbake til [seksjon Å få tak i
-hashfilen](#).
+hashfilen](#å-få-ta-i-hashfilen).
 
 ## Nedlasting og verifisering av binærfiler
 
@@ -175,7 +178,8 @@ Trinnene for både Linux og Mac er de samme. Fra en terminal, få
 `SHA256`-hashen til den nedlastede Monero-binærfilen din. Som et eksempel
 vil denne veiledningen bruke `Linux, 64bit`-GUI-binærfilen. Bytt ut
 `monero-gui-linux-x64-v0.15.0.1.tar.bz2` med navnet på binærfilen som du
-lastet ned i [seksjon Å få tak i Monero-binærfiler](#).
+lastet ned i [seksjon Å få tak i
+Monero-binærfiler](#å-få-tak-i-monero-binærfilene).
 
 ```
 shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2
@@ -195,14 +199,15 @@ ut filene og installere.
 
 Dersom hashen din **IKKE MATCHER**, **IKKE FORTSETT.** Slett i stedet
 binærfilen du lastet ned og gå tilbake til [seksjon Å få tak i
-Monero-binærfiler](#).
+Monero-binærfiler](#å-få-tak-i-monero-binærfilene).
 
 ### Verifisering av binærfiler på Windows
 
 Åpne en terminal og få `SHA256`-hash til din nedlastede Monero-binærfil. Som
 et eksempel, vil denne veiledningen bruke `Windows,
 64bit`-GUI-binærfilen. Bytt ut `monero-gui-win-x64-v0.15.0.1.zip` med navnet
-på binæren som du lastet ned i [seksjon Å få tak i Monero-binærfiler](#).
+på binæren som du lastet ned i [seksjon Å få tak i
+Monero-binærfiler](#å-få-tak-i-monero-binærfilene).
 
 ``` certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256 ```
 
@@ -221,4 +226,4 @@ ut filene og installere.
 
 Dersom hashen din **IKKE MATCHER**, **IKKE FORTSETT.** Slett i stedet
 binærfilen du lastet ned og gå tilbake til [seksjon Å få tak i
-Monero-binærfiler](#).
+Monero-binærfiler](#å-få-tak-i-monero-binærfilene).
