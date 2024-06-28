@@ -43,10 +43,10 @@ msgstr "Dies ist eine Anfängeranleitung für das Windows-Betriebssystem, die si
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:9
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Table of Contents"
 msgid "Table of Contents"
-msgstr "## Inhaltsverzeichnis"
+msgstr "Inhaltsverzeichnis"
 
 #
 #. type: Bullet: '1. '
@@ -185,10 +185,10 @@ msgstr "![gpg4win launch](/img/resources/user-guides/en/verify_binary_windows_be
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:51
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### 1.2. Use Gpg4win Installer"
 msgid "Use Gpg4win Installer"
-msgstr "### 1.2. Gpg4win-Installationsprogramm verwenden"
+msgstr "Gpg4win-Installationsprogramm verwenden"
 
 #
 #. type: Plain text
@@ -279,10 +279,10 @@ msgstr "![gpg4win installer finish](/img/resources/user-guides/en/verify_binary_
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:81
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## 2. Monero Signing Key"
 msgid "Monero Signing Key"
-msgstr "## 2. Monero-Signaturschlüssel"
+msgstr "Monero-Signaturschlüssel"
 
 #
 #. type: Plain text
@@ -293,10 +293,10 @@ msgstr "Dieser Abschnitt behandelt den Download des Monero-Signaturschlüssels, 
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:85
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### 2.1. Download Signing Key"
 msgid "Download Signing Key"
-msgstr "### 2.1. Signaturschlüssel herunterladen"
+msgstr "Signaturschlüssel herunterladen"
 
 #
 #. type: Plain text
@@ -327,10 +327,10 @@ msgstr "![getkey save file](/img/resources/user-guides/en/verify_binary_windows_
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:95
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### 2.2. Initialize Kleopatra"
 msgid "Initialize Kleopatra"
-msgstr "### 2.2. Kleopatra initialisieren"
+msgstr "Kleopatra initialisieren"
 
 #
 #. type: Plain text
@@ -353,10 +353,10 @@ msgstr "![kleo launch](/img/resources/user-guides/en/verify_binary_windows_begin
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:103
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "#### 2.2.1. Import Signing Key"
 msgid "Import Signing Key"
-msgstr "#### 2.2.1. Signaturschlüssel importieren"
+msgstr "Signaturschlüssel importieren"
 
 #
 #. type: Plain text
@@ -397,10 +397,10 @@ msgstr "![kleo firstrun start process](/img/resources/user-guides/en/verify_bina
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:117
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "#### 2.2.2. Create Key Pair"
 msgid "Create Key Pair"
-msgstr "#### 2.2.2. Schlüsselpaar erstellen"
+msgstr "Schlüsselpaar erstellen"
 
 #
 #. type: Plain text
@@ -459,10 +459,10 @@ msgstr "![kleo firstrun finish create key](/img/resources/user-guides/en/verify_
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:139
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### 2.3. Verify Signing Key"
 msgid "Verify Signing Key"
-msgstr "### 2.3. Signaturschlüssel verifizieren"
+msgstr "Signaturschlüssel verifizieren"
 
 #
 #. type: Plain text
@@ -503,10 +503,10 @@ msgstr "![kleo certify pass](/img/resources/user-guides/en/verify_binary_windows
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:155
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## 3. Hash File Verification"
 msgid "Hash File Verification"
-msgstr "## 3. Verifikation der Hash-Datei"
+msgstr "Verifikation der Hash-Datei"
 
 #
 #. type: Plain text
@@ -517,10 +517,10 @@ msgstr "Dieser Abschnitt behandelt den Download einer signierten Datei mit bekan
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:159
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### 3.1. Download Hash File"
 msgid "Download Hash File"
-msgstr "### 3.1. Hash-Datei herunterladen"
+msgstr "Hash-Datei herunterladen"
 
 #
 #. type: Plain text
@@ -543,10 +543,10 @@ msgstr "![hashes save file](/img/resources/user-guides/en/verify_binary_windows_
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:169
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### 3.2. Verify Hash File"
 msgid "Verify Hash File"
-msgstr "### 3.2. Hash-Datei verifizieren"
+msgstr "Hash-Datei verifizieren"
 
 #
 #. type: Plain text
@@ -617,10 +617,10 @@ msgstr "Wenn du eine **UNGÜLTIGE** Signatur ausgegeben bekommst, **FAHRE NICHT 
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:193
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## 4. Binary File Verification"
 msgid "Binary File Verification"
-msgstr "## 4. Verifikation der Binärdatei"
+msgstr "Verifikation der Binärdatei"
 
 #
 #. type: Plain text
@@ -631,10 +631,10 @@ msgstr "Der folgende Abschnitt behandelt den Download der Monero-Binärdatei und
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:197
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### 4.1. Download Binary"
 msgid "Download Binary"
-msgstr "### 4.1. Binärdatei herunterladen"
+msgstr "Binärdatei herunterladen"
 
 #
 #. type: Plain text
@@ -669,10 +669,10 @@ msgstr "![binary getmonero save location](/img/resources/user-guides/en/verify_b
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:211
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### 4.2. Verify Binary"
 msgid "Verify Binary"
-msgstr "### 4.2. Binärdatei verifizieren"
+msgstr "Binärdatei verifizieren"
 
 #
 #. type: Plain text
