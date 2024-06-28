@@ -718,7 +718,6 @@ msgstr "Als de hash **WEL** overeenkomt, ben je klaar met de verificatie! Dan be
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:235
-#| msgid "If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the Monero binary from the `Downloads` directory and go back to [section Binary downloaden](#binary-downloaded)."
 msgid "If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the Monero binary from the `Downloads` directory and go back to [section 4.1](#41-download-binary)."
 msgstr "**GA NIET VERDER** als de hash **NIET** overeenkomt. Verwijder dan de Monero-binary uit de map `Downloads` en ga terug naar [paragraaf Binary downloaden](#binary-downloaden)."
 
