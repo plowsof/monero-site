@@ -50,28 +50,24 @@ msgstr "Inhaltsverzeichnis"
 #
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:12
-#| msgid "### 1.2. Use Gpg4win Installer"
 msgid "[Gpg4win Installer](#using-gpg4win-installer)"
 msgstr "[Gpg4win-Installationsprogramm verwenden](#gpg4win-installationsprogramm)"
 
 #
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:14
-#| msgid "#### 2.2.1. Import Signing Key"
 msgid "[Import Signing Key](#monero-signing-key)"
 msgstr "[Signaturschlüssel importieren](#monero-signaturschlüssel)"
 
 #
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:16
-#| msgid "## 3. Hash File Verification"
 msgid "[Verify Hash File](#hash-file-verification)"
 msgstr "[Verifikation der Hash-Datei](#verifikation-der-hash-datei)"
 
 #
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:18
-#| msgid "## 4. Binary File Verification"
 msgid "[Verify Binary File](#binary-file-verification)"
 msgstr "[Verifikation der Binärdatei](#verifikation-der-binärdatei)"
 
@@ -79,7 +75,6 @@ msgstr "[Verifikation der Binärdatei](#verifikation-der-binärdatei)"
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:19
 #, no-wrap
-#| msgid "## 1. Using Gpg4win Installer"
 msgid "Using Gpg4win Installer"
 msgstr "Gpg4win-Installationsprogramm"
 
@@ -93,7 +88,6 @@ msgstr "Dieser Abschnitt behandelt die Installation der Kryptografie-Software. W
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:23
 #, no-wrap
-#| msgid "#### 1.1.1. Download Gpg4win"
 msgid "Download Gpg4win"
 msgstr "Gpg4win herunterladen"
 
@@ -149,7 +143,6 @@ msgstr "![gpg4win site download location](/img/resources/user-guides/en/verify_b
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:41
 #, no-wrap
-#| msgid "#### 1.1.2. Launch Gpg4win"
 msgid "Launch Gpg4win"
 msgstr "Gpg4win starten"
 

@@ -22,22 +22,22 @@ die Verifikation der Echtheit deiner Binärdatei.
 
 ## Inhaltsverzeichnis
 
-1. [Gpg4win Installer](#using-gpg4win-installer)
+1. [Gpg4win-Installationsprogramm verwenden](#gpg4win-installationsprogramm)
 
-2. [Import Signing Key](#monero-signing-key)
+2. [Signaturschlüssel importieren](#monero-signaturschlüssel)
 
-3. [Verify Hash File](#hash-file-verification)
+3. [Verifikation der Hash-Datei](#verifikation-der-hash-datei)
 
-4. [Verify Binary File](#binary-file-verification)
+4. [Verifikation der Binärdatei](#verifikation-der-binärdatei)
 
-## Using Gpg4win Installer
+## Gpg4win-Installationsprogramm
 
 Dieser Abschnitt behandelt die Installation der
 Kryptografie-Software. Windows ist nicht mit den zur Verifikation der
 Binärdatei benötigten Tools ausgestattet. Um diese Tools zu installieren,
 kannst du das Gpg4win-Installationsprogramm verwenden.
 
-### Download Gpg4win
+### Gpg4win herunterladen
 
 Gehe im Webbrowser auf [gpg4win.org](https://gpg4win.org) und lade das
 Installationsprogramm durch Anklicken des grünen Buttons herunter.
@@ -61,7 +61,7 @@ Wähle einen Zielort für den Download und wähle `Speichern`.
 ![gpg4win site download
 location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
 
-### Launch Gpg4win
+### Gpg4win starten
 
 Öffne den darin enthaltenen Ordner, sobald der Download fertig ist.
 
@@ -208,7 +208,8 @@ Wenn der Fingerabdruck mit dem genannten **ÜBEREINSTIMMT**, klicke auf
 
 Wenn der Fingerabdruck mit dem genannten **NICHT ÜBEREINSTIMMT**, **FAHRE
 NICHT FORT**. Lösche die `binaryfate`-Datei aus dem `Downloads`-Verzeichnis
-und gehe zurück zum [Abschnitt 2.1](#21-signaturschlüssel-herunterladen).
+und gehe zurück zum [Abschnitt Signaturschlüssel
+herunterladen](#signaturschlüssel-herunterladen).
 
 Gib dein Passwort ein und wähle `OK`.
 
@@ -267,7 +268,7 @@ fahre fort.
 
 Wenn du eine **UNGÜLTIGE** Signatur ausgegeben bekommst, **FAHRE NICHT
 FORT**. Lösche die `hashes`-Datei aus dem `Downloads`-Verzeichnis und gehe
-zurück zum [Abschnitt 3.1](#31-hash-datei-herunterladen).
+zurück zum [Abschnitt Hash-Datei herunterladen](#hash-datei-herunterladen).
 
 ## Verifikation der Binärdatei
 
@@ -332,4 +333,4 @@ Dateien kannst du jetzt ganz normal extrahieren und installieren/nutzen.
 
 Wenn die Hashwerte **NICHT ÜBEREINSTIMMEN**, **FAHRE NICHT FORT**. Lösche
 die Monero-Binärdatei aus dem `Downloads`-Verzeichnis und gehe zurück zum
-[Abschnitt 4.1](#41-binärdatei-herunterladen).
+[Abschnitt Binärdatei herunterladen](#binärdatei-herunterladen).
