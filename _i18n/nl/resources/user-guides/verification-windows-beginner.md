@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 Voordat je de Monero-software uitpakt, installeert en gebruikt, moet je de
 binaire bestanden van Monero verifiëren. Dit is de enige manier om er zeker
@@ -20,13 +20,14 @@ uiteindelijk verifieert dat je binaire bestand authentiek is.
 
 ## Inhoud
 
-1. Gpg4win-installatieprogramma gebruiken
+1. [Gpg4win-installatieprogramma
+   gebruiken](#gpg4win-installatieprogramma-gebruiken)
 
-2. Ondertekeningssleutel importeren
+2. [Ondertekeningssleutel importeren](#monero-ondertekeningssleutel)
 
-3. Hashbestand verifiëren
+3. [Hashbestand verifiëren](#hashbestand-verifiëren)
 
-4. Binair bestand verifiëren
+4. [Binair bestand verifiëren](#binair-bestand-verifiëren)
 
 ## Gpg4win-installatieprogramma gebruiken
 
@@ -202,7 +203,8 @@ Klik op `Certify` als de vingerafdruk **WEL** overeenkomt.
 
 **GA NIET VERDER** als de vingerafdruk van deze sleutel **NIET**
 overeenkomt. Verwijder dan het bestand `fluffypony` uit de map `Downloads`
-en ga terug naar [paragraaf 2.1](#21-download-signing-key).
+en ga terug naar [paragraaf Ondertekeningssleutel
+downloaden](#ondertekeningssleutel-downloaden).
 
 Voer je wachtwoord in en klik op `OK`.
 
@@ -260,7 +262,7 @@ ga je verder.
 
 **GA NIET VERDER** als je een **ONGELDIGE** ondertekening hebt
 ontvangen. Verwijder dan het bestand `hashes` uit de map `Downloads` en ga
-terug naar [paragraaf 3.1](#31-download-hash-file).
+terug naar [paragraaf Hashbestand downloaden](#hashbestand-downloaden).
 
 ## Binair bestand verifiëren
 
@@ -323,6 +325,6 @@ er zeker van dat de Monero-bestanden die je hebt ontvangen authentiek
 zijn. Je kunt de bestanden verder op de normale manier uitpakken,
 installeren en gebruiken.
 
-**GA NIET VERDER** als de hash **NIET** overeenkomt. Verwijder dan de
-Monero-binary uit de map `Downloads` en ga terug naar [paragraaf
+If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the
+Monero binary from the `Downloads` directory and go back to [section
 4.1](#41-download-binary).
