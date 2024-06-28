@@ -325,6 +325,6 @@ er zeker van dat de Monero-bestanden die je hebt ontvangen authentiek
 zijn. Je kunt de bestanden verder op de normale manier uitpakken,
 installeren en gebruiken.
 
-If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the
-Monero binary from the `Downloads` directory and go back to [section
-4.1](#41-download-binary).
+**GA NIET VERDER** als de hash **NIET** overeenkomt. Verwijder dan de
+Monero-binary uit de map `Downloads` en ga terug naar [paragraaf Binary
+downloaden](#binary-downloaden).
