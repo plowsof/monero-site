@@ -50,31 +50,36 @@ msgstr "قائمه المحتويات"
 #
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:12
+#| msgid "### 1.2. Use Gpg4win Installer"
 msgid "[Gpg4win Installer](#using-gpg4win-installer)"
-msgstr "[ إستخدام مُثبت Gpg4win ](#) "
+msgstr "[ إستخدام مُثبت Gpg4win ](#إستخدام-مُثبت-gpg4win)"
 
 #
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:14
+#| msgid "#### 2.2.1. Import Signing Key"
 msgid "[Import Signing Key](#monero-signing-key)"
-msgstr "[ استيراد مفتاح التوقيع ](#)"
+msgstr "[ استيراد مفتاح التوقيع ](#مُفتاح-توقيع-مونيرو)"
 
 #
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:16
+#| msgid "## 3. Hash File Verification"
 msgid "[Verify Hash File](#hash-file-verification)"
-msgstr "[ التحقق من ملف الهاش](#)"
+msgstr "[ التحقق من ملف الهاش ](#التحقق-من-ملف-الهاش)"
 
 #
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:18
+#| msgid "## 4. Binary File Verification"
 msgid "[Verify Binary File](#binary-file-verification)"
-msgstr "[ التحقق من ملفات التثبيت ](#)"
+msgstr "[ التحقق من ملفات التثبيت ](#التحقق-من-ملفات-التثبيت)"
 
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:19
 #, no-wrap
+#| msgid "## 1. Using Gpg4win Installer"
 msgid "Using Gpg4win Installer"
 msgstr "إستخدام مُثبت Gpg4win"
 
@@ -467,7 +472,7 @@ msgstr "إذا كانت البصمه **مُتطابقه** إضغط 'Certify'."
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:148
 msgid "If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead delete the file `binaryfate` from the `Downloads` directory and go back to [section 2.1](#21-download-signing-key)."
-msgstr "إذا كانت البصمه **غير مُتطابقه** **لا تُكمل** بل إحذف الملف `fluffypony` من مجلد `Downloads`وعُد إلي [القسم 2.1](#21-download-signing-key)."
+msgstr "إذا كانت البصمه **غير مُتطابقه** **لا تُكمل** بل إحذف الملف `fluffypony` من مجلد `Downloads`وعُد إلي [القسم تنزيل مفتاح التوقيع](#تنزيل-مفتاح-التوقيع)."
 
 #
 #. type: Plain text
@@ -590,7 +595,7 @@ msgstr "إذا كان التوقيع **صحيح** إنقر علي `Discard` ثم
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:192
 msgid "If you receive an **INVALID** signature, **DO NOT CONTINUE.** Instead delete the file `hashes` from the `Downloads` directory and go back to [section 3.1](#31-download-hash-file)."
-msgstr "إذا كان التوقيع **غير صحيح** , **لا تُكمل** وإحذف ملف hashes` من مجلد `Downloads` وعد إلي [القسم 3.1](#31-download-hash-file)."
+msgstr "إذا كان التوقيع **غير صحيح** , **لا تُكمل** وإحذف ملف hashes` من مجلد `Downloads` وعد إلي [القسم تحميل ملف الهاش ](#تنزيل-ملف-الهاش)."
 
 #
 #. type: Title ##
@@ -719,7 +724,7 @@ msgstr "إذا كان الهاش **متطابق** تكون قد إنتهيت م�
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:235
 msgid "If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the Monero binary from the `Downloads` directory and go back to [section 4.1](#41-download-binary)."
-msgstr "إذا كان الهاش **غير متطابق** **لا تُكمل** قم بمسح ملف التثبيت من مجلد 'Downloads' وإرجع إلي [القسم 4.1](#41-download-binary)."
+msgstr "إذا كان الهاش **غير متطابق** **لا تُكمل** قم بمسح ملف التثبيت من مجلد 'Downloads' وإرجع إلي [القسم تحميل ملف التثبيت ](#تنزيل-ملف-التثبيت)."
 
 #
 #, fuzzy
