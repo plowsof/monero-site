@@ -32,7 +32,7 @@ msgstr "التأكد من صحه ملفات التثبيت يجب أن يكون 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:6
 msgid "To protect the integrity of the binaries the Monero team provides a cryptographically signed list of all the [SHA256](https://en.wikipedia.org/wiki/SHA-2) hashes. If your downloaded binary has been tampered with it will be produce a [different hash](https://en.wikipedia.org/wiki/File_verification) than the one in the file."
-msgstr "لحماية تكامل الثنائيات ، يوفر فريق مونيرو قائمة موقعة مشفرة لكل الملفات [SHA256] (https://en.wikipedia.org/wiki/SHA-2). إذا تم العبث بالملف الذي تم تنزيله ، فسيتم إنتاجه [هاش مختلف] (https://en.wikipedia.org/wiki/File_verification) عن الموجود في الملف."
+msgstr "لحماية تكامل الثنائيات ، يوفر فريق مونيرو قائمة موقعة مشفرة لكل الملفات [SHA256](https://en.wikipedia.org/wiki/SHA-2). إذا تم العبث بالملف الذي تم تنزيله ، فسيتم إنتاجه [هاش مختلف ](https://en.wikipedia.org/wiki/File_verification) عن الموجود في الملف."
 
 #
 #. type: Plain text
@@ -719,7 +719,7 @@ msgstr "إذا كان الهاش **متطابق** تكون قد إنتهيت م�
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:235
 msgid "If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the Monero binary from the `Downloads` directory and go back to [section 4.1](#41-download-binary)."
-msgstr "إذا كان الهاش **غير متطابق** **لا تُكمل** قم بمسح ملف التثبيت من مجلد 'Downloads' وإرجع إلي [القسم تحميل ملف التثبيت ](#تنزيل-ملف-التثبيت)."
+msgstr "إذا كان الهاش **غير متطابق** **لا تُكمل** قم بمسح ملف التثبيت من مجلد 'Downloads' وإرجع إلي [ القسم تحميل ملف التثبيت ](#تنزيل-ملف-التثبيت)."
 
 #
 #, fuzzy
