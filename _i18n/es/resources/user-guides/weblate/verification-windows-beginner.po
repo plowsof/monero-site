@@ -20,7 +20,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"yes\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
 #
 #. type: Plain text
@@ -51,25 +51,25 @@ msgstr "Tabla de Contenidos"
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:12
 msgid "[Gpg4win Installer](#using-gpg4win-installer)"
-msgstr "[Usar el Instalador Gpg4win](#)"
+msgstr "[Usar el Instalador Gpg4win](#usar-el-instalador-gpg4win)"
 
 #
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:14
 msgid "[Import Signing Key](#monero-signing-key)"
-msgstr "[Importar Clave de Firma](#)"
+msgstr "[Importar Clave de Firma](#importar-clave-de-firma)"
 
 #
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:16
 msgid "[Verify Hash File](#hash-file-verification)"
-msgstr "[Verificar Archivo Hash](#)"
+msgstr "[Verificar Archivo Hash](#verificar-archivo-hash)"
 
 #
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:18
 msgid "[Verify Binary File](#binary-file-verification)"
-msgstr "[Verificar Archivo Binario](#)"
+msgstr "[Verificar Archivo Binario](#verificar-archivo-binario)"
 
 #
 #. type: Title ##
@@ -467,7 +467,7 @@ msgstr "Si la huella **SÍ** coincide, haz clic en `Certify`."
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:148
 msgid "If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead delete the file `binaryfate` from the `Downloads` directory and go back to [section 2.1](#21-download-signing-key)."
-msgstr "Si la huella de clave **NO** coincide, **NO CONTINÚES**. En su lugar elimina el archivo `fluffypony` de `Descargas` y regresa a la [sección 2.1](#21-descargar-clave-de-firma)."
+msgstr "Si la huella de clave **NO** coincide, **NO CONTINÚES**. En su lugar elimina el archivo `fluffypony` de `Descargas` y regresa a la [sección Descargar Clave de Firma](#descargar-clave-de-firma)."
 
 #
 #. type: Plain text
@@ -590,7 +590,7 @@ msgstr "Si recibes una firma **VÁLIDA**, haz clic en`Discard` y continua."
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:192
 msgid "If you receive an **INVALID** signature, **DO NOT CONTINUE.** Instead delete the file `hashes` from the `Downloads` directory and go back to [section 3.1](#31-download-hash-file)."
-msgstr "Si recibes una firma **INVÁLIDA**, **NO CONTINÚES.** En su lugar elimina el archivo `hashes` de `Descargas` y regresa a la [sección 3.1](#31-descargar-archivo-hash)."
+msgstr "Si recibes una firma **INVÁLIDA**, **NO CONTINÚES.** En su lugar elimina el archivo `hashes` de `Descargas` y regresa a la [sección Descargar Archivo Hash](#descargar-archivo-hash)."
 
 #
 #. type: Title ##
@@ -719,7 +719,7 @@ msgstr "Si tu hash **SÍ** coincide entonces has terminado con la verificación!
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:235
 msgid "If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the Monero binary from the `Downloads` directory and go back to [section 4.1](#41-download-binary)."
-msgstr "Si tu hash **NO** coincide **NO CONTINÚES.** En su lugar elimina el binario Monero de `Descargas` y regresa a la [sección 4.1](#41-descargar-binario)."
+msgstr "Si tu hash **NO** coincide **NO CONTINÚES.** En su lugar elimina el binario Monero de `Descargas` y regresa a la [sección Descargar Binario](#descargar-binario)."
 
 #
 #, fuzzy
