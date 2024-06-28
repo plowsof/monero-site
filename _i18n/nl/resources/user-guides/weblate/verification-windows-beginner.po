@@ -20,7 +20,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"yes\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
 #
 #. type: Plain text
@@ -51,25 +51,25 @@ msgstr "Inhoud"
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:12
 msgid "[Gpg4win Installer](#using-gpg4win-installer)"
-msgstr "Gpg4win-installatieprogramma gebruiken"
+msgstr "[Gpg4win-installatieprogramma gebruiken](#gpg4win-installatieprogramma-gebruiken)"
 
 #
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:14
 msgid "[Import Signing Key](#monero-signing-key)"
-msgstr "Ondertekeningssleutel importeren"
+msgstr "[Ondertekeningssleutel importeren](#monero-ondertekeningssleutel)"
 
 #
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:16
 msgid "[Verify Hash File](#hash-file-verification)"
-msgstr "Hashbestand verifiëren"
+msgstr "[Hashbestand verifiëren](#hashbestand-verifiëren)"
 
 #
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:18
 msgid "[Verify Binary File](#binary-file-verification)"
-msgstr "Binair bestand verifiëren"
+msgstr "[Binair bestand verifiëren](#binair-bestand-verifiëren)"
 
 #
 #. type: Title ##
@@ -467,7 +467,7 @@ msgstr "Klik op `Certify` als de vingerafdruk **WEL** overeenkomt."
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:148
 msgid "If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead delete the file `binaryfate` from the `Downloads` directory and go back to [section 2.1](#21-download-signing-key)."
-msgstr "**GA NIET VERDER** als de vingerafdruk van deze sleutel **NIET** overeenkomt. Verwijder dan het bestand `fluffypony` uit de map `Downloads` en ga terug naar [paragraaf 2.1](#21-download-signing-key)."
+msgstr "**GA NIET VERDER** als de vingerafdruk van deze sleutel **NIET** overeenkomt. Verwijder dan het bestand `fluffypony` uit de map `Downloads` en ga terug naar [paragraaf Ondertekeningssleutel downloaden](#ondertekeningssleutel-downloaden)."
 
 #
 #. type: Plain text
@@ -590,7 +590,7 @@ msgstr "Als je een **GELDIGE** ondertekening hebt ontvangen, klik je op `Discard
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:192
 msgid "If you receive an **INVALID** signature, **DO NOT CONTINUE.** Instead delete the file `hashes` from the `Downloads` directory and go back to [section 3.1](#31-download-hash-file)."
-msgstr "**GA NIET VERDER** als je een **ONGELDIGE** ondertekening hebt ontvangen. Verwijder dan het bestand `hashes` uit de map `Downloads` en ga terug naar [paragraaf 3.1](#31-download-hash-file)."
+msgstr "**GA NIET VERDER** als je een **ONGELDIGE** ondertekening hebt ontvangen. Verwijder dan het bestand `hashes` uit de map `Downloads` en ga terug naar [paragraaf Hashbestand downloaden](#hashbestand-downloaden)."
 
 #
 #. type: Title ##
@@ -718,8 +718,8 @@ msgstr "Als de hash **WEL** overeenkomt, ben je klaar met de verificatie! Dan be
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:235
-msgid "If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the Monero binary from the `Downloads` directory and go back to [section 4.1](#41-download-binary)."
-msgstr "**GA NIET VERDER** als de hash **NIET** overeenkomt. Verwijder dan de Monero-binary uit de map `Downloads` en ga terug naar [paragraaf 4.1](#41-download-binary)."
+msgid "If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the Monero binary from the `Downloads` directory and go back to [section Binary downloaden](#binary-downloaded)."
+msgstr "**GA NIET VERDER** als de hash **NIET** overeenkomt. Verwijder dan de Monero-binary uit de map `Downloads` en ga terug naar [paragraaf Binary downloaden](#binary-downloaden)."
 
 #
 #, fuzzy
