@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 La verificación de los archivos binarios de Monero debería ser hecha antes
 de extraer, instalar o usar el software Monero. Esta es la única forma de
@@ -20,13 +20,13 @@ necesarios, y finalmente verificar que tu binario es auténtico.
 
 ## Tabla de Contenidos
 
-1. [Usar el Instalador Gpg4win](#)
+1. [Usar el Instalador Gpg4win](#usar-el-instalador-gpg4win)
 
-2. [Importar Clave de Firma](#)
+2. [Importar Clave de Firma](#importar-clave-de-firma)
 
-3. [Verificar Archivo Hash](#)
+3. [Verificar Archivo Hash](#verificar-archivo-hash)
 
-4. [Verificar Archivo Binario](#)
+4. [Verificar Archivo Binario](#verificar-archivo-binario)
 
 ## Usar el Instalador Gpg4win
 
@@ -199,8 +199,8 @@ fingerprint](/img/resources/user-guides/en/verify_binary_windows_beginner/verify
 Si la huella **SÍ** coincide, haz clic en `Certify`.
 
 Si la huella de clave **NO** coincide, **NO CONTINÚES**. En su lugar elimina
-el archivo `fluffypony` de `Descargas` y regresa a la [sección
-2.1](#21-descargar-clave-de-firma).
+el archivo `fluffypony` de `Descargas` y regresa a la [sección Descargar
+Clave de Firma](#descargar-clave-de-firma).
 
 Ingresa tu contraseña, haz clic en `OK`.
 
@@ -255,8 +255,8 @@ badsig](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_
 Si recibes una firma **VÁLIDA**, haz clic en`Discard` y continua.
 
 Si recibes una firma **INVÁLIDA**, **NO CONTINÚES.** En su lugar elimina el
-archivo `hashes` de `Descargas` y regresa a la [sección
-3.1](#31-descargar-archivo-hash).
+archivo `hashes` de `Descargas` y regresa a la [sección Descargar Archivo
+Hash](#descargar-archivo-hash).
 
 ## Verificar Archivo Binario
 
@@ -319,4 +319,5 @@ Puedes estar seguro de que tus archivos Monero son auténticos. Puedes
 extraer e instalar/utilizar los archivos normalmente.
 
 Si tu hash **NO** coincide **NO CONTINÚES.** En su lugar elimina el binario
-Monero de `Descargas` y regresa a la [sección 4.1](#41-descargar-binario).
+Monero de `Descargas` y regresa a la [sección Descargar
+Binario](#descargar-binario).
