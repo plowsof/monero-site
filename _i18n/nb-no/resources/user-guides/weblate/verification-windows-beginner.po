@@ -44,7 +44,6 @@ msgstr "Dette er en nybegynnerguide for Windows-operativsystemene og gjør neste
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:9
 #, no-wrap
-#| msgid "## Table of Contents"
 msgid "Table of Contents"
 msgstr "Innholdsfortegnelse"
 
@@ -186,7 +185,6 @@ msgstr "![gpg4win launch](/img/resources/user-guides/en/verify_binary_windows_be
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:51
 #, no-wrap
-#| msgid "### 1.2. Use Gpg4win Installer"
 msgid "Use Gpg4win Installer"
 msgstr "Bruk av Gpg4win-installatøren"
 
@@ -280,7 +278,6 @@ msgstr "![gpg4win install completed](/img/resources/user-guides/en/verify_binary
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:81
 #, no-wrap
-#| msgid "## 2. Monero Signing Key"
 msgid "Monero Signing Key"
 msgstr "Monero-signeringsnøkkel"
 
@@ -294,7 +291,6 @@ msgstr "Denne seksjonen tar for seg nedlasting av Monero-signeringsnøkkelen, ve
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:85
 #, no-wrap
-#| msgid "### 2.1. Download Signing Key"
 msgid "Download Signing Key"
 msgstr "Nedlasting av signeringsnøkkel"
 
@@ -328,7 +324,6 @@ msgstr "![getkey save file](/img/resources/user-guides/en/verify_binary_windows_
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:95
 #, no-wrap
-#| msgid "### 2.2. Initialize Kleopatra"
 msgid "Initialize Kleopatra"
 msgstr "Initialisering av Kleopatra"
 
@@ -354,7 +349,6 @@ msgstr "![kleo launch](/img/resources/user-guides/en/verify_binary_windows_begin
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:103
 #, no-wrap
-#| msgid "#### 2.2.1. Import Signing Key"
 msgid "Import Signing Key"
 msgstr "Import av signeringsnøkkel"
 
@@ -398,7 +392,6 @@ msgstr "![kleo firstrun start process](/img/resources/user-guides/en/verify_bina
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:117
 #, no-wrap
-#| msgid "#### 2.2.2. Create Key Pair"
 msgid "Create Key Pair"
 msgstr "Oppretting av nøkkelpar"
 
@@ -460,7 +453,6 @@ msgstr "![kleo firstrun finish create key](/img/resources/user-guides/en/verify_
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:139
 #, no-wrap
-#| msgid "### 2.3. Verify Signing Key"
 msgid "Verify Signing Key"
 msgstr "Verifisering av signeringsnøkkel"
 
@@ -504,7 +496,6 @@ msgstr "![kleo certify pass](/img/resources/user-guides/en/verify_binary_windows
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:155
 #, no-wrap
-#| msgid "## 3. Hash File Verification"
 msgid "Hash File Verification"
 msgstr "Verifisering av hash-fil"
 
@@ -518,7 +509,6 @@ msgstr "Denne seksjonen tar for seg nedlasting av den signerte filen med et kjen
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:159
 #, no-wrap
-#| msgid "### 3.1. Download Hash File"
 msgid "Download Hash File"
 msgstr "Nedlasting av hash-fil"
 
@@ -544,7 +534,6 @@ msgstr "![hashes save file](/img/resources/user-guides/en/verify_binary_windows_
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:169
 #, no-wrap
-#| msgid "### 3.2. Verify Hash File"
 msgid "Verify Hash File"
 msgstr "Verifisering av hash-fil"
 
@@ -618,7 +607,6 @@ msgstr "Hvis du mottar en **UGYLDIG** signatur, **IKKE FORTSETT.** Slett i stede
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:193
 #, no-wrap
-#| msgid "## 4. Binary File Verification"
 msgid "Binary File Verification"
 msgstr "Verifisering av binærfil"
 
@@ -632,7 +620,6 @@ msgstr "Denne seksjonen tar for seg nedlasting av Monero-binærfilene og verifis
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:197
 #, no-wrap
-#| msgid "### 4.1. Download Binary"
 msgid "Download Binary"
 msgstr "Nedlasting av binærfiler"
 
@@ -670,7 +657,6 @@ msgstr "![binary getmonero save location](/img/resources/user-guides/en/verify_b
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:211
 #, no-wrap
-#| msgid "### 4.2. Verify Binary"
 msgid "Verify Binary"
 msgstr "Verifisering av binærfiler"
 

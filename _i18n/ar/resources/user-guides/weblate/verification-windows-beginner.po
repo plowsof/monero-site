@@ -44,7 +44,6 @@ msgstr "هذا هو دليل المبتدئين لنظام التشغيل وين
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:9
 #, no-wrap
-#| msgid "## Table of Contents"
 msgid "Table of Contents"
 msgstr "قائمه المحتويات"
 
@@ -98,7 +97,6 @@ msgstr "سيغطي هذا القسم تثبيت برنامج التشفير. ل�
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:23
 #, no-wrap
-#| msgid "#### 1.1.1. Download Gpg4win"
 msgid "Download Gpg4win"
 msgstr "تنزيل Gpg4win"
 
@@ -154,7 +152,6 @@ msgstr "![gpg4win site download location](/img/resources/user-guides/en/verify_b
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:41
 #, no-wrap
-#| msgid "#### 1.1.2. Launch Gpg4win"
 msgid "Launch Gpg4win"
 msgstr "تشغيل Gpg4win"
 
@@ -186,7 +183,6 @@ msgstr "![gpg4win launch](/img/resources/user-guides/en/verify_binary_windows_be
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:51
 #, no-wrap
-#| msgid "### 1.2. Use Gpg4win Installer"
 msgid "Use Gpg4win Installer"
 msgstr "إستخدام مُثبت Gpg4win"
 
@@ -280,7 +276,6 @@ msgstr "![gpg4win installer finish](/img/resources/user-guides/en/verify_binary_
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:81
 #, no-wrap
-#| msgid "## 2. Monero Signing Key"
 msgid "Monero Signing Key"
 msgstr "مُفتاح توقيع مونيرو"
 
@@ -294,7 +289,6 @@ msgstr "سيٌغطي هذا القسم تنزيل مفتاح توقيع موني
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:85
 #, no-wrap
-#| msgid "### 2.1. Download Signing Key"
 msgid "Download Signing Key"
 msgstr "تنزيل مفتاح التوقيع"
 
@@ -328,7 +322,6 @@ msgstr "![getkey save file](/img/resources/user-guides/en/verify_binary_windows_
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:95
 #, no-wrap
-#| msgid "### 2.2. Initialize Kleopatra"
 msgid "Initialize Kleopatra"
 msgstr "تهيئه Kleopatra"
 
@@ -354,7 +347,6 @@ msgstr "![kleo launch](/img/resources/user-guides/en/verify_binary_windows_begin
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:103
 #, no-wrap
-#| msgid "#### 2.2.1. Import Signing Key"
 msgid "Import Signing Key"
 msgstr "استيراد مفتاح التوقيع"
 
@@ -398,7 +390,6 @@ msgstr "![kleo firstrun start process](/img/resources/user-guides/en/verify_bina
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:117
 #, no-wrap
-#| msgid "#### 2.2.2. Create Key Pair"
 msgid "Create Key Pair"
 msgstr "إنشاء زوج مفتاح"
 
@@ -460,7 +451,6 @@ msgstr "![kleo firstrun finish create key](/img/resources/user-guides/en/verify_
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:139
 #, no-wrap
-#| msgid "### 2.3. Verify Signing Key"
 msgid "Verify Signing Key"
 msgstr "تحقق من مفتاح التوقيع"
 
@@ -504,7 +494,6 @@ msgstr "![kleo certify pass](/img/resources/user-guides/en/verify_binary_windows
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:155
 #, no-wrap
-#| msgid "## 3. Hash File Verification"
 msgid "Hash File Verification"
 msgstr "التحقق من ملف الهاش"
 
@@ -518,7 +507,6 @@ msgstr "سيغطي هذا القسم تنزيل الملف الموقّع لله
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:159
 #, no-wrap
-#| msgid "### 3.1. Download Hash File"
 msgid "Download Hash File"
 msgstr "تنزيل ملف الهاش"
 
@@ -544,7 +532,6 @@ msgstr "![hashes save file](/img/resources/user-guides/en/verify_binary_windows_
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:169
 #, no-wrap
-#| msgid "### 3.2. Verify Hash File"
 msgid "Verify Hash File"
 msgstr "تأكد من ملف الهاش"
 
@@ -618,7 +605,6 @@ msgstr "إذا كان التوقيع **غير صحيح** , **لا تُكمل** �
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:193
 #, no-wrap
-#| msgid "## 4. Binary File Verification"
 msgid "Binary File Verification"
 msgstr "التحقق من ملفات التثبيت"
 
@@ -632,7 +618,6 @@ msgstr "سيغطي هذا القسم تنزيل ملف تثبيت مونيرو �
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:197
 #, no-wrap
-#| msgid "### 4.1. Download Binary"
 msgid "Download Binary"
 msgstr "تنزيل ملف التثبيت"
 
@@ -670,7 +655,6 @@ msgstr "![binary getmonero save location](/img/resources/user-guides/en/verify_b
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:211
 #, no-wrap
-#| msgid "### 4.2. Verify Binary"
 msgid "Verify Binary"
 msgstr "تأكد من ملف التثبيت"
 

@@ -18,7 +18,7 @@ den nødvendige programvaren, importere signeringsnøkkelen, nedlasting av de
 nødvendige filene og avslutningsvis å verifisere at binærfilene dine er
 autentiske.
 
-## Table of Contents
+## Innholdsfortegnelse
 
 1. [Gpg4win Installer](#using-gpg4win-installer)
 
@@ -71,7 +71,7 @@ Dobbeltklikk på den nedlastede, eksekverbare gpg4win-filen for å starte den.
 ![gpg4win
 launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)
 
-### Use Gpg4win Installer
+### Bruk av Gpg4win-installatøren
 
 Du vil bli fremlagt en sikkerhetsverifiseringsskjerm. Trykk på `Kjør`.
 
@@ -111,7 +111,7 @@ Trykk på `Ferdig`.
 ![gpg4win install
 completed](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
 
-## Monero Signing Key
+## Monero-signeringsnøkkel
 
 Denne seksjonen tar for seg nedlasting av Monero-signeringsnøkkelen,
 verifisering av at nøkkelen er riktig, og deretter import av nøkkelen til
@@ -120,7 +120,7 @@ kryptografisk signert med Monero-signeringsnøkkelen. For å kontrollere
 gyldigheten av denne filen, trenger du den offentlige versjonen av
 signeringsnøkkelen.
 
-### Download Signing Key
+### Nedlasting av signeringsnøkkel
 
 Åpne nettleseren og gå til [binaryFates GPG
 key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc),
@@ -135,7 +135,7 @@ La standardplasseringen være som den er og trykk på `Lagre`.
 ![getkey save
 file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)
 
-### Initialize Kleopatra
+### Initialisering av Kleopatra
 
 Hvis dette er første gang du bruker Kleopatra, må du opprette et nøkkelpar
 for deg selv.
@@ -145,7 +145,7 @@ Start Kleopatra.
 ![kleo
 launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)
 
-### Import Signing Key
+### Import av signeringsnøkkel
 
 Trykk på `Import`.
 
@@ -162,7 +162,7 @@ Start prosessen av å sertifisere nøkkelen ved å trykke på `Ja`.
 ![kleo firstrun start
 process](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)
 
-### Create Key Pair
+### Oppretting av nøkkelpar
 
 Start prosessen av nøkkelopprettelsen ved å trykke på `Ja`.
 
@@ -189,7 +189,7 @@ Trykk på `Ferdig`.
 ![kleo firstrun finish create
 key](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
 
-### Verify Signing Key
+### Verifisering av signeringsnøkkel
 
 Sjekk visuelt at fingeravtrykket til nøkkelen som tilhører binaryFate er
 `81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92`.
@@ -210,12 +210,12 @@ pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kl
 
 Trykk på `Ferdig`.
 
-## Hash File Verification
+## Verifisering av hash-fil
 
 Denne seksjonen tar for seg nedlasting av den signerte filen med et kjent
 antall gode hasher og verifisering av dens autentisitet.
 
-### Download Hash File
+### Nedlasting av hash-fil
 
 Åpne en nettleser og gå til [hash-siden til getmonero.org]({{
 site.baseurl_root }}/downloads/hashes.txt). Høyreklikk på siden og velg
@@ -229,7 +229,7 @@ La standardplasseringen være som den er og trykk på `Lagre`.
 ![hashes save
 file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
 
-### Verify Hash File
+### Verifisering av hash-fil
 
 Trykk på `Decrypt/Verify`-knappen i Kleopatra.
 
@@ -260,12 +260,12 @@ Hvis du mottar en **UGYLDIG** signatur, **IKKE FORTSETT.** Slett i stedet
 `hashes`-filen fra `Nedlastinger`-katalogen og gå tilbake til [seksjon
 3.1](#31-download-hash-file).
 
-## Binary File Verification
+## Verifisering av binærfil
 
 Denne seksjonen tar for seg nedlasting av Monero-binærfilene og verifisering
 av dens autentisitet.
 
-### Download Binary
+### Nedlasting av binærfiler
 
 Åpne nettleseren og gå til [nedlastingssiden på getmonero.org]({{
 site.baseurl_root }}/downloads/#windows). Velg den riktige binærfilen for
@@ -284,7 +284,7 @@ La standardplasseringen være som den er og trykk på `Lagre`.
 ![binary getmonero save
 location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
 
-### Verify Binary
+### Verifisering av binærfiler
 
 I en filbehandler kan du navigere til `Nedlastinger`-katalogen. Åpne
 `hashes`-filen med et tekstbehandlingsprogram.

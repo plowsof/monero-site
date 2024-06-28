@@ -20,7 +20,7 @@ gesamten Prozess: die Installation der erforderlichen Software, den Import
 des Signaturschlüssels, den Download der notwendigen Dateien und schließlich
 die Verifikation der Echtheit deiner Binärdatei.
 
-## Table of Contents
+## Inhaltsverzeichnis
 
 1. [Gpg4win Installer](#using-gpg4win-installer)
 
@@ -73,7 +73,7 @@ Du startest die heruntergeladene Gpg4win-Programmdatei mittels Doppelklicks.
 ![gpg4win
 launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)
 
-### Use Gpg4win Installer
+### Gpg4win-Installationsprogramm verwenden
 
 Dir wird zwecks Verifizierung ein Sicherheitsbildschirm angezeigt. Klicke
 auf `Ausführen`.
@@ -115,7 +115,7 @@ Klicke auf `Abschließen`.
 ![gpg4win installer
 finish](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
 
-## Monero Signing Key
+## Monero-Signaturschlüssel
 
 Dieser Abschnitt behandelt den Download des Monero-Signaturschlüssels,
 dessen Verifikation und schließlich den Import des Schlüssels auf deinen
@@ -124,7 +124,7 @@ verwendet wird, ist mit dem Monero-Signaturschlüssel kryptografisch
 signiert. Um die Validität dieser Datei zu überprüfen, musst du über die
 öffentliche Version des Signaturschlüssels verfügen.
 
-### Download Signing Key
+### Signaturschlüssel herunterladen
 
 Besuche in einem Webbrowser [binaryFates
 GPG-Schlüssel](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc),
@@ -139,7 +139,7 @@ Belasse es beim voreingestellten Speicherort und klicke auf `Speichern`.
 ![getkey save
 file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)
 
-### Initialize Kleopatra
+### Kleopatra initialisieren
 
 Falls dies das erste Mal ist, dass du Kleopatra verwendest, musst du
 zunächst ein eigenes Schlüsselpaar erstellen.
@@ -149,7 +149,7 @@ Starte Kleopatra.
 ![kleo
 launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)
 
-### Import Signing Key
+### Signaturschlüssel importieren
 
 Klicke auf `Import`.
 
@@ -167,7 +167,7 @@ Durch Klicken auf `Ja` startest du den Zertifikationsprozess des Schlüssels.
 ![kleo firstrun start
 process](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)
 
-### Create Key Pair
+### Schlüsselpaar erstellen
 
 Starte den Vorgang der Schlüsselerstellung durch einen Klick auf `Ja`.
 
@@ -195,7 +195,7 @@ Klicke auf `Abschließen`.
 ![kleo firstrun finish create
 key](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
 
-### Verify Signing Key
+### Signaturschlüssel verifizieren
 
 Kontrolliere visuell, dass der Fingerabdruck des zu binaryFate gehörenden
 Schlüssels `81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92` ist.
@@ -217,12 +217,12 @@ pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kl
 
 Klicke auf `Abschließen`.
 
-## Hash File Verification
+## Verifikation der Hash-Datei
 
 Dieser Abschnitt behandelt den Download einer signierten Datei mit
 bekanntlich guten Hashes und die Verifikation ihrer Echtheit.
 
-### Download Hash File
+### Hash-Datei herunterladen
 
 Besuche in einem Webbrowser die [Hash-Seite von getmonero.org]({{
 site.baseurl_root }}/downloads/hashes.txt). Wähle nach einem Rechtsklick auf
@@ -236,7 +236,7 @@ Belasse es beim voreingestellten Speicherort und klicke auf `Speichern`.
 ![hashes save
 file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
 
-### Verify Hash File
+### Hash-Datei verifizieren
 
 Klicke in Kleopatra den `Decrypt/Verify`-Button.
 
@@ -269,12 +269,12 @@ Wenn du eine **UNGÜLTIGE** Signatur ausgegeben bekommst, **FAHRE NICHT
 FORT**. Lösche die `hashes`-Datei aus dem `Downloads`-Verzeichnis und gehe
 zurück zum [Abschnitt 3.1](#31-hash-datei-herunterladen).
 
-## Binary File Verification
+## Verifikation der Binärdatei
 
 Der folgende Abschnitt behandelt den Download der Monero-Binärdatei und
 deren Echtheitsverifizierung.
 
-### Download Binary
+### Binärdatei herunterladen
 
 Besuche in einem Webbrowser die [Downloads-Seite von getmonero.org]({{
 site.baseurl_root }}/downloads/#windows). Wähle die für dein System passende
@@ -293,7 +293,7 @@ Belasse es beim voreingestellten Speicherort und klicke auf `Speichern`.
 ![binary getmonero save
 location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
 
-### Verify Binary
+### Binärdatei verifizieren
 
 Navigiere in einem Dateimanager zum `Downloads`-Verzeichnis. Öffne die
 `hashes`-Datei mit einem Textverarbeitungsprogramm.
