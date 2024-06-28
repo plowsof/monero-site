@@ -50,28 +50,24 @@ msgstr "Tabla de Contenidos"
 #
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:12
-#| msgid "### 1.2. Use Gpg4win Installer"
 msgid "[Gpg4win Installer](#using-gpg4win-installer)"
 msgstr "[Usar el Instalador Gpg4win](#)"
 
 #
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:14
-#| msgid "#### 2.2.1. Import Signing Key"
 msgid "[Import Signing Key](#monero-signing-key)"
 msgstr "[Importar Clave de Firma](#)"
 
 #
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:16
-#| msgid "## 3. Hash File Verification"
 msgid "[Verify Hash File](#hash-file-verification)"
 msgstr "[Verificar Archivo Hash](#)"
 
 #
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:18
-#| msgid "## 4. Binary File Verification"
 msgid "[Verify Binary File](#binary-file-verification)"
 msgstr "[Verificar Archivo Binario](#)"
 
@@ -79,7 +75,6 @@ msgstr "[Verificar Archivo Binario](#)"
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:19
 #, no-wrap
-#| msgid "## 1. Using Gpg4win Installer"
 msgid "Using Gpg4win Installer"
 msgstr "Usar el Instalador Gpg4win"
 
@@ -93,7 +88,6 @@ msgstr "Esta sección cubre la instalación de software criptográfico. Windows 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:23
 #, no-wrap
-#| msgid "#### 1.1.1. Download Gpg4win"
 msgid "Download Gpg4win"
 msgstr "Descargar Gpg4win"
 
@@ -149,7 +143,6 @@ msgstr "![gpg4win site download location](/img/resources/user-guides/en/verify_b
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:41
 #, no-wrap
-#| msgid "#### 1.1.2. Launch Gpg4win"
 msgid "Launch Gpg4win"
 msgstr "Abrir Gpg4win"
 

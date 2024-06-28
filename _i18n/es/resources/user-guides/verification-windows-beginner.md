@@ -20,21 +20,21 @@ necesarios, y finalmente verificar que tu binario es auténtico.
 
 ## Tabla de Contenidos
 
-1. [Gpg4win Installer](#using-gpg4win-installer)
+1. [Usar el Instalador Gpg4win](#)
 
-2. [Import Signing Key](#monero-signing-key)
+2. [Importar Clave de Firma](#)
 
-3. [Verify Hash File](#hash-file-verification)
+3. [Verificar Archivo Hash](#)
 
-4. [Verify Binary File](#binary-file-verification)
+4. [Verificar Archivo Binario](#)
 
-## Using Gpg4win Installer
+## Usar el Instalador Gpg4win
 
 Esta sección cubre la instalación de software criptográfico. Windows no
 viene con las herramientas requeridas para verificar tus binarios. Para
 instalar estas herramientas puedes utilizar el instalador Gpg4win.
 
-### Download Gpg4win
+### Descargar Gpg4win
 
 En un navegador web, ve a [gpg4win.org](https://gpg4win.org) y descarga el
 instalador haciendo clic en el botón verde.
@@ -58,7 +58,7 @@ Elige una dirección de descarga, y haz clic en `Guardar`.
 ![gpg4win site download
 location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
 
-### Launch Gpg4win
+### Abrir Gpg4win
 
 Cuando la descarga termine, abre la carpeta contenedora.
 
