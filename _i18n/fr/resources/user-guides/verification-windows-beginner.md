@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 Les fichiers binaires Monero devrait être vérifiés avant extraction,
 installation ou utilisation de l'application Monero. C'est l'unique manière
@@ -21,13 +21,13 @@ et enfin de vérification de l'authenticité de votre binaire.
 
 ## Table des matières
 
-1. [Utiliser l'Installateur Gpg4win](#)
+1. [Utiliser l'Installateur Gpg4win](#utiliser-linstallateur-de-gpg4win)
 
-2. [Importer une Clef de Signature](#)
+2. [Importer une Clef de Signature](#clef-de-signature-monero)
 
-3. [Vérification du Fichier de Hachage](#)
+3. [Vérification du Fichier de Hachage](#vérification-du-fichier-de-hachage)
 
-4. [Vérification du Fichier Binaire](#)
+4. [Vérification du Fichier Binaire](#vérification-du-fichier-binaire)
 
 ## Utiliser l'Installateur de Gpg4win
 
@@ -208,7 +208,8 @@ Si l'empreinte **EST** identique, cochez les cases et cliquez sur
 
 Si l'empreinte **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de
 cela, supprimez le fichier `fluffypony.asc` du répertoire `téléchargements`
-et retournez à la [rubrique 2.1](#21-télécharger-la-clef-de-signature).
+et retournez à la [rubrique Télécharger la Clef de
+Signature](#télécharger-la-clef-de-signature).
 
 Entrez votre mot de passe et cliquer sur `OK`.
 
@@ -266,7 +267,8 @@ et poursuivez.
 
 Si vous obtenez une signature **NON VALABLE**, **NE POURSUIVEZ PAS.** Au
 lieu de cela, supprimez le fichier `hashes` du répertoire `téléchargements`
-et retournez à la [rubrique 3.1](#31-télécharger-le-fichier-de-hachage).
+et retournez à la [rubrique Télécharger le Fichier de
+Hachage](#télécharger-le-fichier-de-hachage).
 
 ## Vérification du Fichier Binaire
 
@@ -330,4 +332,4 @@ pouvez extraire et installer / utiliser les fichiers normalement.
 
 Si votre hachage **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de
 cela, supprimez le binaire Monero du répertoire `téléchargements` et
-retournez à la [rubrique 4.1](#41-télécharger-le-binaire).
+retournez à la [rubrique Télécharger le Binaire](#télécharger-le-binaire).
