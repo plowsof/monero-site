@@ -20,22 +20,22 @@ autentiske.
 
 ## Innholdsfortegnelse
 
-1. [Gpg4win Installer](#using-gpg4win-installer)
+1. [Bruk av Gpg4win-installatøren](#bruk-av-gpg4win-installatøren)
 
-2. [Import Signing Key](#monero-signing-key)
+2. [Import av signeringsnøkkel](#import-av-signeringsnøkkel)
 
-3. [Verify Hash File](#hash-file-verification)
+3. [Verifisering av hash-fil](#verifisering-av-hash-fil)
 
-4. [Verify Binary File](#binary-file-verification)
+4. [Verifisering av binærfil](#verifisering-av-binærfil)
 
-## Using Gpg4win Installer
+## Bruk av Gpg4win-installatøren
 
 Denne seksjonen tar for seg installasjon av den kryptografiske
 programvaren. Windows kommer ikke med de nødvendige verktøyene for å
 verifisere binærene dine. Du kan bruke Gpg4win-installatøren for å
 installere disse verktøyene.
 
-### Download Gpg4win
+### Nedlasting av Gpg4win
 
 Gå til [gpg4win.org](https://gpg4win.org) i nettleseren og last ned
 installatøren ved å trykke på den grønne knappen.
@@ -59,7 +59,7 @@ Velg et sted å laste ned filen til og trykk på `Lagre`.
 ![gpg4win site download
 site](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
 
-### Launch Gpg4win
+### Oppstart av Gpg4win
 
 Når nedlastingen er ferdig, kan du åpne mappen som filen ligger i.
 
@@ -201,7 +201,8 @@ Hvis fingeravtrykket **MATCHER**, trykk på `Sertifiser`.
 
 Dersom fingeravtrykket til denne nøkkelen **IKKE MATCHER**, **IKKE
 FORTSETT**. Slett i stedet `binaryfate`-filen fra `Nedlastinger`-katalogen
-og gå tilbake til [seksjon 2.1](#21-download-signing-key).
+og gå tilbake til [seksjon Nedlasting av
+signeringsnøkkel](#nedlasting-av-signeringsnøkkel).
 
 Skriv inn passordet ditt og trykk på `OK`.
 
@@ -258,7 +259,7 @@ Hvis du mottar en **GYLDIG** signatur, trykk på `Forkast` og gå videre.
 
 Hvis du mottar en **UGYLDIG** signatur, **IKKE FORTSETT.** Slett i stedet
 `hashes`-filen fra `Nedlastinger`-katalogen og gå tilbake til [seksjon
-3.1](#31-download-hash-file).
+Nedlasting av hash-fil](#nedlasting-av-hash-fil).
 
 ## Verifisering av binærfil
 
@@ -322,4 +323,4 @@ installere/bruke filene som normalt.
 
 Dersom hashen din **IKKE MATCHER**, **IKKE FORTSETT.** Slett i stedet
 Monero-binærfilen fra `Nedlastinger`-katalogen og gå tilbake til [seksjon
-4.1](#41-download-binary).
+Nedlasting av binærfiler](#nedlasting-av-binærfiler).
