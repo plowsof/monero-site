@@ -720,7 +720,6 @@ msgstr "Если хеши **СОВПАДАЮТ**, значит, верифика
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:235
-#, fuzzy
 #| msgid "If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead delete the file `binaryfate` from the `Downloads` directory and go back to [section 2.1](#21-download-signing-key)."
 msgid "If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the Monero binary from the `Downloads` directory and go back to [section 4.1](#41-download-binary)."
 msgstr "Если отпечаток **НЕ СООТВЕТСТВУЕТ**, продолжать дальнейшие выполнение пунктов инструкции **НЕ СЛЕДУЕТ**. Необходимо удалить `binaryfate` из директории `Downloads` и повторить действия, описанные в [пункте Загрузка ключа подписи](#загрузка-подписывающего-ключа)."
