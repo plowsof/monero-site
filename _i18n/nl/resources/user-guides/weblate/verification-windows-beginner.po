@@ -50,42 +50,38 @@ msgstr "Inhoud"
 #
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:12
-#, fuzzy
 #| msgid "### 1.2. Use Gpg4win Installer"
 msgid "[Gpg4win Installer](#using-gpg4win-installer)"
-msgstr "### 1.2. Gpg4win-installatieprogramma gebruiken"
+msgstr "Gpg4win-installatieprogramma gebruiken"
 
 #
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:14
-#, fuzzy
 #| msgid "#### 2.2.1. Import Signing Key"
 msgid "[Import Signing Key](#monero-signing-key)"
-msgstr "#### 2.2.1. Ondertekeningssleutel importeren"
+msgstr "Ondertekeningssleutel importeren"
 
 #
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:16
-#, fuzzy
 #| msgid "## 3. Hash File Verification"
 msgid "[Verify Hash File](#hash-file-verification)"
-msgstr "## 3. Hashbestand verifiëren"
+msgstr "Hashbestand verifiëren"
 
 #
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:18
-#, fuzzy
 #| msgid "## 4. Binary File Verification"
 msgid "[Verify Binary File](#binary-file-verification)"
-msgstr "## 4. Binair bestand verifiëren"
+msgstr "Binair bestand verifiëren"
 
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:19
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## 1. Using Gpg4win Installer"
 msgid "Using Gpg4win Installer"
-msgstr "## 1. Gpg4win-installatieprogramma gebruiken"
+msgstr "Gpg4win-installatieprogramma gebruiken"
 
 #
 #. type: Plain text
@@ -96,10 +92,10 @@ msgstr "In dit gedeelte leggen we uit hoe je de cryptografische software gebruik
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:23
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "#### 1.1.1. Download Gpg4win"
 msgid "Download Gpg4win"
-msgstr "#### 1.1.1. Gpg4win downloaden"
+msgstr "Gpg4win downloaden"
 
 #
 #. type: Plain text
@@ -152,10 +148,10 @@ msgstr "![gpg4win site locatie download](/img/resources/user-guides/en/verify_bi
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:41
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "#### 1.1.2. Launch Gpg4win"
 msgid "Launch Gpg4win"
-msgstr "#### 1.1.2. Gpg4win starten"
+msgstr "Gpg4win starten"
 
 #
 #. type: Plain text
@@ -478,7 +474,7 @@ msgstr "Klik op `Certify` als de vingerafdruk **WEL** overeenkomt."
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:148
 msgid "If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead delete the file `binaryfate` from the `Downloads` directory and go back to [section 2.1](#21-download-signing-key)."
-msgstr "**GA NIET VERDER** als de vingerafdruk van deze sleutel **NIET** overeenkomt. Verwijder dan het bestand `fluffypony` uit de map `Downloads` en ga terug naar [paragraaf 2.1](#21-download-signing-key).\n"
+msgstr "**GA NIET VERDER** als de vingerafdruk van deze sleutel **NIET** overeenkomt. Verwijder dan het bestand `fluffypony` uit de map `Downloads` en ga terug naar [paragraaf 2.1](#21-download-signing-key)."
 
 #
 #. type: Plain text
@@ -601,7 +597,7 @@ msgstr "Als je een **GELDIGE** ondertekening hebt ontvangen, klik je op `Discard
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:192
 msgid "If you receive an **INVALID** signature, **DO NOT CONTINUE.** Instead delete the file `hashes` from the `Downloads` directory and go back to [section 3.1](#31-download-hash-file)."
-msgstr "**GA NIET VERDER** als je een **ONGELDIGE** ondertekening hebt ontvangen. Verwijder dan het bestand `hashes` uit de map `Downloads` en ga terug naar [paragraaf 3.1](#31-download-hash-file).\n"
+msgstr "**GA NIET VERDER** als je een **ONGELDIGE** ondertekening hebt ontvangen. Verwijder dan het bestand `hashes` uit de map `Downloads` en ga terug naar [paragraaf 3.1](#31-download-hash-file)."
 
 #
 #. type: Title ##
@@ -730,7 +726,7 @@ msgstr "Als de hash **WEL** overeenkomt, ben je klaar met de verificatie! Dan be
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:235
 msgid "If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the Monero binary from the `Downloads` directory and go back to [section 4.1](#41-download-binary)."
-msgstr "**GA NIET VERDER** als de hash **NIET** overeenkomt. Verwijder dan de Monero-binary uit de map `Downloads` en ga terug naar [paragraaf 4.1](#41-download-binary).\n"
+msgstr "**GA NIET VERDER** als de hash **NIET** overeenkomt. Verwijder dan de Monero-binary uit de map `Downloads` en ga terug naar [paragraaf 4.1](#41-download-binary)."
 
 #
 #, fuzzy
