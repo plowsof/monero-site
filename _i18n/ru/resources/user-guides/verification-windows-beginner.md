@@ -335,6 +335,7 @@ hashes](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_
 быть уверены в том, что имеющиеся у вас двоичные файлы Monero аутентичны. Вы
 спокойно можете извлекать/устанавливать и пользоваться ими.
 
-If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the
-Monero binary from the `Downloads` directory and go back to [section
-4.1](#41-download-binary).
+Если отпечаток **НЕ СООТВЕТСТВУЕТ**, продолжать дальнейшие выполнение
+пунктов инструкции **НЕ СЛЕДУЕТ**. Необходимо удалить `binaryfate` из
+директории `Downloads` и повторить действия, описанные в [пункте Загрузка
+ключа подписи](#загрузка-подписывающего-ключа).
