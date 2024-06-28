@@ -50,28 +50,24 @@ msgstr "Innholdsfortegnelse"
 #
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:12
-#| msgid "### 1.2. Use Gpg4win Installer"
 msgid "[Gpg4win Installer](#using-gpg4win-installer)"
 msgstr "[Bruk av Gpg4win-installatøren](#bruk-av-gpg4win-installatøren)"
 
 #
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:14
-#| msgid "#### 2.2.1. Import Signing Key"
 msgid "[Import Signing Key](#monero-signing-key)"
 msgstr "[Import av signeringsnøkkel](#import-av-signeringsnøkkel)"
 
 #
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:16
-#| msgid "## 3. Hash File Verification"
 msgid "[Verify Hash File](#hash-file-verification)"
 msgstr "[Verifisering av hash-fil](#verifisering-av-hash-fil)"
 
 #
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:18
-#| msgid "## 4. Binary File Verification"
 msgid "[Verify Binary File](#binary-file-verification)"
 msgstr "[Verifisering av binærfil](#verifisering-av-binærfil)"
 
@@ -79,7 +75,6 @@ msgstr "[Verifisering av binærfil](#verifisering-av-binærfil)"
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:19
 #, no-wrap
-#| msgid "## 1. Using Gpg4win Installer"
 msgid "Using Gpg4win Installer"
 msgstr "Bruk av Gpg4win-installatøren"
 
@@ -93,7 +88,6 @@ msgstr "Denne seksjonen tar for seg installasjon av den kryptografiske programva
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:23
 #, no-wrap
-#| msgid "#### 1.1.1. Download Gpg4win"
 msgid "Download Gpg4win"
 msgstr "Nedlasting av Gpg4win"
 
@@ -149,7 +143,6 @@ msgstr "![gpg4win site download site](/img/resources/user-guides/en/verify_binar
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:41
 #, no-wrap
-#| msgid "#### 1.1.2. Launch Gpg4win"
 msgid "Launch Gpg4win"
 msgstr "Oppstart av Gpg4win"
 
