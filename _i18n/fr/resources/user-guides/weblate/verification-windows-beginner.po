@@ -20,7 +20,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"yes\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
 #
 #. type: Plain text
@@ -51,25 +51,25 @@ msgstr "Table des matières"
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:12
 msgid "[Gpg4win Installer](#using-gpg4win-installer)"
-msgstr "[Utiliser l'Installateur Gpg4win](#)"
+msgstr "[Utiliser l'Installateur Gpg4win](#utiliser-linstallateur-de-gpg4win)"
 
 #
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:14
 msgid "[Import Signing Key](#monero-signing-key)"
-msgstr "[Importer une Clef de Signature](#)"
+msgstr "[Importer une Clef de Signature](#clef-de-signature-monero)"
 
 #
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:16
 msgid "[Verify Hash File](#hash-file-verification)"
-msgstr "[Vérification du Fichier de Hachage](#)"
+msgstr "[Vérification du Fichier de Hachage](#vérification-du-fichier-de-hachage)"
 
 #
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:18
 msgid "[Verify Binary File](#binary-file-verification)"
-msgstr "[Vérification du Fichier Binaire](#)"
+msgstr "[Vérification du Fichier Binaire](#vérification-du-fichier-binaire)"
 
 #
 #. type: Title ##
@@ -467,7 +467,7 @@ msgstr "Si l'empreinte **EST** identique, cochez les cases et cliquez sur `Certi
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:148
 msgid "If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead delete the file `binaryfate` from the `Downloads` directory and go back to [section 2.1](#21-download-signing-key)."
-msgstr "Si l'empreinte **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le fichier `fluffypony.asc` du répertoire `téléchargements` et retournez à la [rubrique 2.1](#21-télécharger-la-clef-de-signature)."
+msgstr "Si l'empreinte **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le fichier `fluffypony.asc` du répertoire `téléchargements` et retournez à la [rubrique Télécharger la Clef de Signature](#télécharger-la-clef-de-signature)."
 
 #
 #. type: Plain text
@@ -590,7 +590,7 @@ msgstr "Si vous obtenez une signature **VALABLE**, cliquez sur `Ne pas tenir com
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:192
 msgid "If you receive an **INVALID** signature, **DO NOT CONTINUE.** Instead delete the file `hashes` from the `Downloads` directory and go back to [section 3.1](#31-download-hash-file)."
-msgstr "Si vous obtenez une signature **NON VALABLE**, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le fichier `hashes` du répertoire `téléchargements` et retournez à la [rubrique 3.1](#31-télécharger-le-fichier-de-hachage)."
+msgstr "Si vous obtenez une signature **NON VALABLE**, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le fichier `hashes` du répertoire `téléchargements` et retournez à la [rubrique Télécharger le Fichier de Hachage](#télécharger-le-fichier-de-hachage)."
 
 #
 #. type: Title ##
@@ -719,7 +719,7 @@ msgstr "Si votre hachage **EST** identique vous en avez terminé avec la vérifi
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:235
 msgid "If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the Monero binary from the `Downloads` directory and go back to [section 4.1](#41-download-binary)."
-msgstr "Si votre hachage **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le binaire Monero du répertoire `téléchargements` et retournez à la [rubrique 4.1](#41-télécharger-le-binaire)."
+msgstr "Si votre hachage **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le binaire Monero du répertoire `téléchargements` et retournez à la [rubrique Télécharger le Binaire](#télécharger-le-binaire)."
 
 #
 #~| msgid "### 1.1. Getting Gpg4win Installer"
