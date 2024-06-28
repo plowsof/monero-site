@@ -50,28 +50,24 @@ msgstr "قائمه المحتويات"
 #
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:12
-#| msgid "### 1.2. Use Gpg4win Installer"
 msgid "[Gpg4win Installer](#using-gpg4win-installer)"
 msgstr "[ إستخدام مُثبت Gpg4win ](#) "
 
 #
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:14
-#| msgid "#### 2.2.1. Import Signing Key"
 msgid "[Import Signing Key](#monero-signing-key)"
 msgstr "[ استيراد مفتاح التوقيع ](#)"
 
 #
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:16
-#| msgid "## 3. Hash File Verification"
 msgid "[Verify Hash File](#hash-file-verification)"
 msgstr "[ التحقق من ملف الهاش](#)"
 
 #
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:18
-#| msgid "## 4. Binary File Verification"
 msgid "[Verify Binary File](#binary-file-verification)"
 msgstr "[ التحقق من ملفات التثبيت ](#)"
 
@@ -79,7 +75,6 @@ msgstr "[ التحقق من ملفات التثبيت ](#)"
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:19
 #, no-wrap
-#| msgid "## 1. Using Gpg4win Installer"
 msgid "Using Gpg4win Installer"
 msgstr "إستخدام مُثبت Gpg4win"
 

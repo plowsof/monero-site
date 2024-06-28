@@ -16,15 +16,15 @@
 
 ## قائمه المحتويات
 
-1. [Gpg4win Installer](#using-gpg4win-installer)
+1. [ إستخدام مُثبت Gpg4win ](#) 
 
-2. [Import Signing Key](#monero-signing-key)
+2. [ استيراد مفتاح التوقيع ](#)
 
-3. [Verify Hash File](#hash-file-verification)
+3. [ التحقق من ملف الهاش](#)
 
-4. [Verify Binary File](#binary-file-verification)
+4. [ التحقق من ملفات التثبيت ](#)
 
-## Using Gpg4win Installer
+## إستخدام مُثبت Gpg4win
 
 سيغطي هذا القسم تثبيت برنامج التشفير. لا يأتي مع ويندوز الأدوات المطلوبة
 للتحقق من الملفات. لتثبيت هذه الأدوات يمكنك استخدام مثبت Gpg4win.
