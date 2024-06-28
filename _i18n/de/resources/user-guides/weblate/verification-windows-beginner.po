@@ -50,42 +50,38 @@ msgstr "Inhaltsverzeichnis"
 #
 #. type: Bullet: '1. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:12
-#, fuzzy
 #| msgid "### 1.2. Use Gpg4win Installer"
 msgid "[Gpg4win Installer](#using-gpg4win-installer)"
-msgstr "### 1.2. Gpg4win-Installationsprogramm verwenden"
+msgstr "[Gpg4win-Installationsprogramm verwenden](#gpg4win-installationsprogramm)"
 
 #
 #. type: Bullet: '2. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:14
-#, fuzzy
 #| msgid "#### 2.2.1. Import Signing Key"
 msgid "[Import Signing Key](#monero-signing-key)"
-msgstr "#### 2.2.1. Signaturschlüssel importieren"
+msgstr "[Signaturschlüssel importieren](#monero-signaturschlüssel)"
 
 #
 #. type: Bullet: '3. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:16
-#, fuzzy
 #| msgid "## 3. Hash File Verification"
 msgid "[Verify Hash File](#hash-file-verification)"
-msgstr "## 3. Verifikation der Hash-Datei"
+msgstr "[Verifikation der Hash-Datei](#verifikation-der-hash-datei)"
 
 #
 #. type: Bullet: '4. '
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:18
-#, fuzzy
 #| msgid "## 4. Binary File Verification"
 msgid "[Verify Binary File](#binary-file-verification)"
-msgstr "## 4. Verifikation der Binärdatei"
+msgstr "[Verifikation der Binärdatei](#verifikation-der-binärdatei)"
 
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:19
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## 1. Using Gpg4win Installer"
 msgid "Using Gpg4win Installer"
-msgstr "## 1. Gpg4win-Installationsprogramm"
+msgstr "Gpg4win-Installationsprogramm"
 
 #
 #. type: Plain text
@@ -96,10 +92,10 @@ msgstr "Dieser Abschnitt behandelt die Installation der Kryptografie-Software. W
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:23
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "#### 1.1.1. Download Gpg4win"
 msgid "Download Gpg4win"
-msgstr "#### 1.1.1. Gpg4win herunterladen"
+msgstr "Gpg4win herunterladen"
 
 #
 #. type: Plain text
@@ -152,10 +148,10 @@ msgstr "![gpg4win site download location](/img/resources/user-guides/en/verify_b
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:41
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "#### 1.1.2. Launch Gpg4win"
 msgid "Launch Gpg4win"
-msgstr "#### 1.1.2. Gpg4win starten"
+msgstr "Gpg4win starten"
 
 #
 #. type: Plain text
@@ -478,7 +474,7 @@ msgstr "Wenn der Fingerabdruck mit dem genannten **ÜBEREINSTIMMT**, klicke auf 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:148
 msgid "If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead delete the file `binaryfate` from the `Downloads` directory and go back to [section 2.1](#21-download-signing-key)."
-msgstr "Wenn der Fingerabdruck mit dem genannten **NICHT ÜBEREINSTIMMT**, **FAHRE NICHT FORT**. Lösche die `binaryfate`-Datei aus dem `Downloads`-Verzeichnis und gehe zurück zum [Abschnitt 2.1](#21-signaturschlüssel-herunterladen)."
+msgstr "Wenn der Fingerabdruck mit dem genannten **NICHT ÜBEREINSTIMMT**, **FAHRE NICHT FORT**. Lösche die `binaryfate`-Datei aus dem `Downloads`-Verzeichnis und gehe zurück zum [Abschnitt Signaturschlüssel herunterladen](#signaturschlüssel-herunterladen)."
 
 #
 #. type: Plain text
@@ -601,7 +597,7 @@ msgstr "Wenn du eine **GÜLTIGE** Signatur ausgegeben bekommst, wähle `Verwerfe
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:192
 msgid "If you receive an **INVALID** signature, **DO NOT CONTINUE.** Instead delete the file `hashes` from the `Downloads` directory and go back to [section 3.1](#31-download-hash-file)."
-msgstr "Wenn du eine **UNGÜLTIGE** Signatur ausgegeben bekommst, **FAHRE NICHT FORT**. Lösche die `hashes`-Datei aus dem `Downloads`-Verzeichnis und gehe zurück zum [Abschnitt 3.1](#31-hash-datei-herunterladen)."
+msgstr "Wenn du eine **UNGÜLTIGE** Signatur ausgegeben bekommst, **FAHRE NICHT FORT**. Lösche die `hashes`-Datei aus dem `Downloads`-Verzeichnis und gehe zurück zum [Abschnitt Hash-Datei herunterladen](#hash-datei-herunterladen)."
 
 #
 #. type: Title ##
@@ -730,13 +726,12 @@ msgstr "Wenn die Hashwerte **ÜBEREINSTIMMEN**, bist du fertig mit der Verifikat
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:235
 msgid "If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the Monero binary from the `Downloads` directory and go back to [section 4.1](#41-download-binary)."
-msgstr "Wenn die Hashwerte **NICHT ÜBEREINSTIMMEN**, **FAHRE NICHT FORT**. Lösche die Monero-Binärdatei aus dem `Downloads`-Verzeichnis und gehe zurück zum [Abschnitt 4.1](#41-binärdatei-herunterladen)."
+msgstr "Wenn die Hashwerte **NICHT ÜBEREINSTIMMEN**, **FAHRE NICHT FORT**. Lösche die Monero-Binärdatei aus dem `Downloads`-Verzeichnis und gehe zurück zum [Abschnitt Binärdatei herunterladen](#binärdatei-herunterladen)."
 
 #
-#, fuzzy
 #~| msgid "### 1.1. Getting Gpg4win Installer"
 #~ msgid "[1.1. Getting Gpg4win Installer](#11-getting-gpg4win-installer)"
-#~ msgstr "### 1.1. Download des Gpg4win-Installationsprogramms"
+#~ msgstr "Download des Gpg4win-Installationsprogramms"
 
 #
 #, fuzzy
