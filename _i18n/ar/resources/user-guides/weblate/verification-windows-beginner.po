@@ -20,7 +20,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"yes\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
 #
 #. type: Plain text
