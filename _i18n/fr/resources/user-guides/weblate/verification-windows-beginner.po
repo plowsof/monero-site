@@ -44,7 +44,6 @@ msgstr "Voici un guide pour débutant pour le système d'exploitation Windows qu
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:9
 #, no-wrap
-#| msgid "## Table of Contents"
 msgid "Table of Contents"
 msgstr "Table des matières"
 
@@ -186,7 +185,6 @@ msgstr "![lancement gpg4win](/img/resources/user-guides/en/verify_binary_windows
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:51
 #, no-wrap
-#| msgid "### 1.2. Use Gpg4win Installer"
 msgid "Use Gpg4win Installer"
 msgstr "Utiliser l'Installateur Gpg4win"
 
@@ -280,7 +278,6 @@ msgstr "![fin installateur gpg4win](/img/resources/user-guides/en/verify_binary_
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:81
 #, no-wrap
-#| msgid "## 2. Monero Signing Key"
 msgid "Monero Signing Key"
 msgstr "Clef de Signature Monero"
 
@@ -294,7 +291,6 @@ msgstr "Cette rubrique couvre le téléchargement de la clef de signature Monero
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:85
 #, no-wrap
-#| msgid "### 2.1. Download Signing Key"
 msgid "Download Signing Key"
 msgstr "Télécharger la Clef de Signature"
 
@@ -328,7 +324,6 @@ msgstr "![getkey save file](/img/resources/user-guides/en/verify_binary_windows_
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:95
 #, no-wrap
-#| msgid "### 2.2. Initialize Kleopatra"
 msgid "Initialize Kleopatra"
 msgstr "Initialiser Kleopatra"
 
@@ -354,7 +349,6 @@ msgstr "![lancement kleo](/img/resources/user-guides/en/verify_binary_windows_be
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:103
 #, no-wrap
-#| msgid "#### 2.2.1. Import Signing Key"
 msgid "Import Signing Key"
 msgstr "Importer une Clef de Signature"
 
@@ -398,7 +392,6 @@ msgstr "![certif process démarrage kleo](/img/resources/user-guides/en/verify_b
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:117
 #, no-wrap
-#| msgid "#### 2.2.2. Create Key Pair"
 msgid "Create Key Pair"
 msgstr "Créer la Paire de Clefs"
 
@@ -460,7 +453,6 @@ msgstr "![fin création clefs démarrage kleo](/img/resources/user-guides/en/ver
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:139
 #, no-wrap
-#| msgid "### 2.3. Verify Signing Key"
 msgid "Verify Signing Key"
 msgstr "Vérifier la Clef de Signature"
 
@@ -504,7 +496,6 @@ msgstr "![certifier mdp kleo](/img/resources/user-guides/en/verify_binary_window
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:155
 #, no-wrap
-#| msgid "## 3. Hash File Verification"
 msgid "Hash File Verification"
 msgstr "Vérification du Fichier de Hachage"
 
@@ -518,7 +509,6 @@ msgstr "Cette rubrique couvre le téléchargement du fichier signé des hachages
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:159
 #, no-wrap
-#| msgid "### 3.1. Download Hash File"
 msgid "Download Hash File"
 msgstr "Télécharger le Fichier de Hachage"
 
@@ -544,7 +534,6 @@ msgstr "![enregistrer fichier hachages](/img/resources/user-guides/en/verify_bin
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:169
 #, no-wrap
-#| msgid "### 3.2. Verify Hash File"
 msgid "Verify Hash File"
 msgstr "Vérifier le Fichier de Hachage"
 
@@ -618,7 +607,6 @@ msgstr "Si vous obtenez une signature **NON VALABLE**, **NE POURSUIVEZ PAS.** Au
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:193
 #, no-wrap
-#| msgid "## 4. Binary File Verification"
 msgid "Binary File Verification"
 msgstr "Vérification du Fichier Binaire"
 
@@ -632,7 +620,6 @@ msgstr "Cette rubrique couvre le téléchargement du binaire Monero et la vérif
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:197
 #, no-wrap
-#| msgid "### 4.1. Download Binary"
 msgid "Download Binary"
 msgstr "Télécharger le Binaire"
 
@@ -670,7 +657,6 @@ msgstr "![emplacement enregistrement binaire getmonero](/img/resources/user-guid
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:211
 #, no-wrap
-#| msgid "### 4.2. Verify Binary"
 msgid "Verify Binary"
 msgstr "Vérifier le Binaire"
 

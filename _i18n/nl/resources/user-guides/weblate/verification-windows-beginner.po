@@ -44,7 +44,6 @@ msgstr "Dit is een handleiding voor beginners die Windows als besturingssysteem 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:9
 #, no-wrap
-#| msgid "## Table of Contents"
 msgid "Table of Contents"
 msgstr "Inhoud"
 
@@ -186,7 +185,6 @@ msgstr "![gpg4win starten](/img/resources/user-guides/en/verify_binary_windows_b
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:51
 #, no-wrap
-#| msgid "### 1.2. Use Gpg4win Installer"
 msgid "Use Gpg4win Installer"
 msgstr "Gpg4win-installatieprogramma gebruiken"
 
@@ -280,7 +278,6 @@ msgstr "![gpg4win installatie voltooien](/img/resources/user-guides/en/verify_bi
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:81
 #, no-wrap
-#| msgid "## 2. Monero Signing Key"
 msgid "Monero Signing Key"
 msgstr "Monero-ondertekeningssleutel"
 
@@ -294,7 +291,6 @@ msgstr "In dit gedeelte leggen we uit hoe je de Monero-ondertekeningssleutel dow
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:85
 #, no-wrap
-#| msgid "### 2.1. Download Signing Key"
 msgid "Download Signing Key"
 msgstr "Ondertekeningssleutel downloaden"
 
@@ -328,7 +324,6 @@ msgstr "![sleutel ophalen bestand opslaan](/img/resources/user-guides/en/verify_
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:95
 #, no-wrap
-#| msgid "### 2.2. Initialize Kleopatra"
 msgid "Initialize Kleopatra"
 msgstr "Kleopatra initialiseren"
 
@@ -354,7 +349,6 @@ msgstr "![kleo starten](/img/resources/user-guides/en/verify_binary_windows_begi
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:103
 #, no-wrap
-#| msgid "#### 2.2.1. Import Signing Key"
 msgid "Import Signing Key"
 msgstr "Ondertekeningssleutel importeren"
 
@@ -398,7 +392,6 @@ msgstr "![kleo eerste keer proces starten](/img/resources/user-guides/en/verify_
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:117
 #, no-wrap
-#| msgid "#### 2.2.2. Create Key Pair"
 msgid "Create Key Pair"
 msgstr "Sleutelpaar aanmaken"
 
@@ -460,7 +453,6 @@ msgstr "![kleo eerste keer sleutel aanmaken voltooien](/img/resources/user-guide
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:139
 #, no-wrap
-#| msgid "### 2.3. Verify Signing Key"
 msgid "Verify Signing Key"
 msgstr "Ondertekeningssleutel verifiëren"
 
@@ -504,7 +496,6 @@ msgstr "![kleo certificeren wachtwoord](/img/resources/user-guides/en/verify_bin
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:155
 #, no-wrap
-#| msgid "## 3. Hash File Verification"
 msgid "Hash File Verification"
 msgstr "Hashbestand verifiëren"
 
@@ -518,7 +509,6 @@ msgstr "In dit gedeelte leggen we uit hoe je het ondertekende bestand met bekend
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:159
 #, no-wrap
-#| msgid "### 3.1. Download Hash File"
 msgid "Download Hash File"
 msgstr "Hashbestand downloaden"
 
@@ -544,7 +534,6 @@ msgstr "![hashes bestand opslaan](/img/resources/user-guides/en/verify_binary_wi
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:169
 #, no-wrap
-#| msgid "### 3.2. Verify Hash File"
 msgid "Verify Hash File"
 msgstr "Hashbestand verifiëren"
 
@@ -618,7 +607,6 @@ msgstr "**GA NIET VERDER** als je een **ONGELDIGE** ondertekening hebt ontvangen
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:193
 #, no-wrap
-#| msgid "## 4. Binary File Verification"
 msgid "Binary File Verification"
 msgstr "Binair bestand verifiëren"
 
@@ -632,7 +620,6 @@ msgstr "In dit gedeelte leggen we uit hoe je de Monero-binary downloadt en de au
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:197
 #, no-wrap
-#| msgid "### 4.1. Download Binary"
 msgid "Download Binary"
 msgstr "Binary downloaden"
 
@@ -670,7 +657,6 @@ msgstr "![binary getmonero opslaan locatie](/img/resources/user-guides/en/verify
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/verification-windows-beginner.md:211
 #, no-wrap
-#| msgid "### 4.2. Verify Binary"
 msgid "Verify Binary"
 msgstr "Binary verifiëren"
 
