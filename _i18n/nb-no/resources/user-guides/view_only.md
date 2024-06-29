@@ -28,7 +28,7 @@ For å opprette en visningslommebok, må du enten ha tilgang til en lommebok
 eller kjenne til hovedadressen og den private visningsnøkkelen fra en
 lommebok.
 
-### CLI: Creating a View-Only Wallet from a Private View Key
+### CLI: Å opprette en visningslommebok fra en privat visningsnøkkel
 
 Åpne en eksisterende lommebok og tast inn kommandoene `address` og `viewkey`
 for å vise lommebokens adresse og dens private (hemmelige)
@@ -41,9 +41,9 @@ argumentet blir filnavnet på den nye lommeboken din. Du vil bli bedt om
 adressen og private (hemmelige) visningsnøkkelen til lommeboken din. Etter
 det trykker du på enter og bekrefter et passord for den nye lommeboken din.
 
-### GUI: Creating a View-Only Wallet from an Existing Wallet File
+### GUI: Å opprette en visningslommebok fra en eksisterende lommebokfil
 
-If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:
+Hvis du har tilgang til den eksisterende lommeboken, kan du åpne lommeboken din og gå til `Innstillinger` > `Lommebok` > `Opprett en visningslommebok`:
 
 ![Settings](/img/resources/user-guides/en/view-only/settings.png)
 
@@ -55,7 +55,7 @@ meldingen, og deretter trykke på `OK` for å lukke det:
 
 ![Success](/img/resources/user-guides/en/view-only/Success.png)
 
-### GUI: Creating a View-only Wallet from a Private View Key
+### GUI: Å opprette en visningslommebok fra en privat visningsnøkkel
 
 Hvis du ikke har tilgang til den eksisterende lommeboken, kan du opprette en
 visningslommebok ved å vite lommebokens hovedadresse og private

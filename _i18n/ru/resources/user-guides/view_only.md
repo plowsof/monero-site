@@ -33,7 +33,7 @@
 необходимо либо иметь доступ к кошельку, либо знать основной адрес и
 приватный ключ просмотра для этого кошелька.
 
-### CLI: Creating a View-Only Wallet from a Private View Key
+### CLI: создание кошелька, предназначенного только для просмотра, на основе приватного ключа просмотра
 
 Откройте существующий кошелёк и введите команды `address` и `viewkey`, чтобы
 вывести на экран адрес кошелька и его приватный (секретный) ключ
@@ -46,9 +46,9 @@
 (секретный) ключ вашего оригинального кошелька. Затем введите и подтвердите
 пароль для вашего нового кошелька.
 
-### GUI: Creating a View-Only Wallet from an Existing Wallet File
+### GUI: создание кошелька, предназначенного только для просмотра, на основе файла существующего кошелька
 
-If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:
+Если у вас есть доступ к существующему кошельку, откройте его и в настройках выберите: `Settings` > `Wallet` > `Create a view-only wallet`:
 
 ![settings](/img/resources/user-guides/en/view-only/settings.png)
 
@@ -60,7 +60,7 @@ If you have access to the existing wallet, open your wallet and go to `Settings`
 
 ![Success](/img/resources/user-guides/en/view-only/Success.png)
 
-### GUI: Creating a View-only Wallet from a Private View Key
+### GUI: создание кошелька, предназначенного только для просмотра, на основе приватного ключа просмотра
 
 Если у вас нет доступа к существующему кошельку, вы можете создать кошелёк,
 предназначенный для просмотра, зная основной адрес и приватный ключ

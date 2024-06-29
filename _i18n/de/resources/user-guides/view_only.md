@@ -31,7 +31,7 @@ Um ein View-Only-Wallet zu erstellen, benötigst du entweder den Zugriff auf
 ein Wallet oder musst die Hauptadresse und den privaten View-Key eines
 Wallets kennen.
 
-### CLI: Creating a View-Only Wallet from a Private View Key
+### CLI: Ein View-Only-Wallet von einem privaten View-Key erstellen
 
 Öffne ein bestehendes Wallet und gib die Befehle `address` und `viewkey`
 ein, um dir die Adresse und den privaten (geheimen) View-Key des Wallets
@@ -45,9 +45,9 @@ Adresse und den privaten (geheimen) View-Key deines ursprünglichen Wallets
 ein. Als Letztes gibst du ein Passwort für dein neues Wallet ein und
 bestätigst dieses.
 
-### GUI: Creating a View-Only Wallet from an Existing Wallet File
+### GUI: Ein View-Wallet von der Datei eines bestehenden Wallets erstellen
 
-If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:
+Wenn du auf das bereits bestehende Wallet zugreifen kannst, öffne es und gehe über `Einstellungen` > `Wallet` > `View-Only-Wallet erstellen`:
 
 ![settings](/img/resources/user-guides/en/view-only/settings.png)
 
@@ -59,7 +59,7 @@ anklicken und anschließend auf `OK` klicken, um es zu schließen:
 
 ![Success](/img/resources/user-guides/en/view-only/Success.png)
 
-### GUI: Creating a View-only Wallet from a Private View Key
+### GUI: Ein View-Only-Wallet von einem privaten View-Key erstellen
 
 Solltest du keinen Zugriff auf das bestehende Wallet haben, kannst du ein
 View-Only-Wallet erstellen, wenn du dessen Hauptadresse und privaten
