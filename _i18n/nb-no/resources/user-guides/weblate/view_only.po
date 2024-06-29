@@ -70,10 +70,10 @@ msgstr "For å opprette en visningslommebok, må du enten ha tilgang til en lomm
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/view_only.md:17
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### CLI: Creating a View-Only Wallet from a Private View Key"
 msgid "CLI: Creating a View-Only Wallet from a Private View Key"
-msgstr "### CLI: Å opprette en visningslommebok fra en privat visningsnøkkel"
+msgstr "CLI: Å opprette en visningslommebok fra en privat visningsnøkkel"
 
 #
 #. type: Plain text
@@ -90,18 +90,18 @@ msgstr "Etterpå kan du opprette en visningslommebok ved å taste inn `monero-wa
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/view_only.md:23
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### GUI: Creating a View-Only Wallet from an Existing Wallet File"
 msgid "GUI: Creating a View-Only Wallet from an Existing Wallet File"
-msgstr "### GUI: Å opprette en visningslommebok fra en eksisterende lommebokfil"
+msgstr "GUI: Å opprette en visningslommebok fra en eksisterende lommebokfil"
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/view_only.md:26
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:"
 msgid "If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:\n"
-msgstr "Hvis du har tilgang til den eksisterende lommeboken, kan du åpne lommeboken din og gå til `Innstillinger` > `Lommebok` > `Opprett en visningslommebok`:"
+msgstr "Hvis du har tilgang til den eksisterende lommeboken, kan du åpne lommeboken din og gå til `Innstillinger` > `Lommebok` > `Opprett en visningslommebok`:\n"
 
 #
 #. type: Plain text
@@ -130,10 +130,10 @@ msgstr "![Success](/img/resources/user-guides/en/view-only/Success.png)"
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/view_only.md:35
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### GUI: Creating a View-only Wallet from a Private View Key"
 msgid "GUI: Creating a View-only Wallet from a Private View Key"
-msgstr "### GUI: Å opprette en visningslommebok fra en privat visningsnøkkel"
+msgstr "GUI: Å opprette en visningslommebok fra en privat visningsnøkkel"
 
 #
 #. type: Plain text
