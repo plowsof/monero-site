@@ -65,10 +65,10 @@ msgstr "Чтобы создать кошелёк, предназначенный
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/view_only.md:17
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### CLI: Creating a View-Only Wallet from a Private View Key"
 msgid "CLI: Creating a View-Only Wallet from a Private View Key"
-msgstr "### CLI: создание кошелька, предназначенного только для просмотра, на основе приватного ключа просмотра"
+msgstr "CLI: создание кошелька, предназначенного только для просмотра, на основе приватного ключа просмотра"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/view_only.md:20
@@ -82,17 +82,17 @@ msgstr "После этого введите `monero-wallet-cli --generate-from-
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/view_only.md:23
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### GUI: Creating a View-Only Wallet from an Existing Wallet File"
 msgid "GUI: Creating a View-Only Wallet from an Existing Wallet File"
-msgstr "### GUI: создание кошелька, предназначенного только для просмотра, на основе файла существующего кошелька"
+msgstr "GUI: создание кошелька, предназначенного только для просмотра, на основе файла существующего кошелька"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/view_only.md:26
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:"
 msgid "If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:\n"
-msgstr "Если у вас есть доступ к существующему кошельку, откройте его и в настройках выберите: `Settings` > `Wallet` > `Create a view-only wallet`:"
+msgstr "Если у вас есть доступ к существующему кошельку, откройте его и в настройках выберите: `Settings` > `Wallet` > `Create a view-only wallet`:\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/view_only.md:28
@@ -116,10 +116,10 @@ msgstr "![Success](/img/resources/user-guides/en/view-only/Success.png)"
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/view_only.md:35
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### GUI: Creating a View-only Wallet from a Private View Key"
 msgid "GUI: Creating a View-only Wallet from a Private View Key"
-msgstr "### GUI: создание кошелька, предназначенного только для просмотра, на основе приватного ключа просмотра"
+msgstr "GUI: создание кошелька, предназначенного только для просмотра, на основе приватного ключа просмотра"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/view_only.md:38
