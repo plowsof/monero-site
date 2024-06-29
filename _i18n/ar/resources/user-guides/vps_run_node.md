@@ -12,28 +12,28 @@
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
-### Make sure that port 18080 is open
+### تأكد من أن المنفذ 18080 مفتوح
 
 يستخدم هذا لمنفذ للتواصل مع الخوادم الأخري بشبكه مونيرو.
 
 Example if using `ufw`: `sudo ufw allow 18080` Example if using `iptables`:
 `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
 
-### Download the current Monero Core binaries
+### قم بتحميل ملفات تسطيب مونيرو.
 
     wget https://downloads.getmonero.org/linux64
 
-### Make a directory and extract the files.
+### قم بإنشاء مجلد جديد وفك ضغط الملف.
 
     mkdir monero
     tar -xjvf linux64 -C monero
 
-### Launch the daemon
+### شَغِل الخادم.
 
     cd monero
     ./monerod
 
-### Options:
+### الخيارات:
 
 أعرض قائمه بكل الخيارات والإعدادات:
 

@@ -12,7 +12,7 @@ tunelowania do konsoli serwerowej.
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
-### Make sure that port 18080 is open
+### Upewnij się, że port 18080 jest otwarty
 
 `monerod` korzysta z tego portu do komunikacji z innymi węzłami w sieci
 Monero.
@@ -20,21 +20,21 @@ Monero.
 Przykład przy użyciu `ufw`: `sudo ufw allow 18080` Przykład przy użyciu
 `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
 
-### Download the current Monero Core binaries
+### Ściągnij aktualne pliki binarne Centrum Monero
 
     wget https://downloads.getmonero.org/linux64
 
-### Make a directory and extract the files.
+### Załóż folder i wypakuj pliki
 
     mkdir monero
     tar -xjvf linux64 -C monero
 
-### Launch the daemon
+### Uruchom daemona
 
     cd monero
     ./monerod
 
-### Options:
+### Opcje:
 
 Pokaż całą listę opcji i ustawień:
 

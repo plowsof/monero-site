@@ -12,7 +12,7 @@ SSH para dirigirte a la consola del servidor.
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
-### Make sure that port 18080 is open
+### Asegúrate de que el puerto 18080 está abierto
 
 `monerod` usa este puerto para comunicarse con otros nodos en la red de
 Monero.
@@ -20,21 +20,21 @@ Monero.
 Ejemplo si se usa `ufw`: `sudo ufw allow 18080` Ejemplo si se usa
 `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
 
-### Download the current Monero Core binaries
+### Descarga los binarios actuales Monero
 
     wget https://downloads.getmonero.org/linux64
 
-### Make a directory and extract the files.
+### Haz un directorio y extrae los archivos.
 
     mkdir monero
     tar -xjvf linux64 -C monero
 
-### Launch the daemon
+### Abre el daemon
 
     cd monero
     ./monerod
 
-### Options:
+### Opciones:
 
 Muestra la lista de todas las opciones y ajustes:
 
