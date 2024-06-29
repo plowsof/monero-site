@@ -71,7 +71,6 @@ msgstr "Um ein View-Only-Wallet zu erstellen, benötigst du entweder den Zugriff
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/view_only.md:17
 #, no-wrap
-#| msgid "### CLI: Creating a View-Only Wallet from a Private View Key"
 msgid "CLI: Creating a View-Only Wallet from a Private View Key"
 msgstr "CLI: Ein View-Only-Wallet von einem privaten View-Key erstellen"
 
@@ -91,7 +90,6 @@ msgstr "Als Nächstes erstellst du dein View-Only-Wallet, indem du `monero-walle
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/view_only.md:23
 #, no-wrap
-#| msgid "### GUI: Creating a View-Only Wallet from an Existing Wallet File"
 msgid "GUI: Creating a View-Only Wallet from an Existing Wallet File"
 msgstr "GUI: Ein View-Wallet von der Datei eines bestehenden Wallets erstellen"
 
@@ -99,7 +97,6 @@ msgstr "GUI: Ein View-Wallet von der Datei eines bestehenden Wallets erstellen"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/view_only.md:26
 #, no-wrap
-#| msgid "If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:"
 msgid "If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:\n"
 msgstr "Wenn du auf das bereits bestehende Wallet zugreifen kannst, öffne es und gehe über `Einstellungen` > `Wallet` > `View-Only-Wallet erstellen`:\n"
 
@@ -131,7 +128,6 @@ msgstr "![Success](/img/resources/user-guides/en/view-only/Success.png)"
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/view_only.md:35
 #, no-wrap
-#| msgid "### GUI: Creating a View-only Wallet from a Private View Key"
 msgid "GUI: Creating a View-only Wallet from a Private View Key"
 msgstr "GUI: Ein View-Only-Wallet von einem privaten View-Key erstellen"
 
