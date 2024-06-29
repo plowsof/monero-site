@@ -12,7 +12,7 @@ SSH-en til å tunnelere til serverkonsollen.
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
-### Make sure that port 18080 is open
+### Sørg for at port 18080 er åpen
 
 `monerod` bruker denne porten til å kommunisere med andre noder i
 Monero-nettverket.
@@ -20,21 +20,21 @@ Monero-nettverket.
 Eksempel hvis du bruker `ufw`: `sudo ufw allow 18080` Eksempel hvis du
 bruker `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
 
-### Download the current Monero Core binaries
+### Last ned de gjeldende Monero Core-binærfilene
 
     wget https://downloads.getmonero.org/linux64
 
-### Make a directory and extract the files.
+### Lag en katalog og pakk ut filene.
 
     mkdir monero
     tar -xjvf linux64 -C monero
 
-### Launch the daemon
+### Start opp daemon
 
     cd monero
     ./monerod
 
-### Options:
+### Valg:
 
 For å vise en liste over alle valgene og innstillingene:
 

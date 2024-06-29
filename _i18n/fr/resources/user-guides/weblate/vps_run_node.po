@@ -26,7 +26,6 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #. type: Title #
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:3
 #, no-wrap
-#| msgid "# monerod"
 msgid "monerod"
 msgstr "monerod"
 
@@ -46,7 +45,6 @@ msgstr "Ce guide suppose que vous avez déjà créé un compte VPS et que vous u
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:9
 #, no-wrap
-#| msgid "## Linux, 64-bit (Ubuntu 16.04 LTS)"
 msgid "Linux, 64-bit (Ubuntu 16.04 LTS)"
 msgstr "Linux, 64-bit (Ubuntu 16.04 LTS)"
 
@@ -54,7 +52,6 @@ msgstr "Linux, 64-bit (Ubuntu 16.04 LTS)"
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:11
 #, no-wrap
-#| msgid "### Make sure that port 18080 is open"
 msgid "Make sure that port 18080 is open"
 msgstr "Assurez-vous que le port 18080 soit ouvert"
 
@@ -74,7 +71,6 @@ msgstr "Exemple en utilisant `ufw`: `sudo ufw allow 18080` Exemple en utilisant 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:18
 #, no-wrap
-#| msgid "### Download the current Monero Core binaries"
 msgid "Download the current Monero Core binaries"
 msgstr "Téléchargez les binaires Monero actuels"
 
@@ -88,7 +84,6 @@ msgstr "    wget https://downloads.getmonero.org/linux64\n"
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:22
 #, no-wrap
-#| msgid "### Make a directory and extract the files."
 msgid "Make a directory and extract the files."
 msgstr "Créez un répertoire et décompressez les fichiers"
 
@@ -106,7 +101,6 @@ msgstr ""
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:27
 #, no-wrap
-#| msgid "### Launch the daemon"
 msgid "Launch the daemon"
 msgstr "Lancez le démon"
 
@@ -124,7 +118,6 @@ msgstr ""
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:32
 #, no-wrap
-#| msgid "### Options:"
 msgid "Options:"
 msgstr "Options"
 

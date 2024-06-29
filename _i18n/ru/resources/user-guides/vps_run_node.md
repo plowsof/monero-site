@@ -13,28 +13,28 @@
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
-### Make sure that port 18080 is open
+### Убедитесь в том, что порт 18080 открыт
 
 `monerod` использует этот порт для связи с другими узлами сети Monero.
 
 Пример использования `ufw`: `sudo ufw allow 18080` Пример использования
 `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
 
-### Download the current Monero Core binaries
+### Загрузить актуальные двоичные файлы Monero Core
 
     wget https://downloads.getmonero.org/linux64
 
-### Make a directory and extract the files.
+### Создать директорию и извлечь файлы.
 
     mkdir monero
     tar -xjvf linux64 -C monero
 
-### Launch the daemon
+### Запустить демон-программу
 
     cd monero
     ./monerod
 
-### Options:
+### Опции:
 
 Открыть список всех опций и настроек:
 
