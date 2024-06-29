@@ -7,11 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-10 09:33+0200\n"
+"POT-Creation-Date: 2022-11-30 22:17+0001\n"
 "PO-Revision-Date: 2022-04-03 01:34+0000\n"
 "Last-Translator: Fabio Risso <fabiorissok@gmail.com>\n"
-"Language-Team: Spanish <https://translate.getmonero.org/projects/"
-"getmonero-user-guides/restore_account/es/>\n"
+"Language-Team: Spanish <https://translate.getmonero.org/projects/getmonero-user-guides/restore_account/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,28 +38,23 @@ msgstr ""
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:8
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgid "[What is needed to restore a wallet from mnemonic seed?](#what-is-needed-to-restore-a-wallet-from-mnemonic-seed)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:10
 msgid "[What is the wallet restore height?](#what-is-the-wallet-restore-height)"
-msgstr ""
-"- [¿Cuál es la altura de recuperación de el monedero?](#cuál-es-la-altura-de-"
-"recuperación-del-monedero)"
+msgstr "- [¿Cuál es la altura de recuperación de el monedero?](#cuál-es-la-altura-de-recuperación-del-monedero)"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:12
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgid "[How to restore a wallet from mnemonic seed on Monero GUI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-gui)"
 msgstr ""
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:14
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgid "[How to restore a wallet from mnemonic seed on Monero CLI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-cli)"
 msgstr ""
 
@@ -94,7 +88,6 @@ msgstr ""
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/restore_account.md:27
 #, no-wrap
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgid "What is needed to restore a wallet from mnemonic seed?"
 msgstr ""
 
@@ -153,7 +146,6 @@ msgstr ""
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:50
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
 msgid "![restore-height](/img/resources/user-guides/en/restore_account/restore-height.png)"
 msgstr ""
 
@@ -161,21 +153,18 @@ msgstr ""
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/restore_account.md:51
 #, no-wrap
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgid "How to restore a wallet from mnemonic seed on Monero GUI"
 msgstr ""
 
 #
 #. type: Bullet: '1) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:54
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgid "On the main menu, click on `Restore wallet from keys or mnemonic seed`."
 msgstr ""
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:56
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
 msgid "![main-menu-restore-wallet](/img/resources/user-guides/en/restore_account/main-menu-restore-wallet.png)"
 msgstr ""
 
@@ -187,7 +176,6 @@ msgstr ""
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:60
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
 msgid "![restore-from-seed](/img/resources/user-guides/en/restore_account/restore-from-seed.png)"
 msgstr ""
 
@@ -224,7 +212,6 @@ msgstr ""
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:74
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
 msgid "![restore-height-field](/img/resources/user-guides/en/restore_account/restore-height-field.png)"
 msgstr ""
 
@@ -236,7 +223,6 @@ msgstr ""
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:78
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
 msgid "![restore-height-field-date](/img/resources/user-guides/en/restore_account/restore-height-field-date.png)"
 msgstr ""
 
@@ -248,7 +234,6 @@ msgstr ""
 #
 #. type: Bullet: '9) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:82
-#| msgid "On the next page, give your wallet a strong password and confirm it before clicking the `Right` arrow:"
 msgid "On the next page, give your wallet a strong password and confirm it. Since your wallet will hold your private keys and seed, it is really important to enter a strong password."
 msgstr ""
 
@@ -284,7 +269,6 @@ msgstr "![all set up](/img/resources/user-guides/en/restore_account/all-set-up.p
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/restore_account.md:93
 #, no-wrap
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgid "How to restore a wallet from mnemonic seed on Monero CLI"
 msgstr ""
 
@@ -296,14 +280,12 @@ msgstr ""
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:98
-#| msgid "- At the command prompt type: `monero-wallet-cli --restore-deterministic-wallet`"
 msgid "Linux: `./monero-wallet-cli --restore-deterministic-wallet`"
 msgstr ""
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:100
-#| msgid "- At the command prompt type: `monero-wallet-cli --restore-deterministic-wallet`"
 msgid "Windows: `monero-wallet-cli --restore-deterministic-wallet`"
 msgstr ""
 
@@ -351,13 +333,7 @@ msgstr "Mi monedero restaurado muestra un balance erróneo"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:117
 msgid "This problem usually occurs when you set a restore height that is higher than the block height of the first incoming transaction to your wallet. To solve this issue, you will have to change the wallet restore height. Please read [this guide]({{site.baseurl}}/resources/user-guides/change-restore-height.html) for detailed instructions on how to do this."
-msgstr ""
-"Este problema usualmente ocurre cuando seleccionas una altura de "
-"restauración que es mayor que la altura del bloque de la primera transacción "
-"entrante a tu monedero. Para resolver este problema, tendrás que cambiar la "
-"altura de restauración del monedero. Por favor, lee [esta guía]({{site."
-"baseurl}}/resources/user-guides/change-restore-height.html) para ver "
-"instrucciones detalladas sobre como hacer esto."
+msgstr "Este problema usualmente ocurre cuando seleccionas una altura de restauración que es mayor que la altura del bloque de la primera transacción entrante a tu monedero. Para resolver este problema, tendrás que cambiar la altura de restauración del monedero. Por favor, lee [esta guía]({{site.baseurl}}/resources/user-guides/change-restore-height.html) para ver instrucciones detalladas sobre como hacer esto."
 
 #
 #~ msgid "## Operating Systems: Windows, Linux, Mac"
