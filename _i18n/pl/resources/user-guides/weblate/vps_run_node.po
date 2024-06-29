@@ -25,10 +25,10 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #
 #. type: Title #
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:3
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "# monerod"
 msgid "monerod"
-msgstr "# monerod"
+msgstr "monerod"
 
 #
 #. type: Plain text
@@ -45,18 +45,18 @@ msgstr "Ten przewodnik zakłada, że już założyłeś swoje konto VPS i używa
 #
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:9
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "## Linux, 64-bit (Ubuntu 16.04 LTS)"
 msgid "Linux, 64-bit (Ubuntu 16.04 LTS)"
-msgstr "## Linux, 64-bit (Ubuntu 16.04 LTS)"
+msgstr "Linux, 64-bit (Ubuntu 16.04 LTS)"
 
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:11
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Make sure that port 18080 is open"
 msgid "Make sure that port 18080 is open"
-msgstr "### Upewnij się, że port 18080 jest otwarty"
+msgstr "Upewnij się, że port 18080 jest otwarty"
 
 #
 #. type: Plain text
@@ -73,10 +73,10 @@ msgstr "Przykład przy użyciu `ufw`: `sudo ufw allow 18080` Przykład przy uży
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:18
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Download the current Monero Core binaries"
 msgid "Download the current Monero Core binaries"
-msgstr "### Ściągnij aktualne pliki binarne Centrum Monero"
+msgstr "Ściągnij aktualne pliki binarne Centrum Monero"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:21
@@ -87,10 +87,10 @@ msgstr "    wget https://downloads.getmonero.org/linux64\n"
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:22
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Make a directory and extract the files."
 msgid "Make a directory and extract the files."
-msgstr "### Załóż folder i wypakuj pliki"
+msgstr "Załóż folder i wypakuj pliki"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:26
@@ -105,10 +105,10 @@ msgstr ""
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:27
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Launch the daemon"
 msgid "Launch the daemon"
-msgstr "### Uruchom daemona"
+msgstr "Uruchom daemona"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:31
@@ -123,10 +123,10 @@ msgstr ""
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/vps_run_node.md:32
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Options:"
 msgid "Options:"
-msgstr "### Opcje:"
+msgstr "Opcje:"
 
 #
 #. type: Plain text
