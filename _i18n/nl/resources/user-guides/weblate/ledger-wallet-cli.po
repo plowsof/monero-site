@@ -76,7 +76,6 @@ msgstr "We gaan ervan uit dat je je Ledger al hebt geïnitialiseerd en dus een h
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:17
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:113
-#| msgid "- You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgid "You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgstr "Je moet versie CLI v0.12.2.0 of hoger van de opdrachtregel-interface (CLI) gebruiken. Die vind je [hier]({{site.baseurl}}/downloads/)."
 
@@ -219,7 +218,6 @@ msgstr "MacOS"
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:61
-#| msgid "- You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgid "You need to run / use CLI v0.12.2.0, which can be found [here]({{site.baseurl}}/downloads/)."
 msgstr "Je moet versie CLI v0.12.2.0 of hoger van de opdrachtregel-interface (CLI) gebruiken. Die vind je [hier]({{site.baseurl}}/downloads/)."
 

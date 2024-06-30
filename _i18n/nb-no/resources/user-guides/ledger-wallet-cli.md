@@ -15,8 +15,8 @@ følgende:
 - Denne veiledningen antar at du allerede har initialisert Ledger-lommeboken
   din og således generert et mnemonisk frø på 24 ord.
 
-- You need to run / use CLI v0.12.2.0, which can be found <a
-  href="{{site.baseurl}}/downloads/">here</a>.
+- Du må kjøre/bruke CLI v0.12.2.0, som du kan finne
+  [her]({{site.baseurl}}/downloads/).
 
 -  Du må installere Ledger Monero-appen og konfigurere systemet
   ditt. Veiledninger til dette kan du finne
@@ -90,8 +90,8 @@ følgende:
 - Denne veiledningen antar at du allerede har initialisert Ledger-lommeboken
   din og således generert et mnemonisk frø på 24 ord.
 
-- You need to run / use CLI v0.12.2.0, which can be found
-  [here]({{site.baseurl}}/downloads/).
+- Du må kjøre/bruke CLI v0.12.2.0, som du kan finne
+  [her]({{site.baseurl}}/downloads/).
 
 - Du må installere Ledger Monero-appen og konfigurere systemet
   ditt. Veiledninger til dette kan du finne
@@ -177,8 +177,8 @@ følgende:
 - Denne veiledningen antar at du allerede har initialisert Ledger-lommeboken
   din og således generert et mnemonisk frø på 24 ord.
 
-- You need to run / use CLI v0.12.2.0, which can be found <a
-  href="{{site.baseurl}}/downloads/">here</a>.
+- Du må kjøre/bruke CLI v0.12.2.0, som du kan finne
+  [her]({{site.baseurl}}/downloads/).
 
 - Du må installere Ledger Monero-appen og konfigurere systemet
   ditt. Veiledninger til dette kan du finne
