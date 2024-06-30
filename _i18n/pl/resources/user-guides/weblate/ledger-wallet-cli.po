@@ -72,10 +72,9 @@ msgstr "Ten przewodnik zakłada, że masz już zainicjalizowany portfel Ledger, 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:17
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:113
-#, fuzzy
 #| msgid "- You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgid "You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
-msgstr "- Musisz uruchomić / używać CLI v0.12.2.0, który znajdziesz <a href=\"{{site.baseurl}}/downloads/\">tutaj</a>."
+msgstr "Musisz uruchomić / używać CLI v0.12.2.0, który znajdziesz [tutaj]({{site.baseurl}}/downloads/)"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:19
@@ -196,10 +195,9 @@ msgstr "Mac OS X"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:61
-#, fuzzy
 #| msgid "- You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgid "You need to run / use CLI v0.12.2.0, which can be found [here]({{site.baseurl}}/downloads/)."
-msgstr "- Musisz uruchomić / używać CLI v0.12.2.0, który znajdziesz <a href=\"{{site.baseurl}}/downloads/\">tutaj</a>."
+msgstr "Musisz uruchomić / używać CLI v0.12.2.0, który znajdziesz [tutaj]({{site.baseurl}}/downloads/)."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:63
