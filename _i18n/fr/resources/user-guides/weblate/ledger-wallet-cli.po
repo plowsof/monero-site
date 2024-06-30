@@ -76,10 +76,9 @@ msgstr "Ce guide suppose que vous avez déjà initialisé votre portefeuille Led
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:17
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:113
-#, fuzzy
 #| msgid "- You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgid "You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
-msgstr "- Vous devez lancer / utiliser la CLI v0.12.2.0, qui peut être récupérée <a href=\"{{site.baseurl}}/downloads/\">ici</a>."
+msgstr "Vous devez lancer / utiliser la CLI v0.12.2.0, qui peut être récupérée [ici]({{site.baseurl}}/downloads/)."
 
 #
 #. type: Bullet: '- '
@@ -220,10 +219,9 @@ msgstr "Mac OS X"
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:61
-#, fuzzy
 #| msgid "- You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgid "You need to run / use CLI v0.12.2.0, which can be found [here]({{site.baseurl}}/downloads/)."
-msgstr "- Vous devez lancer / utiliser la CLI v0.12.2.0, qui peut être récupérée <a href=\"{{site.baseurl}}/downloads/\">ici</a>."
+msgstr "Vous devez lancer / utiliser la CLI v0.12.2.0, qui peut être récupérée [ici]({{site.baseurl}}/downloads/)."
 
 #
 #. type: Bullet: '- '

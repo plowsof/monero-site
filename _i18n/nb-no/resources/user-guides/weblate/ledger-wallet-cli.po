@@ -76,10 +76,9 @@ msgstr "Denne veiledningen antar at du allerede har initialisert Ledger-lommebok
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:17
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:113
-#, fuzzy
 #| msgid "- You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgid "You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
-msgstr "- Du må kjøre/bruke CLI v0.12.2.0, som du kan finne <a href=\"{{site.baseurl}}/downloads/\">her</a>."
+msgstr "Du må kjøre/bruke CLI v0.12.2.0, som du kan finne [her]({{site.baseurl}}/downloads/)."
 
 #
 #. type: Bullet: '- '
@@ -220,10 +219,9 @@ msgstr "Mac OS X"
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:61
-#, fuzzy
 #| msgid "- You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgid "You need to run / use CLI v0.12.2.0, which can be found [here]({{site.baseurl}}/downloads/)."
-msgstr "- Du må kjøre/bruke CLI v0.12.2.0, som du kan finne <a href=\"{{site.baseurl}}/downloads/\">her</a>."
+msgstr "Du må kjøre/bruke CLI v0.12.2.0, som du kan finne [her]({{site.baseurl}}/downloads/)."
 
 #
 #. type: Bullet: '- '
