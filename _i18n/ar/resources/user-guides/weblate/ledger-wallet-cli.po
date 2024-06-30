@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-24 20:06+0000\n"
+"POT-Creation-Date: 2024-06-30 12:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,6 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:17
-#: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:61
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:113
 msgid "You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgstr ""
@@ -189,6 +188,11 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:54
 #, no-wrap
 msgid "Mac OS X"
+msgstr ""
+
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:61
+msgid "You need to run / use CLI v0.12.2.0, which can be found [here]({{site.baseurl}}/downloads/)."
 msgstr ""
 
 #. type: Bullet: '- '
