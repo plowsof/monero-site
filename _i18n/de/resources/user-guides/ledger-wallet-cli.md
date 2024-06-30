@@ -15,8 +15,8 @@ sind. Dazu gehören die folgenden Punkte:
 - Diese Anleitung setzt voraus, dass du dein Ledger-Wallet bereits eröffnet
   und damit einen 24 Worte umfassenden mnemonischen Seed generiert hast.
 
-- You need to run / use CLI v0.12.2.0, which can be found <a
-  href="{{site.baseurl}}/downloads/">here</a>.
+- Du musst CLI v0.12.2.0 ausführen/nutzen. Dies findest du
+  [hier]({{site.baseurl}}/downloads/).
 
 -  Du musst die Ledger-App von Monero installieren und dein System
   einrichten. Du findest Anleitungen dazu
@@ -96,8 +96,8 @@ sind. Dazu gehören die folgenden Punkte:
 - Diese Anleitung setzt voraus, dass du dein Ledger-Wallet bereits eröffnet
   und damit einen 24 Worte umfassenden mnemonischen Seed generiert hast.
 
-- You need to run / use CLI v0.12.2.0, which can be found
-  [here]({{site.baseurl}}/downloads/).
+- Du musst CLI v0.12.2.0 ausführen/nutzen. Dies findest du
+  [hier]({{site.baseurl}}/downloads/).
 
 - Du musst die Ledger-App von Monero installieren und dein System
   einrichten. Du findest Anleitungen dazu
@@ -187,8 +187,8 @@ sind. Dazu gehören die folgenden Punkte:
 - Diese Anleitung setzt voraus, dass du dein Ledger-Wallet bereits eröffnet
   und damit einen 24 Worte umfassenden mnemonischen Seed generiert hast.
 
-- You need to run / use CLI v0.12.2.0, which can be found <a
-  href="{{site.baseurl}}/downloads/">here</a>.
+- Du musst CLI v0.12.2.0 ausführen/nutzen. Dies findest du
+  [hier]({{site.baseurl}}/downloads/).
 
 - Du musst die Ledger-App von Monero installieren und dein System
   einrichten. Du findest Anleitungen dazu

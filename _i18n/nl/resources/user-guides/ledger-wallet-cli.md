@@ -14,8 +14,8 @@ Eerst moeten we ons voldoende voorbereiden. Daar is het volgende voor nodig:
 - We gaan ervan uit dat je je Ledger al hebt geïnitialiseerd en dus een
   hersteltekst van 24 woorden hebt gegenereerd.
 
-- You need to run / use CLI v0.12.2.0, which can be found <a
-  href="{{site.baseurl}}/downloads/">here</a>.
+- Je moet versie CLI v0.12.2.0 of hoger van de opdrachtregel-interface (CLI)
+  gebruiken. Die vind je [hier]({{site.baseurl}}/downloads/).
 
 -  Je moet de Monero-app voor de Ledger installeren en je systeem
   configureren. Instructies vind je
@@ -90,8 +90,8 @@ Eerst moeten we ons voldoende voorbereiden. Daar is het volgende voor nodig:
 - We gaan ervan uit dat je je Ledger al hebt geïnitialiseerd en dus een
   hersteltekst van 24 woorden hebt gegenereerd.
 
-- You need to run / use CLI v0.12.2.0, which can be found
-  [here]({{site.baseurl}}/downloads/).
+- Je moet versie CLI v0.12.2.0 of hoger van de opdrachtregel-interface (CLI)
+  gebruiken. Die vind je [hier]({{site.baseurl}}/downloads/).
 
 - Je moet de Monero-app voor de Ledger installeren en je systeem
   configureren. Instructies vind je
@@ -177,8 +177,8 @@ Eerst moeten we ons voldoende voorbereiden. Daar is het volgende voor nodig:
 - We gaan ervan uit dat je je Ledger al hebt geïnitialiseerd en dus een
   hersteltekst van 24 woorden hebt gegenereerd.
 
-- You need to run / use CLI v0.12.2.0, which can be found <a
-  href="{{site.baseurl}}/downloads/">here</a>.
+- Je moet versie CLI v0.12.2.0 of hoger van de opdrachtregel-interface (CLI)
+  gebruiken. Die vind je [hier]({{site.baseurl}}/downloads/).
 
 - Je moet de Monero-app voor de Ledger installeren en je systeem
   configureren. Instructies vind je

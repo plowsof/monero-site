@@ -76,7 +76,6 @@ msgstr "Esta guía asume que ya has inicializado tu monedero Ledger y asimismo g
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:17
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:113
-#| msgid "- You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgid "You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgstr "Necesitas ejecutar / usar monero-wallet-cli v0.12.2.0, que puede encontrarse [aqui]({{site.baseurl}}/downloads)."
 
@@ -219,7 +218,6 @@ msgstr "Mac OS X"
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:61
-#| msgid "- You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgid "You need to run / use CLI v0.12.2.0, which can be found [here]({{site.baseurl}}/downloads/)."
 msgstr "Necesitas ejecutar / usar monero-wallet-cli v0.12.2.0, que puede encontrarse [aqui]({{site.baseurl}}/downloads/)"
 

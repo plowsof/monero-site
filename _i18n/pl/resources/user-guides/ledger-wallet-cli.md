@@ -15,8 +15,8 @@ się to z następującymi kwestiami:
 - Ten przewodnik zakłada, że masz już zainicjalizowany portfel Ledger, a tym
   samym wygenerowany mnemoniczny seed z 24 słów.
 
-- You need to run / use CLI v0.12.2.0, which can be found <a
-  href="{{site.baseurl}}/downloads/">here</a>.
+- Musisz uruchomić / używać CLI v0.12.2.0, który znajdziesz
+  [tutaj]({{site.baseurl}}/downloads/)
 
 -  Musisz zainstalować aplikację Ledger Monero i skonfigurować swój
   system. Instrukcje znajdziesz
@@ -92,8 +92,8 @@ się to z następującymi kwestiami:
 - Ten przewodnik zakłada, że masz już zainicjalizowany portfel Ledger, a tym
   samym wygenerowany mnemoniczny seed z 24 słów.
 
-- You need to run / use CLI v0.12.2.0, which can be found
-  [here]({{site.baseurl}}/downloads/).
+- Musisz uruchomić / używać CLI v0.12.2.0, który znajdziesz
+  [tutaj]({{site.baseurl}}/downloads/).
 
 - Musisz zainstalować aplikację Ledger Monero i skonfigurować swój
   system. Instrukcje znajdziesz
@@ -180,8 +180,8 @@ się to z następującymi kwestiami:
 - Ten przewodnik zakłada, że masz już zainicjalizowany portfel Ledger, a tym
   samym wygenerowany mnemoniczny seed z 24 słów.
 
-- You need to run / use CLI v0.12.2.0, which can be found <a
-  href="{{site.baseurl}}/downloads/">here</a>.
+- Musisz uruchomić / używać CLI v0.12.2.0, który znajdziesz
+  [tutaj]({{site.baseurl}}/downloads/)
 
 - Musisz zainstalować aplikację Ledger Monero i skonfigurować swój
   system. Instrukcje można znaleźć

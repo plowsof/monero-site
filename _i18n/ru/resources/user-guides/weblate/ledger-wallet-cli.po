@@ -78,7 +78,6 @@ msgstr "В этом руководстве предполагается, что 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:17
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:113
-#| msgid "- You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgid "You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgstr "Вам нужно запустить / использовать клиент CLI версии v0.12.2.0 или новее, который можно скачать [здесь]({{site.baseurl}}/downloads)."
 
@@ -221,7 +220,6 @@ msgstr "Mac OS X"
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:61
-#| msgid "- You need to run / use CLI v0.12.2.0, which can be found <a href=\"{{site.baseurl}}/downloads/\">here</a>."
 msgid "You need to run / use CLI v0.12.2.0, which can be found [here]({{site.baseurl}}/downloads/)."
 msgstr "Вам нужно запустить / использовать клиент CLI версии v0.12.2.0 или новее, который можно скачать [здесь]({{site.baseurl}}/downloads/)."
 

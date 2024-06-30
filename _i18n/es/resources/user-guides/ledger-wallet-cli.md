@@ -15,8 +15,8 @@ implica lo siguiente:
 - Esta guía asume que ya has inicializado tu monedero Ledger y asimismo
   generado tu semilla mnemónica de 24 palabras.
 
-- You need to run / use CLI v0.12.2.0, which can be found <a
-  href="{{site.baseurl}}/downloads/">here</a>.
+- Necesitas ejecutar / usar monero-wallet-cli v0.12.2.0, que puede
+  encontrarse [aqui]({{site.baseurl}}/downloads).
 
 -  Necesitas instalar la aplicación Ledger Monero y configurar tu
   sistema. Las instrucciones se pueden encontrar
@@ -93,8 +93,8 @@ implica lo siguiente:
 - Esta guía asume que ya has inicializado tu monedero Ledger y asimismo
   generado tu semilla mnemónica de 24 palabras.
 
-- You need to run / use CLI v0.12.2.0, which can be found
-  [here]({{site.baseurl}}/downloads/).
+- Necesitas ejecutar / usar monero-wallet-cli v0.12.2.0, que puede
+  encontrarse [aqui]({{site.baseurl}}/downloads/)
 
 - Necesitas instalar la aplicación Ledger Monero y configurar tu
   sistema. Las instrucciones se pueden encontrar
@@ -183,8 +183,8 @@ implica lo siguiente:
 - Esta guía asume que ya has inicializado tu monedero Ledger y asimismo
   generado tu semilla mnemónica de 24 palabras.
 
-- You need to run / use CLI v0.12.2.0, which can be found <a
-  href="{{site.baseurl}}/downloads/">here</a>.
+- Necesitas ejecutar / usar monero-wallet-cli v0.12.2.0, que puede
+  encontrarse [aqui]({{site.baseurl}}/downloads).
 
 - Necesitas instalar la aplicación Ledger Monero y configurar tu
   sistema. Las instrucciones se pueden encontrar

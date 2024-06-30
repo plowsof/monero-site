@@ -15,8 +15,8 @@ suit :
 - Ce guide suppose que vous avez déjà initialisé votre portefeuille Ledger
   et par conséquent généré une phrase mnémonique de 24 mots.
 
-- You need to run / use CLI v0.12.2.0, which can be found <a
-  href="{{site.baseurl}}/downloads/">here</a>.
+- Vous devez lancer / utiliser la CLI v0.12.2.0, qui peut être récupérée
+  [ici]({{site.baseurl}}/downloads/).
 
 -  Vous avez besoin d'installer et de configurer l'application de
   portefeuille Monero de Ledger. Vous trouverez les instructions
@@ -94,8 +94,8 @@ suit :
 - Ce guide suppose que vous avez déjà initialisé votre portefeuille Ledger
   et par conséquent généré une phrase mnémonique de 24 mots.
 
-- You need to run / use CLI v0.12.2.0, which can be found
-  [here]({{site.baseurl}}/downloads/).
+- Vous devez lancer / utiliser la CLI v0.12.2.0, qui peut être récupérée
+  [ici]({{site.baseurl}}/downloads/).
 
 - Vous avez besoin d'installer et de configurer l'application de
   portefeuille Monero de Ledger. Vous trouverez les instructions
@@ -183,8 +183,8 @@ suit :
 - Ce guide suppose que vous avez déjà initialisé votre portefeuille Ledger
   et par conséquent généré une phrase mnémonique de 24 mots.
 
-- You need to run / use CLI v0.12.2.0, which can be found <a
-  href="{{site.baseurl}}/downloads/">here</a>.
+- Vous devez lancer / utiliser la CLI v0.12.2.0, qui peut être récupérée
+  [ici]({{site.baseurl}}/downloads/).
 
 - Vous avez besoin d'installer et de configurer l'application de
   portefeuille Monero de Ledger. Vous trouverez les instructions
