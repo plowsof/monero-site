@@ -64,7 +64,7 @@ msgstr "Respalda todos los archivos relacionados con tu monedero. Estos incluyen
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:22
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "> yourwalletname.bin > yourwalletname.bin.keys > yourwalletname.bin.address.txt"
 msgid ""
 "> yourwalletname.bin\n"
