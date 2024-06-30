@@ -57,7 +57,7 @@ We first have to ensure that we're sufficiently prepared. This entails the follo
 
 - This guide assumes you have already initialized your Ledger wallet and thus generated a 24 word mnemonic seed.
 
-- You need to run / use CLI v0.12.2.0, which can be found <a href="{{site.baseurl}}/downloads/">here</a>.
+- You need to run / use CLI v0.12.2.0, which can be found [here]({{site.baseurl}}/downloads/).
 
 - You need to install the Ledger Monero app and configure your system. Instructions can be found [here](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (sections 3.1.1 and 3.2.2 in particular). In addition, make sure to set the network to `Mainnet`
 

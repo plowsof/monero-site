@@ -25,10 +25,10 @@ msgstr "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" 
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:3
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Table of Content"
 msgid "Table of Content"
-msgstr "### Spis treści"
+msgstr "Spis treści"
 
 #. type: Bullet: '* '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:9
@@ -67,10 +67,9 @@ msgstr "Najpierw musimy się upewnić, że jesteśmy wystarczająco przygotowani
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:15
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:59
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:111
-#, fuzzy
 #| msgid "- This guide assumes you have already initialized your Ledger wallet and thus generated a 24 word mnemonic seed."
 msgid "This guide assumes you have already initialized your Ledger wallet and thus generated a 24 word mnemonic seed."
-msgstr "- Ten przewodnik zakłada, że masz już zainicjalizowany portfel Ledger, a tym samym wygenerowany mnemoniczny seed z 24 słów."
+msgstr "Ten przewodnik zakłada, że masz już zainicjalizowany portfel Ledger, a tym samym wygenerowany mnemoniczny seed z 24 słów."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:17
@@ -83,26 +82,23 @@ msgstr "- Musisz uruchomić / używać CLI v0.12.2.0, który znajdziesz <a href=
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:19
-#, fuzzy
 #| msgid "- You need to install the Ledger Monero app and configure your system. Instructions can be found [here](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (sections 3.1.1 and 3.2.3 in particular). In addition, make sure to set the network to `Mainnet`"
 msgid "You need to install the Ledger Monero app and configure your system. Instructions can be found [here](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (sections 3.1.1 and 3.2.3 in particular). In addition, make sure to set the network to `Mainnet`"
-msgstr "- Musisz zainstalować aplikację Ledger Monero i skonfigurować swój system. Instrukcje znajdziesz [tutaj](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (w szczególności sekcje 3.1.1 i 3.2.3). Dodatkowo upewnij się, że sieć jest ustawiona na `Mainnet`"
+msgstr " Musisz zainstalować aplikację Ledger Monero i skonfigurować swój system. Instrukcje znajdziesz [tutaj](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (w szczególności sekcje 3.1.1 i 3.2.3). Dodatkowo upewnij się, że sieć jest ustawiona na `Mainnet`"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:21
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:67
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:117
-#, fuzzy
 #| msgid "- Your Ledger needs to be plugged in and the Ledger Monero app should be running."
 msgid "Your Ledger needs to be plugged in and the Ledger Monero app should be running."
-msgstr "- Twój Ledger musi być podłączony do prądu, a aplikacja Ledger Monero powinna być uruchomiona."
+msgstr "Twój Ledger musi być podłączony do prądu, a aplikacja Ledger Monero powinna być uruchomiona."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:23
-#, fuzzy
 #| msgid "- Either your @daemon (`monerod.exe`) should be running and preferably be fully synced or you should connect to a remote node."
 msgid "Either your @daemon (`monerod.exe`) should be running and preferably be fully synced or you should connect to a remote node."
-msgstr "- Albo twój @daemon (`monerod.exe`) powinien być uruchomiony i najlepiej w pełni zsynchronizowany, albo powinieneś połączyć się ze zdalnym węzłem."
+msgstr "Albo twój @daemon (`monerod.exe`) powinien być uruchomiony i najlepiej w pełni zsynchronizowany, albo powinieneś połączyć się ze zdalnym węzłem."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:25
@@ -113,40 +109,37 @@ msgstr "Teraz, kiedy jesteśmy już wystarczająco przygotowani, zaczynajmy!"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:27
-#, fuzzy
 #| msgid "- Go to the directory / folder monerod.exe and monero-wallet-cli.exe are located."
 msgid "Go to the directory / folder monerod.exe and monero-wallet-cli.exe are located."
-msgstr "- Przejdź do katalogu / folderu gdzie znajdują się monerod.exe i monero-wallet-cli.exe."
+msgstr "Przejdź do katalogu / folderu gdzie znajdują się monerod.exe i monero-wallet-cli.exe."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:29
-#, fuzzy
 #| msgid "- Open a new command prompt / powershell. This is done by first making sure your cursor isn't located on any of the files and subsequently doing SHIFT + right click. It will give you an option to \"Open command window here\". If you're using Windows 10 in latest version, it'll give you an option to \"open the PowerShell window here\"."
 msgid "Open a new command prompt / powershell. This is done by first making sure your cursor isn't located on any of the files and subsequently doing SHIFT + right click. It will give you an option to \"Open command window here\". If you're using Windows 10 in latest version, it'll give you an option to \"open the PowerShell window here\"."
-msgstr "- Otwórz nowy wiersz poleceń / powershell. W tym celu najpierw upewnij się, że kursor nie znajduje się na żadnym z plików, a następnie wykonaj SHIFT + kliknięcie prawym przyciskiem myszy. To da Ci opcję \"Otwórz tutaj okno poleceń\". Jeśli używasz systemu Windows 10 w najnowszej wersji, da Ci to opcję \"Otwórz tutaj okno PowerShell\"."
+msgstr "Otwórz nowy wiersz poleceń / powershell. W tym celu najpierw upewnij się, że kursor nie znajduje się na żadnym z plików, a następnie wykonaj SHIFT + kliknięcie prawym przyciskiem myszy. To da Ci opcję \"Otwórz tutaj okno poleceń\". Jeśli używasz systemu Windows 10 w najnowszej wersji, da Ci to opcję \"Otwórz tutaj okno PowerShell\"."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:31
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:81
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:127
-#, fuzzy
 #| msgid "- Now type:"
 msgid "Now type:"
-msgstr "- Teraz wpisz:"
+msgstr "Teraz wpisz:"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:33
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "`monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 7 + 8)"
 msgid "```monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 7 + 8)\n"
-msgstr "`monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 7 + 8)"
+msgstr "```monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 7 + 8)\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:35
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "`.\\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 10)"
 msgid "```.\\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 10)\n"
-msgstr "`.\\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200` (Win 10)"
+msgstr "```.\\monero-wallet-cli.exe --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200``` (Win 10)\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:37
@@ -157,61 +150,54 @@ msgstr "Zauważ, że jest to po prostu zmienna dla rzeczywistej nazwy portfela. 
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:39
-#, fuzzy
 #| msgid "`monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 7 + 8)"
 msgid "```monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200``` (Win 7 + 8)"
-msgstr "`monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 7 + 8)"
+msgstr "```monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200``` (Win 7 + 8)"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:41
-#, fuzzy
 #| msgid "`.\\monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 10)"
 msgid "```.\\monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200``` (Win 10)"
-msgstr "`.\\monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200` (Win 10)"
+msgstr "```.\\monero-wallet-cli.exe --generate-from-device MoneroWallet --subaddress-lookahead 3:200``` (Win 10)"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:43
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:135
-#, fuzzy
 #| msgid "- The CLI will, after executing aforementioned command, prompt your for a password. Make sure to set a strong password and confirm it thereafter."
 msgid "The CLI will, after executing aforementioned command, prompt your for a password. Make sure to set a strong password and confirm it thereafter."
-msgstr "- CLI, po wykonaniu powyższej komendy, poprosi o podanie hasła. Upewnij się, że ustawiasz silne hasło i potwierdź je następnie."
+msgstr "CLI, po wykonaniu powyższej komendy, poprosi o podanie hasła. Upewnij się, że ustawiasz silne hasło i potwierdź je następnie."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:45
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:97
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:137
-#, fuzzy
 #| msgid "- The Ledger will ask whether you want to export the private view key or not. First and foremost, your funds cannot be compromised with merely the private view key. Exporting the private view key enables the client (on the computer - Monero v0.12.2.0) to scan blocks looking for transactions that belong to your wallet / address. If this option is not utilized, the device (Ledger) will scan blocks, which will be significantly slower. There is, however, one caveat. That is, if your system gets compromised, the adversary will potentially be able to compromise your private view key as well, which is detrimental to privacy. This is virtually impossible when the private view key is not exported."
 msgid "The Ledger will ask whether you want to export the private view key or not. First and foremost, your funds cannot be compromised with merely the private view key. Exporting the private view key enables the client (on the computer - Monero v0.12.2.0) to scan blocks looking for transactions that belong to your wallet / address. If this option is not utilized, the device (Ledger) will scan blocks, which will be significantly slower. There is, however, one caveat. That is, if your system gets compromised, the adversary will potentially be able to compromise your private view key as well, which is detrimental to privacy. This is virtually impossible when the private view key is not exported."
-msgstr "- Ledger zapyta, czy chcesz wyeksportować prywatny klucz widoku, czy nie. Przede wszystkim, Twoje środki nie mogą być zagrożone tylko za pomocą prywatnego klucza widoku. Eksportowanie klucza prywatnego widoku umożliwia aplikacji ( na komputerze - Monero v0.12.2.0) skanowanie bloków w poszukiwaniu transakcji, które należą do Twojego portfela / adresu. Jeśli ta opcja nie jest wykorzystywana, urządzenie (Ledger) będzie skanować bloki, co będzie znacznie wolniejsze. Istnieje jednak jedno zastrzeżenie. To jest, jeśli system zostanie skompromitowany, napastnik będzie potencjalnie w stanie skompromitować Twój prywatny klucz widoku, co jest szkodliwe dla prywatności. Jest to praktycznie niemożliwe, gdy prywatny klucz widoku nie jest eksportowany."
+msgstr "Ledger zapyta, czy chcesz wyeksportować prywatny klucz widoku, czy nie. Przede wszystkim, Twoje środki nie mogą być zagrożone tylko za pomocą prywatnego klucza widoku. Eksportowanie klucza prywatnego widoku umożliwia aplikacji ( na komputerze - Monero v0.12.2.0) skanowanie bloków w poszukiwaniu transakcji, które należą do Twojego portfela / adresu. Jeśli ta opcja nie jest wykorzystywana, urządzenie (Ledger) będzie skanować bloki, co będzie znacznie wolniejsze. Istnieje jednak jedno zastrzeżenie. To jest, jeśli system zostanie skompromitowany, napastnik będzie potencjalnie w stanie skompromitować Twój prywatny klucz widoku, co jest szkodliwe dla prywatności. Jest to praktycznie niemożliwe, gdy prywatny klucz widoku nie jest eksportowany."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:47
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:99
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:139
-#, fuzzy
 #| msgid "- You may have to hit confirm twice before it proceeds."
 msgid "You may have to hit confirm twice before it proceeds."
-msgstr "- Może być konieczne dwukrotne kliknięcie potwierdzenia, aby rozpocząć."
+msgstr "Może być konieczne dwukrotne kliknięcie potwierdzenia, aby rozpocząć."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:49
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:101
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:141
-#, fuzzy
 #| msgid "- Your Ledger Monero wallet will now be generated. Note that this may take up to 5-10 minutes. Furthermore, there will be no immediate feedback in the CLI nor on the Ledger."
 msgid "Your Ledger Monero wallet will now be generated. Note that this may take up to 5-10 minutes. Furthermore, there will be no immediate feedback in the CLI nor on the Ledger."
-msgstr "- Twój portfel Ledger Monero zostanie teraz wygenerowany. Należy pamiętać, że może to potrwać do 5-10 minut. Co więcej, nie będzie natychmiastowej informacji o tym ani w CLI ani na Ledgerze."
+msgstr "Twój portfel Ledger Monero zostanie teraz wygenerowany. Należy pamiętać, że może to potrwać do 5-10 minut. Co więcej, nie będzie natychmiastowej informacji o tym ani w CLI ani na Ledgerze."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:51
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:103
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:143
-#, fuzzy
 #| msgid "- `monero-wallet-cli` will start refreshing. Wait until it has fully refreshed."
 msgid "`monero-wallet-cli` will start refreshing. Wait until it has fully refreshed."
-msgstr "- `monero-wallet-cli` rozpocznie odświeżanie. Poczekaj aż się w pełni odświeży."
+msgstr "`monero-wallet-cli` rozpocznie odświeżanie. Poczekaj aż się w pełni odświeży."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:53
@@ -222,74 +208,66 @@ msgstr "Gratulacje, możesz teraz korzystać z portfela Monero Ledger w połącz
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:54
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Mac OS X"
 msgid "Mac OS X"
-msgstr "### Mac OS X"
+msgstr "Mac OS X"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:63
-#, fuzzy
 #| msgid "- You need to install the Ledger Monero app and configure your system. Instructions can be found [here](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (sections 3.1.1 and 3.2.2 in particular). In addition, make sure to set the network to `Mainnet`"
 msgid "You need to install the Ledger Monero app and configure your system. Instructions can be found [here](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (sections 3.1.1 and 3.2.2 in particular). In addition, make sure to set the network to `Mainnet`"
-msgstr "- Musisz zainstalować aplikację Ledger Monero i skonfigurować swój system. Instrukcje znajdziesz [tutaj](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (w szczególności sekcje 3.1.1 i 3.2.2). Dodatkowo upewnij się, że sieć jest ustawiona na `Mainnet`"
+msgstr "Musisz zainstalować aplikację Ledger Monero i skonfigurować swój system. Instrukcje znajdziesz [tutaj](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (w szczególności sekcje 3.1.1 i 3.2.2). Dodatkowo upewnij się, że sieć jest ustawiona na `Mainnet`"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:65
-#, fuzzy
 #| msgid "- Note that the instructions for system configuration (section 3.2.2) on Mac OS X are quite elaborate and can be perceived as slightly convoluted. Fortunately, tficharmers has created a guide [here](https://monero.stackexchange.com/questions/8438/how-do-i-make-my-macos-detect-my-ledger-nano-s-when-plugged-in) that you can use for assistance."
 msgid "Note that the instructions for system configuration (section 3.2.2) on Mac OS X are quite elaborate and can be perceived as slightly convoluted. Fortunately, tficharmers has created a guide [here](https://monero.stackexchange.com/questions/8438/how-do-i-make-my-macos-detect-my-ledger-nano-s-when-plugged-in) that you can use for assistance."
-msgstr "- Zauważ, że instrukcje dotyczące konfiguracji systemu (sekcja 3.2.2) na Mac OS X są dość rozbudowane i mogą być postrzegane jako nieco zagmatwane. Na szczęście, tficharmers stworzył przewodnik [tutaj](https://monero.stackexchange.com/questions/8438/how-do-i-make-my-macos-detect-my-ledger-nano-s-when-plugged-in), z którego możesz skorzystać w celu uzyskania pomocy."
+msgstr "Zauważ, że instrukcje dotyczące konfiguracji systemu (sekcja 3.2.2) na Mac OS X są dość rozbudowane i mogą być postrzegane jako nieco zagmatwane. Na szczęście, tficharmers stworzył przewodnik [tutaj](https://monero.stackexchange.com/questions/8438/how-do-i-make-my-macos-detect-my-ledger-nano-s-when-plugged-in), z którego możesz skorzystać w celu uzyskania pomocy."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:69
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:119
-#, fuzzy
 #| msgid "- Either your daemon (`monerod`) should be running and preferably be fully synced or you should connect to a remote node."
 msgid "Either your daemon (`monerod`) should be running and preferably be fully synced or you should connect to a remote node."
-msgstr "- Albo twój demon (`monerod`) powinien być uruchomiony i najlepiej w pełni zsynchronizowany, albo powinieneś połączyć się ze zdalnym węzłem."
+msgstr "Albo twój demon (`monerod`) powinien być uruchomiony i najlepiej w pełni zsynchronizowany, albo powinieneś połączyć się ze zdalnym węzłem."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:73
-#, fuzzy
 #| msgid "- Use Finder to browse to the directory / folder `monero-wallet-cli` (CLI v0.12.2.0) is located."
 msgid "Use Finder to browse to the directory / folder `monero-wallet-cli` (CLI v0.12.2.0) is located."
-msgstr "- Użyj Findera, aby przejść do katalogu / folderu w którym znajduje się `monero-wallet-cli` (CLI v0.12.2.0)."
+msgstr "Użyj Findera, aby przejść do katalogu / folderu w którym znajduje się `monero-wallet-cli` (CLI v0.12.2.0)."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:75
-#, fuzzy
 #| msgid "- Go to your desktop."
 msgid "Go to your desktop."
-msgstr "- Przejdź na swój pulpit."
+msgstr "Przejdź na swój pulpit."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:77
-#, fuzzy
 #| msgid "- Open a new terminal (if don't know how to open a terminal, see [here](https://apple.stackexchange.com/a/256263))."
 msgid "Open a new terminal (if don't know how to open a terminal, see [here](https://apple.stackexchange.com/a/256263))."
-msgstr "- Otwórz nowe okno terminala (jeśli nie wiesz jak otworzyć terminal, zobacz [tutaj](https://apple.stackexchange.com/a/256263))."
+msgstr "Otwórz nowe okno terminala (jeśli nie wiesz jak otworzyć terminal, zobacz [tutaj](https://apple.stackexchange.com/a/256263))."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:79
-#, fuzzy
 #| msgid "- Drag `monero-wallet-cli` in the terminal. It should add the full path to the terminal. Do not hit enter."
 msgid "Drag `monero-wallet-cli` in the terminal. It should add the full path to the terminal. Do not hit enter."
-msgstr "- Przeciągnij `monero-wallet-cli` do terminala. Powinno to dodać pełną ścieżkę w terminalu. Nie naciskaj enter."
+msgstr "Przeciągnij `monero-wallet-cli` do terminala. Powinno to dodać pełną ścieżkę w terminalu. Nie naciskaj enter."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:83
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "`--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
 msgid "```--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```\n"
-msgstr "`--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
+msgstr "```--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:87
-#, fuzzy
 #| msgid "`--generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
 msgid "```--generate-from-device MoneroWallet --subaddress-lookahead 3:200```"
-msgstr "`--generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
+msgstr "```--generate-from-device MoneroWallet --subaddress-lookahead 3:200```"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:89
@@ -298,10 +276,10 @@ msgstr "Zauważ, że powyższy tekst zostanie dołączony do ścieżki `monero-w
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:91
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "`/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
 msgid "```/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```\n"
-msgstr "`/pełna/ścieżka/do/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
+msgstr "```/pełna/ścieżka/do/monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:93
@@ -310,80 +288,72 @@ msgstr "Gdzie pełna ścieżka jest, intuicyjnie, rzeczywistą ścieżką w syst
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:95
-#, fuzzy
 #| msgid "- The CLI will, after executing aforementioned command, prompt you for a password. Make sure to set a strong password and confirm it thereafter."
 msgid "The CLI will, after executing aforementioned command, prompt you for a password. Make sure to set a strong password and confirm it thereafter."
-msgstr "- CLI, po wykonaniu powyższej komendy, poprosi o podanie hasła. Upewnij się, że ustawiłeś silne hasło i potwierdź je następnie."
+msgstr "CLI, po wykonaniu powyższej komendy, poprosi o podanie hasła. Upewnij się, że ustawiłeś silne hasło i potwierdź je następnie."
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:106
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### Linux"
 msgid "Linux"
-msgstr "### Linux"
+msgstr "Linux"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:115
-#, fuzzy
 #| msgid "- You need to install the Ledger Monero app and configure your system. Instructions can be found [here](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (sections 3.1.1 and 3.2.1 in particular). In addition, make sure to set the network to `Mainnet`"
 msgid "You need to install the Ledger Monero app and configure your system. Instructions can be found [here](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (sections 3.1.1 and 3.2.1 in particular). In addition, make sure to set the network to `Mainnet`"
-msgstr "- Musisz zainstalować aplikację Ledger Monero i skonfigurować swój system. Instrukcje można znaleźć [tutaj](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (w szczególności sekcje 3.1.1 i 3.2.1). Dodatkowo upewnij się, że sieć jest ustawiona na `Mainnet`"
+msgstr "Musisz zainstalować aplikację Ledger Monero i skonfigurować swój system. Instrukcje można znaleźć [tutaj](https://github.com/LedgerHQ/blue-app-monero/blob/master/doc/user/bolos-app-monero.pdf) (w szczególności sekcje 3.1.1 i 3.2.1). Dodatkowo upewnij się, że sieć jest ustawiona na `Mainnet`"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:123
-#, fuzzy
 #| msgid "- Go to the directory / folder monero-wallet-cli and monerod are located."
 msgid "Go to the directory / folder monero-wallet-cli and monerod are located."
-msgstr "- Przejdź do katalogu / folderu, w którym znajdują się monero-wallet-cli i monerod."
+msgstr "Przejdź do katalogu / folderu, w którym znajdują się monero-wallet-cli i monerod."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:125
-#, fuzzy
 #| msgid "- Open a new terminal"
 msgid "Open a new terminal"
-msgstr "- Otwórz nowy terminal"
+msgstr "Otwórz nowy terminal"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:129
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "`./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
 msgid "```./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```\n"
-msgstr "`./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
+msgstr "```./monero-wallet-cli --generate-from-device <new-wallet-name> --subaddress-lookahead 3:200```\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:133
-#, fuzzy
 #| msgid "`./monero-wallet-cli --generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
 msgid "```./monero-wallet-cli --generate-from-device MoneroWallet --subaddress-lookahead 3:200```"
-msgstr "`./monero-wallet-cli --generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
+msgstr "```./monero-wallet-cli --generate-from-device MoneroWallet --subaddress-lookahead 3:200```"
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:146
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "### A few final notes"
 msgid "A few final notes"
-msgstr "### Kilka uwag na koniec"
+msgstr "Kilka uwag na koniec"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:149
-#, fuzzy
 #| msgid "- We'd strongly advise to test the full process first. That is, send a small amount to the wallet and subsequently restore it (using aforementioned guide) to verify that you can recover the wallet. Note that, upon recreating / restoring the wallet, you ought to append the `--restore-height` flag (with a block height before the height of your first transaction to the wallet) to the command in step 3 (Windows), step 5 (Mac OS X), or step 3 (Linux). More information about the restore height and how to approximate it can be found [here](https://monero.stackexchange.com/questions/7581/what-is-the-relevance-of-the-restore-height)."
 msgid "We'd strongly advise to test the full process first. That is, send a small amount to the wallet and subsequently restore it (using aforementioned guide) to verify that you can recover the wallet. Note that, upon recreating / restoring the wallet, you ought to append the `--restore-height` flag (with a block height before the height of your first transaction to the wallet) to the command in step 3 (Windows), step 5 (Mac OS X), or step 3 (Linux). More information about the restore height and how to approximate it can be found [here](https://monero.stackexchange.com/questions/7581/what-is-the-relevance-of-the-restore-height)."
-msgstr "- Radzimy najpierw przetestować cały proces. To znaczy, wysłać niewielką kwotę do portfela, a następnie przywrócić go (za pomocą wyżej wymienionego przewodnika), aby sprawdzić, czy można odzyskać portfel. Należy pamiętać, że po odtworzeniu / przywracania portfela, należy uzupełnić flagę `--restore-height` (z wysokością bloku przed wysokością pierwszej transakcji do portfela) do polecenia w kroku 3 (Windows), krok 5 (Mac OS X), lub krok 3 (Linux). Więcej informacji na temat wysokości przywracania i jak ją przybliżyć można znaleźć [tutaj](https://monero.stackexchange.com/questions/7581/what-is-the-relevance-of-the-restore-height)."
+msgstr "Radzimy najpierw przetestować cały proces. To znaczy, wysłać niewielką kwotę do portfela, a następnie przywrócić go (za pomocą wyżej wymienionego przewodnika), aby sprawdzić, czy można odzyskać portfel. Należy pamiętać, że po odtworzeniu / przywracania portfela, należy uzupełnić flagę `--restore-height` (z wysokością bloku przed wysokością pierwszej transakcji do portfela) do polecenia w kroku 3 (Windows), krok 5 (Mac OS X), lub krok 3 (Linux). Więcej informacji na temat wysokości przywracania i jak ją przybliżyć można znaleźć [tutaj](https://monero.stackexchange.com/questions/7581/what-is-the-relevance-of-the-restore-height)."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:151
-#, fuzzy
 #| msgid "- If you use a remote node, append the `--daemon-address host:port` flag to the command in step 3 (Windows), step 5 (Mac OS X), or step 3 (Linux)."
 msgid "If you use a remote node, append the `--daemon-address host:port` flag to the command in step 3 (Windows), step 5 (Mac OS X), or step 3 (Linux)."
-msgstr "- Jeśli używasz zdalnego węzła, dodaj opcję `--daemon-address host:port` do polecenia w kroku 3 (Windows), kroku 5 (Mac OS X), lub kroku 3 (Linux)."
+msgstr "Jeśli używasz zdalnego węzła, dodaj opcję `--daemon-address host:port` do polecenia w kroku 3 (Windows), kroku 5 (Mac OS X), lub kroku 3 (Linux)."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:153
-#, fuzzy
 #| msgid "- If desired, you can manually tweak the `--subaddress-lookahead` value. The first value is the number of accounts and the second value is the number of subaddresses per account. Thus, if you, for instance, want to pregenerate 5 accounts with 100 subaddresses each, use `--subaddress-lookahead 5:100`. Bear in mind that, the more subaddresses you pregenerate, the longer it takes for the Ledger to create your wallet."
 msgid "If desired, you can manually tweak the `--subaddress-lookahead` value. The first value is the number of accounts and the second value is the number of subaddresses per account. Thus, if you, for instance, want to pregenerate 5 accounts with 100 subaddresses each, use `--subaddress-lookahead 5:100`. Bear in mind that, the more subaddresses you pregenerate, the longer it takes for the Ledger to create your wallet."
-msgstr "- Jeśli chcesz, możesz ręcznie dostosować wartość `--subaddress-lookahead`. Pierwsza wartość jest liczbą kont, a druga jest liczbą podadresów na konto. Tak więc, jeśli, na przykład, chcesz wstępnie wygenerować 5 kont z 100 podadresami każde, użyj `--subaddress-lookahead 5:100`. Należy pamiętać, że im więcej subadresów wstępnie wygenerujesz, tym dłużej potrwa dla Ledger, aby utworzyć portfel."
+msgstr "Jeśli chcesz, możesz ręcznie dostosować wartość `--subaddress-lookahead`. Pierwsza wartość jest liczbą kont, a druga jest liczbą podadresów na konto. Tak więc, jeśli, na przykład, chcesz wstępnie wygenerować 5 kont z 100 podadresami każde, użyj `--subaddress-lookahead 5:100`. Należy pamiętać, że im więcej subadresów wstępnie wygenerujesz, tym dłużej potrwa dla Ledger, aby utworzyć portfel."
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:159
@@ -418,10 +388,9 @@ msgstr "   Jeśli pliki portfela Ledger nie są w tym samym katalogu co `monero-
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/ledger-wallet-cli.md:162
-#, fuzzy
 #| msgid "- If you have any further questions or need assistance, please leave a comment to the original [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli) answer."
 msgid "If you have any further questions or need assistance, please leave a comment to the original [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli) answer."
-msgstr "- Jeśli masz dalsze pytania lub potrzebujesz pomocy, proszę napisz komentarz w oryginalnej odpowiedzi [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli)."
+msgstr "Jeśli masz dalsze pytania lub potrzebujesz pomocy, proszę napisz komentarz w oryginalnej odpowiedzi [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli)."
 
 #~ msgid "- Congratulations, you can now use your Ledger Monero wallet in conjunction with the CLI."
 #~ msgstr "- Gratulacje, możesz teraz korzystać z portfela Monero Ledger w połączeniu z CLI."
