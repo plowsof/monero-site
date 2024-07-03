@@ -268,8 +268,6 @@ team:
     protokołu, które sprawiają Monero niesamowitym, jak CLSAG i @Bulletproofs, są
     wynikiem pracy tej grupy roboczej.
   telegram: 'Czat Telegram:'
-  outreach_descr: Ta grupa robocza koncentruje się na rozpowszechnianiu Monero, zdobywaniu
-    artystów, pisarzy i każdego, kto chce, aby Monero było znane światu.
   locplatform: 'Platforma lokalizacji:'
   localization_start: Skontaktuj się z grupą roboczą na czacie lub otwórz problem
     w repozytorium GitHub. Możesz także od razu rozpocząć tłumaczenie za pomocą platformy
@@ -286,10 +284,6 @@ team:
     zwłaszcza w odniesieniu do ich zgodności z zmieniającymi się wymogami regulacyjnymi
     i compliance.
   mpwg: Grupa robocza ds. polityki Monero
-  outreach_start: Członkowie grupy roboczej ds. Outreach korzystają intensywnie z
-    Telegramu do koordynacji oraz z matrix/freenode rzadziej. Jeśli chcesz pomóc,
-    najlepiej skontaktować się z grupą roboczą za pomocą jednego z tych kanałów. Są
-    dość uporządkowane, więc prawdopodobnie zostaniesz skierowany do koordynatora.
   web_descr: Kolejna grupa robocza skupiona na programowaniu, która koordynuje rozwój
     strony internetowej. Większość programistów jest częścią grupy roboczej ds. rozwoju
     oprogramowania. Grupa robocza serwisu internetowego została stworzona głównie

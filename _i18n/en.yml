@@ -178,6 +178,7 @@ sponsorships:
   tari: Tari Labs sponsors the CDN used by this website.
   mbank: MajesticBank sponsors the hosting used by this website.
   symas: Symas sponsors its CTO Howard Chu (hyc) for his work on the Monero codebase.
+  forknetworking: Fork Networking provides a server which is used for development.
   macstadium: MacStadium sponsors a dedicated Mac Mini that is used for Mac-related development.
   cakewallet: Cake Wallet sponsors the "tools" server with the mailing list, GitLab, Matrix, Taiga, and Weblate.
   pastsponsors: Past sponsors
@@ -296,7 +297,7 @@ downloads:
   localsyncinfo: These wallets connect to @remote-nodes and scan the @blockchain on your device, without sharing any key with the nodes. They provide higher privacy, but require more time synchronizing, since missing @blocks will be scanned only when the wallet is opened.
   remotesync: Remote synchronization (lightweight)
   remotesyncinfo: These wallets share your private @view-key with a remote server, which continuously scans the blockchain looking for your transactions. They are faster to use, but your privacy can be lessened if you don't control the remote server.
-  hwdesc: "Hardware wallets are cryptographically secure devices that help keep your coins safe. Monero is currently supported by Ledger Nano (S, S Plus, and X) and Trezor (Model T, Safe 3)"
+  hwdesc: "Hardware wallets are cryptographically secure devices that help keep your coins safe. Monero is currently supported by Ledger Nano (S, S Plus, and X) and Trezor Model T."
   hwth: Hardware Wallet
   instructions: Usage instructions
   hwthmodel: Model(s)
@@ -347,8 +348,6 @@ press-kit:
   whyconf1: We encourage everyone to include community members from the largest privacy project in related news articles and events.
   altpk-1: Picture of a woman standing in front of a Monero Talk banner
   altpk-2: Picture of fluffypony making a presentation in front of a crowd at DEFCON
-  johnr365timeline: Monero Timeline
-  johnr365timelinep: A timeline of key developments in the Monero history
   
 accepting:
   title_gui: Instructions for the GUI
@@ -906,7 +905,7 @@ specs:
   privacytech_title: Main privacy enhancing technologies
   privacytech_ringct: "@RingCT"
   privacytech_sh: "@Stealth-Addresses"
-  privacytech_rs: "@ring-signatures"
+  privacytech_rs: Ring Signatures
   privacytech_tor-i2p: Transactions over Tor/I2P
   privacytech_dandelion: Dandelion++
 

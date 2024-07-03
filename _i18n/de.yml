@@ -275,9 +275,6 @@ team:
   space_descr: Monero Space ist eine aktive, projektbezogene Monero-Arbeitsgruppe,
     die Dienste für die Monero-Community bereitstellt. Sie hostet beliebte Ressourcen
     und organisiert Veranstaltungen wie das Monero Meet.
-  outreach_descr: Diese Arbeitsgruppe konzentriert sich darauf Monero bekannt zu machen
-    und versammelt Künstler, Schriftsteller und jeden der Monero in der Welt bekannt
-    machen möchte.
   community_descr: Diese Arbeitsgruppe wird von der Community genutzt, um sich zu
     organisieren und zu koordinieren. Fange hier an, wenn Du kein Programmierer bist,
     aber etwas zu Monero beitragen möchtest.
@@ -302,11 +299,6 @@ team:
   localization_start: Kontaktiere die Arbeitsgruppe im Chatroom oder erstelle einen
     Eintrag im GitHub-Repository. Du kannst auch sofort mit der Übersetzung über die
     Weblate-Plattform beginnen. Lies dazu bitte zuerst den Leitfaden für Übersetzer.
-  outreach_start: Die Mitglieder der Outreach-Arbeitsgruppe nutzen vor allem Telegram
-    für die Koordination und Matrix/Freenode zu einem kleinen Teil. Falls Du helfen
-    willst, kannst Du die Arbeitsgruppe über einen dieser Kanäle kontaktieren. Sie
-    ist recht strukturiert, so dass Du wahrscheinlich an einen Koordinator weitergeleitet
-    wirst.
   mrw: Arbeitsgruppe zur Eindämmung von Malware
   mrw_descr: Die Arbeitsgruppe zur Eindämmung von Malware bietet Ressourcen und Live-Support
     für verschiedene Arten von Monero-bezogener Malware.

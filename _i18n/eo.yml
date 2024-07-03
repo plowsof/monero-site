@@ -3,8 +3,8 @@ global:
   monero: 'Monero'
   getting_started: 'Komenci'
   copyright: 'Aŭtorrajto'
-  monero_project: 'La Monero-Projekto'
-  sitename: 'getmonero.org, La Monero-Projekto'
+  monero_project: 'La Projekto Monero'
+  sitename: 'getmonero.org, La Projekto Monero'
   wiki: 'Moneropedio'
   tags: 'Artikoloj laŭ etikedoj'
   wikimeta: 'en Moneropedio, la malfermita enciklopedio de Monera scio'
@@ -14,7 +14,7 @@ global:
   privacy: 'Privateco'
   untranslated: 'Ĉi tiu paĝo ankoraŭ ne estas tradukita. Se vi ŝatus helpi traduki
     ĝin, bonvolu vidi la'
-  outdated: 'La enhavo de ĉi tiu paĝo estas neĝisdata kaj ĝi eble ne validas plu.
+  outdated: 'La enhavo de ĉi tiu paĝo ne estas ĝisdata kaj ĝi eble ne validas plu.
     Kontaktu la komunumon, se vi bezonas helpon.'
   outdatedMin: 'Ĉi tiu paĝo estis ĝisdatigita post sia traduko. Vi povas uzi ĉi tiun
     version, sed eble ĝi estas nekompleta. Bonvolu uzi la'
@@ -41,7 +41,7 @@ titles:
   userguides: 'Gvidiloj por uzantoj'
   developerguides: 'Gvidiloj por programistoj'
   technicalspecs: 'Teknika Specifo'
-  themoneroproject: 'La Monero-Projekto'
+  themoneroproject: 'La Projekto Monero'
   tools: 'Iloj'
   presskit: 'Aferoj por gazetaro'
   legal: 'Leĝa'
@@ -89,7 +89,7 @@ home:
     Moneroj, sed la plej facila estas uzi monŝanĝejon kaj konverti vian fidatan monon
     al XMR. Multaj monŝanĝejoj, centraj kaj malcentraj, listas Moneron (XMR).'
   exchanges: 'Monŝanĝejoj'
-  useit: "Ĝi estas valuto: uzu ĝin!"
+  useit: "Ĝi estas valuto; uzu ĝin!"
   useit_para: 'Monero estas valuto kaj povas esti interŝanĝita kontraŭ varoj, servoj
     kaj aliaj valutoj, private kaj per malgrandegaj kostoj. Multaj institucioj volonte
     akceptos XMR-n por pagoj; rigardu nian ''Komercistoj''-pâgon.'
@@ -272,12 +272,6 @@ team:
     en la GitHub-deponejo. Vi ankaŭ povas ektraduki uzante la Weblate-platformon.
     Nur certigu legi la gvidilon por tradukistoj antaŭe.'
   locplatform: "Lokaliga platformo:"
-  outreach_descr: 'Ĉi tiu laborgrupo fokusiĝas pri disvastigi Moneron, arigante artistojn,
-    skribistojn kaj ĉiun ajn, kiu deziras igi Moneron konata por la mondo.'
-  outreach_start: 'La anoj de la Disvastiga Laborgrupo multe uzas Telegramon por kunordigado
-    kaj malpli uzas matrix/freenode. Se vi volas helpi, vi povas kontakti la laborgrupon
-    per unu el ĉi tiuj kanaloj. Ĝi estas tre strukturita, do vi eble estos kondukita
-    al kunordigisto.'
   telegram: "Telegram-babilejo:"
   mrl_descr: 'Kiel la nomo sugestas, la Esplorada Laboratorio de Monero estas la laborgrupo
     fokusita pri Monero-rilataj esploroj. Ĝi konsistas el scienculoj, kiuj serĉas
@@ -330,7 +324,9 @@ downloads:
     simple kaj rapide kiel eblas. Malfermu la monujon, aŭtomate konekti al foran nodon,
     sendu/ricevu XMR, farita!'
   advancedmode: 'Progresinta reĝimo'
-  advancedmode1: ''
+  advancedmode1: 'Kun ĉiuj altnivelaj funkcioj, kiujn vi povus bezoni. Ideala por
+    spertaj Monero-uzantoj, kiuj preferas havi plenan kontrolon de siaj monujo kaj
+    nodo'
   merchantpage: 'Komercista paĝo'
   merchantpage1: 'Ricevi XMR por via entrepreno, facile'
   hwcompatible: 'Kongrua kun aparataj monujoj'
@@ -345,11 +341,11 @@ downloads:
   currentversion: 'Nuntempa versio'
   sourcecode: 'Fontkodo'
   helpsupport: 'Helpo kaj subteno'
-  helpsupport1: ""
+  helpsupport1: "Gvidilo kun klarigo de ĉiu sekcio de la monujo disponeblas:"
   helpsupport2: "Vidi plej novan eldonon"
   gui_helpsupport: ""
   cli_helpsupport: ""
-  localremote: ''
+  localremote: 'Loka aŭ fora nodo'
   localremote1: ''
   transacttor: ''
   transacttor1: ''
@@ -1057,27 +1053,39 @@ tools:
   gateways: ''
 
 blog:
-  allposts: ''
-  urgent: ''
-  releases: ''
-  community: ''
+  allposts: 'Ĉiuj afiŝoj'
+  urgent: 'Urĝaĵoj'
+  releases: 'Eldonoj'
+  community: 'Komunumo'
   meetinglogs: ''
-  author: ''
-  date: ''
-  filter: ""
+  author: 'Afiŝita de'
+  date: 'Afiŝita en'
+  filter: "Filtri laŭ kategorio:"
   next: 'Sekva'
   previous: 'Antaŭa'
 
 
 tags:
-  notags: ''
+  notags: 'Ne ekzistas afiŝoj por ĉi tiu etikedo'
 
 accessibility:
-  arrowup: ''
+  arrowup: 'Reiri al la supro de la paĝo'
   gotop: 'Iri supren'
   guiscreen: ''
-  cliscreen: ''
+  cliscreen: 'Ekrankopio de la komandlinia monujo'
 
 error:
-  title: ''
+  title: 'Paĝo ne trovita (eble ĝi valoras la privatecon)'
   button: 'Hejmpaĝen'
+meta_descr:
+  accepting: Gvidilo pri kiel akcepti pagon en Monero per la monujo kun grafika interfaco
+  contributing: Estas multaj manieroj kontribui al Monero per ĉiaj kapabloj
+  mining: Informo, programoj kaj rimedoj pri la minado de Monero
+  blog: Novaĵoj, eldonaj afiŝoj kaj komunikaĵoj el la Projekto Monero kaj ĝia komunumo
+  workgroups: Malkovru, kie la centoj da volontuloj laborantaj por Monero kunvenas
+    kaj kunordigas sin
+  about: Historio, valoroj kaj baza strukturo de la projekto kaj teknologio de Monero
+  sponsorships: La nunaj kaj estintaj sponsoroj de la projekto Monero.
+  roadmap: Foliumebla resumo de tio, kion Monero atingis ekde sia kreado, kio estas
+    disvolvata nun kaj planoj por la estonteco
+  whatismonero: Detala klarigo pri Monero kaj kiel komenciĝi

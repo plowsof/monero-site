@@ -62,7 +62,8 @@ navigation:
 index:
   page_title: Monero - sicuro, privato, non tracciabile
 home:
-  heading2: Una Valuta Digitale Privata
+  heading2: Criptovaluta privata e decentralizzata che mantiene le tue finanze riservate
+    e sicure.
   downloads: Download
   moneropedia_para: Vorresti dare un'occhiata al significato dei termini e dei concetti
     usati in Monero? Qui puoi trovare una guida alfabetica ai termini usati e al loro
@@ -122,10 +123,9 @@ hangouts:
     ma abbiamo alcuni posti nei quali ci piace riunirci. Qui sotto ne puoi trovare
     alcuni. Unisciti a noi!
   resources: Risorse per i gruppi di Lavoro
-  resources_para: Al fine di supportare gruppi di lavoro organici, Monero offre molte
-    risorse che la comunità può utilizzare per incontrarsi e pianificare i progetti.
-    Mattermost ha addirittura dei ripetitori all'interno dei più popolari canali IRC
-    su Monero.
+  resources_para: Nel tentativo di supportare gruppi di lavoro organici, Monero dispone
+    di diverse risorse che la comunità può utilizzare per incontrarsi e pianificare
+    progetti,
   irc: Canali IRC
   irc_para: La comunità Monero utilizza molti canali IRC, ognuno dei quali serve diversi
     aspetti. Alcuni servono per lavorare, altri semplicemente per chattare. Qua sotto
@@ -186,6 +186,8 @@ merchants:
     loro i tuoi soldi:'
   visitbisq: Visita Bisq
   visitlocalmonero: Visita LocalMonero
+  hodlhodldescr: Piattaforma di trading P2P con garanzia non-custodial.
+  locmondescr: Scambio P2P online che offre scambi da persona a persona.
 sponsorships:
   intro: Le seguenti aziende sostengono il progetto Monero nel suo obiettivo di portare
     la privacy finanziaria nel mondo. Non potremmo essere più grati per i loro contributi.
@@ -245,6 +247,11 @@ team:
     le forze per raggiungere un obiettivo comune. Hanno strutture e obiettivi diversi.
     In questa pagina elenchiamo alcuni dei gruppi di lavoro più attivi e alcuni suggerimenti
     per iniziare, se desideri contribuire.
+  devworkgroup_start: È una buona idea dare un'occhiata agli 'Issues' aperti su entrambi
+    i repository per avere un'idea di cosa potrebbe essere risolto o migliorato. Entrambe
+    le codebase, ma soprattutto il repository principale, possono essere piuttosto
+    impegnative, quindi è consigliabile di presentarti prima in chat, elencando le
+    tue abilità e ciò a cui desideri contribuire.
 downloads:
   intro: On this page you can find and download the latest version available of the
     Monero software, as well as hardware, light and mobile wallets.

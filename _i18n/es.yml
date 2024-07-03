@@ -243,9 +243,6 @@ team:
     como CLSAG y @Bulletproofs, son el resultado de los esfuerzos de este grupo de
     trabajo.
   telegram: 'Chat de Telegram:'
-  outreach_descr: Este grupo de trabajo se enfoca en dar a conocer a Monero, reuniendo
-    a artistas, escritores y cualquier persona que desee dar a conocer a Monero al
-    mundo.
   locplatform: 'Plataforma de localización:'
   localization_start: Contacta al grupo de trabajo en la sala de chat o abre un caso
     (issue) en el repositorio de GitHub. También puedes empezar a traducir inmediatamente
@@ -299,10 +296,6 @@ team:
     por colaboradores que trabajan en la traducción de software y documentación relacionados
     con Monero. Es altamente recomendable contactar al grupo de trabajo antes de trabajar
     en las traducciones.
-  outreach_start: Los miembros del Grupo de trabajo de Outreach utilizan mucho Telegram
-    para su coordinación y matrix/freenode en menor medida. Si quieres ayudar, puedes
-    contactar al grupo de trabajo en uno de estos canales. Está bastante estructurado,
-    así que probablemente te dirigirán a un coordinador.
   space: Monero Space
   mpwg: Grupo de trabajo sobre políticas de Monero
   mpwg_descr: El Grupo de Trabajo de Políticas de Monero es un quórum formado por

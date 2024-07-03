@@ -705,3 +705,8 @@ tools:
   moneropro: 图表和指标
   gateways: 支付网关
   monerohow-stats: 统计
+meta_descr:
+  whatismonero: 什么是门罗币以及如何开始
+  accepting: 一份关于使用 GUI 钱包接收门罗币的指南
+  contributing: 有非常多的方式为门罗社区作出贡献
+  mining: 关于门罗币挖掘的软件、信息以及资料
