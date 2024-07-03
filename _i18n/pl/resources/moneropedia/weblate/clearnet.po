@@ -49,26 +49,23 @@ msgstr "Gdy używasz internetu do czytania wiadomości, sprawdzania e-maila, soc
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:13
-#, fuzzy
 #| msgid "- your [ISP](https://en.wikipedia.org/wiki/ISP)"
 msgid "your [ISP](https://en.wikipedia.org/wiki/ISP)"
-msgstr "- przez twojego [dostawcę usług internetowych](https://en.wikipedia.org/wiki/ISP)"
+msgstr "przez twojego [dostawcę usług internetowych](https://en.wikipedia.org/wiki/ISP)"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:15
-#, fuzzy
 #| msgid "- the website/service/person you're communicating with"
 msgid "the website/service/person you're communicating with"
-msgstr "- stronę, serwis lub osobę, z którą się komunikujesz"
+msgstr "stronę, serwis lub osobę, z którą się komunikujesz"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:17
-#, fuzzy
 #| msgid "- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity"
 msgid "possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity"
-msgstr "- ewentualnie podmiot [Sojuszu Pięciorga Oczu] (https://en.wikipedia.org/wiki/5_Eyes)."
+msgstr "ewentualnie podmiot [Sojuszu Pięciorga Oczu] (https://en.wikipedia.org/wiki/5_Eyes)."
 
 #
 #. type: Plain text
@@ -91,18 +88,16 @@ msgstr "Ponieważ tradycyjna [VPN](https://en.wikipedia.org/wiki/VPN) nie uchron
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:25
-#, fuzzy
 #| msgid "- Java-I2P"
 msgid "Java-I2P"
-msgstr "- Java-I2P"
+msgstr "Java-I2P"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:27
-#, fuzzy
 #| msgid "- [Tor](https://torproject.org/)"
 msgid "[Tor](https://torproject.org/)"
-msgstr "- [Tor](https://torproject.org/)"
+msgstr "[Tor](https://torproject.org/)"
 
 #
 #. type: Plain text
