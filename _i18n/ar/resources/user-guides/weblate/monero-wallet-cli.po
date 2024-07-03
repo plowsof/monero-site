@@ -75,7 +75,6 @@ msgstr ""
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:37
 #, no-wrap
-#| msgid "## Checking your balance"
 msgid "Checking your balance"
 msgstr "التحقق من رصيدك"
 
@@ -108,7 +107,6 @@ msgstr "في هذا المثال, `Balance` هو رصيدك الكلي. `unlocke
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:53
 #, no-wrap
-#| msgid "## Sending monero"
 msgid "Sending monero"
 msgstr "إرسال مونيرو"
 
@@ -120,7 +118,6 @@ msgstr ""
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:57
 #, no-wrap
-#| msgid "    transfer ADDRESS AMOUNT\n"
 msgid "transfer ADDRESS AMOUNT\n"
 msgstr "transfer ADDRESS AMOUNT\n"
 
@@ -132,7 +129,6 @@ msgstr ""
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:63
 #, no-wrap
-#| msgid "## Receiving monero"
 msgid "Receiving monero"
 msgstr "إستلام مونيرو"
 
@@ -153,7 +149,6 @@ msgstr "يُمكنك إيجاد عنوانك عن طريق:"
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:69
 #, no-wrap
-#| msgid "    address\n"
 msgid "address\n"
 msgstr "address\n"
 
@@ -182,7 +177,6 @@ msgstr "سيقوم هذا بإنشاء هويه معامله عشوائيه وي
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:85
 #, no-wrap
-#| msgid "    integrated_address 12346780abcdef00\n"
 msgid "integrated_address 82d79055f3b27f56\n"
 msgstr "integrated_address 12346780abcdef00\n"
 
@@ -234,14 +228,12 @@ msgstr ""
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:111
 #, no-wrap
-#| msgid "    address\n"
 msgid "address all\n"
 msgstr "address all\n"
 
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:115
 #, no-wrap
-#| msgid "## Proving to a third party you paid someone"
 msgid "Proving to a third party you paid someone"
 msgstr "إثبات لطرف ثالث أنك قد دفعت لشخص ما"
 
@@ -253,7 +245,6 @@ msgstr "إذا دفعت لتاجر ويدّعي التاجر أنه لم يست�
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:125
 #, no-wrap
-#| msgid "    set store-tx-info 1\n"
 msgid "set store-tx-info 1\n"
 msgstr "set store-tx-info 1\n"
 
@@ -265,7 +256,6 @@ msgstr "يُمكنك استرداد مفتاح معامله سابقه :"
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:131
 #, no-wrap
-#| msgid "    get_tx_key 1234567890123456789012345678901212345678901234567890123456789012\n"
 msgid "get_tx_key 1234567890123456789012345678901212345678901234567890123456789012\n"
 msgstr "get_tx_key 1234567890123456789012345678901212345678901234567890123456789012\n"
 
@@ -282,7 +272,6 @@ msgstr "إذا كنت أنت الطرف التالت ( إذا كان هُناك 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:144
 #, no-wrap
-#| msgid "    check_tx_key TXID TXKEY ADDRESS\n"
 msgid "check_tx_key TXID TXKEY ADDRESS\n"
 msgstr "check_tx_key TXID TXKEY ADDRESS\n"
 
@@ -296,7 +285,6 @@ msgstr "قم بتبديل `TXID`و `TXKEY` و `ADDRESS` بهويه المعام�
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:152
 #, no-wrap
-#| msgid "## How to find a payment to you"
 msgid "How to find a payment to you"
 msgstr "كيفية العثور على دفعة لك"
 
@@ -308,7 +296,6 @@ msgstr "إذا تلقيت دفعة باستخدام هويه معامله محد
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:156
 #, no-wrap
-#| msgid "    payments PAYMENTID\n"
 msgid "payments PAYMENTID\n"
 msgstr "payments PAYMENTID\n"
 
@@ -325,7 +312,6 @@ msgstr "بشكل عام ، يمكنك مراجعة المدفوعات الوار
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:164
 #, no-wrap
-#| msgid "    show_transfers\n"
 msgid "show_transfers\n"
 msgstr "show_transfers\n"
 
@@ -337,7 +323,6 @@ msgstr "يُمكنك تحديد طول معين لسرد المعاملات وط
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:171
 #, no-wrap
-#| msgid "    show_transfers in 650000\n"
 msgid "show_transfers in 650000\n"
 msgstr "show_transfers in 650000\n"
 
@@ -354,7 +339,6 @@ msgstr "إذا كنت ترغب في التعدين يمكنك القيام بذ�
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:180
 #, no-wrap
-#| msgid "    start_mining 2\n"
 msgid "start_mining 2\n"
 msgstr "start_mining 2\n"
 
@@ -366,7 +350,6 @@ msgstr "سيقوم ذلك ببدأ التعدين في الخادم . لاحظ �
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:187
 #, no-wrap
-#| msgid "    stop_mining\n"
 msgid "stop_mining\n"
 msgstr "stop_mining\n"
 
