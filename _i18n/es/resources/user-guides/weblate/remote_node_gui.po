@@ -91,18 +91,19 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:27
 #, no-wrap
 msgid "Finding a public remote node"
-msgstr ""
+msgstr "Encontrando un nodo remoto público"
 
 #. type: Plain text
+#, fuzzy
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:30
 msgid "First, you will need to find a public remote node to connect to. The website [moneroworld.com](https://moneroworld.com/#nodes) has some great resources about remote nodes, and the website [monero.fail](https://monero.fail) has a list of functioning remote nodes."
-msgstr ""
+msgstr "Primero, necesitarás encontrar un nodo remoto público al cual conectar. El sitio web [moneroworld.com](https://moneroworld.com/#nodes) contiene algunos recursos excelentes para encontrar nodos. Uno de los métodos más fáciles sería usar un nodo remoto público ejecutado por moneroworld, pero también tienen una herramienta para encontrar nodos aleatorios."
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:31
 #, no-wrap
 msgid "Configuring your wallet to connect to a custom public remote node"
-msgstr ""
+msgstr "Configurando tu monedero para conectar a un nodo remoto público personalizado"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:34
@@ -114,12 +115,12 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:36
 #, no-wrap
 msgid "If you don't see this pop up, go to `Settings` > `Node` page.\n"
-msgstr "Primero, necesitarás encontrar un nodo remoto público al cual conectar. El sitio web [moneroworld.com](https://moneroworld.com/#nodes) contiene algunos recursos excelentes para encontrar nodos. Uno de los métodos más fáciles sería usar un nodo remoto público ejecutado por moneroworld, pero también tienen una herramienta para encontrar nodos aleatorios."
+msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:38
 msgid "![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width=\"600px\"}"
-msgstr "## Configurando tu monedero para conectar a un nodo remoto público personalizado"
+msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:40
