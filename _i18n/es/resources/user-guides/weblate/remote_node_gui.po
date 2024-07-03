@@ -107,16 +107,14 @@ msgid "Configuring your wallet to connect to a custom public remote node"
 msgstr ""
 
 #. type: Plain text
-<<<<<<< HEAD
 #: _i18n/en/resources/user-guides/remote_node_gui.md:28
 msgid "## Finding a public remote node"
 msgstr "## Encontrando un nodo remoto público"
-=======
+
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:34
 #, no-wrap
 msgid "When opening your wallet, a pop up will appear with the option `Use custom settings`. Click on it, and you will be sent to `Settings` > `Node` page. \n"
 msgstr ""
->>>>>>> 6ebd58f2 (localization: po/pot files for remote_node_gui guide)
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:36
