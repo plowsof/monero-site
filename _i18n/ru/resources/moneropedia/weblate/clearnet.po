@@ -51,26 +51,23 @@ msgstr "Когда вы пользуетесь Интернетом для то�
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:13
-#, fuzzy
 #| msgid "- your [ISP](https://en.wikipedia.org/wiki/ISP)"
 msgid "your [ISP](https://en.wikipedia.org/wiki/ISP)"
-msgstr "- вашего [ISP](https://en.wikipedia.org/wiki/ISP)"
+msgstr "вашего [ISP](https://en.wikipedia.org/wiki/ISP)"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:15
-#, fuzzy
 #| msgid "- the website/service/person you're communicating with"
 msgid "the website/service/person you're communicating with"
-msgstr "- веб-сайта / службы / человека, с которым вы связываетесь"
+msgstr "веб-сайта / службы / человека, с которым вы связываетесь"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:17
-#, fuzzy
 #| msgid "- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity"
 msgid "possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity"
-msgstr "- через организацию, связанную с [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes)"
+msgstr "через организацию, связанную с [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes)"
 
 #
 #. type: Plain text
@@ -93,18 +90,16 @@ msgstr "Так как традиционный [VPN](https://en.wikipedia.org/wi
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:25
-#, fuzzy
 #| msgid "- Java-I2P"
 msgid "Java-I2P"
-msgstr "- Java-I2P"
+msgstr "Java-I2P"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:27
-#, fuzzy
 #| msgid "- [Tor](https://torproject.org/)"
 msgid "[Tor](https://torproject.org/)"
-msgstr "- [Tor](https://torproject.org/)"
+msgstr "[Tor](https://torproject.org/)"
 
 #
 #. type: Plain text

@@ -49,26 +49,23 @@ msgstr "Wenn du das Internet für Dinge wie das Abrufen der Nachrichten, E-Mails
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:13
-#, fuzzy
 #| msgid "- your [ISP](https://en.wikipedia.org/wiki/ISP)"
 msgid "your [ISP](https://en.wikipedia.org/wiki/ISP)"
-msgstr "- deinem [Internetprovider](https://de.wikipedia.org/wiki/Internetdienstanbieter)"
+msgstr "deinem [Internetprovider](https://de.wikipedia.org/wiki/Internetdienstanbieter)"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:15
-#, fuzzy
 #| msgid "- the website/service/person you're communicating with"
 msgid "the website/service/person you're communicating with"
-msgstr "- der Webseite/der Person/dem Service, mit der/dem du in Verbindung stehst"
+msgstr "der Webseite/der Person/dem Service, mit der/dem du in Verbindung stehst"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:17
-#, fuzzy
 #| msgid "- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity"
 msgid "possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity"
-msgstr "- eventuell einer mit den Möglichkeiten der [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) befähigten Instanz"
+msgstr "eventuell einer mit den Möglichkeiten der [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) befähigten Instanz"
 
 #
 #. type: Plain text
@@ -91,18 +88,16 @@ msgstr "Da dich ein klassisches [VPN](https://de.wikipedia.org/wiki/Virtual_Priv
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:25
-#, fuzzy
 #| msgid "- Java-I2P"
 msgid "Java-I2P"
-msgstr "- Java-I2P"
+msgstr "Java-I2P"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:27
-#, fuzzy
 #| msgid "- [Tor](https://torproject.org/)"
 msgid "[Tor](https://torproject.org/)"
-msgstr "- [Tor](https://torproject.org/de/)"
+msgstr "[Tor](https://torproject.org/de/)"
 
 #
 #. type: Plain text

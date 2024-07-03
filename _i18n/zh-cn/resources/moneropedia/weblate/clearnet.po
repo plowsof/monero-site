@@ -49,26 +49,23 @@ msgstr "当你为了看新闻、电子邮件、社交媒体，甚至是门罗币
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:13
-#, fuzzy
 #| msgid "- your [ISP](https://en.wikipedia.org/wiki/ISP)"
 msgid "your [ISP](https://en.wikipedia.org/wiki/ISP)"
-msgstr "- 你的 [ISP](https://en.wikipedia.org/wiki/ISP)"
+msgstr "你的 [ISP](https://en.wikipedia.org/wiki/ISP)"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:15
-#, fuzzy
 #| msgid "- the website/service/person you're communicating with"
 msgid "the website/service/person you're communicating with"
-msgstr "- 你正在进行通讯的网站/服务/人"
+msgstr "你正在进行通讯的网站/服务/人"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:17
-#, fuzzy
 #| msgid "- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity"
 msgid "possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity"
-msgstr "- 可能是一个像 [五眼联盟](https://en.wikipedia.org/wiki/5_Eyes) 之类的，有能力的实体"
+msgstr "可能是一个像 [五眼联盟](https://en.wikipedia.org/wiki/5_Eyes) 之类的，有能力的实体"
 
 #
 #. type: Plain text
@@ -91,18 +88,16 @@ msgstr "由于传统的[VPN](https://en.wikipedia.org/wiki/VPN)不能让您免�
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:25
-#, fuzzy
 #| msgid "- Java-I2P"
 msgid "Java-I2P"
-msgstr "- Java-I2P"
+msgstr "Java-I2P"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:27
-#, fuzzy
 #| msgid "- [Tor](https://torproject.org/)"
 msgid "[Tor](https://torproject.org/)"
-msgstr "- [Tor](https://torproject.org/)"
+msgstr "[Tor](https://torproject.org/)"
 
 #
 #. type: Plain text
