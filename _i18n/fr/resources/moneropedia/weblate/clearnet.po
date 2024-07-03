@@ -49,21 +49,18 @@ msgstr "Lorsque vous utilisez Internet pour des choses comme lire des actualité
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:13
-#| msgid "- your [ISP](https://en.wikipedia.org/wiki/ISP)"
 msgid "your [ISP](https://en.wikipedia.org/wiki/ISP)"
 msgstr "votre [FAI](https://fr.wikipedia.org/wiki/Fournisseur_d%27acc%C3%A8s_%C3%A0_Internet)"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:15
-#| msgid "- the website/service/person you're communicating with"
 msgid "the website/service/person you're communicating with"
 msgstr "le site web, service, ou personne avec qui vous communiquez"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:17
-#| msgid "- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity"
 msgid "possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity"
 msgstr "potentiellement une entité compétente [Five Eyes](https://fr.wikipedia.org/wiki/Five_Eyes)"
 
@@ -88,14 +85,12 @@ msgstr "Comme un [VPN](https://fr.wikipedia.org/wiki/R%C3%A9seau_priv%C3%A9_virt
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:25
-#| msgid "- Java-I2P"
 msgid "Java-I2P"
 msgstr "I2P-Java"
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/clearnet.md:27
-#| msgid "- [Tor](https://torproject.org/)"
 msgid "[Tor](https://torproject.org/)"
 msgstr "[Tor](https://torproject.org/)"
 

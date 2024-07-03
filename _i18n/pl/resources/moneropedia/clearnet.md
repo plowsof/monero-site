@@ -12,12 +12,13 @@ media i nawet Monero, najprawdopodobniej używasz połączenia
 clearnet. Oznacza to, że *wszystkie* twoje połączenia mogą być śledzone i
 monitorowane przez:
 
-- your [ISP](https://en.wikipedia.org/wiki/ISP)
+- przez twojego [dostawcę usług
+  internetowych](https://en.wikipedia.org/wiki/ISP)
 
-- the website/service/person you're communicating with
+- stronę, serwis lub osobę, z którą się komunikujesz
 
-- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable
-  entity
+- ewentualnie podmiot [Sojuszu Pięciorga Oczu]
+  (https://en.wikipedia.org/wiki/5_Eyes).
 
 I nawet jeśli korzystasz z [HTTPS](https://en.wikipedia.org/wiki/HTTPS) lub
 podobnego rozwiązania (które *szyfruje* twoją transmisję), twoja ścieżka nie

@@ -12,12 +12,12 @@ terms: ["Clearnet", "клирнете", "клирнету", "клирнет"]
 то, наиболее вероятно, вы используете соединение Clearnet. Это означает, что
 *все* ваши соединения можно отследить и просмотреть посредством:
 
-- your [ISP](https://en.wikipedia.org/wiki/ISP)
+- вашего [ISP](https://en.wikipedia.org/wiki/ISP)
 
-- the website/service/person you're communicating with
+- веб-сайта / службы / человека, с которым вы связываетесь
 
-- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable
-  entity
+- через организацию, связанную с [Five
+  Eyes](https://en.wikipedia.org/wiki/5_Eyes)
 
 И даже если вы используете [HTTPS](https://en.wikipedia.org/wiki/HTTPS) или
 подобный протокол (*шифрующий* передаваемые вами данные), ваш маршрут
