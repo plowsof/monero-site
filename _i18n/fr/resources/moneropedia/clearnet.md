@@ -12,12 +12,13 @@ e-mail, média sociaux, et même Monero, vous utilisez certainement une
 connexion réseau *en clair*. Cela signifie que *toutes* vos connexions
 peuvent être suivies, tracées et observées par :
 
-- your [ISP](https://en.wikipedia.org/wiki/ISP)
+- votre
+  [FAI](https://fr.wikipedia.org/wiki/Fournisseur_d%27acc%C3%A8s_%C3%A0_Internet)
 
-- the website/service/person you're communicating with
+- le site web, service, ou personne avec qui vous communiquez
 
-- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable
-  entity
+- potentiellement une entité compétente [Five
+  Eyes](https://fr.wikipedia.org/wiki/Five_Eyes)
 
 et même si vous utilisez
 [HTTPS](https://fr.wikipedia.org/wiki/HyperText_Transfer_Protocol_Secure) ou
@@ -32,7 +33,7 @@ utilisez toujours le réseau en clair (bien que vous soyez mieux mandaté que
 sans un VPN)), vous devriez utiliser une *surcouche réseau anonyme* pour
 éviter d'utiliser le réseau en clair directement :
 
-- Java-I2P
+- I2P-Java
 
 - [Tor](https://torproject.org/)
 
