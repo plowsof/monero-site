@@ -2,7 +2,7 @@
 
 ## Operating Systems:  Various versions of Linux and Windows 7, 8
 
-### Wallet Software:  Simplewallet
+### Wallet Software:  Simplewalletssss
 
 #### Resource for Creating Bootable Disks:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 

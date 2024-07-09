@@ -5,7 +5,7 @@ global:
   copyright: ''
   monero_project: 'Proiectul Monero'
   sitename: 'getmonero.org, proiectul Monero'
-  wiki: ''
+  wiki: 'Moneropedia'
   tags: 'Articole după etichetă'
   wikimeta: 'pe Moneropedia, enciclopedia deschisă a cunoștințelor despre Monero'
   tagsmeta: 'Toate articolele de pe blogul Monero care sunt etichetate'
@@ -31,7 +31,7 @@ titles:
   downloads: 'Descărcări'
   allposts: 'Toate postările de pe blog'
   workgroups: 'Grupuri de lucru'
-  hangouts: ''
+  hangouts: 'Hangouts'
   sponsorships: 'Sponsorizări'
   merchants: 'Comercianți și servicii'
   about: 'Despre Monero'
@@ -110,8 +110,8 @@ home:
   visitmrl: 'Vizitează MRL'
   contributing: 'Contribuie'
   meetcommunity: "Fă cunoștință cu comunitatea!"
-  meetus: "Membrii comunității Monero sunt peste tot în lume. Ne poți găsi pe mai\
-    \ multe platforme. Vino să ne cunoști!"
+  meetus: "Membrii comunității Monero sunt peste tot în lume. Ne poți găsi pe mai
+    multe platforme. Vino să ne cunoști!"
   hangouts: 'Hangouts'
 
   morevideos: Cauți mai multe videoclipuri explicative?
@@ -202,7 +202,6 @@ sponsorships:
   tari: 'Tari Labs sponsorizează CDN-urile folosite de către acest site.'
   symas: 'Symas sponsorizează CTO-ul Howard Chu (hyc) pentru munca lui pe bază de
     cod la Monero.'
-  forknetworking: 'Fork Networking oferă un server care este folosit pentru development.'
   macstadium: 'MacStadium sponsorizează un Mac Mini dedicat care este utilizat pentru
     developmentul legat de Mac.'
 
@@ -234,10 +233,10 @@ team:
     este să te alături sălilor de chat și să te prezinți, afirmîndu-ți interesele
     și abilitățile pe care ai vrea să le prezinți comunității.'
   devworkgroup: 'Grupul de lucru pentru development'
-  devworkgroup_descr: "Acest grup de lucru unește developerii Monero care lucrează\
-    \ la portofele și daemoni menținuți de către Echipa Centrală (Core Team). Se compune\
-    \ din două părți principale: echipa CLI și echipa GUI. Aceste echipe coordonează\
-    \ utilizând două săli de chat diferite."
+  devworkgroup_descr: "Acest grup de lucru unește developerii Monero care lucrează
+    la portofele și daemoni menținuți de către Echipa Centrală (Core Team). Se compune
+    din două părți principale: echipa CLI și echipa GUI. Aceste echipe coordonează
+    utilizând două săli de chat diferite."
   devworkgroup_start: ''
   chatgeneral: "Chat (general):"
   chatgui: "Chat (GUI):"
@@ -253,12 +252,6 @@ team:
     Monero. Este recomandat să contactezi grupul de lucru înainte de a lucra la traduceri.'
   localization_start: ''
   locplatform: "Platforma de localizare:"
-  outreach_descr: 'Grupul de lucru este focusat pe promovarea Monero, colectarea de
-    artiști, scriitori și oricine își dorește să facă Monero mai cunoscut lumii.'
-  outreach_start: 'Membrii Grupului de lucru Outreach folosesc Telegramul pentru coordonare
-    și matrix/freenode în mică parte. Dacă vrei să ajuți, poți contacta grupul de
-    lucru pe unul dintre aceste canale. Este destul de structurat, deci probabil vei
-    fi direcționat către un coordonator.'
   telegram: "Chatul Telegram:"
   mrl_descr: ''
   mrl_start: 'Alătură-te sălii de chat de mai jos și menționează-ți interesele și
@@ -320,14 +313,14 @@ downloads:
   helpsupport: 'Ajutor și Suport'
   helpsupport1: "Este disponibil un ghid cu o explicație a fiecărei secțiuni a portofelului:"
   helpsupport2: "Vezi ultima versiune"
-  gui_helpsupport: "Dacă întâmpini probleme sau ai nevoie de mai multe informații,\
-    \ nu ezita să te adresezi comunității. Poți găsi echipa GUI la #monero-gui, sau\
-    \ altfel verifică pagina de hangouts pentru o listă mai completă de contacte și\
-    \ camere de chat"
-  cli_helpsupport: "Dacă întâmpini probleme sau ai nevoie de mai multe informații,\
-    \ nu ezita să te adresezi comunității. Poți găsi echipa CLI la #monero sau #monero-dev,\
-    \ sau altfel verifică pagina de hangouts pentru o listă mai completă de contacte\
-    \ și camere de chat"
+  gui_helpsupport: "Dacă întâmpini probleme sau ai nevoie de mai multe informații,
+    nu ezita să te adresezi comunității. Poți găsi echipa GUI la #monero-gui, sau
+    altfel verifică pagina de hangouts pentru o listă mai completă de contacte și
+    camere de chat"
+  cli_helpsupport: "Dacă întâmpini probleme sau ai nevoie de mai multe informații,
+    nu ezita să te adresezi comunității. Poți găsi echipa CLI la #monero sau #monero-dev,
+    sau altfel verifică pagina de hangouts pentru o listă mai completă de contacte
+    și camere de chat"
   localremote: 'Nod local sau la distanță'
   localremote1: 'Utilizează propria copie a blockchain-ului sau una disponibilă public'
   transacttor: ''
@@ -447,7 +440,7 @@ accepting:
   clinotes: >
   merchantstitle: ''
   merchantsreceive: ''
-  merchdevguides: ''
+  merchdevguides: 'Ghiduri pentru programatori'
   merchantsreceive1: ""
   merchantsint: ""
   merchantsintlink: ''
@@ -477,7 +470,7 @@ contributing:
   mine: ''
   mine_p: >
   mine_link: ''
-  ffs: ''
+  ffs: 'Suport financiar din partea comunității'
   ccs_p: ''
   ccsbutton: ''
   donate: ''
@@ -491,7 +484,7 @@ contributing:
   supportdev_p: ''
   supportdev_p2: ''
   supportdev_link: ''
-  sponsor: ''
+  sponsor: 'Sponsorizări'
   sponsor_p: ''
   sponsor_link: ''
   sponsor_p2: ''
@@ -590,6 +583,7 @@ faq:
   avuln: >
   vulnspotify: ''
 
+  privacy: Confidențialitate
 mining:
   intro1: ''
   intro2: ''
@@ -627,7 +621,7 @@ what-is-monero:
   confidential_para2: ''
   grassroots: ''
   grassroots_p1: ''
-  grassroots_p2: ''
+  grassroots_p2: 'Laboratorul de cercetare'
   grassroots_p3: ''
   grassroots_p4: ''
   grassroots_p5: ''
@@ -637,7 +631,7 @@ what-is-monero:
   electronic: ''
   electronic_para1: ''
   videos: ''
-  aboutb: ''
+  aboutb: 'Despre'
   walletb: ''
   getb: ''
   joinb: ''
@@ -652,7 +646,7 @@ about:
   values_para: ''
   security: ''
   security_para: ''
-  privacy: ''
+  privacy: 'Confidențialitate'
   privacy_para: ''
   decentralization: ''
   decentralization_para: ''
@@ -690,12 +684,12 @@ developer-guides:
 
 user-guides:
   general: ''
-  mining: ''
+  mining: 'Minează'
   backup: ''
   nodesync: ''
   recovery: ''
   wallets: ''
-  hardwarewallet: ''
+  hardwarewallet: 'Portofele hardware'
   anonimizationnetworks: ''
   offline-backup: ''
   vps-node: ''
@@ -937,7 +931,7 @@ moneropedia:
     atomic-units: ''
     blockchain: ''
     block: ''
-    bootstrap-node: ''
+    bootstrap-node: 'Nod bootstrap'
     bulletproofs: ''
     change: ''
     clearnet: ''
@@ -951,7 +945,7 @@ moneropedia:
     fungibility: ''
     kovri: ''
     locally-unique-host: ''
-    mining: ''
+    mining: 'Minează'
     mnemonicseed: ''
     node: ''
     openalias: ''
@@ -973,7 +967,7 @@ moneropedia:
     transaction: ''
     unlocktime: ''
     viewkey: ''
-    wallet: ''
+    wallet: 'Portofel'
     clsag: ''
 
 tools:
@@ -1005,7 +999,7 @@ blog:
   allposts: ''
   urgent: ''
   releases: ''
-  community: ''
+  community: 'Comunitate'
   meetinglogs: ''
   author: ''
   date: ''

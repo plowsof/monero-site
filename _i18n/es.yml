@@ -103,14 +103,13 @@ home:
     monederos de Monero están disponibles para una variedad de plataformas y contienen
     todo lo que necesitas para usar Monero inmediatamente.
   visitmrl: Visita el MRL (Laboratorio de Investigación de Monero)
-  guides_para: "La comunidad ha reunido una gran cantidad de recursos y documentación.\
-    \ Los usuarios pueden encontrar información útil y guías sobre configuraciones\
-    \ comunes y  consejos en la sección \"Guías de usuario\". Los desarrolladores\
-    \ pueden encontrar todo lo que necesitan para construir un servicio basado en\
-    \ Monero o simplemente comunicarse con la red  en las \"Guías de desarrolladores\"\
-    . La biblioteca ofrece publicaciones y libros que se pueden descargar gratuitamente,\
-    \ incluyendo los libros completos como \"Mastering Monero\" y \"Zero to Monero\"\
-    .\n"
+  guides_para: "La comunidad ha reunido una gran cantidad de recursos y documentación.
+    Los usuarios pueden encontrar información útil y guías sobre configuraciones comunes
+    y  consejos en la sección \"Guías de usuario\". Los desarrolladores pueden encontrar
+    todo lo que necesitan para construir un servicio basado en Monero o simplemente
+    comunicarse con la red  en las \"Guías de desarrolladores\". La biblioteca ofrece
+    publicaciones y libros que se pueden descargar gratuitamente, incluyendo los libros
+    completos como \"Mastering Monero\" y \"Zero to Monero\".\n"
   meetus: Los miembros de la comunidad de Monero están alrededor de todo el mundo.
     Puedes encontrarnos en múltiples plataformas. ¡Ven a conocernos!
   meetcommunity: ¡Conoce a la comunidad!
@@ -213,7 +212,6 @@ sponsorships:
     en esta página, envía un correo electrónico a dev@getmonero.org.
   macstadium: MacStadium patrocina un Mac Mini dedicado que se utiliza para el desarrollo
     relacionado con Mac.
-  forknetworking: Fork Networking proporciona un servidor que se utiliza para el desarrollo.
   symas: Symas patrocina a su CTO Howard Chu (hyc) por su trabajo en el código base
     de Monero.
   tari: Tari Labs patrocina la CDN utilizada por este sitio web.
@@ -243,9 +241,6 @@ team:
     como CLSAG y @Bulletproofs, son el resultado de los esfuerzos de este grupo de
     trabajo.
   telegram: 'Chat de Telegram:'
-  outreach_descr: Este grupo de trabajo se enfoca en dar a conocer a Monero, reuniendo
-    a artistas, escritores y cualquier persona que desee dar a conocer a Monero al
-    mundo.
   locplatform: 'Plataforma de localización:'
   localization_start: Contacta al grupo de trabajo en la sala de chat o abre un caso
     (issue) en el repositorio de GitHub. También puedes empezar a traducir inmediatamente
@@ -299,10 +294,6 @@ team:
     por colaboradores que trabajan en la traducción de software y documentación relacionados
     con Monero. Es altamente recomendable contactar al grupo de trabajo antes de trabajar
     en las traducciones.
-  outreach_start: Los miembros del Grupo de trabajo de Outreach utilizan mucho Telegram
-    para su coordinación y matrix/freenode en menor medida. Si quieres ayudar, puedes
-    contactar al grupo de trabajo en uno de estos canales. Está bastante estructurado,
-    así que probablemente te dirigirán a un coordinador.
   space: Monero Space
   mpwg: Grupo de trabajo sobre políticas de Monero
   mpwg_descr: El Grupo de Trabajo de Políticas de Monero es un quórum formado por
@@ -502,14 +493,14 @@ accepting:
   guimerchant: Los comerciantes probablemente encontrarán conveniente usar la página
     de "Comerciantes" (abajo una captura de pantalla), la cual está explicada en detalle
     en la sección de "Modo Comerciantes" de
-  guiinstructions: "Para recibir XMR solo debes de proveer a quien vaya a pagar con\
-    \ una @dirección a donde puedan enviar los fondos. La mayoría de las veces es\
-    \ mejor tan solo compartir un código QR y dejar que quien vaya a pagar lo escanee\
-    \ en vez de copiar y pegar la cadena de caracteres alfanumérica. Con el monedero\
-    \ GUI cada dirección generada viene con su código QR. Haz que la persona escanee\
-    \ el código QR con el @monedero de Monero en su teléfono y reciba los XMR en minutos.\
-    \ Recuerda que puedes generar la cantidad de direcciones (subdirecciones) que\
-    \ desees. Esto es útil si, por cualquier razón, quieres mantener fondos separados.\n"
+  guiinstructions: "Para recibir XMR solo debes de proveer a quien vaya a pagar con
+    una @dirección a donde puedan enviar los fondos. La mayoría de las veces es mejor
+    tan solo compartir un código QR y dejar que quien vaya a pagar lo escanee en vez
+    de copiar y pegar la cadena de caracteres alfanumérica. Con el monedero GUI cada
+    dirección generada viene con su código QR. Haz que la persona escanee el código
+    QR con el @monedero de Monero en su teléfono y reciba los XMR en minutos. Recuerda
+    que puedes generar la cantidad de direcciones (subdirecciones) que desees. Esto
+    es útil si, por cualquier razón, quieres mantener fondos separados.\n"
   guilinkguide: en la guía del monedero GUI.
   gui2: La página de Recibir (mostrada abajo) está explicada en cada detalle
   gui1: Aceptar pagos con la GUI es muy fácil. No importa si eres un comerciante o
@@ -528,10 +519,10 @@ accepting:
   guiol3: Introduce la cantidad a recibir y luego comparte con quien paga la URL del
     pago o el código QR. Si quieres rastrear el pago en tiempo real, marca la opción
     "Habilitar el rastreador de ventas".
-  guimerchant1: "Esta es una página similiar a un punto-de-venta (POS) que el comerciante\
-    \ puede usar fácilmente para establecer la cantidad de XMR a recibir. Si la opción\
-    \ \"Rastreador de ventas\" está habilitada, verás los pagos mientras llegan en\
-    \ tiempo real a tu monedero junto con el número de confirmaciones.\n"
+  guimerchant1: "Esta es una página similiar a un punto-de-venta (POS) que el comerciante
+    puede usar fácilmente para establecer la cantidad de XMR a recibir. Si la opción
+    \"Rastreador de ventas\" está habilitada, verás los pagos mientras llegan en tiempo
+    real a tu monedero junto con el número de confirmaciones.\n"
   merchantsintlink: la organización de GitHub
   merchantsint: Si prefieres no tratar directamente con los monederos, puedes usar
     un sistema de pagos de terceros. Miembros de la comunidad de Monero han creado
@@ -547,32 +538,32 @@ accepting:
   clicreateaccount: 'Para crear una cuenta, simplemente ejecuta este comando:'
   merchantsthirdp: Si estás buscando un sistema de integración por terceros, hay una
     lista de pasarelas de pago en
-  clinotes: "Ten en cuenta que las instrucciones a continuación son las mínimas instrucciones\
-    \ que necesitas para crear y usar las cuentas/subdirecciones. El monedero CLI\
-    \ ofrece una manera más detallada de manejar las cuentas y el monedero en general.\
-    \ Usa el comando \"help\" para ver una lista de todas las opciones disponibles.\n"
-  cliindex1: "Cada cuenta puede albergar una cantidad virtualmente infinita de subdirecciones.\
-    \ Estas funcionan exactamente igual que una dirección normal y puedes crear tantas\
-    \ como quieras, y utilizarlas para recibir XMR a la cuenta a la que están vinculadas.\
-    \ Para crear una nueva subdirección para una cuenta, utiliza el comando:\n"
-  cliindex: "Como puedes ver en la imagen de arriba, cada cuenta tiene un número de\
-    \ índice que puedes usar para cambiar de una cuenta a otra usando el comando `account\
-    \ switch [índice]`. Por ejemplo, usando la imagen de arriba como referencia, si\
-    \ deseas cambiar a la cuenta \"Donaciones\" para monitorearla, puedes hacerlo\
-    \ introduciendo en tu monedero CLI este comando `account switch 1`. Ahora estás\
-    \ en tu cuenta de \"Donaciones\" y puedes comenzar a usarla de inmediato.\n"
-  cliaccounts: "Puedes tener mayor control si lo deseas. Monero brinda la posibilidad\
-    \ de crear múltiples cuentas, cada una con múltiples subdirecciones. Por ejemplo,\
-    \ es posible que quieras tener una @cuenta para recibir donaciones y otra para\
-    \ tu uso diario. Eso te permitirá hacer fácil seguimiento a los fondos que entran\
-    \ a tu cuenta de \"donaciones\" sin mezclarse con tu cuenta principal.\n"
-  clicreatewallet: "Cuando crees tu monedero por primera vez, una @dirección se mostrará\
-    \ automáticamente. Esta es tu dirección principal. Si quieres la puedes utilizar\
-    \ para recibir pagos. Deberás cuidar quien conoce esta dirección (ya que una dirección\
-    \ en diferentes ubicaciones se pueden asociar), pero no necesitas preocuparte\
-    \ por quienes observan las transacciones dentro de la cadena de bloques como sucede\
-    \ con Bitcoin a esta dirección. Un amigo puede enviarte transacciones a la misma\
-    \ dirección sin reducir la privacidad.\n"
+  clinotes: "Ten en cuenta que las instrucciones a continuación son las mínimas instrucciones
+    que necesitas para crear y usar las cuentas/subdirecciones. El monedero CLI ofrece
+    una manera más detallada de manejar las cuentas y el monedero en general. Usa
+    el comando \"help\" para ver una lista de todas las opciones disponibles.\n"
+  cliindex1: "Cada cuenta puede albergar una cantidad virtualmente infinita de subdirecciones.
+    Estas funcionan exactamente igual que una dirección normal y puedes crear tantas
+    como quieras, y utilizarlas para recibir XMR a la cuenta a la que están vinculadas.
+    Para crear una nueva subdirección para una cuenta, utiliza el comando:\n"
+  cliindex: "Como puedes ver en la imagen de arriba, cada cuenta tiene un número de
+    índice que puedes usar para cambiar de una cuenta a otra usando el comando `account
+    switch [índice]`. Por ejemplo, usando la imagen de arriba como referencia, si
+    deseas cambiar a la cuenta \"Donaciones\" para monitorearla, puedes hacerlo introduciendo
+    en tu monedero CLI este comando `account switch 1`. Ahora estás en tu cuenta de
+    \"Donaciones\" y puedes comenzar a usarla de inmediato.\n"
+  cliaccounts: "Puedes tener mayor control si lo deseas. Monero brinda la posibilidad
+    de crear múltiples cuentas, cada una con múltiples subdirecciones. Por ejemplo,
+    es posible que quieras tener una @cuenta para recibir donaciones y otra para tu
+    uso diario. Eso te permitirá hacer fácil seguimiento a los fondos que entran a
+    tu cuenta de \"donaciones\" sin mezclarse con tu cuenta principal.\n"
+  clicreatewallet: "Cuando crees tu monedero por primera vez, una @dirección se mostrará
+    automáticamente. Esta es tu dirección principal. Si quieres la puedes utilizar
+    para recibir pagos. Deberás cuidar quien conoce esta dirección (ya que una dirección
+    en diferentes ubicaciones se pueden asociar), pero no necesitas preocuparte por
+    quienes observan las transacciones dentro de la cadena de bloques como sucede
+    con Bitcoin a esta dirección. Un amigo puede enviarte transacciones a la misma
+    dirección sin reducir la privacidad.\n"
   cliinstructions: Instrucciones para el monedero CLI
   guiol4: Espera hasta que el pago haya llegado y tenga suficientes confirmaciones
     (Cuantas más confirmaciones, más segura es la transacción. Necesitas al menos
@@ -636,11 +627,11 @@ contributing:
     a diferentes proyectos:'
   cli: 'Monedero CLI y Daemon: '
   cli_p: El monedero central, escrito en su mayoría en C++.
-  develop_descr: "Esta lista sólo incluye las herramientas administradas por el equipo\
-    \ central, pero el ecosistema de Monero es mucho más amplio. Las personas pueden\
-    \ contribuir al desarrollo de bibliotecas, servicios, documentación, gráficos,\
-    \ etc. La lista es prácticamente infinita. Ponte en contacto o únete a los grupos\
-    \ de trabajo a los que te gustaría contribuir.\n"
+  develop_descr: "Esta lista sólo incluye las herramientas administradas por el equipo
+    central, pero el ecosistema de Monero es mucho más amplio. Las personas pueden
+    contribuir al desarrollo de bibliotecas, servicios, documentación, gráficos, etc.
+    La lista es prácticamente infinita. Ponte en contacto o únete a los grupos de
+    trabajo a los que te gustaría contribuir.\n"
   develop_wg: Ver los Grupos de trabajo de Monero.
   full-node_p: Una forma fácil y efectiva de ayudar a la red de Monero es ejecutar
     un @nodo. Los nodos aseguran que la red siga funcionando de forma segura y descentralizada.
@@ -648,10 +639,10 @@ contributing:
     si quieres ir más allá, podrías ejecutar un @nodo-remoto abierto, para permitir
     que otras personas se conecten a él.
   allguides: Ve todas las Guías de usuario.
-  mine_p: "La minería garantiza la seguridad de la red. Monero utiliza @randomx, un\
-    \ algoritmo resistente a los ASICs desarrollado por los colaboradores de Monero,\
-    \ cuyo objetivo es seguir siendo minado por hardware de consumo común. Para más\
-    \ información sobre la minería, ve la\n"
+  mine_p: "La minería garantiza la seguridad de la red. Monero utiliza @randomx, un
+    algoritmo resistente a los ASICs desarrollado por los colaboradores de Monero,
+    cuyo objetivo es seguir siendo minado por hardware de consumo común. Para más
+    información sobre la minería, ve la\n"
   genfund: Fondo general
   altqrmonero: Código QR de Monero
   altqrbitcoin: Código QR de Bitcoin
@@ -893,17 +884,17 @@ faq:
     Monero se llamaba "Bitmonero", que se traduce como "Bitcoin" en esperanto. Después
     de que la comunidad decidió separarse del mantenedor original, "bit" se eliminó
     en favor de simplemente "Monero".
-  aimporting: "Sí, puedes, pero probablemente no deberías. Importar una @cadena-de-bloques\
-    \ externa requiere de muchos recursos y te obliga a confiar en la entidad que\
-    \ te proporciona la cadena de bloques. Por lo general, es más rápido descargarla\
-    \ de la manera normal: ejecutar un nodo y dejar que se sincronice con los otros\
-    \ @nodos en la red. Si realmente necesitas importar una cadena de bloques externa,\
-    \ puedes descargar una en la página \"Descargas\" de este sitio web. Sigue la\
-    \ guía a continuación si estás usando Windows. Si eres un usuario de Linux, puedes\
-    \ utilizar la herramienta \"monero-blockchain-import\" que se incluye en el archivo\
-    \ cuando descargas los monederos GUI o CLI. Comienza a sincronizar la cadena de\
-    \ bloques importada con el siguiente comando: \"monero-blockchain-import --input-file\
-    \ blockchain.raw\".\n"
+  aimporting: "Sí, puedes, pero probablemente no deberías. Importar una @cadena-de-bloques
+    externa requiere de muchos recursos y te obliga a confiar en la entidad que te
+    proporciona la cadena de bloques. Por lo general, es más rápido descargarla de
+    la manera normal: ejecutar un nodo y dejar que se sincronice con los otros @nodos
+    en la red. Si realmente necesitas importar una cadena de bloques externa, puedes
+    descargar una en la página \"Descargas\" de este sitio web. Sigue la guía a continuación
+    si estás usando Windows. Si eres un usuario de Linux, puedes utilizar la herramienta
+    \"monero-blockchain-import\" que se incluye en el archivo cuando descargas los
+    monederos GUI o CLI. Comienza a sincronizar la cadena de bloques importada con
+    el siguiente comando: \"monero-blockchain-import --input-file blockchain.raw\"\
+    .\n"
   qimporting: ¿Puedo importar manualmente la cadena de bloques?
   vulnspotify: Disponible en Spotify como podcast
   qvuln: ¿Existen vulnerabilidades conocidas en Monero?
@@ -920,11 +911,11 @@ faq:
   video_sa: Direcciones secretas
   video_essentials: Lo esencial
   video_intro: Introducción a Monero
-  avideos: "A lo largo de los años, la comunidad ha creado una gran cantidad de contenidos\
-    \ informativos como artículos y videos. La mayoría de estos videos están disponibles\
-    \ al público en plataformas como YouTube. En este sitio web tenemos algunos videos\
-    \ que explican los fundamentos de Monero. Para optimizar su eficacia, deberían\
-    \ verse en secuencia:\n"
+  avideos: "A lo largo de los años, la comunidad ha creado una gran cantidad de contenidos
+    informativos como artículos y videos. La mayoría de estos videos están disponibles
+    al público en plataformas como YouTube. En este sitio web tenemos algunos videos
+    que explican los fundamentos de Monero. Para optimizar su eficacia, deberían verse
+    en secuencia:\n"
   qvideos: ¿Hay videos que pueda ver para aprender sobre Monero?
   ahf1: La comunidad de desarrolladores y el equipo central están de acuerdo en que
     el protocolo es lo suficientemente estable y maduro, y que ya no son necesarias
@@ -953,10 +944,10 @@ faq:
   qhf: ¿Es cierto que Monero tiene una bifurcación dura (hard fork) cada 6 meses?
   video_ringsig: Firmas de anillo
   video_ringct: Anillo de transacciones confidenciales
-  avuln: "La comunidad de Monero ha creado una serie de videos llamada \"Breaking\
-    \ Monero\" (\"Rompiendo Monero\"), donde se exploran y discuten las potenciales\
-    \ vulnerabilidades de Monero. Hay 14 videos, y cada uno explora un tema diferente.\
-    \ Echa un vistazo a <a href=\"https://www.monerooutreach.org/breaking-monero/\"\
+  avuln: "La comunidad de Monero ha creado una serie de videos llamada \"Breaking
+    Monero\" (\"Rompiendo Monero\"), donde se exploran y discuten las potenciales
+    vulnerabilidades de Monero. Hay 14 videos, y cada uno explora un tema diferente.
+    Echa un vistazo a <a href=\"https://www.monerooutreach.org/breaking-monero/\"
     >los videos en monerooutreach.org</a>.\n"
   aavailable: también disponible en
   aasicresistance: Las ASICs son básicamente ordenadores especiales creados para hacer
@@ -971,14 +962,14 @@ faq:
     se confabulan y consiguen hacerse con la mayor parte de la tasa de procesamiento
     de la red, podrían rechazar transacciones de forma arbitraria.
   qmaxsupply: ¿Cuál es la máxima cantidad de Monero que existirá?
-  aasicresistance2: "Monero soluciona este problema siendo resistente a los ASICs:\
-    \ utiliza un algoritmo (@randomx) que reduce fuertemente la eficiencia de los\
-    \ ASICs, haciendo que no sea rentable desarrollarlos. Los mineros pueden utilizar\
-    \ hardware de uso común, lo que les permite competir de forma justa. La red de\
-    \ Monero está actualmente protegida por miles de mineros que utilizan computadoras\
-    \ \"normales\". Esto hace que la red sea mucho más difícil de atacar y que ningún\
-    \ minero tenga una ventaja significativa sobre los demás (todos utilizan más o\
-    \ menos el mismo hardware).\n"
+  aasicresistance2: "Monero soluciona este problema siendo resistente a los ASICs:
+    utiliza un algoritmo (@randomx) que reduce fuertemente la eficiencia de los ASICs,
+    haciendo que no sea rentable desarrollarlos. Los mineros pueden utilizar hardware
+    de uso común, lo que les permite competir de forma justa. La red de Monero está
+    actualmente protegida por miles de mineros que utilizan computadoras \"normales\"\
+    . Esto hace que la red sea mucho más difícil de atacar y que ningún minero tenga
+    una ventaja significativa sobre los demás (todos utilizan más o menos el mismo
+    hardware).\n"
   amaxsupply: Monero posee una tasa de emisión fija y no una cantidad total establecida.
     Alrededor de mayo de 2022, la emisión de Monero bajará y se mantendrá permanentemente
     en 0,3 XMR por minuto (0,6 XMR por @bloque). Esto supone aproximadamente un 1%
@@ -986,6 +977,10 @@ faq:
     años. Esta @emisión-de-cola es el incentivo necesario para garantizar la seguridad
     de Monero en forma permanente, incluso en un futuro lejano, y que a la vez mantendrá
     la inflación en un porcentaje muy bajo.
+  privacy: Privacidad
+  security: Seguridad
+  wallets: Monederos
+  node: Nodo
 mining:
   intro1: Monero es una criptomoneda que utiliza el minado por prueba-de-trabajo (proof-of-work)
     para lograr un consenso distribuido. A continuación encontrarás información y
@@ -1017,26 +1012,25 @@ mining:
     en GPU) es mucho menos eficiente que la otra. Puedes hacerte una idea de cómo
     rinde tu hardware en comparación con otros, utilizando <a href="https://monerobenchmarks.info/">monerobanchmarks</a>
     (algunos resultados pueden estar desactualizados).
-  philosophy: "Una de las filosofías de Monero es mantener la minería equitativa,\
-    \ para que todo el mundo tenga la posibilidad de minar. Para conseguirlo, Monero\
-    \ utiliza un algoritmo particular ideado y desarrollado por los miembros de la\
-    \ comunidad de Monero: @RandomX. Este algoritmo de prueba-de-trabajo es resistente\
-    \ a los ASIC, lo que significa que es imposible construir hardware especializado\
-    \ para minar Monero. Los mineros deben utilizar hardware de grado de consumidor\
-    \ y competir de forma equitativa.\n"
+  philosophy: "Una de las filosofías de Monero es mantener la minería equitativa,
+    para que todo el mundo tenga la posibilidad de minar. Para conseguirlo, Monero
+    utiliza un algoritmo particular ideado y desarrollado por los miembros de la comunidad
+    de Monero: @RandomX. Este algoritmo de prueba-de-trabajo es resistente a los ASIC,
+    lo que significa que es imposible construir hardware especializado para minar
+    Monero. Los mineros deben utilizar hardware de grado de consumidor y competir
+    de forma equitativa.\n"
   miningset: Minería en solitario o en pool (grupo)
-  miningsetp: "Los mineros pueden decidir si prefieren minar en solitario o en una\
-    \ pool. Cada método tiene sus ventajas y desventajas, pero el Proyecto de Monero\
-    \ anima a los individuos a minar en solitario utilizando el software de Monero\
-    \ (<a href=\"https://www.getmonero.org/downloads/#gui\">GUI</a></a> y <a href=\"\
-    https://www.getmonero.org/downloads/#cli\">CLI</a>), ya que este tipo de minería\
-    \ independiente es la forma más eficaz de aumentar la robustez de la red de Monero.\
-    \ También se anima a minar mediante P2Pool.\n"
+  miningsetp: "Los mineros pueden decidir si prefieren minar en solitario o en una
+    pool. Cada método tiene sus ventajas y desventajas, pero el Proyecto de Monero
+    anima a los individuos a minar en solitario utilizando el software de Monero (<a
+    href=\"https://www.getmonero.org/downloads/#gui\">GUI</a></a> y <a href=\"https://www.getmonero.org/downloads/#cli\"\
+    >CLI</a>), ya que este tipo de minería independiente es la forma más eficaz de
+    aumentar la robustez de la red de Monero. También se anima a minar mediante P2Pool.\n"
   conopfee: Debes pagar una comisión al operador del pool
-  softwarep: "Hay varias opciones cuando se trata de software de minería. Como ya\
-    \ se ha dicho, para minar en solitario, se pueden utilizar los monederos CLI o\
-    \ GUI (sólo para CPU). Si quieres minar en una pool o minar con una GPU, necesitarás\
-    \ un software dedicado. Mineros que soportan Monero:\n"
+  softwarep: "Hay varias opciones cuando se trata de software de minería. Como ya
+    se ha dicho, para minar en solitario, se pueden utilizar los monederos CLI o GUI
+    (sólo para CPU). Si quieres minar en una pool o minar con una GPU, necesitarás
+    un software dedicado. Mineros que soportan Monero:\n"
   supportp: Si tienes preguntas o simplemente quieres charlar con otros mineros, ven
     a chatear en Monero Pools. En <a href="https://matrix.to/#/#monero-pools:monero.social">Matrix</a>
     y <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
@@ -1053,18 +1047,18 @@ mining:
   p2pzeropayout: La comisión de pagos es <b>0 XMR</b>
   p2pminpayout: Cantidad mínima de pago menor a 0.0004 XMR
   p2pmoreinfo: 'Más información y detalles en el repositorio de GitHub del proyecto:'
-  p2poolp: "P2Pool es una cadena lateral (\"sidechain\") de Monero, y los bloques\
-    \ de la P2Pool son potencialmente bloques de Monero. Cada minero envía plantillas\
-    \ de bloques que incluyen pagos a todos los mineros que están minando al mismo\
-    \ tiempo (aquellos que actualmente tienen acciones en la ventana PPLNS o \"Pay-Per-Last\
-    \ N Shares\"). Las plantillas de bloques de alta calidad se añaden a la cadena\
-    \ de bloques de la P2Pool como bloques; estos cuentan como \"shares\" (trabajos\
-    \ realizados) para el minero que los encontró.\n"
-  p2poolnew: "La P2Pool es una nueva e inteligente forma de minar Monero, que permite\
-    \ a los mineros recibir los pagos frecuentes que ofrecen las pools sin necesidad\
-    \ de confiar en una pool centralizada. P2Pool es una pool de minería entre pares\
-    \ (\"Peer-To-Peer\") que da a los mineros el control total sobre su nodo de Monero\
-    \ y lo que éste mina. Más detalles en <a href=\"/2021/10/05/p2pool-released.html\"\
+  p2poolp: "P2Pool es una cadena lateral (\"sidechain\") de Monero, y los bloques
+    de la P2Pool son potencialmente bloques de Monero. Cada minero envía plantillas
+    de bloques que incluyen pagos a todos los mineros que están minando al mismo tiempo
+    (aquellos que actualmente tienen acciones en la ventana PPLNS o \"Pay-Per-Last
+    N Shares\"). Las plantillas de bloques de alta calidad se añaden a la cadena de
+    bloques de la P2Pool como bloques; estos cuentan como \"shares\" (trabajos realizados)
+    para el minero que los encontró.\n"
+  p2poolnew: "La P2Pool es una nueva e inteligente forma de minar Monero, que permite
+    a los mineros recibir los pagos frecuentes que ofrecen las pools sin necesidad
+    de confiar en una pool centralizada. P2Pool es una pool de minería entre pares
+    (\"Peer-To-Peer\") que da a los mineros el control total sobre su nodo de Monero
+    y lo que éste mina. Más detalles en <a href=\"/2021/10/05/p2pool-released.html\"\
     >la publicación del anuncio</a>.\n"
   p2poolh: 'P2Pool: Reúne lo mejor de tanto la minería en solitario como de la minería
     en pools'
@@ -1371,6 +1365,7 @@ roadmap:
   p2pool: Se ha lanzado P2Pool
   haveno: Haveno
   ringsize-sera-tryp: aumenta tamaño de anillo a >100
+  bp++: Bulletproofs+
 research-lab:
   intro: Monero no está comprometido solamente a hacer una moneda fungible, sino también
     a una continua investigación en el campo de la privacidad financiera ya que esto
@@ -1566,8 +1561,8 @@ research-lab:
   librarybutton: Explorar la biblioteca
   libraryp: La biblioteca contiene documentos útiles como "Zero to Monero" y "Mastering
     Monero", que exploran y explican Monero en detalle.
-  iacr2020312_note: "NOTA: este artículo ha sido retractado, pero es posible verlo\
-    \ haciendo click en 'Todas las versiones de este informe'."
+  iacr2020312_note: "NOTA: este artículo ha sido retractado, pero es posible verlo
+    haciendo click en 'Todas las versiones de este informe'."
 specs:
   pow_title: Prueba de Trabajo
   block_emission_title: Curva de emisión
@@ -1629,9 +1624,9 @@ library:
   ringscheatsheet20210301: Hoja de ayuda de los anillos
   cheatsheets: Hojas de ayuda
   rctcheatsheet20210604: Hoja de ayuda de RingCT
-  ringscheatsheet20210301p: "Desde la clásica firma genérica hasta la CLSAG, un viaje\
-    \ visual a través de los distintos tipos de anillos, presentando paso a paso sus\
-    \ principales propiedades en una infografía de tamaño póster.\n"
+  ringscheatsheet20210301p: "Desde la clásica firma genérica hasta la CLSAG, un viaje
+    visual a través de los distintos tipos de anillos, presentando paso a paso sus
+    principales propiedades en una infografía de tamaño póster.\n"
 moneropedia:
   add_new_text1: Si hay una entrada que quisieras modificar o agregar, por favor
   add_new_link: abre un caso en el repositorio de este sitio web en GitHub
@@ -1681,12 +1676,12 @@ moneropedia:
     viewkey: Clave de Visualización
     wallet: Monedero
     clsag: CLSAG
-  description: "La terminología alrededor de Monero puede ser muy compleja y técnica.\
-    \ Moneropedia es una herramienta creada por la comunidad de Monero para proveer\
-    \ una explicación simple de estos términos. A continuación encontrarás una lista\
-    \ de todas las entradas de Moneropedia en orden alfabético. Si deseas editar una\
-    \ entrada existente o agregar una nueva, haz clic en el botón en la parte inferior\
-    \ de la página.\n"
+  description: "La terminología alrededor de Monero puede ser muy compleja y técnica.
+    Moneropedia es una herramienta creada por la comunidad de Monero para proveer
+    una explicación simple de estos términos. A continuación encontrarás una lista
+    de todas las entradas de Moneropedia en orden alfabético. Si deseas editar una
+    entrada existente o agregar una nueva, haz clic en el botón en la parte inferior
+    de la página.\n"
   back: Regresar a Moneropedia
   instructions: Las instrucciones para añadir una entrada en la Moneropedia están
     en el

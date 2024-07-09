@@ -1,5 +1,9 @@
 home:
   heading2: 合理的でプライベートな仮想通貨
+  about: モネロについて
+  downloads: ダウンロード
+  faq: よくある質問
+  hangouts: ハングアウト
 index:
   page_title: ""
 titles:
@@ -42,3 +46,13 @@ global:
   monero: モネロ
   copyright: 著作権
   outdated: このページのコンテンツは最新のものではなく、現在も有効な内容である保証はありません。サポートを必要とする場合はコミュニティに問い合わせて下さい。
+footer:
+  legal: 法律
+downloads:
+  mobilelight2: ハングアウト
+accepting:
+  merchdevguides: 開発者ガイド
+faq:
+  privacy: プライバシー
+about:
+  privacy: プライバシー

@@ -70,11 +70,11 @@ moneropedia:
   add_new_text1: Hvis det er en oppføring som du ønsker å endre eller at skal legges
     til, kan du
   back: Tilbake til Moneropedia
-  description: "Terminologien rundt Monero kan være veldig kompleks og teknisk. Moneropedia\
-    \ er et verktøy som er opprettet av Monero-samfunnet for å gi en enkel forklaring\
-    \ til disse uttrykkene. Nedenfor vil du finne en liste over alle Moneropedia-oppføringene\
-    \ i alfabetisk rekkefølge. Hvis du vil redigere en eksisterende stemme eller legge\
-    \ til en ny, kan du trykke på knappen nederst på siden.\n"
+  description: "Terminologien rundt Monero kan være veldig kompleks og teknisk. Moneropedia
+    er et verktøy som er opprettet av Monero-samfunnet for å gi en enkel forklaring
+    til disse uttrykkene. Nedenfor vil du finne en liste over alle Moneropedia-oppføringene
+    i alfabetisk rekkefølge. Hvis du vil redigere en eksisterende stemme eller legge
+    til en ny, kan du trykke på knappen nederst på siden.\n"
 specs:
   privacytech_dandelion: Dandelion++
   privacytech_ringct: '@RingCT'
@@ -117,27 +117,27 @@ blog:
   urgent: Hastende
   allposts: Alle innlegg
 library:
-  masteringmonerop: "En veiledning til den tilsynelatende komplekse verden bak Monero.<br>\
-    \ Det inkluderer: <ul><li>En bred introduksjon til blokkjeder og viktigheten av\
-    \ personvern – ideelt for brukere med lite teknisk kunnskap.</li> <li>Drøfting\
-    \ av Bitcoins mangler og spesifikke løsninger som er gitt av Monero.</li> <li>Historier\
-    \ fra brukere (som illustrerer hvordan Monero beskytter personvernet ditt), analogier,\
-    \ eksempler, lovlige/etiske diskusjoner og kodeutdrag som illustrerer viktige,\
-    \ tekniske konsepter.</li> <li>Detaljer på Moneros desentraliserte nettverk, peer-to-peer-arkitektur,\
-    \ transaksjoners livssyklus og sikkerhetsprinsipper.</li> <li>Introduksjoner til\
-    \ Moneros tekniske fundament, som er ment for utviklere, ingeniører, programvarearkitekter,\
-    \ og nysgjerrige brukere.</li> <li>Nye utviklinger som f.eks. Kovri, Bulletproofs,\
-    \ multi-signatur, maskinvare-lommebøker, osv.</li></ul> Se <a href=\"https://masteringmonero.com/\"\
+  masteringmonerop: "En veiledning til den tilsynelatende komplekse verden bak Monero.<br>
+    Det inkluderer: <ul><li>En bred introduksjon til blokkjeder og viktigheten av
+    personvern – ideelt for brukere med lite teknisk kunnskap.</li> <li>Drøfting av
+    Bitcoins mangler og spesifikke løsninger som er gitt av Monero.</li> <li>Historier
+    fra brukere (som illustrerer hvordan Monero beskytter personvernet ditt), analogier,
+    eksempler, lovlige/etiske diskusjoner og kodeutdrag som illustrerer viktige, tekniske
+    konsepter.</li> <li>Detaljer på Moneros desentraliserte nettverk, peer-to-peer-arkitektur,
+    transaksjoners livssyklus og sikkerhetsprinsipper.</li> <li>Introduksjoner til
+    Moneros tekniske fundament, som er ment for utviklere, ingeniører, programvarearkitekter,
+    og nysgjerrige brukere.</li> <li>Nye utviklinger som f.eks. Kovri, Bulletproofs,
+    multi-signatur, maskinvare-lommebøker, osv.</li></ul> Se <a href=\"https://masteringmonero.com/\"\
     >Mestring av Monero</a>-nettsiden for mer informasjon.\n"
   zerotomonerov1p: "Publisert: 26. juni, 2018, med <a href=\"https://github.com/UkoeHB/Monero-RCT-report\"\
     >LaTeX-kildekode her</a>\n"
   zerotomonerov1: 'Zero to Monero: Første utgave'
   zerotomonerov2p: "Publisert: 4. april, 2020, med <a href=\"https://github.com/UkoeHB/Monero-RCT-report\"\
-    >LaTeX-kildekode her</a><br> En omfattende, konseptuell (og teknisk) forklaring\
-    \ av Monero.<br> Vi streber etter å lære alle som kjenner til grunnleggende algebra\
-    \ og enkel informatikk konsepter som f.eks. «bit-representasjonen» av et tall\
-    \ – ikke bare hvordan Monero fungerer på et dyptgående og forståelig nivå, men\
-    \ også hvor nyttig og vakkert kryptografi kan være.\n"
+    >LaTeX-kildekode her</a><br> En omfattende, konseptuell (og teknisk) forklaring
+    av Monero.<br> Vi streber etter å lære alle som kjenner til grunnleggende algebra
+    og enkel informatikk konsepter som f.eks. «bit-representasjonen» av et tall –
+    ikke bare hvordan Monero fungerer på et dyptgående og forståelig nivå, men også
+    hvor nyttig og vakkert kryptografi kan være.\n"
   description: Nedenfor finnes publikasjoner, bøker eller tidsskrifter som du kan
     laste ned.
   zerotomonerov2: 'Zero to Monero: Andre utgave'
@@ -465,6 +465,8 @@ roadmap:
   mar: Mars
   feb: Februar
   jan: Januar
+  bplus: Bulletproofs
+  bp++: Bulletproofs
 user-guides:
   tor_wallet: Å koble din lokale lommebok til din egen daemon over Tor
   multisig-messaging-system: Multisig-transaksjoner med MMS- og CLI-lommeboken
@@ -494,6 +496,7 @@ user-guides:
   guiguide: Veiledning for Monero GUI-lommeboken
   node-i2pzero: Kjør en Monero-node via I2P eller I2P-zero
   tailsguide: Sett opp en lommebok (ved å bruke en ekstern node) på Tails
+  hardwarewallet: Maskinvarelommebøker
 what-is-monero:
   videos: Monero-videoer (engelsk)
   electronic_para1: Det er ingen holdeperioder som går over flere dager og ingen risiko
@@ -522,6 +525,8 @@ what-is-monero:
   leading: Monero er den ledende kryptovalutaen med fokus på private og sensurresistente
     transaksjoner.
   need-to-know: Hva du trenger å vite
+  grassroots_p2: Forskningslab
+  aboutb: Om
 mining:
   software: Utvinningsprogramvare
   support: Støtte
@@ -531,6 +536,7 @@ mining:
     for å oppnå distribuert konsensus. Nedenfor vil du finne informasjon og ressurser
     på hvordan du kan begynne å utvinne.
   software_para: Merk at noen utvinnere kan ta utviklergebyrer.
+  pow: Proof of work
 faq:
   adangerrnode: 'Det tilrådes alltid, spesielt for brukere som verdsetter personvern,
     å bruke en personlig node når det gjøres transaksjoner på nettverket for å oppnå
@@ -752,18 +758,22 @@ faq:
     osv. eller andre kryptovaluta. Noen krever KYC (identifikasjonsbevis) og andre
     ikke, som desentraliserte børser. På denne nettsiden finner du en liste over børser
     hvor man kan kjøpe og selge Monero (XMR):'
-  aimporting: "Ja, det kan du, men du bør antagelig la være. Å importere en ekstern\
-    \ blokkjede er veldig ressurskrevende, og medfører at du må stole på opphavet\
-    \ som gir deg den. Det er vanligvis raskere å laste den ned på en normal måte:\
-    \ Kjør en node og la den synkroniseres med de andre nodene i nettverket. Hvis\
-    \ du virkelig trenger å importere en ekstern blokkjede, kan du laste en ned i\
-    \ <a href=\"{{ site.baseurl }}/downloads/#blockchain\">«Nedlastinger»-delen</a>\
-    \ på denne nettsiden. Følg veiledningen nedenfor hvis du bruker Windows. Hvis\
-    \ du er Linux-bruker, kan du bruke verktøyet «monero-blockchain-import», som er\
-    \ å finne i arkivet når du laster ned GUI- eller CLI-lommebøkene. Start synkroniseringen\
-    \ av den importerte blokkjeden med denne kommandoen: «monero-blockchain-import\
-    \ --input-file blockchain.raw».\n"
+  aimporting: "Ja, det kan du, men du bør antagelig la være. Å importere en ekstern
+    blokkjede er veldig ressurskrevende, og medfører at du må stole på opphavet som
+    gir deg den. Det er vanligvis raskere å laste den ned på en normal måte: Kjør
+    en node og la den synkroniseres med de andre nodene i nettverket. Hvis du virkelig
+    trenger å importere en ekstern blokkjede, kan du laste en ned i <a href=\"{{ site.baseurl
+    }}/downloads/#blockchain\">«Nedlastinger»-delen</a> på denne nettsiden. Følg veiledningen
+    nedenfor hvis du bruker Windows. Hvis du er Linux-bruker, kan du bruke verktøyet
+    «monero-blockchain-import», som er å finne i arkivet når du laster ned GUI- eller
+    CLI-lommebøkene. Start synkroniseringen av den importerte blokkjeden med denne
+    kommandoen: «monero-blockchain-import --input-file blockchain.raw».\n"
   qimporting: Kan jeg importere blokkjeden manuelt?
+  privacy: Personvern
+  security: Sikkerhet
+  wallets: Lommebøker
+  node: Node
+  video_sa: Skjulte adresser
 contributing:
   donate: Doner
   donate-other_para2: for alternative måter å donere på eller om du ønsker å bli sponsor
@@ -776,16 +786,17 @@ contributing:
   network: Støtt nettverket
   intro: Monero er et samfunnsdrevet prosjekt med åpen kildekode. Nedenfor er det
     forklart flere måter man kan støtte prosjektet på.
+  sponsor: Sponsing
 accepting:
   merchantsthirdp1: Noen av disse tilbyr fine funksjoner som muligheten til å automatisk
     konvertere deler av inntekten din i fiat-penger eller å ta imot andre kryptovaluta
     sammen med Monero.
-  cliindex: "Som du kan se fra bildet over, har hver konto et indeksnummer som du\
-    \ kan bruke til å bytte fra én konto til en annen ved å bruke kommandoen «kontobytte\
-    \ [index]». Hvis du vil bytte til «Donasjoner»-kontoen for å føre tilsyn med den,\
-    \ kan du for eksempel – ved å bruke bildet over som referanse – gjøre dette ved\
-    \ å gi CLI-en din denne kommandoen: «kontobytte 1». Nå sitter du på din «Donasjoner»-konto,\
-    \ og du kan begynne å bruke den med én gang.\n"
+  cliindex: "Som du kan se fra bildet over, har hver konto et indeksnummer som du
+    kan bruke til å bytte fra én konto til en annen ved å bruke kommandoen «kontobytte
+    [index]». Hvis du vil bytte til «Donasjoner»-kontoen for å føre tilsyn med den,
+    kan du for eksempel – ved å bruke bildet over som referanse – gjøre dette ved
+    å gi CLI-en din denne kommandoen: «kontobytte 1». Nå sitter du på din «Donasjoner»-konto,
+    og du kan begynne å bruke den med én gang.\n"
   merchdevguides: utviklerguider
   merchthirdlink: the tools page
   merchantsthirdp: Hvis du er på utkikk etter et annet tredjeparts integrasjonssystem,
@@ -802,30 +813,30 @@ accepting:
     eller bruke avanserte funksjoner som multi-signatur, anbefales det å rådføre seg
     med
   merchantstitle: Bruksanvisning for forhandlere
-  clinotes: "Merk at bruksanvisningene nedenfor er et minimum som er nødvendig for\
-    \ å opprette og bruke kontoer/underadresser. CLI-en tilbyr flere kapillære måter\
-    \ å håndtere kontoer og lommeboken generelt. Bruk kommandoen «Hjelp» for å liste\
-    \ opp alle de tilgjengelige valgene.\n"
-  cliindex1: "Hver konto kan være vert for praktisk talt et uendelig antall underadresser.\
-    \ Disse fungerer nøyaktig som en normal adresse, og du kan opprette så mange du\
-    \ vil og bruke dem til å motta XMR til kontoen de er lenket til. For å opprette\
-    \ en ny underadresse for en konto, kan du bruke kommandoen:\n"
+  clinotes: "Merk at bruksanvisningene nedenfor er et minimum som er nødvendig for
+    å opprette og bruke kontoer/underadresser. CLI-en tilbyr flere kapillære måter
+    å håndtere kontoer og lommeboken generelt. Bruk kommandoen «Hjelp» for å liste
+    opp alle de tilgjengelige valgene.\n"
+  cliindex1: "Hver konto kan være vert for praktisk talt et uendelig antall underadresser.
+    Disse fungerer nøyaktig som en normal adresse, og du kan opprette så mange du
+    vil og bruke dem til å motta XMR til kontoen de er lenket til. For å opprette
+    en ny underadresse for en konto, kan du bruke kommandoen:\n"
   clicreateaccount1: Nå har du en annen konto som er separat fra din primære. Du kan
     når som helst bytte mellom kontoer.
   clicreateaccount: 'For å opprette en konto, kan du kjøre denne kommandoen:'
-  cliaccounts: "Du kan ha mye mer kontroll hvis du ønsker. Monero gir muligheten til\
-    \ å opprette opptil flere kontoer, der hver inneholder opptil flere underadresser,\
-    \ noe som er nyttig hvis du vil ha kontroll på flere kontoer. Du vil for eksempel\
-    \ kanskje ha en konto for å motta donasjoner og en annen for daglig bruk. Dette\
-    \ lar deg enkelt føre tilsyn med innkommende midler til «donasjoner»-kontoen din,\
-    \ uten å blande dem med hovedkontoen din.\n"
-  clicreatewallet: "Når du oppretter lommeboken din for første gang, vil en adresse\
-    \ automatisk vises. Dette er din hovedadresse. Hvis du vil, kan du ganske enkelt\
-    \ bruke den adressen til å motta betalinger. Du bør være påpasselig med hvem som\
-    \ kjenner til denne adressen (siden én adresse på ulike steder kan være tilsluttet\
-    \ hverandre), men du trenger ikke å bekymre deg om at blokkjedeobservatører iakttar\
-    \ transaksjoner til denne adressen som med Bitcoin. En venn kan sende transaksjoner\
-    \ til den samme adressen uten redusert personvern.\n"
+  cliaccounts: "Du kan ha mye mer kontroll hvis du ønsker. Monero gir muligheten til
+    å opprette opptil flere kontoer, der hver inneholder opptil flere underadresser,
+    noe som er nyttig hvis du vil ha kontroll på flere kontoer. Du vil for eksempel
+    kanskje ha en konto for å motta donasjoner og en annen for daglig bruk. Dette
+    lar deg enkelt føre tilsyn med innkommende midler til «donasjoner»-kontoen din,
+    uten å blande dem med hovedkontoen din.\n"
+  clicreatewallet: "Når du oppretter lommeboken din for første gang, vil en adresse
+    automatisk vises. Dette er din hovedadresse. Hvis du vil, kan du ganske enkelt
+    bruke den adressen til å motta betalinger. Du bør være påpasselig med hvem som
+    kjenner til denne adressen (siden én adresse på ulike steder kan være tilsluttet
+    hverandre), men du trenger ikke å bekymre deg om at blokkjedeobservatører iakttar
+    transaksjoner til denne adressen som med Bitcoin. En venn kan sende transaksjoner
+    til den samme adressen uten redusert personvern.\n"
   cliinstructions: Bruksanvisning for CLI-en
   guiol4: Vent til betalingen har ankommet og fått nok bekreftelser (jo flere bekreftelser,
     jo tryggere er transaksjonen. Du trenger minst 10 bekreftelser før du kan bruke
@@ -843,21 +854,20 @@ accepting:
     til.
   guisteps: 'Disse to sidene gir alle muligheten til å enkelt motta XMR ved å følge
     disse trinnene:'
-  guimerchant1: "Dette er en salgsstedaktig side som forhandlere enkelt kan bruke\
-    \ for å angi antallet XMR de vil motta. Hvis «Salgssporer»-valget er aktivert,\
-    \ vil du se betalingene i sanntid mens de ankommer lommeboken sammen med antallet\
-    \ bekreftelser.\n"
+  guimerchant1: "Dette er en salgsstedaktig side som forhandlere enkelt kan bruke
+    for å angi antallet XMR de vil motta. Hvis «Salgssporer»-valget er aktivert, vil
+    du se betalingene i sanntid mens de ankommer lommeboken sammen med antallet bekreftelser.\n"
   guilinkguide1: veiledningen som er lenket til over
   guimerchant: Forhandlere vil sannsynligvis synes det er mer beleilig å bruke «Forhandler»-siden
     (se skjermbildet under), som er forklart i detalj i «Forhandlerinnblikk»-seksjonen
     til
-  guiinstructions: "For å motta XMR, trenger du kun å oppgi en adresse til betaleren\
-    \ om hvor de skal sende midlene til. Som oftest er det lettest å bare dele en\
-    \ QR-kode og la betaleren skanne den, i stedet for å kopiere en alfanumerisk streng.\
-    \ Med GUI-en kommer hver genererte adresse med sin egen QR-kode. Få personen til\
-    \ å skanne QR-koden med Monero-lommeboken på sin telefon og motta XMR-ene dine\
-    \ på noen minutter. Husk at du kan generere så mange adresser (underadresser)\
-    \ du vil. Dette er nyttig dersom du av en eller annen grunn vil holde midler separat.\n"
+  guiinstructions: "For å motta XMR, trenger du kun å oppgi en adresse til betaleren
+    om hvor de skal sende midlene til. Som oftest er det lettest å bare dele en QR-kode
+    og la betaleren skanne den, i stedet for å kopiere en alfanumerisk streng. Med
+    GUI-en kommer hver genererte adresse med sin egen QR-kode. Få personen til å skanne
+    QR-koden med Monero-lommeboken på sin telefon og motta XMR-ene dine på noen minutter.
+    Husk at du kan generere så mange adresser (underadresser) du vil. Dette er nyttig
+    dersom du av en eller annen grunn vil holde midler separat.\n"
   guilinkguide: i guiden i GUI-en.
   gui2: Motta-siden (vist nedenfor) er forklart i detalj
   gui1: 'Å ta imot en betaling med GUI-en er veldig enkelt. Det har ikke noe å si
@@ -875,9 +885,9 @@ press-kit:
     i flere språk og formater (vektorer er inkludert).
   dontbuysticker: «Ikke kjøp Monero»-klistremerket
   marketing: Markedsføringsmateriale
-  quickfactsp: "Et dokument som er raskt og enkelt å lese der du får vite alt om Monero:\
-    \ historie, nøkkelfaktorer som skiller dem ut, tekniske fundamenter og funksjoner\
-    \ som er under utvikling.<br> Se <a target=\"_blank\" href=\"https://www.monerooutreach.org\"\
+  quickfactsp: "Et dokument som er raskt og enkelt å lese der du får vite alt om Monero:
+    historie, nøkkelfaktorer som skiller dem ut, tekniske fundamenter og funksjoner
+    som er under utvikling.<br> Se <a target=\"_blank\" href=\"https://www.monerooutreach.org\"\
     >Monero Outreach</a>-nettsiden for mer informasjon.\n"
   quickfacts: Hurtigfaktadokument
   pressdoc: Pressedokumentasjon
@@ -985,6 +995,8 @@ downloads:
   moreinfofaq: Mer informasjon i OSS
   avwarning: Vær oppmerksom på at noen antivirus og brannmurer kan flagge de kjørbare
     filene og arkivene til Monero som skadevare.
+  wallet: Lommebok
+  hwthsupported: Lommebøker
 team:
   mrl: Forskningslab
   community: Samfunn
@@ -1074,18 +1086,17 @@ sponsorships:
     sende en e-post til dev@getmonero.org.
   macstadium: MacStadium sponser en egen Mac Mini som brukes til macOS-relatert utvikling.
   tari: Tari Labs sponser innholdsleveransenettverket som brukes på denne nettsiden.
-  forknetworking: Fork Networking tilbyr en server som brukes til utvikling.
   symas: Symas sponser sin teknikkansvarlige, Howard Chu (hyc) for hans arbeid på
     Monero-kodebasen.
 merchants:
-  disclaimer: "«Vennligst merk: disse lenkene gjøres tilgjengelig som en bekvemmelighet\
-    \ og kun i informasjonsøyemed; de utgjør ikke en tilslutning av Monero-samfunnet\
-    \ for produkter, tjenester eller meninger av selskaper eller organisasjoner eller\
-    \ individer som er oppført. Monero-samfunnet står ikke ansvarlig for nøyaktigheten,\
-    \ lovligheten eller innholdet av disse eksterne nettsidene. Ta kontakt med de\
-    \ eksterne sidene for svar til spørsmål knyttet til dets innhold. Og som alltid:\
-    \ caveat emptor (kjøper, vær på vakt). Du står ansvarlig for å gjøre din egen\
-    \ gransking. Bruk alltid dømmekraften din når du foretar deg kjøp på nett.»\n"
+  disclaimer: "«Vennligst merk: disse lenkene gjøres tilgjengelig som en bekvemmelighet
+    og kun i informasjonsøyemed; de utgjør ikke en tilslutning av Monero-samfunnet
+    for produkter, tjenester eller meninger av selskaper eller organisasjoner eller
+    individer som er oppført. Monero-samfunnet står ikke ansvarlig for nøyaktigheten,
+    lovligheten eller innholdet av disse eksterne nettsidene. Ta kontakt med de eksterne
+    sidene for svar til spørsmål knyttet til dets innhold. Og som alltid: caveat emptor
+    (kjøper, vær på vakt). Du står ansvarlig for å gjøre din egen gransking. Bruk
+    alltid dømmekraften din når du foretar deg kjøp på nett.»\n"
 home:
   moneropedia_button: Les Moneropedia
   moneropedia_para: Ønsker du å søke opp betydningene av vilkårene og konseptene som
@@ -1108,12 +1119,12 @@ home:
     sin til prosjektet. Bli med!
   contributecommunity: 'Vi trenger ferdighetene dine: Bidra!'
   joincommunity: Bli med i samfunnet
-  guides_para: "Monero-samfunnet har satt sammen en bred samling av ressurser og dokumentasjon.\
-    \ Brukere kan finne nyttig informasjon og veiledninger om vanlige konfigurasjoner\
-    \ og tips i Brukerveiledninger-seksjonen. Utviklere kan finne alt de trenger for\
-    \ å bygge en tjeneste som er basert på Monero eller rett og slett å kommunisere\
-    \ med nettverket i Utviklerveiledningen. Biblioteket tilbyr publikasjoner og bøker\
-    \ som kan lastes ned gratis, inkludert alle «Mastering Monero»- og «Zero to Monero»-bøkene.\n"
+  guides_para: "Monero-samfunnet har satt sammen en bred samling av ressurser og dokumentasjon.
+    Brukere kan finne nyttig informasjon og veiledninger om vanlige konfigurasjoner
+    og tips i Brukerveiledninger-seksjonen. Utviklere kan finne alt de trenger for
+    å bygge en tjeneste som er basert på Monero eller rett og slett å kommunisere
+    med nettverket i Utviklerveiledningen. Biblioteket tilbyr publikasjoner og bøker
+    som kan lastes ned gratis, inkludert alle «Mastering Monero»- og «Zero to Monero»-bøkene.\n"
   guides: Veiledninger og ressurser
   answers: Finn svar på spørsmålene dine
   merchants: Forhandlere
@@ -1133,6 +1144,8 @@ home:
     Monero med én gang.
   choosewallet: Velg en lommebok
   whatis: Lær mer om Monero
+  about: Om Monero
+  hangouts: Treffsteder
 index:
   page_title: Monero – sikker, privat og usporbar
 titles:
@@ -1182,3 +1195,4 @@ footer:
   source: Kildekode
   legal: Juridisk
   feed: RSS-strøm
+  ml: E-postliste

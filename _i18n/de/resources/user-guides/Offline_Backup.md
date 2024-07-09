@@ -4,7 +4,7 @@
 
 ### Wallet-Software:  Simplewallet
 
-#### Quelle zur Erstellung eines bootfähigen Speichermediums:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
+#### Quelle zur was Erstellung eines bootfähigen Speichermediums:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 
 #### Quelle für Monero-Software:  [Monero-Software]({{ site.baseurl }}/downloads/)
 

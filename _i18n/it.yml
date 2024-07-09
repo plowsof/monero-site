@@ -88,12 +88,12 @@ home:
     decentralizzata ed esiste solo grazie alle centinaia di volontari che dedicano
     il loro tempo al progetto. Unisciti a noi!
   contributecommunity: 'Abbiamo Bisogno Delle Tue Capacità: Contribuisci!'
-  guides_para: "La community ha messo insieme una grande quantità di risorse e documentazione.\
-    \ Gli utenti possono trovare informazioni e guide utili su configurazioni e suggerimenti\
-    \ comuni nella sezione \"Guide per l'utente\". Gli sviluppatori possono trovare\
-    \ tutto ciò di cui hanno bisogno per creare un servizio basato su Monero o semplicemente\
-    \ comunicare con la rete nelle \"Guide per sviluppatori\". La Libreria offre pubblicazioni\
-    \ e libri scaricabili gratuitamente, inclusi i libri completi \"Mastering Monero\"\
+  guides_para: "La community ha messo insieme una grande quantità di risorse e documentazione.
+    Gli utenti possono trovare informazioni e guide utili su configurazioni e suggerimenti
+    comuni nella sezione \"Guide per l'utente\". Gli sviluppatori possono trovare
+    tutto ciò di cui hanno bisogno per creare un servizio basato su Monero o semplicemente
+    comunicare con la rete nelle \"Guide per sviluppatori\". La Libreria offre pubblicazioni
+    e libri scaricabili gratuitamente, inclusi i libri completi \"Mastering Monero\"\
     \ e \"Zero to Monero\".\n"
   useit_para: Monero è una valuta e può essere scambiata con beni e servizi, privatamente
     e con commissioni molto basse. Molte entità accetteranno volentieri XMR per i
@@ -194,7 +194,6 @@ sponsorships:
   macstadium: MacStadium sponsorizza un Mac Mini dedicato che viene utilizzato per
     lo sviluppo legato al Mac.
   tari: Tari Labs sponsorizza il CDN utilizzato da questo sito web.
-  forknetworking: Fork Networking fornisce un server che viene utilizzato per lo sviluppo.
   symas: Symas sponsorizza il suo CTO Howard Chu (hyc) per il suo lavoro sul codebase
     Monero.
 team:
@@ -319,14 +318,16 @@ downloads:
     canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: 'Two guides are available to guide you through the verification process:'
-  showhash4: "Sono disponibili due guide per assistere l'utente attraverso il processo\
-    \ di verifica:"
+  showhash4: "Sono disponibili due guide per assistere l'utente attraverso il processo
+    di verifica:"
   mobilelight1: The following are mobile or light wallets that are deemed safe by
     respected members of the community. If there is a wallet that is not on here,
     you can request the community check it out. Go to our
   mobilelight2: Hangouts
   mobilelight3: page to see where we are.
   installer: Installer
+  wallet: Portafoglio
+  hwthsupported: Portafogli
 monero-project: {}
 press-kit:
   intro2: Fai attenzione al fatto che i file con lo sfondo bianco presentano lo sfondo
@@ -419,6 +420,7 @@ contributing:
   donate-other_para1: Manda un'email a
   donate-other_para2: per avere informazioni su metodi di donazione alternativi o
     se vuoi diventare uno sponsor del Progetto Monero.
+  sponsor: Sponsorizzazioni
 faq:
   q1: Come fa Monero ad avere valore?
   a1: Monero ha valore perché le persone sono disposte a comprarlo. Se nessuno fosse
@@ -527,6 +529,10 @@ faq:
   qwallet: Quale portafoglio dovrei usare?
   qcontribute: Come posso contribuire?
   toc: Tabella Dei Contenuti
+  privacy: Privacy
+  security: Sicurezza
+  wallets: Portafogli
+  node: Nodo
 mining:
   intro1: Monero è una criptovaluta che utilizza mining proof-of-work per raggiungere
     un consensus distribuito. Qui sotto trovi alcune informazioni e risorse su come
@@ -537,6 +543,7 @@ mining:
   software: Software per Minare
   software_para: Nota che alcuni miner potrebbero prevedere una commissione per lo
     sviluppatore.
+  pow: Proof of Work
 using: {}
 what-is-monero:
   need-to-know: Quello che devi sapere
@@ -566,6 +573,8 @@ what-is-monero:
     - queste misure limitano l'utilizzabilità delle valute tradizionali, a livello
     estremo, in Paesi che vivono una fase di instabilità economica.
   videos: Video Monero (English)
+  grassroots_p2: Research Lab
+  aboutb: Riguardo Monero
 about:
   history: Una storia breve
   history_para1: Monero è stato lanciato nell'aprile 2014. È stato un lancio giusto
@@ -644,6 +653,7 @@ user-guides:
   ledger-wallet-cli: Come generare un portafoglio Leger Monero con la CLI (monero-wallet-cli)
   multisig-messaging-system: Transazione multifirma con MMS e portafoglio CLI
   tor_wallet: Connecting your local wallet to your own daemon over Tor
+  hardwarewallet: Hardware Wallets
 roadmap:
   completed: Task completati
   ongoing: Task in corso
@@ -719,6 +729,10 @@ roadmap:
   released-0-14-0-2: 0.14.0.2 Boron Butterfly rilasciata
   cryptonightr: Nuovo Proof of Work CryptoNightR
   getmonero-pt_br: Localizzazion Getmonero.org in Portoghese Brasiliano e Olandese
+  pruning: Blockchain pruning
+  tryptych: 'Triptych: logarithmic-sized linkable ring signatures with applications'
+  bplus: Bulletproof
+  bp++: Bulletproof
 research-lab:
   intro: Monero non si impegna solo a creare una moneta fungibile, ma anche a perseguire
     la ricerca nel campo della privacy finanziaria. Qui di seguito troverai il lavoro
@@ -880,9 +894,10 @@ specs:
   block_emission_title: Curva di emissione
   block_emission_main: 'prima fase, curva principale: ~18.132 milioni di monete entro
     la fine di Maggio 2022'
-  block_emission_tail: "seconda fase, curva di emissione: 0.6 XMR per blocco (se generato\
-    \ ogni 2 minuti), subentra alla prima fase quando l'emissione principale è terminata;\
-    \ questo si traduce in un tasso di inflazione <1% e decrescente nel tempo"
+  block_emission_tail: "seconda fase, curva di emissione: 0.6 XMR per blocco (se generato
+    ogni 2 minuti), subentra alla prima fase quando l'emissione principale è terminata;
+    questo si traduce in un tasso di inflazione <1% e decrescente nel tempo"
+  privacytech_tor-i2p: Transactions over Tor/I2P
 library:
   description: 'Qui sotto sono elencate alcuni fra pubblicazioni, riviste e libri
     per il download:'
@@ -968,6 +983,7 @@ blog:
   date: Postato su
   meetinglogs: Diari delle riunioni
   urgent: Urgente
+  community: Comunità
 tags:
   notags: Non ci sono post con questo tag.
 footer:

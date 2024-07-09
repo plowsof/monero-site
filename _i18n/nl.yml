@@ -71,6 +71,9 @@ home:
   faq_para: In de loop van de jaren zijn er veel vragen aan ons gesteld. We hebben
     ze voor het gemak verzameld in een diepgravende en gevarieerde FAQ. En als je
     vragen hier niet bij staan, kun je altijd vragen stellen aan de community.
+  about: Over Monero
+  contributing: Bijdragen
+  hangouts: Hangouts
 hangouts:
   intro: De Monero-community bestaat uit allerlei soorten mensen. Waar we ook vandaan
     komen, we ontmoeten elkaar op bepaalde plekken online. De belangrijkste staan
@@ -152,13 +155,12 @@ downloads:
   helpsupport: Help and Support
   helpsupport1: "A guide with an explanation of every section of the wallet is available:"
   helpsupport2: "See latest release"
-  gui_helpsupport: "If you are experiencing issues or you need more info, feel free\
-    \ to reach out to the community. You can find the GUI team at #monero-gui, or\
-    \ else check out the Hangouts page for a more complete list of contacts and chatrooms"
-  cli_helpsupport: "If you are experiencing issues or you need more info, feel free\
-    \ to reach out to the community. You can find the CLI team at #monero or #monero-dev,\
-    \ or else check out the Hangouts page for a more complete list of contacts and\
-    \ chatrooms"
+  gui_helpsupport: "If you are experiencing issues or you need more info, feel free
+    to reach out to the community. You can find the GUI team at #monero-gui, or else
+    check out the Hangouts page for a more complete list of contacts and chatrooms"
+  cli_helpsupport: "If you are experiencing issues or you need more info, feel free
+    to reach out to the community. You can find the CLI team at #monero or #monero-dev,
+    or else check out the Hangouts page for a more complete list of contacts and chatrooms"
   localremote: Local or remote node
   localremote1: Use your own copy of the blockchain or a publicly available one
   transacttor: Transactions over Tor/I2P
@@ -190,10 +192,12 @@ downloads:
   mobilelight3: page to see where we are.
   installer: Installer
 
+  wallet: Wallet
+  hwthsupported: Portemonnees
 monero-project: {}
 press-kit:
-  intro2: "Let op: de opties met een witte achtergrond hebben ALLEEN een witte achtergrond\
-    \ onder het Monero-symbool, niet als achtergrond voor de hele afbeelding."
+  intro2: "Let op: de opties met een witte achtergrond hebben ALLEEN een witte achtergrond
+    onder het Monero-symbool, niet als achtergrond voor de hele afbeelding."
   intro3: Tenslotte kun je alles op deze pagina in een zip downloaden door
   intro4: hier te klikken.
   noback: Geen achtergrond
@@ -221,7 +225,8 @@ press-kit:
   guerrillakitp: A document created by the Monero Outreach workgroup containing materials
     and tips for an effective guerrilla marketing campaign.
 
-accepting: {}
+accepting:
+  merchdevguides: Handleidingen voor ontwikkelaars
 contributing:
   intro: Monero is een door de community gecreëerd open-sourceproject. Hier volgen
     verschillende manier om het project te steunen.
@@ -236,6 +241,7 @@ contributing:
   donate-other_para2: voor andere manieren om geld te geven of als je een sponsor
     van het Monero-project wilt worden.
 
+  sponsor: Sponsors
 faq:
   q1: Waardoor heeft Monero waarde?
   a1: Monero heeft waarde omdat mensen het willen kopen. Als niemand Monero zou willen
@@ -327,6 +333,10 @@ faq:
     je nog steeds een dodelijk auto-ongeluk krijgen. Gebruik gezond verstand, wees
     voorzichtig en pas een verdediging met meerdere lagen toe.
 
+  privacy: Privacy
+  security: Veiligheid
+  wallets: Portemonnees
+  node: Node
 mining:
   intro1: Monero is een cryptovaluta die mining voor *proof-of-work* nodig heeft om
     verspreide consensus te bereiken. Hieronder vind je informatie en hulpmiddelen
@@ -335,9 +345,10 @@ mining:
     De onderstaande gegevens worden alleen ter informatie aangeboden.
   support: Ondersteuning
   software: Miningsoftware
-  software_para: "Let op: bij sommige miningprogramma's krijgen de ontwikkelaars een\
-    \ vergoeding."
+  software_para: "Let op: bij sommige miningprogramma's krijgen de ontwikkelaars een
+    vergoeding."
 
+  pow: Proof of Work
 using: {}
 what-is-monero:
   need-to-know: Wat je moet weten
@@ -361,12 +372,14 @@ what-is-monero:
   grassroots: Monero is een community van vrijwilligers waar de beste onderzoekers
     en programmeurs van cryptovaluta op af komen.
   electronic: Monero is elektronisch geld voor wereldwijde snelle, goedkope betalingen.
-  electronic_para1: "Er zijn geen 'valutadagen' en er is geen risico van frauduleuze\
-    \ terugboekingen. Er zijn geen kapitaalrestricties mogelijk: maatregelen die het\
-    \ gebruik van traditionele valuta's beperken, soms in extreme mate, in landen\
-    \ met een instabiele economie."
+  electronic_para1: "Er zijn geen 'valutadagen' en er is geen risico van frauduleuze
+    terugboekingen. Er zijn geen kapitaalrestricties mogelijk: maatregelen die het
+    gebruik van traditionele valuta's beperken, soms in extreme mate, in landen met
+    een instabiele economie."
   videos: Video's over Monero (Engels)
 
+  grassroots_p2: Research Lab
+  aboutb: Over Monero
 about:
   history: Korte geschiedenis
   history_para1: Monero is gestart in april 2014. Het was een eerlijke, vooraf aangekondigde
@@ -414,10 +427,10 @@ about:
 
 
 developer-guides:
-  outdated: "Let op: de onderstaande handleidingen zijn onlangs vernieuwd en worden\
-    \ door de community bijna up-to-date gehouden. Maar methoden worden vaak toegevoegd,\
-    \ verwijderd of bijgewerkt, dus het is mogelijk dat ze hier niet allemaal correct\
-    \ worden beschreven."
+  outdated: "Let op: de onderstaande handleidingen zijn onlangs vernieuwd en worden
+    door de community bijna up-to-date gehouden. Maar methoden worden vaak toegevoegd,
+    verwijderd of bijgewerkt, dus het is mogelijk dat ze hier niet allemaal correct
+    worden beschreven."
   rpc: RPC-documentatie
   daemonrpc: Daemon RPC Documentation
   walletrpc: Wallet RPC Documentation
@@ -450,6 +463,7 @@ user-guides:
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
   tor_wallet: Connecting your local wallet to your own daemon over Tor
 
+  hardwarewallet: Hardware Wallets
 roadmap:
   completed: Voltooide taak
   ongoing: Lopende taak
@@ -509,8 +523,8 @@ roadmap:
   released-0-12-0: Versie 0.12.0.0 Lihium Luna
   releasedgui-0-12-0: GUI Versie 0.12.0.0 Lithium Luna
   cryptonightv2: Nieuw proof-of-work algoritme CryptoNightV2
-  hfring7: "Netwerkupgrade: minimale ringgrootte verhogen naar 7, multisig integreren,\
-    \ subadressen, PoW-algoritme wijzigen"
+  hfring7: "Netwerkupgrade: minimale ringgrootte verhogen naar 7, multisig integreren,
+    subadressen, PoW-algoritme wijzigen"
   getmonero-fr-pl: Getmonero.org vertaald in het Frans en Pools
   released-0-12-1: Versie 0.12.1.0 Lithium Luna
   ledger: Ondersteuning van de hardwarewallet Ledger
@@ -524,8 +538,8 @@ roadmap:
   releasedgui-0-13-3: GUI Versie 0.13.0.3 Beryllium Bullet
   cryptonightv3: Nieuw proof-of-work algoritme CryptoNightV3
   bulletproofs: Implementatie van BulletProofs om de transactiegrootte te verminderen
-  ringsize11: "Netwerkupgrade: minimale ringgrootte verhogen naar 11, BulletProofs\
-    \ integreren, het kostenberekeningsalgoritme bij te werken, PoW-algoritme wijzigen"
+  ringsize11: "Netwerkupgrade: minimale ringgrootte verhogen naar 11, BulletProofs
+    integreren, het kostenberekeningsalgoritme bij te werken, PoW-algoritme wijzigen"
   released-0-13-0-4: Versie 0.13.0.4 Beryllium Bullet
   paper8-9: Papers 8 en 9 van het Monero Research Lab gepubliceerd
   releasedgui-0-13-0-4: GUI Versie 0.13.0.4 Beryllium Bullet
@@ -542,7 +556,7 @@ roadmap:
   cryptonightr: Nieuw proof-of-work algoritme CryptoNightR
   getmonero-pt_br: Getmonero.org vertaald in het Braziliaans-Portugees en Nederlands
   dlsag:
-  pruning:
+  pruning: Blockchain pruning
   trezort:
   nanox:
   tori2p:
@@ -561,10 +575,12 @@ roadmap:
   onionaddress:
   supercop:
   clsag:
-  tryptych:
+  tryptych: 'Triptych: logarithmic-sized linkable ring signatures with applications'
   kastelo:
   layer2:
   returnaddr:
+  bplus: Bulletproofs
+  bp++: Bulletproofs
 
 
 research-lab:
@@ -620,42 +636,41 @@ research-lab:
     Vervolgens vergelijk ik de wiskunde van de ring-handtekening met wat werkelijk
     in de CryptoNote-broncode staat.
   mrl4: Improving Obfuscation in the CryptoNote Protocol
-  mrl4_abstract: "We beschrijven verschillende aanvallen met blockchain-analyse waarmee\
-    \ de onvolgbaarheid van het protocol CryptoNote 2.0 zou kunnen worden aangetast.\
-    \ We analyseren mogelijke oplossingen, bespreken de voor- en nadelen van deze\
-    \ oplossingen en we raden verbeteringen van het Monero-protocol aan waarmee deze\
-    \ cryptovaluta op de lange termijn hopelijk beter bestand zal zijn tegen blockchain-analyse.\
-    \ Onze aanbevolen verbeteringen van Monero zijn onder meer: een minimale mixin\
-    \ van n = 2 externe outputs per ring-handtekening op protocolniveau voor het hele\
-    \ netwerk, een verhoging van deze waarde tot n = 4 op protocolniveau na twee jaar,\
-    \ en voorlopig een standaardwaarde van n = 4 op het niveau van de portemonnee.\
-    \ We raden ook aan om Monero-uitvoer te verzenden in de vorm van een torrent.\
-    \ Verder bespreken we een niet-uniforme, leeftijdsafhankelijke methode om mixins\
-    \ te selecteren, waarmee de andere vormen van blockchain-analyse die hier zijn\
-    \ vermeld, kunnen worden vermeden, maar om verschillende redenen doen we geen\
-    \ formele aanbevelingen over het implementeren hiervan. De consequenties van deze\
-    \ verbeteringen worden ook uitgelegd. Dit onderzoeksbulletin is niet onderworpen\
-    \ aan peer review en geeft alleen de resultaten van intern onderzoek weer."
+  mrl4_abstract: "We beschrijven verschillende aanvallen met blockchain-analyse waarmee
+    de onvolgbaarheid van het protocol CryptoNote 2.0 zou kunnen worden aangetast.
+    We analyseren mogelijke oplossingen, bespreken de voor- en nadelen van deze oplossingen
+    en we raden verbeteringen van het Monero-protocol aan waarmee deze cryptovaluta
+    op de lange termijn hopelijk beter bestand zal zijn tegen blockchain-analyse.
+    Onze aanbevolen verbeteringen van Monero zijn onder meer: een minimale mixin van
+    n = 2 externe outputs per ring-handtekening op protocolniveau voor het hele netwerk,
+    een verhoging van deze waarde tot n = 4 op protocolniveau na twee jaar, en voorlopig
+    een standaardwaarde van n = 4 op het niveau van de portemonnee. We raden ook aan
+    om Monero-uitvoer te verzenden in de vorm van een torrent. Verder bespreken we
+    een niet-uniforme, leeftijdsafhankelijke methode om mixins te selecteren, waarmee
+    de andere vormen van blockchain-analyse die hier zijn vermeld, kunnen worden vermeden,
+    maar om verschillende redenen doen we geen formele aanbevelingen over het implementeren
+    hiervan. De consequenties van deze verbeteringen worden ook uitgelegd. Dit onderzoeksbulletin
+    is niet onderworpen aan peer review en geeft alleen de resultaten van intern onderzoek
+    weer."
   mrl5: Ring Signature Confidential Transactions
-  mrl5_abstract: "In dit artikel wordt een methode geïntroduceerd voor het verbergen\
-    \ van transactiebedragen in de sterk gedecentraliseerde anonieme cryptovaluta\
-    \ Monero. Net als Bitcoin is Monero een cryptovaluta die wordt verspreid via een\
-    \ proces van *mining* voor *proof of work*. Het oorspronkelijke Monero-protocol\
-    \ was gebaseerd op CryptoNote, waarin ring-handtekeningen en eenmalige sleutels\
-    \ worden gebruikt om de herkomst en bestemming van transacties te verbergen. Onlangs\
-    \ heeft Bitcoin Core-ontwikkelaar Gregory Maxwell een methode besproken en geïmplementeerd\
-    \ om het bedrag van een transactie te verbergen met een *commitment scheme* (verbintenis).\
-    \ In dit artikel wordt een nieuw type ring-handtekening beschreven: een *Multi-layered\
-    \ Linkable Spontaneous Anonymous Group*. Hiermee kunnen bedragen, afzenders en\
-    \ ontvangers worden verborgen met redelijke efficiëntie, terwijl de hoeveelheid\
-    \ gegenereerde coins kan worden gecontroleerd zonder dat je iemand hoeft te vertrouwen.\
-    \ Er worden een aantal uitbreidingen van het protocol voorgesteld, namelijk *Aggregate\
-    \ Schnorr Range Proofs* en *Ring Multisignature*. De auteur wil hierbij aantekenen\
-    \ dat vroege schetsen van dit artikel zijn gepubliceerd binnen de Monero-community\
-    \ en op het IRC-kanaal bitcoin-research. Hashes op de blockchain van schetsen\
-    \ zijn beschikbaar in [14], waaruit blijkt dat dit werk is begonnen in de zomer\
-    \ van 2015 en voltooid in het begin van oktober 2015. Er is ook een e-print beschikbaar\
-    \ op http://eprint.iacr.org/2015/1098."
+  mrl5_abstract: "In dit artikel wordt een methode geïntroduceerd voor het verbergen
+    van transactiebedragen in de sterk gedecentraliseerde anonieme cryptovaluta Monero.
+    Net als Bitcoin is Monero een cryptovaluta die wordt verspreid via een proces
+    van *mining* voor *proof of work*. Het oorspronkelijke Monero-protocol was gebaseerd
+    op CryptoNote, waarin ring-handtekeningen en eenmalige sleutels worden gebruikt
+    om de herkomst en bestemming van transacties te verbergen. Onlangs heeft Bitcoin
+    Core-ontwikkelaar Gregory Maxwell een methode besproken en geïmplementeerd om
+    het bedrag van een transactie te verbergen met een *commitment scheme* (verbintenis).
+    In dit artikel wordt een nieuw type ring-handtekening beschreven: een *Multi-layered
+    Linkable Spontaneous Anonymous Group*. Hiermee kunnen bedragen, afzenders en ontvangers
+    worden verborgen met redelijke efficiëntie, terwijl de hoeveelheid gegenereerde
+    coins kan worden gecontroleerd zonder dat je iemand hoeft te vertrouwen. Er worden
+    een aantal uitbreidingen van het protocol voorgesteld, namelijk *Aggregate Schnorr
+    Range Proofs* en *Ring Multisignature*. De auteur wil hierbij aantekenen dat vroege
+    schetsen van dit artikel zijn gepubliceerd binnen de Monero-community en op het
+    IRC-kanaal bitcoin-research. Hashes op de blockchain van schetsen zijn beschikbaar
+    in [14], waaruit blijkt dat dit werk is begonnen in de zomer van 2015 en voltooid
+    in het begin van oktober 2015. Er is ook een e-print beschikbaar op http://eprint.iacr.org/2015/1098."
   mrl6: An Efficient Implementation of Monero Subaddresses
   mrl6_abstract: Gebruikers van de cryptovaluta Monero die adressen willen hergebruiken
     zonder dat ze aan elkaar kunnen worden gekoppeld, moeten afzonderlijke portemonnees
@@ -732,9 +747,10 @@ specs:
   pow_title: Proof of Work
   block_emission_title: Uitgiftecurve
   block_emission_main: "Eerst de gewone curve: ~18.132 miljoen coins eind mei 2022"
-  block_emission_tail: "Daarna de blijvende uitgifte: 0,6 XMR per blok om de 2 minuten,\
-    \ nadat de gewone uitgifte klaar is, wat een steeds verder dalende inflatie van\
-    \ < 1% oplevert."
+  block_emission_tail: "Daarna de blijvende uitgifte: 0,6 XMR per blok om de 2 minuten,
+    nadat de gewone uitgifte klaar is, wat een steeds verder dalende inflatie van
+    < 1% oplevert."
+  privacytech_tor-i2p: Transactions over Tor/I2P
 library:
   description: "Hier volgen publicaties, boeken en tijdschriften die je kunt downloaden."
   books: Boeken
@@ -821,5 +837,10 @@ moneropedia:
 blog:
   author: Geplaatst door
   date: Geplaatst op
+  community: Community
 tags:
   notags: Er zijn geen posts voor deze tag.
+footer:
+  legal: Juridisch
+  source: Source Code
+  ccs: Bekijk het Forum Funding System

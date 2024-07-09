@@ -74,13 +74,13 @@ home:
   faq_para: Im Laufe der Zeit haben wir viele Fragen gehört und hier diejenigen zusammengestellt,
     die häufig vorkamen. Keine Sorge – wenn du eine Frage hast, die hier nicht beantwortet
     ist, hilft dir die Community gerne weiter.
-  guides_para: "Die Community hat eine Fülle an Leitfäden und Dokumentationen gesammelt.\
-    \ Nutzer können unter \"Anleitungen für Nutzer\" wertvolle Informationen und Tipps\
-    \ über die geläufigsten Fragestellungen und Einstellungen finden. Entwickler können\
-    \ alles finden, was sie benötigen, um auf Basis von Monero zu arbeiten und mit\
-    \ dem Netzwerk zu interagieren. Die Bibliothek bietet Veröffentlichungen und Bücher\
-    \ zum kostenlosen Download an, hier sind auch die Vollausgaben der \"Mastering\
-    \ Monero\"- und \"Zero to Monero\"-Bücher enthalten."
+  guides_para: "Die Community hat eine Fülle an Leitfäden und Dokumentationen gesammelt.
+    Nutzer können unter \"Anleitungen für Nutzer\" wertvolle Informationen und Tipps
+    über die geläufigsten Fragestellungen und Einstellungen finden. Entwickler können
+    alles finden, was sie benötigen, um auf Basis von Monero zu arbeiten und mit dem
+    Netzwerk zu interagieren. Die Bibliothek bietet Veröffentlichungen und Bücher
+    zum kostenlosen Download an, hier sind auch die Vollausgaben der \"Mastering Monero\"\
+    - und \"Zero to Monero\"-Bücher enthalten."
   guides: Leitfäden und Ressourcen
   answers: Finde Antworten zu deinen Fragen
   merchants: Händler
@@ -210,8 +210,6 @@ sponsorships:
     und hier genannt werden willst, sende bitte eine E-Mail an dev@getmonero.org.
   macstadium: MacStadium sponsert einen zweckbestimmten Mac Mini, der zur Mac-bezogenen
     Entwicklung verwendet wird.
-  forknetworking: Fork Networking stellt einen Server bereit, der für die Entwicklung
-    genutzt wird.
   symas: Symas sponsert seinen CTO Howard Chu (hyc) für dessen Arbeit an Moneros Codebasis.
   tari: Tari Labs sponsert den von dieser Webseite genutzten CDN.
   pastsponsors: Bisherige Sponsoren
@@ -275,9 +273,6 @@ team:
   space_descr: Monero Space ist eine aktive, projektbezogene Monero-Arbeitsgruppe,
     die Dienste für die Monero-Community bereitstellt. Sie hostet beliebte Ressourcen
     und organisiert Veranstaltungen wie das Monero Meet.
-  outreach_descr: Diese Arbeitsgruppe konzentriert sich darauf Monero bekannt zu machen
-    und versammelt Künstler, Schriftsteller und jeden der Monero in der Welt bekannt
-    machen möchte.
   community_descr: Diese Arbeitsgruppe wird von der Community genutzt, um sich zu
     organisieren und zu koordinieren. Fange hier an, wenn Du kein Programmierer bist,
     aber etwas zu Monero beitragen möchtest.
@@ -302,11 +297,6 @@ team:
   localization_start: Kontaktiere die Arbeitsgruppe im Chatroom oder erstelle einen
     Eintrag im GitHub-Repository. Du kannst auch sofort mit der Übersetzung über die
     Weblate-Plattform beginnen. Lies dazu bitte zuerst den Leitfaden für Übersetzer.
-  outreach_start: Die Mitglieder der Outreach-Arbeitsgruppe nutzen vor allem Telegram
-    für die Koordination und Matrix/Freenode zu einem kleinen Teil. Falls Du helfen
-    willst, kannst Du die Arbeitsgruppe über einen dieser Kanäle kontaktieren. Sie
-    ist recht strukturiert, so dass Du wahrscheinlich an einen Koordinator weitergeleitet
-    wirst.
   mrw: Arbeitsgruppe zur Eindämmung von Malware
   mrw_descr: Die Arbeitsgruppe zur Eindämmung von Malware bietet Ressourcen und Live-Support
     für verschiedene Arten von Monero-bezogener Malware.
@@ -513,44 +503,44 @@ accepting:
   merchantsreceive: Solltest du mit deinem Unternehmen @Transaktionen empfangen oder
     erweiterte Funktionen - wie etwa Multisignatur - nutzen wollen, ist es empfehlenswert,
     die
-  clinotes: "Beachte, dass die untenstehenden Anleitungen lediglich die wichtigsten\
-    \ Informationen zum Erstellen und Nutzen von Konten/Subadressen enthalten. Das\
-    \ CLI-Wallet ermöglicht einen noch feineren Umgang mit Konten und dem Wallet selbst.\
-    \ Nutze den Befehl \"help\", um alle verfügbaren Optionen aufzulisten.\n"
-  cliindex1: "Jedes Konto kann quasi unendlich viele Subadressen enthalten. Diese\
-    \ funktionieren genauso wie normale Konten; du kannst beliebig viele erstellen\
-    \ und sie dann nutzen, um XMR auf dem Konto, mit dem sie verbunden sind, zu empfangen.\n"
-  cliindex: "Wie du auf dem Bild oberhalb erkennen kannst, hat jedes Konto eine Indexnummer.\
-    \ Mit dieser kannst du von einem Konto zu einem anderen wechseln, indem du den\
-    \ Befehl `account switch [index]` ausführst. Möchtest du beispielsweise, bezogen\
-    \ auf das obige Bild, zum Spendenkonto wechseln, um dieses zu überprüfen, kannst\
-    \ du das tun, indem du deinem CLI folgenden Befehl gibst: `account switch 1`.\
-    \ Nun befindest du dich in deinem Spendenkonto und kannst es auf der Stelle verwenden.\n"
+  clinotes: "Beachte, dass die untenstehenden Anleitungen lediglich die wichtigsten
+    Informationen zum Erstellen und Nutzen von Konten/Subadressen enthalten. Das CLI-Wallet
+    ermöglicht einen noch feineren Umgang mit Konten und dem Wallet selbst. Nutze
+    den Befehl \"help\", um alle verfügbaren Optionen aufzulisten.\n"
+  cliindex1: "Jedes Konto kann quasi unendlich viele Subadressen enthalten. Diese
+    funktionieren genauso wie normale Konten; du kannst beliebig viele erstellen und
+    sie dann nutzen, um XMR auf dem Konto, mit dem sie verbunden sind, zu empfangen.\n"
+  cliindex: "Wie du auf dem Bild oberhalb erkennen kannst, hat jedes Konto eine Indexnummer.
+    Mit dieser kannst du von einem Konto zu einem anderen wechseln, indem du den Befehl
+    `account switch [index]` ausführst. Möchtest du beispielsweise, bezogen auf das
+    obige Bild, zum Spendenkonto wechseln, um dieses zu überprüfen, kannst du das
+    tun, indem du deinem CLI folgenden Befehl gibst: `account switch 1`. Nun befindest
+    du dich in deinem Spendenkonto und kannst es auf der Stelle verwenden.\n"
   clicreateaccount1: Nun hast du ein weiteres Konto, welches von deinem Hauptkonto
     separiert ist. Du kannst die Konten jederzeit wechseln.
   clicreateaccount: 'Um ein Konto zu erstellen, führe ganz einfach diesen Befehl aus:'
-  cliaccounts: "Du kannst weitaus mehr Kontrolle haben, wenn du dies wünschst. Monero\
-    \ bietet die Möglichkeit, mehrere Konten zu erstellen, die jeweils vielfache Subadressen\
-    \ haben - sinnvoll, wenn du verschiedene Konten nutzen möchtest. Beispielsweise\
-    \ möchtest du eventuell ein @Konto zum Empfangen von Zuwendungen und ein anderes\
-    \ für den täglichen Gebrauch haben. Dies erlaubt dir, eingehende Geldbeträge auf\
-    \ deinem Zuwendungskonto bequem nachzuverfolgen, ohne, dass diese mit deinem Hauptkonto\
-    \ vermischt werden.\n"
-  clicreatewallet: "Wenn du dein Wallet zum ersten Mal erstellst, wird dir automatisch\
-    \ eine @Adresse angezeigt. Dies ist deine Hauptadresse. Wenn du möchtest, kannst\
-    \ du ganz einfach ebendiese Adresse nutzen, um Zahlungen zu empfangen. Du solltest\
-    \ darauf achten, wer genau diese Adresse kennt (eine Adresse an verschiedenen\
-    \ Orten kann in Verbindung gebracht werden), du musst dir jedoch keine Gedanken\
-    \ über Blockchain-Beobachter machen, die Transaktionen zu dieser Adresse überwachen,\
-    \ wie es bei Bitcoin der Fall sein kann. Ein Freund kann Transaktionen zu derselben\
-    \ Adresse tätigen, ohne reduzierte Privatsphäre.\n"
+  cliaccounts: "Du kannst weitaus mehr Kontrolle haben, wenn du dies wünschst. Monero
+    bietet die Möglichkeit, mehrere Konten zu erstellen, die jeweils vielfache Subadressen
+    haben - sinnvoll, wenn du verschiedene Konten nutzen möchtest. Beispielsweise
+    möchtest du eventuell ein @Konto zum Empfangen von Zuwendungen und ein anderes
+    für den täglichen Gebrauch haben. Dies erlaubt dir, eingehende Geldbeträge auf
+    deinem Zuwendungskonto bequem nachzuverfolgen, ohne, dass diese mit deinem Hauptkonto
+    vermischt werden.\n"
+  clicreatewallet: "Wenn du dein Wallet zum ersten Mal erstellst, wird dir automatisch
+    eine @Adresse angezeigt. Dies ist deine Hauptadresse. Wenn du möchtest, kannst
+    du ganz einfach ebendiese Adresse nutzen, um Zahlungen zu empfangen. Du solltest
+    darauf achten, wer genau diese Adresse kennt (eine Adresse an verschiedenen Orten
+    kann in Verbindung gebracht werden), du musst dir jedoch keine Gedanken über Blockchain-Beobachter
+    machen, die Transaktionen zu dieser Adresse überwachen, wie es bei Bitcoin der
+    Fall sein kann. Ein Freund kann Transaktionen zu derselben Adresse tätigen, ohne
+    reduzierte Privatsphäre.\n"
   cliinstructions: Anleitungen für das CLI-Wallet
   guiol4: Warte, bis die Zahlung eingegangen und ausreichend bestätigt ist (je mehr
     Bestätigungen, desto sicherer ist die Transaktion. Du benötigst mindestens 10
     Bestätigungen, bevor du das Geld nutzen kannst).
-  guiol3: "Gebe den zu erhaltenden Betrag ein und teile anschließend die Zahlungs-URL\
-    \ oder den QR-Code mit dem Zahler. Wenn du die Zahlung in Echtzeit verfolgen möchtest,\
-    \ wähle die 'enable sales tracker'-Option aus."
+  guiol3: "Gebe den zu erhaltenden Betrag ein und teile anschließend die Zahlungs-URL
+    oder den QR-Code mit dem Zahler. Wenn du die Zahlung in Echtzeit verfolgen möchtest,
+    wähle die 'enable sales tracker'-Option aus."
   guiol2: Wenn du den zu empfangenden Betrag festlegen möchtest, gehe auf die "Händler"-Seite
     (nachdem du auf der "Empfangen"-Seite das @Konto ausgewählt hast, welches du nutzen
     möchtest, um die XMR zu erhalten).
@@ -561,23 +551,23 @@ accepting:
     du deine Coins erhalten möchtest.
   guisteps: 'Diese zwei Seiten ermöglichen jedem das einfache Empfangen von XMR, indem
     diese Schritte befolgt werden:'
-  guimerchant1: "Hierbei handelt es sich um eine POS-ähnliche Seite, mit der der Händler\
-    \ leicht die Menge an XMR einstellen kann, die er erhalten möchte. Wenn die Option\
-    \ 'Sale tracker' aktiviert ist, sehen Sie die Zahlungen, während sie in Echtzeit\
-    \ in Ihrer Brieftasche ankommen, zusammen mit der Anzahl der Bestätigungen.\n"
+  guimerchant1: "Hierbei handelt es sich um eine POS-ähnliche Seite, mit der der Händler
+    leicht die Menge an XMR einstellen kann, die er erhalten möchte. Wenn die Option
+    'Sale tracker' aktiviert ist, sehen Sie die Zahlungen, während sie in Echtzeit
+    in Ihrer Brieftasche ankommen, zusammen mit der Anzahl der Bestätigungen.\n"
   guilinkguide1: oben verlinkten Anleitung erklärt
   guimerchant: Händler werden es vermutlich praktischer finden, die "Händler"-Seite
     (Screenshot siehe unten) zu nutzen, welche detailliert im "Händleransicht"-Abschnitt
     der
-  guiinstructions: "Um XMR zu empfangen musst du dem Käufer lediglich eine @Adresse\
-    \ nennen, an die er den jeweiligen Betrag senden kann. In den meisten Fällen ist\
-    \ es bequemer, einen QR-Code zu teilen und diesen den Bezahlenden scannen zu lassen,\
-    \ anstatt den alphanumerischen String zu kopieren und einzufügen. Mit dem GUI-Wallet\
-    \ kommt jede generierte Adresse mit ihrem eigenen QR-Code. Lasse die Person diesen\
-    \ QR-Code mit dem Monero-@Wallet auf dem Telefon scannen und empfange so deine\
-    \ XMR innerhalb von Minuten. Vergiss nicht, dass du so viele Adressen (Subadressen)\
-    \ erstellen kannst, wie du möchtest. Das ist sinnvoll, falls du dein Guthaben\
-    \ aus irgendeinem Grund separieren möchtest.\n"
+  guiinstructions: "Um XMR zu empfangen musst du dem Käufer lediglich eine @Adresse
+    nennen, an die er den jeweiligen Betrag senden kann. In den meisten Fällen ist
+    es bequemer, einen QR-Code zu teilen und diesen den Bezahlenden scannen zu lassen,
+    anstatt den alphanumerischen String zu kopieren und einzufügen. Mit dem GUI-Wallet
+    kommt jede generierte Adresse mit ihrem eigenen QR-Code. Lasse die Person diesen
+    QR-Code mit dem Monero-@Wallet auf dem Telefon scannen und empfange so deine XMR
+    innerhalb von Minuten. Vergiss nicht, dass du so viele Adressen (Subadressen)
+    erstellen kannst, wie du möchtest. Das ist sinnvoll, falls du dein Guthaben aus
+    irgendeinem Grund separieren möchtest.\n"
   guilinkguide: in der Anleitung des GUI erklärt.
   gui2: Die (unten angezeigte) Empfangen-Seite wird detailliert
   gui1: 'Das Akzeptieren einer Zahlung mit dem GUI ist sehr einfach. Egal, ob du ein
@@ -639,11 +629,11 @@ contributing:
   supportdev_p2: Du findest (neben weiteren nützlichen Statistiken) eine Übersicht
     der Leute, die gerade an den Monero-Repositories mitwirken oder zuvor mitgewirkt
     haben, auf
-  develop_descr: "Diese Liste enthält lediglich die vom Kernteam betreuten Tools,\
-    \ das Monero-Ökosystem ist jedoch weitaus umfangreicher. Menschen können zur Entwicklung\
-    \ von Bibliotheken, Diensten, Dokumentationen, Grafiken usw. beitragen. Die Liste\
-    \ ist praktisch unendlich. Kontaktiere die Arbeitsgruppe(n), zu welchen du beitragen\
-    \ möchtest, oder tritt diesen bei.\n"
+  develop_descr: "Diese Liste enthält lediglich die vom Kernteam betreuten Tools,
+    das Monero-Ökosystem ist jedoch weitaus umfangreicher. Menschen können zur Entwicklung
+    von Bibliotheken, Diensten, Dokumentationen, Grafiken usw. beitragen. Die Liste
+    ist praktisch unendlich. Kontaktiere die Arbeitsgruppe(n), zu welchen du beitragen
+    möchtest, oder tritt diesen bei.\n"
   supportdev_p: Die Entwickler, die an Monero arbeiten, sind hauptsächlich unabhängige
     Freiwillige, manche von ihnen werden jedoch durch CCS-Vorschläge finanziert. Wenn
     du ein paar XMR spenden und damit ihren Einsatz unterstützen möchtest, kannst
@@ -652,10 +642,10 @@ contributing:
   mine_link: Seite zum Thema Mining.
   altqrmonero: Monero QR-Code
   altqrbitcoin: Bitcoin QR-Code
-  mine_p: "Mining gewährleistet die Netzwerksicherheit. Monero benutzt den ASIC-resistenten\
-    \ Algorithmus @randomx, entwickelt durch Monero-Mitwirkende, mit der Absicht daß\
-    \ gängige Hardware diesen für Mining stets verwenden können. Für mehr Info über\
-    \ Mining siehe die\n"
+  mine_p: "Mining gewährleistet die Netzwerksicherheit. Monero benutzt den ASIC-resistenten
+    Algorithmus @randomx, entwickelt durch Monero-Mitwirkende, mit der Absicht daß
+    gängige Hardware diesen für Mining stets verwenden können. Für mehr Info über
+    Mining siehe die\n"
 faq:
   q1: Wie erhält Monero einen Wert?
   a1: Monero hat einen Wert, weil es Menschen gibt, die es kaufen wollen. Gäbe es
@@ -750,18 +740,18 @@ faq:
     extrahieren. Die Attacken werden nur stärker werden. Auch wenn du angeschnallt
     bist, kannst du trotzdem bei einem Unfall ums Leben kommen. Nutze deinen gesunden
     Menschenverstand und gehe mit ausgiebiger Vorsicht und Vernunft vor.
-  aimporting: "Ja, das kannst du zwar, solltest du wahrscheinlich aber eher nicht\
-    \ machen. Das Importieren einer externen @Blockchain ist sehr rechenintensiv und\
-    \ zwingt dich dazu, derjenigen Instanz zu vertrauen, die die Blockchain bereitstellt.\
-    \ Es ist üblicherweise schneller, sie ganz normal herunterzuladen, also einen\
-    \ Node zu betreiben und mit anderen @Nodes im Netzwerk zu synchronisieren. Solltest\
-    \ du wirklich eine externe Blockchain importieren müssen, kannst du eine auf der\
-    \ <a href=\"{{ site.baseurl }}/downloads/#blockchain\">\"Downloads\"-Seite</a>\
-    \ dieser Webseite herunterladen. Folge der untenstehenden Anleitung, wenn du Windows\
-    \ nutzt. Fall du Linux-Nutzer bist, kannst du das \"monero-blockchain-import\"\
-    -Tool, welches beim Download der GUI- oder CLI-Wallets im Archiv enthalten ist,\
-    \ verwenden. Starte die Synchronisation der importierten Blockchain mit folgendem\
-    \ Befehl: \"monero-blockchain-import --input-file blockchain.raw\".\n"
+  aimporting: "Ja, das kannst du zwar, solltest du wahrscheinlich aber eher nicht
+    machen. Das Importieren einer externen @Blockchain ist sehr rechenintensiv und
+    zwingt dich dazu, derjenigen Instanz zu vertrauen, die die Blockchain bereitstellt.
+    Es ist üblicherweise schneller, sie ganz normal herunterzuladen, also einen Node
+    zu betreiben und mit anderen @Nodes im Netzwerk zu synchronisieren. Solltest du
+    wirklich eine externe Blockchain importieren müssen, kannst du eine auf der <a
+    href=\"{{ site.baseurl }}/downloads/#blockchain\">\"Downloads\"-Seite</a> dieser
+    Webseite herunterladen. Folge der untenstehenden Anleitung, wenn du Windows nutzt.
+    Fall du Linux-Nutzer bist, kannst du das \"monero-blockchain-import\"-Tool, welches
+    beim Download der GUI- oder CLI-Wallets im Archiv enthalten ist, verwenden. Starte
+    die Synchronisation der importierten Blockchain mit folgendem Befehl: \"monero-blockchain-import
+    --input-file blockchain.raw\".\n"
   qimporting: Kann ich die Blockchain manuell importieren?
   amoneromeaning: Monero ist ein Wort in Esperanto und bedeutet "Münze". Ursprünglich
     hieß Monero "Bitmonero", was sich auf Esperanto als "Bitcoin" übersetzen lässt.
@@ -913,11 +903,11 @@ faq:
   aavailable: auch verfügbar in
   video_intro: Einführung in Monero
   video_ringsig: Ringsignaturen
-  avideos: "Im Laufe der Jahre hat die Community eine große Menge an informativen\
-    \ Inhalten wie Artikel und Videos erstellt. Die meisten dieser Videos sind auf\
-    \ Plattformen wie YouTube öffentlich zugänglich. Auf dieser Website hosten wir\
-    \ ein paar Videos, die die Grundlagen von Monero erklären. Um ihre Wirksamkeit\
-    \ zu optimieren, sollten sie nacheinander angesehen werden:\n"
+  avideos: "Im Laufe der Jahre hat die Community eine große Menge an informativen
+    Inhalten wie Artikel und Videos erstellt. Die meisten dieser Videos sind auf Plattformen
+    wie YouTube öffentlich zugänglich. Auf dieser Website hosten wir ein paar Videos,
+    die die Grundlagen von Monero erklären. Um ihre Wirksamkeit zu optimieren, sollten
+    sie nacheinander angesehen werden:\n"
   qvideos: Gibt es Videos, die ich mir ansehen kann, um mehr über Monero zu erfahren?
   qhf: Stimmt es, dass Monero alle 6 Monate einen Hard Fork hat?
   mvideos: 'Mehr Informationen im Moneropedia-Eintrag:'
@@ -938,6 +928,10 @@ faq:
     in einer geringeren und weniger strengen Frequenz (alle 9-12 Monate). Der letzte
     Hard Fork war am 18. Oktober 2020.
   video_sa: Schattenadressen
+  privacy: Datenschutz
+  security: Sicherheit
+  wallets: Wallets
+  node: Node
 mining:
   intro1: Monero ist eine Kryptowährung, die auf Proof-of-Work-Mining zurückgreift,
     um einen dezentralen Konsens zu erreichen. Weiter unten findest du weitere Informationen
@@ -948,6 +942,7 @@ mining:
   software: Mining-Software
   software_para: Beachte, dass einige Miningprogramme Gebühren für deren Entwickler
     abführen können.
+  pow: Proof of Work
 using: {}
 what-is-monero:
   need-to-know: Was du wissen solltest
@@ -982,6 +977,8 @@ what-is-monero:
   grassroots_p4: 500 Entwicklern
   grassroots_p6: Zahlreiche
   joinb: Trete einer Arbeitsgruppe bei
+  grassroots_p2: Research Lab
+  aboutb: Über
 about:
   history: Überblick über die Geschichte
   history_para1: 'Monero wurde im April 2014 veröffentlicht. Es war ein fairer, vorher
@@ -1106,6 +1103,7 @@ user-guides:
   guiguide: Anleitung für das Monero-GUI-Wallet
   node-i2pzero: Betreiben eines Monero-Nodes via I2P mit I2P-zero
   back: Zurück zur Liste
+  hardwarewallet: Hardware-Wallets
 roadmap:
   completed: Abgeschlossene Aufgabe
   ongoing: Laufende Aufgabe
@@ -1223,6 +1221,7 @@ roadmap:
   feb: Februar
   jan: Januar
   bplus: Bulletproofs+
+  bp++: Bulletproofs+
 research-lab:
   intro: Monero widmet sich nicht nur einer fungiblen Währung, sondern auch einer
     kontinuierlichen Forschung im Bereich des finanziellen Datenschutzes, da dies
@@ -1364,26 +1363,26 @@ research-lab:
     bestimmen Äquivalent) über beide Skalargruppen ist.
   iacr2020018: 'Triptych: verknüpfbare Ringsignaturen in logarithmischer Größe und
     mit Anwendungssoftwares'
-  iacr2020018_abstract: "Ringsignaturen sind eine gebräuchliche Konstruktion, die\
-    \ verwendet wird, um dem Unterzeichner Mehrdeutigkeit zwischen einem nicht interaktiven\
-    \ Satz öffentlicher Schlüssel zu bieten, die zum Zeitpunkt der Unterzeichnung\
-    \ festgelegt werden. Im Gegensatz zu frühen Ansätzen, bei denen die Größe der\
-    \ Signatur linear in der Größe des Anonymitätssatzes des Unterzeichners ist, erfordern\
-    \ aktuelle optimale Lösungen entweder zentralisierte vertrauenswürdige Einrichtungen\
-    \ oder erzeugen Signaturen mit logarithmischer Größe. Allerdings bieten nur wenige\
-    \ auch die Verknüpfbarkeit, eine Eigenschaft, mit der festgestellt werden kann,\
-    \ ob der Unterzeichner einer Nachricht eine frühere Nachricht signiert hat, möglicherweise\
-    \ mit Einschränkungen bei der Wahl des Anonymitätssatzes. Hier stellen wir Triptych\
-    \ vor, eine Familie von verknüpfbaren Ringsignaturen ohne vertrauenswürdigen Aufbau,\
-    \ die auf Verallgemeinerungen von Null-Wissens-Beweisen der Kenntnis von Verpflichtungseröffnungen\
-    \ auf Null basiert. Wir demonstrieren Anwendungen von Triptychch in Transaktionsprotokollen,\
-    \ die für den Unterzeichner unzweideutig sind, indem wir die Konstruktion auf\
-    \ Öffnungen paralleler Verpflichtungen in unabhängigen Anonymitätssätzen erweitern.\
-    \ Die Unterschriften sind in der Größe des Anonymitätssatzes logarithmisch, und\
-    \ während die Verifikationskomplexität linear ist, können Sammlungen von Beweisen\
-    \ effizient in Stapeln verifiziert werden. Wir zeigen, dass Triptych für Anonymitätssatzgrößen,\
-    \ die für die Verwendung in verteilten Protokollen praktisch sind, eine konkurrenzfähige\
-    \ Leistung mit einer einfachen Konstruktion bietet."
+  iacr2020018_abstract: "Ringsignaturen sind eine gebräuchliche Konstruktion, die
+    verwendet wird, um dem Unterzeichner Mehrdeutigkeit zwischen einem nicht interaktiven
+    Satz öffentlicher Schlüssel zu bieten, die zum Zeitpunkt der Unterzeichnung festgelegt
+    werden. Im Gegensatz zu frühen Ansätzen, bei denen die Größe der Signatur linear
+    in der Größe des Anonymitätssatzes des Unterzeichners ist, erfordern aktuelle
+    optimale Lösungen entweder zentralisierte vertrauenswürdige Einrichtungen oder
+    erzeugen Signaturen mit logarithmischer Größe. Allerdings bieten nur wenige auch
+    die Verknüpfbarkeit, eine Eigenschaft, mit der festgestellt werden kann, ob der
+    Unterzeichner einer Nachricht eine frühere Nachricht signiert hat, möglicherweise
+    mit Einschränkungen bei der Wahl des Anonymitätssatzes. Hier stellen wir Triptych
+    vor, eine Familie von verknüpfbaren Ringsignaturen ohne vertrauenswürdigen Aufbau,
+    die auf Verallgemeinerungen von Null-Wissens-Beweisen der Kenntnis von Verpflichtungseröffnungen
+    auf Null basiert. Wir demonstrieren Anwendungen von Triptychch in Transaktionsprotokollen,
+    die für den Unterzeichner unzweideutig sind, indem wir die Konstruktion auf Öffnungen
+    paralleler Verpflichtungen in unabhängigen Anonymitätssätzen erweitern. Die Unterschriften
+    sind in der Größe des Anonymitätssatzes logarithmisch, und während die Verifikationskomplexität
+    linear ist, können Sammlungen von Beweisen effizient in Stapeln verifiziert werden.
+    Wir zeigen, dass Triptych für Anonymitätssatzgrößen, die für die Verwendung in
+    verteilten Protokollen praktisch sind, eine konkurrenzfähige Leistung mit einer
+    einfachen Konstruktion bietet."
   cryptonote: CryptoNote-Whitepapers
   cryptonote-whitepaper: CryptoNote-Whitepaper
   cryptonote-whitepaper_para: Dies ist die originale Abhandlung über CryptoNote, welche
@@ -1544,12 +1543,12 @@ moneropedia:
     viewkey: View-Key
     wallet: Wallet
   back: Zurück zum Moneropedia
-  description: "Die Terminologie rund um Monero kann ziemlich komplex und fachspezifisch\
-    \ sein. Die Community hat mit dem Moneropedia ein Hilfsmittel erschaffen, in welchem\
-    \ die Begrifflichkeiten auf einfache Weise erklärt werden. Unten findest du alle\
-    \ Moneropedia-Einträge in alphabetischer Reihenfolge aufgelistet. Solltest du\
-    \ einen bereits bestehenden Eintrag bearbeiten oder einen neuen hinzufügen wollen,\
-    \ klicke unten auf den Button.\n"
+  description: "Die Terminologie rund um Monero kann ziemlich komplex und fachspezifisch
+    sein. Die Community hat mit dem Moneropedia ein Hilfsmittel erschaffen, in welchem
+    die Begrifflichkeiten auf einfache Weise erklärt werden. Unten findest du alle
+    Moneropedia-Einträge in alphabetischer Reihenfolge aufgelistet. Solltest du einen
+    bereits bestehenden Eintrag bearbeiten oder einen neuen hinzufügen wollen, klicke
+    unten auf den Button.\n"
   instructions: Anleitungen zur Hinzufügung eines Moneropedia-Eintrags sind im
 blog:
   author: Veröffentlicht von

@@ -121,8 +121,8 @@ home:
   visitmrl: 'Vizitu la ELM'
   contributing: 'Kontribui'
   meetcommunity: "Renkontu la komunumon!"
-  meetus: "La anoj de la Monera komunumo estas ĉie en la mondo. Vi povas trovi nin\
-    \ en diversaj platformoj. Venu renkonti nin!"
+  meetus: "La anoj de la Monera komunumo estas ĉie en la mondo. Vi povas trovi nin
+    en diversaj platformoj. Venu renkonti nin!"
   hangouts: 'Babilejoj'
   morevideos: 'Ĉu vi serĉas pli da klarigaj videoj?'
 
@@ -167,8 +167,8 @@ merchants:
   useit: "Komercistoj, kiuj akceptas Moneron"
   use: 'Dum jaroj ĉiuspecaj komercistoj komencis valori la financan privatecon, kiun
     Monero donas. Fakte komercista adopto senĉese pliiĝas.'
-  dirdescr: "Se vi serĉas lokojn por elspezi viajn Monerojn, la jenaj dosierujoj havas\
-    \ kelkajn opciojn. Bonvolu memori esplori antaŭ konfidi al ili vian monon:"
+  dirdescr: "Se vi serĉas lokojn por elspezi viajn Monerojn, la jenaj dosierujoj havas
+    kelkajn opciojn. Bonvolu memori esplori antaŭ konfidi al ili vian monon:"
   descrp2p: 'La plej bona maniero interŝanĝi Moneron kontraŭ aliaj valutoj (aŭ inverse)
     estas uzi P2P-ŝanĝejojn, ĉar ili lasas al komercistoj rekte interagi unu kun la
     alia, sen la bezono de krompersono (escepte eble por havigi garantian servon).
@@ -211,7 +211,6 @@ sponsorships:
     sendi retmesaĝon al dev@getmonero.org.'
   tari: 'Tari Labs sponsoras la CDN uzitan de ĉi tiu retejo.'
   symas: 'Symas sponsoras ĝian ĉefan teknologiiston (hyc) por lia laboro pri la Monero-kodaro.'
-  forknetworking: 'Fork Networking provizas servilon, kiu estas uzita por disvolvigo.'
   macstadium: 'MacStadium sponsoras dediĉitan Mac Mini, kiu estas uzita por Mac-rilata
     disvolvigo.'
 
@@ -245,10 +244,10 @@ team:
     aliĝi al la babilejoj kaj prezenti vin, dirante viajn interesojn kaj la kapablojn,
     kiujn vi ŝatus oferi al la komunumo.'
   devworkgroup: 'Disvolvada Laborgrupo'
-  devworkgroup_descr: "Ĉu tiu laborgrupo unuigas Monero-disvolvistojn, kiuj laboras\
-    \ pri la monujoj kaj demono subtenitaj de la Kerna Teamo. Ĝi konsistas el du ĉefaj\
-    \ partoj: la teamo pri la komandlinia interfaco kaj la teamo pri la grafika interfaco.\
-    \ Ĉi tiuj teamoj kunordigas sin uzante du malsamajn babilejojn."
+  devworkgroup_descr: "Ĉu tiu laborgrupo unuigas Monero-disvolvistojn, kiuj laboras
+    pri la monujoj kaj demono subtenitaj de la Kerna Teamo. Ĝi konsistas el du ĉefaj
+    partoj: la teamo pri la komandlinia interfaco kaj la teamo pri la grafika interfaco.
+    Ĉi tiuj teamoj kunordigas sin uzante du malsamajn babilejojn."
   devworkgroup_start: 'Estas bona ideo rigardeti la malfermitajn problemojn en ambaŭ
     deponejoj por havi ideon pri kio povus esti riparita aŭ plibonigita. Ambaŭ kodaroj,
     sed speciale la kerna deponejo, povas esti tre defiaj, do oni sugestas unue skribi
@@ -272,12 +271,6 @@ team:
     en la GitHub-deponejo. Vi ankaŭ povas ektraduki uzante la Weblate-platformon.
     Nur certigu legi la gvidilon por tradukistoj antaŭe.'
   locplatform: "Lokaliga platformo:"
-  outreach_descr: 'Ĉi tiu laborgrupo fokusiĝas pri disvastigi Moneron, arigante artistojn,
-    skribistojn kaj ĉiun ajn, kiu deziras igi Moneron konata por la mondo.'
-  outreach_start: 'La anoj de la Disvastiga Laborgrupo multe uzas Telegramon por kunordigado
-    kaj malpli uzas matrix/freenode. Se vi volas helpi, vi povas kontakti la laborgrupon
-    per unu el ĉi tiuj kanaloj. Ĝi estas tre strukturita, do vi eble estos kondukita
-    al kunordigisto.'
   telegram: "Telegram-babilejo:"
   mrl_descr: 'Kiel la nomo sugestas, la Esplorada Laboratorio de Monero estas la laborgrupo
     fokusita pri Monero-rilataj esploroj. Ĝi konsistas el scienculoj, kiuj serĉas
@@ -368,7 +361,7 @@ downloads:
   showhash3: ''
   showhash4: ""
   mobilelight1: ''
-  mobilelight2: ''
+  mobilelight2: 'Babilejoj'
   mobilelight3: ''
   installer: ''
   avwarning: ''
@@ -400,7 +393,7 @@ press-kit:
   intro: ''
   intro2: ''
   intro3: ''
-  intro4: ''
+  intro4: 'ĉi tie.'
   noback: ''
   whiteback: ''
   symbol: ''
@@ -461,7 +454,7 @@ accepting:
   clinotes: >
   merchantstitle: ''
   merchantsreceive: ''
-  merchdevguides: ''
+  merchdevguides: 'Gvidiloj por programistoj'
   merchantsreceive1: ""
   merchantsint: ""
   merchantsintlink: ''
@@ -491,7 +484,7 @@ contributing:
   mine: ''
   mine_p: >
   mine_link: ''
-  ffs: ''
+  ffs: 'Komunuma amasfinancada sistemo'
   ccs_p: ''
   ccsbutton: ''
   donate: ''
@@ -505,7 +498,7 @@ contributing:
   supportdev_p: ''
   supportdev_p2: ''
   supportdev_link: ''
-  sponsor: ''
+  sponsor: 'Sponsoradoj'
   sponsor_p: ''
   sponsor_link: ''
   sponsor_p2: ''
@@ -528,13 +521,13 @@ faq:
   qcontribute: ''
   acontribute: ""
   acontribute1: ''
-  acontribute2: "Kontaku Laborgrupon. Preskaŭ ĉio en Monero estas administrita per\
-    \ laborgrupoj, kiuj estas grupoj de kontribuantoj (ofte gviditaj de kunordiganto)\
-    \ laborantaj pri specifa flanko de la evoluigo. Jen kelkaj ekzemploj: la lokaliga\
-    \ laborgrupo (tradukoj), la komunuma laborgrupo, la laborgrupo pri grafika fasado,\
-    \ la Outreach-laborgrupo kaj tiel plu. Laborgrupoj estas plejparte sendependaj\
-    \ kaj havas sian propran strukturon. Kontaktu la laborgrupon, kiu interesas vin,\
-    \ kaj demandu kiel vi povas helpi. Liston de kontaktoj vi povas trovi en"
+  acontribute2: "Kontaku Laborgrupon. Preskaŭ ĉio en Monero estas administrita per
+    laborgrupoj, kiuj estas grupoj de kontribuantoj (ofte gviditaj de kunordiganto)
+    laborantaj pri specifa flanko de la evoluigo. Jen kelkaj ekzemploj: la lokaliga
+    laborgrupo (tradukoj), la komunuma laborgrupo, la laborgrupo pri grafika fasado,
+    la Outreach-laborgrupo kaj tiel plu. Laborgrupoj estas plejparte sendependaj kaj
+    havas sian propran strukturon. Kontaktu la laborgrupon, kiu interesas vin, kaj
+    demandu kiel vi povas helpi. Liston de kontaktoj vi povas trovi en"
   acontribute3: ''
   acontribute4: ""
   q1: ''
@@ -618,6 +611,8 @@ faq:
   qmaxsupply: ''
   amaxsupply: ''
 
+  privacy: Privateco
+  security: Sekureco
 mining:
   intro1: ''
   intro2: ''
@@ -736,12 +731,12 @@ developer-guides:
 
 user-guides:
   general: ''
-  mining: ''
+  mining: 'Mini'
   backup: ''
   nodesync: ''
   recovery: ''
   wallets: ''
-  hardwarewallet: ''
+  hardwarewallet: 'Aparataj monujoj'
   anonimizationnetworks: ''
   offline-backup: ''
   vps-node: ''
@@ -893,8 +888,8 @@ roadmap:
   released-0-18: komandlinia kaj grafika interfacoj "Flourine Fermi" eldonitaj
 research-lab:
   intro: ''
-  intro_email: "Por kontakti la Esploradan Laboratorion de Monero, bonvolu retpoŝti\
-    \ al lab@getmonero.org."
+  intro_email: "Por kontakti la Esploradan Laboratorion de Monero, bonvolu retpoŝti
+    al lab@getmonero.org."
   mrl_papers: 'Eldonitaj artikoloj'
   abstract: 'Resumo'
   introduction: 'Enkonduko'
@@ -1004,7 +999,7 @@ moneropedia:
     fungibility: ''
     kovri: ''
     locally-unique-host: ''
-    mining: ''
+    mining: 'Mini'
     mnemonicseed: ''
     node: ''
     openalias: ''
@@ -1060,7 +1055,7 @@ blog:
   allposts: ''
   urgent: ''
   releases: ''
-  community: ''
+  community: 'Komunumo'
   meetinglogs: ''
   author: ''
   date: ''

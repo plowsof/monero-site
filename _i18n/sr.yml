@@ -68,12 +68,12 @@ home:
     projektu. Pridružite nam se!
   contributecommunity: 'Trebaju nam Vaše veštine: Doprinesite!'
   joincommunity: Pridružite se zajednici
-  guides_para: "Zajednica je sastavila veliku količinu resursa i dokumentacije. Korisnici\
-    \ mogu naći korisne informacije i vodiče o uobičajenim konfiguracijama i savetima\
-    \ u odeljku vodič za korisnike. Programeri mogu naći sve što im treba da naprave\
-    \ usluge bazirane na Moneru ili jednostavno komuniciraju sa mrežom u odeljku vodič\
-    \ za programere. Biblioteka nudi objave i knjige koje možete besplatno preuzeti,\
-    \ uključujući i \"Ovladati Monerom\" i \"Od 0 do Monera\" knjige.\n"
+  guides_para: "Zajednica je sastavila veliku količinu resursa i dokumentacije. Korisnici
+    mogu naći korisne informacije i vodiče o uobičajenim konfiguracijama i savetima
+    u odeljku vodič za korisnike. Programeri mogu naći sve što im treba da naprave
+    usluge bazirane na Moneru ili jednostavno komuniciraju sa mrežom u odeljku vodič
+    za programere. Biblioteka nudi objave i knjige koje možete besplatno preuzeti,
+    uključujući i \"Ovladati Monerom\" i \"Od 0 do Monera\" knjige.\n"
   guides: Vodiči i resursi
   answers: Nađite odgovore na Vaša pitanja
   merchants: Trgovine
@@ -94,6 +94,8 @@ home:
     koristili Monero.
   choosewallet: Izaberite novčanik
   whatis: Nauci vise o Moneru
+  about: O Moneru
+  hangouts: Hangouts
 hangouts:
   intro: Monero zajednica je raznolika. Dolazimo iz svih delova sveta ali definitivno
     imamo mesta na kojima volimo da provodimo vreme svi zajedno. Većinu ćete naći
@@ -133,8 +135,6 @@ sponsorships:
     Vas pošaljite mejl na dev@getmonero.org.
   macstadium: MacStadium sponzoriše posvećeni Mac Mini koji se koristi za programiranje
     vezano za Mac.
-  forknetworking: Fork Networking obezbeđuje server koji se koristi za programiranje
-    i razvoj.
   symas: Symas sponzoriše CTO Hauard Ču (hyc) za njegov rad na Monero bazi kodova.
   tari: Tari Labs sponzorišu CDN koji se koristi na ovom veb-sajtu.
 team:
@@ -169,12 +169,6 @@ team:
     koja čine Monero neverovatnim novčićem su stvari poput CLSAG i @Bulletproofs,
     i oni su delo ove radne grupe.
   telegram: 'Telegram čet:'
-  outreach_start: Članovi radne grupe za promociju Monera (Monero Outreach) aktivno
-    koriste Telegram za koordinaciju svog rada i u manjoj meri matrix/freenode. Ako
-    želite da pomognete, potrebno je da kontaktirate radnu grupu putem jednog od ovih
-    kanala. Grupa je prilično strukturisana, pa ćete verovatno biti upućeni ka koordinatoru.
-  outreach_descr: Ova radna grupa usredsređena je na promociju Monera, okupljajući
-    umetnike, pisce i sve one koji žele da Monero postane poznat širom sveta.
   locplatform: 'Platforma za lokalizaciju:'
   localization_start: Tim se može kontaktirati putem ćaskanja ili otvaranjem zahteva
     u spremištu GitHub. Takođe možete odmah početi sa prevođenjem koristeći Weblate
@@ -305,6 +299,8 @@ downloads:
   moreinfofaq: Više informacija na FAQ (često postavljana pitanja)
   avwarning: Znajte da neki antivirusi i firewall zaštita mogu da označe Monero programe
     i arhive kao sadržaj štetan po računar.
+  wallet: Novčanik
+  hwthsupported: Novčanici
 monero-project: {}
 press-kit:
   intro2: Imajte u vidu da opcije za belu pozadinu imaju belu pozadinu samo ispod
@@ -341,16 +337,16 @@ press-kit:
   dontbuystickerp: Širi Monero svuda uz pomoć stikera. Dostpuno na više jezika i formata
     (vektori uključeni).
   dontbuysticker: '"Nemoj kupovati Monero" stiker'
-  quickfactsp: "Sažet i lagan dokument koji sadrži sve što treba da znate o Moneru:\
-    \ istorija, ključne faktore po kojima se Monero razlikuje od drugih, tehničke\
-    \ osnove i karakteristike u razvoju. <br> Pogledajte <a target=\"_blank\" href=\"\
-    https://www.monerooutreach.org\">Monero Outreach</a> veb-sajt za više informacija.\n"
+  quickfactsp: "Sažet i lagan dokument koji sadrži sve što treba da znate o Moneru:
+    istorija, ključne faktore po kojima se Monero razlikuje od drugih, tehničke osnove
+    i karakteristike u razvoju. <br> Pogledajte <a target=\"_blank\" href=\"https://www.monerooutreach.org\"\
+    >Monero Outreach</a> veb-sajt za više informacija.\n"
   quickfacts: Rezime činjenica
   pressdoc: Dokumentacija za štampu i medije
 accepting:
   title_gui: Instrukcije za GUI
-  gui1: "Primanje uplate kroz Monero GUI je jednostavno. Bez obzira da li ste trgovac\
-    \ ili samo korisnik, imaćete dostupne dve strane: Primi i Trgovci."
+  gui1: "Primanje uplate kroz Monero GUI je jednostavno. Bez obzira da li ste trgovac
+    ili samo korisnik, imaćete dostupne dve strane: Primi i Trgovci."
   gui2: Stranica za primanja (dole prikazana) je detaljno objašnjena
   guilinkguide: u vodiču za GUI.
   guiinstructions: >
@@ -447,6 +443,7 @@ contributing:
   donate-other_para2: za alternativne načine doniranja ili ako biste želeli da postanete
     sponzor Monero Projekta.
   ffs: Pogledajte Sistem Kolektivnog Finansiranja
+  sponsor: Sponzorstva
 faq:
   intro: Spisak čestih pitanja sa odgovorima i resursima
   toc: Sadržaj
@@ -464,10 +461,10 @@ faq:
   qword: Šta znači [tehnička reč]?
   aword: Terminologija korišćenja u Moneru može biti jako kompleksna, zbog čega i
     imamo
-  aword1: "Sveobuhvatnu lista pojmova koje često vidite i njihovo objašnjenje. Ako\
-    \ ne znate šta znači neka reč ili biste želeli da imate više informacija o njoj,\
-    \ samo posetite Moneropediju. Neki primeri često pretraženih izraza su: @node,\
-    \ @fungibility, @view-key, @pruning."
+  aword1: "Sveobuhvatnu lista pojmova koje često vidite i njihovo objašnjenje. Ako
+    ne znate šta znači neka reč ili biste želeli da imate više informacija o njoj,
+    samo posetite Moneropediju. Neki primeri često pretraženih izraza su: @node, @fungibility,
+    @view-key, @pruning."
   qcontribute: Kako mogu da doprinesem?
   acontribute: 'Monero je projekat zajednice otvorenog koda. To znači da ne postoji
     kompanija koja ga vodi i da nema izvršnog direktora koji zapošljava ljude. Sve
@@ -632,26 +629,25 @@ faq:
     ISP (internet provajder) može videti da koristite Monero čvor.
   qdangerrnode: Da li je opasno koristiti udaljeni čvor? Koje podatke operater čvora
     može da vidi o meni?
-  adangerrnode: "Uvek je preporučljivo, posebno za korisnike koji vode računa o privatnosti,\
-    \ da koriste lični čvor prilikom transakcija na mreži kako bi postigli najveću\
-    \ stopu privatnosti. Neki ljudi zbog udobnosti više vole da koriste @remote-node\
-    \ koji nije pod njihovom kontrolom (javni čvorovi). Pogodnost da ne morate da\
-    \ imate posla sa ličnom kopijom @blockchain dolazi sa svojom cenom: smanjena privatnost.\
-    \ Operater udaljenog čvora je u stanju da vidi sa koje IP adrese dolazi transakcija\
-    \ (čak i ako ne može da vidi primaoca ni iznos), a u nekim ekstremnim slučajevima,\
-    \ može vršiti i napade na štetu vaše privatnosti. Neke opasnosti se mogu ublažiti\
-    \ ili zaobići korišćenjem udaljenih čvorova na Tor ili I2P mrežama ili korišćenjem\
-    \ VPN-a."
-  aimporting: "Da, možete, ali verovatno ne biste trebali. Uvoz eksternog @blockchain\
-    \ oduzima puno resursa i prisiljava vas da verujete entitetu koji vam daje blokčejn.\
-    \ Obično je brže preuzimanje na uobičajeni način: pokretanje čvora i omogućavanje\
-    \ sinhronizacije sa ostalim @čvorovima u mreži. Ako zaista morate da uvezete eksterni\
-    \ blokčejn, možete ga preuzeti na <a href=\"{{ site.baseurl }}/dovnloads/#blockchain\"\
-    > stranici „Preuzimanja“ </a> ove veb lokacije. Sledite vodič ispod ako koristite\
-    \ Windows. Ako ste korisnik Linux-a, možete da koristite alatku „monero-blockchain-import“,\
-    \ koja je uključena u arhivu kada preuzmete GUI ili CLI novčanike. Počnite da\
-    \ sinhronizujete uveženi blokčejn sa ovom naredbom: „monero-blockchain-import\
-    \ --input-file blockchain.raw“.\n"
+  adangerrnode: "Uvek je preporučljivo, posebno za korisnike koji vode računa o privatnosti,
+    da koriste lični čvor prilikom transakcija na mreži kako bi postigli najveću
+    stopu privatnosti. Neki ljudi zbog udobnosti više vole da koriste @remote-node
+    koji nije pod njihovom kontrolom (javni čvorovi). Pogodnost da ne morate da imate
+    posla sa ličnom kopijom @blockchain dolazi sa svojom cenom: smanjena privatnost.
+    Operater udaljenog čvora je u stanju da vidi sa koje IP adrese dolazi transakcija
+    (čak i ako ne može da vidi primaoca ni iznos), a u nekim ekstremnim slučajevima,
+    može vršiti i napade na štetu vaše privatnosti. Neke opasnosti se mogu ublažiti
+    ili zaobići korišćenjem udaljenih čvorova na Tor ili I2P mrežama ili korišćenjem
+    VPN-a."
+  aimporting: "Da, možete, ali verovatno ne biste trebali. Uvoz eksternog @blockchain
+    oduzima puno resursa i prisiljava vas da verujete entitetu koji vam daje blokčejn.
+    Obično je brže preuzimanje na uobičajeni način: pokretanje čvora i omogućavanje
+    sinhronizacije sa ostalim @čvorovima u mreži. Ako zaista morate da uvezete eksterni
+    blokčejn, možete ga preuzeti na <a href=\"{{ site.baseurl }}/dovnloads/#blockchain\"\
+    > stranici „Preuzimanja“ </a> ove veb lokacije. Sledite vodič ispod ako koristite
+    Windows. Ako ste korisnik Linux-a, možete da koristite alatku „monero-blockchain-import“,
+    koja je uključena u arhivu kada preuzmete GUI ili CLI novčanike. Počnite da sinhronizujete
+    uveženi blokčejn sa ovom naredbom: „monero-blockchain-import --input-file blockchain.raw“.\n"
   qimporting: Mogu li ručno da uvezem blokčejn?
   amoneromeaning: Monero je esperantska reč koja znači „novčić“. U početku se Monero
     zvao „Bitmonero“, što u prevodu znači „Bitcoin“ na esperantu. Nakon što je zajednica
@@ -683,11 +679,11 @@ faq:
   video_sa: Skrivene Adrese
   video_essentials: 'Monero: Osnove'
   video_intro: Uvod u Monero
-  avideos: "Tokom godina zajednica je stvorila ogromnu količinu informativnog materijala,\
-    \ svih vrsta članaka i video zapisa. Većina ovih video zapisa je javno dostupna\
-    \ na platformama kao što je YouTube. Na ovoj veb stranici postavili smo nekoliko\
-    \ video zapisa u kojima objašnjavamo osnovne principe Monera. Da bi video snimci\
-    \ imali najveći učinak, treba gledati u određenom redosledu:\n"
+  avideos: "Tokom godina zajednica je stvorila ogromnu količinu informativnog materijala,
+    svih vrsta članaka i video zapisa. Većina ovih video zapisa je javno dostupna
+    na platformama kao što je YouTube. Na ovoj veb stranici postavili smo nekoliko
+    video zapisa u kojima objašnjavamo osnovne principe Monera. Da bi video snimci
+    imali najveći učinak, treba gledati u određenom redosledu:\n"
   qvideos: Da li postoje video klipovi gde mogu naučiti više o Moneru?
   ahf1: I zajednica programera i članovi Core Team-a slažu se da je protokol stabilan
     i dovoljno zreo da više neće trebati fork dva puta godišnje. Pored toga, ekosistem
@@ -705,6 +701,10 @@ faq:
     dvogodišnji hard forkovi su promenili algoritam dokaza o radu (PoW) da bi se odupreli
     rudarstvu putem ASIC-a.
   qhf: Da li je tačno da Monero ima hard fork svakih 6 meseci?
+  privacy: Privatnost
+  security: Bezbednost
+  wallets: Novčanici
+  node: Čvor
 mining:
   intro1: Monero je kriptovaluta koja se oslanja na algoritam dokaza o radu da bi
     postigla distribuirani koncenzus. Ispod ćete pronaći informacije i resurse o
@@ -715,6 +715,7 @@ mining:
   software: Softver za Rudarenje
   software_para: Imajte na umu da neki softveri za rudarenje dolaze sa ugrađenom provizijom
     za developera datog softvera.
+  pow: Dokaz o Radu
 using: {}
 what-is-monero:
   need-to-know: Šta treba da znate
@@ -744,6 +745,8 @@ what-is-monero:
     - to su mere koje ograničavaju protok tradicionalnih valuta, ponekad do ekstrema,
     pogotovo u ekonomski nestabilnim zemljama.
   videos: Monero Snimci (Engleski)
+  grassroots_p2: Istraživačka Laboratorija
+  aboutb: O
 about:
   history: Kratka Istorija
   history_para1: Monero je pokrenut u aprilu 2014. Bilo je to pošteno, unapred najavljeno
@@ -856,6 +859,7 @@ user-guides:
   tailsguide: Napravite novčanik (koristeći udaljeni čvor) na Tails-u
   guiguide: Vodič za Monero GUI novčanik
   node-i2pzero: Pokreni Monero čvor kroz I2P sa I2P-zero
+  hardwarewallet: Hardverski Novčanici
 roadmap:
   completed: Završen zadatak
   ongoing: Zadatak u toku
@@ -967,6 +971,8 @@ roadmap:
   mar: Mart
   feb: Februar
   jan: Januar
+  bplus: Bulletproofs
+  bp++: Bulletproofs
 research-lab:
   intro: Monero nije posvećen samo stvaranju zamenljive valute, već i kontinuiranom
     istraživanju sfere finansijske privatnosti, jer uključuje kriptovalute. Ispod
@@ -1176,32 +1182,32 @@ specs:
 library:
   description: Ispod su neke publikacije, knjige ili časopisi dostupni za preuzimanje.
   books: Knjige
-  masteringmonerop: "Vodič kroz naizgled složen svet Monera. <br> Sadrži: <ul> <li>\
-    \ Širok uvod u blokčejn i važnost privatnosti - idealno za netehničke korisnike.\
-    \ </li> <li> Diskusija o nedostacima Bitcoin-a i specifična rešenja koja pruža\
-    \ Monero. </li> <li> Priče korisnika (koje ilustruju kako Monero štiti vašu privatnost),\
-    \ analogije, primeri, pravne / etičke rasprave i isečci koda koji ilustruju ključne\
-    \ tehničke koncepte. </li> <li> Detalji o Monero decentralizovanoj mreži, peer-to-peer\
-    \ arhitekturi, životnom ciklusu transakcija i principima bezbednosti. </li> <li>\
-    \ Upoznavanje sa tehničkim osnovama Monera, namenjenim programerima, inženjerima,\
-    \ softverskim arhitektama i znatiželjnim korisnicima. </ li> <li> Nova dostignuća\
-    \ kao što su Kovri, Bulletproofs, Multisignature, Hardvare Novčanici itd. </li>\
-    \ </ul> Pogledajte <a href=\"https://masteringmonero.com/\"> Ovladavanje Monerom\
-    \ </a> veb-sajt za informacije.\n"
+  masteringmonerop: "Vodič kroz naizgled složen svet Monera. <br> Sadrži: <ul> <li>
+    Širok uvod u blokčejn i važnost privatnosti - idealno za netehničke korisnike.
+    </li> <li> Diskusija o nedostacima Bitcoin-a i specifična rešenja koja pruža Monero.
+    </li> <li> Priče korisnika (koje ilustruju kako Monero štiti vašu privatnost),
+    analogije, primeri, pravne / etičke rasprave i isečci koda koji ilustruju ključne
+    tehničke koncepte. </li> <li> Detalji o Monero decentralizovanoj mreži, peer-to-peer
+    arhitekturi, životnom ciklusu transakcija i principima bezbednosti. </li> <li>
+    Upoznavanje sa tehničkim osnovama Monera, namenjenim programerima, inženjerima,
+    softverskim arhitektama i znatiželjnim korisnicima. </ li> <li> Nova dostignuća
+    kao što su Kovri, Bulletproofs, Multisignature, Hardvare Novčanici itd. </li>
+    </ul> Pogledajte <a href=\"https://masteringmonero.com/\"> Ovladavanje Monerom
+    </a> veb-sajt za informacije.\n"
   zerotomonerov1p: "Objavljeno: 26. juna 2018, sa <a href=\"https://github.com/UkoeHB/Monero-RCT-report\"\
     >LaTeX izvorni kod ovde</a>\n"
   zerotomonerov1: 'Od Nule do Monera: Prvo Izdanje'
   zerotomonerov2p: "Objavljeno: 4. aprila 2020, sa <a href=\"https://github.com/UkoeHB/Monero-RCT-report\"\
-    >LaTeX izvorni kod ovde</a><br> A comprehensive conceptual (and technical) explanation\
-    \ of Monero.<br> Trudimo se da naučimo svakoga ko poznaje osnovnu algebru i jednostavne\
-    \ koncepte računarstva, poput „bitnog predstavljanja“ broja, ne samo kako Monero\
-    \ radi na dubokom i sveobuhvatnom nivou, već i koliko korisna i lepa kriptografija\
-    \ može biti.\n"
+    >LaTeX izvorni kod ovde</a><br> A comprehensive conceptual (and technical) explanation
+    of Monero.<br> Trudimo se da naučimo svakoga ko poznaje osnovnu algebru i jednostavne
+    koncepte računarstva, poput „bitnog predstavljanja“ broja, ne samo kako Monero
+    radi na dubokom i sveobuhvatnom nivou, već i koliko korisna i lepa kriptografija
+    može biti.\n"
   zerotomonerov2: 'Od Nule do Monera: Drugo Izdanje'
-  moneroaddressescheatsheet20201206p: "Negde između \"velike slike\" i matematičkih\
-    \ detalja, rezime na jednoj strani o različitim ključevima, adresama, i opsezima\
-    \ (privatni/javni, za trošenje/pregled, na mreži/van mreže, novčanici/kupci) i\
-    \ njihovi odnosi.\n"
+  moneroaddressescheatsheet20201206p: "Negde između \"velike slike\" i matematičkih
+    detalja, rezime na jednoj strani o različitim ključevima, adresama, i opsezima
+    (privatni/javni, za trošenje/pregled, na mreži/van mreže, novčanici/kupci) i njihovi
+    odnosi.\n"
   moneroaddressescheatsheet20201206: Matrice za Monero Adrese (verzija 20201206)
 moneropedia:
   add_new_text1: Ako postoji unos koji želite da izmenite ili dodate, molimo vas
@@ -1253,11 +1259,11 @@ moneropedia:
     daemon: Daemon
     clsag: CLSAG
   back: Nazad na Moneropediju
-  description: "Terminologija oko Monera može biti vrlo složena i tehnička. Moneropedia\
-    \ je alat koji je kreirala Monero zajednica da pruži objašnjenje ovih pojmova\
-    \ na jednostavan način. Navedene ispod, možete pronaći sve unose Moneropedije\
-    \ po abecednom redu. Ako želite da uredite postojeći glas ili da dodate novi,\
-    \ kliknite na dugme na dnu stranice.\n"
+  description: "Terminologija oko Monera može biti vrlo složena i tehnička. Moneropedia
+    je alat koji je kreirala Monero zajednica da pruži objašnjenje ovih pojmova na
+    jednostavan način. Navedene ispod, možete pronaći sve unose Moneropedije po abecednom
+    redu. Ako želite da uredite postojeći glas ili da dodate novi, kliknite na dugme
+    na dnu stranice.\n"
   instructions: Instrukcije za dodavanje stavki u Moneropediju se nalaze
 blog:
   author: Postavio

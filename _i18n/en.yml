@@ -169,13 +169,15 @@ merchants:
   centrexchangesp: If you prefer to use centralized exchanges, here is a list of renowned CEXes and swappers. Many more exchanges support Monero, we list here only a few reputable ones.
   cexp: Centralized exchanges that offer exchanging Monero for national currencies and cryptocurrencies.
   swappersp: Swappers let users exchange XMR for other cryptocurrencies.
+  basicswapdexdesc: Decentralized P2P atomic swaps with a strong focus on the user experience.
+  visitbasicswapdex: Visit BasicSwapDEX
+  setreq: Setup required
 
 sponsorships:
   intro: The following businesses actively support the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
   tari: Tari Labs sponsors the CDN used by this website.
   mbank: MajesticBank sponsors the hosting used by this website.
   symas: Symas sponsors its CTO Howard Chu (hyc) for his work on the Monero codebase.
-  forknetworking: Fork Networking provides a server which is used for development.
   macstadium: MacStadium sponsors a dedicated Mac Mini that is used for Mac-related development.
   cakewallet: Cake Wallet sponsors the "tools" server with the mailing list, GitLab, Matrix, Taiga, and Weblate.
   pastsponsors: Past sponsors
@@ -294,7 +296,7 @@ downloads:
   localsyncinfo: These wallets connect to @remote-nodes and scan the @blockchain on your device, without sharing any key with the nodes. They provide higher privacy, but require more time synchronizing, since missing @blocks will be scanned only when the wallet is opened.
   remotesync: Remote synchronization (lightweight)
   remotesyncinfo: These wallets share your private @view-key with a remote server, which continuously scans the blockchain looking for your transactions. They are faster to use, but your privacy can be lessened if you don't control the remote server.
-  hwdesc: "Hardware wallets are cryptographically secure devices that help keep your coins safe. Monero is currently supported by Ledger Nano (S, S Plus, and X) and Trezor Model T."
+  hwdesc: "Hardware wallets are cryptographically secure devices that help keep your coins safe. Monero is currently supported by Ledger Nano (S, S Plus, and X) and Trezor (Model T, Safe 3)"
   hwth: Hardware Wallet
   instructions: Usage instructions
   hwthmodel: Model(s)
@@ -339,12 +341,14 @@ press-kit:
   contactwg: "To contact a specific Monero workgroup:"
   contactcomm: "To contact the many subcommunities:"
   whymonero: Why Monero?
-  whycommunity: Monero has one of the largest communities of any open-source project. Monero researches, audits, and implements critical security and privacy technologies, which are user by millions worldwide.
+  whycommunity: Monero has one of the largest communities of any open-source project. Monero researches, audits, and implements critical security and privacy technologies, which are used by millions worldwide.
   whycommunity1: Monero is trusted for more private transactions than all other cryptocurrencies combined.
   whyconf: The Monero community has substantial involvement at Defcon, Grayhat and the CCC (Chaos Computer Club). The Monero Konferenco, an academic conference, is hosted annually.
   whyconf1: We encourage everyone to include community members from the largest privacy project in related news articles and events.
   altpk-1: Picture of a woman standing in front of a Monero Talk banner
   altpk-2: Picture of fluffypony making a presentation in front of a crowd at DEFCON
+  johnr365timeline: Monero Timeline
+  johnr365timelinep: A timeline of key developments in the Monero history
   
 accepting:
   title_gui: Instructions for the GUI
@@ -834,6 +838,8 @@ roadmap:
   xmr-eth-atomicswaps: Monero <-> Ethereum Atomic Swaps
   bp++: Bulletproofs++
   lws-subaddress: Light Wallet Server subaddress support
+
+  genimprov: "Multiple improvements like: block propagation delay reduced, tx_extra limited, wallet refresh and startup speedups"
    
 research-lab:
   intro: Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.
@@ -900,7 +906,7 @@ specs:
   privacytech_title: Main privacy enhancing technologies
   privacytech_ringct: "@RingCT"
   privacytech_sh: "@Stealth-Addresses"
-  privacytech_rs: Ring Signatures
+  privacytech_rs: "@ring-signatures"
   privacytech_tor-i2p: Transactions over Tor/I2P
   privacytech_dandelion: Dandelion++
 
@@ -942,6 +948,8 @@ library:
   zkbasicscheatsheet20220621p: >
     A lightly theoretical interlude (hopefully still gentle, trying to stress concepts more than formalism and selecting the approached topics) to lay the foundations for Bulletproof and other future Zero-Knowledge-related features, if any.
   newsletters: Newsletters
+  revuomonero: >
+    Revuo Monero is a weekly newsletter where you can find the most recent Monero news.
   themonerostandard: >
     Monero Standard is a weekly publication by recanman, providing up-to-date news and information on the Monero protocol.
     In addition to covering the latest developments in the Monero community, The Monero Standard also includes a weekly price chart, mining pool chart, blockchain statistics, and even a Meme of the Week.

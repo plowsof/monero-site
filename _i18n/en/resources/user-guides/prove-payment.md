@@ -16,7 +16,7 @@ To prove to Charlie that she made a payment to Bob, Alice must supply Charlie th
 - Bob's address, as is done with Bitcoin
 - the transaction's key, which is new with Monero and other CryptoNote currencies
 
-When Alice made the transaction, a one time key was automatically generated just for this transaction.
+When Alice made the transaction, a one time key was automatically generated just for this transaction (see @stealth-addresses).
 
 #### CLI
 

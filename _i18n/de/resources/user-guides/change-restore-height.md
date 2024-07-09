@@ -22,7 +22,7 @@ transaction to your wallet.
 
 ### Why Monero wallets have a restore height?
 
-Unlike most @cryptocurrencies, all transactions included in the Monero
+Unlike alot of @cryptocurrencies, all transactions included in the Monero
 blockchain are encrypted. Therefore, your wallet software has to use its
 private @view-key to locate the transactions destined for you on the
 blockchain. The process of scanning the Monero blockchain looking for
