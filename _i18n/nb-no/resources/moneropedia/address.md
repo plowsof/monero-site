@@ -7,10 +7,10 @@ terms: ["address", "addresses", "adresse", "adresser"]
 
 ### Det grunnleggende
 
-When you send Monero to someone you only need one piece of information, and
-that is their Monero address. A *raw* Monero address is a set of 95
-characters starting with a '4' or an '8'. The Monero donation address, for
-instance, is
+Når du sender Monero til noen, trenger du kun én opplysning, og det er
+Monero-adressen deres. En *rå* Monero-adresse er et sett med 95 tegn som
+starter med en '4' eller en '8'. Adressen til Monero-donasjonene er for
+eksempel
 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H.
 
 Fordi disse adressene er lange og komplekse, vil du ofte støte på en
