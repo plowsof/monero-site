@@ -43,10 +43,9 @@ msgstr "Основная информация"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/address.md:11
-#, fuzzy
 #| msgid "When you send Monero to someone you only need one piece of information, and that is their Monero address. A *raw* Monero address is a set of 95 characters starting with a '4'. The Monero donation address, for instance, is 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H."
 msgid "When you send Monero to someone you only need one piece of information, and that is their Monero address. A *raw* Monero address is a set of 95 characters starting with a '4' or an '8'. The Monero donation address, for instance, is 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H."
-msgstr "Если вы хотите отправить кому-нибудь Monero, то вам для этого понадобится знать только адрес Monero этого человека. *Необработанный* адрес Monero представляет собой ряд из 95 символов, начинающийся с 4. Адрес для сбора пожертвований Monero, например, выглядит так: 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H."
+msgstr "Если вы хотите отправить кому-нибудь Monero, то вам для этого понадобится знать только адрес Monero этого человека. *Необработанный* адрес Monero представляет собой ряд из 95 символов, начинающийся с 4 или с 8. Адрес для сбора пожертвований Monero, например, выглядит так: 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H."
 
 #
 #. type: Plain text
