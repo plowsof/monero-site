@@ -73,15 +73,13 @@ msgstr "Merknader"
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/locally-unique-host.md:21
-#, fuzzy
 #| msgid "- Monero primarily uses @canonically-unique-host resolution while I2P only uses @locally-unique-host resolution."
 msgid "Monero primarily uses @canonically-unique-host resolution while I2P only uses @locally-unique-host resolution."
-msgstr "- Monero bruker i hovedsak @kanonisk unik vert-oppløsning, mens @I2P kun bruker @lokal unik vert-oppløsning."
+msgstr "Monero bruker i hovedsak @kanonisk unik vert-oppløsning, mens @I2P kun bruker @lokal unik vert-oppløsning."
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/locally-unique-host.md:22
-#, fuzzy
 #| msgid "- I2P's and @Kovri's assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)"
 msgid "I2P's and @Kovri's assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)"
-msgstr "- @I2P-er og @Kovrier som er tilordnet toppnivådomener er for tiden `.i2p`, og @Kovri har kun til hensikt å behandle/bruke `.i2p`-[toppnivådomenet](https://en.wikipedia.org/wiki/Top_level_domain)"
+msgstr "@I2P-er og @Kovrier som er tilordnet toppnivådomener er for tiden `.i2p`, og @Kovri har kun til hensikt å behandle/bruke `.i2p`-[toppnivådomenet](https://en.wikipedia.org/wiki/Top_level_domain)"

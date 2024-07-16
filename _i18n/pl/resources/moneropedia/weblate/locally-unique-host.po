@@ -73,15 +73,13 @@ msgstr "Adnotacje"
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/locally-unique-host.md:21
-#, fuzzy
 #| msgid "- Monero primarily uses @canonically-unique-host resolution while I2P only uses @locally-unique-host resolution."
 msgid "Monero primarily uses @canonically-unique-host resolution while I2P only uses @locally-unique-host resolution."
-msgstr "- Monero używa przede wszystkim zasadniczych unikalnych hostów, podczas gdy I2P korzysta jedynie z lokalnie unikalnych hostów."
+msgstr "Monero używa przede wszystkim zasadniczych unikalnych hostów, podczas gdy I2P korzysta jedynie z lokalnie unikalnych hostów."
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/locally-unique-host.md:22
-#, fuzzy
 #| msgid "- I2P's and @Kovri's assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)"
 msgid "I2P's and @Kovri's assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)"
-msgstr "- Przypisaną domeną najwyższego poziomu I2P jest obecnie `.i2p`, a Kovri zamierza używać jedynie [domeny najwyższego poziomu](https://en.wikipedia.org/wiki/Top_level_domain) `.i2p` ."
+msgstr "Przypisaną domeną najwyższego poziomu I2P jest obecnie `.i2p`, a Kovri zamierza używać jedynie [domeny najwyższego poziomu](https://en.wikipedia.org/wiki/Top_level_domain) `.i2p` ."
