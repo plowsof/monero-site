@@ -51,7 +51,7 @@ meta_descr: meta_descr.tools
                         <p><a href="https://nownodes.io/nodes/monero-xmr">NOWNodes - {% t tools.nownodes %}</a></p>
                         <p><a href="https://getblock.io">GetBlock - {% t tools.getblockio %}</a></p>
                         <p><a href="https://monero.fail/">Monero.fail - {% t tools.monerofail %}</a></p>
-                        <p><a href="https://txstreet.com/v/xmr">TxStreet - {% t tools.txstreet %}</a></p>
+                        <p><a href="https://tx.town/v/xmr">TxStreet - {% t tools.txstreet %}</a></p>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,6 @@ meta_descr: meta_descr.tools
                 <div class="row">
                     <div class="col">
                         <h2>{% t tools.market %}</h2>
-                        <p><a href="https://cryptofacile.io">cryptoFacile - {% t tools.cryptofacile %}</a></p>
                         <p><a href="https://cryptoradar.co/buy-monero">Cryptoradar - {% t tools.cryptoradar %}</a></p>
                         <p><a href="https://kryptocheck.de">KryptoCheck - {% t tools.kryptocheck %}</a></p>
                     </div>
