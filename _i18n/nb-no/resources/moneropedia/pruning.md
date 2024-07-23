@@ -16,16 +16,17 @@ node.
 
 Det er tre måter å utrenske på:
 
-- *Synchronize a pruned node from scratch:* You will download and sync only
-  1/3 of the full blockchain.
+- *Synkronisere en utrensket node fra bunn:* Da laster du ned og
+  synkroniserer kun 1/3 av hele blokkjeden.
 
-- *Prune an existing node:* The already existing blockchain will be pruned,
-  but this will not result in a smaller blockchain. Instead, it will mark
-  parts of the file as free, so that future data will use that free space,
-  causing the file to not grow until free space grows scarce.
+- *Utrenske en eksisterende node:* Blokkjeden som allerede eksisterer vil
+  utrenskes, men dette vil ikke resultere i en mindre blokkjede. Den vil
+  istedenfor markere deler av filen som ledig, slik at fremtidig data
+  benytter den ledige lagringsplassen, noe som medfører at filen ikke vokser
+  før den ledige lagringsplassen blir knapp.
 
-- *Create a new pruned blockchain from a full one:* A full blockchain that
-  you already have will be used to create a new, pruned blockchain.
+- *Opprette en ny, utrensket blokkjede fra en full en:* En full blokkjede
+  som du allerede har vil brukes for å opprette en ny, utrensket blokkjede.
 
 Utrenskede noder er svært nyttige, og foretrekkes fremfor @eksterne noder,
 men brukere bør, hvis mulig, kjøre en fullstendig node og kun velge å
