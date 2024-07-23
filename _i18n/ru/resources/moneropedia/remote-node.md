@@ -41,15 +41,14 @@ VPS или на сервере. В этом случае узел не уста�
 
 Публичные узлы можно найти в сети по двум системам:
 
-- **Node aggregators**, which are basically lists of open remote nodes. The
-  operators of those nodes decided to add them to the aggregator so that
-  other people can use them. The aggregator will provide to the person who
-  want to use a remote node a simple URL. This URL connects to one of the
-  nodes in the list and will need to be inserted in the Monero wallet (GUI
-  or CLI). The wallet will then contact one of the nodes provided by the URL
-  and will allow the end user to immediately receive and send
-  transactions. One of the most famous node aggregators is
-  [MoneroWorld](https://moneroworld.com/#nodes).
+- **A node aggregator**. Which is basically a list of public remote
+  nodes. The operators of those nodes decided to add them to the aggregator
+  so that other people can use them. The aggregator will provide the user
+  with a list of remote nodes to choose from. The selected node will need to
+  be manually entered into your Monero wallet of choice. The wallet will
+  connect to the selected node, allowing the user to sync their wallet with
+  the network as well as send and receive transactions. One of the most
+  famous node aggregators is [Monero.fail](https://monero.fail/).
 
 - **Native public nodes**. This is one of the new coolest features the
   Monero devs came up with to improve the user experience and to make easier
