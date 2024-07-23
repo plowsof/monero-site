@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 08:34+0000\n"
+"POT-Creation-Date: 2024-07-23 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,23 +43,30 @@ msgstr "Det grunnleggende"
 #
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/tail-emission.md:11
-msgid "Monero block rewards will never drop to zero. Block rewards will gradually drop until tail emission commences at the end of May 2022. At this point, rewards will be fixed at 0.6 XMR per block."
+#, fuzzy
+#| msgid "Monero block rewards will never drop to zero. Block rewards will gradually drop until tail emission commences at the end of May 2022. At this point, rewards will be fixed at 0.6 XMR per block."
+msgid "Monero block rewards will never drop to zero. Block rewards gradually dropped until tail emission commenced at the end of May 2022. At this point, rewards will stay fixed at 0.6 XMR or less* per block."
 msgstr "Moneros blokkbelønninger vil aldri gå til null. Blokkbelønninger vil gradvis falle helt til haleemisjonen settes i gang ved slutten av mai 2022. På dette tidspunktet vil belønninger settes til 0,6 XMR per blokk."
 
+#. type: Bullet: '* '
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:13
+msgid "Due to block size penalties."
+msgstr ""
+
 #. type: Title ###
-#: ../_i18n/en/resources/moneropedia/tail-emission.md:12
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:14
 #, no-wrap
 msgid "Why"
 msgstr "Hvorfor"
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/moneropedia/tail-emission.md:15
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:17
 msgid "Miners need an incentive to mine. Because of the dynamic blocksize, competition between @miners will cause fees to decrease. If mining is not profitable due to a high cost and low reward, miners lose their incentive and will stop mining, reducing the security of the network."
 msgstr "Utvinnere trenger et insentiv til å utvinne. På grunn av de dynamiske blokkstørrelsene, vil konkurransen mellom @utvinnere gjøre at gebyrene avtar. Hvis utvinninf ikke er lønnsomt grunnet høy kostnad og lav belønning, mister utvinnere insentivet og slutter å utvinne, noe som gjør at sikkerheten til nettverket reduseres."
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/moneropedia/tail-emission.md:16
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:18
 msgid "Tail emission ensures that a dynamic block size and fee market can develop."
 msgstr "Haleemisjon sikrer at det utvikles en dynamisk blokkstørrelse og gebyrmarket."
