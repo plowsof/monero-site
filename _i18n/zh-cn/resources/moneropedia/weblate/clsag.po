@@ -7,13 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-09-13 11:19+0200\n"
-"PO-Revision-Date: 2021-09-13 11:19+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-08-01 18:55+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Chinese (Simplified) <http://mail.monerodevs.org/projects/"
+"montero-site/clsag/zh_Hans/>\n"
 "Language: zh-cn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #. type: YAML Front Matter: summary
 #: ../_i18n/en/resources/moneropedia/clsag.md:1
@@ -29,9 +32,11 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/clsag.md:7
+#, fuzzy
 msgid ""
 "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
+"{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/clsag.md:9
@@ -60,9 +65,9 @@ msgstr ""
 
 #. type: Title #####
 #: ../_i18n/en/resources/moneropedia/clsag.md:14
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Other Resources"
-msgstr ""
+msgstr "其它资源"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/clsag.md:17

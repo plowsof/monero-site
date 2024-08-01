@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-10-08 08:34+0100\n"
-"PO-Revision-Date: 2024-06-20 19:22+0000\n"
+"PO-Revision-Date: 2024-08-01 18:55+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Spanish <http://mail.monerodevs.org/projects/montero-site/"
 "smartmining/es/>\n"
@@ -33,8 +33,10 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/smartmining.md:7
+#, fuzzy
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Title ###
 #: ../_i18n/en/resources/moneropedia/smartmining.md:8
