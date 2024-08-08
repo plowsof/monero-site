@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-09-28 10:24+0200\n"
-"PO-Revision-Date: 2024-06-20 19:22+0000\n"
+"PO-Revision-Date: 2024-08-08 02:52+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Spanish <http://mail.monerodevs.org/projects/montero-site/"
 "paperwallet/es/>\n"
@@ -33,14 +33,16 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/paperwallet.md:7
+#, fuzzy
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Title ###
 #: ../_i18n/en/resources/moneropedia/paperwallet.md:8
 #, fuzzy, no-wrap
 msgid "The Basics"
-msgstr "Lo Básico"
+msgstr "Lo Basico"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/paperwallet.md:10
