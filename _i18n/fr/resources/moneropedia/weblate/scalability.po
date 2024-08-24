@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-10-05 14:57+0100\n"
-"PO-Revision-Date: 2024-08-01 18:55+0000\n"
+"PO-Revision-Date: 2024-08-24 02:52+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: French <http://mail.monerodevs.org/projects/montero-site/"
 "scalability/fr/>\n"
@@ -36,13 +36,13 @@ msgstr ""
 #, fuzzy
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
-"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+"{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
 #. type: Title ###
 #: ../_i18n/en/resources/moneropedia/scalability.md:8
 #, fuzzy, no-wrap
 msgid "The Basics"
-msgstr "Las Bases"
+msgstr "The Basics"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/scalability.md:11
