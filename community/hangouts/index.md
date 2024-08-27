@@ -28,6 +28,9 @@ meta_descr: hangouts.intro
             <li>
                 <a class="ext-noicon" href="https://telegram.me/monero" target="_blank" rel="noreferrer noopener" aria-label="Telegram logo"><div class="social-icon telegram"></div></a>
             </li>
+            <li>
+                <a class="ext-noicon" href="https://discord.gg/SyGUMWBqvF" target="_blank" rel="noreferrer noopener" aria-label="Discord logo"><div class="social-icon discord"></div></a>
+            </li>
         </ul>
     </section>
 </div>
@@ -52,7 +55,7 @@ meta_descr: hangouts.intro
                                     <p><a href="https://translate.getmonero.org/" class="btn-link btn-fixed">Weblate</a></p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="https://matrix.to/#/#monerospace:monero.social" class="btn-link btn-fixed">Matrix</a></p>
+                                    <p><a href="https://matrix.to/#/%23monerospace:monero.social" class="btn-link btn-fixed">Matrix</a></p>
                                 </div>
                                 <div class="col">
                                     <p><a href="https://taiga.getmonero.org/" class="btn-link btn-fixed">Taiga</a></p>
@@ -88,7 +91,7 @@ meta_descr: hangouts.intro
                    {% for room in rooms_list %}
                      {% if room[0] == channel[0] %}
                        {% if rooms_list.matrix %}
-                         <a class="chats-img" href="{{ rooms_list.matrix }}"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a>
+                         <a class="chats-img" href="{{ rooms_list.matrix }}"><img class="matrix" src="/img/matrix-logo.avif" title="Matrix" alt="Matrix logo"></a>
                        {% endif %}
                      {% endif %}
                    {% endfor %}
