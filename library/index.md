@@ -18,7 +18,7 @@ meta_descr: library.description
                     <p>{% t library.zerotomonerov2langs %}</p>
                 <h3><a href="Zero-to-Monero-1-0-0.pdf">{% t library.zerotomonerov1 %}</a></h3>
                     <p>{% t library.zerotomonerov1p %}</p>
-                <h3><a href="https://masteringmonero.com/free-download.html">Mastering Monero</a></h3>
+                <h3><a href="https://masteringmonero.com/free-download.html" target="_blank">Mastering Monero</a></h3>
                     <p>{% t library.masteringmonerop %}</p> 
             </div>
         </div>
@@ -47,11 +47,11 @@ meta_descr: library.description
         <div class="info-block text-adapt">
             <h2>{% t library.newsletters %}</h2>
             <div>
-                <h3><a href="https://monero.observer/tag/blitz/">Monero Observer Blitz</a></h3>
+                <h3><a href="https://monero.observer/tag/blitz/" target="_blank">Monero Observer Blitz</a></h3>
                   <p>{% t library.moneroobserverblitz %}</p>
-                <h3><a href="https://revuo-xmr.com/">Revuo Monero</a></h3>
+                <h3><a href="https://revuo-xmr.com/" target="_blank">Revuo Monero</a></h3>
                   <p>{% t library.revuomonero %}</p>
-                <h3><a href="https://localmonero.co/the-monero-standard">The Monero Standard</a></h3>
+                <h3><a href="https://localmonero.co/the-monero-standard" target="_blank">The Monero Standard</a></h3>
                   <p>{% t library.themonerostandard %}</p>
             </div>
         </div>

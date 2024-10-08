@@ -79,7 +79,7 @@ meta_descr: meta_descr.userguides
                         <div class="col">
                             <h2>{% t user-guides.wallets %}</h2>
                             <p><a href="{{site.baseurl}}/resources/user-guides/monero-wallet-cli.html">{% t user-guides.cli-wallet %}</a></p>
-                            <p><a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md">{% t user-guides.guiguide %}</a></p>
+                            <p><a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md" target="_blank">{% t user-guides.guiguide %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/change-restore-height.html">{% t user-guides.change-restore-height %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/view_only.html">{% t user-guides.view-only %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/scan-txid.html">{% t user-guides.scan-txid %}</a></p>

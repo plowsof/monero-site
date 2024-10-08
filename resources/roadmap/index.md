@@ -33,7 +33,7 @@ meta_descr: meta_descr.roadmap
                         <h2>2014</h2>
                             <ul>
                                 <h3 class="months">{% t roadmap.apr %}</h3>
-                                   <li class="completed"><a href="https://bitcointalk.org/index.php?topic=563821.0" target="_blank" rel="noreferrer noopener">{% t roadmap.launched %}</a></li>
+                                   <li class="completed"><a href="https://bitcointalk.org/index.php?topic=563821.0" target="_blank" target="_blank" rel="noreferrer noopener">{% t roadmap.launched %}</a></li>
                                    <li class="completed">{% t roadmap.renamed %}</li>
                                 <h3 class="months">{% t roadmap.sep %}</h3>
                                     <li class="completed">{% t roadmap.recovered %}</li>
@@ -227,7 +227,7 @@ meta_descr: meta_descr.roadmap
                                 <h3 class="months">{% t roadmap.jan %}</h3>
                                     <li class="completed">{% t roadmap.xmrbch-atomicswap %}</li>
                                 <h3 class="months">{% t roadmap.may %}</h3>
-                                    <li class="completed"><a href="https://haveno.exchange">{% t roadmap.haveno-mainnet %}</a></li>
+                                    <li class="completed"><a href="https://haveno.exchange" target="_blank">{% t roadmap.haveno-mainnet %}</a></li>
                             </ul>
                     </div>
                     <label for="tab-7" tabindex="0"></label>
@@ -237,12 +237,12 @@ meta_descr: meta_descr.roadmap
                         <h2>{% t roadmap.future %}</h2>
                             <ul>
                                 <h3 class="months">{% t roadmap.comingsoon %}</h3>
-                                    <li class="ongoing"><a href="https://github.com/Rucknium/OSPEAD">{% t roadmap.ospead %}</a></li>
+                                    <li class="ongoing"><a href="https://github.com/Rucknium/OSPEAD" target="_blank">{% t roadmap.ospead %}</a></li>
                                     <li class="ongoing">{% t roadmap.bp++ %}</li>
                                     <li class="ongoing">{% t roadmap.cuprate %}</li>
                                     <li class="upcoming">{% t roadmap.seraphis-jamtis %}</li>
-                                    <li class="upcoming"><a href="https://github.com/seraphis-migration/strategy/wiki/Our-Wallet-Rewrite-Project-After-Priority-Switched-From-Seraphis-to-FCMPs">{% t roadmap.fcmp-plus %}</a></li>
-                                    <li class="proposed"><a href="https://github.com/monero-project/research-lab/issues/94">{% t roadmap.mrl-tasks %}</a></li>
+                                    <li class="upcoming"><a href="https://github.com/seraphis-migration/strategy/wiki/Our-Wallet-Rewrite-Project-After-Priority-Switched-From-Seraphis-to-FCMPs" target="_blank">{% t roadmap.fcmp-plus %}</a></li>
+                                    <li class="proposed"><a href="https://github.com/monero-project/research-lab/issues/94" target="_blank">{% t roadmap.mrl-tasks %}</a></li>
                             </ul>
                     </div>
                 </div>

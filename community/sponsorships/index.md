@@ -17,7 +17,7 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <a class="ext-noicon" href="https://tarilabs.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/tarilabs.png" alt="Tari Labs logo" style="max-width: 80%;"></a>
+                            <a href="https://tarilabs.com/" target="_blank" target="_blank" rel="noreferrer"><img src="/img/sponsors/tarilabs.png" alt="Tari Labs logo" style="max-width: 80%;"></a>
                             <p id="tari">{% t sponsorships.tari %}</p>
                         </div>
                     </div>
@@ -27,7 +27,7 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <a class="ext-noicon" href="https://majesticbank.sc/" target="_blank" rel="noreferrer"><img src="/img/sponsors/mblogo.png" alt="Majestic Bank logo"></a>
+                            <a href="https://majesticbank.sc/" target="_blank" target="_blank" rel="noreferrer"><img src="/img/sponsors/mblogo.png" alt="Majestic Bank logo"></a>
                             <p id="mbank">{% t sponsorships.mbank %}</p>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <a class="ext-noicon" href="https://www.macstadium.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/macstadium.png" alt="Macstadium logo"></a>
+                            <a href="https://www.macstadium.com/" target="_blank" target="_blank" rel="noreferrer"><img src="/img/sponsors/macstadium.png" alt="Macstadium logo"></a>
                             <p>{% t sponsorships.macstadium %}</p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <a class="ext-noicon" href="https://cakewallet.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/cakewallet.png" alt="Cake Wallet logo"></a>
+                            <a href="https://cakewallet.com/" target="_blank" target="_blank" rel="noreferrer"><img src="/img/sponsors/cakewallet.png" alt="Cake Wallet logo"></a>
                             <p>{% t sponsorships.cakewallet %}</p>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <a class="ext-noicon" href="https://symas.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/symas.png" alt="Symas logo"></a>
+                            <a href="https://symas.com/" target="_blank" target="_blank" rel="noreferrer"><img src="/img/sponsors/symas.png" alt="Symas logo"></a>
                             <p>{% t sponsorships.symas %}</p>
                         </div>
                     </div>
@@ -75,13 +75,13 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <h2>{% t sponsorships.pastsponsors %}</h2>
                     <ul>
-                        <li><a href="https://globee.com">Globee</a></li>
-                        <li><a href="https://www.navicat.com">Navicat</a></li>
-                        <li><a href="https://www.forked.net">Forked</a></li>
-                        <li><a href="https://www.kitware.com/">Kitware</a></li>
-                        <li><a href="https://dome9.com/">Dome9 Security</a></li>
-                        <li><a href="https://www.jetbrains.com/">JetBrains</a></li>
-                        <li><a href="https://mymonero.com/">My Monero</a></li>
+                        <li><a href="https://globee.com" target="_blank">Globee</a></li>
+                        <li><a href="https://www.navicat.com" target="_blank">Navicat</a></li>
+                        <li><a href="https://www.forked.net" target="_blank">Forked</a></li>
+                        <li><a href="https://www.kitware.com/" target="_blank">Kitware</a></li>
+                        <li><a href="https://dome9.com/" target="_blank">Dome9 Security</a></li>
+                        <li><a href="https://www.jetbrains.com/" target="_blank">JetBrains</a></li>
+                        <li><a href="https://mymonero.com/" target="_blank">My Monero</a></li>
                     </ul>
                 </div>
             </div>

@@ -605,7 +605,7 @@ library:
   books: 书籍
   zerotomonerov2: "Zero to Monero: Second Edition"
   zerotomonerov2p: >
-    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
+    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report" target="_blank">LaTeX
     source code here</a><br>
     A comprehensive conceptual (and technical) explanation of Monero.<br>
     We endeavor to teach anyone who knows basic algebra and simple computer science
@@ -614,7 +614,7 @@ library:
     can be.
   zerotomonerov1: "Zero to Monero: First Edition"
   zerotomonerov1p: >
-    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
+    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report" target="_blank">LaTeX
     source code here</a>
   masteringmonerop: >
     一本能让你在看似复杂的门罗世界里畅游无阻的指南。<br>
@@ -625,7 +625,7 @@ library:
     <li>门罗币的去中心化网络、点对点结构、交易周期和安全原则的详细信息。</li>
     <li>针对开发人员，工程师，软件架构师等人的对门罗技术基础的介绍</li>
     <li>新项目介绍：防弹证明，科维，多重签名和硬件钱包</li></ul>
-    有关完整版，请参见 <a href="https://masteringmonero.com/">Mastering Monero</a> 网站
+    有关完整版，请参见 <a href="https://masteringmonero.com/" target="_blank">Mastering Monero</a> 网站
 moneropedia:
   add_new_text1: 如果有您想添加或修改的条目，请在
   add_new_link: 这个网页的GitLab存储库中开启一个新问题

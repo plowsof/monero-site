@@ -80,7 +80,7 @@ meta_descr: downloads.intro
                   </div>
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
-                      <li class="downloads"><span class="icon-github"></span><a class="orange" href="https://github.com/monero-project/monero-gui" target="_blank">{% t downloads.sourcecode %}</a></li>
+                      <li class="downloads"><span class="icon-github"></span><a href="https://github.com/monero-project/monero-gui" target="_blank" target="_blank">{% t downloads.sourcecode %}</a></li>
                       <li class="downloads"><span class="icon-git"></span><a class="orange" href="https://downloads.getmonero.org/gui/source">{% t downloads.sourcearchive %}</a></li>
                     </ul>
                   </div>
@@ -104,14 +104,14 @@ meta_descr: downloads.intro
                     {% endif %}
                   {% endfor %}
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                  <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero-gui#installing-the-monero-gui-from-a-package" target="_blank">{% t downloads.packages_link %}</a>.</p>
+                  <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero-gui#installing-the-monero-gui-from-a-package" target="_blank" target="_blank">{% t downloads.packages_link %}</a>.</p>
                   <h3>{% t downloads.antivirus %}</h3>
                   <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
                   <h3>{% t downloads.verify %}</h3>
                     <p>{% t downloads.verify1 %} <i>{% t downloads.verify2 %}</i></p><br>
                     <details>
                     <summary>{% t downloads.showhash %}</summary>
-                     <p>{% t downloads.showhash1 %} <a href="{{ site.baseurl_root }}/downloads/hashes.txt">getmonero.org/downloads/hashes.txt</a> {% t downloads.showhash2 %} <a href="https://github.com/monero-project/monero/blob/master/utils/gpg_keys/binaryfate.asc" target="_blank">{% t downloads.showhash3 %}</a>.</p>
+                     <p>{% t downloads.showhash1 %} <a href="{{ site.baseurl_root }}/downloads/hashes.txt">getmonero.org/downloads/hashes.txt</a> {% t downloads.showhash2 %} <a href="https://github.com/monero-project/monero/blob/master/utils/gpg_keys/binaryfate.asc" target="_blank" target="_blank">{% t downloads.showhash3 %}</a>.</p>
                      <p>{% t downloads.showhash4 %} <a href="{{site.baseurl}}/resources/user-guides/verification-windows-beginner.html">{% t user-guides.verify-windows %}</a> - <a href="{{site.baseurl}}/resources/user-guides/verification-allos-advanced.html">{% t user-guides.verify-allos %}</a>.</p>
                      <dl>
                     {% for entry in item.downloads %}
@@ -122,7 +122,7 @@ meta_descr: downloads.intro
                      </dl>
                   </details>
                   <h3>{% t downloads.helpsupport %}</h3>
-                  <p>{% t downloads.helpsupport1 %} <a href="https://github.com/monero-ecosystem/monero-GUI-guide/releases" target="_blank">{% t downloads.helpsupport2 %}</a>.</p>
+                  <p>{% t downloads.helpsupport1 %} <a href="https://github.com/monero-ecosystem/monero-GUI-guide/releases" target="_blank" target="_blank">{% t downloads.helpsupport2 %}</a>.</p>
                   <p>{% t downloads.gui_helpsupport %}.</p>
                   </div>
                 </div>    
@@ -173,7 +173,7 @@ meta_descr: downloads.intro
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
                       <li class="downloads"><span class="icon-freebsd"></span><a class="orange" href="https://downloads.getmonero.org/cli/freebsd64">FreeBSD 64-bit</a></li>
-                      <li class="downloads"><span class="icon-github"></span><a class="orange" href="https://github.com/monero-project/monero" target="_blank">{% t downloads.sourcecode %}</a></li>
+                      <li class="downloads"><span class="icon-github"></span><a href="https://github.com/monero-project/monero" target="_blank" target="_blank">{% t downloads.sourcecode %}</a></li>
                       <li class="downloads"><span class="icon-git"></span><a class="orange" href="https://downloads.getmonero.org/cli/source">{% t downloads.sourcearchive %}</a></li>
                     </ul>
                   </div>
@@ -197,14 +197,14 @@ meta_descr: downloads.intro
                   {% endif %}
                 {% endfor %}
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero#installing-monero-from-a-package" target="_blank">{% t downloads.packages_link %}</a>.</p>
+                <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero#installing-monero-from-a-package" target="_blank" target="_blank">{% t downloads.packages_link %}</a>.</p>
                 <h3>{% t downloads.antivirus %}</h3>
                 <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
                 <h3>{% t downloads.verify %}</h3>
                 <p>{% t downloads.verify1 %} <i>{% t downloads.verify2 %}</i></p><br>
                   <details>
                     <summary>{% t downloads.showhash %}</summary>
-                     <p>{% t downloads.showhash1 %} <a href="{{ site.baseurl_root }}/downloads/hashes.txt">getmonero.org/downloads/hashes.txt</a> {% t downloads.showhash2 %} <a href="https://github.com/monero-project/monero/blob/master/utils/gpg_keys/binaryfate.asc" target="_blank">{% t downloads.showhash3 %}</a>.</p>
+                     <p>{% t downloads.showhash1 %} <a href="{{ site.baseurl_root }}/downloads/hashes.txt">getmonero.org/downloads/hashes.txt</a> {% t downloads.showhash2 %} <a href="https://github.com/monero-project/monero/blob/master/utils/gpg_keys/binaryfate.asc" target="_blank" target="_blank">{% t downloads.showhash3 %}</a>.</p>
                      <p>{% t downloads.showhash4 %} <a href="{{site.baseurl}}/resources/user-guides/verification-windows-beginner.html">{% t user-guides.verify-windows %}</a> - <a href="{{site.baseurl}}/resources/user-guides/verification-allos-advanced.html">{% t user-guides.verify-allos %}</a>.</p>
                       <dl>
                      {% for entry in item.downloads %}
@@ -243,28 +243,28 @@ meta_descr: downloads.intro
                             <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
+                            <td><img class="small" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com/" target="_blank">Cake Wallet</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td><span class="icon-linux"></span><span class="icon-apple"></span></td>
-                            <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
+                            <td><a href="https://github.com/cake-tech/cake_wallet" target="_blank" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather logo"><a href="https://featherwallet.org/">Feather</a></td>
+                            <td><img class="small" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather logo"><a href="https://featherwallet.org/" target="_blank">Feather</a></td>
                             <td>X</td>
                             <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
-                            <td><a class="ext-noicon" href="https://github.com/feather-wallet/feather" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
+                            <td><a href="https://github.com/feather-wallet/feather" target="_blank" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo logo"><a href="https://monerujo.io/">Monerujo</a></td>
+                            <td><img class="small" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo logo"><a href="https://monerujo.io/" target="_blank">Monerujo</a></td>
                             <td><span class="icon-android"></span></td>
                             <td>X</td>
-                            <td><a class="ext-noicon" href="https://github.com/m2049r/xmrwallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
+                            <td><a href="https://github.com/m2049r/xmrwallet" target="_blank" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/stack-wallet.png" width="100" height="100" loading="lazy" alt="Stack Wallet logo"><a href="https://stackwallet.com/">Stack Wallet</a></td>
+                            <td><img class="small" src="/img/stack-wallet.png" width="100" height="100" loading="lazy" alt="Stack Wallet logo"><a href="https://stackwallet.com/" target="_blank">Stack Wallet</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td>X</td>
-                            <td><a class="ext-noicon" href="https://github.com/cypherstack/stack_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
+                            <td><a href="https://github.com/cypherstack/stack_wallet" target="_blank" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         </table>
                         <h3 class="desktop-only">{% t downloads.remotesync %}</h3>
@@ -277,31 +277,31 @@ meta_descr: downloads.intro
                             <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/">MyMonero</a></td>
+                            <td><img class="small" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/" target="_blank">MyMonero</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td><span title="Browser" class="icon-browser"></span><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
-                            <td><a class="ext-noicon" href="https://github.com/mymonero" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
+                            <td><a href="https://github.com/mymonero" target="_blank" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo"><a href="https://edge.app/">Edge</a></td>
+                            <td><img class="small" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo"><a href="https://edge.app/" target="_blank">Edge</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td>X</td>
-                            <td><a class="ext-noicon" href="https://github.com/EdgeApp" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
+                            <td><a href="https://github.com/EdgeApp" target="_blank" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         </table>
                         <div class="row between-xs mob-wallets mobile-only">
                             <h3>{% t downloads.localsync %}</h3>
                             <p>{% t downloads.localsyncinfo %}</p>
                             <ul>
-                                <li><a class="ext-noicon" href="https://cakewallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" style="width: 50px" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo">Cake Wallet</a></li>
-                                <li><a class="ext-noicon" href="https://featherwallet.org/" aria-label="Feather icon" target="_blank"><img class="mob" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather Logo">Feather</a></li>
-                                <li><a class="ext-noicon" href="https://monerujo.io" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
+                                <li><a href="https://cakewallet.com" target="_blank" aria-label="GitHub icon" target="_blank"><img class="mob" style="width: 50px" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo">Cake Wallet</a></li>
+                                <li><a href="https://featherwallet.org/" target="_blank" aria-label="Feather icon" target="_blank"><img class="mob" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather Logo">Feather</a></li>
+                                <li><a href="https://monerujo.io" target="_blank" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
                             </ul>
                             <h3>{% t downloads.remotesync %}</h3>
                             <p>{% t downloads.remotesyncinfo %}</p>
                             <ul>
-                                <li><a class="ext-noicon" href="https://mymonero.com" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="MyMonero Logo">MyMonero</a></li>
-                                <li><a class="ext-noicon" href="https://edge.app/" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo">Edge</a></li>
+                                <li><a href="https://mymonero.com" target="_blank" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="MyMonero Logo">MyMonero</a></li>
+                                <li><a href="https://edge.app/" target="_blank" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo">Edge</a></li>
                             </ul>
                         </div>
             </div>
@@ -337,7 +337,7 @@ meta_descr: downloads.intro
                                     <th>{% t downloads.hwthfirm %}</th>
                                 </tr>
                                 <tr>
-                                    <td><a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank">{% t downloads.instructions %}</a></p></td>
+                                    <td><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank" target="_blank"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank" target="_blank">{% t downloads.instructions %}</a></p></td>
                                     <td>
                                         <ul>
                                             <li>Nano S</li>
@@ -362,7 +362,7 @@ meta_descr: downloads.intro
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><a class="ext-noicon" href="https://trezor.io/learn/a/monero-xmr-on-trezor-model-t" target="_blank"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a><p><a href="https://trezor.io/learn/a/monero-xmr-on-trezor-model-t" target="_blank">{% t downloads.instructions %}</a></p></td>
+                                    <td><a href="https://trezor.io/learn/a/monero-xmr-on-trezor-model-t" target="_blank" target="_blank"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a><p><a href="https://trezor.io/learn/a/monero-xmr-on-trezor-model-t" target="_blank" target="_blank">{% t downloads.instructions %}</a></p></td>
                                     <td>
                                         <ul>
                                             <li>Model T</li>
@@ -385,7 +385,7 @@ meta_descr: downloads.intro
                                 </table>
                                 <div class="mobile-only">
                                     <div>
-                                    <h3><a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank">{% t downloads.instructions %}</a></p></h3>
+                                    <h3><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank" target="_blank"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank" target="_blank">{% t downloads.instructions %}</a></p></h3>
                                     <ul>
                                         <b>{% t downloads.hwmobmodels %}</b>
                                             <li>Nano S</li>
@@ -401,7 +401,7 @@ meta_descr: downloads.intro
                                             <li>{% t downloads.hwnanosplus %}</li>
                                             <li>{% t downloads.hwnanox %}</li>
                                     </ul>
-                                    <h3><a class="ext-noicon" href="https://trezor.io/learn/a/monero-xmr-on-trezor-model-t" target="_blank"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a><p><a href="https://trezor.io/learn/a/monero-xmr-on-trezor-model-t" target="_blank">{% t downloads.instructions %}</a></p></h3>
+                                    <h3><a href="https://trezor.io/learn/a/monero-xmr-on-trezor-model-t" target="_blank" target="_blank"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a><p><a href="https://trezor.io/learn/a/monero-xmr-on-trezor-model-t" target="_blank" target="_blank">{% t downloads.instructions %}</a></p></h3>
                                     <ul>
                                         <b>{% t downloads.hwmobmodels %}</b>
                                             <li>Model T</li>

@@ -1068,7 +1068,7 @@ mining:
     \ une pool ou miner avec un GPU, vous aurez besoin d'un logiciel dédié. Mineurs\
     \ supportant Monero :\n"
   supportp: Si vous avez des questions ou si vous voulez simplement vous confronter
-    à d'autres mineurs, venez discuter sur Monero Pools. Sur <a href="https://matrix.to/#/%23monero-pools:monero.social">Matrix</a>
+    à d'autres mineurs, venez discuter sur Monero Pools. Sur <a href="https://matrix.to/#/%23monero-pools:monero.social" target="_blank">Matrix</a>
     and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
   efficiency: Monero peut être miné à la fois par des CPU et des GPU, mais le premier
     est beaucoup plus efficace.
@@ -1120,7 +1120,7 @@ mining:
   hardware: Matériel
   hardwarep: Monero peut être miné à la fois par des CPU et des GPU, mais ces derniers
     sont beaucoup moins efficaces que les premiers. Vous pouvez vous faire une idée
-    des performances de votre matériel par rapport à d'autres, en utilisant <a href="https://monerobenchmarks.info/">monerobanchmarks</a>
+    des performances de votre matériel par rapport à d'autres, en utilisant <a href="https://monerobenchmarks.info/" target="_blank">monerobanchmarks</a>
     (certains résultats peuvent être obsolètes).
   pow: Preuve de travail
   miningset: Exploitation minière en solo ou en pool
@@ -1689,7 +1689,7 @@ library:
   books: Livres
   zerotomonerov2: "Zero to Monero: Second Edition"
   zerotomonerov2p: >
-    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
+    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report" target="_blank">LaTeX
     source code here</a><br> A comprehensive conceptual (and technical) explanation
     of Monero.<br> We endeavor to teach anyone who knows basic algebra and simple
     computer science concepts like the ‘bit representation’ of a number not only how
@@ -1697,7 +1697,7 @@ library:
     cryptography can be.
   zerotomonerov1: "Zero to Monero: First Edition"
   zerotomonerov1p: >
-    Publié : 26 juin 2018, avec <a href="https://github.com/UkoeHB/Monero-RCT-report">Code
+    Publié : 26 juin 2018, avec <a href="https://github.com/UkoeHB/Monero-RCT-report" target="_blank">Code
     source LaTeX ici</a>.
   masteringmonerop: >
     Un guide à travers le monde apparemment complexe de Monero.<br> Il contient :

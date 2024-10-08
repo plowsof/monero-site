@@ -11,25 +11,25 @@ meta_descr: hangouts.intro
     <section class="hangouts-social container">   
         <ul class="row center-xs">
             <li>
-                <a class="ext-noicon" href="https://twitter.com/monero" target="_blank" rel="noreferrer noopener" aria-label="Twitter logo"><div class="social-icon twitter"></div></a>
+                <a href="https://twitter.com/monero" target="_blank" target="_blank" rel="noreferrer noopener" aria-label="Twitter logo"><div class="social-icon twitter"></div></a>
             </li>
             <li>
-                <a class="ext-noicon" href="https://reddit.com/r/Monero" target="_blank" rel="noreferrer noopener" aria-label="Reddit logo"><div class="social-icon reddit"></div></a>
+                <a href="https://reddit.com/r/Monero" target="_blank" target="_blank" rel="noreferrer noopener" aria-label="Reddit logo"><div class="social-icon reddit"></div></a>
             </li>
             <li>
-                <a class="ext-noicon" href="https://www.facebook.com/monerocurrency/" target="_blank" rel="noreferrer noopener" aria-label="Facebook logo"><div class="social-icon facebook"></div></a>
+                <a href="https://www.facebook.com/monerocurrency/" target="_blank" target="_blank" rel="noreferrer noopener" aria-label="Facebook logo"><div class="social-icon facebook"></div></a>
             </li>
             <li>
-                <a class="ext-noicon" href="https://github.com/monero-project" target="_blank" rel="noreferrer noopener" aria-label="GitHub logo"><div class="social-icon github"></div></a>
+                <a href="https://github.com/monero-project" target="_blank" target="_blank" rel="noreferrer noopener" aria-label="GitHub logo"><div class="social-icon github"></div></a>
             </li>
             <li>
                 <a class="ext-noicon" href="https://repo.getmonero.org/users/monero-project/projects" target="_blank" rel="noreferrer noopener" aria-label="Gitlab logo"><div class="social-icon gitlab"></div></a>
             </li>
             <li>
-                <a class="ext-noicon" href="https://telegram.me/monero" target="_blank" rel="noreferrer noopener" aria-label="Telegram logo"><div class="social-icon telegram"></div></a>
+                <a href="https://telegram.me/monero" target="_blank" target="_blank" rel="noreferrer noopener" aria-label="Telegram logo"><div class="social-icon telegram"></div></a>
             </li>
             <li>
-                <a class="ext-noicon" href="https://discord.gg/SyGUMWBqvF" target="_blank" rel="noreferrer noopener" aria-label="Discord logo"><div class="social-icon discord"></div></a>
+                <a href="https://discord.gg/SyGUMWBqvF" target="_blank" target="_blank" rel="noreferrer noopener" aria-label="Discord logo"><div class="social-icon discord"></div></a>
             </li>
         </ul>
     </section>
@@ -55,7 +55,7 @@ meta_descr: hangouts.intro
                                     <p><a href="https://translate.getmonero.org/" class="btn-link btn-fixed">Weblate</a></p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="https://matrix.to/#/%23monerospace:monero.social" class="btn-link btn-fixed">Matrix</a></p>
+                                    <p><a href="https://matrix.to/#/%23monerospace:monero.social" target="_blank" class="btn-link btn-fixed">Matrix</a></p>
                                 </div>
                                 <div class="col">
                                     <p><a href="https://taiga.getmonero.org/" class="btn-link btn-fixed">Taiga</a></p>

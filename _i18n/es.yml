@@ -1015,7 +1015,7 @@ mining:
   hardware: Hardware
   hardwarep: Monero se puede minar tanto en CPU como en GPU, pero esta última (minería
     en GPU) es mucho menos eficiente que la otra. Puedes hacerte una idea de cómo
-    rinde tu hardware en comparación con otros, utilizando <a href="https://monerobenchmarks.info/">monerobanchmarks</a>
+    rinde tu hardware en comparación con otros, utilizando <a href="https://monerobenchmarks.info/" target="_blank">monerobanchmarks</a>
     (algunos resultados pueden estar desactualizados).
   philosophy: "Una de las filosofías de Monero es mantener la minería equitativa,\
     \ para que todo el mundo tenga la posibilidad de minar. Para conseguirlo, Monero\
@@ -1038,7 +1038,7 @@ mining:
     \ GUI (sólo para CPU). Si quieres minar en una pool o minar con una GPU, necesitarás\
     \ un software dedicado. Mineros que soportan Monero:\n"
   supportp: Si tienes preguntas o simplemente quieres charlar con otros mineros, ven
-    a chatear en Monero Pools. En <a href="https://matrix.to/#/%23monero-pools:monero.social">Matrix</a>
+    a chatear en Monero Pools. En <a href="https://matrix.to/#/%23monero-pools:monero.social" target="_blank">Matrix</a>
     y <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
   conminfee: Sólo puedes utilizar software de terceros para minar en un pool, lo que
     puede quitarte un pequeño porcentaje de tus valores de hash.
@@ -1604,7 +1604,7 @@ library:
   books: Libros
   zerotomonerov2: 'Zero to Monero: Segunda edición'
   zerotomonerov2p: >
-    Publicado: el 4 de abril de 2020, con <a href="https://github.com/UkoeHB/Monero-RCT-report">
+    Publicado: el 4 de abril de 2020, con <a href="https://github.com/UkoeHB/Monero-RCT-report" target="_blank">
     código fuente de LaTeX aquí</a> <br> Una completa explicación conceptual (y técnica)
     de Monero.<br> Nos esforzamos en enseñar a cualquier persona que sepa álgebra
     básica y conceptos simples de informática como la "representación de bits" de
@@ -1612,7 +1612,7 @@ library:
     lo útil y hermosa que puede ser la criptografía.
   zerotomonerov1: 'Zero to Monero: Primera edición'
   zerotomonerov1p: >
-    Publicación: Junio 26, 2018, con <a href="https://github.com/UkoeHB/Monero-RCT-report">el
+    Publicación: Junio 26, 2018, con <a href="https://github.com/UkoeHB/Monero-RCT-report" target="_blank">el
     código fuente LaTeX aquí</a>
   masteringmonerop: >
     Una guía a través del aparentemente complejo mundo de Monero.<br> Incluye: <ul><li>Una

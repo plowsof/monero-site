@@ -48,7 +48,7 @@ meta_descr: meta_descr.whatismonero
                         </div>
                         <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>{% t what-is-monero.grassroots %}</h3>
-                            <p>{% t what-is-monero.grassroots_p1 %} <a href="/resources/research-lab">{% t what-is-monero.grassroots_p2 %}</a> {% t what-is-monero.grassroots_p3 %} <a href="https://www.openhub.net/p/monero" target="_blank" rel="noreferrer noopener">{% t what-is-monero.grassroots_p4 %}</a> {% t what-is-monero.grassroots_p5 %}</p>
+                            <p>{% t what-is-monero.grassroots_p1 %} <a href="/resources/research-lab">{% t what-is-monero.grassroots_p2 %}</a> {% t what-is-monero.grassroots_p3 %} <a href="https://www.openhub.net/p/monero" target="_blank" target="_blank" rel="noreferrer noopener">{% t what-is-monero.grassroots_p4 %}</a> {% t what-is-monero.grassroots_p5 %}</p>
                             <p>{% t what-is-monero.grassroots_p6 %} <a href="/community/hangouts">{% t what-is-monero.grassroots_p7 %}</a> {% t what-is-monero.grassroots_p8 %}</p>
                             <p><a href="{{ site.baseurl }}/community/workgroups/" class="btn-link btn-fixed">{% t what-is-monero.joinb %}</a></p>
                         </div>

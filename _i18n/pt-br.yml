@@ -1065,7 +1065,7 @@ library:
   books: Livros
   zerotomonerov2: 'Zero to Monero: Second Edition'
   zerotomonerov2p: >
-    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
+    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report" target="_blank">LaTeX
     source code here</a><br>
     A comprehensive conceptual (and technical) explanation of Monero.<br>
     We endeavor to teach anyone who knows basic algebra and simple computer science
@@ -1074,7 +1074,7 @@ library:
     can be.
   zerotomonerov1: 'Zero to Monero: First Edition'
   zerotomonerov1p: >
-    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
+    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report" target="_blank">LaTeX
     source code here</a>
   masteringmonerop: >
     Um guia através do aparentemente complexo mundo do Monero.<br>
@@ -1092,7 +1092,7 @@ library:
     arquitetos de software e usuários curiosos.</li>
     <li>Novos desenvolvimentos como Kovri, Bulletproofs, Assinatura múltipla (multisig),
     carteiras hardware, etc.</li></ul>
-    Veja o website do <a href="https://masteringmonero.com/">Mastering Monero</a>
+    Veja o website do <a href="https://masteringmonero.com/" target="_blank">Mastering Monero</a>
     para mais informações da versão completa.
 moneropedia:
   add_new_text1: Se houver um item que você gostaria de modificar ou adicionar, por

@@ -16,7 +16,7 @@ meta_descr: moneropedia.description
                 @moneropedia_index
             </div>
             <p>
-                {% t moneropedia.add_new_text1 %} <a href="https://github.com/monero-project/monero-site/issues" target="_blank" rel="noreferrer noopener">{% t moneropedia.add_new_link %}</a> {% t moneropedia.add_new_text2 %}. {% t moneropedia.instructions %} <a href="https://github.com/monero-project/monero-site/#how-to-make-a-moneropedia-entry" target="_blank" rel="noreferrer noopener">README</a>
+                {% t moneropedia.add_new_text1 %} <a href="https://github.com/monero-project/monero-site/issues" target="_blank" target="_blank" rel="noreferrer noopener">{% t moneropedia.add_new_link %}</a> {% t moneropedia.add_new_text2 %}. {% t moneropedia.instructions %} <a href="https://github.com/monero-project/monero-site/#how-to-make-a-moneropedia-entry" target="_blank" target="_blank" rel="noreferrer noopener">README</a>
             </p>
         </div>
     </div>

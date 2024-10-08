@@ -972,7 +972,7 @@ mining:
     \ potrzebował dedykowanego oprogramowania. Koparki wspierające Monero:\n"
   hardwarep: Monero może być kopane zarówno na CPU jak i GPU, ale te drugie są znacznie
     mniej wydajne niż te pierwsze. Możesz zorientować się, jak Twój sprzęt radzi sobie
-    w porównaniu z innymi, korzystając z <a href="https://monerobenchmarks.info/">monerobanchmarks</a>
+    w porównaniu z innymi, korzystając z <a href="https://monerobenchmarks.info/" target="_blank">monerobanchmarks</a>
     (niektóre wyniki mogą być nieaktualne).
   hardware: Sprzęt
   choosepol: 'Jeśli potrzebujesz pomocy przy wyborze puli lub po prostu chcesz uzyskać
@@ -1548,7 +1548,7 @@ library:
   books: Książki
   zerotomonerov2: "Od zera do Monero: Druga edycja"
   zerotomonerov2p: >
-    Opublikowano: 4 kwietnia 2020, wraz z <a href="https://github.com/UkoeHB/Monero-RCT-report"
+    Opublikowano: 4 kwietnia 2020, wraz z <a href="https://github.com/UkoeHB/Monero-RCT-report" target="_blank"
     >kodem źródłowym LaTeX tutaj</a><br> Kompleksowe koncepcyjne (i techniczne) wyjaśnienie
     Monero.<br> Staramy się nauczyć każdego, kto zna podstawową algebrę i proste pojęcia
     informatyczne, takie jak "reprezentacja bitowa" liczby, nie tylko tego, jak Monero
@@ -1556,7 +1556,7 @@ library:
     i piękna może być kryptografia.
   zerotomonerov1: "Od zera do Monero: Pierwsza edycja"
   zerotomonerov1p: >
-    Opublikowano: 26 czerwca 2018 r., z <a href="https://github.com/UkoeHB/Monero-RCT-report"
+    Opublikowano: 26 czerwca 2018 r., z <a href="https://github.com/UkoeHB/Monero-RCT-report" target="_blank"
     >kodem źródłowym LaTeX tutaj</a>
   masteringmonerop: >
     Przewodnik po pozornie skomplikowanym świecie Monero.<br> Zawiera: <ul><li>Szerokie
