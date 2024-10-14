@@ -25,6 +25,13 @@ meta_descr: merchants.descr
         <h2>P2P exchanges and Atomic Swaps</h2>
         <p>{% t merchants.descrp2p %}</p>
         <p>{% t merchants.swapsdescr %}</p>
+        <ul>
+          {% for merchant in site.data.merchants.atomic-swaps %}
+            <li>
+              <a href="{{ merchant.url }}">{{ merchant.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
     <div class="row">

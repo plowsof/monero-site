@@ -1,0 +1,5 @@
+atomic-swaps:
+- name: UnstoppableSwap
+  url: https://www.unstoppableswap.net
+- name: BasicSwapDEX
+  url: https://basicswapdex.com
