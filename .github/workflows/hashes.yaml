@@ -1,6 +1,7 @@
 ---
 name: Validate Hashes
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'downloads/hashes.txt'
