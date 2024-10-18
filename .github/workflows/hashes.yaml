@@ -26,6 +26,9 @@ jobs:
           curl -sL https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc |
             gpg --import
           gpg --verify downloads/hashes.txt
+          # signed by myself for test purposes only.
+          curl -sL https://raw.githubusercontent.com/plowsof/pgp/refs/heads/main/plowsofsmol.asc |
+            gpg --import
           gpg --verify _data/contributing.yml.asc
       - name: Verify General Fund donation QR's
         run: |
