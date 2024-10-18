@@ -84,10 +84,14 @@ meta_descr: meta_descr.contributing
                     </div><br>
                     <div class="row center-xs">
                         <div class="col-lg-6">
-                            <img class="qr" src="/img/donate-monero.png" alt="{% t contributing.altqrmonero %}"/>
+                            <a id="qr-link" href="monero:888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H">
+                                <img class="qr" src="/img/donate-monero.png" alt="{% t contributing.altqrmonero %}"/>
+                            </a>
                         </div>
                         <div class="col-lg-6">
-                            <img class="qr" src="/img/donate-bitcoin.png" alt="{% t contributing.altqrbitcoin %}"/>
+                            <a id="qr-link" href="bitcoin:1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H">
+                                <img class="qr" src="/img/donate-bitcoin.png" alt="{% t contributing.altqrbitcoin %}"/>
+                            </a>
                         </div>
                     </div>
                     <div class="row start-xs">
