@@ -11,6 +11,7 @@ on:
       - 'downloads/hashes.txt'
       - '_data/downloads.yml'
       - '_data/contributing.yml'
+  workflow_dispatch:
 jobs:
   validate-hashes:
     name: Validate Hashes
