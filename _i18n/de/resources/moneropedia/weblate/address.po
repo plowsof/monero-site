@@ -55,7 +55,7 @@ msgstr "Da diese Adressen lang und komplex sind, wird dir stattdessen häufig ei
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/address.md:15
 #
-msgid "If you would like to get an @OpenAlias address of your own then there is some information on the [OpenAlias page](https://openalias.org/)."
+msgid "AN EDIT. If you would like to get an @OpenAlias address of your own then there is some information on the [OpenAlias page](https://openalias.org/)."
 msgstr "Solltest du eine eigene @OpenAlias-Adresse haben wollen, findest du einige Informationen auf der [OpenAlias-Seite](https://openalias.org/)."
 
 #. type: Title ###
