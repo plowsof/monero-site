@@ -1,0 +1,189 @@
+name: run-po4a
+
+on:
+  push:
+    paths:
+    - '**.po'
+    - '**.pot'
+    - '**.md' #temp for all md files.
+    branches: po4a-staged
+  workflow_dispatch:
+    inputs:
+      run_on_all:
+        description: 'Run po4a on all files'
+        required: false
+        default: 'false'
+
+jobs:
+  changed_files:
+    runs-on: ubuntu-latest  # windows-latest || macos-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
+      contents: write
+      pull-requests: write
+    name: Test changed-files
+    steps:
+      - name: Clone po4a repository at specific commit
+        run: |
+          git clone https://github.com/mquinson/po4a.git
+          cd po4a
+          git checkout v0.69
+  
+      - name: Install Debian dependencies
+        run: |
+          sudo apt update 
+          sudo apt install -y liblocale-gettext-perl libtext-wrapi18n-perl libunicode-linebreak-perl libpod-parser-perl libtest-pod-perl libyaml-tiny-perl libsyntax-keyword-try-perl
+          sudo apt install -y cpanminus gettext docbook-xml docbook-xsl docbook xsltproc 
+          sudo apt install -y texlive-binaries texlive-latex-base opensp libsgmls-perl
+  
+      - name: Install CPAN dependencies
+        run: |
+          cpanm Locale::gettext
+          cpanm http://search.cpan.org/CPAN/authors/id/R/RA/RAAB/SGMLSpm-1.1.tar.gz
+          cpanm Text::WrapI18N
+          cpanm Unicode::GCString
+          cd po4a
+          cpanm -v --installdeps --notest .
+  
+      - name: Build
+        run: |
+          cd po4a
+          perl Build.PL
+          COLUMNS=120 ./Build verbose=1
+  
+      - name: Install po4a
+        run: |
+          cd po4a
+          sudo ./Build install
+          cd ..
+          rm -rf po4a
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head }}
+          fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+      # NOTE: `since_last_remote_commit: true` is implied by default and falls back to the previous local commit.
+      - name: Run step if po/pot files are changed
+        env:
+          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+          RUN_ON_ALL: ${{ github.event.inputs.run_on_all }}
+        run: |
+          RUN_ON_ALL=${RUN_ON_ALL:="false"}
+          ALL_CHANGED_FILES_ARRAY=()
+          CHANGED_MD_FILES_ARRAY=()
+          
+          # Check if RUN_ON_ALL is set to 'true'
+          if [ "$RUN_ON_ALL" == "true" ]; then
+              echo "list of all .md files in user-guides and moneropedia..."
+            
+              # Add all user-guides and moneropedia .md files
+              for guide in _i18n/en/resources/user-guides/*.md; do
+                echo "-> Adding ${guide} to file list"
+                ALL_CHANGED_FILES_ARRAY+=("${guide}")
+              done
+            
+              for entry in _i18n/en/resources/moneropedia/*.md; do
+                echo "-> Adding ${entry} to file list"
+                ALL_CHANGED_FILES_ARRAY+=("${entry}")
+              done
+          else
+            echo "Running po4a on modified po/pot files only..."
+          
+            # Split ALL_CHANGED_FILES into an array
+            IFS=' ' read -r -a ALL_CHANGED_FILES_ARRAY <<< "$ALL_CHANGED_FILES"
+            for file in "${ALL_CHANGED_FILES_ARRAY[@]}"; do
+              if [[ "$file" == *.po || "$file" == *.pot ]]; then
+                directory=$(echo "$file" | sed -E 's|_i18n/[^/]+/resources/([^/]+)/.*|\1|')
+                base_filename=$(basename "$file" | sed -E 's/\.(po|pot)$//')
+                md_file="_i18n/en/resources/${directory}/${base_filename}.md"
+                if [ -f "$md_file" ]; then
+                  echo "-> Adding ${md_file} to file list"
+                  CHANGED_MD_FILES_ARRAY+=("${md_file}")
+                fi
+              else
+                CHANGED_MD_FILES_ARRAY+=("${file}")
+              fi
+              #remove duplicates
+              ALL_CHANGED_FILES_ARRAY=($(printf "%s\n" "${CHANGED_MD_FILES_ARRAY[@]}" | sort -u))
+
+            done
+          fi
+          for file in ${ALL_CHANGED_FILES_ARRAY}; do
+            echo "$file was changed"
+          done
+          git config --global user.name "weblate-po4a"
+          git config --global user.email "weblate-po4a@example.com"
+          ERROR=0
+          for md_file in "${ALL_CHANGED_FILES_ARRAY[@]}"; do
+            cd po
+            # Determine the base directory and base filename
+            directory=$(echo "$md_file" | sed -E 's|_i18n/[^/]+/resources/([^/]+)/.*|\1|')
+            base_filename=$(basename "$md_file" | sed -E 's/\.md$//')
+            
+            # Construct the po4a configuration dynamically
+            lang=$(echo "$md_file" | sed -E 's|_i18n/([^/]+)/resources/.*|\1|')
+            if [ "$RUN_ON_ALL" == "true" ] || [ "$lang" == "en" ]; then
+              po4a_config="[po4a_langs] es it pl fr ar ru de nl pt-br tr zh-cn zh-tw nb-no\n"
+            else
+              po4a_config="[po4a_langs] ${lang}\n"
+            fi
+            po4a_config+="[po4a_paths] ../_i18n/en/resources/${directory}/weblate/${base_filename}.pot \$lang:../_i18n/\$lang/resources/${directory}/weblate/${base_filename}.po\n"
+            po4a_config+="[options] opt:\"--keep=0\"\n"
+            po4a_config+="[options] opt:\"--localized-charset=UTF-8\"\n"
+            po4a_config+="[options] opt:\"--master-charset=UTF-8\"\n"
+            po4a_config+="[options] opt:\"--master-language=en_US\"\n"
+            po4a_config+="[options] opt:\"--msgmerge-opt='--no-wrap'\"\n"
+            po4a_config+="[options] opt:\"--wrap-po=newlines\"\n"
+            po4a_config+="[po4a_alias:markdown] text opt:\"--option markdown\"\n"
+            po4a_config+="[type: markdown] ../_i18n/en/resources/${directory}/${base_filename}.md \$lang:../_i18n/\$lang/resources/${directory}/${base_filename}.md\n"
+            
+            echo -e "${po4a_config}" > po4a-config.txt
+            cat po4a-config.txt
+
+            if po4a po4a-config.txt; then
+              echo "po4a ran successfully on ${md_file}"
+            else
+              echo "::warning file=${md_file}::po4a didn't run successfully"
+              ERROR=1
+            fi
+            rm po4a-config.txt
+            cd ..
+            git add .
+            COMMIT_MESSAGE="po4a: ${directory}/${base_filename} updates"
+            git commit -m "${COMMIT_MESSAGE}" || echo "No changes to commit for ${directory}/${base_filename}"
+          done
+
+      #- name: Check if PR exists
+      #  id: check
+      #  env:
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #  run: |
+      #    prs=$(gh pr list \
+      #        --repo "$GITHUB_REPOSITORY" \
+      #        --head 'po4a-staged' \
+      #        --base 'master' \
+      #        --json title \
+      #       --jq 'length')
+      #    if ((prs > 0)); then
+      #        echo "skip=true" >> "$GITHUB_OUTPUT"
+      #    fi
+  
+      - name: push to po4a-staged
+        #if: 'steps.check.outputs.skip'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: po4a-staged
+          #force: true
+          
+      #- name: Create pull request
+      #  if: '!steps.check.outputs.skip'
+      #  uses: peter-evans/create-pull-request@v6
+      #  with:
+      #    token: ${{ secrets.GITHUB_TOKEN }}
+      #    branch: po4a-staged
+      #  continue-on-error: true
