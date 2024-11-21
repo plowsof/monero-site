@@ -10,7 +10,7 @@ summary: "Peer to peer mining pool for Monero"
 
 Monero P2Pool is a peer-to-peer Monero @mining pool developed by SChernykh (also known as sech1). P2Pool was a concept first developed for the Bitcoin blockchain but was never fully realized due to certain limitations, mainly because it had a problem with orphaned @blocks which is solved in Monero P2Pool with uncle blocks.
 
-Unlike a traditional mining pool, P2Pool allows it's users to fully control their own @node and what it mines. P2Pool has no central server that can be shutdown/blocked because it uses a separate blockchain to @merge-mine with Monero. It is designed so that all blocks found by the pool pay out to the miners immediately which means that funds are never in custody of a single party.
+Unlike a traditional mining pool, P2Pool allows it's users to fully control their own @node and what it mines. P2Pool has no central server that can be shutdown/blocked because it uses a separate blockchain to @something-works with Monero. It is designed so that all blocks found by the pool pay out to the miners immediately which means that funds are never in custody of a single party.
 
 To accomplish this P2Pool uses PPLNS payout scheme which rewards miners only once the block has been found by the pool; miners with a share in the PPLNS window are rewarded directly via the @coinbase-transaction reward for the block.
 
