@@ -4,7 +4,7 @@
 
 This README will walk you through everything you need to know to make changes, edits, or even completely new pages for the [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in. Feel free to skip down to a relevant section if you already know what you need.
 
-If you need support about something related to the website, please join `#monero-site` [Libera/IRC](irc://irc.libera.chat/#monero-site) or [Matrix](https://matrix.to/#/!txpwSzQzkuUaVbtsIx:matrix.org). For general info about Monero join `#monero`. We'll do whatever we can to help you.
+If you need support about something related to the website, please join `#monero-site` [Libera/IRC](irc://irc.libera.chat/#monero-site) or [Matrix](https://matrix.to/#/%23monero-site:monero.social). For general info about Monero join `#monero`. We'll do whatever we can to help you.
 
 ## What you'll need
 
@@ -93,12 +93,12 @@ languages: ["en", "es", "NEW LANG HERE"]
 ```
 Save and exit the file.
 
-### 3. \_i18n folder
+### 2. \_i18n folder
 
 Navigate to the \_i18n folder and duplicate the en.yml file. Rename the duplicate to the two letter language code of your language with a `.yml`. Now duplicate the `en` folder and rename it with the correct language code.
 **The original folder and yml file themselves should still be there. They should not be renamed. There should be a new folder and yml file in addition to the ones that were already there.**
 
-### 4. Open an issue on the repo where the website is hosted
+### 3. Open an issue on the repo where the website is hosted
 
 After you've done all the above, you'll need to [open an issue on the repository](https://github.com/monero-project/monero-site/issues) asking to add the language you are working on to Weblate, where the core of the website is translated.
 
@@ -293,6 +293,7 @@ Where `STATUS` can be:
 - `completed` for completed milestones
 - `ongoing` for milestones currently being worked on
 - `upcoming` for milestones not yet completed or in progress
+- `proposed` for milestones open to research and consideration
 
 If an entry is `completed`, a green tick symbol will be displayed on its left. if it's `ongoing` a roadwork sign and `upcoming` a compass.
 
