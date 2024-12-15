@@ -18,5 +18,5 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: `Thank you for your pull request! PR Number: #${context.issue.number}`
+            body: `https://${context.issue.number}.md.monerodevs.org/`
           })
