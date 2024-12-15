@@ -1,9 +1,7 @@
 name: PR Comment Workflow
-
 on:
   pull_request:
     types: [opened]
-
 jobs:
   comment-on-pr:
     runs-on: ubuntu-latest
@@ -17,6 +15,6 @@ jobs:
           github.rest.issues.createComment({
             issue_number: context.issue.number,
             owner: context.repo.owner,
-            repo: context.repo.repo,
+            repo: context.repo.name,
             body: `https://${context.issue.number}.md.monerodevs.org/`
           })
