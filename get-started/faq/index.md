@@ -165,6 +165,7 @@ meta_descr: faq.intro
                             <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20RingCT.m4v">{% t faq.video_ringct %}</a> - {% t faq.mvideos %} @RingCT</li>
                             <li><a href="{{ site.baseurl_root }}/media/Monero_Tail_Emission_VOSTO_EMISIO.webm">{% t moneropedia.entries.tail-emission %}</a> - {% t faq.mvideos %} @Tail-Emission</li>
                             <li><a href="{{ site.baseurl_root }}/media/Monero_Nodes_VOSTO_EMISIO.webm">{% t moneropedia.entries.node %}</a> - {% t faq.mvideos %} @Nodes</li>
+                            <li><a href="{{ site.baseurl_root }}/media/RandomX_VOSTO_EMISIO.webm">{% t moneropedia.entries.randomx %}</a> - {% t faq.mvideos %} @RandomX</li>
                         </ol>
                     </div>
                 </div>
@@ -252,7 +253,8 @@ meta_descr: faq.intro
                         <p>{% t faq.a12-1 %}</p>
                         <p>{% t faq.a12-2 %}</p>
                         <p>{% t faq.a12-3 %}</p>
-                        <p>{% t faq.additional %} <a href="{{ site.baseurl_root }}/2020/01/17/auditability.html">About supply auditability</a></p>
+                        <p>{% t faq.additional %} <a href="{{ site.baseurl_root }}/2020/01/17/auditability.html">{% t faq.aabout-auditability %}</a></p>
+                        <p>{% t faq.additional %} <a href="https://moneroinflation.com">{% t faq.adetailed-auditability %}</a></p>
                     </div>
                 </div>
                 <div class="tab" id="max-supply">

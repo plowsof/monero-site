@@ -22,7 +22,7 @@ meta_descr: meta_descr.contributing
                     <div class="row start-xs">
                         <h3>{% t contributing.full-node %}</h3>
                         <p>{% t contributing.full-node_p %}</p>
-                        <p>{% t contributing.full-node_p2 %} <a href="{{ site.baseurl }}/resources/user-guides/vps_run_node.html">{% t user-guides.vps-node %}</a>, <a href="{{ site.baseurl }}/resources/user-guides/node-i2p-zero.html">{% t user-guides.node-i2pzero %}</a>, <a href="http://xmrguide25ibknxgaray5rqksrclddxqku3ggdcnzg4ogdi5qkdkd2yd.onion">{% t user-guides.tailsguide %}</a>. <a href="{{ site.baseurl }}/resources/user-guides/">{% t contributing.allguides %}</a></p>
+                        <p>{% t contributing.full-node_p2 %} <a href="{{ site.baseurl }}/resources/user-guides/vps_run_node.html">{% t user-guides.vps-node %}</a>, <a href="https://docs.getmonero.org/running-node/monerod-tori2p">{% t user-guides.node-tori2p %}</a>. <a href="{{ site.baseurl }}/resources/user-guides/">{% t contributing.allguides %}</a></p>
                         <h3>{% t contributing.develop %}</h3>
                         <p>{% t contributing.developp %}</p>
                             <ul class="logo">
@@ -56,7 +56,7 @@ meta_descr: meta_descr.contributing
             </div>
             <!-- end full block-->
             <!-- full block-->
-            <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="donate" class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
@@ -70,9 +70,16 @@ meta_descr: meta_descr.contributing
                         <div class="col-xs-12">
                             <h3>{% t contributing.genfund %}</h3>
                             <p>{% t contributing.genfund_p %}</p>
-                            <p>Monero:<br><code>888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</code></p>
-                            <p>Bitcoin:<br><code>1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H</code></p>
-                            <p>@openalias: <code>donate.getmonero.org</code></p>
+                            <p>Monero:<br><code class="donation-field">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</code></p>
+                            <details>
+                                <summary>{% t contributing.donation_viewkeys %}:</summary>
+                                <ul>
+                                    <li>{% t contributing.primary_address %}: <code class="donation-field">44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</code></li>
+                                    <li>{% t moneropedia.entries.viewkey %}: <code class="donation-field">f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501</code></li>
+                                </ul>
+                            </details>
+                            <p>Bitcoin:<br><code class="donation-field">1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H</code></p>
+                            <p>@openalias: <code class="donation-field">donate.getmonero.org</code></p>
                         </div>
                     </div><br>
                     <div class="row center-xs">

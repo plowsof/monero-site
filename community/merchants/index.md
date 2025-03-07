@@ -24,7 +24,7 @@ meta_descr: merchants.descr
       <div class="info-block">
         <h2>P2P exchanges and Atomic Swaps</h2>
         <p>{% t merchants.descrp2p %}</p>
-        <p>{% t merchants.swapsdescr %} <a href="https://unstoppableswap.net/">unstoppableswap.net</a>.</p>
+        <p>{% t merchants.swapsdescr %} <a href="{{ site.baseurl_root }}/2021/08/20/atomic-swaps.html">Atomic Swaps</a></p>
       </div>
     </div>
     <div class="row">
@@ -50,42 +50,23 @@ meta_descr: merchants.descr
       <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="info-block">
           <div class="center-xs">
-            <img class="merch" src="/img/merchants/localmonero.png" alt="LocalMonero logo" title="LocalMonero">
-            <p>{% t merchants.locmondescr %}</p>
+            <img class="merch" src="/img/merchants/unstoppableswap.png" alt="UnstoppableSwap GUI Logo" title="UnstoppableSwap GUI">
+            <p>{% t merchants.unstoppableswapdesc %}</p>
           </div>
           <div>
-            <p><b>{% t merchants.cardfoss %}</b> <span class="cross"></span></p>
-            <p><b>{% t merchants.noncustodial %}</b> <span class="cross"></span></p>
-            <p>{% t merchants.cardkyc %} {% t merchants.depsell %}</p>
-            <p><b>XMR &#8596; fiat:</b> <span class="check"></span></p>
+            <p><b>{% t merchants.cardfoss %}</b> <span class="check"></span></p>
+            <p><b>{% t merchants.noncustodial %}</b> <span class="check"></span></p>
+            <p>{% t merchants.cardkyc %} <span class="check"></span></p>
+            <p><b>XMR &#8596; fiat:</b> <span class="cross"></span></p>
             <p><b>{% t merchants.cardonion %}</b> <span class="check"></span></p>
-            <p><b>{% t merchants.cardi2p %}</b> <span class="check"></span></p>
+            <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
           </div>
           <div class="center-xs">
-            <p><a href="https://localmonero.co" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitlocalmonero %}</a></p>
+            <p><a href="https://unstoppableswap.net" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitunstoppableswap %}</a></p>
           </div>
         </div>
       </div>
       <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <div class="info-block">
-          <div class="center-xs">
-            <img class="merch" src="/img/merchants/hodlhodl.jpg" alt="HodlHodl Logo" title="HodlHodl">
-            <p>{% t merchants.hodlhodldescr %}</p>
-          </div>
-          <div>
-            <p><b>{% t merchants.cardfoss %}</b> <span class="cross"></span></p>
-            <p><b>{% t merchants.noncustodial %}</b> <span class="check"></span></p>
-            <p>{% t merchants.cardkyc %} <span class="check"></span></p>
-            <p><b>XMR &#8596; fiat:</b> <span class="cross"></span> {% t merchants.cardbtcfiat %}</p>
-            <p><b>{% t merchants.cardonion %}</b> <span class="cross"></span></p>
-            <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
-          </div>
-          <div class="center-xs">
-            <p><a href="https://hodlhodl.com" class="btn-link btn-fixed btn-primary-top">{% t merchants.visithodlhodl %}</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="info-block">
           <div class="center-xs">
             <img class="merch" src="/img/merchants/basicswapdex.png" alt="BasicSwapDEX Logo" title="BasicSwapDEX">
@@ -112,13 +93,14 @@ meta_descr: merchants.descr
         <h3>CEXes</h3>
         <p>{% t merchants.cexp %}</p>
         <ul class="logo">
-            <li><a href="https://www.kraken.com/">Kraken</a> (EUR*, USD*, CAD, GBP, JPY, AUD, CHF)</li>
-            <li><a href="https://dvchain.co/">DV Chain (OTC)</a> (USD*, CAD*, GBP*, EUR*, JPY*, ...)</li>
-            <li><a href="https://www.bitfinex.com/">Bitfinex</a> (USD*)</li>
-            <li><a href="https://bitcoinvn.io?deposit=vnd&settle=xmr">BitcoinVN</a> (VND*)</li>
+            <li><a href="https://www.kraken.com/">Kraken</a> (USD¹, EUR¹ ², CAD, AUD, CHF)</li>
+            <li><a href="https://dvchain.co/">DV Chain (OTC)</a> (USD¹, CAD¹, GBP¹, EUR¹, JPY¹, ...)</li>
+            <li><a href="https://www.bitfinex.com/">Bitfinex</a> (USD¹)</li>
+            <li><a href="https://bitcoinvn.io?deposit=vnd&settle=xmr">BitcoinVN</a> (VND¹)</li>
             <li><a href="https://tradeogre.com/">TradeOgre</a></li>
           </ul>
-          <p>*Fiat currency to Monero trading pair (e.g. XMR/USD, XMR/EUR)</p>
+          <p>¹ Fiat currency to Monero trading pair (e.g. XMR/USD, XMR/EUR)</p>
+          <p>² XMR Unavailable for EEA Users</p>
         <h3>Swappers</h3>
         <p>{% t merchants.swappersp %}</p>
         <ul class="logo">
