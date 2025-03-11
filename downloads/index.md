@@ -243,7 +243,7 @@ meta_descr: downloads.intro
                             <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
+                            <td><img class="small" src="/img/monerocom-wallet.png" width="172" height="202" loading="lazy" alt="Monero.com Wallet Logo"><a href="https://cakewallet.com">Monero.com Wallet</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td><span class="icon-linux"></span><span class="icon-apple"></span></td>
                             <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
@@ -263,7 +263,7 @@ meta_descr: downloads.intro
                         <tr>
                             <td><img class="small" src="/img/stack-wallet.png" width="100" height="100" loading="lazy" alt="Stack Wallet logo"><a href="https://stackwallet.com/">Stack Wallet</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
-                            <td>X</td>
+                            <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
                             <td><a class="ext-noicon" href="https://github.com/cypherstack/stack_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         </table>
@@ -296,6 +296,7 @@ meta_descr: downloads.intro
                                 <li><a class="ext-noicon" href="https://cakewallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" style="width: 50px" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo">Cake Wallet</a></li>
                                 <li><a class="ext-noicon" href="https://featherwallet.org/" aria-label="Feather icon" target="_blank"><img class="mob" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather Logo">Feather</a></li>
                                 <li><a class="ext-noicon" href="https://monerujo.io" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
+                                <li><a class="ext-noicon" href="https://stackwallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/stack-wallet.png" width="100" height="100" loading="lazy" alt="Stack Wallet Logo">Stack Wallet</a></li>
                             </ul>
                             <h3>{% t downloads.remotesync %}</h3>
                             <p>{% t downloads.remotesyncinfo %}</p>
@@ -337,7 +338,7 @@ meta_descr: downloads.intro
                                     <th>{% t downloads.hwthfirm %}</th>
                                 </tr>
                                 <tr>
-                                    <td><a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank">{% t downloads.instructions %}</a></p></td>
+                                    <td><a class="ext-noicon" href="https://support.ledger.com/article/360006352934-zd" target="_blank"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/article/360006352934-zd" target="_blank">{% t downloads.instructions %}</a></p></td>
                                     <td>
                                         <ul>
                                             <li>Nano S</li>
@@ -385,7 +386,7 @@ meta_descr: downloads.intro
                                 </table>
                                 <div class="mobile-only">
                                     <div>
-                                    <h3><a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank">{% t downloads.instructions %}</a></p></h3>
+                                    <h3><a class="ext-noicon" href="https://support.ledger.com/article/360006352934-zd" target="_blank"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/article/360006352934-zd" target="_blank">{% t downloads.instructions %}</a></p></h3>
                                     <ul>
                                         <b>{% t downloads.hwmobmodels %}</b>
                                             <li>Nano S</li>
