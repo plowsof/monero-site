@@ -39,41 +39,33 @@ Starte `monero-wallet-gui`. Wenn du das Programm zum ersten Mal startest,
 gehe über zum nächsten Schritt, ansonsten wähle `Abbrechen`:
 
 ![cancel
-opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)
-
-Wähle die für dich passende Sprache `Deutsch`:
-
-![choose
-language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)
+opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.avif)
 
 Klicke auf `Stelle Wallet mit Schlüsseln oder mnemonischem Seed wieder her`:
 
 ![choose
-restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)
+restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.avif)
 
-Wähle `Mit Schlüsseln wiederherstellen`, lege Namen und Speicherstelle
-deines Wallets fest und vervollständige deine `Wallet-Adresse (öffentlich)`,
-den `View-Key (privat)` und `Spend-Key (privat)`. Um das Scannen der
-ältesten Blöcke zu umgehen, kannst du eine optionale
-`Wiederherstellungshöhe` festlegen. Klicke dann auf den `rechten` Pfeil:
+Select `Restore from keys`, give your wallet a name & storage location, and
+complete the `Account address (public)`, `View key (private)` & `Spend key
+(private)`. Optionally, specify a `Restore height (optional)` to avoid
+scanning of oldest blocks. Then click the `Next` button:
 
 ![restore
-wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)
+wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.avif)
 
-Auf der nächsten Seite gibst du deinem Wallet ein starkes
-Passwort. Bestätige dieses, bevor du abermals auf den `rechten` Pfeil
-klickst:
+On the next page, give your wallet a strong password and confirm it before
+clicking the `Next` button:
 
 ![wallet
-password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)
+password](/img/resources/user-guides/en/restore_from_keys/wallet-password.avif)
 
-Lege die Einstellungen deines Hintergrunddienstes fest und klicke dann
-erneut auf den `rechten` Pfeil:
+Specify your daemon settings and click the `Next` button:
 
 ![daemon
-settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)
+settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.avif)
 
-Klicke auf `USE MONERO` und hab Spaß mit deinem wiederhergestellten Wallet:
+Click on `Create wallet` to complete the restoration process:
 
 ![all set
-up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)
+up](/img/resources/user-guides/en/restore_from_keys/all-set-up.avif)
