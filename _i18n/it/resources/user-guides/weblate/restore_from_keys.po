@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 08:34+0000\n"
+"POT-Creation-Date: 2025-03-11 00:16+0000\n"
 "PO-Revision-Date: 2021-12-18 09:33+0000\n"
 "Last-Translator: netrik182 <netrik@tuta.io>\n"
 "Language-Team: Italian <https://translate.getmonero.org/projects/getmonero-user-guides/restore_from_keys/it/>\n"
@@ -92,65 +92,55 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_from_keys.md:29
-msgid "![cancel opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)"
+msgid "![cancel opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.avif)"
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_from_keys.md:31
-msgid "Select your appropriate language `English(US)`:"
-msgstr ""
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:33
-msgid "![choose language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)"
-msgstr ""
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:35
 msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgstr ""
 
 #. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_from_keys.md:33
+msgid "![choose restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.avif)"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_from_keys.md:35
+msgid "Select `Restore from keys`, give your wallet a name & storage location, and complete the `Account address (public)`, `View key (private)` & `Spend key (private)`. Optionally, specify a `Restore height (optional)` to avoid scanning of oldest blocks. Then click the `Next` button:"
+msgstr ""
+
+#. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_from_keys.md:37
-msgid "![choose restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)"
+msgid "![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.avif)"
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_from_keys.md:39
-msgid "Select `Restore from keys`, give your wallet a name & storage location, and complete the `Account address (public)`, `View key (private)` & `Spend key (private)`. Optionaly, specify a `Restore height (optional)` to avoid scanning of oldest blocks. Then click the `Right` arrow:"
+msgid "On the next page, give your wallet a strong password and confirm it before clicking the `Next` button:"
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_from_keys.md:41
-msgid "![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+msgid "![wallet password](/img/resources/user-guides/en/restore_from_keys/wallet-password.avif)"
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_from_keys.md:43
-msgid "On the next page, give your wallet a strong password and confirm it before clicking the `Right` arrow:"
+msgid "Specify your daemon settings and click the `Next` button:"
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_from_keys.md:45
-msgid "![wallet password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)"
+msgid "![daemon settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.avif)"
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_from_keys.md:47
-msgid "Specify your daemon settings and click the `Right` arrow:"
+msgid "Click on `Create wallet` to complete the restoration process:"
 msgstr ""
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:49
-msgid "![daemon settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)"
-msgstr ""
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:51
-msgid "Click on `USE MONERO` to enjoy your restored wallet:"
-msgstr ""
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:52
-msgid "![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)"
+#: ../_i18n/en/resources/user-guides/restore_from_keys.md:48
+msgid "![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.avif)"
 msgstr ""

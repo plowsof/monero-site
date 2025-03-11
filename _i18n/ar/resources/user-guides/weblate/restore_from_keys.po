@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 08:34+0000\n"
+"POT-Creation-Date: 2025-03-11 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,77 +100,94 @@ msgstr "شغّل `monero-wallet-gui`. إذا كانت هذه هي المره ا�
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_from_keys.md:29
-msgid "![cancel opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)"
+#, fuzzy
+#| msgid "![cancel opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)"
+msgid "![cancel opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.avif)"
 msgstr "![cancel opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)"
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_from_keys.md:31
-msgid "Select your appropriate language `English(US)`:"
-msgstr "إختر اللغه المناسبه :"
-
-#
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:33
-msgid "![choose language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)"
-msgstr "![choose language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)"
-
-#
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:35
 msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgstr "إختر 'إستعاده المحفظه من المفاتيح أو كلمات الإستعاده':"
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:37
-msgid "![choose restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)"
+#: ../_i18n/en/resources/user-guides/restore_from_keys.md:33
+#, fuzzy
+#| msgid "![choose restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)"
+msgid "![choose restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.avif)"
 msgstr "![choose restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)"
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:39
-msgid "Select `Restore from keys`, give your wallet a name & storage location, and complete the `Account address (public)`, `View key (private)` & `Spend key (private)`. Optionaly, specify a `Restore height (optional)` to avoid scanning of oldest blocks. Then click the `Right` arrow:"
+#: ../_i18n/en/resources/user-guides/restore_from_keys.md:35
+#, fuzzy
+#| msgid "Select `Restore from keys`, give your wallet a name & storage location, and complete the `Account address (public)`, `View key (private)` & `Spend key (private)`. Optionaly, specify a `Restore height (optional)` to avoid scanning of oldest blocks. Then click the `Right` arrow:"
+msgid "Select `Restore from keys`, give your wallet a name & storage location, and complete the `Account address (public)`, `View key (private)` & `Spend key (private)`. Optionally, specify a `Restore height (optional)` to avoid scanning of oldest blocks. Then click the `Next` button:"
 msgstr "اختر 'إستعاده من المفاتيح', عيّن لمحفظتك إسماً ومكان للتخزين, وأكمل بيانات 'عنوان الحساب (عام)' و 'مفتاح الرؤيه (خاص)' و 'مفتاح الإنفاق (خاص)'. يمكنك إختيارياً تحديد 'طول الإسترجاع' لتفادي فحص الكتل القديمه. وبعد ذلك إضغط السهم جهه 'اليمين':"
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:41
-msgid "![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+#: ../_i18n/en/resources/user-guides/restore_from_keys.md:37
+#, fuzzy
+#| msgid "![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+msgid "![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.avif)"
 msgstr "![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:43
-msgid "On the next page, give your wallet a strong password and confirm it before clicking the `Right` arrow:"
+#: ../_i18n/en/resources/user-guides/restore_from_keys.md:39
+#, fuzzy
+#| msgid "On the next page, give your wallet a strong password and confirm it before clicking the `Right` arrow:"
+msgid "On the next page, give your wallet a strong password and confirm it before clicking the `Next` button:"
 msgstr "في الصفحه التاليه, عيّن لمحفظتك كلمه سر قويه وقم بتأكيدها قبل ضغط السهم جهه 'اليمين':"
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:45
-msgid "![wallet password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)"
+#: ../_i18n/en/resources/user-guides/restore_from_keys.md:41
+#, fuzzy
+#| msgid "![wallet password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)"
+msgid "![wallet password](/img/resources/user-guides/en/restore_from_keys/wallet-password.avif)"
 msgstr "![wallet password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)"
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:47
-msgid "Specify your daemon settings and click the `Right` arrow:"
+#: ../_i18n/en/resources/user-guides/restore_from_keys.md:43
+#, fuzzy
+#| msgid "Specify your daemon settings and click the `Right` arrow:"
+msgid "Specify your daemon settings and click the `Next` button:"
 msgstr "حدد إعدادات الخادم وقم بالضغط علي السهم جهه 'اليمين':"
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:49
-msgid "![daemon settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)"
+#: ../_i18n/en/resources/user-guides/restore_from_keys.md:45
+#, fuzzy
+#| msgid "![daemon settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)"
+msgid "![daemon settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.avif)"
 msgstr "![daemon settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)"
 
-#
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:51
-msgid "Click on `USE MONERO` to enjoy your restored wallet:"
-msgstr "إنقر علي 'إستخدم مونيرو' للإستمتاع بمحفظتك المُستعاده:"
+#: ../_i18n/en/resources/user-guides/restore_from_keys.md:47
+msgid "Click on `Create wallet` to complete the restoration process:"
+msgstr ""
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/restore_from_keys.md:52
-msgid "![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)"
+#: ../_i18n/en/resources/user-guides/restore_from_keys.md:48
+#, fuzzy
+#| msgid "![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)"
+msgid "![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.avif)"
 msgstr "![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)"
+
+#
+#~ msgid "Select your appropriate language `English(US)`:"
+#~ msgstr "إختر اللغه المناسبه :"
+
+#
+#~ msgid "![choose language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)"
+#~ msgstr "![choose language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)"
+
+#
+#~ msgid "Click on `USE MONERO` to enjoy your restored wallet:"
+#~ msgstr "إنقر علي 'إستخدم مونيرو' للإستمتاع بمحفظتك المُستعاده:"

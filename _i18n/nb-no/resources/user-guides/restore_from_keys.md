@@ -37,39 +37,33 @@ Start `monero-wallet-gui`. Hvis dette er første gang du har startet den, kan
 du gå til neste trinn. Ellers kan du trykke på `Avbryt`:
 
 ![cancel
-opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)
-
-Velg språket ditt (`Norsk`):
-
-![choose
-language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)
+opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.avif)
 
 Trykk på `Gjenopprett lommeboken fra nøkler eller mnemoniske frø`:
 
 ![choose
-restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)
+restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.avif)
 
-Velg `Gjenopprett fra nøkler`, gi lommeboken din et navn og lagringssted, og
-fullfør `Kontoadresse (offentlig)`, `Visningsnøkkel (privat)` og
-`Forbruksnøkkel (privat)`. Alternativt kan du angi en `Gjenopprettingshøyde
-(valgfritt)` for å unngå skanning av de eldste blokkene. Deretter trykker du
-på `Høyre`-piltasten:
+Select `Restore from keys`, give your wallet a name & storage location, and
+complete the `Account address (public)`, `View key (private)` & `Spend key
+(private)`. Optionally, specify a `Restore height (optional)` to avoid
+scanning of oldest blocks. Then click the `Next` button:
 
 ![restore
-wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)
+wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.avif)
 
-På neste side kan du gi lommeboken din et sterkt passord og bekrefte det før
-du trykker på `Høyre`-piltasten:
+On the next page, give your wallet a strong password and confirm it before
+clicking the `Next` button:
 
 ![wallet
-password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)
+password](/img/resources/user-guides/en/restore_from_keys/wallet-password.avif)
 
-Spesifiser dine daemon-innstillinger og trykk på `Høyre`-piltasten:
+Specify your daemon settings and click the `Next` button:
 
 ![daemon
-settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)
+settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.avif)
 
-Trykk på `BRUK MONERO` for å glede deg over din gjenopprettede lommebok:
+Click on `Create wallet` to complete the restoration process:
 
 ![all set
-up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)
+up](/img/resources/user-guides/en/restore_from_keys/all-set-up.avif)

@@ -35,38 +35,33 @@
 بتشغيلها فإذهب إلي الخطوه التاليه, غير ذلك إضغط `إلغاء`:
 
 ![cancel
-opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)
-
-إختر اللغه المناسبه :
-
-![choose
-language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)
+opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.avif)
 
 إختر 'إستعاده المحفظه من المفاتيح أو كلمات الإستعاده':
 
 ![choose
-restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)
+restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.avif)
 
-اختر 'إستعاده من المفاتيح', عيّن لمحفظتك إسماً ومكان للتخزين, وأكمل بيانات
-'عنوان الحساب (عام)' و 'مفتاح الرؤيه (خاص)' و 'مفتاح الإنفاق (خاص)'. يمكنك
-إختيارياً تحديد 'طول الإسترجاع' لتفادي فحص الكتل القديمه. وبعد ذلك إضغط
-السهم جهه 'اليمين':
+Select `Restore from keys`, give your wallet a name & storage location, and
+complete the `Account address (public)`, `View key (private)` & `Spend key
+(private)`. Optionally, specify a `Restore height (optional)` to avoid
+scanning of oldest blocks. Then click the `Next` button:
 
 ![restore
-wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)
+wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.avif)
 
-في الصفحه التاليه, عيّن لمحفظتك كلمه سر قويه وقم بتأكيدها قبل ضغط السهم جهه
-'اليمين':
+On the next page, give your wallet a strong password and confirm it before
+clicking the `Next` button:
 
 ![wallet
-password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)
+password](/img/resources/user-guides/en/restore_from_keys/wallet-password.avif)
 
-حدد إعدادات الخادم وقم بالضغط علي السهم جهه 'اليمين':
+Specify your daemon settings and click the `Next` button:
 
 ![daemon
-settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)
+settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.avif)
 
-إنقر علي 'إستخدم مونيرو' للإستمتاع بمحفظتك المُستعاده:
+Click on `Create wallet` to complete the restoration process:
 
 ![all set
-up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)
+up](/img/resources/user-guides/en/restore_from_keys/all-set-up.avif)

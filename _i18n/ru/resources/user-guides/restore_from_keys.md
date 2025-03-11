@@ -37,43 +37,34 @@
 следующему шагу, в противном случае нажмите `Cancel` (Отменить):
 
 ![cancel
-opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)
-
-Выберите нужный вам язык, например, `English(US)`:
-
-![choose
-language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)
+opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.avif)
 
 Щёлкните `Restore wallet from keys or mnemonic seed` (Восстановить кошелёк
 на основе ключей или мнемонической фразы):
 
 ![choose
-restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)
+restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.avif)
 
-Выберите `Restore from keys` (Восстановить на основе ключей), укажите имя
-вашего кошелька и место, где он будет находиться, а также укажите `Account
-address (public)` (Адрес учётной записи (публичный)), `View key (private)`
-(Ключ просмотра (приватный)) и `Spend key (private)` (Ключ траты
-(приватный)). Дополнительно указать `Restore height (optional)` (Высоту
-восстановления (опционально)) во избежание сканирования старых блоков. Затем
-нажать стрелку вправо:
+Select `Restore from keys`, give your wallet a name & storage location, and
+complete the `Account address (public)`, `View key (private)` & `Spend key
+(private)`. Optionally, specify a `Restore height (optional)` to avoid
+scanning of oldest blocks. Then click the `Next` button:
 
 ![restore
-wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)
+wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.avif)
 
-На следующей странице ввести сложный пароль для вашего кошелька и
-подтвердить его перед нажатием стрелки `Right` (Вправо):
+On the next page, give your wallet a strong password and confirm it before
+clicking the `Next` button:
 
 ![wallet
-password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)
+password](/img/resources/user-guides/en/restore_from_keys/wallet-password.avif)
 
-Указать настройки демон-программы и нажать стрелку `Right` (Вправо):
+Specify your daemon settings and click the `Next` button:
 
 ![daemon
-settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)
+settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.avif)
 
-Щёлкнуть `USE MONERO` (использовать Monero) и наслаждаться восстановленным
-кошельком:
+Click on `Create wallet` to complete the restoration process:
 
 ![all set
-up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)
+up](/img/resources/user-guides/en/restore_from_keys/all-set-up.avif)
