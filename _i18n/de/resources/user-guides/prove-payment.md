@@ -52,7 +52,7 @@ Wenn dies bei 0 steht, ändere es in 1 ab:
 Alice kann ihr monero-wallet-gui öffnen und die Details ihrer Transaktionen
 auf der Verlaufsseite einsehen:
 
-![History](/img/resources/user-guides/en/prove-payment/history.png)
+![History](/img/resources/user-guides/en/prove-payment/history.avif)
 
 Sie kann hier sowohl die Transaktions-ID als auch Bobs Adresse durch
 jeweiliges Anklicken kopieren.  Anschließend erhält sie durch Klicken auf
@@ -94,7 +94,9 @@ mit Bob gegenprüfen, ob es sich tatsächlich um dessen Adresse handelt.
 Charlie kann sein monero-wallet-gui öffnen und über die "Erweitert"-Seite zur "Nachweisen/prüfen"-Seite gehen. Im "Prüfen"-Abschnitt kann er anschließend die von Alice bereitgestellten Informationen einfügen:
 
 ![Check
-payment](/img/resources/user-guides/en/prove-payment/check-payment.png)
+payment-1](/img/resources/user-guides/en/prove-payment/check-payment-1.avif)
+![Check
+payment-2](/img/resources/user-guides/en/prove-payment/check-payment-2.avif)
 
 Durch Klicken auf "Überprüfen" wird Charlie erfahren, wie viel mit genau
 dieser Transaktion an die Adresse gesendet wurde und wie viele Bestätigungen

@@ -48,7 +48,7 @@ Hvis den er satt til 0, setter du den til 1:
 Alice kan åpne sin monero-wallet-gui og gå til historikksiden for å se
 transaksjonsdetaljene sine:
 
-![History](/img/resources/user-guides/en/prove-payment/history.png)
+![History](/img/resources/user-guides/en/prove-payment/history.avif)
 
 Her kan hun kopiere transaksjons-ID-en og Bobs adresse ved å trykke på hver
 av dem.  Deretter kan hun trykke på `P` for å få et betalingsbevis
@@ -90,7 +90,9 @@ Charlie ønsker åpenbart å dobbeltsjekke med Bob at adressen virkelig er hans
 Charlie vil åpne sin monero-wallet-gui og gå til Avansert > Bevis/Sjekk-siden for å fylle inn Sjekk-seksjonen med opplysningene som Alice har oppgitt:
 
 ![Check
-payment](/img/resources/user-guides/en/prove-payment/check-payment.png)
+payment-1](/img/resources/user-guides/en/prove-payment/check-payment-1.avif)
+![Check
+payment-2](/img/resources/user-guides/en/prove-payment/check-payment-2.avif)
 
 Å trykke på Sjekk vil deretter fortelle Charlie hvor mye akkurat denne
 transaksjonen har sendt til denne adressen og hvor mange bekreftelser

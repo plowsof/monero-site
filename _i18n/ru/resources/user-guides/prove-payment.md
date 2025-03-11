@@ -50,7 +50,7 @@ monero-wallet-cli настроен на сохранение ключей тра
 Алиса может открыть свой monero-wallet-gui и перейти на страницу история,
 чтобы увидеть детали транзакции:
 
-![History](/img/resources/user-guides/en/prove-payment/history.png)
+![History](/img/resources/user-guides/en/prove-payment/history.avif)
 
 Здесь она может скопировать идентификатор транзакции и адрес Боба, щелкнув
 по каждому из них. Затем она может нажать на `P`, чтобы получить
@@ -92,7 +92,9 @@ proof](/img/resources/user-guides/en/prove-payment/payment-proof.png)
 Чарли необходимой открыть свой monero-wallet-gui и перейдет на страницу Advanced (Дополнительно), перейти в пункт Prove / Check (Подтвердить / Проверить), заполнить поля с информацией предоставленной Алисой в разделе Check (Проверить):
 
 ![Check
-payment](/img/resources/user-guides/en/prove-payment/check-payment.png)
+payment-1](/img/resources/user-guides/en/prove-payment/check-payment-1.avif)
+![Check
+payment-2](/img/resources/user-guides/en/prove-payment/check-payment-2.avif)
 
 Затем, нажать Check (Проверить), он сообщит Чарли, сколько именно монет
 отправлено по этой транзакции на этот адрес и сколько у нее подтверждений:

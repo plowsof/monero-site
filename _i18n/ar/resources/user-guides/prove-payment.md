@@ -46,7 +46,7 @@
 يُمكن لمريم فتح الواجهه الرسوميه والذهاب إلي صفحه سجل المُعاملات لرؤيه
 تفاصيل المُعامله:
 
-![History](/img/resources/user-guides/en/prove-payment/history.png)
+![History](/img/resources/user-guides/en/prove-payment/history.avif)
 
 من هُنا يُمكنها نسخ معرف المعامله وعنوان حساب عبدالحميد بالنقر علي كلاً
 منهم. وبالضغط علي حرف "ت" للحصول علي تأكييد المعامله (مفتاح المعامله):
@@ -85,7 +85,9 @@ proof](/img/resources/user-guides/en/prove-payment/payment-proof.png)
 يفتح محمود إلي الواجهه الرسوميه ويذهب إلي صفحه مُتقدم > صفحه إثبات/تحقق ويملأ البيانات اللازمه :
 
 ![Check
-payment](/img/resources/user-guides/en/prove-payment/check-payment.png)
+payment-1](/img/resources/user-guides/en/prove-payment/check-payment-1.avif)
+![Check
+payment-2](/img/resources/user-guides/en/prove-payment/check-payment-2.avif)
 
 بالنقر علي تحقق سوف يتم إخبار محمود بالكميه المُرسله إلي ذلك العنوان وعدد
 التأكيدات علي تلك المعامله:

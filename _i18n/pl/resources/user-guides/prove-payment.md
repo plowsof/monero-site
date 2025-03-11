@@ -48,7 +48,7 @@ Jeśli ustawione jest na 0, zmień na 1:
 Ewa może otworzyć swój Graficzny Interfejs Użytkownika i przejść do
 Historii, gdzie wyszuka szczegóły transakcji:
 
-![History](/img/resources/user-guides/en/prove-payment/history.png)
+![History](/img/resources/user-guides/en/prove-payment/history.avif)
 
 Stąd może ona skopiować numer identyfikacyjny transakcji oraz adres Jacka,
 klikając na nie.  Następnie po kliknięciu `P`, Ewa wygeneruje dowód
@@ -89,7 +89,9 @@ niego należy - tak samo jak w przypadku Bitcoina.
 Paweł otworzy swój Graficzny Interfejs Użytkownika i przejdzie do strony Advanced > Prove/Check, aby wypełnić pole Check informacjami dostarczonymi przez Ewę.
 
 ![Check
-payment](/img/resources/user-guides/en/prove-payment/check-payment.png)
+payment-1](/img/resources/user-guides/en/prove-payment/check-payment-1.avif)
+![Check
+payment-2](/img/resources/user-guides/en/prove-payment/check-payment-2.avif)
 
 Po kliknięciu "Check" Paweł dowie się, jaka kwota została przelana na ten
 adres w tej konkretnej transakcji oraz ile potwierdzeń miała transakcja.
