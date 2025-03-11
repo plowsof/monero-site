@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 08:33+0000\n"
+"POT-Creation-Date: 2025-03-11 00:16+0000\n"
 "PO-Revision-Date: 2022-01-18 16:34+0000\n"
 "Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
 "Language-Team: Russian <https://translate.getmonero.org/projects/getmonero-user-guides/prove-payment/ru/>\n"
@@ -145,7 +145,9 @@ msgstr "Алиса может открыть свой monero-wallet-gui и пе�
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:43
-msgid "![History](/img/resources/user-guides/en/prove-payment/history.png)"
+#, fuzzy
+#| msgid "![History](/img/resources/user-guides/en/prove-payment/history.png)"
+msgid "![History](/img/resources/user-guides/en/prove-payment/history.avif)"
 msgstr "![History](/img/resources/user-guides/en/prove-payment/history.png)"
 
 #
@@ -169,7 +171,7 @@ msgstr "Алиса теперь может отправить Чарли клю�
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:55
-#: ../_i18n/en/resources/user-guides/prove-payment.md:87
+#: ../_i18n/en/resources/user-guides/prove-payment.md:88
 msgid "Note: if several transactions were made, this needs repeating for each such transaction."
 msgstr "Примечание: если было сделано несколько транзакций, данную процедуру необходимо повторить для каждой из них."
 
@@ -208,7 +210,7 @@ msgstr "Информация, предоставленная Алисой, ак�
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/prove-payment.md:71
-#: ../_i18n/en/resources/user-guides/prove-payment.md:86
+#: ../_i18n/en/resources/user-guides/prove-payment.md:87
 msgid "Obviously, Charlie will want to double check with Bob the address is really his - same as with Bitcoin."
 msgstr "Очевидно, Чарли с Бобом захочет дважды проверить, действительно ли этот адрес его, так же как и в сети Bitcoin."
 
@@ -221,19 +223,21 @@ msgstr "Чарли необходимой открыть свой monero-wallet-
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/prove-payment.md:77
-msgid "![Check payment](/img/resources/user-guides/en/prove-payment/check-payment.png)"
+#: ../_i18n/en/resources/user-guides/prove-payment.md:78
+#, fuzzy
+#| msgid "![Check payment](/img/resources/user-guides/en/prove-payment/check-payment.png)"
+msgid "![Check payment-1](/img/resources/user-guides/en/prove-payment/check-payment-1.avif)  ![Check payment-2](/img/resources/user-guides/en/prove-payment/check-payment-2.avif)"
 msgstr "![Check payment](/img/resources/user-guides/en/prove-payment/check-payment.png)"
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/prove-payment.md:79
+#: ../_i18n/en/resources/user-guides/prove-payment.md:80
 msgid "Then clicking on Check will tell Charlie how much this particular transaction sent to this address, and how much confirmation the transaction had:"
 msgstr "Затем, нажать Check (Проверить), он сообщит Чарли, сколько именно монет отправлено по этой транзакции на этот адрес и сколько у нее подтверждений:"
 
 #
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/prove-payment.md:81
+#: ../_i18n/en/resources/user-guides/prove-payment.md:82
 msgid "![Payment checked](/img/resources/user-guides/en/prove-payment/payment-checked.png)"
 msgstr "![Payment checked](/img/resources/user-guides/en/prove-payment/payment-checked.png)"
 

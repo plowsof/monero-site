@@ -49,7 +49,7 @@ Si set es 0, cámbialo a 1:
 Alicia puede abrir monero-wallet-gui e ir al historial para ver los detalles
 de su transacción:
 
-![Historial](/img/resources/user-guides/en/prove-payment/history.png)
+![History](/img/resources/user-guides/en/prove-payment/history.avif)
 
 Aquí, ella puede copiar el ID de transacción y la dirección de Bob haciendo
 clic en cada uno.  Entonces ella puede hacer clic en `P` para obtener una
@@ -89,8 +89,10 @@ realmente de él - al igual que con Bitcoin.
 
 Charlie abrirá su monero-wallet-gui e irá a la página en Avanzado > Probar/verificar para llenar la sección Comprobar con la información provista por Alicia:
 
-![Prueba de
-pago](/img/resources/user-guides/en/prove-payment/check-payment.png)
+![Check
+payment-1](/img/resources/user-guides/en/prove-payment/check-payment-1.avif)
+![Check
+payment-2](/img/resources/user-guides/en/prove-payment/check-payment-2.avif)
 
 Entonces haciendo clic en Check dirá a Charlie cuánto envió esta transacción
 en particular a la dirección, y cuántas confirmaciones tuvo la transacción:
