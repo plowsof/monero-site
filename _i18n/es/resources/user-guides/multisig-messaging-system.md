@@ -1476,7 +1476,7 @@ sync`.
 
 If later you receive more sync data messages nevertheless just delete them
 with `mms delete`: They are unneeded, unprocessable for you and worst case
-will mess up the the next sync round.
+will mess up the next sync round.
 
 Usually if you initiate sync the MMS will create messages to *all* other
 signers. If you want to prevent that to make it as hard as possible for

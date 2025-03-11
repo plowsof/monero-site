@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-23 08:33+0000\n"
+"POT-Creation-Date: 2025-03-11 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2584,7 +2584,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/multisig-messaging-system.md:825
 #, markdown-text
-msgid "If later you receive more sync data messages nevertheless just delete them with `mms delete`: They are unneeded, unprocessable for you and worst case will mess up the the next sync round."
+msgid "If later you receive more sync data messages nevertheless just delete them with `mms delete`: They are unneeded, unprocessable for you and worst case will mess up the next sync round."
 msgstr ""
 
 #. type: Plain text
