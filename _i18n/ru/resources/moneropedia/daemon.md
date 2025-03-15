@@ -3,7 +3,7 @@ summary: 'Фоновый процесс, который запускает и у
 terms: ["daemon", "демон"]
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 Демон - это общий термин, обозначающий программное обеспечение, работающее в
 фоновом режиме. В случае Monero демон запускается посредством программы
