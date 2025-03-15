@@ -33,7 +33,7 @@ msgstr "[\"daemon\", \"демон\"]"
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/daemon.md:7
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/daemon.md:9
