@@ -90,7 +90,7 @@ cli:
      link: https://downloads.getmonero.org/cli/androidarm8
      icon: icon-android
      vers:
-   - platform: Android ARMv7
+   - platform: Android ARMv7 
      hash: e61bf3d80de1d7ce92074570ce4d87316f7083de338e92d83f8987b4e3f4496d
      link: https://downloads.getmonero.org/cli/androidarm7
      icon: icon-android
