@@ -146,8 +146,8 @@ merchants:
   useit: "Merchants that accept Monero"
   use: Over the years, merchants of all kinds have come to value the financial privacy that Monero brings. In fact, merchant adoption is continuously rising.
   dirdescr: "If you are looking for places to spend your Monero, the directories below have some options. Please remember to do your own research before trusting them with your money:"
-  descrp2p: The best way to exchange Monero for other currencies (or the other way round) is using P2P exchanges, because they allow traders to directly interact with each other, without the need of trusted third parties (except maybe for providing an escrow service). These exchanges are more private than their centralized counterparts and allow people to be in complete control of their coins if they are non-custodial, but they usually have less volume than 'traditional' exchanges. In the section below, we offer a list of P2P exchanges that support Monero.
-  swapsdescr: A new exciting way to exchange Monero is Atomic Swaps, which <a href="https://www.getmonero.org/2021/08/20/atomic-swaps.html">we announced</a> on August 2021. Atomic Swaps are a completely decentralized way to swap Bitcoin <-> Monero (more info in the blog post). The technology is brand new, so there aren't many swap providers yet, but you can already sell XMR for BTC using this protocol at
+  descrp2p: A great way to exchange Monero for other currencies is to use a Peer to Peer [P2P] exchange. P2P exchanges allow traders to directly interact with one another, and (in some cases) without the need of trusted third party (except for providing an escrow service). These exchanges are typically more private than their centralized and/or custodial counterparts.
+  swapsdescr: "A trustless method to exchange Monero with other cryptocurrencies is to use Atomic Swaps. See the blog post for more info:"
   bisqdescr: Decentralized P2P exchange based on Bitcoin and Tor.
   cardfoss: "Open source:"
   cardkyc: "<b>No KYC</b> (Know Your Customer):"
@@ -155,7 +155,6 @@ merchants:
   cardonion: "Onion address:"
   cardi2p: "I2P address:"
   noncustodial: "Non-custodial:"
-  hodlhodldescr: P2P trading platform with non-custodial escrow.
   locmondescr: Online P2P exchange offering person-to-person trades.
   depsell: Depends by the seller
   locnojs: (but no-JS version available)
@@ -163,7 +162,6 @@ merchants:
   disclaimer: |
     "Please note: these links are being provided as a convenience and for informational purposes only; they do not constitute an endorsement by the Monero community of any products, services or opinions of the corporations or organizations or individuals listed. The Monero community bears no responsibility for the accuracy, legality, or content of these external sites. Contact the external site for answers to questions regarding its content. As always, caveat emptor ('buyer beware'); you are responsible for doing your own research. Always use judgement when making online purchases."
   visitbisq: Visit Bisq
-  visithodlhodl: Visit HodlHodl
   centrexchanges: Centralized exchanges (CEXs) & Swappers
   centrexchangesp: If you prefer to use centralized exchanges, here is a list of renowned CEXes and swappers. Many more exchanges support Monero, we list here only a few reputable ones.
   cexp: Centralized exchanges that offer exchanging Monero for national currencies and cryptocurrencies.
@@ -171,6 +169,8 @@ merchants:
   basicswapdexdesc: Decentralized P2P atomic swaps with a strong focus on the user experience.
   visitbasicswapdex: Visit BasicSwapDEX
   setreq: Setup required
+  unstoppableswapdesc: Exchange Bitcoin for Monero using Atomic Swaps.
+  visitunstoppableswap: Visit UnstoppableSwap
 
 sponsorships:
   intro: The following businesses actively support the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
@@ -228,12 +228,7 @@ downloads:
   choose: Choose your download
   gui: Monero GUI Wallet
   cli: Monero CLI Wallet
-  blockchain: Import Blockchain
-  blockchain1: If you'd prefer to use a raw blockchain instead of syncing from scratch, you can use the most current bootstrap. It is typically much faster to sync from scratch, however, and it also takes a lot less RAM.
-  blockchain2: If you wish to proceed anyway, take a look at the user guide
   blockchain3: Importing the Monero blockchain
-  blockchain4: for step-by-step instructions for Windows.
-  blockchainbutton: Download Blockchain
   mobilelight0: Mobile & Light
   mobilelight: Mobile & Light Wallets
   hardware: Hardware Wallets
@@ -514,7 +509,7 @@ faq:
   qfullpruned: How do I decide if I should run a full node or a pruned node?
   afullpruned: "A full @node requires a considerable amount of storage and could take a long time to download and verify the entire blockchain, especially on older hardware. If you have limited storage, a pruned node is recommended. It only stores 1/8th of unnecessary blockchain data while keeping the full transaction history. If plenty of storage is available, a full node is recommended but a pruned node still greatly contributes to the network and improves your privacy."
   qblocksize: How big is the Monero blockchain?
-  ablocksize: "The Monero @blockchain is always growing so there is no fixed size. As of 2022, the full blockchain is around 140-150GB. A pruned blockchain is about 50GB. Check out Moneropedia entry @pruning to learn the difference between a full and a pruned blockchain."
+  ablocksize: "The Monero @blockchain is always growing so there is no fixed size. As of 2024, the full blockchain is around ~225GB. A pruned blockchain is about ~86GB. Check out Moneropedia entry @pruning to learn the difference between a full and a pruned blockchain."
   qblockspace: Why does the blockchain need so much space?
   ablockspace: "When you download the @blockchain, you are downloading the entire history of the @transactions that happened in the Monero network since it was created. The transactions and the related data are heavy and the entire history must be kept by every node to ensure it's the same for everybody. @Pruning a blockchain allows to run a node which keeps only 1/8 of not strictly necessary blockchain data. This results in a blockchain 2/3 smaller than a full one. Convenient for people with limited disk space. Check out the Moneropedia entries @node and @remote-node for more details."
   qavoidbc: Can I avoid downloading the entire blockchain?
@@ -532,7 +527,7 @@ faq:
   amoneromeaning: "Monero is an Esperanto word which means 'coin'. Initially Monero was called 'Bitmonero', which translates to 'Bitcoin' in Esperanto. After the community decided to fork from the original maintainer, 'bit' was dropped in favour of simply 'Monero'."
   qimporting: Can I manually import the blockchain?
   aimporting: >
-    Yes, you can, but you probably shouldn't. Importing an external @blockchain is very resource intensive and forces you to trust the entity providing you with the blockchain. It's usually faster to download it the normal way: running a node and letting it synchronize with the other @nodes in the network. If you really need to import an external blockchain, you can download one in the 'Downloads' page of this website. Follow the guide below if you are using Windows. If you are a linux user, you can use the tool "monero-blockchain-import", which is included in the archive when you download the GUI or CLI wallets. Start syncing the imported blockchain with this command: "monero-blockchain-import --input-file blockchain.raw".
+    Yes, you can, but you probably shouldn't. Importing an external @blockchain is very resource intensive and forces you to trust the entity providing you with the blockchain. It's usually faster to download it the normal way: running a node and letting it synchronize with the other @nodes in the network. Follow the guide below if you are using Windows. If you are a linux user, you can use the tool "monero-blockchain-import", which is included in the archive when you download the GUI or CLI wallets. Start syncing the imported blockchain with this command: "monero-blockchain-import --input-file blockchain.raw".
   qhf: Is it true that Monero has a hard fork every 6 months?
   ahf: Monero used to have 2 network upgrades (hard forks) a year, but this is not the case anymore. The choice of the biannual hard forks was taken in order to be able to introduce important consensus changes, which added privacy features and network-wide improvements (For example @bulletproofs and CLSAG both required a hard fork) and avoid the ossification of the protocol. Recently, the biannual hard forks included changes to the PoW algorithm, to preserve ASIC-resistance.
   ahf1: The dev community and the Core Team agree that the protocol is stable and mature enough and biannual hard forks are not necessary anymore. Furthermore, the ecosystem around Monero has grown exponentially during the years and frequent protocol changes would be increasingly hard to coordinate, could be detrimental to the growth of the ecosystem and to the user experience. Cherry on the top, the new algorithm @RandomX is ensuring long term ASIC-resistance, so regular changes are not needed anymore. Network upgrades will still be used to add important protocol improvements and consensus changes, but at a lower and less strict frequency (every 9-12 months). The last hard fork was on August 13th 2022.
@@ -559,7 +554,7 @@ faq:
   aasicresistance2: >
     Monero fixes this problem by being ASIC-resistant: it uses an algorithm (@randomx) that strongly reduces the efficiency of ASICs, making them not profitable to build. Miners can use common consumer hardware, which allows them to compete fairly. The Monero network is currently protected by thousands of miners using 'regular' computers. This results in a network much harder to attack, no miner having significant advantage over other miners (they all use more or less the same hardware).
   qmaxsupply: What is Monero's maximum supply?
-  amaxsupply: Monero has a fixed emission rate, not a set maximum supply. Around May 2022, Monero's emission will drop to and permanently remain at 0.3 XMR per minute (0.6 XMR per @block). This is approximately 1% inflation for the first year and will approach 0% inflation in future years. This @tail-emission allows for permanent incentives to secure Monero, even in the far future, while keeping inflation at a very low percent.
+  amaxsupply: Monero has a fixed emission rate, not a set maximum supply. Monero tail emission started at block 2641623, on 2022-06-09 at 00:29 UTC, and will permanently remain at 0.3 XMR per minute (0.6 XMR per @block). This is approximately 1% inflation for the first year and will approach 0% inflation in future years. This @tail-emission allows for permanent incentives to secure Monero, even in the far future, while keeping inflation at a very low percent.
   qtailemission: Why does Monero not have a maximum supply?
   atailemission: Miners process transactions on the Monero network by @mining blocks. The miner of a @block is paid the constant block reward of .6 XMR, and the @transaction fees of the users who have transactions in that block. Monero has the block reward rather than relying solely on the transaction fees to give the miners incentive to keep securing the network with their hashrate, and keep transaction fees low. 
   atailemission1: The @tail-emission caused by this constant block reward creates an inflation rate of less than 1% which trends towards 0% over time. The fixed emission of the currency ensures human corruption cannot over inflate the supply. Keeping the network predictable, decentralized, and secure.
@@ -688,7 +683,7 @@ user-guides:
   hardwarewallet: Hardware Wallets
   anonimizationnetworks: Anonymizing Networks
   offline-backup: How to make an offline backup (advanced)
-  vps-node: How to run a node on VPS
+  vps-node: How to run a node (systemd)
   import-blockchain: How to import the Monero blockchain (advanced)
   monero-tools: Monero Tools
   purchasing-storing: How to create a Monero paper wallet
@@ -907,7 +902,7 @@ specs:
   block_emission_title: Emission curve
   block_emission_pre: "To make sure there will always be an incentive to mine Monero and keep it safe, the emission is infinite. There are two main emissions:"
   block_emission_main: "first, main curve: ~18.132 million coins by the end of May 2022"
-  block_emission_tail: "then, tail curve: 0.6 XMR per 2-minute block, kicks in once main emission is done, translates to <1% inflation decreasing over time"
+  block_emission_tail: "then, tail emission (0.6 XMR per 2-minute block) kicked in after the main emission was completed. This translates to <1% inflation, with the percentage trending towards 0 over time"
   blocks_title: Blocks
   blocks: A new @block is created every ~2 minutes. There is no maximum block size, but instead a block reward penalty and a dynamic block size, to ensure a dynamic @scalability
   privacytech_title: Main privacy enhancing technologies
