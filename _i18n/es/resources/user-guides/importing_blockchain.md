@@ -13,15 +13,9 @@ Esta opción es más que nada útil para el desarrollo, o posiblemente en el
 caso de que algún problema inusual te está impidiendo sincronizar de forma
 normal.
 
-**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet, including the official site. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
+**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
 
 ### Paso 1
-
-Download the Current bootstrap from
-https://downloads.getmonero.org/blockchain.raw; you can skip this step if
-you are importing the blockchain from another source.
-
-### Paso 2
 
 Find the path where the Monero software is installed. For example mine is:
 
@@ -30,7 +24,7 @@ Find the path where the Monero software is installed. For example mine is:
 Tu ruta de acceso podrá ser diferente dependiendo de dónde hayas decidido
 instalar el software de Monero, y que versión del software tengas.
 
-### Paso 3
+### Paso 2
 
 Find the path of your downloaded blockchain for example mine was:
 
@@ -39,12 +33,12 @@ Find the path of your downloaded blockchain for example mine was:
 Yours might be different depending on where you chose to save the downloaded
 blockchain.
 
-### Paso 4
+### Paso 3
 
 Open a Command Prompt window. You can do this by pressing the Windows key +
 R, and then typing in the popup box `CMD` and pressing Enter.
 
-### Paso 5
+### Paso 4
 
 Now you need to navigate using the CMD window to the path of your Monero
 software. You can do this by typing:
@@ -59,7 +53,7 @@ If your Monero software is on another drive you can use `DriveLetter:` for
 example if your Monero software was on your D drive then before using the cd
 command you would do `D:`
 
-### Paso 6
+### Paso 5
 
 Now type in your command prompt window:
 
@@ -70,7 +64,7 @@ For example I would type :
 `monero-blockchain-import --input-file
 C:\Users\KeeJef\Downloads\blockchain.raw`
 
-### Paso 7
+### Paso 6
 
 After the blockchain has finished syncing up you can open your Monero wallet
 normally. Your downloaded blockchain.raw can be deleted.

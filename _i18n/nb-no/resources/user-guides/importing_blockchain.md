@@ -13,15 +13,9 @@ nedlasting.
 Dette valget er mest nyttig for utviklere, eller muligens dersom et uvanlig
 problem hindrer deg fra å synkronisere på en normal måte.
 
-**Aldri** bruk uverifiserte importeringsvalg da dette kun er for eksperter. Du bør spesielt ikke bruke det med en blokkjede du laster ned fra internett, inkludert den offisielle nettsiden. Det er kun trygt å bruke dersom du a) importerer en fil som du eksporterer lokalt på egenhånd *og* b) er helt sikker på at den allerede var fullt og skikkelig verifisert før den ble eksportert.
+**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
 
 ### Trinn 1
-
-Last ned det gjeldende oppstartsprogrammet fra
-https://downloads.getmonero.org/blockchain.raw; du kan hoppe over dette
-trinnet hvis du importerer blokkjeden fra en annen kilde.
-
-### Trinn 2
 
 Finn stien som Monero-programvaren er installert på. Min er for eksempel:
 
@@ -30,7 +24,7 @@ Finn stien som Monero-programvaren er installert på. Min er for eksempel:
 Stien din kan være en annen, avhengig av hvor du bestemte deg for å
 installere Monero-programvaren og hvilken versjon av programvaren du har.
 
-### Trinn 3
+### Trinn 2
 
 Finn stien til den nedlastede blokkjede. Min var for eksempel:
 
@@ -38,13 +32,13 @@ Finn stien til den nedlastede blokkjede. Min var for eksempel:
 
 Din er kanskje en annen, avhengig av hvor du valgte å lagre blokkjeden.
 
-### Trinn 4
+### Trinn 3
 
 Åpne kommandolinjevinduet. Du kan gjøre dette ved å holde inne
 Windows-tasten + R, deretter taste inn `CMD` i popupboksen, og deretter
 trykke på Enter.
 
-### Trinn 5
+### Trinn 4
 
 Du må nå navigere ved å bruke CMD-vinduet til stien som Monero-programvaren
 din befinner seg i. Du kan gjøre dette ved å taste inn:
@@ -59,7 +53,7 @@ Hvis Monero-programvaren din ligger på en annen disk, kan du bruke
 `DriveLetter`: Hvis Monero-programvaren din for eksempel lå på D-disken din,
 må du, før du bruker cd-kommandoen, bruke `D:`
 
-### Trinn 6
+### Trinn 5
 
 Tast deretter inn i dette i ledetekstvinduet:
 
@@ -70,7 +64,7 @@ Jeg hadde for eksempel tastet inn:
 `monero-blockchain-import --input-file
 C:\Users\KeeJef\Downloads\blockchain.raw`
 
-### Trinn 7
+### Trinn 6
 
 Etter blokkjeden er ferdig med å synkronisere, kan du åpne Monero-lommeboken
 din som normalt. Din nedlastede blockchain.raw kan slettes.

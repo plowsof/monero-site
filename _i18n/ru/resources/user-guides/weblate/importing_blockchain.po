@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-24 19:47+0000\n"
+"POT-Creation-Date: 2025-03-20 03:42+0000\n"
 "PO-Revision-Date: 2021-10-28 18:33+0000\n"
 "Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
 "Language-Team: Russian <https://translate.getmonero.org/projects/getmonero-user-guides/importing_blockchain/ru/>\n"
@@ -40,8 +40,9 @@ msgstr "Эта опция по большей части полезна с то�
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:10
-#, no-wrap
-msgid "**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet, including the official site. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.\n"
+#, fuzzy, no-wrap
+#| msgid "**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet, including the official site. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.\n"
+msgid "**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.\n"
 msgstr "**Никогда** не используйте опцией импорта не верифицированных данных, так как она предназначена исключительно для экспертов. Особенно, не следует ею пользоваться в том случае, если вы скачиваете какой-нибудь блокчейн из интернета, включая официальный сайт. Эта опция безопасна в двух случаях: a) если вы импортируете файл, который экспортировали локально, самостоятельно, *и* b) вы абсолютно уверены в том, что он был полностью и надлежащим образом верифицирован перед тем, как его экспортировали.\n"
 
 #. type: Title ###
@@ -52,50 +53,50 @@ msgstr "Шаг 1"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:14
-msgid "Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the blockchain from another source."
-msgstr "Скачайте актуальный Bootstrap (фреймворк) с https://downloads.getmonero.org/blockchain.raw. Этот шаг можно пропустить, если вы импортируете блокчейн из другого источника."
+msgid "Find the path where the Monero software is installed. For example mine is:"
+msgstr "Найдите директорию, в которую было установлено программное обеспечение Monero. В моём случае, например, это была следующая директория:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:16
+msgid "`D:\\monero-gui-0.10.3.1`"
+msgstr "`D:\\monero-gui-0.10.3.1`"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:18
+msgid "Your path may be different depending on where you decided to install the Monero software, and what version of the software you have."
+msgstr "Путь может быть и другим, в зависимости от того, где вы решите установить программное обеспечение Monero, а также версии этого программного обеспечения."
 
 #. type: Title ###
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:15
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:19
 #, no-wrap
 msgid "Step 2"
 msgstr "Шаг 2"
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:18
-msgid "Find the path where the Monero software is installed. For example mine is:"
-msgstr "Найдите директорию, в которую было установлено программное обеспечение Monero. В моём случае, например, это была следующая директория:"
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:20
-msgid "`D:\\monero-gui-0.10.3.1`"
-msgstr "`D:\\monero-gui-0.10.3.1`"
-
-#. type: Plain text
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:22
-msgid "Your path may be different depending on where you decided to install the Monero software, and what version of the software you have."
-msgstr "Путь может быть и другим, в зависимости от того, где вы решите установить программное обеспечение Monero, а также версии этого программного обеспечения."
+msgid "Find the path of your downloaded blockchain for example mine was:"
+msgstr "Найдите директорию, в которую был скачан блокчейн. В моём случае, например, директория была следующей:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:24
+msgid "`C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
+msgstr "`C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:26
+msgid "Yours might be different depending on where you chose to save the downloaded blockchain."
+msgstr "Вы можете выбрать и другую директорию в зависимости от того, куда вы решите сохранить скачанный блокчейн."
 
 #. type: Title ###
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:23
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:27
 #, no-wrap
 msgid "Step 3"
 msgstr "Шаг 3"
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:26
-msgid "Find the path of your downloaded blockchain for example mine was:"
-msgstr "Найдите директорию, в которую был скачан блокчейн. В моём случае, например, директория была следующей:"
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:28
-msgid "`C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
-msgstr "`C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
-
-#. type: Plain text
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:30
-msgid "Yours might be different depending on where you chose to save the downloaded blockchain."
-msgstr "Вы можете выбрать и другую директорию в зависимости от того, куда вы решите сохранить скачанный блокчейн."
+msgid "Open a Command Prompt window. You can do this by pressing the Windows key + R, and then typing in the popup box `CMD` and pressing Enter."
+msgstr "Откройте окно командной строки. Это можно сделать нажатием клавиш Windows + R с последующим вводом `CMD` во всплывающее окно и нажатием клавиши Enter."
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:31
@@ -105,74 +106,69 @@ msgstr "Шаг 4"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:34
-msgid "Open a Command Prompt window. You can do this by pressing the Windows key + R, and then typing in the popup box `CMD` and pressing Enter."
-msgstr "Откройте окно командной строки. Это можно сделать нажатием клавиш Windows + R с последующим вводом `CMD` во всплывающее окно и нажатием клавиши Enter."
+msgid "Now you need to navigate using the CMD window to the path of your Monero software. You can do this by typing:"
+msgstr "Теперь при помощи окна командной строки необходимо перейти в директорию, где установлено ваше программное обеспечение Monero. Для этого необходимо ввести:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:36
+msgid "`cd C:\\YOUR\\MONERO\\PATH\\HERE`"
+msgstr "`cd C:\\ПУТЬ\\К\\КАТАЛОГУ\\MONERO`"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:38
+msgid "It should look something like:"
+msgstr "Путь будет выглядеть примерно так:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:40
+msgid "`cd D:\\monero-gui-0.10.3.1`"
+msgstr "`cd D:\\monero-gui-0.10.3.1`"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:42
+msgid "If your Monero software is on another drive you can use `DriveLetter:` for example if your Monero software was on your D drive then before using the cd command you would do `D:`"
+msgstr "Если ваше программное обеспечение Monero установлено на другом диске, вы можете воспользоваться `DriveLetter:` , например, если оно находится на диске D. И тогда перед использованием команды cd необходимо указать `D:`"
 
 #. type: Title ###
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:35
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:43
 #, no-wrap
 msgid "Step 5"
 msgstr "Шаг 5"
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:38
-msgid "Now you need to navigate using the CMD window to the path of your Monero software. You can do this by typing:"
-msgstr "Теперь при помощи окна командной строки необходимо перейти в директорию, где установлено ваше программное обеспечение Monero. Для этого необходимо ввести:"
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:40
-msgid "`cd C:\\YOUR\\MONERO\\PATH\\HERE`"
-msgstr "`cd C:\\ПУТЬ\\К\\КАТАЛОГУ\\MONERO`"
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:42
-msgid "It should look something like:"
-msgstr "Путь будет выглядеть примерно так:"
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:44
-msgid "`cd D:\\monero-gui-0.10.3.1`"
-msgstr "`cd D:\\monero-gui-0.10.3.1`"
-
-#. type: Plain text
 #: ../_i18n/en/resources/user-guides/importing_blockchain.md:46
-msgid "If your Monero software is on another drive you can use `DriveLetter:` for example if your Monero software was on your D drive then before using the cd command you would do `D:`"
-msgstr "Если ваше программное обеспечение Monero установлено на другом диске, вы можете воспользоваться `DriveLetter:` , например, если оно находится на диске D. И тогда перед использованием команды cd необходимо указать `D:`"
+msgid "Now type in your command prompt window:"
+msgstr "Теперь необходимо ввести в окно командной строки следующее:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:48
+msgid "`monero-blockchain-import --input-file C:\\YOUR\\BLOCKCHAIN\\FILE\\PATH\\HERE`"
+msgstr "`monero-blockchain-import --input-file C:\\ПУТЬ\\К\\ЗАГРУЖЕННОМУ\\ФАЙЛУ\\БЛОКЧЕЙНА`"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:50
+msgid "For example I would type :"
+msgstr "Я бы, например, написал:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:52
+msgid "`monero-blockchain-import --input-file C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
+msgstr "`monero-blockchain-import --input-file C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
 
 #. type: Title ###
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:47
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:53
 #, no-wrap
 msgid "Step 6"
 msgstr "Шаг 6"
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:50
-msgid "Now type in your command prompt window:"
-msgstr "Теперь необходимо ввести в окно командной строки следующее:"
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:52
-msgid "`monero-blockchain-import --input-file C:\\YOUR\\BLOCKCHAIN\\FILE\\PATH\\HERE`"
-msgstr "`monero-blockchain-import --input-file C:\\ПУТЬ\\К\\ЗАГРУЖЕННОМУ\\ФАЙЛУ\\БЛОКЧЕЙНА`"
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:54
-msgid "For example I would type :"
-msgstr "Я бы, например, написал:"
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:56
-msgid "`monero-blockchain-import --input-file C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
-msgstr "`monero-blockchain-import --input-file C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
-
-#. type: Title ###
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:57
-#, no-wrap
-msgid "Step 7"
-msgstr "Шаг 7"
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/importing_blockchain.md:59
-
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:55
 msgid "After the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted."
 msgstr "После того, как синхронизация блокчейна будет завершена, вы сможете открыть свой кошелёк в обычном режиме. Скачанный файл blockchain.raw можно удалить."
+
+#~ msgid "Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the blockchain from another source."
+#~ msgstr "Скачайте актуальный Bootstrap (фреймворк) с https://downloads.getmonero.org/blockchain.raw. Этот шаг можно пропустить, если вы импортируете блокчейн из другого источника."
+
+#, no-wrap
+#~ msgid "Step 7"
+#~ msgstr "Шаг 7"
