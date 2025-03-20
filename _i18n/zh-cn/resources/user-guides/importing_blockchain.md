@@ -6,13 +6,9 @@
 
 这个选项对于开发者一般很有用，如果你遇见了一些不寻常的让你无法正常同步的问题它也能派上用场。
 
-**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet, including the official site. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
+**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
 
 ### 第一步
-
-从https://downloads.getmonero.org/blockchain.raw下载目前的区块数据；如果你在从其他源导入区块链你可以跳过这一步。
-
-### 第二步
 
 找到门罗币程序安装的路径。比如说笔者的是：
 
@@ -20,7 +16,7 @@
 
 根据你版本的不同和你安装位置的不同，你的路径可能会不同。
 
-### 第三步
+### 第二步
 
 找到你下载好的区块链文件的路径。比如说笔者的是：
 
@@ -28,11 +24,11 @@
 
 因为你选择的下载位置可能不同，这个路径在你的设备也大概会不同。
 
-### 第四步
+### 第三步
 
 打开一个命令提示符（终端）窗口。你可以通过按下Windows徽标键+R字母键，然后在弹出的窗口中输入`CMD`并回车来打开它。
 
-### 第五步
+### 第四步
 
 现在你需要在CMD窗口定位你的门罗币软件的路径。你可以通过输入这个来做到这一点：
 
@@ -46,7 +42,7 @@ If your Monero software is on another drive you can use `DriveLetter:` for
 example if your Monero software was on your D drive then before using the cd
 command you would do `D:`
 
-### 第一步
+### 第五步
 
 Now type in your command prompt window:
 

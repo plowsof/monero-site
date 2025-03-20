@@ -13,14 +13,9 @@ zamiast weryfikować go osobno po pobraniu.
 Ta opcja jest przydatna głównie podczas programowania, lub jeśli jakiś
 nietypowy problem uniemożliwia synchronizację w normalny sposób.
 
-**Nigdy** nie używaj niebezpiecznej opcji niezweryfikowanego importu, jest ona przeznaczona wyłącznie dla ekspertów. W szczególności nie używaj jej z żadnym blockchainem, który pobierasz z Internetu, w tym z oficjalnej strony. Jest ona bezpieczna tylko wtedy, gdy a) importujesz plik, który sam wyeksportowałeś lokalnie *i* b) jesteś absolutnie pewien, że został on już w pełni i prawidłowo zweryfikowany przed eksportem.
+**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
 
 ### Krok 1
-
-Pobierz aktualny bootstrap z https://downloads.getmonero.org/blockchain.raw;
-możesz pominąć ten krok, jeśli importujesz blockchain z innego źródła.
-
-### Krok 2
 
 Znajdź ścieżkę, gdzie zainstalowane jest oprogramowanie Monero. Na przykład
 moja to:
@@ -30,7 +25,7 @@ moja to:
 Twoja ścieżka może być inna w zależności od tego, gdzie zdecydowałeś się
 zainstalować oprogramowanie Monero i jaką wersję oprogramowania posiadasz.
 
-### Krok 3
+### Krok 2
 
 Znajdź ścieżkę do swojego pobranego blockchaina, na przykład moją była:
 
@@ -39,12 +34,12 @@ Znajdź ścieżkę do swojego pobranego blockchaina, na przykład moją była:
 Twoja może być inna w zależności od tego, gdzie zdecydowałeś się zapisać
 pobrany blockchain.
 
-### Krok 4
+### Krok 3
 
 Otwórz okno Wiersza Poleceń. Możesz to zrobić naciskając klawisz Windows +
 R, a następnie wpisując w oknie, które wyskoczy - `CMD` i nacisnąć Enter.
 
-### Krok 5
+### Krok 4
 
 Teraz musisz wejść za pomocą okna CMD do miejsca gdzie znajduję się
 zainstalowane oprogramowanie Monero. Możesz to zrobić wpisując:
@@ -59,7 +54,7 @@ Jeśli Twoje oprogramowanie Monero jest na innym dysku możesz użyć
 `LiteraDysku:` na przykład jeśli Twoje oprogramowanie Monero było na dysku D
 to przed użyciem komendy `cd` napisałbyś `D:`.
 
-### Krok 6
+### Krok 5
 
 Teraz wpisz w oknie wiersza poleceń:
 
@@ -70,7 +65,7 @@ Na przykład ja wpisałbym:
 `monero-blockchain-import --input-file
 C:\Users\KeeJef\Downloads\blockchain.raw`
 
-### Krok 7
+### Krok 6
 
 Po zakończeniu synchronizacji blockchain możesz normalnie otworzyć swój
 portfel Monero. Pobrany blockchain.raw może zostać usunięty.
