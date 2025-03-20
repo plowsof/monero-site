@@ -104,6 +104,6 @@ cli:
      hash: 7d4845ec0a3b52404d41785da348ec33509f0a5981e8a27c5fa55b18d696e139
      link: https://downloads.getmonero.org/cli/source
      icon: icon-github
-   - platform: Source Code 
+   - platform: Source Code Test
      link: https://github.com/monero-project/monero
      icon: icon-github
