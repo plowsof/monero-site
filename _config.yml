@@ -21,7 +21,6 @@ paginate_path: blog/page:num/
 
 plugins:
   - jekyll-paginate
-  - jekyll-multiple-languages-plugin
   - jekyll-feed
 
 feed:
