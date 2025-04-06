@@ -407,6 +407,33 @@ module Jekyll
         end
       end
 
+      # Process link patterns if they exist in the translation
+      if translation.is_a?(String) && translation.include?('{{link:')
+        translation = translation.gsub(/\{\{link:([^:]+):([^}]+)\}\}/) do |match|
+          url_key = $1.strip
+          title_key = $2.strip
+          puts "#{url_key}*****************#{title_key}"
+          
+          url = site.data.dig(*url_key.split('.'))
+          title = site.parsed_translations[lang].access(title_key)
+          
+          # Fallback to default language if title not found
+          if title.nil? || title.empty?
+            title = site.parsed_translations[site.config['default_lang']].access(title_key)
+            
+            if site.config["verbose"]
+              puts "Missing i18n link title key: #{lang}:#{title_key}"
+              puts "Using title '%s' from default language: %s" %[title, site.config['default_lang']]
+            end
+          end
+          
+          # If still no title, use the key itself
+          title = title_key if title.nil? || title.empty?
+          
+          "<a href=\"#{url}\">#{title}</a>"
+        end
+      end
+
       TranslatedString.translate(key, lang, site)
       
       translation
