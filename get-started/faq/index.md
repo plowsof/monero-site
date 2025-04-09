@@ -166,6 +166,7 @@ meta_descr: faq.intro
                             <li><a href="{{ site.baseurl_root }}/media/Monero_Tail_Emission_VOSTO_EMISIO.webm">{% t moneropedia.entries.tail-emission %}</a> - {% t faq.mvideos %} @Tail-Emission</li>
                             <li><a href="{{ site.baseurl_root }}/media/Monero_Nodes_VOSTO_EMISIO.webm">{% t moneropedia.entries.node %}</a> - {% t faq.mvideos %} @Nodes</li>
                             <li><a href="{{ site.baseurl_root }}/media/RandomX_VOSTO_EMISIO.webm">{% t moneropedia.entries.randomx %}</a> - {% t faq.mvideos %} @RandomX</li>
+                            <li><a href="{{ site.baseurl_root }}/media/FCMP_VOSTO_EMISIO.webm">{% t faq.video_fcmp %}</a></li>
                         </ol>
                     </div>
                 </div>
@@ -319,7 +320,7 @@ meta_descr: faq.intro
                     <h3><a class="anchor" href="#import-blockchain"></a>{% t faq.qimporting %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.aimporting %}</p>
-                         <p>{% t faq.additional %} <a href="{{ site.baseurl }}/downloads/#blockchain">{% t downloads.blockchain %}</a></p>
+                         <p>{% t faq.additional %} <a href="{{ site.baseurl }}/resources/user-guides/importing_blockchain.html">{% t downloads.blockchain3 %}</a></p>
                     </div>
                 </div>
                 <div class="tab" id="anchor-tor-node">
