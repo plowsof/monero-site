@@ -30,7 +30,6 @@ meta_descr: downloads.intro
               <li><a href="#gui">{% t downloads.gui %}</a></li>
               <li><a href="#cli">{% t downloads.cli %}</a></li>
               <li><a href="#mobilelight">{% t downloads.mobilelight %}</a></li>
-              <li><a href="#blockchain">{% t downloads.blockchain %}</a></li>
               <li><a href="#hardware">{% t downloads.hardware %}</a></li>
             </ul>
           </div>
@@ -254,7 +253,7 @@ meta_descr: downloads.intro
                             <td><a class="ext-noicon" href="https://github.com/feather-wallet/feather" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo logo"><a href="https://monerujo.io/">Monerujo</a></td>
+                            <td><img class="small" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo logo"><a href="https://monerujo.app/">Monerujo</a></td>
                             <td><span class="icon-android"></span></td>
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/m2049r/xmrwallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
@@ -294,7 +293,7 @@ meta_descr: downloads.intro
                             <ul>
                                 <li><a class="ext-noicon" href="https://cakewallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" style="width: 50px" src="/img/monerocom-wallet.png" width="172" height="202" loading="lazy" alt="Monero.com Wallet Logo">Monero.com Wallet</a></li>
                                 <li><a class="ext-noicon" href="https://featherwallet.org/" aria-label="Feather icon" target="_blank"><img class="mob" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather Logo">Feather</a></li>
-                                <li><a class="ext-noicon" href="https://monerujo.io" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
+                                <li><a class="ext-noicon" href="https://monerujo.app" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
                                 <li><a class="ext-noicon" href="https://stackwallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/stack-wallet.png" width="100" height="100" loading="lazy" alt="Stack Wallet Logo">Stack Wallet</a></li>
                             </ul>
                             <h3>{% t downloads.remotesync %}</h3>
@@ -336,6 +335,7 @@ meta_descr: downloads.intro
                                             <li>Monero CLI</li>
                                             <li>Feather</li>
                                             <li>Monerujo</li>
+                                            <li>Monero.com</li>
                                         </ul>
                                     </td>
                                     <td>
@@ -352,6 +352,7 @@ meta_descr: downloads.intro
                                         <ul>
                                             <li>Model T</li>
                                             <li>Safe 3</li>
+                                            <li>Safe 5</li>
                                         </ul>
                                     </td>
                                     <td>
@@ -381,6 +382,7 @@ meta_descr: downloads.intro
                                             <li>Monero CLI</li>
                                             <li>Feather</li>
                                             <li>Monerujo</li>
+                                            <li>Monero.com</li>
                                         <b>{% t downloads.hwthfirm %}:</b> 
                                             <li>{% t downloads.hwnanos %}</li>
                                             <li>{% t downloads.hwnanosplus %}</li>
@@ -390,6 +392,8 @@ meta_descr: downloads.intro
                                     <ul>
                                         <b>{% t downloads.hwmobmodels %}</b>
                                             <li>Model T</li>
+                                            <li>Safe 3</li>
+                                            <li>Safe 5</li>
                                         <b>{% t downloads.hwthsupported %}:</b>
                                             <li>Monero GUI</li>
                                             <li>Monero CLI</li>
