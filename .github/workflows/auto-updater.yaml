@@ -3,7 +3,7 @@ name: Validate Auto Updater
 on:
   push:
     paths:
-      - 'downloads/hashes.txt.sig'
+      - 'downloads/hashes.txt'
   pull_request:
     paths:
       - 'downloads/hashes.txt.sig'
