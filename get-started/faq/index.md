@@ -118,7 +118,6 @@ meta_descr: faq.intro
                     <h3><a class="anchor" href="#anchor-contribute"></a>{% t faq.qcontribute %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.acontribute %}</p>
-                        <p>{% t faq.acontribute1 %} <a href="https://translate.getmonero.org">Weblate</a>.</p>
                         <p>{% t faq.acontribute2 %} <a href="{{ site.baseurl }}/community/hangouts/">Hangouts</a>.</p>
                         <p>{% t faq.acontribute3 %}</p>
                         <p>{% t faq.acontribute4 %} <a href="https://www.monerooutreach.org/stories/getting-started-helping-monero.html">Getting started with Monero</a>.</p>
@@ -166,7 +165,7 @@ meta_descr: faq.intro
                             <li><a href="{{ site.baseurl_root }}/media/Monero_Tail_Emission_VOSTO_EMISIO.webm">{% t moneropedia.entries.tail-emission %}</a> - {% t faq.mvideos %} @Tail-Emission</li>
                             <li><a href="{{ site.baseurl_root }}/media/Monero_Nodes_VOSTO_EMISIO.webm">{% t moneropedia.entries.node %}</a> - {% t faq.mvideos %} @Nodes</li>
                             <li><a href="{{ site.baseurl_root }}/media/RandomX_VOSTO_EMISIO.webm">{% t moneropedia.entries.randomx %}</a> - {% t faq.mvideos %} @RandomX</li>
-                            <li><a href="{{ site.baseurl_root }}/media/FCMP_VOSTO_EMISIO.webm">{% t faq.video_fcmp %}</a></li>
+                            <li><a href="{{ site.baseurl_root }}/media/FCMP_VOSTO_EMISIO.webm">{% t faq.fcmp %}</a></li>
                         </ol>
                     </div>
                 </div>

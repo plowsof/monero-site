@@ -20,8 +20,7 @@ meta_descr: meta_descr.tools
                     <div class="col">
                         <h2>{% t tools.block-explorers %}</h2>
                         <p><a href="https://xmrchain.net/">xmrchain.net</a></p>
-                        <p><a href="https://www.exploremonero.com/">Explore Monero</a></p>
-                        <p><a href="https://monerovision.com">MoneroVision</a></p>
+                        <p><a href="https://monerowat.ch/">Monero Watch</a></p>
                         <p><a href="https://p2pool.io/explorer/">P2Pool</a> (<a href="http://yucmgsbw7nknw7oi3bkuwudvc657g2xcqahhbjyewazusyytapqo4xid.onion/explorer/">{% t tools.onion-service %}</a>)</p>
                         <p><a href="https://localmonero.co/blocks/">LocalMonero.co blocks</a> (<a href="http://nehdddktmhvqklsnkjqcbpmb63htee2iznpcbs5tgzctipxykpj6yrid.onion/blocks">{% t tools.onion-service %}</a>)</p>
                     </div>
@@ -50,7 +49,7 @@ meta_descr: meta_descr.tools
                         <p><a href="https://nownodes.io/nodes/monero-xmr">NOWNodes - {% t tools.nownodes %}</a></p>
                         <p><a href="https://getblock.io">GetBlock - {% t tools.getblockio %}</a></p>
                         <p><a href="https://monero.fail/">Monero.fail - {% t tools.monerofail %}</a></p>
-                        <p><a href="https://tx.town/v/xmr">TxStreet - {% t tools.txstreet %}</a></p>
+                        <p><a href="https://txcity.io/v/xmr">TxStreet - {% t tools.txstreet %}</a></p>
                     </div>
                 </div>
             </div>
