@@ -143,7 +143,6 @@ merchants:
   simpleswapdescr: ''
   disclaimer: |
   visitbisq: ''
-  visitlocalmonero: ''
   visithodlhodl: ''
   centrexchanges: ''
   centrexchangesp: ''
@@ -154,7 +153,6 @@ sponsorships:
   intro: ''
   tari: ''
   symas: ''
-  forknetworking: ''
   macstadium: ''
 
 team:
@@ -183,8 +181,6 @@ team:
   localization_descr: ''
   localization_start: ''
   locplatform: ""
-  outreach_descr: ''
-  outreach_start: ''
   telegram: ""
   mrl_descr: ''
   mrl_start: ''
@@ -243,8 +239,6 @@ downloads:
   bootstrapnode1: ''
   rpc: ''
   rpc1: ''
-  payforrpc: ''
-  payforrpc1: ''
   verify: ''
   verify1: ''
   verify2: ''
@@ -736,13 +730,10 @@ roadmap:
   onionaddress: ''
   supercop: ''
   clsag: ''
-  tryptych: ""
   kastelo: ""
-  layer2: ''
   released-0-16-0-0: ''
   released-0-17: ''
 
-  returnaddr: ''
   atomicswaps: ''
   bplus: ''
 
@@ -892,7 +883,6 @@ tools:
 
   network: ''
   monerohash-nodes: ''
-  localmonero-blocks: ''
   nownodes: ''
   getblockio: ''
   monerofail: ''
@@ -900,7 +890,6 @@ tools:
 
   market: ''
   backtestking: ''
-  cryptofacile: ''
   cryptoradar: ''
   kryptocheck: ''
 
