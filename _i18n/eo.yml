@@ -256,7 +256,7 @@ downloads:
   showhash3: ''
   showhash4: ""
   mobilelight1: ''
-  mobilelight2: ''
+  mobilelight2: 'Babilejoj'
   mobilelight3: ''
   installer: ''
   avwarning: ''
@@ -288,7 +288,7 @@ press-kit:
   intro: ''
   intro2: ''
   intro3: ''
-  intro4: ''
+  intro4: 'ĉi tie.'
   noback: ''
   whiteback: ''
   symbol: ''
@@ -349,7 +349,7 @@ accepting:
   clinotes: >
   merchantstitle: ''
   merchantsreceive: ''
-  merchdevguides: ''
+  merchdevguides: 'Gvidiloj por programistoj'
   merchantsreceive1: ""
   merchantsint: ""
   merchantsintlink: ''
@@ -379,7 +379,7 @@ contributing:
   mine: ''
   mine_p: >
   mine_link: ''
-  ffs: ''
+  ffs: 'Komunuma amasfinancada sistemo'
   ccs_p: ''
   ccsbutton: ''
   donate: ''
@@ -393,7 +393,7 @@ contributing:
   supportdev_p: ''
   supportdev_p2: ''
   supportdev_link: ''
-  sponsor: ''
+  sponsor: 'Sponsoradoj'
   sponsor_p: ''
   sponsor_link: ''
   sponsor_p2: ''
@@ -500,6 +500,8 @@ faq:
   qmaxsupply: ''
   amaxsupply: ''
 
+  privacy: Privateco
+  security: Sekureco
 mining:
   intro1: ''
   intro2: ''
@@ -612,12 +614,12 @@ developer-guides:
 
 user-guides:
   general: ''
-  mining: ''
+  mining: 'Mini'
   backup: ''
   nodesync: ''
   recovery: ''
   wallets: ''
-  hardwarewallet: ''
+  hardwarewallet: 'Aparataj monujoj'
   anonimizationnetworks: ''
   offline-backup: ''
   vps-node: ''
@@ -875,7 +877,7 @@ moneropedia:
     fungibility: ''
     kovri: ''
     locally-unique-host: ''
-    mining: ''
+    mining: 'Mini'
     mnemonicseed: ''
     node: ''
     openalias: ''
@@ -929,7 +931,7 @@ blog:
   allposts: ''
   urgent: ''
   releases: ''
-  community: ''
+  community: 'Komunumo'
   meetinglogs: ''
   author: ''
   date: ''
