@@ -12,12 +12,9 @@ global:
   titlemeta: 'Monero, mata uang digital yang aman, privat, dan tidak terlacak'
   terms: 'Ketentuan'
   privacy: 'Privasi'
-  untranslated: 'Halaman ini belum diterjemahkan. Jika Anda ingin membantu menterjemahkannya,
-    silahkan lihat'
-  outdated: 'Isi dari halaman ini sudah ketinggalan dan mungkin sudah tidak valid
-    lagi. Hubungi komunitas jika Anda membutuhkan bantuan.'
-  outdatedMin: 'Halaman ini telah diperbarui sejak diterjemahkan. Anda dapat menggunakan
-    versi ini, tetapi mungkin tidak lengkap. Silahkan gunakan'
+  untranslated: 'Halaman ini belum diterjemahkan. Jika Anda ingin membantu menterjemahkannya, silahkan lihat'
+  outdated: 'Isi dari halaman ini sudah ketinggalan dan mungkin sudah tidak valid lagi. Hubungi komunitas jika Anda membutuhkan bantuan.'
+  outdatedMin: 'Halaman ini telah diperbarui sejak diterjemahkan. Anda dapat menggunakan versi ini, tetapi mungkin tidak lengkap. Silahkan gunakan'
   outdatedVersion: 'Versi Bahasa Inggris'
   lang_tag: "@lang_tag_id"
 
@@ -73,35 +70,22 @@ index:
 
 home:
   heading: 'Monero Berarti Uang'
-  heading2: 'Privat, mata uang kripto terdesentralisasi yang menjaga keuangan Anda
-    rahasia dan aman.'
+  heading2: 'Privat, mata uang kripto terdesentralisasi yang menjaga keuangan Anda rahasia dan aman.'
   whatis: 'Belajar Monero lebih banyak'
   about: 'Tentang Monero'
   joincommunity: 'Gabung Komunitas'
   choosewallet: 'Pilih Dompet'
-  choosewallet_para: 'Untuk menggunakan Monero, hal pertama yang diperlukan adalah
-    dompet. Kunjungi halaman Unduh kami dan dapatkan dompet yang sesuai dengan Anda.
-    Dompet Monero tersedia dalam beragam platform dan berisi segala macam yang Anda
-    butuhkan untuk menggunakan Monero langsung.'
+  choosewallet_para: 'Untuk menggunakan Monero, hal pertama yang diperlukan adalah dompet. Kunjungi halaman Unduh kami dan dapatkan dompet yang sesuai dengan Anda. Dompet Monero tersedia dalam beragam platform dan berisi segala macam yang Anda butuhkan untuk menggunakan Monero langsung.'
   downloads: 'Unduh'
   getcoins: 'Dapatkan Beberapa Koin'
-  getcoins_para: 'Sesudah menginstal dompet, Anda perlu mendapatkan beberapa Monero.
-    Ada beragam cara untuk mendapatkan koin untuk digunakan, seperti menambang atau
-    bekerja untuk ditukarkan dengan Monero, tetapi cara yang paling mudah adalah dengan
-    menggunakan bursa pertukaran dan mengubah uang fiat Anda ke dalam XMR. Banyak
-    bursa pertukaran, tersentral dan terdesentral, menyediakan Monero (XMR).'
+  getcoins_para: 'Sesudah menginstal dompet, Anda perlu mendapatkan beberapa Monero. Ada beragam cara untuk mendapatkan koin untuk digunakan, seperti menambang atau bekerja untuk ditukarkan dengan Monero, tetapi cara yang paling mudah adalah dengan menggunakan bursa pertukaran dan mengubah uang fiat Anda ke dalam XMR. Banyak bursa pertukaran, tersentral dan terdesentral, menyediakan Monero (XMR).'
   exchanges: 'Bursa Pertukaran'
   useit: "Ini adalah mata uang: Pakai ini!"
-  useit_para: 'Monero adalah mata uang dan dapat ditukarkan dengan barang, jasa dan
-    mata uang lainnya, secara privat dan dengan biaya yang sangat rendah. Banyak pihak
-    yang dengan senang hati menerima pembayaran menggunakan XMR; silahkan lihat pada
-    halaman''Merchant'' kami.'
+  useit_para: 'Monero adalah mata uang dan dapat ditukarkan dengan barang, jasa dan mata uang lainnya, secara privat dan dengan biaya yang sangat rendah. Banyak pihak yang dengan senang hati menerima pembayaran menggunakan XMR; silahkan lihat pada halaman''Merchant'' kami.'
   merchants: 'Merchant'
   answers: 'Temukan Jawaban atas Pertanyaan Anda'
   faq: 'FAQ'
-  faq_para: 'Kami mendengar begitu banyak pertanyaan selama bertahun-tahun dan merangkumnya
-    di FAQ. Jangan khawatir, jika pertanyaan Anda tidak ada disini, Anda dapat selalu
-    bertanya pada komunitas.'
+  faq_para: 'Kami mendengar begitu banyak pertanyaan selama bertahun-tahun dan merangkumnya di FAQ. Jangan khawatir, jika pertanyaan Anda tidak ada disini, Anda dapat selalu bertanya pada komunitas.'
   guides: 'Petunjuk dan Sumberdaya'
   guides_para: >
     Komunitas bersama-sama telah meletakkan sejumlah besar sumberdaya dan dokumentasi.
@@ -111,88 +95,48 @@ home:
     berkomunikasi dengan jaringan di 'Petunjuk Pengembang'. Perpustakaan menawarkan
     publikasi dan buku yang bisa di unduh gratis, termasuk buku lengkap 'Mastering
     Monero' dan 'Zero to Monero'.
-  moneropedia_para: 'Apakah Anda ingin mencari arti dari istilah dan konsep yang digunakan
-    dalam Monero? Di sini Anda akan menemukan petunjuk yang disusun sesuai abjad untuk
-    istilah dan artinya.'
+  moneropedia_para: 'Apakah Anda ingin mencari arti dari istilah dan konsep yang digunakan dalam Monero? Di sini Anda akan menemukan petunjuk yang disusun sesuai abjad untuk istilah dan artinya.'
   moneropedia_button: 'Baca Moneropedia'
   contributecommunity: "Kami Membutuhkan Keahlian Anda: Ayo Berkontribusi!"
-  contributecommunity_para: 'Monero bukan hanya sekedar mata uang, ini adalah komunitas
-    terdesentralisasi dan bisa ada hanya karena terimakasih pada ratusan sukarelawan
-    yang mendedikasikan waktu mereka untuk proyek ini. Bergabunglah bersama kami!'
-  researchlab_para: 'MRL (Monero Research Lab / Lab Penelitian Monero) adalah bagian
-    yang sangat penting dari Monero. Peneliti dan kriptografer dari seluruh penjuru
-    dunia bertemu untuk menemukan cara baru menyempurnakan Monero. Baca paper mereka
-    dan bergabunglah!'
+  contributecommunity_para: 'Monero bukan hanya sekedar mata uang, ini adalah komunitas terdesentralisasi dan bisa ada hanya karena terimakasih pada ratusan sukarelawan yang mendedikasikan waktu mereka untuk proyek ini. Bergabunglah bersama kami!'
+  researchlab_para: 'MRL (Monero Research Lab / Lab Penelitian Monero) adalah bagian yang sangat penting dari Monero. Peneliti dan kriptografer dari seluruh penjuru dunia bertemu untuk menemukan cara baru menyempurnakan Monero. Baca paper mereka dan bergabunglah!'
   visitmrl: 'Kunjungi MRL'
   contributing: 'Kontribusi'
   meetcommunity: "Bertemu komunitas!"
-  meetus: "Anggota komunitas Monero berasal dari seluruh dunia. Anda dapat menemukan\
-    \ kami di berbagai platform. Datang jumpai kami!"
+  meetus: "Anggota komunitas Monero berasal dari seluruh dunia. Anda dapat menemukan kami di berbagai platform. Datang jumpai kami!"
   hangouts: 'Tempat Ngumpul'
   morevideos: 'Mencari lebih banyak video penjelasan?'
 
 hangouts:
-  intro: 'Komunitas Monero beragam dan bervariasi. Kami datang dari mana-mana, tetapi
-    kami pasti memiliki beberapa tempat yang kami sukai untuk berkumpul bersama. Anda
-    akan menemukan sebagian besar dari mereka di bawah ini. Bergabunglah dengan kami!'
+  intro: 'Komunitas Monero beragam dan bervariasi. Kami datang dari mana-mana, tetapi kami pasti memiliki beberapa tempat yang kami sukai untuk berkumpul bersama. Anda akan menemukan sebagian besar dari mereka di bawah ini. Bergabunglah dengan kami!'
   resources: 'Sumber Daya Kelompok Kerja'
-  resources_para: 'Dalam upaya mendukung kelompok kerja organik, Monero memiliki berbagai
-    sumberdaya yang komunitas dapat pakai untuk bertemu dan merencanakan proyek,'
-  resources_para1: 'seperti server Matrix, papan Taiga dan platform penterjemahan
-    Weblate.'
+  resources_para: 'Dalam upaya mendukung kelompok kerja organik, Monero memiliki berbagai sumberdaya yang komunitas dapat pakai untuk bertemu dan merencanakan proyek,'
+  resources_para1: 'seperti server Matrix, papan Taiga dan platform penterjemahan Weblate.'
   irc: 'Kanal IRC'
-  irc_para: 'Komunitas Monero menggunakan banyak kanal IRC yang masing - masing melayani
-    tujuan yang berbeda. Beberapa untuk bekerja, dan beberapa hanya sebagai tempat
-    kumpul - kumpul. Anda dapat menemukan beberapa yang populer dibawah.'
-  bridges: 'Kanal ini adalah jembatan ke beberapa platform lainnya, memungkinkan komunitas
-    untuk saling berkomunikasi menggunakan layanan/protokol kesukaan mereka.'
+  irc_para: 'Komunitas Monero menggunakan banyak kanal IRC yang masing - masing melayani tujuan yang berbeda. Beberapa untuk bekerja, dan beberapa hanya sebagai tempat kumpul - kumpul. Anda dapat menemukan beberapa yang populer dibawah.'
+  bridges: 'Kanal ini adalah jembatan ke beberapa platform lainnya, memungkinkan komunitas untuk saling berkomunikasi menggunakan layanan/protokol kesukaan mereka.'
   mailing_list: 'Milis'
-  mailing_list1: 'Apakah Anda ingin menerima informasi penting langsung ke alamat
-    email? bergabunglah dengan milis kami!'
+  mailing_list1: 'Apakah Anda ingin menerima informasi penting langsung ke alamat email? bergabunglah dengan milis kami!'
   subscribe: 'Langganan'
   irc_channels:
-    monero: 'Kanal ini dipakai untuk mendiskusikan segala hal yang berkaitan dengan
-      Monero.'
-    monero-community: 'Kanal ini untuk komunitas Monero berkumpul dan mendiskusikan
-      ide-ide.'
-    monero-dev: 'Banyak kontributor dan pengembang datang kesini untuk mendiskusikan
-      berbagai hal pengembangan (dev).'
-    monero-markets: 'Kami menggunakan kanal ini untuk ngobrolin tentang harga Monero
-      dan koin lain.'
-    monero-offtopic: 'Ngobrol dengan pengguna Monero lain tentang hal - hal yang tidak
-      berhubungan dengan Monero.'
-    monero-pools: 'Disini adalah tempat untuk pertanyaan dan diskusi tentang mining
-      / penambangan.'
+    monero: 'Kanal ini dipakai untuk mendiskusikan segala hal yang berkaitan dengan Monero.'
+    monero-community: 'Kanal ini untuk komunitas Monero berkumpul dan mendiskusikan ide-ide.'
+    monero-dev: 'Banyak kontributor dan pengembang datang kesini untuk mendiskusikan berbagai hal pengembangan (dev).'
+    monero-markets: 'Kami menggunakan kanal ini untuk ngobrolin tentang harga Monero dan koin lain.'
+    monero-offtopic: 'Ngobrol dengan pengguna Monero lain tentang hal - hal yang tidak berhubungan dengan Monero.'
+    monero-pools: 'Disini adalah tempat untuk pertanyaan dan diskusi tentang mining / penambangan.'
     monero-research-lab: 'Penelitian dalam privasi finansial dengan mata uang kripto.'
     monero-translations: 'Melokalkan Monero dalam berbagai bahasa lain.'
     monero-hardware: 'Membangun dompet hardware untuk menjaga Monero Anda aman.'
     monero-site: 'Tempat pengembangan website ini dikoordinasikan.'
 
 merchants:
-  descr: 'Di halaman ini Anda akan menemukan toko dan merchant yang menerima Monero
-    sebagai pembayaran, sama seperti bursa pertukaran yang memperdagangkan Monero
-    untuk mata uang lainnya.'
+  descr: 'Di halaman ini Anda akan menemukan toko dan merchant yang menerima Monero sebagai pembayaran, sama seperti bursa pertukaran yang memperdagangkan Monero untuk mata uang lainnya.'
   useit: "Merchant yang menerima Monero"
-  use: 'Selama bertahun-tahun, merchant dari segala jenis menghargai privasi finansial
-    yang dibawa Monero. Faktanya, adopsi merchant terus meningkat.'
-  dirdescr: "Jika Anda mencari tempat untuk membelanjakan Monero, direktori di bawah\
-    \ ini memiliki beberapa pilihan. Harap ingat untuk melakukan penelitian Anda sendiri\
-    \ sebelum mempercayakan mereka dengan uang Anda:"
-  descrp2p: 'Cara terbaik untuk menukar Monero ke mata uang lainnya (atau sebaliknya)
-    adalah menggunakan bursa pertukaran P2P (peer to peer), karena mereka memungkinkan
-    penjual untuk saling berinteraksi langsung satu sama lain, tanpa perlu percaya
-    pada pihak ketiga (kecuali mungkin untuk menyediakan layanan eskrow). Bursa ini
-    lebih privat daripada rekanan mereka yang tersentralisasi, dan memungkinkan orang-orang
-    untuk mengkontrol penuh koin mereka jika mereka bukan kustodian, tetapi mereka
-    biasanya memiliki volume yang lebih kecil dibandingkan bursa ''tradisional''.
-    Pada bagian dibawah, kami menawarkan daftar bursa pertukaran P2P yang mendukung
-    Monero.'
-  swapsdescr: 'Cara baru yang menarik untuk menukarkan Monero adalah Swap Atomik (Atomic
-    Swap) yang <a href="https://www.getmonero.org/2021/08/20/atomic-swaps.html">kami
-    umumkan</a> pada Agustus 2021. Pertukaran Atomik adalah cara terdesentralisasi
-    penuh untuk menukarkan Bitcoin <-> Monero (informasi lebih lengkap ada di postingan
-    blog). Teknologinya masih baru, sehingga penyedia layanan swap belum banyak, tetapi
-    Anda sudah dapat menjual XMR untuk BTC menggunakan protokol ini di'
+  use: 'Selama bertahun-tahun, merchant dari segala jenis menghargai privasi finansial yang dibawa Monero. Faktanya, adopsi merchant terus meningkat.'
+  dirdescr: "Jika Anda mencari tempat untuk membelanjakan Monero, direktori di bawah ini memiliki beberapa pilihan. Harap ingat untuk melakukan penelitian Anda sendiri sebelum mempercayakan mereka dengan uang Anda:"
+  descrp2p: 'Cara terbaik untuk menukar Monero ke mata uang lainnya (atau sebaliknya) adalah menggunakan bursa pertukaran P2P (peer to peer), karena mereka memungkinkan penjual untuk saling berinteraksi langsung satu sama lain, tanpa perlu percaya pada pihak ketiga (kecuali mungkin untuk menyediakan layanan eskrow). Bursa ini lebih privat daripada rekanan mereka yang tersentralisasi, dan memungkinkan orang-orang untuk mengkontrol penuh koin mereka jika mereka bukan kustodian, tetapi mereka biasanya memiliki volume yang lebih kecil dibandingkan bursa ''tradisional''. Pada bagian dibawah, kami menawarkan daftar bursa pertukaran P2P yang mendukung Monero.'
+  swapsdescr: 'Cara baru yang menarik untuk menukarkan Monero adalah Swap Atomik (Atomic Swap) yang <a href="https://www.getmonero.org/2021/08/20/atomic-swaps.html">kami umumkan</a> pada Agustus 2021. Pertukaran Atomik adalah cara terdesentralisasi penuh untuk menukarkan Bitcoin <-> Monero (informasi lebih lengkap ada di postingan blog). Teknologinya masih baru, sehingga penyedia layanan swap belum banyak, tetapi Anda sudah dapat menjual XMR untuk BTC menggunakan protokol ini di'
   bisqdescr: 'bursa pertukaran P2P Terdesentralisasi berbasis Bitcoin dan Tor.'
   cardfoss: "Sumber terbuka:"
   cardkyc: "<b>Tanpa KYC</b> (Know Your Customer):"
@@ -206,7 +150,6 @@ merchants:
   simpleswapdescr: 'Bursa pertukaran instan non-kustodial.'
   disclaimer: |
   visitbisq: ''
-  visitlocalmonero: ''
   visithodlhodl: ''
   centrexchanges: ''
   centrexchangesp: ''
@@ -218,7 +161,6 @@ sponsorships:
   tari: ''
   mbank: ''
   symas: ''
-  forknetworking: ''
   macstadium: ''
   pastsponsors: ''
 
@@ -248,8 +190,6 @@ team:
   localization_descr: ''
   localization_start: ''
   locplatform: ""
-  outreach_descr: ''
-  outreach_start: ''
   telegram: ""
   mrl_descr: ''
   mrl_start: ''
@@ -308,8 +248,6 @@ downloads:
   bootstrapnode1: ''
   rpc: ''
   rpc1: ''
-  payforrpc: ''
-  payforrpc1: ''
   verify: ''
   verify1: ''
   verify2: ''
@@ -815,19 +753,15 @@ roadmap:
   onionaddress: ''
   supercop: ''
   clsag: ''
-  tryptych: ""
   kastelo: ""
-  layer2: ''
   released-0-16-0-0: ''
   released-0-17: ''
 
-  returnaddr: ''
   atomicswaps: ''
   bplus: ''
   p2pool: ''
   haveno: ''
 
-  ringsize-sera-tryp: ''
   seraphis-jamtis: ''
   ospead: ''
   released-0-18: ''
@@ -985,7 +919,6 @@ tools:
 
   network: ''
   monerohash-nodes: ''
-  localmonero-blocks: ''
   nownodes: ''
   getblockio: ''
   monerofail: ''
@@ -993,7 +926,6 @@ tools:
 
   market: ''
   backtestking: ''
-  cryptofacile: ''
   cryptoradar: ''
   kryptocheck: ''
 
