@@ -492,6 +492,10 @@ faq:
   qblocksize: Quelle est la taille de la blockchain Monero ?
   qantivirus: Pourquoi mon antivirus/pare-feu signale que le logiciel Monero que je viens de télécharger est un virus ?
   aantivirus: Après avoir téléchargé le logiciel Monero (que ce soit le GUI comme le CLI), votre antivirus ou pare-feu peut identifier les exécutables comme des virus. Certains antivirus vous préviennent seulement de la menace potentielle, d'autres vont jusqu'à supprimer sans avertissement les fichiers contenant @wallet/ @daemon. C'est probablement à cause du mineur intégré, qui est utilisé pour miner et pour la vérification des @blocs. Certains antivirus sont susceptibles de considérer à tord que le mineur est un logiciel dangereux et le supprimer.
+  privacy: Confidentialité
+  security: Sécurité
+  wallets: Portefeuilles
+  node: Nœud
 mining:
   intro1: Monero est une cryptomonnaie qui s'appuie sur une extraction minière par preuve de travail (Proof-of-Work) pour permettre un consensus distribué. Vous trouvez ci-dessous des ressources et des informations vous permettant de commencer à miner.
   intro2: Le projet Monero ne plébiscite aucun pool, logiciel ou matériel particulier. Le contenu suivant n'est fournit qu'à titre purement informatif.

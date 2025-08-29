@@ -478,6 +478,10 @@ faq:
   qmaxsupply: ¿Cuál es la máxima cantidad de Monero que existirá?
   aasicresistance2: "Monero soluciona este problema siendo resistente a los ASICs: utiliza un algoritmo (@randomx) que reduce fuertemente la eficiencia de los ASICs, haciendo que no sea rentable desarrollarlos. Los mineros pueden utilizar hardware de uso común, lo que les permite competir de forma justa. La red de Monero está actualmente protegida por miles de mineros que utilizan computadoras \"normales\". Esto hace que la red sea mucho más difícil de atacar y que ningún minero tenga una ventaja significativa sobre los demás (todos utilizan más o menos el mismo hardware).\n"
   amaxsupply: Monero posee una tasa de emisión fija y no una cantidad total establecida. Alrededor de mayo de 2022, la emisión de Monero bajará y se mantendrá permanentemente en 0,3 XMR por minuto (0,6 XMR por @bloque). Esto supone aproximadamente un 1% de inflación para el primer año y que luego irá tendiendo a 0% en los siguientes años. Esta @emisión-de-cola es el incentivo necesario para garantizar la seguridad de Monero en forma permanente, incluso en un futuro lejano, y que a la vez mantendrá la inflación en un porcentaje muy bajo.
+  privacy: Privacidad
+  security: Seguridad
+  wallets: Monederos
+  node: Nodo
 mining:
   intro1: Monero es una criptomoneda que utiliza el minado por prueba-de-trabajo (proof-of-work) para lograr un consenso distribuido. A continuación encontrarás información y recursos para saber cómo empezar a minar.
   intro2: El proyecto Monero no avala ningún software, hardware o pool en particular, y el contenido mostrado es provisto para propósitos informativos.
@@ -724,6 +728,7 @@ roadmap:
   bplus: Bulletproofs+
   p2pool: Se ha lanzado P2Pool
   haveno: Haveno
+  bp++: Bulletproofs+
 research-lab:
   intro: Monero no está comprometido solamente a hacer una moneda fungible, sino también a una continua investigación en el campo de la privacidad financiera ya que esto involucra a las criptomonedas. A continuación encontrarás el trabajo de nuestro propio Laboratorio de Investigación de Monero, con más trabajos por delante.
   mrl_papers: Artículos publicados

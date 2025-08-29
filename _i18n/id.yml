@@ -168,7 +168,7 @@ team:
   introduction: ''
   core: ''
   community: ''
-  mrl: ''
+  mrl: 'Lab Penelitian'
   descr: ''
   start: ''
   contacts: ''
@@ -234,7 +234,7 @@ downloads:
   cli_intro0: ''
   cli_intro: ''
   currentversion: ''
-  sourcecode: ''
+  sourcecode: 'Kode Sumber'
   helpsupport: ''
   helpsupport1: ""
   helpsupport2: ""
@@ -257,7 +257,7 @@ downloads:
   showhash3: ''
   showhash4: ""
   mobilelight1: ''
-  mobilelight2: ''
+  mobilelight2: 'Tempat Ngumpul'
   mobilelight3: ''
   installer: ''
   avwarning: ''
@@ -350,7 +350,7 @@ accepting:
   clinotes: >
   merchantstitle: ''
   merchantsreceive: ''
-  merchdevguides: ''
+  merchdevguides: 'Petunjuk Pengembang'
   merchantsreceive1: ""
   merchantsint: ""
   merchantsintlink: ''
@@ -380,7 +380,7 @@ contributing:
   mine: ''
   mine_p: >
   mine_link: ''
-  ffs: ''
+  ffs: 'Sistem Urun Dana Komunitas'
   ccs_p: ''
   ccsbutton: ''
   donate: ''
@@ -394,7 +394,7 @@ contributing:
   supportdev_p: ''
   supportdev_p2: ''
   supportdev_link: ''
-  sponsor: ''
+  sponsor: 'Sponsor'
   sponsor_p: ''
   sponsor_link: ''
   sponsor_p2: ''
@@ -501,6 +501,7 @@ faq:
   qmaxsupply: ''
   amaxsupply: ''
 
+  privacy: Privasi
 mining:
   intro1: ''
   intro2: ''
@@ -550,7 +551,7 @@ what-is-monero:
   confidential_para2: ''
   grassroots: ''
   grassroots_p1: ''
-  grassroots_p2: ''
+  grassroots_p2: 'Lab Penelitian'
   grassroots_p3: ''
   grassroots_p4: ''
   grassroots_p5: ''
@@ -560,7 +561,7 @@ what-is-monero:
   electronic: ''
   electronic_para1: ''
   videos: ''
-  aboutb: ''
+  aboutb: 'Tentang'
   walletb: ''
   getb: ''
   joinb: ''
@@ -575,7 +576,7 @@ about:
   values_para: ''
   security: ''
   security_para: ''
-  privacy: ''
+  privacy: 'Privasi'
   privacy_para: ''
   decentralization: ''
   decentralization_para: ''
@@ -613,7 +614,7 @@ developer-guides:
 
 user-guides:
   general: ''
-  mining: ''
+  mining: 'Menambang'
   backup: ''
   nodesync: ''
   recovery: ''
@@ -886,7 +887,7 @@ moneropedia:
     fungibility: ''
     kovri: ''
     locally-unique-host: ''
-    mining: ''
+    mining: 'Menambang'
     mnemonicseed: ''
     node: ''
     openalias: ''
@@ -940,7 +941,7 @@ blog:
   allposts: ''
   urgent: ''
   releases: ''
-  community: ''
+  community: 'Komunitas'
   meetinglogs: ''
   author: ''
   date: ''

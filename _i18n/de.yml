@@ -465,12 +465,17 @@ faq:
   ablocksize: Die Monero @blockchain wächst ständig, daher gibt es keine feste Größe. Ab 2021 ist die vollständige Blockchain etwa 95-100 GB groß. Eine beschnittene Blockchain ist etwa 30 GB groß. Lies den Moneropedia-Eintrag @pruning, um den Unterschied zwischen einer vollen und einer beschnittenen Blockchain zu erfahren.
   ahf1: Die Entwicklergemeinschaft und das Kernteam sind sich einig, dass das Protokoll stabil und ausgereift genug ist und halbjährliche Hard Forks nicht mehr notwendig sind. Darüber hinaus ist das Ökosystem rund um Monero über die Jahre exponentiell gewachsen und häufige Protokolländerungen wären immer schwieriger zu koordinieren und könnten dem Wachstum des Ökosystems und der Nutzererfahrung schaden. Als Sahnehäubchen sorgt der Algorithmus @RandomX für eine langfristige ASIC-Resistenz, so dass regelmäßige Änderungen nicht mehr erforderlich sind. Netzwerk-Upgrades werden weiterhin genutzt, um wichtige Protokollverbesserungen und Konsensänderungen vorzunehmen, allerdings in einer geringeren und weniger strengen Frequenz (alle 9-12 Monate). Der letzte Hard Fork war am 18. Oktober 2020.
   video_sa: Schattenadressen
+  privacy: Datenschutz
+  security: Sicherheit
+  wallets: Wallets
+  node: Node
 mining:
   intro1: Monero ist eine Kryptowährung, die auf Proof-of-Work-Mining zurückgreift, um einen dezentralen Konsens zu erreichen. Weiter unten findest du weitere Informationen rund um die ersten Schritte des Minings.
   intro2: Das Monero-Projekt empfiehlt keinen speziellen Pool, keine bestimmte Software oder Hardware und die nachfolgenden Informationen sind rein informativ.
   support: Support
   software: Mining-Software
   software_para: Beachte, dass einige Miningprogramme Gebühren für deren Entwickler abführen können.
+  pow: Proof of Work
 using: {}
 what-is-monero:
   need-to-know: Was du wissen solltest
@@ -487,6 +492,8 @@ what-is-monero:
   grassroots_p4: 500 Entwicklern
   grassroots_p6: Zahlreiche
   joinb: Trete einer Arbeitsgruppe bei
+  grassroots_p2: Research Lab
+  aboutb: Über
 about:
   history: Überblick über die Geschichte
   history_para1: 'Monero wurde im April 2014 veröffentlicht. Es war ein fairer, vorher angekündigter Start des Referenzcodes CryptoNote. Es gab keinen Pre- oder Instantmine und kein Anteil des Minings geht an die Entwickler. All das kannst du im Thread auf Bitcointalk sehen:'
@@ -558,6 +565,7 @@ user-guides:
   guiguide: Anleitung für das Monero-GUI-Wallet
   node-i2pzero: Betreiben eines Monero-Nodes via I2P mit I2P-zero
   back: Zurück zur Liste
+  hardwarewallet: Hardware-Wallets
 roadmap:
   completed: Abgeschlossene Aufgabe
   ongoing: Laufende Aufgabe
@@ -660,6 +668,7 @@ roadmap:
   feb: Februar
   jan: Januar
   bplus: Bulletproofs+
+  bp++: Bulletproofs+
 research-lab:
   intro: Monero widmet sich nicht nur einer fungiblen Währung, sondern auch einer kontinuierlichen Forschung im Bereich des finanziellen Datenschutzes, da dies Kryptowährungen mit einschließt. Weiter unten findest du Arbeiten unseres Monero Research Lab; weitere Abhandlungen werden folgen.
   mrl_papers: Monero Research Lab Papers (Englisch)

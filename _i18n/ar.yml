@@ -65,6 +65,9 @@ home:
   moneropedia_button: إقرأ مونيروبيديا
   faq: الأسئله الشائعه
   faq_para: لقد سمعنا الكثير من الأسئله علي مر السنين وجمعنا لراحتك وسهوله الوصول هذه التجميعه من الأسئله الشائعه المتنوعه, لا تقلق إذا لم تجد سؤالك هنا يمكنك دائما سؤال مجتمع مونيرو .
+  about: عن مونيرو
+  hangouts: Hangouts
+  contributing: المشاركه
 hangouts:
   intro: مجتمع مونيرو متعدد ومختلف. لقد أتينا من كل مكان. لكن بكل تأكيد هناك أماكن نحب أن نلتقي بها معاً. ستجد بالأسفل معظمهم شاركنا الأن!
   resources: موارد مجموعه العمل
@@ -149,6 +152,8 @@ downloads:
   mobilelight3: page to see where we are.
   installer: Installer
 
+  hwthsupported: المحافظ
+  wallet: Wallet
 monero-project: {}
 press-kit:
   intro2: لاحظ أن إختيار الخلفيه البيضاء يجعل الخلفيه بيضاء خلف رمز مونيرو فقط, وليست خلفيه للصوره كامله.
@@ -176,7 +181,8 @@ press-kit:
   guerrillakit: Guerrilla Toolkit
   guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
-accepting: {}
+accepting:
+  merchdevguides: دليل المُطور
 contributing:
   intro: مونيرو هو مشروع مفتوح المصدر, يُقاد من قبل المجتمع , موضح بالأدني طرق عديده لمسانده المشروع .
   network: ساند الشبكه
@@ -189,6 +195,7 @@ contributing:
   donate-other_para1: بريد
   donate-other_para2: لوسائل أخري للتبرع أو إذا أحببت أن تكون من الراعيين لمشروع مونيرو.
 
+  sponsor: الداعمين
 faq:
   q1: كيف يكون لمونيرو قيمه ؟
   a1: مونيرو له قيمه لأن الناس مستعده لشراءه. إذا لم يكن هناك مَن يُريد شراءه لن يكون له أي قيمه. سعر مونيرو يُحدد بالعرض والطلب, يزيد سعر مونيرو إذا زاد الطلب عن العرض ويَقل السعر في حاله حدوث العكس.
@@ -218,6 +225,10 @@ faq:
   q14: Is Monero 100% anonymous ?
   a14: There is no such thing as 100% anonymous. If nothing else, your anonymity set is the set of people using Monero. Some people don't use Monero. Monero may also have bugs. Even if not, ways may exist to infer some information through Monero's privacy layers, either now or later. Attacks only get better. If you wear a seatbelt, you can still die in a car crash. Use common sense, prudence and defense in depth.
 
+  privacy: الخصوصيه
+  security: الأمان
+  wallets: المحافظ
+  node: Node
 mining:
   intro1: مونيرو هو عمله رقميه تعتمد علي طريقه خوارزميه تأكيد-العمل  في التعدين لتحقيق الموافقه الإجماعيه الموزعه . أدناه ستجد المعلومات والموارد اللازمه للبدأ في التعدين.
   intro2: مشروع مونيرو لا يُرجّح حقل (تجمّع للتعدين) أو برامج أو مُعدات معينه والمعلومات أدناه لأغراض معرفيه فقط.
@@ -225,6 +236,7 @@ mining:
   software: برامج التعدين
   software_para: لاحظ أن بعض البرامج تحوي رُسوم للمُطور
 
+  pow: خوارزميه تأكيد-العمل
 using: {}
 what-is-monero:
   need-to-know: ما تحتاج إلي معرفته
@@ -239,6 +251,8 @@ what-is-monero:
   electronic_para1: لا يوجد فترات إنتظار لعده أيام أو مخاطره عمليات رد المدفوعات الإحتياليه. مونيرو آمن من " ضوابط راس المال" - وهي التدابير التي تحد من تدفق العملات التقليديه, تجدها أحياناً إلي حد مخيف في الدول التي تعاني من عدم الإستقرار الإقتصادي.
   videos: Monero Videos (English)
 
+  grassroots_p2: مختبر البحث
+  aboutb: عن مونيرو
 about:
   history: لمحه تاريخيه
   history_para1: تم إطلاق مونيرو في ربيع اﻵخر سنه 2014. إنطلاق عادل, تم الإعلان المُسبق عن الكود المرجعي ل(CryptoNote). لم يكن هناك أي تعدين مُسبق أو فعلي ولا يوجد نسبه من مكافئات الكتل تذهب إلي التطوير. أُنظر الموضوع الأصلي علي موقع حديث البتكوين
@@ -287,6 +301,7 @@ user-guides:
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
   tor_wallet: Connecting your local wallet to your own daemon over Tor
 
+  hardwarewallet: Hardware Wallets
 roadmap:
   completed: المهات المكتمله
   ongoing: المهمات الجاريه
@@ -330,7 +345,7 @@ roadmap:
   hfminblock:
   webredesign:
   released-0-11-0:
-  fluffyblocks:
+  fluffyblocks: Fluffy Blocks
   guioutbeta:
   minringsize5:
   releasedgui-0-11-0:
@@ -365,6 +380,9 @@ roadmap:
   paper7:
   paper10:
   mms:
+  pruning: Blockchain pruning
+  bplus: Bulletproofs
+  bp++: Bulletproofs
 
 getmonero-de:
 released-0-14-0:
@@ -445,6 +463,7 @@ specs:
   block_emission_title: منحني الإصدار
   block_emission_main: "أولاً, المنحني الرئيسي; حوالي 18.132 مليون عمله بنهايه مايو 2022"
   block_emission_tail: "ثانياً, منحني الذيل; 0.6 مونيرو يتم إنشائهم كل دقيقتين بمجرد إنتهاء الإصدار الأساسي, يُترجم كـ أقل من 1% تضخم ويقل تدريجياً مع الوقت"
+  privacytech_tor-i2p: Transactions over Tor/I2P
 library:
   description: "Below are some publications, books or magazines available for you to download."
   books: Books
@@ -528,5 +547,10 @@ moneropedia:
 blog:
   author: تم النشر بواسطه
   date: تم النشر في
+  community: المجتمع
 tags:
   notags: لا يوجد مواضيع تحت هذا الوصف.
+footer:
+  legal: قانوني
+  source: Source Code
+  ccs: زياره نظام تمويل المنتدي
