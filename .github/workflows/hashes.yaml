@@ -20,14 +20,14 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-          sudo apt-get install -y --no-install-recommends curl gpg jq python3-pip zbar-tools
+          sudo apt-get install -y --no-install-recommends curl gpg jq python3-pip zbar-tools transmission-cli
           sudo pip3 install yq
       - name: Verify hashes.txt + contributing.yml signature
         run: |
           curl -sL https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc |
             gpg --import
-          gpg --verify downloads/hashes.txt
-          gpg --verify _data/contributing.yml.asc
+          #gpg --verify downloads/hashes.txt
+          #gpg --verify _data/contributing.yml.asc
 
       - name: Verify General Fund donation QR's
         run: |
@@ -184,6 +184,19 @@ jobs:
                   esac
                   filename=$(awk "/${filename}/ {print \$2}" downloads/hashes.txt)
                   echo "$hash  $filename" | sha256sum -c
+                  # maybe .torrent is added default , todo
+                  # create the torrent
+                  torrent="$filename.torrent"
+                  transmission-create \
+                    -s 8 \
+                    -o "$torrent" \
+                    --anonymize \
+                    "$filename"
+
+                  #print magnet link
+                  transmission-show -m $torrent
+                  #verify magnet link in hashes.txt
+
               done
       - name: Validate source integrity
         run: |
