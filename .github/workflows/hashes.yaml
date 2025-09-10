@@ -63,8 +63,8 @@ jobs:
           lines=($lines)
           IFS=$SAVEIFS
           
-          version_gui=$(awk '/monero-gui-source-v/ {print $2}' downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $4}')
-          version_cli=$(awk '/monero-source-v/ {print $2}' downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $3}')
+          version_gui=$(awk '/monero-gui-source-v/  && $2 !~ /\.torrent$/ {print $2}' downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $4}')
+          version_cli=$(awk '/monero-source-v/  && $2 !~ /\.torrent$/ {print $2}' downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $3}')
 
           filenames_cli=()
           filenames_gui=()
@@ -148,15 +148,18 @@ jobs:
           done
       - name: Verify hashes.txt hashes
         run: |
+          # sha256sum: WARNING: 19 lines are improperly formatted
+          # strip the .torrent here also
           grep monero- downloads/hashes.txt | sha256sum -c
       - name: Verify downloads.yml hashes
         run: |
           #-v github ignores the github source urls
-          yq -r '.[] | .[0].downloads[] | "\(.link)|\(.hash)"' downloads.yml | grep -v github |
+          yq -r '.[] | .[0].downloads[] | "\(.link)|\(.hash)|\(.magnet-info-hash)"' _data/downloads.yml | grep -v github |
           while read line; do
               [ -z "$line" ] && continue
               url=$(echo $line | cut -d'|' -f1)
               hash=$(echo $line | cut -d'|' -f2)
+              magnethash=$(echo $line | cut -d'|' -f3)
               filename=
               case $url in
                   *gui/win64install) filename=monero-gui-install-win-x64 ;;
@@ -183,27 +186,31 @@ jobs:
                       exit 1
                   ;;
               esac
-              # if we end in .torrent then we create the torrent and confirm file info hash otherwise do normal
-              case "$filename" in
-                  *.torrent)
-                      # strip .torrent from end
-                      filename="${filename%.torrent}"
-                      torrent="$filename.torrent"
-                      transmission-create -s 512 -o "$torrent" --anonymize "$filename"
-                      infohash=$(transmission-show -m "$torrent" | awk -F'btih:|&' '{print $2}')
-                      infohash=$(yq -r '.. | objects | select(.link == "'"$url"'") | .["magnet-info-hash"]' downloads.yml)
-                      [ "$infohash" = "$infohash" ]
-                      ;;
-                  *)
-                      filename=$(awk "/${filename}/ {print \$2}" hashes.txt)
-                      echo "$hash  $filename" | sha256sum -c
-                      ;;
-              esac
+              filenames=$(awk "/${filename}/ {print \$2}" downloads/hashes.txt)
+              # contains both the filename and torrent
+              for filename in $filename; do
+                  # if we end in .torrent then we create the torrent and confirm file info hash otherwise do normal
+                  case "$filename" in
+                      *.torrent)
+                          # strip .torrent from end
+                          filename="${filename%.torrent}"
+                          torrent="$filename.torrent"
+                          transmission-create -s 512 -o "$torrent" --anonymize "$filename"
+                          infohash=$(transmission-show -m "$torrent" | awk -F'btih:|&' '{print $2}')
+                          # use brain more for variable names todo
+                          [ "$infohash" = "$magnethash" ]
+                          ;;
+                      *)
+                          # stop torrent here also lol
+                          echo "$hash  $filename" | sha256sum -c
+                          ;;
+                  esac
+              done
           done
       - name: Validate source integrity
         run: |
-          version_gui=$(awk '/monero-gui-source-v/ {print $2}' downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $4}')
-          version_cli=$(awk '/monero-source-v/ {print $2}' downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $3}')
+          version_gui=$(awk '/monero-gui-source-v/  && $2 !~ /\.torrent$/ {print $2}' downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $4}')
+          version_cli=$(awk '/monero-source-v/  && $2 !~ /\.torrent$/ {print $2}' downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $3}')
           echo -e "\n--> GUI version: $version_gui \n--> CLI version: $version_cli"
           mkdir validate_sources
           cd validate_sources
