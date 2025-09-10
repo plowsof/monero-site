@@ -25,6 +25,7 @@ gui:
      vers: 
    - platform: Linux 64-bit
      hash: e4fcdea3f0ff27c3616a8a75545f42a4e4866ea374fa2eeaa9c87027573358ea
+     magnet-info-hash: 4c135d9d35efca15647a6d217e07780eba2ddbac
      link: https://downloads.getmonero.org/gui/linux64
      icon: icon-linux
      vers: 
@@ -107,4 +108,5 @@ cli:
    - platform: Source Code 
      link: https://github.com/monero-project/monero
      icon: icon-github
+
 
