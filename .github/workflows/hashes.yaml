@@ -188,7 +188,7 @@ jobs:
                   # create the torrent
                   torrent="$filename.torrent"
                   transmission-create \
-                    -s 8 \
+                    -s 200 \
                     -o "$torrent" \
                     --anonymize \
                     "$filename"
