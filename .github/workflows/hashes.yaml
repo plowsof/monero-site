@@ -151,53 +151,55 @@ jobs:
           grep monero- downloads/hashes.txt | sha256sum -c
       - name: Verify downloads.yml hashes
         run: |
-          yq -r '.[] | .[0].downloads[] | "\(.link)|\(.hash)"' _data/downloads.yml | grep -v github |
-              while read line; do
-                  [ -z "$line" ] && continue
-                  url=$(echo $line | cut -d'|' -f1)
-                  hash=$(echo $line | cut -d'|' -f2)
-                  filename=
-                  case $url in
-                      *gui/win64install) filename=monero-gui-install-win-x64 ;;
-                      *gui/win64) filename=monero-gui-win-x64 ;;
-                      *gui/mac64) filename=monero-gui-mac-x64 ;;
-                      *gui/macarm8) filename=monero-gui-mac-armv8 ;;
-                      *gui/linux64) filename=monero-gui-linux-x64 ;;
-                      *gui/source) filename=monero-gui-source ;;
-                      *cli/win64) filename=monero-win-x64 ;;
-                      *cli/win32) filename=monero-win-x86 ;;
-                      *cli/mac64) filename=monero-mac-x64 ;;
-                      *cli/macarm8) filename=monero-mac-armv8 ;;
-                      *cli/linux64) filename=monero-linux-x64 ;;
-                      *cli/linux32) filename=monero-linux-x86 ;;
-                      *cli/linuxarm8) filename=monero-linux-armv8 ;;
-                      *cli/linuxarm7) filename=monero-linux-armv7 ;;
-                      *cli/linuxriscv64) filename=monero-linux-riscv64 ;;
-                      *cli/androidarm8) filename=monero-android-armv8 ;;
-                      *cli/androidarm7) filename=monero-android-armv7 ;;
-                      *cli/freebsd64) filename=monero-freebsd-x64 ;;
-                      *cli/source) filename=monero-source ;;
-                      *)
-                          echo "Unknown url $url" >&2
-                          exit 1
+          #-v github ignores the github source urls
+          yq -r '.[] | .[0].downloads[] | "\(.link)|\(.hash)"' downloads.yml | grep -v github |
+          while read line; do
+              [ -z "$line" ] && continue
+              url=$(echo $line | cut -d'|' -f1)
+              hash=$(echo $line | cut -d'|' -f2)
+              filename=
+              case $url in
+                  *gui/win64install) filename=monero-gui-install-win-x64 ;;
+                  *gui/win64) filename=monero-gui-win-x64 ;;
+                  *gui/mac64) filename=monero-gui-mac-x64 ;;
+                  *gui/macarm8) filename=monero-gui-mac-armv8 ;;
+                  *gui/linux64) filename=monero-gui-linux-x64 ;;
+                  *gui/source) filename=monero-gui-source ;;
+                  *cli/win64) filename=monero-win-x64 ;;
+                  *cli/win32) filename=monero-win-x86 ;;
+                  *cli/mac64) filename=monero-mac-x64 ;;
+                  *cli/macarm8) filename=monero-mac-armv8 ;;
+                  *cli/linux64) filename=monero-linux-x64 ;;
+                  *cli/linux32) filename=monero-linux-x86 ;;
+                  *cli/linuxarm8) filename=monero-linux-armv8 ;;
+                  *cli/linuxarm7) filename=monero-linux-armv7 ;;
+                  *cli/linuxriscv64) filename=monero-linux-riscv64 ;;
+                  *cli/androidarm8) filename=monero-android-armv8 ;;
+                  *cli/androidarm7) filename=monero-android-armv7 ;;
+                  *cli/freebsd64) filename=monero-freebsd-x64 ;;
+                  *cli/source) filename=monero-source ;;
+                  *)
+                      echo "Unknown url $url" >&2
+                      exit 1
+                  ;;
+              esac
+              # if we end in .torrent then we create the torrent and confirm file info hash otherwise do normal
+              case "$filename" in
+                  *.torrent)
+                      # strip .torrent from end
+                      filename="${filename%.torrent}"
+                      torrent="$filename.torrent"
+                      transmission-create -s 512 -o "$torrent" --anonymize "$filename"
+                      infohash=$(transmission-show -m "$torrent" | awk -F'btih:|&' '{print $2}')
+                      infohash=$(yq -r '.. | objects | select(.link == "'"$url"'") | .["magnet-info-hash"]' downloads.yml)
+                      [ "$infohash" = "$infohash" ]
                       ;;
-                  esac
-                  filename=$(awk "/${filename}/ {print \$2}" downloads/hashes.txt)
-                  echo "$hash  $filename" | sha256sum -c
-                  # maybe .torrent is added default , todo
-                  # create the torrent
-                  torrent="$filename.torrent"
-                  transmission-create \
-                    -s 512 \
-                    -o "$torrent" \
-                    --anonymize \
-                    "$filename"
-
-                  #print magnet link
-                  transmission-show -m $torrent
-                  #verify magnet link in hashes.txt
-
-              done
+                  *)
+                      filename=$(awk "/${filename}/ {print \$2}" hashes.txt)
+                      echo "$hash  $filename" | sha256sum -c
+                      ;;
+              esac
+          done
       - name: Validate source integrity
         run: |
           version_gui=$(awk '/monero-gui-source-v/ {print $2}' downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $4}')

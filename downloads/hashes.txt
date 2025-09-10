@@ -30,6 +30,27 @@ e4fcdea3f0ff27c3616a8a75545f42a4e4866ea374fa2eeaa9c87027573358ea  monero-gui-lin
 4daff8850280173d46464ba9a9de7f712228ad1ef76a1c4954531e4fd2b86d86  monero-gui-win-x64-v0.18.4.2.zip
 691085e61ece6c56738431f3cfd395536ca0675214e5991e0dbfab85025e82d7  monero-gui-source-v0.18.4.2.tar.bz2
 #
+## File info hash for magnet link? torrent / magnet hash?
+8cc91e549f69b7869626d99c3447a099323d40b4  monero-gui-install-win-x64-v0.18.4.2.exe.torrent
+42b526b1e60a5bb44f1e49916e92b95a77bc8a19  monero-gui-win-x64-v0.18.4.2.zip.torrent
+cdb3841aa7cf840842e12009097ba41826c32453  monero-gui-mac-x64-v0.18.4.2.dmg.torrent
+c825bc0b56aeddea79186300595a8fb74991d2bb  monero-gui-mac-armv8-v0.18.4.2.dmg.torrent
+61bfa4969ff11d145e0b1662cabee579e52c047f  monero-gui-linux-x64-v0.18.4.2.tar.bz2.torrent
+e0a618fa04b57160b15cbd6b345f5f8aaa90ddb9  monero-gui-source-v0.18.4.2.tar.bz2.torrent
+521f5c742826ce201063eeee71cae8ecc8d4b124  monero-win-x64-v0.18.4.2.zip.torrent
+e51d969e6feb1f333e04e1f994c37b2312b22797  monero-win-x86-v0.18.4.2.zip.torrent
+bd8987c1a0bb4e47cab32ac0477f538315883cf7  monero-mac-x64-v0.18.4.2.tar.bz2.torrent
+1572535d0fb8a0ce7ebebcf06629315dbbe4f634  monero-mac-armv8-v0.18.4.2.tar.bz2.torrent
+4c135d9d35efca15647a6d217e07780eba2ddbac  monero-linux-x64-v0.18.4.2.tar.bz2.torrent
+9f5c493e831a1dc65d9b0773b2314383e8a4484d  monero-linux-x86-v0.18.4.2.tar.bz2.torrent
+cfa132d25289738bbac0d39e80b35f28c53b1c33  monero-linux-armv8-v0.18.4.2.tar.bz2.torrent
+f522f2bd47f497d50645ec23047954029f77b25c  monero-linux-armv7-v0.18.4.2.tar.bz2.torrent
+71ca656c8de5bfc0f8498bbba2bf728fce428371  monero-linux-riscv64-v0.18.4.2.tar.bz2.torrent
+11e940cc6c34d742e0a1fa027d23cffc37a463f1  monero-android-armv8-v0.18.4.2.tar.bz2.torrent
+d88dd7ba59499844abdfef0e3b304554d5b3a941  monero-android-armv7-v0.18.4.2.tar.bz2.torrent
+acac1c74155f066da4498338c58b080fe67f0c2f  monero-freebsd-x64-v0.18.4.2.tar.bz2.torrent
+0a7bc56d98407da50ebd7e9ff3eacf0239f70ded  monero-source-v0.18.4.2.tar.bz2.torrent
+#
 #
 # ~binaryFate
 -----BEGIN PGP SIGNATURE-----
