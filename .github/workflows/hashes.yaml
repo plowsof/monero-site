@@ -154,7 +154,7 @@ jobs:
       - name: Verify downloads.yml hashes
         run: |
           #-v github ignores the github source urls
-          yq -r '.[] | .[0].downloads[] | "\(.link)|\(.hash)|\(.magnetInfoHash)"' downloads.yml | grep -v github |
+          yq -r '.[] | .[0].downloads[] | "\(.link)|\(.hash)|\(.magnetInfoHash)"' _data/downloads.yml | grep -v github |
           while read line; do
               [ -z "$line" ] && continue
               url=$(echo $line | cut -d'|' -f1)
@@ -188,7 +188,7 @@ jobs:
               esac
               filenames=$(awk "/${filename}/ {print \$2}" downloads/hashes.txt)
               # contains both the filename and torrent
-              for filename in $filename; do
+              for filename in $filenames; do
                   # if we end in .torrent then we create the torrent and confirm file info hash otherwise do normal
                   case "$filename" in
                       *.torrent)
