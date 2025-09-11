@@ -114,7 +114,7 @@ cli:
      vers:
    - platform: FreeBSD 64-bit
      hash: b4e2b7de80107a1b4613b878d8e2114244b3fb16397821d69baa72d9b0f8c8d5
-     magnetInfoHash: acac1c74155f066da4498338c58b080fe67f0c2f_break
+     magnetInfoHash: acac1c74155f066da4498338c58b080fe67f0c2f
      link: https://downloads.getmonero.org/cli/freebsd64
      icon: icon-freebsd
      vers:
