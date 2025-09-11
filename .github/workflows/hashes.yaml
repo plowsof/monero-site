@@ -154,7 +154,7 @@ jobs:
       - name: Verify downloads.yml hashes
         run: |
           #-v github ignores the github source urls
-          yq -r '.[] | .[0].downloads[] | "\(.link)|\(.hash)|\(.magnet-info-hash)"' _data/downloads.yml | grep -v github |
+          yq -r '.[] | .[0].downloads[] | "\(.link)|\(.hash)|\(.magnetInfoHash)"' downloads.yml | grep -v github |
           while read line; do
               [ -z "$line" ] && continue
               url=$(echo $line | cut -d'|' -f1)
