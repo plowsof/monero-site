@@ -199,6 +199,7 @@ jobs:
                           infohash=$(transmission-show -m "$torrent" | awk -F'btih:|&' '{print $2}')
                           # use brain more for variable names todo
                           [ "$infohash" = "$magnethash" ]
+                          echo "better debugs.. probably if above but $infohash is == $magnethash"
                           ;;
                       *)
                           # stop torrent here also lol
