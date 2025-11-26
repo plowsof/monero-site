@@ -29,6 +29,11 @@ jobs:
           gpg --verify downloads/hashes.txt
           gpg --verify _data/contributing.yml.asc
 
+          gpg --verify resources/wallet-generator/wallet-generator.html.asc
+          mkdir resources/wallet-generator/validate_sig
+          unzip resources/wallet-generator/wallet-generator.zip -d resources/wallet-generator/validate_sig
+          gpg --verify resources/wallet-generator/validate_sig/wallet-generator.html.asc
+
       - name: Verify General Fund donation QR's
         run: |
           yaml="_data/contributing.yml"
