@@ -49,9 +49,11 @@ jobs:
           tag_name="ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby:latest"
           case "${{ steps.changes.outputs.rebuild }}" in
             true)
+              echo "boolean match"
               docker build -t "$tag_name" .
               ;;
             *)
+              echo "we did not match on true boolean"
               docker pull "$tag_name" || docker build -t "$tag_name" .
               ;;
           esac

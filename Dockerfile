@@ -15,3 +15,5 @@ EXPOSE 4000
 
 # Default is to serve the site @ localhost:4000
 CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]
+
+#rebuild test
