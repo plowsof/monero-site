@@ -51,7 +51,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:13
-msgid "Your account contains all of the Monero @transactions you have sent and received. Your account balance is a sum of all the Monero you've received, less the Monero you've sent. When using Monero you may notice that your account has two balances, a locked and an unlocked balance. The unlocked balance contains funds that can be spent immediately, and the locked balance contains funds that you can't spend right now. You may receive a transaction that has an @unlock-time set, or you may have sent some Monero and are waiting for the @change to come back to your wallet, both situations that could lead to those funds being locked for a time."
+msgid "new text. Your account contains all of the Monero @transactions you have sent and received. Your account balance is a sum of all the Monero you've received, less the Monero you've sent. When using Monero you may notice that your account has two balances, a locked and an unlocked balance. The unlocked balance contains funds that can be spent immediately, and the locked balance contains funds that you can't spend right now. You may receive a transaction that has an @unlock-time set, or you may have sent some Monero and are waiting for the @change to come back to your wallet, both situations that could lead to those funds being locked for a time."
 msgstr ""
 
 #. type: Plain text

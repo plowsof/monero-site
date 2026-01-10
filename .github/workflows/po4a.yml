@@ -1,0 +1,121 @@
+name: Build and Use po4a on Linux CI
+
+on:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Clone po4a repository at specific commit
+      run: |
+        git clone https://github.com/mquinson/po4a.git
+        cd po4a
+        git checkout v0.69
+
+    - name: Install Debian dependencies
+      run: |
+        sudo apt update 
+        sudo apt install -y liblocale-gettext-perl libtext-wrapi18n-perl libunicode-linebreak-perl libpod-parser-perl libtest-pod-perl libyaml-tiny-perl libsyntax-keyword-try-perl
+        sudo apt install -y cpanminus gettext docbook-xml docbook-xsl docbook xsltproc 
+        sudo apt install -y texlive-binaries texlive-latex-base opensp libsgmls-perl
+
+    - name: Install CPAN dependencies
+      run: |
+        cpanm Locale::gettext
+        cpanm http://search.cpan.org/CPAN/authors/id/R/RA/RAAB/SGMLSpm-1.1.tar.gz
+        cpanm Text::WrapI18N
+        cpanm Unicode::GCString
+        cd po4a
+        cpanm -v --installdeps --notest .
+
+    - name: Build
+      run: |
+        cd po4a
+        perl Build.PL
+        COLUMNS=120 ./Build verbose=1
+
+    - name: Install po4a
+      run: |
+        cd po4a
+        sudo ./Build install
+  
+    - name: Get all po, pot changes files
+      id: changed-po-files
+      uses: tj-actions/changed-files@v44
+      with:
+        files: |
+          - '**.po'
+          - '**.pot'
+  
+    - name: Run step if po file(s) change
+      # NOTE: Ensure all outputs are prefixed by the same key used above e.g. `test_(...)` | `doc_(...)` | `src_(...)` when trying to access the `any_changed` output.
+      if: steps.changed-po-files.outputs.any_changed == 'true'  
+      env:
+        PO_CHANGED_FILES: ${{ steps.changed-files-yaml.outputs.all_changed_files }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "One or more po/ file(s) has changed."
+        echo "List all the files that have changed: $PO_ALL_CHANGED_FILES"
+        git config --global user.name "weblate-po4a"
+        git config --global user.email "weblate-po4a@example.com"
+        ERROR=0
+        for po_file in ${ALL_CHANGED_FILES}; do
+          # Determine the corresponding config file
+          config_file=$(echo "$po_file" | sed -E 's|_i18n/.*/resources/(.*)/weblate/.*|\1|').config
+          config_file_path="po/$config_file"
+          
+          if [ -f "$config_file_path" ]; then
+            echo "-> Running po4a on ${config_file_path}"
+            cd po
+            if po4a "${config_file_path}"; then
+              echo "po4a ran successfully on ${config_file_path}"
+              cd ..
+              git add .
+              COMMIT_MESSAGE="po4a: ${config_file_path} updates"
+              git commit -m "${COMMIT_MESSAGE}"
+              git push origin HEAD
+            else
+              echo "ERROR: something went wrong, po4a didn't run successfully on ${config_file_path}"
+              cd ..
+              ERROR=1
+            fi
+          else
+            echo "ERROR: Config file ${config_file_path} not found, exiting."
+            ERROR=1
+          fi
+        done
+        exit $ERROR
+        
+    - name: Get current branch name
+      id: branch-name
+      run: echo "::set-output name=branch::$(git rev-parse --abbrev-ref HEAD)"  
+
+    - name: Check for existing pull request
+      id: check-pr
+      run: |
+        BRANCH=$(echo "${{ steps.branch-name.outputs.branch }}")
+        PR_LIST=$(gh pr list --repo plowsof/monero-site --state open --head $BRANCH)
+        if [[ -n "$PR_LIST" ]]; then
+          echo "::set-output name=prExists::true"
+        else
+          echo "::set-output name=prExists::false"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Create Pull Request
+      if: steps.check-pr.outputs.result == 'false'
+      uses: peter-evans/create-pull-request@v6
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
