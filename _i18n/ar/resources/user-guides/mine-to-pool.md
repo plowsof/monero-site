@@ -42,10 +42,10 @@ Scroll down to 'Assets' until you see the correct version for your
 system. Download this file, extract the archive somewhere memorable, like
 your desktop.
 
-### Other distributions and operative systems
+### Other distributions and operating systems
 
-Binaries are available for multiple distributions and operative systems, but
-you can also build the miner by yourself. Take a loot at [XMrig's
+Binaries are available for various distributions and operating systems, but
+you can also build the miner by yourself. Take a look at [XMrig's
 docs](https://xmrig.com/docs/miner)
 
 ## Selecting a pool
@@ -145,9 +145,9 @@ takes 60 blocks (approx. 2 hours).
 
 An active Monero mining community on Reddit is
 [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also
-join [#monero-pools on
-Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix
-(#monero-pools:monero.social).
+join [#monero-mining on
+Libera](https://web.libera.chat/?channel=#monero-mining) or Matrix
+(#xmrmine:matrix.org).
 
 ## Going Futher
 
