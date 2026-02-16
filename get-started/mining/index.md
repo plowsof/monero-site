@@ -1,4 +1,4 @@
----
+to---
 layout: custom
 title: titles.mining
 permalink: /get-started/mining/index.html
@@ -96,3 +96,4 @@ meta_descr: meta_descr.mining
         </div>
     </section>
 </div>
+ 
