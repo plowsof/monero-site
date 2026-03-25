@@ -4,7 +4,7 @@ import { basename, join, relative } from "node:path";
 import { parseArgs } from "node:util";
 import { defaultLocale, locales, rtlLocales } from "../src/i18n/config";
 
-if (process.env.CI !== "true") {
+if (!process.env.CI) {
   console.log("Not in CI");
   process.exit(0);
 }
@@ -14,9 +14,15 @@ const { values: args } = parseArgs({
     "limit-posts": { type: "string" },
     "skip-og": { type: "boolean", default: false },
     "limit-locales": { type: "boolean", default: false },
-    "base-sha": { type: "string" },
+    "base-branch": { type: "string" },
+    "base-ref": { type: "string" },
   },
 });
+
+if (args["base-branch"] && args["base-ref"]) {
+  console.error("Cannot use both --base-branch and --base-ref");
+  process.exit(1);
+}
 
 const BLOG_DIR = "src/content/blog";
 const OG_ROUTE = "src/pages/open-graph/[...route].ts";
@@ -27,10 +33,27 @@ function git(...gitArgs: string[]): string {
   return execFileSync("git", gitArgs, { encoding: "utf-8" }).trim();
 }
 
-function getChangedFiles(baseSha: string, ...dirs: string[]): string[] {
+function getChangedFiles(
+  ref: string,
+  useMergeBase: boolean,
+  ...dirs: string[]
+): string[] {
   try {
-    git("fetch", "origin", "--depth=1", baseSha);
-    return git("diff", "--name-only", baseSha, "--", ...dirs)
+    if (git("rev-parse", "--is-shallow-repository") === "true") {
+      git("fetch", "--unshallow");
+    }
+
+    git("fetch", "origin", ref);
+
+    return git(
+      "diff",
+      "--name-only",
+      ...(useMergeBase ? ["--merge-base"] : []),
+      "FETCH_HEAD",
+      "HEAD",
+      "--",
+      ...dirs,
+    )
       .split("\n")
       .filter(Boolean);
   } catch (e) {
@@ -61,8 +84,17 @@ function serializeI18nConfig(activeLocales: Set<string>): string {
   ].join("\n");
 }
 
-const changed = args["base-sha"]
-  ? getChangedFiles(args["base-sha"], BLOG_DIR, I18N_DIR)
+const baseRef = args["base-branch"] ?? args["base-ref"];
+const useMergeBase = Boolean(args["base-branch"]);
+
+console.log(
+  baseRef
+    ? `Diff: ${useMergeBase ? "merge-base" : "direct"} against ${baseRef}`
+    : "Diff: skipped",
+);
+
+const changed = baseRef
+  ? getChangedFiles(baseRef, useMergeBase, BLOG_DIR, I18N_DIR)
   : [];
 
 // Limit blog posts, keeping edited ones

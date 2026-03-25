@@ -122,7 +122,13 @@ Then open [http://127.0.0.1:4321](http://127.0.0.1:4321).
 | `--limit-posts N`  | Keep only the N most recent blog posts                   |
 | `--skip-og`        | Remove OpenGraph image generation                        |
 | `--limit-locales`  | Build only the default locale (+ locales with PR changes)|
-| `--base-sha SHA`   | Git SHA to diff against for preserving changed content   |
+
+Changed-file detection (pick one):
+
+| Flag               | Description                                              |
+| :----------------- | :------------------------------------------------------- |
+| `--base-branch NAME` | Branch to diff against via merge-base (for PRs/previews) |
+| `--base-ref SHA`      | SHA to diff against directly (for push events)           |
 
 ```bash
 docker build --build-arg PREPARE_BUILD_ARGS="--limit-posts 6 --skip-og" --build-arg SKIP_IMAGE_OPTIMIZATION=true --target serve-ssr -t monero-site-ssr .
