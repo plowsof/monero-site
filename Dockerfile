@@ -20,7 +20,7 @@ ARG PREPARE_BUILD_ARGS
 COPY --from=deps-dev /app/node_modules ./node_modules
 COPY . .
 RUN if [ -n "$PREPARE_BUILD_ARGS" ]; then \
-      CI=true pnpm prepare-ci $PREPARE_BUILD_ARGS; \
+      pnpm prepare-build $PREPARE_BUILD_ARGS; \
     fi
 COPY --from=deps /app/node_modules ./node_modules
 

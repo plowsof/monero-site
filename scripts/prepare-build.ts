@@ -4,8 +4,8 @@ import { basename, join, relative } from "node:path";
 import { parseArgs } from "node:util";
 import { defaultLocale, locales, rtlLocales } from "../src/i18n/config";
 
-if (!process.env.CI) {
-  console.log("Not in CI");
+if (process.env.NODE_ENV === "production") {
+  console.log("Skipping in production");
   process.exit(0);
 }
 
@@ -19,7 +19,14 @@ const { values: args } = parseArgs({
   },
 });
 
-if (args["base-branch"] && args["base-ref"]) {
+const limitPosts = args["limit-posts"] ?? process.env.LIMIT_POSTS;
+const skipOg = args["skip-og"] || process.env.SKIP_OG === "true";
+const limitLocales =
+  args["limit-locales"] || process.env.LIMIT_LOCALES === "true";
+const baseBranch = args["base-branch"] ?? process.env.BASE_BRANCH;
+const baseRefArg = args["base-ref"] ?? process.env.BASE_REF;
+
+if (baseBranch && baseRefArg) {
   console.error("Cannot use both --base-branch and --base-ref");
   process.exit(1);
 }
@@ -84,8 +91,8 @@ function serializeI18nConfig(activeLocales: Set<string>): string {
   ].join("\n");
 }
 
-const baseRef = args["base-branch"] ?? args["base-ref"];
-const useMergeBase = Boolean(args["base-branch"]);
+const baseRef = baseBranch ?? baseRefArg;
+const useMergeBase = Boolean(baseBranch);
 
 console.log(
   baseRef
@@ -98,10 +105,10 @@ const changed = baseRef
   : [];
 
 // Limit blog posts, keeping edited ones
-if (args["limit-posts"]) {
-  const limit = Number(args["limit-posts"]);
+if (limitPosts) {
+  const limit = Number(limitPosts);
   if (!Number.isFinite(limit) || limit < 1) {
-    console.error(`Invalid --limit-posts value: ${args["limit-posts"]}`);
+    console.error(`Invalid --limit-posts value: ${limitPosts}`);
     process.exit(1);
   }
 
@@ -127,7 +134,7 @@ if (args["limit-posts"]) {
 }
 
 // Limit locales
-if (args["limit-locales"]) {
+if (limitLocales) {
   const keepLocales = new Set([defaultLocale]);
 
   for (const file of changedFilesUnder(I18N_DIR)) {
@@ -140,7 +147,7 @@ if (args["limit-locales"]) {
 }
 
 // OpenGraph removal
-if (args["skip-og"]) {
+if (skipOg) {
   rmSync(OG_ROUTE, { force: true });
   console.log(`OpenGraph: removed ${OG_ROUTE}`);
 }

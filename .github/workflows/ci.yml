@@ -76,7 +76,7 @@ jobs:
           ARGS="--limit-posts 10 --skip-og --limit-locales"
           if [ -n "$BASE_BRANCH" ]; then ARGS="$ARGS --base-branch $BASE_BRANCH"; fi
           if [ -n "$BASE_REF" ]; then ARGS="$ARGS --base-ref $BASE_REF"; fi
-          pnpm prepare-ci $ARGS
+          pnpm prepare-build $ARGS
 
       - name: Build site
         env:
