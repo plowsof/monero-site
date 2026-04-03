@@ -4,8 +4,8 @@ import { basename, join, relative } from "node:path";
 import { parseArgs } from "node:util";
 import { defaultLocale, locales, rtlLocales } from "../src/i18n/config";
 
-if (process.env.NODE_ENV === "production") {
-  console.log("Skipping in production");
+if (process.env.SKIP_PREPARE_BUILD === "true") {
+  console.log("Skipping: SKIP_PREPARE_BUILD is set");
   process.exit(0);
 }
 
@@ -40,23 +40,42 @@ function git(...gitArgs: string[]): string {
   return execFileSync("git", gitArgs, { encoding: "utf-8" }).trim();
 }
 
+function resolveRef(ref: string): string | undefined {
+  try {
+    return git("rev-parse", "--verify", ref);
+  } catch {
+    // ref not found, try fetching
+  }
+
+  const remote = git("remote").split("\n").filter(Boolean)[0];
+  if (!remote) return undefined;
+
+  try {
+    if (git("rev-parse", "--is-shallow-repository") === "true") {
+      git("fetch", "--unshallow", remote);
+    }
+
+    git("fetch", remote, ref);
+    return "FETCH_HEAD";
+  } catch {
+    return undefined;
+  }
+}
+
 function getChangedFiles(
   ref: string,
   useMergeBase: boolean,
   ...dirs: string[]
 ): string[] {
+  const resolved = resolveRef(ref);
+  if (!resolved) return [];
+
   try {
-    if (git("rev-parse", "--is-shallow-repository") === "true") {
-      git("fetch", "--unshallow");
-    }
-
-    git("fetch", "origin", ref);
-
     return git(
       "diff",
       "--name-only",
       ...(useMergeBase ? ["--merge-base"] : []),
-      "FETCH_HEAD",
+      resolved,
       "HEAD",
       "--",
       ...dirs,
@@ -94,15 +113,17 @@ function serializeI18nConfig(activeLocales: Set<string>): string {
 const baseRef = baseBranch ?? baseRefArg;
 const useMergeBase = Boolean(baseBranch);
 
-console.log(
-  baseRef
-    ? `Diff: ${useMergeBase ? "merge-base" : "direct"} against ${baseRef}`
-    : "Diff: skipped",
-);
-
-const changed = baseRef
-  ? getChangedFiles(baseRef, useMergeBase, BLOG_DIR, I18N_DIR)
-  : [];
+let changed: string[] = [];
+if (baseRef) {
+  const mode = useMergeBase ? "merge-base" : "direct";
+  console.log(`Diff: ${mode} against ${baseRef}`);
+  changed = getChangedFiles(baseRef, useMergeBase, BLOG_DIR, I18N_DIR);
+  console.log(
+    `Diff: ${changed.length} file${changed.length !== 1 ? "s" : ""} changed`,
+  );
+} else {
+  console.log("Diff: skipped");
+}
 
 // Limit blog posts, keeping edited ones
 if (limitPosts) {
