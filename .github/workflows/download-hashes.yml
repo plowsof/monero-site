@@ -320,7 +320,7 @@ jobs:
     needs: validate-download-hashes
     name: "Update static data with new download info"
     runs-on: ubuntu-22.04
-    if: github.event_name == 'push' && github.ref == 'refs/heads/beta'    
+    if: github.event_name == 'push' && github.ref == 'refs/heads/beta'
     permissions:
       contents: write
       pull-requests: write
