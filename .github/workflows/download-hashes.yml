@@ -422,7 +422,7 @@ jobs:
           version_gui="${{ needs.validate-download-hashes.outputs.version_gui }}"
           version_cli="${{ needs.validate-download-hashes.outputs.version_cli }}"
 
-          BRANCH_NAME="${PREFIX}CLI_${version_cli}-GUI_$(version_gui)"
+          BRANCH_NAME="${PREFIX}CLI_${version_cli}-GUI_${version_gui}"
 
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
