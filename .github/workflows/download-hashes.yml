@@ -357,13 +357,15 @@ jobs:
             jq --arg m "$MAGNET_LINK_GUI" '.gui.torrent.magnet = $m' src/data/downloads/core.json > tmp.json && mv tmp.json src/data/downloads/core.json
           fi
 
-          echo "CURRENT_CLI_MAGNET: $CURRENT_CLI_MAGNET"
-          echo "CURRENT_GUI_MAGNET: $CURRENT_GUI_MAGNET"
+
 
           CURRENT_CLI_MAGNET=$(jq -r '.cli.torrent.magnet' src/data/downloads/core.json)
           if [ "$CURRENT_CLI_MAGNET" != "$MAGNET_LINK_CLI" ]; then
             jq --arg m "$MAGNET_LINK_CLI" '.cli.torrent.magnet = $m' src/data/downloads/core.json > tmp.json && mv tmp.json src/data/downloads/core.json
           fi
+
+          echo "CURRENT_CLI_MAGNET: $CURRENT_CLI_MAGNET"
+          echo "CURRENT_GUI_MAGNET: $CURRENT_GUI_MAGNET"
 
       - name: Update Core download metadata
         env:
