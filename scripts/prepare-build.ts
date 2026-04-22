@@ -3,11 +3,14 @@ import { readdirSync, rmSync, writeFileSync } from "node:fs";
 import { basename, join, relative } from "node:path";
 import { parseArgs } from "node:util";
 import { defaultLocale, locales, rtlLocales } from "../src/i18n/config";
+import { existsSync } from "node:fs";
 
 if (process.env.SKIP_PREPARE_BUILD === "true") {
   console.log("Skipping: SKIP_PREPARE_BUILD is set");
   process.exit(0);
 }
+
+console.log("DEBUG argv:", process.argv.slice(2));
 
 const { values: args } = parseArgs({
   options: {
@@ -25,6 +28,8 @@ const limitLocales =
   args["limit-locales"] || process.env.LIMIT_LOCALES === "true";
 const baseBranch = args["base-branch"] ?? process.env.BASE_BRANCH;
 const baseRefArg = args["base-ref"] ?? process.env.BASE_REF;
+
+console.log("DEBUG prepare-build:", { limitPosts, skipOg, limitLocales, baseBranch, baseRefArg });
 
 if (baseBranch && baseRefArg) {
   console.error("Cannot use both --base-branch and --base-ref");
@@ -172,3 +177,5 @@ if (skipOg) {
   rmSync(OG_ROUTE, { force: true });
   console.log(`OpenGraph: removed ${OG_ROUTE}`);
 }
+
+console.log("DEBUG og-route exists:", existsSync(OG_ROUTE));
