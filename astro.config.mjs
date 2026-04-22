@@ -12,6 +12,7 @@ const SITE_ROOTDOMAIN = "beta.monerodevs.org";
 
 const isSSR = process.env.SSR === "true";
 const skipImageOptimization = process.env.SKIP_IMAGE_OPTIMIZATION === "true";
+console.log("DEBUG astro.config:", { SKIP_IMAGE_OPTIMIZATION: process.env.SKIP_IMAGE_OPTIMIZATION, skipImageOptimization });
 
 // https://astro.build/config
 export default defineConfig({
