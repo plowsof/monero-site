@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang="zh" dir="ltr" data-astro-cid-sckkx6r4> <head><title>博客 | Overview and Logs for the Dev Meeting Held on 2016-09-11</title><meta charset="UTF-8"><link rel="canonical" href="https://beta.monerodevs.org/zh/blog/2016/09/11/overview-and-logs-for-the-dev-meeting-held-on-2016-09-11/"><meta name="description" content="brief update on 0MQ, RingCT, the hardfork schedule, and a new contributor, pigeons (sysops/devops)"><meta name="robots" content="index, follow"><meta property="og:title" content="Overview and Logs for the Dev Meeting Held on 2016-09-11"><meta property="og:type" content="article"><meta property="og:image" content="https://beta.monerodevs.org/open-graph/blog/2016/09/11/overview-and-logs-for-the-dev-meeting-held-on-2016-09-11.png"><meta property="og:url" content="https://beta.monerodevs.org/zh/blog/2016/09/11/overview-and-logs-for-the-dev-meeting-held-on-2016-09-11/"><meta property="og:locale" content="zh"><meta property="og:locale:alternate" content="en"><meta property="og:locale:alternate" content="ar"><meta property="og:site_name" content="Monero"><meta property="og:image:url" content="https://beta.monerodevs.org/open-graph/blog/2016/09/11/overview-and-logs-for-the-dev-meeting-held-on-2016-09-11.png"><meta property="og:image:alt" content="OpenGraph image for Monero blog post titled &#34;Overview and Logs for the Dev Meeting Held on 2016-09-11&#34;"><meta property="article:published_time" content="2016-09-11T00:00:00.000Z"><meta property="article:author" content="dEBRUYNE / fluffypony"><meta property="article:tag" content="dev diaries"><meta property="article:tag" content="core"><meta property="article:tag" content="crypto"><meta property="article:tag" content="0mq"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@monero"><meta name="twitter:title" content="Overview and Logs for the Dev Meeting Held on 2016-09-11"><meta name="twitter:image" content="https://beta.monerodevs.org/open-graph/blog/2016/09/11/overview-and-logs-for-the-dev-meeting-held-on-2016-09-11.png"><meta name="twitter:description" content="brief update on 0MQ, RingCT, the hardfork schedule, and a new contributor, pigeons (sysops/devops)"><link rel="preload" as="font" type="font/woff2" href="/_astro/dm-sans-latin-wght-normal.Xz1IZZA0.woff2" crossorigin="anonymous"><link rel="icon" href="/meta/favicon-16x16.png" sizes="16x16"><link rel="icon" href="/meta/favicon-32x32.png" sizes="32x32"><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.18.0"><meta name="color-scheme" content="light dark"><link rel="alternate" hreflang="en" href="https://beta.monerodevs.org/blog/2016/09/11/overview-and-logs-for-the-dev-meeting-held-on-2016-09-11/"><link rel="alternate" hreflang="ar" href="https://beta.monerodevs.org/ar/blog/2016/09/11/overview-and-logs-for-the-dev-meeting-held-on-2016-09-11/"><link rel="alternate" hreflang="zh" href="https://beta.monerodevs.org/zh/blog/2016/09/11/overview-and-logs-for-the-dev-meeting-held-on-2016-09-11/"><link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="https://beta.monerodevs.org/feed.xml"><style>#blog-content{line-height:var(--line-height-body);word-wrap:break-word;color:light-dark(inherit,var(--paragraph-main));:where(h2,h3,h4){font-weight:var(--font-weight-bold)}img{border-radius:var(--radius-md)}a:not(.moneropedia-link){color:light-dark(var(--text-primary),var(--paragraph-main));font-weight:var(--font-weight-medium);text-decoration-line:underline;text-decoration-style:dotted;&:hover{color:light-dark(var(--text-secondary),var(--heading-color))}}h1{font-size:var(--font-size-2xl)}h2{font-size:var(--font-size-xl)}h3{font-size:var(--font-size-lg)}h4{font-size:var(--font-size-md)}p{margin-bottom:1em}li{margin-bottom:.25em}pre{padding:1em;border-radius:var(--radius-md);overflow-x:auto;background:var(--footer-color);code{background:none;padding:0;border-radius:0}}code:not(pre code){font-family:monospace;background-color:var(--footer-color);padding:.1em .3em;border-radius:var(--radius-sm)}blockquote{margin:1.5em 0;padding-inline:1.5em 1em;border-inline-start:3px solid var(--border-color);font-style:italic;color:var(--text-secondary)}strong{font-weight:var(--font-weight-bold)}em{font-style:italic}}h1[data-astro-cid-7dcwcvhl]{font-size:var(--font-size-3xl);margin:0}#post-header[data-astro-cid-7dcwcvhl]{margin-bottom:var(--page-top-margin)}#meta[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-2xl);color:var(--text-secondary);margin-top:var(--space-md);margin-bottom:var(--space-xl);font-size:var(--font-size-lg);font-weight:var(--font-weight-normal)}.meta-item[data-astro-cid-7dcwcvhl]{display:flex;align-items:center;gap:var(--space-xs);>.icon{display:grid;place-items:center;color:var(--monero-orange)}}.tag-container[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-xs);font-size:var(--font-size-sm);flex-wrap:wrap;.tag{text-align:center;padding:var(--space-2xs) var(--space-sm);background:var(--footer-color);border-radius:var(--radius-md);text-transform:uppercase;font-weight:var(--font-weight-semibold);text-decoration:none;color:inherit;white-space:nowrap;&:hover{color:var(--text-secondary)}}}@media(width<=600px){#meta[data-astro-cid-7dcwcvhl]{flex-direction:column;font-size:var(--font-size-md);font-weight:var(--font-weight-medium);gap:var(--space-md)}.meta-item[data-astro-cid-7dcwcvhl]{>.icon{font-size:var(--font-size-lg)}}}
+.card[data-astro-cid-dd5txfcy]{background:var(--card-color);padding:var(--card-padding);border-radius:var(--card-radius);&[data-border]{border:1px solid var(--border-color)}&[data-transparent]{background:transparent}&[data-hover]{transition:background .15s ease;&[data-astro-cid-dd5txfcy]:hover,&[data-astro-cid-dd5txfcy]:focus-visible{background:var(--card-hover-color)}}}
+.icon[data-astro-cid-bpjkz5as]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);margin-inline-start:var(--spacing);background:var(--iconColor);mask:var(--iconSrc) no-repeat center / contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}
+</style>
+<link rel="stylesheet" href="/_astro/_page_.DxMr-0dd.css">
+<style>.blog-container[data-astro-cid-ndejf7ww]{display:grid;grid-template-columns:1fr;gap:var(--space-2xl);>*{min-width:0}}.sidebar[data-astro-cid-ndejf7ww]{height:fit-content;& h2[data-astro-cid-ndejf7ww]{font-size:var(--font-size-xl);margin-top:0}}.recent-posts[data-astro-cid-ndejf7ww]{list-style:none;padding:0;margin-bottom:0;display:flex;flex-direction:column;gap:var(--space-md);li{margin-bottom:var(--space-xs)}.post-title{font-size:var(--font-size-md);color:var(--paragraph-main);text-decoration-line:underline;text-decoration-style:dotted;&:hover{text-decoration:underline}}.post-date{display:block;font-size:var(--font-size-sm);color:var(--paragraph-subtitle);margin-top:var(--space-2xs)}}@media(width>=1200px){.blog-container[data-astro-cid-ndejf7ww]{grid-template-columns:1fr 65ch 1fr}.blog-post[data-astro-cid-ndejf7ww]{grid-column:2}.sidebar[data-astro-cid-ndejf7ww]{grid-column:2;grid-row:2}}@media(width>=1600px){.sidebar[data-astro-cid-ndejf7ww]{grid-column:3;grid-row:1}}
+:where([data-astro-image]){object-fit:var(--fit);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+.moneropedia-link{position:relative;display:inline-block;color:var(--monero-orange);text-decoration-line:underline;text-decoration-style:dotted;cursor:help;font-weight:var(--font-weight-medium)}.moneropedia-link:hover,.moneropedia-link:focus-visible{text-decoration:none}.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{content:none}@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{position:absolute;left:50%;opacity:0;pointer-events:none;transform:translate(-50%) translateY(0);transition:opacity .18s ease-out,transform .18s ease-out;z-index:10}.moneropedia-link[data-tooltip]:before{content:attr(data-tooltip);bottom:calc(100% + .5rem);padding:.5rem .75rem;background:var(--card-color);border:1px solid var(--border-color);border-radius:.25rem;box-sizing:border-box;overflow-wrap:break-word;min-inline-size:25ch;max-inline-size:min(35ch,calc(100vw - 2.5rem));font-size:var(--font-size-sm);line-height:var(--line-height-caption);color:var(--text-primary);box-shadow:0 2px 8px #0000004d}.moneropedia-link[data-tooltip]:after{content:"";bottom:calc(100% + .25rem);border-width:.35rem .35rem 0;border-style:solid;border-color:var(--card-color) transparent transparent transparent}.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):before,.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):after{opacity:1;transform:translate(-50%) translateY(-2px)}}@media(prefers-reduced-motion:reduce){@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{transition:none}}}
+.icon[data-astro-cid-7wapxsvo]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);aspect-ratio:1 / 1;vertical-align:middle;--iconUrl: var(--lightUrl);background-image:var(--iconUrl);background-repeat:no-repeat;background-position:center;background-size:contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}@media(prefers-color-scheme:dark){.icon[data-astro-cid-7wapxsvo]{--iconUrl: var(--darkUrl)}}
+</style></head> <body data-astro-cid-sckkx6r4> <header class="header" data-astro-cid-dm2weclu> <div class="header-inner" data-astro-cid-dm2weclu> <a class="brand" href="/zh/" data-astro-cid-dm2weclu> <img src="/_astro/monerologo.CMdKQEkN_10Rm8s.avif" srcset="/_astro/monerologo.CMdKQEkN_10Rm8s.avif 64w, /_astro/monerologo.CMdKQEkN_10Rm8s.avif 128w" alt aria-hidden="true" data-astro-cid-dm2weclu="true" loading="eager" decoding="sync" fetchpriority="high" sizes="(min-width: 64px) 64px, 100vw" style="--fit: cover; --pos: center;" data-astro-image="constrained" width="64" height="64" class="mark"> <span data-astro-cid-dm2weclu>MONERO</span> </a> <input id="nav-toggle" class="nav-toggle" type="checkbox" data-astro-cid-dm2weclu> <nav id="primary-nav" class="nav" aria-label="主要" data-astro-cid-dm2weclu> <div class="drawer-header" data-astro-cid-dm2weclu> <label for="nav-toggle" class="close" aria-controls="primary-nav" aria-label="关闭菜单" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/close.CneAMmXr_ZaFGrm.avif);--iconColor: currentColor;"></div>  </label> </div> <fieldset data-astro-cid-dm2weclu> <legend class="sr-only" data-astro-cid-dm2weclu>主要导航部分</legend> <ul class="nav-list" data-astro-cid-dm2weclu> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-x1brvde8s" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-x1brvde8s-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 入门 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-x1brvde8s" class="mobile-open" aria-label="Open 入门 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-x1brvde8s-close" class="mobile-close" aria-label="Close 入门 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="入门 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/get-started/what-is-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--darkUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>什么是 Monero？</div> <div class="desc" data-astro-cid-lm33vczh>关于 Monero 您需要了解的一切概览。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/exchanges/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/merchants-exchanges.DN61YseO_ZQ3Km9.avif);--darkUrl: url(/_astro/merchants-exchanges.BjKEmUcz_1O8q9G.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>购买 Monero</div> <div class="desc" data-astro-cid-lm33vczh>允许您购买或交易 Monero 的加密货币交易所。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/merchants/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>使用 Monero</div> <div class="desc" data-astro-cid-lm33vczh>查找接受 Monero 支付的地点和服务。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/accept-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/accept-monero.COXM8aHM_Z1II116.avif);--darkUrl: url(/_astro/accept-monero.C3WCFfqe_Z2tp8Kw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>接受 Monero</div> <div class="desc" data-astro-cid-lm33vczh>了解如何作为商家或个人接受 XMR。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/mining/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/mining.DBRk7HAe_Zd3ukV.avif);--darkUrl: url(/_astro/mining.B54FNZld_Z2jnjrG.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>挖矿</div> <div class="desc" data-astro-cid-lm33vczh>了解如何在您的电脑上挖掘 Monero。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/contribute/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/contribute.DKeO9Dve_Z2vEvfu.avif);--darkUrl: url(/_astro/contribute.zLqiOwb5_Z1qe0gS.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>贡献</div> <div class="desc" data-astro-cid-lm33vczh>帮助 Monero 项目为每个人带来隐私。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/faq/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/faq.C8QObR1A_1A5Irh.avif);--darkUrl: url(/_astro/faq.BNcLqXOJ_ZaSdVI.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>常见问题</div> <div class="desc" data-astro-cid-lm33vczh>查找关于 Monero 常见问题的答案。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/zh/downloads/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 下载  </a>  </div>  </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/zh/blog/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 博客  </a>  </div>  </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-5mlx57x72" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-5mlx57x72-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 社区 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-5mlx57x72" class="mobile-open" aria-label="Open 社区 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-5mlx57x72-close" class="mobile-close" aria-label="Close 社区 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="社区 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/community/workgroups/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/workgroups.OzoDQ7NV_Z1Lwqqs.avif);--darkUrl: url(/_astro/workgroups.CGbkWAXL_Z1m0ybJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>工作组</div> <div class="desc" data-astro-cid-lm33vczh>与 Monero 的专门工作组在开发、研究和社区工作方面进行合作。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/community/sponsorships/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>赞助商</div> <div class="desc" data-astro-cid-lm33vczh>支持 Monero 项目的企业列表。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/community/hangouts/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/hangouts.CiWxE-i9_ZeEICj.avif);--darkUrl: url(/_astro/hangouts.Do4DJEA1_257lPw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>社交场所</div> <div class="desc" data-astro-cid-lm33vczh>加入 Monero 社区聚会和活动，与其他爱好者和开发者交流。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-emxlgde3c" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-emxlgde3c-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 资源 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-emxlgde3c" class="mobile-open" aria-label="Open 资源 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-emxlgde3c-close" class="mobile-close" aria-label="Close 资源 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="资源 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/resources/knowledge-base/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/moneropedia.7o-c8ZX4_lSmb.avif);--darkUrl: url(/_astro/moneropedia.CYJm2-Q5_1KG40X.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>知识库</div> <div class="desc" data-astro-cid-lm33vczh>书籍、出版物、杂志、Moneropedia。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/roadmap/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/roadmap.DoSq9h9o_Z1QuQpv.avif);--darkUrl: url(/_astro/roadmap.BONb2rwk_2hroDR.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>路线图</div> <div class="desc" data-astro-cid-lm33vczh>了解最新的 Monero 开发计划和进展。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/research-lab/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/research-lab.D90VAC3d_WkkdD.avif);--darkUrl: url(/_astro/research-lab.uv3a8gpS_Z7cyXJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>研究实验室</div> <div class="desc" data-astro-cid-lm33vczh>探索 Monero 研究实验室的出版物和研究。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/tools/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/tools.CTqUs9cD_Z1hqOiO.avif);--darkUrl: url(/_astro/tools.BW4KRKDW_Z6Gril.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero 工具</div> <div class="desc" data-astro-cid-lm33vczh>为 Monero 用户和开发者精选的工具和软件列表。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="https://docs.getmonero.org" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/developer-guides.DD6ipv0S_Yls1B.avif);--darkUrl: url(/_astro/developer-guides.Cdg0NOVs_Z2h2V29.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero 文档</div> <div class="desc" data-astro-cid-lm33vczh>用户和开发者有效、安全使用 Monero 的综合指南。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/press-kit/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/press-kit.C4VjegyX_2aPbOF.avif);--darkUrl: url(/_astro/press-kit.CVdfPwCA_1oXHhF.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>媒体资料包</div> <div class="desc" data-astro-cid-lm33vczh>媒体联系方式、标志、图片和其他媒体资源。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="https://ccs.getmonero.org" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 众筹  </a>  </div>  </li>  </ul> </fieldset> </nav> <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="关闭菜单" data-astro-cid-dm2weclu></label> <div class="utils" aria-label="工具" data-astro-cid-dm2weclu> <div class="lang" data-astro-cid-dm2weclu> <details class="lang-container" data-astro-cid-g6d27pgi> <summary class="lang" aria-label="更改语言" aria-haspopup="true" role="button" data-astro-cid-g6d27pgi> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/globe.FI0_gjXP_xUiUM.avif);--iconColor: currentColor;"></div>  </summary> <div class="lang-dropdown" aria-label="语言" data-astro-cid-g6d27pgi> <ul class="lang-list" data-astro-cid-g6d27pgi> <li data-astro-cid-g6d27pgi> <a href="/blog/2016/09/11/overview-and-logs-for-the-dev-meeting-held-on-2016-09-11/" class data-astro-cid-g6d27pgi> English </a> </li><li data-astro-cid-g6d27pgi> <a href="/ar/blog/2016/09/11/overview-and-logs-for-the-dev-meeting-held-on-2016-09-11/" class data-astro-cid-g6d27pgi> العربية </a> </li><li data-astro-cid-g6d27pgi> <a href="/zh/blog/2016/09/11/overview-and-logs-for-the-dev-meeting-held-on-2016-09-11/" class="active" aria-current="true" data-astro-cid-g6d27pgi> 中文 </a> </li> </ul> </div> </details>  </div> <label for="nav-toggle" class="hamburger" aria-controls="primary-nav" aria-label="打开菜单" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/hamburger.CkIM-2PU_xmMpy.avif);--iconColor: currentColor;"></div>  </label> </div> </div> </header>  <main data-astro-cid-sckkx6r4>   <div class="blog-container" data-astro-cid-ndejf7ww> <article class="blog-post" data-astro-cid-ndejf7ww> <div id="post-header" data-astro-cid-7dcwcvhl> <h1 data-astro-cid-7dcwcvhl>Overview and Logs for the Dev Meeting Held on 2016-09-11</h1> <div id="meta" data-astro-cid-7dcwcvhl> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/calendar.BXaSv3Jk_Z1NrB7E.avif);--iconColor: currentColor;"></div>  </div> <time datetime="2016-09-11" data-astro-cid-7dcwcvhl>2016年9月11日</time> </div> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/user.Cx6bTnUm_FhCof.avif);--iconColor: currentColor;"></div>  </div> dEBRUYNE / fluffypony </div> </div> <div class="tag-container" data-astro-cid-7dcwcvhl> <a class="tag" href="/zh/blog/tags/dev-diaries/" data-astro-cid-7dcwcvhl> 开发日志 </a><a class="tag" href="/zh/blog/tags/core/" data-astro-cid-7dcwcvhl> 核心 </a><a class="tag" href="/zh/blog/tags/crypto/" data-astro-cid-7dcwcvhl> 加密 </a><a class="tag" href="/zh/blog/tags/0mq/" data-astro-cid-7dcwcvhl> 0MQ </a> </div> </div>   <div id="blog-content" lang="en" dir="ltr">  <h3 id="logs">Logs</h3>
+<p><strong>&#x3C;fluffypony></strong> Hi all<br>
+<strong>&#x3C;fluffypony></strong> I’m on my phone<br>
+<strong>&#x3C;ArticMine></strong> Hi all<br>
+<strong>&#x3C;tooquick_4u></strong> hello<br>
+<strong>&#x3C;DaveyJones></strong> NoodleDoodle, TheKoziTwo,<br>
+<strong>&#x3C;DaveyJones></strong> anyone else?<br>
+<strong>&#x3C;pigeons></strong> hola<br>
+<strong>&#x3C;DaveyJones></strong> luigi1112, listening or cruising ;)<br>
+<strong>&#x3C;DaveyJones></strong> jwinterm<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;fluffypony></strong> hyc and moneromooo are around afaik<br>
+<strong>&#x3C;tewinget></strong> fluffypony: if you wanna just give a list of things to cover, one of us can conduct the meeting. (assuming you don’t wanna have to type a shitload on your phone)<br>
+<strong>&#x3C;fluffypony></strong> Well I think let’s start with 0MQ, tewinget<br>
+<strong>&#x3C;fluffypony></strong> Then you can talk and I don’t have to<br>
+<strong>&#x3C;fluffypony></strong> :-P<br>
+<strong>&#x3C;tewinget></strong> well, I wanted to have more news, but I’m having to do a full distro upgrade to get a newer boost on this craptop, and the internet is slow as balls…so I don’t really have much in the way of updates. Soon™. Need to merge RingCT stuff into my zmq branch, then make the new RingCT-related RPC calls (as well as updating any others as needed), then should be golden for basic implementation.<br>
+<strong>&#x3C;tewinget></strong> will try to get most of that done today or tomorrow.<br>
+<strong>&#x3C;fluffypony></strong> This is daemon only right now right?<br>
+<strong>&#x3C;tewinget></strong> daemon RPC, and a lib to use it that libwallet will call into.<br>
+<strong>&#x3C;fluffypony></strong> ok - and then next thing after daemon is buttoned up is a wallet 0MQ endpoint right?<br>
+<strong>&#x3C;tewinget></strong> but yes, for right now I’m working on the daemon’s RPC. Once that’s in a good spot I can move onto wallet RPC. Oh, and I think since the last dev meeting I redid the formatting of the RPC commands to get JSON-RPC 2.0 compliant.<br>
+<strong>&#x3C;fluffypony></strong> Ok so tewinget let me ask about the backwards-compatible stub<br>
+<strong>&#x3C;fluffypony></strong> Coz obviously we still need a stub for those that insist on touching the daemon using old RPC<br>
+<strong>&#x3C;fluffypony></strong> Is that just a matter of refactoring it out of the daemon?<br>
+<strong>&#x3C;tewinget></strong> well…so *my* plan was to leave the old RPC in place until we decide “yea, that’s for sure deprecated and gonna be removed now”<br>
+<strong>&#x3C;fluffypony></strong> That’s fine - I meant as a later exercise<br>
+<strong>&#x3C;fluffypony></strong> Just trying to gauge the amount of effort it’s going to take<br>
+<strong>&#x3C;tewinget></strong> hmm, well, a wrapper around the old RPC to hook into the new wouldn’t be <em>too</em> hard…<br>
+<strong>&#x3C;tewinget></strong> just tedious<br>
+<strong>&#x3C;fluffypony></strong> I know it’s tedious<br>
+<strong>&#x3C;fluffypony></strong> What if we made it generic<br>
+<strong>&#x3C;fluffypony></strong> Like it translated the RPC call directly<br>
+<strong>&#x3C;fluffypony></strong> If it fails pass the error back<br>
+<strong>&#x3C;fluffypony></strong> Oh wait that won’t work<br>
+<strong>&#x3C;fluffypony></strong> The 0MQ calls are different<br>
+<strong>&#x3C;tewinget></strong> not hugely different, but different in some cases, yes. with good reason…<br>
+<strong>&#x3C;fluffypony></strong> Ok so tedious because it requires everything implemented as a 0MQ client, got it<br>
+<strong>&#x3C;fluffypony></strong> As a practical matter<br>
+<strong>&#x3C;fluffypony></strong> We need to consider something like cppnetlib for TLS and auth<br>
+<strong>&#x3C;tewinget></strong> I’m trying to make switching costs as low as possible, but I can’t make it nonzero.<br>
+<strong>&#x3C;fluffypony></strong> And implement that as a matter of some urgency, since the entire net_skeleton thing was a colossal waste of time<br>
+<strong>&#x3C;fluffypony></strong> Ok tks tewinget - anything else from your side?<br>
+<strong>&#x3C;tewinget></strong> yea, I might make TLS and auth a priority ahead of wallet RPC (since it will need auth anyway)<br>
+<strong>&#x3C;tewinget></strong> other than that, not really.<br>
+<strong>&#x3C;tewinget></strong> carry on.<br>
+<strong>&#x3C;moneromooo></strong> “I can’t make it nonzero” &#x3C;— excellent!<br>
+<strong>&#x3C;fluffypony></strong> Hokay<br>
+<strong>&#x3C;fluffypony></strong> LOL<br>
+<strong>&#x3C;fluffypony></strong> Nice catch<br>
+<strong>&#x3C;hyc></strong> lol<br>
+<strong>&#x3C;fluffypony></strong> breaking: Monero contributor works for free!<br>
+<strong>&#x3C;hyc></strong> just tuning in, was teaking my ARM code<br>
+<strong>&#x3C;tewinget></strong> god dammit.<br>
+<strong>&#x3C;fluffypony></strong> Instant delivery!<br>
+<strong>&#x3C;tewinget></strong> well, moneromooo, I can’t<br>
+<strong>&#x3C;tewinget></strong> because it has to use ZERO MQ<br>
+<strong>&#x3C;fluffypony></strong> Hah hah<br>
+<strong>&#x3C;tewinget></strong> #SavedIt<br>
+<strong>&#x3C;hyc></strong> :P<br>
+<strong>&#x3C;fluffypony></strong> #dadjokes<br>
+<strong>&#x3C;fluffypony></strong> At any rate<br>
+<strong>&#x3C;fluffypony></strong> I’d like to introduce pigeons<br>
+<strong>&#x3C;fluffypony></strong> He’s recently started doing some stuff with me<br>
+<strong>&#x3C;fluffypony></strong> and he’s kindly going to help us redo our sysops / devops<br>
+<strong>&#x3C;fluffypony></strong> For all projects, including Kovri<br>
+<strong>&#x3C;hyc></strong> nice<br>
+<strong>&#x3C;pigeons></strong> Hi guys. :)<br>
+<strong>&#x3C;moneromooo></strong> Hi<br>
+<strong>&#x3C;hyc></strong> hey there<br>
+<strong>&#x3C;fluffypony></strong> pigeons: tell us a bit about yourself or whatever<br>
+<strong>&#x3C;fluffypony></strong> “Long walks on the beach” and all that<br>
+<strong>&#x3C;hyc></strong> I guess the population explosion kinda demanded more ops<br>
+<strong>&#x3C;moneromooo></strong> I see what a sysop is, but not a devop.<br>
+<strong>&#x3C;pigeons></strong> I like pina coladas and getting lost in te rain. Ive been syadmin type stuff forever.<br>
+<strong>&#x3C;ArticMine></strong> Hi pigeons<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: devops is like CI and build boxes and that<br>
+<strong>&#x3C;pigeons></strong> devops is the new term for brogrammers who use docker and jenkins CI etc<br>
+<strong>&#x3C;moneromooo></strong> Oh nice :)<br>
+<strong>&#x3C;fluffypony></strong> Hah hah<br>
+<strong>&#x3C;hyc></strong> I think a devop is a developer with rootpw on all production machines. sysaop’s worst nightmare :P<br>
+<strong>&#x3C;fluffypony></strong> Devops-as-a-Service<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;pigeons></strong> but yeah im gonna try and get buildbot ci going the system chromium and some others use<br>
+<strong>&#x3C;pigeons></strong> get builds and tests for arm, windows, mac, freebsd, linux 32 64<br>
+<strong>&#x3C;fluffypony></strong> Also the immediate aim is to be able to push nightlies to the site<br>
+<strong>&#x3C;hyc></strong> nice<br>
+<strong>&#x3C;iDunk></strong> #1047 did this<br>
+<strong>&#x3C;iDunk></strong> oops<br>
+<strong>&#x3C;i2p-relay> {-guzzi}</strong> hi pigeons<br>
+<strong>&#x3C;fluffypony></strong> So the broader community can test without waiting for fluffypony to build<br>
+<strong>&#x3C;pigeons></strong> eventually look at gitian style reproducible builds<br>
+<strong>&#x3C;hyc></strong> ARM is gonna be 3 distinct builds, ARMv6, ARMv7, ARMv8<br>
+<strong>&#x3C;hyc></strong> rapidly proliferating…<br>
+<strong>&#x3C;pigeons></strong> ok cool<br>
+<strong>&#x3C;fluffypony></strong> hyc: I think we’ll have to drop ARMv6 for performance concerns<br>
+<strong>&#x3C;fluffypony></strong> If not now then soon<br>
+<strong>&#x3C;hyc></strong> ok, fair enough<br>
+<strong>&#x3C;fluffypony></strong> Also on that note<br>
+<strong>&#x3C;hyc></strong> yeah, the perf/watt just isn’t there on ARMv6<br>
+<strong>&#x3C;fluffypony></strong> Am I correct in saying that QEMU is about the only way we’re going to get arm7/8 build boxes?<br>
+<strong>&#x3C;fluffypony></strong> Or does anyone know of hosted native arm boxes?<br>
+<strong>&#x3C;hyc></strong> there’s an ARM VPS provider out there<br>
+<strong>&#x3C;pigeons></strong> yeah what are they called again, there is one<br>
+<strong>&#x3C;tewinget></strong> someone recommended one to me just the other day, oddly enough…can’t remember the name.<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;bitjedi></strong> awww. i still use my pi zero nodes<br>
+<strong>&#x3C;bitjedi></strong> which are arm v6<br>
+<strong>&#x3C;fluffypony></strong> bitjedi: they’ll choke on RingCT<br>
+<strong>&#x3C;iDunk></strong> scaleway.com ?<br>
+<strong>&#x3C;hyc></strong> scaleways?<br>
+<strong>&#x3C;hyc></strong> yeah<br>
+<strong>&#x3C;bitjedi></strong> are u sure it’s cpu and not io?<br>
+<strong>&#x3C;fluffypony></strong> Awesome<br>
+<strong>&#x3C;fluffypony></strong> Isn’t scaleways native and not virtualised?<br>
+<strong>&#x3C;fluffypony></strong> I seem to vaguely recall<br>
+<strong>&#x3C;tewinget></strong> I think it was Scaleway<br>
+<strong>&#x3C;hyc></strong> hm, they claim bare metal, yeah<br>
+<strong>&#x3C;pigeons></strong> theres one ovhi or somone in scandanavia<br>
+<strong>&#x3C;fluffypony></strong> Ok<br>
+<strong>&#x3C;fluffypony></strong> Also the implication is that anyone relying on the Mac / 32-bit test boxes should expect an impending change<br>
+<strong>&#x3C;fluffypony></strong> I think anonimal primarily uses them<br>
+<strong>&#x3C;fluffypony></strong> Also we’ll hopefully be able to provide broader access to test hardware in future<br>
+<strong>&#x3C;i2p-relay> {-anonimal}</strong> * has yet to use 32-bit boxes<br>
+<strong>&#x3C;fluffypony></strong> Ok then FreeBSD<br>
+<strong>&#x3C;fluffypony></strong> Has anyone tried the WIP boost 1.60 port on BSD?<br>
+<strong>&#x3C;hyc></strong> haven’t touched BSD in years<br>
+<strong>&#x3C;i2p-relay> {-anonimal}</strong> Last I checked, build failed hard on freebsd for monero.<br>
+<strong>&#x3C;i2p-relay> {-anonimal}</strong> Works with kovri.<br>
+<strong>&#x3C;fluffypony></strong> xmj is our resident BSD expert and even he hasn’t touched boost 1.60<br>
+<strong>&#x3C;fluffypony></strong> If anyone wants to volunteer to play with that great<br>
+<strong>&#x3C;fluffypony></strong> We also need to start thinking about packaging<br>
+<strong>&#x3C;fluffypony></strong> lol relevant PR is relevant<br>
+<strong>&#x3C;fluffypony></strong> hyc how do you guys handle packaging for like Debian / Ubuntu?<br>
+<strong>&#x3C;hyc></strong> eh, OpenLDAP Project is source-code only, distros do their own packaging<br>
+<strong>&#x3C;fluffypony></strong> Coz my concern with farming it out is that we end up with old versions on old distros<br>
+<strong>&#x3C;i2p-relay> {-anonimal}</strong> fluffypony: I was planning to work with the monero bsd build (only freebsd though) once we get kovri releases going<br>
+<strong>&#x3C;hyc></strong> yes, that’s a pervasive problem with distros<br>
+<strong>&#x3C;fluffypony></strong> Tks anonimal - I’ll also fiddle<br>
+<strong>&#x3C;fluffypony></strong> When I have time, so never :-P<br>
+<strong>&#x3C;fluffypony></strong> Ok next thing<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: want to talk about the rct serialisation changes?<br>
+<strong>&#x3C;fluffypony></strong> And the impact on testnet<br>
+<strong>&#x3C;moneromooo></strong> It’s finished. It’s on github ready to merge. And it will need reorganizing on testnet, yes.<br>
+<strong>&#x3C;moneromooo></strong> So, I guess someone with hash power will have to pop N blocks till before v4, and mine.<br>
+<strong>&#x3C;moneromooo></strong> After a few daysm it’ll reorg for everyone :)<br>
+<strong>&#x3C;moneromooo></strong> And we’ll get to test deep reogs.<br>
+<strong>&#x3C;hyc></strong> so anyone mining testnet right now should stop<br>
+<strong>&#x3C;moneromooo></strong> Unless you want to test stuff.<br>
+<strong>&#x3C;iDunk></strong> i exported the raw blockchain up to 800499. that’s before v3, right?<br>
+<strong>&#x3C;tewinget></strong> well that’s not entirely necessary >**_>**<br>
+<strong>&#x3C;moneromooo></strong> Yes.<br>
+<strong>&#x3C;iDunk></strong> and v4 is… ?<br>
+<strong>&#x3C;iDunk></strong> 802000 or so iirc ?<br>
+<strong>&#x3C;moneromooo></strong> 801220<br>
+<strong>&#x3C;jjiia></strong> XMR up or down<br>
+<strong>&#x3C;iDunk></strong> ah, k<br>
+<strong>&#x3C;fluffypony></strong> I think my miner is off atm<br>
+<strong>&#x3C;fluffypony></strong> it had that hiccup and I never fixed it coz stuff<br>
+<strong>&#x3C;moneromooo></strong> rct soon!<br>
+<strong>&#x3C;fluffypony></strong> ok so moneromooo<br>
+<strong>&#x3C;ArticMine></strong> It had to be done<br>
+<strong>&#x3C;MalMen></strong> are you guys forking the testnet ?<br>
+<strong>&#x3C;fluffypony></strong> when it loads the blockchain on the new code<br>
+<strong>&#x3C;MalMen></strong> im gonnad do a testnet classic<br>
+<strong>&#x3C;fluffypony></strong> it <em>should</em> freak out<br>
+<strong>&#x3C;i2p-relay> {-anonimal}</strong> Is this the meeting where we can discusses CI for CD?<br>
+<strong>&#x3C;fluffypony></strong> and rollback?<br>
+<strong>&#x3C;fluffypony></strong> anonimal: CD? like compact discs?<br>
+<strong>&#x3C;i2p-relay> {-anonimal}</strong> Laser-only releases<br>
+<strong>&#x3C;moneromooo></strong> It’ll probably moan a bit, but not overly.<br>
+<strong>&#x3C;fluffypony></strong> :-P<br>
+<strong>&#x3C;fluffypony></strong> ok but what I mean is<br>
+<strong>&#x3C;fluffypony></strong> when we load a blockchain off disk we don’t re-verify<br>
+<strong>&#x3C;MalMen></strong> the dev meeting is still going on or to late ?<br>
+<strong>&#x3C;fluffypony></strong> so will we have to manually pop blocks?<br>
+<strong>&#x3C;dEBRUYNE></strong> still going on MalMen<br>
+<strong>&#x3C;moneromooo></strong> Yes.<br>
+<strong>&#x3C;fluffypony></strong> ok so I’ll merge tomorrow afternoon, gives us a day for review<br>
+<strong>&#x3C;moneromooo></strong> Just the miner. Others will just reorg when the miner passes the old chain’s diff.<br>
+<strong>&#x3C;moneromooo></strong> (hopefully)<br>
+<strong>&#x3C;fluffypony></strong> and then I’ll do some block-popping tomorrow night<br>
+<strong>&#x3C;fluffypony></strong> and hopefully deep reorgs<br>
+<strong>&#x3C;moneromooo></strong> luigi1112: btw, you’ll want to read the latest get<em>transaction_hash and comment. It’s still 3 parts.<br>
+<strong>&#x3C;fluffypony></strong> ok<br>
+<strong>&#x3C;fluffypony></strong> then the next thing is our hard fork date and the next release<br>
+<strong>&#x3C;fluffypony></strong> we’re planning on finalising final bits and releasing 0.10 shortly<br>
+<strong>&#x3C;fluffypony></strong> but obviously RingCT (ie. v4 blocks) is not ready for even a final inclusion in this code freeze<br>
+<strong>&#x3C;fluffypony></strong> given that we’re still making changes<br>
+<strong>&#x3C;fluffypony></strong> so I’d like some input from contributors and those present as to how to handle the v4 fork, since we have a couple of options<br>
+<strong>&#x3C;fluffypony></strong> either:<br>
+<strong>&#x3C;fluffypony></strong> 1. we leave v4 till March 2016<br>
+<strong>&#x3C;iDunk></strong> 2017<br>
+<strong>&#x3C;fluffypony></strong> tks 2017<br>
+<strong>&#x3C;fluffypony></strong> 2. we change the “complain about a fork” date to like end-of-November, with an aim to forking to v4 end of December<br>
+<strong>&#x3C;fluffypony></strong> so coded freeze beginning of December<br>
+<strong>&#x3C;fluffypony></strong> (this would make RCT transactions potentially available on mainnet from Jan 1)<br>
+<strong>&#x3C;fluffypony></strong> but obviously there’s the risk of breakage<br>
+<strong>&#x3C;hyc></strong> maybe December is too soon, how about January?<br>
+<strong>&#x3C;fluffypony></strong> so if we had to do Jan, then when do we do v5?<br>
+<strong>&#x3C;fluffypony></strong> March is too close to Jan for v5, imho<br>
+<strong>&#x3C;ArticMine></strong> fluffypony My preference is 2, but my biggest concern is the amount of time left for finalization of development and testing<br>
+<strong>&#x3C;dEBRUYNE></strong> We don’t necessarily have to decide the exact dates now, but I think option 2 would be best<br>
+<strong>&#x3C;fluffypony></strong> ok so what if we did 2, but then pushed the v5 fork to September next year<br>
+<strong>&#x3C;hyc></strong> if we have v4 in January then June/July would be OK<br>
+<strong>&#x3C;fluffypony></strong> that way RCT is available on mainnet early on, but if anything breaks we have 9 months to fix it<br>
+<strong>&#x3C;fluffypony></strong> hyc: I don’t want to go too far away from our schedule<br>
+<strong>&#x3C;hyc></strong> ok<br>
+<strong>&#x3C;dEBRUYNE></strong> &#x3C;hyc> if we have v4 in January then June/July would be OK &#x3C;= Fine with that too<br>
+<strong>&#x3C;DaveyJones></strong> sounds reasonable to me<br>
+<strong>&#x3C;dEBRUYNE></strong> Like I said, we can always decide on the exact dates later<br>
+<strong>&#x3C;fluffypony></strong> like this is major enough to warrant a change, but we should aim for a singular change<br>
+<strong>&#x3C;hyc></strong> so march/september is the cadence we’re aiming for?<br>
+<strong>&#x3C;ArticMine></strong> Yes I like the idea of advancing V4 fork but keeping the v5 fork on schedule<br>
+<strong>&#x3C;tewinget></strong> I agree, singular deviation from the schedule is preferable.<br>
+<strong>&#x3C;hyc></strong> ok<br>
+<strong>&#x3C;fluffypony></strong> hyc: yep<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: most people will use Ring CT transactions anyway<br>
+<strong>&#x3C;fluffypony></strong> so we bring v4 a bit forward, and leave v5 as scheduled<br>
+<strong>&#x3C;lurker></strong> yes<br>
+<strong>&#x3C;fluffypony></strong> dEBRUYNE: we can always make it the non-default, like we did with transfer_new<br>
+<strong>&#x3C;hyc></strong> sounds good<br>
+<strong>&#x3C;dEBRUYNE></strong> yeah agree<br>
+<strong>&#x3C;ArticMine></strong> agree<br>
+<strong>&#x3C;fluffypony></strong> ok so we’ll move the freak-out to early December, and actual fork block height will be decided at that code freeze<br>
+<strong>&#x3C;fluffypony></strong> but likely late Dec / early Jan or so<br>
+<strong>&#x3C;fluffypony></strong> and v5 stays for September 2017<br>
+<strong>&#x3C;fluffypony></strong> consensus: reached!<br>
+<strong>&#x3C;DaveyJones></strong> \o/<br>
+<strong>&#x3C;fluffypony></strong> (it’s so easy when you’re tiny and only like 5 people have to agree, lol)<br>
+<strong>&#x3C;fluffypony></strong> I think that’s about it from my side, there’s something else but I completely can’t remember<br>
+<strong>&#x3C;fluffypony></strong> is there anything else that anyone wants to bring up?<br>
+<strong>&#x3C;ferretinjapan></strong> I dunno multisig for bitcoin was a bitch…<br>
+<strong>&#x3C;hyc></strong> current freeze, release date?<br>
+<strong>&#x3C;tewinget></strong> since Ilya’s not here…<br>
+<strong>&#x3C;i2p-relay> {-anonimal}</strong> I moved kovri logo decision agenda to the beginning of kovri meeting in 10’ish minutes so we can catch everyone before they leave<br>
+<strong>&#x3C;ferretinjapan></strong> that only had 8 guys<br>
+<strong>&#x3C;fluffypony></strong> ferretinjapan: lol<br>
+<strong>&#x3C;lurker></strong> a quick update on multisig preferably<br>
+<strong>&#x3C;moneromooo></strong> Do you want to wait for the fee change before binaries ?<br>
+<strong>&#x3C;fluffypony></strong> lurker: <a href="https://shnoe.wordpress.com/2016/03/22/ring-multisignature/" rel="noopener noreferrer external" target="_blank">https://shnoe.wordpress.com/2016/03/22/ring-multisignature/</a><br>
+<strong>&#x3C;fluffypony></strong> it’s whitepaper-only right now<br>
+<strong>&#x3C;kintaji></strong> fluffpony - the GUI wallet. Languages and regional variations.<br>
+<strong>&#x3C;fluffypony></strong> oh<br>
+**&#x3C;Kermit</em>>** Hi guys can I ask about public wallet build release dates<br>
+<strong>&#x3C;fluffypony></strong> yes moneromooo thanks for reminding me<br>
+<strong>&#x3C;fluffypony></strong> tag->release->binaries will be in the coming week, hopefully<br>
+<strong>&#x3C;fluffypony></strong> there are two things still remaining<br>
+<strong>&#x3C;fluffypony></strong> 1. fee changes (lower min-fee, bind it to the inverse of the block median as suggested by ArticMine)<br>
+<strong>&#x3C;fluffypony></strong> 2. ideally, if anyone is up for it, we seriously need our DNSSEC check expanded to <em>actually</em> check from the root cert down, at the moment it’s relying on the DNS server to send back a “secure” flag, which is breaking it on lots of routers<br>
+<strong>&#x3C;MalMen></strong> tewinget can you point me to the list of 0qm commands that you have already?<br>
+<strong>&#x3C;fluffypony></strong> and we rely on DNSSEC for MoneroSeeds and MoneroPulse<br>
+<strong>&#x3C;MalMen></strong> I have some sugestion<br>
+<strong>&#x3C;ArticMine></strong> moneromooo is coding the fee changes<br>
+<strong>&#x3C;fluffypony></strong> there’s some time pressure on that, but it’s not a huge piece of work, so if anyone is up for it then that would be appreciated<br>
+<strong>&#x3C;fluffypony></strong> if not it’ll have to hold off till the next release<br>
+<strong>&#x3C;moneromooo></strong> Yes, I started looking at it this afternoon. Not a simple change, since it’ll require a new RPC, and access to median block size calc in misc places.<br>
+<strong>&#x3C;fluffypony></strong> ok<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: would it be feasible to provide trezor binaries?<br>
+<strong>&#x3C;fluffypony></strong> dEBRUYNE: I haven’t actually looked at it properly, and NoodleDoodle isn’t around to give his opinion<br>
+<strong>&#x3C;dEBRUYNE></strong> I see, he’s still working on the Ring CT bit, so probably better to wait until that is finished to provide them<br>
+<strong>&#x3C;fluffypony></strong> kintaji: re: languages / variants, I think we’ll hold off on that a bit as there are large parts of the GUI that are non-functional right now<br>
+<strong>&#x3C;fluffypony></strong> Kermit_: do you mean the GUI wallet, or the next tagged release?<br>
+<em><em>&#x3C;Kermit</em>></em>* Yes gui<br>
+<strong>&#x3C;kintaji></strong> fluffypony - Okay. Just to say there are some oddities with the current flag page. Can expand at a later time.<br>
+*<em>&#x3C;fluffypony>** Kermit</em>: not certain yet - I’ll look at building beta binaries in the next week or so<br>
+<strong>&#x3C;Kermit_></strong> Thanks<br>
+<strong>&#x3C;fluffypony></strong> kintaji: yeah maybe best thing to do is drop it out the wizard initially<br>
+<strong>&#x3C;fluffypony></strong> and add it back in later on<br>
+<strong>&#x3C;tewinget></strong> MalMen: have a look at <a href="https://www.github.com/tewinget/bitmonero/tree/zmq-dev" rel="noopener noreferrer external" target="_blank">https://www.github.com/tewinget/bitmonero/tree/zmq-dev</a>, file src/rpc/daemon_messages.h. I need to do a bit of write-up, but that’s a good place to start.<br>
+<strong>&#x3C;kintaji></strong> fluffypony - yep. sounds like a good idea.<br>
+<strong>&#x3C;fluffypony></strong> ok anything else or can we start the Kovri meeting?<br>
+<strong>&#x3C;hyc></strong> any other volunteers to test ARMv8 builds?<br>
+<strong>&#x3C;fluffypony></strong> oooh I will hyc<br>
+<strong>&#x3C;pero></strong> yea i can<br>
+<strong>&#x3C;hyc></strong> cool, I’ll have atarball ready later tonight<br>
+<strong>&#x3C;MalMen></strong> tewinget you are writing your rcp calls with up letters right ?<br>
+<strong>&#x3C;pero></strong> fluffy i have centos 64bit on my rpi3 fyi<br>
+<strong>&#x3C;fluffypony></strong> hyc: is an R8 ARM processor an armv8?<br>
+<strong>&#x3C;fluffypony></strong> coz if so then I have a bunch of C.H.I.Ps lying around that I can test on<br>
+<strong>&#x3C;hyc></strong> I don’t know what R8 is. what box is that?<br>
+<strong>&#x3C;tewinget></strong> MalMen: the class names are CamelCase, but the methods (currently) are “word_word_word”. No reason that can’t change, of course.<br>
+<strong>&#x3C;MalMen></strong> ahhhh, nice<br>
+<strong>&#x3C;fluffypony></strong> AllWinner R8<br>
+<strong>&#x3C;MalMen></strong> I was in mind that you where using WordWordWord<br>
+<strong>&#x3C;hyc></strong> ok I see it<br>
+<strong>&#x3C;MalMen></strong> would sugest wordWordWord<br>
+<strong>&#x3C;fluffypony></strong> “Allwinner R8 is SoC designed based on A13 featuring one core Cortex-A8 ARM CPU with Cedar Engine VPU and Mali 400 GPU”<br>
+<strong>&#x3C;hyc></strong> nope . Cortex-A8 is ARMv7<br>
+<strong>&#x3C;fluffypony></strong> ah ok<br>
+<strong>&#x3C;fluffypony></strong> well that sucks<br>
+<strong>&#x3C;fluffypony></strong> hi meeting-bot!<br>
+<strong>&#x3C;tewinget></strong> MalMen: the method names (as in, the method field in the RPC call on the wire) are “word_word_word” to conform with the previous RPC, but I have no particular attachment to that format.<br>
+<strong>&#x3C;MalMen></strong> well, I am checking the bitcoin rcp and they use wordwordword, I think i like word_word_word better</p>  </div>  </article> <aside data-border="true" data-transparent="true" style="--card-padding: var(--space-xl); --card-radius: var(--radius-md)" data-astro-cid-ndejf7ww="true" data-astro-cid-dd5txfcy="true" class="card sidebar">  <h2 data-astro-cid-ndejf7ww>近期文章</h2> <ul class="recent-posts" data-astro-cid-ndejf7ww> <li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/03/04/monero-GUI-0.18.4.7-released/" data-astro-cid-ndejf7ww> Monero GUI 0.18.4.7 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-ndejf7ww> 2026年3月4日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/03/04/monero-0.18.4.6-released/" data-astro-cid-ndejf7ww> Monero 0.18.4.6 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-ndejf7ww> 2026年3月4日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/01/07/monero-GUI-0.18.4.5-released/" data-astro-cid-ndejf7ww> Monero GUI 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-ndejf7ww> 2026年1月7日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/01/07/monero-0.18.4.5-released/" data-astro-cid-ndejf7ww> Monero 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-ndejf7ww> 2026年1月7日 </time> </li> </ul>  </aside>  </div>  </main> <footer class="footer" aria-label="页脚" data-astro-cid-mh6itkc3> <div class="items" data-astro-cid-mh6itkc3> <nav class="grid" aria-label="页脚导航" data-astro-cid-mh6itkc3> <section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>资源</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/zh/get-started/what-is-monero/" data-astro-cid-mh6itkc3> 关于 Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/moneropedia/" data-astro-cid-mh6itkc3> Moneropedia  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://docs.getmonero.org" data-astro-cid-mh6itkc3> Monero 文档  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/get-started/faq/" data-astro-cid-mh6itkc3> 常见问题  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>联系我们</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/zh/community/workgroups/" data-astro-cid-mh6itkc3> 工作组  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/community/hangouts/" data-astro-cid-mh6itkc3> 社交场所  </a> </li><li data-astro-cid-mh6itkc3> <a href="/postorius/lists/monero-announce.lists.getmonero.org" data-astro-cid-mh6itkc3> 邮件列表  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>社区</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://monero.stackexchange.com/" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Stack Exchange  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://bitcointalk.org/index.php?topic=583449.0" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Bitcoin Talk  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://translate.getmonero.org" data-astro-cid-mh6itkc3> 翻译  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>Monero 项目</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://openalias.org" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Open Alias  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/research-lab/" data-astro-cid-mh6itkc3> Monero 研究实验室 (MRL)  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/press-kit/" data-astro-cid-mh6itkc3> 媒体资料包  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://ccs.getmonero.org" data-astro-cid-mh6itkc3> 社区众筹系统  </a> </li> </ul> </section> </nav> <nav class="bottom" aria-label="次要页脚导航" data-astro-cid-mh6itkc3> <ul class="inline-list" data-astro-cid-mh6itkc3> <li class="inline-item" data-astro-cid-mh6itkc3> <a href="#" data-astro-cid-mh6itkc3> Tor 洋葱服务 <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/tor.D04gt7iP_278xXg.avif);--iconColor: #7d4698;--spacing: 0.25em;"></div>  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> 漏洞响应  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/zh/legal/" data-astro-cid-mh6itkc3> 法律  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> 源代码  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/feed.xml" data-astro-cid-mh6itkc3> RSS 订阅 <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/rss.jnIu9F4x_Z28u6pV.avif);--iconColor: var(--monero-orange);--spacing: 0.25em;"></div>  </a> </li> </ul> </nav> </div> </footer>   </body></html> 

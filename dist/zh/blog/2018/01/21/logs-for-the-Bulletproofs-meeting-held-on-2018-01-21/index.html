@@ -1,0 +1,697 @@
+<!DOCTYPE html><html lang="zh" dir="ltr" data-astro-cid-sckkx6r4> <head><title>博客 | Logs for the Bulletproofs Meeting Held on 2018-01-21</title><meta charset="UTF-8"><link rel="canonical" href="https://beta.monerodevs.org/zh/blog/2018/01/21/logs-for-the-Bulletproofs-meeting-held-on-2018-01-21/"><meta name="description" content="Bulletproofs, fees, hardforks, and miscellaneous"><meta name="robots" content="index, follow"><meta property="og:title" content="Logs for the Bulletproofs Meeting Held on 2018-01-21"><meta property="og:type" content="article"><meta property="og:image" content="https://beta.monerodevs.org/open-graph/blog/2018/01/21/logs-for-the-Bulletproofs-meeting-held-on-2018-01-21.png"><meta property="og:url" content="https://beta.monerodevs.org/zh/blog/2018/01/21/logs-for-the-Bulletproofs-meeting-held-on-2018-01-21/"><meta property="og:locale" content="zh"><meta property="og:locale:alternate" content="en"><meta property="og:locale:alternate" content="ar"><meta property="og:site_name" content="Monero"><meta property="og:image:url" content="https://beta.monerodevs.org/open-graph/blog/2018/01/21/logs-for-the-Bulletproofs-meeting-held-on-2018-01-21.png"><meta property="og:image:alt" content="OpenGraph image for Monero blog post titled &#34;Logs for the Bulletproofs Meeting Held on 2018-01-21&#34;"><meta property="article:published_time" content="2018-01-21T00:00:00.000Z"><meta property="article:author" content="dEBRUYNE / fluffypony"><meta property="article:tag" content="dev diaries"><meta property="article:tag" content="crypto"><meta property="article:tag" content="research"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@monero"><meta name="twitter:title" content="Logs for the Bulletproofs Meeting Held on 2018-01-21"><meta name="twitter:image" content="https://beta.monerodevs.org/open-graph/blog/2018/01/21/logs-for-the-Bulletproofs-meeting-held-on-2018-01-21.png"><meta name="twitter:description" content="Bulletproofs, fees, hardforks, and miscellaneous"><link rel="preload" as="font" type="font/woff2" href="/_astro/dm-sans-latin-wght-normal.Xz1IZZA0.woff2" crossorigin="anonymous"><link rel="icon" href="/meta/favicon-16x16.png" sizes="16x16"><link rel="icon" href="/meta/favicon-32x32.png" sizes="32x32"><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.18.0"><meta name="color-scheme" content="light dark"><link rel="alternate" hreflang="en" href="https://beta.monerodevs.org/blog/2018/01/21/logs-for-the-Bulletproofs-meeting-held-on-2018-01-21/"><link rel="alternate" hreflang="ar" href="https://beta.monerodevs.org/ar/blog/2018/01/21/logs-for-the-Bulletproofs-meeting-held-on-2018-01-21/"><link rel="alternate" hreflang="zh" href="https://beta.monerodevs.org/zh/blog/2018/01/21/logs-for-the-Bulletproofs-meeting-held-on-2018-01-21/"><link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="https://beta.monerodevs.org/feed.xml"><style>#blog-content{line-height:var(--line-height-body);word-wrap:break-word;color:light-dark(inherit,var(--paragraph-main));:where(h2,h3,h4){font-weight:var(--font-weight-bold)}img{border-radius:var(--radius-md)}a:not(.moneropedia-link){color:light-dark(var(--text-primary),var(--paragraph-main));font-weight:var(--font-weight-medium);text-decoration-line:underline;text-decoration-style:dotted;&:hover{color:light-dark(var(--text-secondary),var(--heading-color))}}h1{font-size:var(--font-size-2xl)}h2{font-size:var(--font-size-xl)}h3{font-size:var(--font-size-lg)}h4{font-size:var(--font-size-md)}p{margin-bottom:1em}li{margin-bottom:.25em}pre{padding:1em;border-radius:var(--radius-md);overflow-x:auto;background:var(--footer-color);code{background:none;padding:0;border-radius:0}}code:not(pre code){font-family:monospace;background-color:var(--footer-color);padding:.1em .3em;border-radius:var(--radius-sm)}blockquote{margin:1.5em 0;padding-inline:1.5em 1em;border-inline-start:3px solid var(--border-color);font-style:italic;color:var(--text-secondary)}strong{font-weight:var(--font-weight-bold)}em{font-style:italic}}h1[data-astro-cid-7dcwcvhl]{font-size:var(--font-size-3xl);margin:0}#post-header[data-astro-cid-7dcwcvhl]{margin-bottom:var(--page-top-margin)}#meta[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-2xl);color:var(--text-secondary);margin-top:var(--space-md);margin-bottom:var(--space-xl);font-size:var(--font-size-lg);font-weight:var(--font-weight-normal)}.meta-item[data-astro-cid-7dcwcvhl]{display:flex;align-items:center;gap:var(--space-xs);>.icon{display:grid;place-items:center;color:var(--monero-orange)}}.tag-container[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-xs);font-size:var(--font-size-sm);flex-wrap:wrap;.tag{text-align:center;padding:var(--space-2xs) var(--space-sm);background:var(--footer-color);border-radius:var(--radius-md);text-transform:uppercase;font-weight:var(--font-weight-semibold);text-decoration:none;color:inherit;white-space:nowrap;&:hover{color:var(--text-secondary)}}}@media(width<=600px){#meta[data-astro-cid-7dcwcvhl]{flex-direction:column;font-size:var(--font-size-md);font-weight:var(--font-weight-medium);gap:var(--space-md)}.meta-item[data-astro-cid-7dcwcvhl]{>.icon{font-size:var(--font-size-lg)}}}
+.card[data-astro-cid-dd5txfcy]{background:var(--card-color);padding:var(--card-padding);border-radius:var(--card-radius);&[data-border]{border:1px solid var(--border-color)}&[data-transparent]{background:transparent}&[data-hover]{transition:background .15s ease;&[data-astro-cid-dd5txfcy]:hover,&[data-astro-cid-dd5txfcy]:focus-visible{background:var(--card-hover-color)}}}
+.icon[data-astro-cid-bpjkz5as]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);margin-inline-start:var(--spacing);background:var(--iconColor);mask:var(--iconSrc) no-repeat center / contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}
+</style>
+<link rel="stylesheet" href="/_astro/_page_.DxMr-0dd.css">
+<style>.blog-container[data-astro-cid-ndejf7ww]{display:grid;grid-template-columns:1fr;gap:var(--space-2xl);>*{min-width:0}}.sidebar[data-astro-cid-ndejf7ww]{height:fit-content;& h2[data-astro-cid-ndejf7ww]{font-size:var(--font-size-xl);margin-top:0}}.recent-posts[data-astro-cid-ndejf7ww]{list-style:none;padding:0;margin-bottom:0;display:flex;flex-direction:column;gap:var(--space-md);li{margin-bottom:var(--space-xs)}.post-title{font-size:var(--font-size-md);color:var(--paragraph-main);text-decoration-line:underline;text-decoration-style:dotted;&:hover{text-decoration:underline}}.post-date{display:block;font-size:var(--font-size-sm);color:var(--paragraph-subtitle);margin-top:var(--space-2xs)}}@media(width>=1200px){.blog-container[data-astro-cid-ndejf7ww]{grid-template-columns:1fr 65ch 1fr}.blog-post[data-astro-cid-ndejf7ww]{grid-column:2}.sidebar[data-astro-cid-ndejf7ww]{grid-column:2;grid-row:2}}@media(width>=1600px){.sidebar[data-astro-cid-ndejf7ww]{grid-column:3;grid-row:1}}
+:where([data-astro-image]){object-fit:var(--fit);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+.moneropedia-link{position:relative;display:inline-block;color:var(--monero-orange);text-decoration-line:underline;text-decoration-style:dotted;cursor:help;font-weight:var(--font-weight-medium)}.moneropedia-link:hover,.moneropedia-link:focus-visible{text-decoration:none}.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{content:none}@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{position:absolute;left:50%;opacity:0;pointer-events:none;transform:translate(-50%) translateY(0);transition:opacity .18s ease-out,transform .18s ease-out;z-index:10}.moneropedia-link[data-tooltip]:before{content:attr(data-tooltip);bottom:calc(100% + .5rem);padding:.5rem .75rem;background:var(--card-color);border:1px solid var(--border-color);border-radius:.25rem;box-sizing:border-box;overflow-wrap:break-word;min-inline-size:25ch;max-inline-size:min(35ch,calc(100vw - 2.5rem));font-size:var(--font-size-sm);line-height:var(--line-height-caption);color:var(--text-primary);box-shadow:0 2px 8px #0000004d}.moneropedia-link[data-tooltip]:after{content:"";bottom:calc(100% + .25rem);border-width:.35rem .35rem 0;border-style:solid;border-color:var(--card-color) transparent transparent transparent}.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):before,.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):after{opacity:1;transform:translate(-50%) translateY(-2px)}}@media(prefers-reduced-motion:reduce){@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{transition:none}}}
+.icon[data-astro-cid-7wapxsvo]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);aspect-ratio:1 / 1;vertical-align:middle;--iconUrl: var(--lightUrl);background-image:var(--iconUrl);background-repeat:no-repeat;background-position:center;background-size:contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}@media(prefers-color-scheme:dark){.icon[data-astro-cid-7wapxsvo]{--iconUrl: var(--darkUrl)}}
+</style></head> <body data-astro-cid-sckkx6r4> <header class="header" data-astro-cid-dm2weclu> <div class="header-inner" data-astro-cid-dm2weclu> <a class="brand" href="/zh/" data-astro-cid-dm2weclu> <img src="/_astro/monerologo.CMdKQEkN_10Rm8s.avif" srcset="/_astro/monerologo.CMdKQEkN_10Rm8s.avif 64w, /_astro/monerologo.CMdKQEkN_10Rm8s.avif 128w" alt aria-hidden="true" data-astro-cid-dm2weclu="true" loading="eager" decoding="sync" fetchpriority="high" sizes="(min-width: 64px) 64px, 100vw" style="--fit: cover; --pos: center;" data-astro-image="constrained" width="64" height="64" class="mark"> <span data-astro-cid-dm2weclu>MONERO</span> </a> <input id="nav-toggle" class="nav-toggle" type="checkbox" data-astro-cid-dm2weclu> <nav id="primary-nav" class="nav" aria-label="主要" data-astro-cid-dm2weclu> <div class="drawer-header" data-astro-cid-dm2weclu> <label for="nav-toggle" class="close" aria-controls="primary-nav" aria-label="关闭菜单" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/close.CneAMmXr_ZaFGrm.avif);--iconColor: currentColor;"></div>  </label> </div> <fieldset data-astro-cid-dm2weclu> <legend class="sr-only" data-astro-cid-dm2weclu>主要导航部分</legend> <ul class="nav-list" data-astro-cid-dm2weclu> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-aydf2up6v" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-aydf2up6v-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 入门 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-aydf2up6v" class="mobile-open" aria-label="Open 入门 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-aydf2up6v-close" class="mobile-close" aria-label="Close 入门 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="入门 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/get-started/what-is-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--darkUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>什么是 Monero？</div> <div class="desc" data-astro-cid-lm33vczh>关于 Monero 您需要了解的一切概览。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/exchanges/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/merchants-exchanges.DN61YseO_ZQ3Km9.avif);--darkUrl: url(/_astro/merchants-exchanges.BjKEmUcz_1O8q9G.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>购买 Monero</div> <div class="desc" data-astro-cid-lm33vczh>允许您购买或交易 Monero 的加密货币交易所。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/merchants/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>使用 Monero</div> <div class="desc" data-astro-cid-lm33vczh>查找接受 Monero 支付的地点和服务。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/accept-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/accept-monero.COXM8aHM_Z1II116.avif);--darkUrl: url(/_astro/accept-monero.C3WCFfqe_Z2tp8Kw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>接受 Monero</div> <div class="desc" data-astro-cid-lm33vczh>了解如何作为商家或个人接受 XMR。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/mining/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/mining.DBRk7HAe_Zd3ukV.avif);--darkUrl: url(/_astro/mining.B54FNZld_Z2jnjrG.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>挖矿</div> <div class="desc" data-astro-cid-lm33vczh>了解如何在您的电脑上挖掘 Monero。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/contribute/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/contribute.DKeO9Dve_Z2vEvfu.avif);--darkUrl: url(/_astro/contribute.zLqiOwb5_Z1qe0gS.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>贡献</div> <div class="desc" data-astro-cid-lm33vczh>帮助 Monero 项目为每个人带来隐私。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/faq/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/faq.C8QObR1A_1A5Irh.avif);--darkUrl: url(/_astro/faq.BNcLqXOJ_ZaSdVI.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>常见问题</div> <div class="desc" data-astro-cid-lm33vczh>查找关于 Monero 常见问题的答案。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/zh/downloads/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 下载  </a>  </div>  </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/zh/blog/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 博客  </a>  </div>  </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-sdciwkxbh" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-sdciwkxbh-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 社区 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-sdciwkxbh" class="mobile-open" aria-label="Open 社区 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-sdciwkxbh-close" class="mobile-close" aria-label="Close 社区 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="社区 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/community/workgroups/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/workgroups.OzoDQ7NV_Z1Lwqqs.avif);--darkUrl: url(/_astro/workgroups.CGbkWAXL_Z1m0ybJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>工作组</div> <div class="desc" data-astro-cid-lm33vczh>与 Monero 的专门工作组在开发、研究和社区工作方面进行合作。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/community/sponsorships/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>赞助商</div> <div class="desc" data-astro-cid-lm33vczh>支持 Monero 项目的企业列表。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/community/hangouts/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/hangouts.CiWxE-i9_ZeEICj.avif);--darkUrl: url(/_astro/hangouts.Do4DJEA1_257lPw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>社交场所</div> <div class="desc" data-astro-cid-lm33vczh>加入 Monero 社区聚会和活动，与其他爱好者和开发者交流。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-e9o67k6zo" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-e9o67k6zo-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 资源 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-e9o67k6zo" class="mobile-open" aria-label="Open 资源 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-e9o67k6zo-close" class="mobile-close" aria-label="Close 资源 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="资源 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/resources/knowledge-base/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/moneropedia.7o-c8ZX4_lSmb.avif);--darkUrl: url(/_astro/moneropedia.CYJm2-Q5_1KG40X.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>知识库</div> <div class="desc" data-astro-cid-lm33vczh>书籍、出版物、杂志、Moneropedia。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/roadmap/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/roadmap.DoSq9h9o_Z1QuQpv.avif);--darkUrl: url(/_astro/roadmap.BONb2rwk_2hroDR.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>路线图</div> <div class="desc" data-astro-cid-lm33vczh>了解最新的 Monero 开发计划和进展。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/research-lab/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/research-lab.D90VAC3d_WkkdD.avif);--darkUrl: url(/_astro/research-lab.uv3a8gpS_Z7cyXJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>研究实验室</div> <div class="desc" data-astro-cid-lm33vczh>探索 Monero 研究实验室的出版物和研究。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/tools/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/tools.CTqUs9cD_Z1hqOiO.avif);--darkUrl: url(/_astro/tools.BW4KRKDW_Z6Gril.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero 工具</div> <div class="desc" data-astro-cid-lm33vczh>为 Monero 用户和开发者精选的工具和软件列表。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="https://docs.getmonero.org" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/developer-guides.DD6ipv0S_Yls1B.avif);--darkUrl: url(/_astro/developer-guides.Cdg0NOVs_Z2h2V29.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero 文档</div> <div class="desc" data-astro-cid-lm33vczh>用户和开发者有效、安全使用 Monero 的综合指南。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/press-kit/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/press-kit.C4VjegyX_2aPbOF.avif);--darkUrl: url(/_astro/press-kit.CVdfPwCA_1oXHhF.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>媒体资料包</div> <div class="desc" data-astro-cid-lm33vczh>媒体联系方式、标志、图片和其他媒体资源。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="https://ccs.getmonero.org" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 众筹  </a>  </div>  </li>  </ul> </fieldset> </nav> <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="关闭菜单" data-astro-cid-dm2weclu></label> <div class="utils" aria-label="工具" data-astro-cid-dm2weclu> <div class="lang" data-astro-cid-dm2weclu> <details class="lang-container" data-astro-cid-g6d27pgi> <summary class="lang" aria-label="更改语言" aria-haspopup="true" role="button" data-astro-cid-g6d27pgi> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/globe.FI0_gjXP_xUiUM.avif);--iconColor: currentColor;"></div>  </summary> <div class="lang-dropdown" aria-label="语言" data-astro-cid-g6d27pgi> <ul class="lang-list" data-astro-cid-g6d27pgi> <li data-astro-cid-g6d27pgi> <a href="/blog/2018/01/21/logs-for-the-Bulletproofs-meeting-held-on-2018-01-21/" class data-astro-cid-g6d27pgi> English </a> </li><li data-astro-cid-g6d27pgi> <a href="/ar/blog/2018/01/21/logs-for-the-Bulletproofs-meeting-held-on-2018-01-21/" class data-astro-cid-g6d27pgi> العربية </a> </li><li data-astro-cid-g6d27pgi> <a href="/zh/blog/2018/01/21/logs-for-the-Bulletproofs-meeting-held-on-2018-01-21/" class="active" aria-current="true" data-astro-cid-g6d27pgi> 中文 </a> </li> </ul> </div> </details>  </div> <label for="nav-toggle" class="hamburger" aria-controls="primary-nav" aria-label="打开菜单" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/hamburger.CkIM-2PU_xmMpy.avif);--iconColor: currentColor;"></div>  </label> </div> </div> </header>  <main data-astro-cid-sckkx6r4>   <div class="blog-container" data-astro-cid-ndejf7ww> <article class="blog-post" data-astro-cid-ndejf7ww> <div id="post-header" data-astro-cid-7dcwcvhl> <h1 data-astro-cid-7dcwcvhl>Logs for the Bulletproofs Meeting Held on 2018-01-21</h1> <div id="meta" data-astro-cid-7dcwcvhl> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/calendar.BXaSv3Jk_Z1NrB7E.avif);--iconColor: currentColor;"></div>  </div> <time datetime="2018-01-21" data-astro-cid-7dcwcvhl>2018年1月21日</time> </div> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/user.Cx6bTnUm_FhCof.avif);--iconColor: currentColor;"></div>  </div> dEBRUYNE / fluffypony </div> </div> <div class="tag-container" data-astro-cid-7dcwcvhl> <a class="tag" href="/zh/blog/tags/dev-diaries/" data-astro-cid-7dcwcvhl> 开发日志 </a><a class="tag" href="/zh/blog/tags/crypto/" data-astro-cid-7dcwcvhl> 加密 </a><a class="tag" href="/zh/blog/tags/research/" data-astro-cid-7dcwcvhl> 研究 </a> </div> </div>   <div id="blog-content" lang="en" dir="ltr">  <h1 id="logs">Logs</h1>
+<p><strong>&#x3C;rehrar></strong> heyo everyone! Meeting time.<br>
+<strong>&#x3C;rehrar></strong> <a href="https://github.com/monero-project/meta/issues/161" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/meta/issues/161</a><br>
+<strong>&#x3C;rbrunner></strong> Hi, was already afraid nobody around or wrong time :)<br>
+<strong>&#x3C;rehrar></strong> this meeting is all about Bulletproofs, and discussing when/how, audit stuff, finance stuff, and more<br>
+<strong>&#x3C;rehrar></strong> fluffypony smooth ArticMine luigi1111 luigi1111w hyc (said he can’t be here though) moneromooo gingeropolous endogenic anonimal<br>
+<strong>&#x3C;rehrar></strong> binaryFate sarang suraeNoether stoffu<br>
+<strong>&#x3C;sarang></strong> this channel?<br>
+<strong>&#x3C;rehrar></strong> and feel free to ping anyone else<br>
+<strong>&#x3C;rehrar></strong> oh, we doing it in MRL? We can if that’s what we want.<br>
+<strong>&#x3C;sarang></strong> Either. I couldn’t recall which<br>
+<strong>&#x3C;sarang></strong> Your pick<br>
+<strong>&#x3C;rehrar></strong> The Github issue says #monero-dev<br>
+<strong>&#x3C;sarang></strong> k<br>
+<strong>&#x3C;rehrar></strong> and more people can see in Slack and Mattermost since MRL is not relayed<br>
+<strong>&#x3C;sarang></strong> roger<br>
+<strong>&#x3C;rehrar></strong> so first order of business, as always, is 1. Greetings.<br>
+<strong>&#x3C;rehrar></strong> If you’re here, say hi. :)<br>
+<strong>&#x3C;sarang></strong> yo<br>
+<strong>&#x3C;rbrunner></strong> Hi<br>
+<strong>&#x3C;sgp></strong> Hi<br>
+<strong>&#x3C;dsc></strong> Hi<br>
+<strong>&#x3C;pigeons1[m]></strong> Hi<br>
+<strong>&#x3C;geozdr></strong> hi<br>
+<strong>&#x3C;rehrar></strong> well, that’s a decent group so far. Perhaps a few others will join as time passes.<br>
+<strong>&#x3C;rehrar></strong> dEBRUYNE, Jaquee, vtnerd<br>
+<strong>&#x3C;dEBRUYNE></strong> I am here<br>
+<strong>&#x3C;rehrar></strong> In the meantime, let’s begin discussion.<br>
+<strong>&#x3C;rehrar></strong> Does MRL have an update for us regarding audit outreach?<br>
+<strong>&#x3C;sarang></strong> Yes<br>
+<strong>&#x3C;suraeNoether></strong> howdy<br>
+<strong>&#x3C;sarang></strong> So<br>
+<strong>&#x3C;rehrar></strong> and I know hyc isn’t here atm, but does someone know about how the mailing list outreach went also?<br>
+<strong>&#x3C;rehrar></strong> (sorry, go ahead sarang)<br>
+<strong>&#x3C;sarang></strong> There are three groups to whom we are reaching out<br>
+<strong>&#x3C;sarang></strong> One is professional auditing/security roups<br>
+<strong>&#x3C;sarang></strong> *groups<br>
+<strong>&#x3C;sarang></strong> Second is targeted individuals who know the material<br>
+<strong>&#x3C;sarang></strong> Third is volunteers without necessarily any particular credentials, but who want to help the project<br>
+<strong>&#x3C;sarang></strong> All are valuable<br>
+<strong>&#x3C;Maxithi></strong> Perhaps a few others will join as time passes. &#x3C;= Joined<br>
+<strong>&#x3C;sarang></strong> Let’s start with targeted individuals<br>
+<strong>&#x3C;sarang></strong> Benedikt Buenz is an author on the original paper. He may be available after Feb 20 and has shown interest but not a commitment yet<br>
+<strong>&#x3C;sarang></strong> Jonathan Bootle is another author. He is unavailable but will pass on word to his colleagues<br>
+<strong>&#x3C;sarang></strong> I reached out to Greg Maxwell who’s newly independent, and haven’t heard back<br>
+<strong>&#x3C;sarang></strong> It was assumed that we would offer compensation to these individuals for their time, with no details on amount<br>
+<strong>&#x3C;sarang></strong> Next up is volunteers<br>
+<strong>&#x3C;sarang></strong> I’ve heard from ~5 people who’d like to help out<br>
+<strong>&#x3C;sarang></strong> I’m setting them loose with as much information as I can<br>
+<strong>&#x3C;sarang></strong> This would be on a volunteer basis, but we’d credit them publicly for their help<br>
+<strong>&#x3C;sarang></strong> Finally is the pro groups<br>
+<strong>&#x3C;sarang></strong> fluffypony put me in touch with one group that has given me a quote of $40K<br>
+<strong>&#x3C;sarang></strong> Downsides: it’d be for internal-only reports, but obviously any changes would become public right away<br>
+<strong>&#x3C;sarang></strong> We also couldn’t credit them by name<br>
+<strong>&#x3C;sarang></strong> I’m having them check with their attorneys on exactly what we could share<br>
+<strong>&#x3C;sarang></strong> OSTIF works with a lot of different groups, and has been in contact with several, quotes pending<br>
+<strong>&#x3C;sarang></strong> OSTIF’s policy is only to work with groups that allow public disclosure<br>
+<strong>&#x3C;sarang></strong> They are also willing to accept XMR (which they transfer to the groups in their currency of choice) and has agreed not to take a cut<br>
+<strong>&#x3C;sarang></strong> Any questions from the group on this wall of info?<br>
+<strong>&#x3C;suraeNoether></strong> were we also not contacted in a cold-call situation?<br>
+<strong>&#x3C;sarang></strong> Yes, one pro group did a cold-call. Turns out OSTIF was in contact with them too, so I’m lumping them in with OSTIF<br>
+<strong>&#x3C;sarang></strong> That cold-call group’s rough estimate was $25-35K<br>
+<strong>&#x3C;suraeNoether></strong> oh ok<br>
+<strong>&#x3C;rbrunner></strong> Is that USD 40K in the right ballpark for work like that, from a “pro group”?<br>
+<strong>&#x3C;sarang></strong> So I had expected less, but only because of the limited scope of the BP code; it’s relatively small and self-contained<br>
+<strong>&#x3C;sarang></strong> But the quotes are reasonably consistent with each other<br>
+<strong>&#x3C;suraeNoether></strong> rbrunner: it’s in line with similar quotes obtained back when we pushed ringct, which was around 50k iirc. so somewhere between 40 and 50k is sort of what i expected, personally… the 25-35k was a little bit of a surprise<br>
+<strong>&#x3C;sarang></strong> and assumes $1-2K per person-day<br>
+<strong>&#x3C;rbrunner></strong> Ok<br>
+<strong>&#x3C;sarang></strong> The timeline would be between 10-25 work days once it starts<br>
+<strong>&#x3C;sarang></strong> Again, OSTIF is still waiting on additional quotes and will report to me when they have them<br>
+<strong>&#x3C;rehrar></strong> So there is at least some interest being generated.<br>
+<strong>&#x3C;sarang></strong> So for now, assume that we definitely have options for pro audits in the range of $25-40K<br>
+<strong>&#x3C;sarang></strong> I also love the idea of getting Buenz or Maxwell to audit individually<br>
+<strong>&#x3C;sarang></strong> but there are no commitments from them, and may not be. They have a lot going on<br>
+<strong>&#x3C;sarang></strong> But<br>
+<strong>&#x3C;sarang></strong> We need to know how to fund this shiz<br>
+<strong>&#x3C;rehrar></strong> alright, and this doesn’t include hyc’s outreach stuff too, correct?<br>
+<strong>&#x3C;suraeNoether></strong> i believe that’s the case rehrar.<br>
+<strong>&#x3C;Maxithi></strong> How did BP get funded?<br>
+<strong>&#x3C;sarang></strong> hyc’s outreach to the list has generated a few contacts within the groups I mentioned<br>
+<strong>&#x3C;Maxithi></strong> *RCT<br>
+<strong>&#x3C;rehrar></strong> ok, great<br>
+<strong>&#x3C;suraeNoether></strong> Maxithi: I believe we chose to not do the audit back then<br>
+<strong>&#x3C;sarang></strong> The RingCT audit didn’t happen, IIUC<br>
+<strong>&#x3C;rehrar></strong> maybe MRL can do RingCT audit? :P What would you guys quote us?<br>
+<strong>&#x3C;rbrunner></strong> That about RingCT is … surprising<br>
+<strong>&#x3C;suraeNoether></strong> rbrunner the math was a lot more straightforward for original RingCT<br>
+<strong>&#x3C;rehrar></strong> Wasn’t that one of the reasons for bad blood with Shen?<br>
+<strong>&#x3C;rehrar></strong> anyways, off-topic.<br>
+<strong>&#x3C;sarang></strong> It was suggested that perhaps some general funding might be available, but otherwise an FFS<br>
+<strong>&#x3C;suraeNoether></strong> i think it would be nice to get buenz, but since he’s on the late-feb timeline, that conflicts with our hard fork<br>
+<strong>&#x3C;rehrar></strong> I think we should try to raise the full amount with FFS, and anything that is not covered in reasonable time can be covered with the General Fund<br>
+<strong>&#x3C;sarang></strong> We’d be cutting it close to March with any group<br>
+<strong>&#x3C;sarang></strong> And there’s no guarantee of an immediate start<br>
+<strong>&#x3C;rehrar></strong> suraeNoether it only conflicts if we try to roll out BP in March, no?<br>
+<strong>&#x3C;suraeNoether></strong> rehrar yes<br>
+<strong>&#x3C;rehrar></strong> I think this info gives strong pushes to rolling out in September<br>
+<strong>&#x3C;sarang></strong> Also, in terms of scope I’ve asked them to only review the multi-BP code<br>
+<strong>&#x3C;rehrar></strong> Because we also need the time to raise the requested funds<br>
+<strong>&#x3C;dEBRUYNE></strong> &#x3C;rehrar> Wasn’t that one of the reasons for bad blood with Shen? &#x3C;= No.<br>
+<strong>&#x3C;suraeNoether></strong> IMO, if we can’t reasonably expect an audit to be completed before the march hard fork<br>
+<strong>&#x3C;rehrar></strong> &#x3C;dEBRUYNE> &#x3C;rehrar> Wasn’t that one of the reasons for bad blood with Shen? &#x3C;= No. &#x3C;= K. Thanks.<br>
+<strong>&#x3C;dEBRUYNE></strong> We should just put the “include it in the March HF” out of our heads tbh<br>
+<strong>&#x3C;suraeNoether></strong> dEBRUYNE: +1<br>
+<strong>&#x3C;rehrar></strong> agreed<br>
+<strong>&#x3C;suraeNoether></strong> in that case, I think we should just go with Buenz and Maxwell<br>
+<strong>&#x3C;suraeNoether></strong> and/or<br>
+<strong>&#x3C;sgp></strong> Unless there is a strong reason to hardfork in March, why not delay it until whenever the review is ready?<br>
+<strong>&#x3C;suraeNoether></strong> continue to try to talk to them<br>
+<strong>&#x3C;suraeNoether></strong> sgp: because delaying hard forks sets a very disagreeable precedent<br>
+<strong>&#x3C;sarang></strong> Keep in mind there’s no guarantee that Buenz and Maxwell are even going to be available to do it<br>
+<strong>&#x3C;sarang></strong> We’ll have professional options available for sure<br>
+<strong>&#x3C;suraeNoether></strong> sarang: ok, if they turn us down then we go with one of the other options: what you are saying is that no one has committed, so that statement is not really helpful for any of our optiosn rihgt now. :P<br>
+<strong>&#x3C;sarang></strong> Heck, I have a contract from the non-public group already<br>
+<strong>&#x3C;rbrunner></strong> You mean ready to sign?<br>
+<strong>&#x3C;dEBRUYNE></strong> &#x3C;suraeNoether> sarang: ok, if they turn us down then we go with one of the other options: &#x3C;= Imo should just take on multiple options<br>
+<strong>&#x3C;rehrar></strong> non-public group doesn’t sound quite so useful tbh. But maybe I just don’t understand how these things work. But they’re like: “We can’t share hardly anything publicly.” So what’s the point?<br>
+<strong>&#x3C;dEBRUYNE></strong> re: funding, the general dev fund could kickstart it and then the community could fund the remainder<br>
+<strong>&#x3C;sgp></strong> @surae RingCT warranted moving the fork. I’d hate to have the review done in May but have to wait until September to include this important code<br>
+<strong>&#x3C;sarang></strong> rbrunner: they’re ready to sign if/when we are, but we’re under no obligation with them<br>
+<strong>&#x3C;suraeNoether></strong> dEBRUYNE: i’m fine with that too, assuming we have infinite funding available<br>
+<strong>&#x3C;dEBRUYNE></strong> rehrar: they can still disclose vulnerabilities privately<br>
+<strong>&#x3C;dEBRUYNE></strong> and we can fix them<br>
+<strong>&#x3C;rehrar></strong> ah, k. Don’t know why that didn’t cross my mind. :P<br>
+<strong>&#x3C;suraeNoether></strong> rehrar: we can share whether they have recommended changes, and if they do recommended change, we will end up communicating all of them to the community. they just don’t want their company name or the report itself to be made public afaik?<br>
+<strong>&#x3C;sarang></strong> dEBRUYNE: rehrar: the changes are all public, and we can likely discuss the vulnerabilities<br>
+<strong>&#x3C;sarang></strong> just not release their review<br>
+<strong>&#x3C;Maxithi></strong> What I fear with internal report is that the community would be less willing to support it as they haven’t any view on how the funds were used.<br>
+<strong>&#x3C;sarang></strong> And we can’t say who did the review. They can do a more public audit but they said it’d be a lot more $ and time<br>
+<strong>&#x3C;dEBRUYNE></strong> assuming we have infinite funding available &#x3C;= not infinite, but if the community can raise 450k $ for globee, I am sure we can raise a few hunderd k $ for this too<br>
+<strong>&#x3C;sarang></strong> Again, I’m working with them and their lawyers to get as much public as possible<br>
+<strong>&#x3C;rehrar></strong> And it gives ‘poking power’ to naysayers of Monero who say that we don’t release the name of people who did the audit. It could have been Joe Schmoe<br>
+<strong>&#x3C;rbrunner></strong> Why do they work so secretly? In a few words …?<br>
+<strong>&#x3C;sarang></strong> Fortunately all of the OSTIF quotes will be for fully public audits<br>
+<strong>&#x3C;sarang></strong> rbrunner: it’s not working in secret<br>
+<strong>&#x3C;sarang></strong> It’s not wanting to be seen as an endorsement<br>
+<strong>&#x3C;sarang></strong> They do either internal audits (like this one), or much more comprehensive public-facing ones<br>
+<strong>&#x3C;pigeons1[m]></strong> Do they not want to be blamed for what they miss?<br>
+<strong>&#x3C;sgp></strong> pigeons I’m sure that’s part of it<br>
+<strong>&#x3C;rehrar></strong> I see the not wanting to be viewed as an endorsement unless they are adequately compensated for that<br>
+<strong>&#x3C;sarang></strong> Fortunately they won’t be the only option, just the first to prepare a quote and contract<br>
+<strong>&#x3C;suraeNoether></strong> sgp: moving HF dates is not on the table, in my mind. 6 months of data on the blockchain is marginal in the long run; delaying HFs sets an unfortunate precedent.<br>
+<strong>&#x3C;sarang></strong> I think the community will appreciate the openness of an OSTIF group<br>
+<strong>&#x3C;rehrar></strong> but because Monero always prides itself in doing most things in the open, I think we should try the other more public options first<br>
+<strong>&#x3C;sarang></strong> and/or Buenz and/or Maxwell<br>
+<strong>&#x3C;sarang></strong> rehrar: I agree<br>
+<strong>&#x3C;rbrunner></strong> Agree also<br>
+<strong>&#x3C;Maxithi></strong> Agree<br>
+<strong>&#x3C;suraeNoether></strong> rehrar sarang +1<br>
+<strong>&#x3C;sarang></strong> We should get a sense of how much we think is reasonable to raise in funds<br>
+<strong>&#x3C;sarang></strong> since that determines how many groups/peeps we can get<br>
+<strong>&#x3C;rehrar></strong> well, it should also be said that perhaps we should raise a ‘vetting pool’ of funds for not just BP, but any future work that needs to be looked at<br>
+<strong>&#x3C;suraeNoether></strong> rehrar great minds, buddy<br>
+<strong>&#x3C;suraeNoether></strong> i was just thinking about that<br>
+<strong>&#x3C;rehrar></strong> could be managed by MRL how they see fit, and reported to the community<br>
+<strong>&#x3C;Maxithi></strong> That would be great!<br>
+<strong>&#x3C;rehrar></strong> suraeNoether, in Russia the saying is: “Two fools are of the same mind.”<br>
+<strong>&#x3C;sarang></strong> We have the bounty funds, but those can’t be used for reviews<br>
+<strong>&#x3C;sarang></strong> So this would need to be separate<br>
+<strong>&#x3C;suraeNoether></strong> rehrar: I don’t know about MRL being exclusively in control of vetting funds… i think multisig would be a better option :P<br>
+<strong>&#x3C;sarang></strong> But any reported flaws could be bountied<br>
+<strong>&#x3C;rehrar></strong> The stipulations of the pool would be that MRL manages, gets counsel from the Core Team, and reports spending to the community<br>
+<strong>&#x3C;rehrar></strong> or something along those lines anyways<br>
+<strong>&#x3C;suraeNoether></strong> right<br>
+<strong>&#x3C;sarang></strong> I’m sure someone will complain “isn’t review what MRL is for????!?!?111!?”<br>
+<strong>&#x3C;rehrar></strong> I think reported flaws would go through the HackerOne bounty system, and the pool would be for formal review compensation<br>
+<strong>&#x3C;sarang></strong> But you can’t do first-person peer review =p<br>
+<strong>&#x3C;sarang></strong> rehrar: yes<br>
+<strong>&#x3C;suraeNoether></strong> sarang +1<br>
+<strong>&#x3C;suraeNoether></strong> i was wondering what a good snappy response to that should be<br>
+<strong>&#x3C;suraeNoether></strong> thank you for that. :P it’s been on my mind<br>
+<strong>&#x3C;sarang></strong> I like to think of it as belt and suspenders<br>
+<strong>&#x3C;rehrar></strong> Raise half a million. Increase as necessary. Sound good?<br>
+<strong>&#x3C;Maxithi></strong> isn’t review what MRL is for????!?!?111!? &#x3C;= Nope, the R stands for Research not Review<br>
+<strong>&#x3C;rbrunner></strong> Somebody always complains :)<br>
+<strong>&#x3C;sarang></strong> and that I’ve had spinach caught in my teeth and not noticed for hours<br>
+<strong>&#x3C;geozdr></strong> maybe not set public targets for raising funds before you get all the quotes? that would hurt our negotiating position.<br>
+<strong>&#x3C;suraeNoether></strong> geozdr +1 also<br>
+<strong>&#x3C;Maxithi></strong> Can you have “private funding” on the forum?<br>
+<strong>&#x3C;sarang></strong> We certainly don’t have numbers for paying targeted individuals<br>
+<strong>&#x3C;rehrar></strong> geozdr, but not all funds will be for BP, so we can internally set a ‘BP budget’ that is not advertised to potential reviewers<br>
+<strong>&#x3C;suraeNoether></strong> they’ll also have to provide us with a quote sarang imo<br>
+<strong>&#x3C;sarang></strong> Yes, and I asked Buenz about thi<br>
+<strong>&#x3C;sarang></strong> *this<br>
+<strong>&#x3C;sarang></strong> didn’t hear back yet<br>
+<strong>&#x3C;rehrar></strong> just because we raise a public amount, doesn’t mean all of that amount is available for Bulletproof review, and if anyone tries to negotiate based on total amount raised, we push back with that fact, and that BP has a budget<br>
+<strong>&#x3C;rehrar></strong> <em>cracks knuckles</em> and I’ll let those tech nerds know that we like our money here, and it will not be easily parted with<br>
+<strong>&#x3C;rehrar></strong> what about andytoshie, wasn’t he approached about review also?<br>
+<strong>&#x3C;rehrar></strong> *andytoshi<br>
+<strong>&#x3C;suraeNoether></strong> sarang do you think that since andytoshi sort of helped with the development, he falls into the “self-peer-review” category<br>
+<strong>&#x3C;suraeNoether></strong> ?<br>
+<strong>&#x3C;sarang></strong> andytoshi has provided useful guidance on bulletproofs but I don’t believe he’s available for a formal audit<br>
+<strong>&#x3C;suraeNoether></strong> ah, that answers that question<br>
+<strong>&#x3C;sarang></strong> He’s also expressed that he doesn’t necessarily want to be seen as endorsing particular projects, but I don’t want to put words into his mouth<br>
+<strong>&#x3C;rehrar></strong> So…since it’s pretty much unanimously agreed that BP should not be in March, do you think MRL can put together a formal little news bulletin (I can help), explaining that and why?<br>
+<strong>&#x3C;rehrar></strong> It’d be helpful to the community, and could help with explaining to some grumblers the benefits and reasons for waiting<br>
+<strong>&#x3C;rbrunner></strong> Other “heavyweights” are known to be against March?<br>
+<strong>&#x3C;rbrunner></strong> Not present now<br>
+<strong>&#x3C;rehrar></strong> luigi and ArticMine both come to mind<br>
+<strong>&#x3C;suraeNoether></strong> rbrunner: I have a text message from fluffypony describing his position on it, but that’s hearsay without a PGP signature. :P<br>
+<strong>&#x3C;rehrar></strong> I think smooth as well, but don’t quote me on that<br>
+<strong>&#x3C;suraeNoether></strong> so, it seems like there is a weak consensus here that we should start an FFS to fund up a general “new scheme and code” auditing fund. either for MRL to spend as we feel we need to (with as much transparency as possible) or with several core members on board with distribution of those funds also.<br>
+<strong>&#x3C;rbrunner></strong> Yes, and with a catchy name<br>
+<strong>&#x3C;rehrar></strong> Yes.<br>
+<strong>&#x3C;sarang></strong> Setting up a more general fund is also really good optics against the naysayers<br>
+<strong>&#x3C;rbrunner></strong> as this review stuff is quite dry :)<br>
+<strong>&#x3C;suraeNoether></strong> if we are going to assume the march HF is out the window, then we can spend another few weeks working out the details on that<br>
+<strong>&#x3C;pebx></strong> suraeNoether I think we trust you that you don’t fake a message from fluffy…<br>
+<strong>&#x3C;sarang></strong> It shows that we have a plan for BPs, and also for future big changes that need audits<br>
+<strong>&#x3C;rehrar></strong> Monero Auditing Interest Department So Audits Frequently get Done or MAIDSAFE for short<br>
+<strong>&#x3C;rbrunner></strong> Monero security fund, or so<br>
+<strong>&#x3C;Maxithi></strong> MAIDSAFE lol<br>
+<strong>&#x3C;rehrar></strong> oops, fail on that last letter though<br>
+<strong>&#x3C;suraeNoether></strong> pebx: heh, well he basically said we shouldn’t worry about the optics of pushing it back or about the added blockchain space. in the long run, those things become quite marginal<br>
+<strong>&#x3C;rbrunner></strong> Did you come up with that right now? Wow<br>
+<strong>&#x3C;sgp></strong> @rehrar is now a good time to discuss the hard fork schedule? I want to express some dissenting opinion<br>
+<strong>&#x3C;suraeNoether></strong> fluffypony ^<br>
+<strong>&#x3C;rehrar></strong> of pushing back March hardfork you mean?<br>
+<strong>&#x3C;rehrar></strong> oh, of pushing back BPs<br>
+<strong>&#x3C;rehrar></strong> sgp, speak my child.<br>
+<strong>&#x3C;rehrar></strong> (So Audits Frequently Execute, there’s the E)<br>
+<strong>&#x3C;sgp></strong> I’m totally fine not including BPs in the March hard fork since it seems a review will not be completed yet. I get that<br>
+<strong>&#x3C;sgp></strong> If people want to stick with the March harkfork for precedent reasons, I’m fine with that too<br>
+<strong>&#x3C;sgp></strong> But I really think it’s a bad idea to wait until September to add the BP code once it has passed review<br>
+<strong>&#x3C;sarang></strong> Why?<br>
+<strong>&#x3C;sgp></strong> There are many practical reasons to have another hardfork<br>
+<strong>&#x3C;sarang></strong> Blockchain waste?<br>
+<strong>&#x3C;sgp></strong> Smaller transaction sizes, smaller fees, smaller blockchain<br>
+<strong>&#x3C;rehrar></strong> Sumokoin will implement, then we’re screwed<br>
+<strong>&#x3C;sgp></strong> Yes, basically<br>
+<strong>&#x3C;sgp></strong> And I think the precedent argument is pretty weak. Last year, the community agreed upon moving the date of one hardfork and adding another<br>
+<strong>&#x3C;gingeropolous></strong> y are we screwed?<br>
+<strong>&#x3C;rehrar></strong> I was joking<br>
+<strong>&#x3C;gingeropolous></strong> :)<br>
+<strong>&#x3C;rehrar></strong> thought of another name for the fund btw, but I’ll save it for after meeting<br>
+<strong>&#x3C;rbrunner></strong> rehrar, MAIDSAFE is great<br>
+<strong>&#x3C;medusa></strong> initially it was planned to use the general dev fund for reviews afaik<br>
+<strong>&#x3C;pebx></strong> I’m totally with sgp<br>
+<strong>&#x3C;medusa></strong> if there is no money left we can run an ffs, but that should be checked first in my opinion<br>
+<strong>&#x3C;sgp></strong> So my vote is to either have another hardfork after the BP review, or to push back the March hardfork if there’s no real reason to have a hardfork in March for another feature<br>
+<strong>&#x3C;pebx></strong> as far as i know there is no other feature which needs a hard fork actually<br>
+<strong>&#x3C;rehrar></strong> rbrunner, not as good as Ze Cryptography Auditing Software Hoard Foundation<br>
+<strong>&#x3C;rbrunner></strong> Might not be a bad idea, with so many thing into service waiting<br>
+<strong>&#x3C;sarang></strong> -_-<br>
+<strong>&#x3C;sgp></strong> @pebx exactly, unless there was consensus on a larger ringsize or something<br>
+<strong>&#x3C;rbrunner></strong> I know, some things do not technically need a hard fork, but a hard fork forces updates, which is nice<br>
+<strong>&#x3C;medusa></strong> we use hardforks to force ppl to upgrade the software..this has an effect on support work on redit, relegram etc. thats the main reason<br>
+<strong>&#x3C;sgp></strong> Which I don’t think will happen<br>
+<strong>&#x3C;suraeNoether></strong> “And I think the precedent argument is pretty weak. Last year, the community agreed upon moving the date of one hardfork and adding another” &#x3C;— you just used precedent to demonstrate that precedents don’t matter?<br>
+<strong>&#x3C;suraeNoether></strong> and btw this is exactly the discussion that we wanted to avoid with the HFs… “So my vote is to either have another hardfork after the BP review, or to push back the March hardfork if there’s no real reason to have a hardfork in March for another feature” &#x3C;--- we hard fork twice a year, how much is enough?<br>
+<strong>&#x3C;pebx></strong> i can say you as of telegram: people are really expecting BP or at least lower fees… but lowering the fees manually is in my opinion some kind of doctoring around without a real scop<br>
+<strong>&#x3C;sgp></strong> I’m saying your argument of needing to stick with precedent should be more flexible<br>
+<strong>&#x3C;pebx></strong> *scope<br>
+<strong>&#x3C;rbrunner></strong> Well, the reaction on the Monero subreddit in face of a move into September was surprisingly subdued<br>
+<strong>&#x3C;rehrar></strong> delaying until September has other benefits not related to the Monero implementation<br>
+<strong>&#x3C;suraeNoether></strong> sgp and you are using precedents of previous moving HF schedules to show why it’s not a big deal to move HFs… but the entire point is <em>these precedents need to be avoided</em><br>
+<strong>&#x3C;rehrar></strong> it lets the BP paper itself have more time in existence<br>
+<strong>&#x3C;sarang></strong> And the audits specifically are not testing the BP math/paper<br>
+<strong>&#x3C;rehrar></strong> and there may be some people interested in reviewing the paper itself (Without carin about the Monero implementation) that would be useful to us<br>
+<strong>&#x3C;sarang></strong> It’s way out of scope for those groups<br>
+<strong>&#x3C;sgp></strong> Why? If there’s a legitimate reason to, what’s the harm?<br>
+<strong>&#x3C;suraeNoether></strong> just the code<br>
+<strong>&#x3C;sarang></strong> sgp: you mean why are they not reviewing the math?<br>
+<strong>&#x3C;sarang></strong> Because it’s an entirely different kind of review, altogether<br>
+<strong>&#x3C;suraeNoether></strong> i think sgp means “why not have three HFs this year<br>
+<strong>&#x3C;sgp></strong> No, not that<br>
+<strong>&#x3C;sarang></strong> k<br>
+<strong>&#x3C;pebx></strong> but let’s be realistic: probably most interested people start to look into it only 1-2 weeks before it will be implemented anyway<br>
+<strong>&#x3C;sgp></strong> If we don’t add another hardfork, we’re committing at least 12 GB of extra blockchain data, assuming transaction volume stays the same<br>
+<strong>&#x3C;rehrar></strong> that was the argument before pebx, yes<br>
+<strong>&#x3C;pebx></strong> i would rather prefer to move the hard fork to april or may with BP than hard forking in march just for the case<br>
+<strong>&#x3C;rehrar></strong> but now there is demonstrated interest in getting the reviews done for financial compensation<br>
+<strong>&#x3C;suraeNoether></strong> sgp: we have to freeze the code 3+ weeks before each HF and begin implementation. HFing monero to implement BPs is not simple as creating a new email account.<br>
+<strong>&#x3C;suraeNoether></strong> think of each HF as rolling out a new year/model of car.<br>
+<strong>&#x3C;sgp></strong> I understand that surae<br>
+<strong>&#x3C;sgp></strong> But you could easily schedule a hardfork a month after you felt comfortable with the review<br>
+<strong>&#x3C;suraeNoether></strong> and if that happens to be August<br>
+<strong>&#x3C;suraeNoether></strong> does that mean we then HF immediately again in September, or also put that one off?<br>
+<strong>&#x3C;suraeNoether></strong> etc<br>
+<strong>&#x3C;suraeNoether></strong> etc<br>
+<strong>&#x3C;sarang></strong> So to move this talk forward… really the question is between (a) doing March and then BP when it’s ready, (b) doing no fork until BP is ready, or (c) doing March and waiting on BP until Sept<br>
+<strong>&#x3C;sgp></strong> Then don’t add another one in that case<br>
+<strong>&#x3C;sgp></strong> But it seems like from your estimate the review should take less than a month<br>
+<strong>&#x3C;pebx></strong> sarang i’m for b<br>
+<strong>* iDunk</strong> likes how MRL is making sense<br>
+<strong>&#x3C;suraeNoether></strong> sarang no, this is not the question<br>
+<strong>&#x3C;pebx></strong> i really don’t see a need for the march hard fork<br>
+<strong>&#x3C;suraeNoether></strong> not to mention<br>
+<strong>&#x3C;suraeNoether></strong> screwing with HF schedules<br>
+<strong>&#x3C;suraeNoether></strong> completely BLOWS for HW wallet developers<br>
+<strong>&#x3C;iDunk></strong> Postpones subaddresses<br>
+<strong>&#x3C;suraeNoether></strong> sarang: we had a weak agreement, even sgp agreed… that the March HF should go forward, and BPs should probably not be included.<br>
+<strong>&#x3C;rehrar></strong> suraeNoether, you say that the best thing for new cryptography is time<br>
+<strong>&#x3C;medusa></strong> C is the only option<br>
+<strong>&#x3C;rehrar></strong> correct?<br>
+<strong>&#x3C;suraeNoether></strong> agreed with medusa<br>
+<strong>&#x3C;suraeNoether></strong> rehrar: always yes<br>
+<strong>&#x3C;sgp></strong> I’ve expressed my support for A or B<br>
+<strong>&#x3C;rehrar></strong> then C is the only option<br>
+<strong>&#x3C;rbrunner></strong> Maybe the least bad<br>
+<strong>&#x3C;thrmo></strong> second B<br>
+<strong>&#x3C;rehrar></strong> we are responsible for people’s money, freedom, and lives, remember?<br>
+<strong>&#x3C;iDunk></strong> I’m for C.<br>
+<strong>&#x3C;suraeNoether></strong> any concerns about getting BPs implemented <em>quickly</em> are not thinking about what Monero is going to look like in 2022<br>
+<strong>&#x3C;Maxithi></strong> Mind to make a quick run up to explain in one sentence A, B and C?<br>
+<strong>&#x3C;thrmo></strong> suraeNoether, B doesn’t have to be quickly<br>
+<strong>&#x3C;sarang></strong> The real downside in a March/Sept is the blockchain size<br>
+<strong>&#x3C;thrmo></strong> Maxithi, <strong>&#x3C;sarang></strong> So to move this talk forward… really the question is between (a) doing March and then BP when it’s ready, (b) doing no fork until BP is ready, or (c) doing March and waiting on BP until Sept<br>
+<strong>&#x3C;sarang></strong> if that’s something you care about<br>
+<strong>&#x3C;pebx></strong> i somehow miss smooth, moneromoo and fluffypony in this discussion… i know, i have been late today but what’s their opinion?<br>
+<strong>&#x3C;suraeNoether></strong> fluffypony is in Miami right now iirc, so he’s probably sleeping on a pile of money and hookers<br>
+<strong>&#x3C;endogenic></strong> sarang: without bps coming along we wouldnt hve been able to avoid that<br>
+<strong>&#x3C;Maxithi></strong> thrmo Thx<br>
+<strong>&#x3C;pebx></strong> sarang the real downside in september is the community which is expecting it<br>
+<strong>&#x3C;pebx></strong> even more after fluffy announced it on twitter<br>
+<strong>&#x3C;iDunk></strong> Why are they expectiong it ?<br>
+<strong>&#x3C;pebx></strong> to be in march<br>
+<strong>&#x3C;medusa></strong> that not an argument rly<br>
+<strong>&#x3C;medusa></strong> ofc they want it<br>
+<strong>&#x3C;iDunk></strong> Who told them it would be in March ?<br>
+<strong>&#x3C;endogenic></strong> i want 0kb transactions and i want them now<br>
+<strong>&#x3C;rbrunner></strong> It was “word on the street” for a long time<br>
+<strong>&#x3C;sgp></strong> It just means we need a press release saying why the decision changed<br>
+<strong>&#x3C;rehrar></strong> I’m sure they also want other things asap.<br>
+<strong>&#x3C;suraeNoether></strong> sgp: we never announced any decisions on bulletproofs<br>
+<strong>&#x3C;rehrar></strong> hence my suggestion for MRL to put out a little news bulletin with a formal recommendation to wait<br>
+<strong>&#x3C;thrmo></strong> Without BP what consensus rules changes NEED an hardfork by march?<br>
+<strong>&#x3C;sarang></strong> We said March if it was ready<br>
+<strong>&#x3C;sarang></strong> We should do a press thing, yes<br>
+<strong>&#x3C;dEBRUYNE></strong> &#x3C;rbrunner> It was “word on the street” for a long time &#x3C;= Not really<br>
+<strong>&#x3C;pebx></strong> iDunk fluffy announced it to be implemented in march hard fork. that’s also the reason why i miss him in the whole discussion<br>
+<strong>&#x3C;suraeNoether></strong> so our bulletin announcemennt that rehrar suggested will be the <em>first</em> formal announcmenet about BPs coming from monero.<br>
+<strong>&#x3C;sarang></strong> regardless of our choice<br>
+<strong>&#x3C;rehrar></strong> if community whines, we point to the bulletin<br>
+<strong>&#x3C;rbrunner></strong> Pushing people to update needs a hardfork in any case, IMHO<br>
+<strong>&#x3C;iDunk></strong> Well, fluffypony jumped the gun then.<br>
+<strong>&#x3C;rehrar></strong> if they REALLY disagree, I’m sorry to say, they can fork :P<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony strongly favors adherence to the schedule fwiw<br>
+<strong>&#x3C;suraeNoether></strong> pebx: where did he announce that? can you send me a link?<br>
+<strong>&#x3C;pebx></strong> one second, i have to search on twitter…<br>
+<strong>&#x3C;thrmo></strong> dEBRUYNE, the schedule was never meant to be set in stone<br>
+<strong>&#x3C;gingeropolous></strong> was double blob brought up at all as an option? or am i just chasing windmills<br>
+<strong>&#x3C;thrmo></strong> It will eventually be changed, maybe now would be a good time to do it.<br>
+<strong>&#x3C;rbrunner></strong> double blob?<br>
+<strong>&#x3C;dEBRUYNE></strong> thrmo: need a source on that<br>
+<strong>&#x3C;iDunk></strong> You are chasing windmills :)<br>
+<strong>&#x3C;suraeNoether></strong> gingeropolous: not brought up at all. care to explain how that would work?<br>
+<strong>&#x3C;suraeNoether></strong> one thing i want to make perfectly clear to everyone in this room<br>
+<strong>&#x3C;endogenic></strong> thrmo: what necessitates breaking the existing schedule?<br>
+<strong>&#x3C;thrmo></strong> dEBRUYNE, fluffy mentioned it several times iirc (and others) that eventually the scheduled would be changed and the rate of HFs diminished.<br>
+<strong>&#x3C;Maxithi></strong> Double Blob <a href="https://github.com/monero-project/monero/issues/3154" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/monero/issues/3154</a><br>
+<strong>&#x3C;gingeropolous></strong> u make a transaction with a borromean and a bullet proof. You only work with the borromean for n months. Eventually, bulletproofs are trusted. You can then prune the borromean from the chain.<br>
+<strong>&#x3C;dEBRUYNE></strong> thrmo: Then we’d change to once a year probably<br>
+<strong>&#x3C;dEBRUYNE></strong> and either march or september would be thrown out<br>
+<strong>&#x3C;suraeNoether></strong> gingeropolous: ah, there could be some security issues with that<br>
+<strong>&#x3C;endogenic></strong> thrmo: he mentioned that in the context of monero stabilizing in the future didnt he<br>
+<strong>&#x3C;rehrar></strong> thrmo, this is true when we get to a point that Monero has so many users that HFs become more and more difficult to pull off, not as a result of new tech as I understand it<br>
+<strong>&#x3C;thrmo></strong> endogenic, unnecessary blockchain growth for one, and why exactly do we NEED to hardfork in march?<br>
+<strong>&#x3C;gingeropolous></strong> in various conversations it seems that the issues aren’t as severe as they seem.<br>
+<strong>&#x3C;endogenic></strong> thrmo: a hard fork causes blockchain growth?<br>
+<strong>&#x3C;rehrar></strong> to force upgrades to newer, more stable software is as good a reason for me as any<br>
+<strong>&#x3C;thrmo></strong> endogenic, adopting BPs later rather than sooner.<br>
+<strong>&#x3C;suraeNoether></strong> gingeropolous: it would take more time for us to vet the double blob technique than it would for us to audit the BP code alone and push it. :P<br>
+<strong>&#x3C;rehrar></strong> suraeNoether, what did you want to make perfectly clear?<br>
+<strong>&#x3C;thrmo></strong> rehrar, why do you need to fork for that?<br>
+<strong>&#x3C;suraeNoether></strong> so what i wanted to make clear: if you are hoping to get BPs implemented before September in order to get a price bump, or to avoid a price crash in Monero…<br>
+<strong>&#x3C;gingeropolous></strong> suraeNoether, perhaps.. but here I tried to fully explain it: <a href="https://github.com/monero-project/monero/issues/3154" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/monero/issues/3154</a><br>
+<strong>&#x3C;medusa></strong> we usually use the fork to roll out cleints, so we just have 1 version to support<br>
+<strong>&#x3C;gingeropolous></strong> and furthermore, this isn’t going to be the last time some amazing tech comes through to reduce transaction size<br>
+<strong>&#x3C;endogenic></strong> thrmo: changing the existing schedule needs to be justified more than not doing so in the absence of a problem making it necessary, and people agree that bulletproofs and its implementation needs to be audited right?<br>
+<strong>&#x3C;thrmo></strong> medusa, i know, it doesn’t need to be that though.<br>
+<strong>&#x3C;rehrar></strong> can I speak bluntly?<br>
+<strong>&#x3C;gingeropolous></strong> so it’d be great if we had a mechanism to transition to fresh tech without wondering if the whole thing’ll come crashing down<br>
+<strong>&#x3C;suraeNoether></strong> then your logic is already flawed… if you think Monero will hit 10,000 USD faster if we get BPs implemented in June instead of September, you are… well, i can’t say for sure that you are wrong, but your logic circuits may need some dusting.<br>
+<strong>&#x3C;endogenic></strong> agree surae<br>
+<strong>&#x3C;endogenic></strong> also fees<br>
+<strong>&#x3C;thrmo></strong> endogenic, I do agree too, I just don’t think that adherence to the schedule is as a big thing as it’s been portrayed.<br>
+<strong>&#x3C;suraeNoether></strong> fees are going to be changing in this HF either way<br>
+<strong>&#x3C;sgp></strong> @surae please, I’ve been in the community for several years. I don’t care about the price nearly as much as I care about the practical benefits of lower transaction fees and reduced blockchain bloat<br>
+<strong>&#x3C;endogenic></strong> if they are lowered at the expense of monero’s security<br>
+<strong>&#x3C;endogenic></strong> what’s even the point<br>
+<strong>&#x3C;gingeropolous></strong> ^^<br>
+<strong>&#x3C;suraeNoether></strong> sgp: <em>good</em> but our fees are going to be reduced anyway, and blockchain bloat is literally going to be marginal as time goes on<br>
+<strong>&#x3C;rehrar></strong> this is a moot conversation honestly, and it’s silly that we are having it. Again, the responsibility on our shoulders is very large. Money, freedom, and lives. And if the best thing for this new crypto is time, then the LEAST we can do is give it an extra six months.<br>
+<strong>&#x3C;thrmo></strong> I couldn’t care less about the price either.<br>
+<strong>&#x3C;endogenic></strong> i dunno thrmo imo it’s a matter of what precedent we implicitly accept by agreeing to an action even if we arent aware of the consequences<br>
+<strong>&#x3C;endogenic></strong> people will use that precedent for their own reasons<br>
+<strong>&#x3C;endogenic></strong> just my two cents :p<br>
+<strong>&#x3C;sgp></strong> @rehrar we would be at the point though where the review(s) would have already been completed<br>
+<strong>&#x3C;suraeNoether></strong> sgp: and please don’t take my comment as accusing you of being only interested in monero’s price, i know that you are a long-time member of the community and we have had several good discussions in the past. i value your opinion<br>
+<strong>&#x3C;rehrar></strong> again sgp, it’s not just the code that needs time to be<br>
+<strong>&#x3C;rehrar></strong> it’s also the paper of BP itself<br>
+<strong>&#x3C;suraeNoether></strong> i just wanted to make that clear to anyone who ends up reading the logs later, or any lurkers who are thinking “but oh man i could totally get rich if they push this in June.”<br>
+<strong>&#x3C;rehrar></strong> what if there is an exploitation in the crypto itself that has gone unnoticed at this point in time<br>
+<strong>&#x3C;rehrar></strong> the reviews will review our code implementation, not the paper<br>
+<strong>&#x3C;suraeNoether></strong> <em>nod</em> similar to the ASNL ring signatures in the original ringct paper<br>
+<strong>&#x3C;rehrar></strong> the crypto itself needs time to breathe<br>
+<strong>&#x3C;thrmo></strong> endogenic, there are some costs for “unnecessary” hardforks too, even if they are on schedule.<br>
+<strong>&#x3C;suraeNoether></strong> *which wasn’t caught until after the paper was published, put through peer review, and after I believe we had gone live with code.*<br>
+<strong>&#x3C;rehrar></strong> this itself is an argument to wait<br>
+<strong>&#x3C;rehrar></strong> as I said before, there may be third parties that will review the BP paper itself (not our implementation of it) for their own reasons<br>
+<strong>&#x3C;iDunk></strong> It was live on testnet, not in mainnet.<br>
+<strong>&#x3C;rehrar></strong> and we can benefit from that<br>
+<strong>&#x3C;thrmo></strong> Hard forks momentarily weaken the security of the network, so doing it because of no other good reason than schedule seems silly to me.<br>
+<strong>&#x3C;endogenic></strong> thrmo to say they are technically unnecessary only speaks to part of the hypothetical necessity which must be evaluated. that’s everything i’m saying<br>
+<strong>&#x3C;pigeons1[m]></strong> The code was only live on testnet<br>
+<strong>&#x3C;sarang></strong> We’re definitely not the only ones interested in BPs, so there will be good eyes on it going forward<br>
+<strong>&#x3C;thrmo></strong> as rehrar pointed above, money, freedom and lives are at stake.<br>
+<strong>&#x3C;sgp></strong> We discussed this in previous meetings. There’s always an argument to wait. If the community wants more review on the math, we should get an audit of that too<br>
+<strong>&#x3C;gingeropolous></strong> &#x3C;thrmo> Hard forks momentarily weaken the security of the network &#x3C;= what?<br>
+<strong>&#x3C;thrmo></strong> gingeropolous, Node count drops, hashrate drops, etc<br>
+<strong>&#x3C;suraeNoether></strong> thrmo we are modifying fees in the next hf so its not merely to accommodate schedules<br>
+<strong>&#x3C;sgp></strong> If we knew of researchers in the process of looking at the math I would agree with you, but it seems odd to wait in hopes someone is looking at it<br>
+<strong>&#x3C;rehrar></strong> sorry sgp, but the argument is not to wait indefinitely, it’s to wait until September<br>
+<strong>&#x3C;rehrar></strong> it was mentioned in a previous meeting<br>
+<strong>&#x3C;gingeropolous></strong> and what if there aren’t any reviews by then?<br>
+<strong>&#x3C;rehrar></strong> if we wait until September, that more than doubles the time that the BP paper has been in existence<br>
+<strong>&#x3C;dEBRUYNE></strong> sgp: Waiting until August / September literally triples the time the paper has been out in existence<br>
+<strong>&#x3C;dEBRUYNE></strong> That’s a convex pay off<br>
+<strong>&#x3C;pebx></strong> <a href="https://twitter.com/fluffypony/status/945706717421195266" rel="noopener noreferrer external" target="_blank">https://twitter.com/fluffypony/status/945706717421195266</a><br>
+<strong>&#x3C;rehrar></strong> dEBRUYNE is more right than me ^ :P<br>
+<strong>&#x3C;pebx></strong> sorry took me longer than i thought, twitter search is unfortunately not the best<br>
+<strong>&#x3C;rehrar></strong> although I guess triples is technically “more than doubles”<br>
+<strong>&#x3C;thrmo></strong> pebx, fluffypony doesn’t decide the community does.<br>
+<strong>&#x3C;rehrar></strong> also, the second time me and dEBRUYNE said remarkably similar things. Just a thought.<br>
+<strong>&#x3C;dEBRUYNE></strong> rehrar: :P<br>
+<strong>&#x3C;rbrunner></strong> Yes, but that was word on the street :)<br>
+<strong>&#x3C;gingeropolous></strong> nonsense! He is our god! Such blasphemy!<br>
+<strong>&#x3C;pebx></strong> i know, but the community expects this now… that’s why i miss fluffy in the discussion<br>
+<strong>&#x3C;sgp></strong> He was just finding the tweet that others asked for<br>
+<strong>&#x3C;dEBRUYNE></strong> Whether the community expects BP in March is at most ambigous imo<br>
+<strong>&#x3C;rehrar></strong> ok, let’s end this conversation with one question<br>
+<strong>&#x3C;suraeNoether></strong> pebx thanks for finding that. He shouldn’t have said that, number one<br>
+<strong>&#x3C;dEBRUYNE></strong> at best*<br>
+<strong>&#x3C;rehrar></strong> MRL: what is your formal recommendation to us at this point?<br>
+<strong>&#x3C;iDunk></strong> That tweet was unfortunate.<br>
+<strong>&#x3C;pebx></strong> suraeNoether that’s the thing i’m talking about…<br>
+<strong>&#x3C;endogenic></strong> the code IS merged though<br>
+<strong>&#x3C;endogenic></strong> to master<br>
+<strong>&#x3C;sarang></strong> single output<br>
+<strong>&#x3C;pebx></strong> he is still some kind of project leader, but he missed last sunday’s discussion and now too<br>
+<strong>&#x3C;iDunk></strong> And is live on testnet :)<br>
+<strong>&#x3C;rbrunner></strong> Yes, and live on Testnet<br>
+<strong>&#x3C;sarang></strong> multi is not yet<br>
+<strong>&#x3C;sarang></strong> and that’s what we want audited<br>
+<strong>&#x3C;endogenic></strong> yes but aside from tagging an old commit<br>
+<strong>&#x3C;endogenic></strong> does this raise the issue of whether it should have been merged?<br>
+<strong>&#x3C;suraeNoether></strong> rehrar: Sarang, correct me on this if need be: our formal recommendation to pay an OSTIF group to audit the code, funded through a new acronym, and to include BPs in September.<br>
+<strong>&#x3C;dEBRUYNE></strong> I wouldn’t confine the audit to the OSTIF group<br>
+<strong>&#x3C;rehrar></strong> sarang? you second this?<br>
+<strong>&#x3C;suraeNoether></strong> dEBRUYNE: just my recommendation based on what we’ve seen and heard so far. if another group feels more right, we can goi with them instead.<br>
+<strong>&#x3C;sarang></strong> I don’t have a particular opinion on September vs pushing the March, since there are many other parties involved and I don’t work closely enough with them to fully appreciate their needs<br>
+<strong>&#x3C;sarang></strong> I agree on the rest from a research perspective<br>
+<strong>&#x3C;rehrar></strong> ignoring needs of others for the time being, just think of the crypto<br>
+<strong>&#x3C;suraeNoether></strong> the delay of HF schedules, etc, this is all not even really MRL’s job to make decisions about. the quesiton is: will BPs be implemented in the next scheduled HF for May? And I dont’ think the answer to that is yes, from either me or sarang<br>
+<strong>&#x3C;suraeNoether></strong> and by “will” i mean “should”<br>
+<strong>&#x3C;sarang></strong> I consider the crypto pretty independent from the fork schedule<br>
+<strong>&#x3C;gingeropolous></strong> and by may u mean march<br>
+<strong>&#x3C;suraeNoether></strong> yeah the one starting with “ma”<br>
+<strong>&#x3C;rehrar></strong> and by dont’, you mean “don’t”<br>
+<strong>&#x3C;sarang></strong> Using the double blob method would be a good way to mitigate issues<br>
+<strong>&#x3C;sarang></strong> but we haven’t used it before<br>
+<strong>&#x3C;suraeNoether></strong> sarang do you have expectations of security if two range proofs for the same masked amount are provided? because I can imagine at least two different ways that could go wrong if done incorrectly.<br>
+<strong>&#x3C;suraeNoether></strong> but that’s highly dependent on the algebra and boosting negligible event probabilities into more likely events.<br>
+<strong>&#x3C;sarang></strong> suraeNoether: I am not worried about the two-proof method in that way<br>
+<strong>&#x3C;dEBRUYNE></strong> suraeNoether: we can go with multiple groups as well<br>
+<strong>&#x3C;suraeNoether></strong> sarang: ok we should talk more about it later then i guess<br>
+<strong>&#x3C;sarang></strong> yes<br>
+<strong>&#x3C;rehrar></strong> well, hard fork times aside, it’s agreed it shouldn’t be in March, and that’s enough for the time being<br>
+<strong>&#x3C;sarang></strong> yes<br>
+<strong>&#x3C;rehrar></strong> good updates on the audit front<br>
+<strong>&#x3C;rbrunner></strong> But a HF in March is not entirely agreed, it seems to me …<br>
+<strong>&#x3C;sarang></strong> But he means BPs will not be in March<br>
+<strong>&#x3C;sarang></strong> Too many audit steps before then<br>
+<strong>&#x3C;suraeNoether></strong> rbrunner: this meeting was never about HF schedules<br>
+<strong>&#x3C;sarang></strong> I’ll keep everyone updated in #monero-research-lab on the OSTIF quotes<br>
+<strong>&#x3C;pebx></strong> sarang what’s a real timeframe to be ready with audits?<br>
+<strong>&#x3C;rehrar></strong> MRL, let’s talk about the Z.C.A.S.H (name pending) fund later today?<br>
+<strong>&#x3C;sarang></strong> Once the funds are raised and the group has a start date? A month, maybe 25 biz days<br>
+<strong>&#x3C;sarang></strong> But start dates depend on the groups’ availabilities<br>
+<strong>&#x3C;pebx></strong> okay, so i’m still for delaying the hf to april or may but then with bp<br>
+<strong>&#x3C;rehrar></strong> last question, should we still have dev meeting next week, or push to three weeks from now?<br>
+<strong>&#x3C;pebx></strong> otherwise some sumo will have it before monero<br>
+<strong>&#x3C;janeropicasso></strong> Hi guys I’m new been reading along. I’d just like to say one thing. I think keeping an eye on the long term view is much better than any short term benefits unless the situation is dire. In my experience hard deadlines on things never work. Security, Privacy and Untraceability is what separates Monero high tx fees can wait.<br>
+<strong>&#x3C;iDunk></strong> I don’t see this as a dev meeting.<br>
+<strong>&#x3C;pebx></strong> i would be for a dev meeting next week, but who i am…<br>
+<strong>&#x3C;rehrar></strong> alright, I’ll make an issue for it on the Githubz<br>
+<strong>&#x3C;rbrunner></strong> Meet again next week, I would say, in any case.<br>
+<strong>&#x3C;dEBRUYNE></strong> janeropicasso: There will be a partial solution for fees in the next release<br>
+<strong>&#x3C;iDunk></strong> Next week is the normal schedule.<br>
+<strong>&#x3C;rehrar></strong> just don’t want burnout<br>
+<strong>&#x3C;rbrunner></strong> Critical times<br>
+<strong>&#x3C;pebx></strong> rbrunner this.<br>
+<strong>&#x3C;rehrar></strong> Alright. Anything anyone else wants to say on this?<br>
+<strong>&#x3C;rehrar></strong> dEBRUYNE, can we get the logs for this too?<br>
+<strong>&#x3C;dEBRUYNE></strong> Sure<br>
+<strong>&#x3C;dEBRUYNE></strong> No ETA though :P<br>
+<strong>&#x3C;sgp></strong> I suppose I’d like to hear a bit more about fees<br>
+<strong>&#x3C;gingeropolous></strong> so, just throwing it out there - could we get one of the clones to implement? Then there’s a worthy target to exploit ..<br>
+<strong>&#x3C;rehrar></strong> sgp outside the scope of this meeting I think?<br>
+<strong>&#x3C;rbrunner></strong> Yes, I don’t fear Sumo implementing it at all<br>
+<strong>&#x3C;rbrunner></strong> Our fall guys :)<br>
+<strong>&#x3C;endogenic></strong> janeropicasso: i do wonder what people will prioritize. history is scary<br>
+<strong>&#x3C;sgp></strong> “Bulletproof/fees meeting” lol<br>
+<strong>&#x3C;rehrar></strong> Ah, good point.<br>
+<strong>&#x3C;rbrunner></strong> Just think that currencies normally work within time frames of decades<br>
+<strong>&#x3C;pebx></strong> rbrunner well it’s some kind of an issue if someone will implement monero developed code before monero does…<br>
+<strong>&#x3C;sarang></strong> That’s part of what we’re trying to avoid<br>
+<strong>&#x3C;pebx></strong> at least for observers<br>
+<strong>&#x3C;sgp></strong> @dEBUYNE can you speak about what you meant by “partial fix”?<br>
+<strong>&#x3C;sgp></strong> @dEBRUYNE<br>
+<strong>&#x3C;rbrunner></strong> pebx: Reminds me of my Windows installer and the X12 coin :)<br>
+<strong>&#x3C;gingeropolous></strong> pebx, what do u mean by observers?<br>
+<strong>&#x3C;dEBRUYNE></strong> So the wallet will use low priority by default when there’s no or low backlog and the last N blocks are below X size<br>
+<strong>&#x3C;dEBRUYNE></strong> Then switch to the old default once activity picks up<br>
+<strong>&#x3C;dEBRUYNE></strong> And we reasonably assume miners are going to expand the blocksize<br>
+<strong>&#x3C;dEBRUYNE></strong> It’s still a bit crude and there’s no perfect solution, but at least we got something going<br>
+<strong>&#x3C;rbrunner></strong> Throwing people a bone<br>
+<strong>&#x3C;sgp></strong> @dEBRUYNE, ok cool. Just curious if there was something else I missed<br>
+<strong>&#x3C;dEBRUYNE></strong> Some talk about whether we should lower the unimportant level, because it’s arbitrary anyway<br>
+<strong>&#x3C;sarang></strong> So any action items before next meeting?<br>
+<strong>&#x3C;sarang></strong> Besides carry on w/ audit and start to plan funding?<br>
+<strong>&#x3C;sarang></strong> We’ll need more input from core folks about the role of general funds<br>
+<strong>&#x3C;pebx></strong> gingeropolous people out of the community and people trying to attack monero and spreading disinformation…<br>
+<strong>&#x3C;rehrar></strong> hmmmm…<br>
+<strong>&#x3C;pebx></strong> i am moderating the groups on telegram so i see the “normal people talk”<br>
+<strong>&#x3C;rehrar></strong> nothing else from me on this meeting?<br>
+<strong>&#x3C;rehrar></strong> sarang even with availability of general funds, I’d like to try at least some with FFS. It’s just good ‘marketing’.<br>
+<strong>&#x3C;pebx></strong> but i wouldn’t like to rush it either into march if it’s not ready to be released…<br>
+<strong>&#x3C;rehrar></strong> Monero raises grassroots money for review<br>
+<strong>&#x3C;sarang></strong> In that case we should at least set a goal amount for this review fund<br>
+<strong>&#x3C;pebx></strong> that’s a good point rehrar<br>
+<strong>&#x3C;sgp></strong> Is $50k a good goal?<br>
+<strong>&#x3C;rehrar></strong> So much is said in that Monero crowdfunds two full time researchers, two full time coders, and other stuff<br>
+<strong>&#x3C;rehrar></strong> I think add a zero to that sgp<br>
+<strong>&#x3C;rehrar></strong> if this will be used for multiple reviews over multiple years<br>
+<strong>&#x3C;sarang></strong> $50K would fund a pro audit and maybe one individual<br>
+<strong>&#x3C;sgp></strong> Ok, thought that was initial goal scope<br>
+<strong>&#x3C;suraeNoether></strong> rehrar i think if we shoot for 75-100k, and we have to pay, say, 50k this year… well… that’s 25k in monero that could be worth several extra zeros by the next time we need an audit going<br>
+<strong>&#x3C;rehrar></strong> or could be worth several less zeros :P<br>
+<strong>&#x3C;pebx></strong> 500k is quite a figure… but if we can raise that for some merchandise stores to accept monero, it should be possible to do so for the tech<br>
+<strong>&#x3C;suraeNoether></strong> yeah, we can always FFS again to refresh the fund<br>
+<strong>&#x3C;suraeNoether></strong> pebx +1<br>
+<strong>&#x3C;sgp></strong> I think 100k is manageable. 500k is unrealistic to start imo. GloBee is an exception, not the norm<br>
+<strong>&#x3C;rehrar></strong> but if we think 100k is good enough to start, we can shoot for that<br>
+<strong>&#x3C;gingeropolous></strong> f’real<br>
+<strong>&#x3C;suraeNoether></strong> sgp: +1 also on that<br>
+<strong>&#x3C;suraeNoether></strong> if we need to re-up, we can<br>
+<strong>&#x3C;rehrar></strong> it can also be like the HackerOne fund<br>
+<strong>&#x3C;rbrunner></strong> Yes, it’s not sexy enough for 500K<br>
+<strong>&#x3C;rehrar></strong> the goal has been met and extended a few times<br>
+<strong>&#x3C;sarang></strong> OK, I’m out for now but will keep everyone informed on audit progress<br>
+<strong>&#x3C;rehrar></strong> ok, thanks sarang<br>
+<strong>&#x3C;rehrar></strong> thanks everyone for coming. Was fairly productive I think.<br>
+<strong>&#x3C;pebx></strong> thanks sarang!<br>
+<strong>&#x3C;rbrunner></strong> Certainly interesting. Thanks!<br>
+<strong>&#x3C;suraeNoether></strong> rehrar shoot me an email at my protonmail address and cc sarang on it and we’ll start talking about a review fund and the FFS post for it<br>
+<strong>&#x3C;rehrar></strong> sure thing<br>
+<strong>&#x3C;sarang></strong> or in the MRL IRC if you want it public<br>
+<strong>&#x3C;rehrar></strong> I prefer sneaking behind closed doors<br>
+<strong>&#x3C;suraeNoether></strong> hmm. i was thinking its not totally on topic for #monero-research-lab but maybe it is…<br>
+<strong>&#x3C;dEBRUYNE></strong> 100k seems a bit on the lower end, whereas 500k seems a bit on the high end<br>
+<strong>&#x3C;rehrar></strong> the research lounge<br>
+<strong>&#x3C;dEBRUYNE></strong> Perhaps something in between would be best<br>
+<strong>&#x3C;rehrar></strong> discuss it over a vape<br>
+<strong>&#x3C;sarang></strong> $133,700<br>
+<strong>&#x3C;rehrar></strong> $250k? dEBRUYNE?<br>
+<strong>&#x3C;pebx></strong> 222.222<br>
+<strong>&#x3C;rehrar></strong> sarang: and fifty two cents<br>
+<strong>&#x3C;rbrunner></strong> Don’t we have any nice prime number somewhere there?<br>
+<strong>&#x3C;pebx></strong> however, why are we talking in fiat?<br>
+<strong>&#x3C;dEBRUYNE></strong> rehrar: something like that<br>
+<strong>&#x3C;sarang></strong> pebx because The Man has taught me to think in fiat<br>
+<strong>&#x3C;rehrar></strong> wonder how many of these reviewers would accept XMR directly<br>
+<strong>&#x3C;suraeNoether></strong> the OSTIF accepts crypto apparently<br>
+<strong>&#x3C;suraeNoether></strong> but they pay the groups in fiat<br>
+<strong>&#x3C;sarang></strong> OSTIF will do the exchange for us fee-free<br>
+<strong>&#x3C;suraeNoether></strong> that’s nice<br>
+<strong>&#x3C;sarang></strong> and OSTIF agreed to take no cut themselves if we credit them<br>
+<strong>&#x3C;rehrar></strong> they want the Monrus<br>
+<strong>&#x3C;sarang></strong> they want to drum up publicity for a larger upcoming audit<br>
+<strong>&#x3C;pebx></strong> 727 XMR would be a prime number ;)<br>
+<strong>&#x3C;rehrar></strong> alright friends, Imma kick rocks. Catch you all later.<br>
+<strong>&#x3C;manifest></strong> there probably isnt a tool for monero where you could monitor and control multiple wallets easily for testing purposes<br>
+<strong>&#x3C;fluffypony></strong> pebx: I was arguing with a BCash shill, and it was at a time when we were more confident about March<br>
+<strong>&#x3C;sarang></strong> We can still present the delay positively<br>
+<strong>&#x3C;sarang></strong> We’re trailblazing but doing it correctly<br>
+<strong>&#x3C;fluffypony></strong> was there a reasonable sense of consensus on the way forward wrt the HF schedule?<br>
+<strong>&#x3C;Maxithi></strong> fluffypony Not really, there are two main options and we didn’t find an global agreement.<br>
+<strong>&#x3C;fluffypony></strong> we’re starting to run tight on time<br>
+<strong>&#x3C;Maxithi></strong> fluffypony Yeah, however everyone did agree that by postponing BP we still have 2-3 weeks to find a consensus on the HF.<br>
+<strong>&#x3C;fluffypony></strong> in situations like this the best thing to do is the thing that isn’t controversial, which means not including it until it’s ready<br>
+<strong>&#x3C;fluffypony></strong> we wanted to do code freeze at the end of Dec / beginning of Jan<br>
+<strong>&#x3C;fluffypony></strong> so not really<br>
+<strong>&#x3C;iDunk></strong> Is there going to be a new branch for the new release ?<br>
+<strong>&#x3C;Maxithi></strong> Main arguments were PRO: HF forces community to update software. AGAINST: No protocol update requires HF.<br>
+<strong>&#x3C;fluffypony></strong> yes<br>
+<strong>&#x3C;Maxithi></strong> And then the fact that HF are “supposed” to be on a regular basis (based on HF history).<br>
+<strong>&#x3C;Maxithi></strong> And again some Pro and Against<br>
+<strong>&#x3C;fluffypony></strong> we’ve always maintained that the HF should happen even if there’s no protocol update<br>
+<strong>&#x3C;fluffypony></strong> to keep active versions in line<br>
+<strong>&#x3C;fluffypony></strong> and prevent things like the Bitcoin leveldb / bdb bug<br>
+<strong>&#x3C;Maxithi></strong> @fluffypony: we’ve always maintained that the HF should happen even if there’s no protocol update &#x3C;= No one brought that argument up, would have been a good one.<br>
+<strong>&#x3C;iDunk></strong> In this case, using subaddresses and multisig will require using the new release.<br>
+<strong>&#x3C;endogenic></strong> yes i did :P<br>
+<strong>&#x3C;iDunk></strong> And having people be forced to upgrade avoids support nightmares.<br>
+<strong>&#x3C;fluffypony></strong> yep<br>
+<strong>&#x3C;fluffypony></strong> I mean, unless there’s a strong reason NOT to do a March fork we should go ahead with it<br>
+<strong>&#x3C;Maxithi></strong> endogenic: yes i did :P &#x3C;= Than it is my mistake. Didn’t understand that it was stated as a previous consensus. I read it rather as a habbit.<br>
+<strong>&#x3C;endogenic></strong> Maxithi: i was just being more socratic about it :P<br>
+<strong>&#x3C;endogenic></strong> Maxithi: since i dont know what i know yet<br>
+<strong>&#x3C;Maxithi></strong> endogenic You should have been more straight forward.<br>
+<strong>&#x3C;fluffypony></strong> and then leave it open-ended for Bulletproofs<br>
+<strong>&#x3C;endogenic></strong> Maxithi: i was<br>
+<strong>&#x3C;endogenic></strong> Maxithi: i was responding to someone else and he understood and agreed with me<br>
+<strong>&#x3C;Maxithi></strong> Why hasn’t this been written down already? We should put up these kind of consensus rules and drop them on git to prevent future disagreements.<br>
+<strong>&#x3C;Maxithi></strong> endogenic My bad, didn’t catch that through the lines.<br>
+<strong>&#x3C;endogenic></strong> Maxithi: arent consensus rules derived from people not documents<br>
+<strong>&#x3C;endogenic></strong> besides who wants to prevent discussion<br>
+<strong>&#x3C;fluffypony></strong> it’s a good idea to at least write down how we generally feel things should be handled<br>
+<strong>&#x3C;fluffypony></strong> almost like a doctrine, not really a list of rules<br>
+<strong>&#x3C;Maxithi></strong> endogenic Agree but this could prevent from turning 1 meeting into 4<br>
+<strong>&#x3C;Maxithi></strong> Doesn’t mean we can’t change it ;) Only that we take what we previously achieved and discuss on top of that<br>
+<strong>&#x3C;endogenic></strong> now that BPs have been merged, can a new release which excludes BPs be done?<br>
+<strong>&#x3C;endogenic></strong> single output , if specificity is needed<br>
+<strong>&#x3C;fluffypony></strong> endogenic: they’re merged but dormant<br>
+<strong>&#x3C;endogenic></strong> ah, of course, that makes sense<br>
+<strong>&#x3C;rbrunner></strong> But we probably new a second, non-BP testnet<br>
+<strong>&#x3C;fluffypony></strong> yes I agree on the testnet / devnet thing<br>
+<strong>&#x3C;rbrunner></strong> Ah, yes, those were the proposed names<br>
+<strong>&#x3C;fluffypony></strong> I think the real problem here is that Bulletproofs doesn’t have a cool name<br>
+<strong>&#x3C;fluffypony></strong> I mean, it’s reasonably cool<br>
+<strong>&#x3C;fluffypony></strong> but how can we compete with VVraith Protocol?<br>
+<strong>&#x3C;rbrunner></strong> :)<br>
+<strong>&#x3C;chachasmooth></strong> is wraith the guy who claimed to be satoshi?<br>
+<strong>&#x3C;fluffypony></strong> chachasmooth: no, it’s the stealth addresses thing that Verge is doing<br>
+<strong>&#x3C;chachasmooth></strong> oh, right. both are shit, that’s what I remember<br>
+<strong>&#x3C;chachasmooth></strong> wraith is still not implemented?<br>
+<strong>* fluffypony</strong> shrugs<br>
+<strong>&#x3C;chachasmooth></strong> fluffypony what happened to the majority of forum posts? did you take them offline on purpose?<br>
+<strong>&#x3C;fluffypony></strong> censored by Blockstream<br>
+<strong>&#x3C;fluffypony></strong> kidding, we disabled them because of the spam, I’ll fiddle with the settings so that they’re still visible<br>
+<strong>&#x3C;Maxithi></strong> fluffypony About spam, the forum has some <a href="https://forum.getmonero.org/6/ideas/89759/advice-for-you-to-get-free-600m-swtor-credits-cheap-on-swtor2credits-jan-17" rel="noopener noreferrer external" target="_blank">https://forum.getmonero.org/6/ideas/89759/advice-for-you-to-get-free-600m-swtor-credits-cheap-on-swtor2credits-jan-17</a><br>
+<strong>&#x3C;Maxithi></strong> Who can remove these?<br>
+<strong>&#x3C;fluffypony></strong> tks<br>
+<strong>&#x3C;fluffypony></strong> any of the mods<br>
+<strong>&#x3C;fluffypony></strong> but I’m pretty much the only one active<br>
+<strong>&#x3C;Maxithi></strong> I’m sure your schedule is empty and you love handling this kind of stuff ;)<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;rbrunner></strong> Just checked: Wraith is really, finally online, but seems to have some teething problems: <a href="https://steemit.com/bitcoin/@siddm96/verge-hardfork-for-stealth-transaction-3a0509e274618" rel="noopener noreferrer external" target="_blank">https://steemit.com/bitcoin/@siddm96/verge-hardfork-for-stealth-transaction-3a0509e274618</a><br>
+<strong>&#x3C;rbrunner></strong> See? Other coins can hardfork just like that. Why can’t we?<br>
+<strong>&#x3C;rbrunner></strong> Was checking about 30 transactions on the Verge blockchain and did not encounter a single one with stealth addresses. Roaring success, it seems<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;iDunk></strong> Imagine if subaddresses were being without a hard fork :)<br>
+<strong>&#x3C;iDunk></strong> Major clusterfuck.<br>
+<strong>&#x3C;rbrunner></strong> That’s my opinion: We need the March hardfork just to force lazy people to update their software<br>
+<strong>&#x3C;iDunk></strong> Exactly.<br>
+<strong>* sgp</strong> sent a long message: <a href="https://matrix.org/_matrix/media/v1/download/matrix.org/BarHGxHdPoPajSqUqUpcKEFm" rel="noopener noreferrer external" target="_blank">https://matrix.org/_matrix/media/v1/download/matrix.org/BarHGxHdPoPajSqUqUpcKEFm</a><br>
+<strong>&#x3C;gingeropolous></strong> thanks matrix<br>
+<strong>&#x3C;bibble></strong> lol<br>
+<strong>&#x3C;bibble></strong> guess #3 would mean more pumps, more money ??<br>
+<strong>&#x3C;sarang></strong> That’s not quite correct. We aren’t planning on having single-output audited<br>
+<strong>&#x3C;sarang></strong> If there’s a pressing need for single, we restrict transactions to a single-output proof within the multi code<br>
+<strong>&#x3C;sarang></strong> A single-output proof is just the degenerate case of a multi-output<br>
+<strong>&#x3C;chachasmooth></strong> what benefits do regular hard forks bring?<br>
+<strong>&#x3C;jorko></strong> regular upgrades. avoids the Bitcoin clusterfuck where consensus = no protocol upgrades, ever.<br>
+<strong>&#x3C;gingeropolous></strong> it also helps improve the software, because everyone is running the same thing. So we all have the same bugs if they are present.<br>
+<strong>&#x3C;sgp></strong> @sarang my apologies, I didn’t know that<br>
+<strong>&#x3C;sgp></strong> I’ll have to think harder about this<br>
+<strong>&#x3C;sarang></strong> When we think about single vs multi output proofs from now on, we should consider that they’re really different cases of the same final code<br>
+<strong>&#x3C;sarang></strong> The difference is really in whatever we decide to do for the corresponding fee structure<br>
+<strong>&#x3C;sarang></strong> Yes, the original “single only” code is on testnet, but moneromooo has the multi code worked up now<br>
+<strong>&#x3C;sgp></strong> @sarang once the multi-output code has been reviewed, is there a reason to add it separately from single-output, or would you feel comfortable adding both at the same time?<br>
+<strong>&#x3C;sarang></strong> The multi code completely replaces the single code<br>
+<strong>&#x3C;sarang></strong> development was done separately in case we finished single first and wanted to deploy sooner<br>
+<strong>&#x3C;sarang></strong> a single-output proof is just a multi-output proof with one output<br>
+<strong>&#x3C;sgp></strong> So realistically the community has decided that single-output is a waste of time because multi-output is basically done and the community wants it audited<br>
+<strong>&#x3C;sarang></strong> Given the desire for an audit, it makes sense to jump straight to multi and have the fee discussion surrounding it<br>
+<strong>&#x3C;sgp></strong> Ok, makes sense<br>
+<strong>&#x3C;sgp></strong> So it’s basically just a question of whether Monero hardforks soon after the code is complete and reviewed or in September<br>
+<strong>&#x3C;sgp></strong> For some reason I still thought single and multi-output would be rolled out separately<br>
+<strong>&#x3C;sarang></strong> Single doesn’t require that the fee structure be switched away from size-based, but that’s about it<br>
+<strong>&#x3C;sarang></strong> Might as well pay for only one audit<br>
+<strong>&#x3C;sgp></strong> I understand skipping single-output bulletproofs<br>
+<strong>&#x3C;sarang></strong> What it does mean is that the BP code on testnet is NOT the code that will be audited or eventually deployed<br>
+<strong>&#x3C;sarang></strong> for whatever that’s worth<br>
+<strong>&#x3C;sarang></strong> Multi is here: <a href="https://github.com/moneromooo-monero/bitmonero/tree/bp-multi/src/ringct" rel="noopener noreferrer external" target="_blank">https://github.com/moneromooo-monero/bitmonero/tree/bp-multi/src/ringct</a></p>  </div>  </article> <aside data-border="true" data-transparent="true" style="--card-padding: var(--space-xl); --card-radius: var(--radius-md)" data-astro-cid-ndejf7ww="true" data-astro-cid-dd5txfcy="true" class="card sidebar">  <h2 data-astro-cid-ndejf7ww>近期文章</h2> <ul class="recent-posts" data-astro-cid-ndejf7ww> <li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/03/04/monero-GUI-0.18.4.7-released/" data-astro-cid-ndejf7ww> Monero GUI 0.18.4.7 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-ndejf7ww> 2026年3月4日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/03/04/monero-0.18.4.6-released/" data-astro-cid-ndejf7ww> Monero 0.18.4.6 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-ndejf7ww> 2026年3月4日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/01/07/monero-GUI-0.18.4.5-released/" data-astro-cid-ndejf7ww> Monero GUI 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-ndejf7ww> 2026年1月7日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/01/07/monero-0.18.4.5-released/" data-astro-cid-ndejf7ww> Monero 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-ndejf7ww> 2026年1月7日 </time> </li> </ul>  </aside>  </div>  </main> <footer class="footer" aria-label="页脚" data-astro-cid-mh6itkc3> <div class="items" data-astro-cid-mh6itkc3> <nav class="grid" aria-label="页脚导航" data-astro-cid-mh6itkc3> <section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>资源</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/zh/get-started/what-is-monero/" data-astro-cid-mh6itkc3> 关于 Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/moneropedia/" data-astro-cid-mh6itkc3> Moneropedia  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://docs.getmonero.org" data-astro-cid-mh6itkc3> Monero 文档  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/get-started/faq/" data-astro-cid-mh6itkc3> 常见问题  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>联系我们</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/zh/community/workgroups/" data-astro-cid-mh6itkc3> 工作组  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/community/hangouts/" data-astro-cid-mh6itkc3> 社交场所  </a> </li><li data-astro-cid-mh6itkc3> <a href="/postorius/lists/monero-announce.lists.getmonero.org" data-astro-cid-mh6itkc3> 邮件列表  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>社区</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://monero.stackexchange.com/" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Stack Exchange  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://bitcointalk.org/index.php?topic=583449.0" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Bitcoin Talk  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://translate.getmonero.org" data-astro-cid-mh6itkc3> 翻译  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>Monero 项目</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://openalias.org" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Open Alias  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/research-lab/" data-astro-cid-mh6itkc3> Monero 研究实验室 (MRL)  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/press-kit/" data-astro-cid-mh6itkc3> 媒体资料包  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://ccs.getmonero.org" data-astro-cid-mh6itkc3> 社区众筹系统  </a> </li> </ul> </section> </nav> <nav class="bottom" aria-label="次要页脚导航" data-astro-cid-mh6itkc3> <ul class="inline-list" data-astro-cid-mh6itkc3> <li class="inline-item" data-astro-cid-mh6itkc3> <a href="#" data-astro-cid-mh6itkc3> Tor 洋葱服务 <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/tor.D04gt7iP_278xXg.avif);--iconColor: #7d4698;--spacing: 0.25em;"></div>  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> 漏洞响应  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/zh/legal/" data-astro-cid-mh6itkc3> 法律  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> 源代码  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/feed.xml" data-astro-cid-mh6itkc3> RSS 订阅 <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/rss.jnIu9F4x_Z28u6pV.avif);--iconColor: var(--monero-orange);--spacing: 0.25em;"></div>  </a> </li> </ul> </nav> </div> </footer>   </body></html> 

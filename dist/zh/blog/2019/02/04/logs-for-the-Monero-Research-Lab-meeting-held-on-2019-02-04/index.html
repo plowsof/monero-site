@@ -1,0 +1,345 @@
+<!DOCTYPE html><html lang="zh" dir="ltr" data-astro-cid-sckkx6r4> <head><title>博客 | Logs for the Monero Research Lab Meeting Held on 2019-02-04</title><meta charset="UTF-8"><link rel="canonical" href="https://beta.monerodevs.org/zh/blog/2019/02/04/logs-for-the-Monero-Research-Lab-meeting-held-on-2019-02-04/"><meta name="description" content="Network upgrade, MRL work, and miscellaneous"><meta name="robots" content="index, follow"><meta property="og:title" content="Logs for the Monero Research Lab Meeting Held on 2019-02-04"><meta property="og:type" content="article"><meta property="og:image" content="https://beta.monerodevs.org/open-graph/blog/2019/02/04/logs-for-the-Monero-Research-Lab-meeting-held-on-2019-02-04.png"><meta property="og:url" content="https://beta.monerodevs.org/zh/blog/2019/02/04/logs-for-the-Monero-Research-Lab-meeting-held-on-2019-02-04/"><meta property="og:locale" content="zh"><meta property="og:locale:alternate" content="en"><meta property="og:locale:alternate" content="ar"><meta property="og:site_name" content="Monero"><meta property="og:image:url" content="https://beta.monerodevs.org/open-graph/blog/2019/02/04/logs-for-the-Monero-Research-Lab-meeting-held-on-2019-02-04.png"><meta property="og:image:alt" content="OpenGraph image for Monero blog post titled &#34;Logs for the Monero Research Lab Meeting Held on 2019-02-04&#34;"><meta property="article:published_time" content="2019-02-04T00:00:00.000Z"><meta property="article:author" content="el00ruobuob / sarang"><meta property="article:tag" content="dev diaries"><meta property="article:tag" content="crypto"><meta property="article:tag" content="research"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@monero"><meta name="twitter:title" content="Logs for the Monero Research Lab Meeting Held on 2019-02-04"><meta name="twitter:image" content="https://beta.monerodevs.org/open-graph/blog/2019/02/04/logs-for-the-Monero-Research-Lab-meeting-held-on-2019-02-04.png"><meta name="twitter:description" content="Network upgrade, MRL work, and miscellaneous"><link rel="preload" as="font" type="font/woff2" href="/_astro/dm-sans-latin-wght-normal.Xz1IZZA0.woff2" crossorigin="anonymous"><link rel="icon" href="/meta/favicon-16x16.png" sizes="16x16"><link rel="icon" href="/meta/favicon-32x32.png" sizes="32x32"><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.18.0"><meta name="color-scheme" content="light dark"><link rel="alternate" hreflang="en" href="https://beta.monerodevs.org/blog/2019/02/04/logs-for-the-Monero-Research-Lab-meeting-held-on-2019-02-04/"><link rel="alternate" hreflang="ar" href="https://beta.monerodevs.org/ar/blog/2019/02/04/logs-for-the-Monero-Research-Lab-meeting-held-on-2019-02-04/"><link rel="alternate" hreflang="zh" href="https://beta.monerodevs.org/zh/blog/2019/02/04/logs-for-the-Monero-Research-Lab-meeting-held-on-2019-02-04/"><link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="https://beta.monerodevs.org/feed.xml"><style>#blog-content{line-height:var(--line-height-body);word-wrap:break-word;color:light-dark(inherit,var(--paragraph-main));:where(h2,h3,h4){font-weight:var(--font-weight-bold)}img{border-radius:var(--radius-md)}a:not(.moneropedia-link){color:light-dark(var(--text-primary),var(--paragraph-main));font-weight:var(--font-weight-medium);text-decoration-line:underline;text-decoration-style:dotted;&:hover{color:light-dark(var(--text-secondary),var(--heading-color))}}h1{font-size:var(--font-size-2xl)}h2{font-size:var(--font-size-xl)}h3{font-size:var(--font-size-lg)}h4{font-size:var(--font-size-md)}p{margin-bottom:1em}li{margin-bottom:.25em}pre{padding:1em;border-radius:var(--radius-md);overflow-x:auto;background:var(--footer-color);code{background:none;padding:0;border-radius:0}}code:not(pre code){font-family:monospace;background-color:var(--footer-color);padding:.1em .3em;border-radius:var(--radius-sm)}blockquote{margin:1.5em 0;padding-inline:1.5em 1em;border-inline-start:3px solid var(--border-color);font-style:italic;color:var(--text-secondary)}strong{font-weight:var(--font-weight-bold)}em{font-style:italic}}h1[data-astro-cid-7dcwcvhl]{font-size:var(--font-size-3xl);margin:0}#post-header[data-astro-cid-7dcwcvhl]{margin-bottom:var(--page-top-margin)}#meta[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-2xl);color:var(--text-secondary);margin-top:var(--space-md);margin-bottom:var(--space-xl);font-size:var(--font-size-lg);font-weight:var(--font-weight-normal)}.meta-item[data-astro-cid-7dcwcvhl]{display:flex;align-items:center;gap:var(--space-xs);>.icon{display:grid;place-items:center;color:var(--monero-orange)}}.tag-container[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-xs);font-size:var(--font-size-sm);flex-wrap:wrap;.tag{text-align:center;padding:var(--space-2xs) var(--space-sm);background:var(--footer-color);border-radius:var(--radius-md);text-transform:uppercase;font-weight:var(--font-weight-semibold);text-decoration:none;color:inherit;white-space:nowrap;&:hover{color:var(--text-secondary)}}}@media(width<=600px){#meta[data-astro-cid-7dcwcvhl]{flex-direction:column;font-size:var(--font-size-md);font-weight:var(--font-weight-medium);gap:var(--space-md)}.meta-item[data-astro-cid-7dcwcvhl]{>.icon{font-size:var(--font-size-lg)}}}
+.card[data-astro-cid-dd5txfcy]{background:var(--card-color);padding:var(--card-padding);border-radius:var(--card-radius);&[data-border]{border:1px solid var(--border-color)}&[data-transparent]{background:transparent}&[data-hover]{transition:background .15s ease;&[data-astro-cid-dd5txfcy]:hover,&[data-astro-cid-dd5txfcy]:focus-visible{background:var(--card-hover-color)}}}
+.icon[data-astro-cid-bpjkz5as]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);margin-inline-start:var(--spacing);background:var(--iconColor);mask:var(--iconSrc) no-repeat center / contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}
+</style>
+<link rel="stylesheet" href="/_astro/_page_.DxMr-0dd.css">
+<style>.blog-container[data-astro-cid-ndejf7ww]{display:grid;grid-template-columns:1fr;gap:var(--space-2xl);>*{min-width:0}}.sidebar[data-astro-cid-ndejf7ww]{height:fit-content;& h2[data-astro-cid-ndejf7ww]{font-size:var(--font-size-xl);margin-top:0}}.recent-posts[data-astro-cid-ndejf7ww]{list-style:none;padding:0;margin-bottom:0;display:flex;flex-direction:column;gap:var(--space-md);li{margin-bottom:var(--space-xs)}.post-title{font-size:var(--font-size-md);color:var(--paragraph-main);text-decoration-line:underline;text-decoration-style:dotted;&:hover{text-decoration:underline}}.post-date{display:block;font-size:var(--font-size-sm);color:var(--paragraph-subtitle);margin-top:var(--space-2xs)}}@media(width>=1200px){.blog-container[data-astro-cid-ndejf7ww]{grid-template-columns:1fr 65ch 1fr}.blog-post[data-astro-cid-ndejf7ww]{grid-column:2}.sidebar[data-astro-cid-ndejf7ww]{grid-column:2;grid-row:2}}@media(width>=1600px){.sidebar[data-astro-cid-ndejf7ww]{grid-column:3;grid-row:1}}
+:where([data-astro-image]){object-fit:var(--fit);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+.moneropedia-link{position:relative;display:inline-block;color:var(--monero-orange);text-decoration-line:underline;text-decoration-style:dotted;cursor:help;font-weight:var(--font-weight-medium)}.moneropedia-link:hover,.moneropedia-link:focus-visible{text-decoration:none}.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{content:none}@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{position:absolute;left:50%;opacity:0;pointer-events:none;transform:translate(-50%) translateY(0);transition:opacity .18s ease-out,transform .18s ease-out;z-index:10}.moneropedia-link[data-tooltip]:before{content:attr(data-tooltip);bottom:calc(100% + .5rem);padding:.5rem .75rem;background:var(--card-color);border:1px solid var(--border-color);border-radius:.25rem;box-sizing:border-box;overflow-wrap:break-word;min-inline-size:25ch;max-inline-size:min(35ch,calc(100vw - 2.5rem));font-size:var(--font-size-sm);line-height:var(--line-height-caption);color:var(--text-primary);box-shadow:0 2px 8px #0000004d}.moneropedia-link[data-tooltip]:after{content:"";bottom:calc(100% + .25rem);border-width:.35rem .35rem 0;border-style:solid;border-color:var(--card-color) transparent transparent transparent}.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):before,.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):after{opacity:1;transform:translate(-50%) translateY(-2px)}}@media(prefers-reduced-motion:reduce){@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{transition:none}}}
+.icon[data-astro-cid-7wapxsvo]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);aspect-ratio:1 / 1;vertical-align:middle;--iconUrl: var(--lightUrl);background-image:var(--iconUrl);background-repeat:no-repeat;background-position:center;background-size:contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}@media(prefers-color-scheme:dark){.icon[data-astro-cid-7wapxsvo]{--iconUrl: var(--darkUrl)}}
+</style></head> <body data-astro-cid-sckkx6r4> <header class="header" data-astro-cid-dm2weclu> <div class="header-inner" data-astro-cid-dm2weclu> <a class="brand" href="/zh/" data-astro-cid-dm2weclu> <img src="/_astro/monerologo.CMdKQEkN_10Rm8s.avif" srcset="/_astro/monerologo.CMdKQEkN_10Rm8s.avif 64w, /_astro/monerologo.CMdKQEkN_10Rm8s.avif 128w" alt aria-hidden="true" data-astro-cid-dm2weclu="true" loading="eager" decoding="sync" fetchpriority="high" sizes="(min-width: 64px) 64px, 100vw" style="--fit: cover; --pos: center;" data-astro-image="constrained" width="64" height="64" class="mark"> <span data-astro-cid-dm2weclu>MONERO</span> </a> <input id="nav-toggle" class="nav-toggle" type="checkbox" data-astro-cid-dm2weclu> <nav id="primary-nav" class="nav" aria-label="主要" data-astro-cid-dm2weclu> <div class="drawer-header" data-astro-cid-dm2weclu> <label for="nav-toggle" class="close" aria-controls="primary-nav" aria-label="关闭菜单" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/close.CneAMmXr_ZaFGrm.avif);--iconColor: currentColor;"></div>  </label> </div> <fieldset data-astro-cid-dm2weclu> <legend class="sr-only" data-astro-cid-dm2weclu>主要导航部分</legend> <ul class="nav-list" data-astro-cid-dm2weclu> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-rw4yx6bqw" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-rw4yx6bqw-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 入门 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-rw4yx6bqw" class="mobile-open" aria-label="Open 入门 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-rw4yx6bqw-close" class="mobile-close" aria-label="Close 入门 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="入门 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/get-started/what-is-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--darkUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>什么是 Monero？</div> <div class="desc" data-astro-cid-lm33vczh>关于 Monero 您需要了解的一切概览。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/exchanges/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/merchants-exchanges.DN61YseO_ZQ3Km9.avif);--darkUrl: url(/_astro/merchants-exchanges.BjKEmUcz_1O8q9G.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>购买 Monero</div> <div class="desc" data-astro-cid-lm33vczh>允许您购买或交易 Monero 的加密货币交易所。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/merchants/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>使用 Monero</div> <div class="desc" data-astro-cid-lm33vczh>查找接受 Monero 支付的地点和服务。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/accept-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/accept-monero.COXM8aHM_Z1II116.avif);--darkUrl: url(/_astro/accept-monero.C3WCFfqe_Z2tp8Kw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>接受 Monero</div> <div class="desc" data-astro-cid-lm33vczh>了解如何作为商家或个人接受 XMR。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/mining/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/mining.DBRk7HAe_Zd3ukV.avif);--darkUrl: url(/_astro/mining.B54FNZld_Z2jnjrG.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>挖矿</div> <div class="desc" data-astro-cid-lm33vczh>了解如何在您的电脑上挖掘 Monero。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/contribute/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/contribute.DKeO9Dve_Z2vEvfu.avif);--darkUrl: url(/_astro/contribute.zLqiOwb5_Z1qe0gS.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>贡献</div> <div class="desc" data-astro-cid-lm33vczh>帮助 Monero 项目为每个人带来隐私。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/faq/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/faq.C8QObR1A_1A5Irh.avif);--darkUrl: url(/_astro/faq.BNcLqXOJ_ZaSdVI.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>常见问题</div> <div class="desc" data-astro-cid-lm33vczh>查找关于 Monero 常见问题的答案。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/zh/downloads/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 下载  </a>  </div>  </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/zh/blog/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 博客  </a>  </div>  </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-p37v8u7oc" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-p37v8u7oc-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 社区 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-p37v8u7oc" class="mobile-open" aria-label="Open 社区 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-p37v8u7oc-close" class="mobile-close" aria-label="Close 社区 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="社区 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/community/workgroups/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/workgroups.OzoDQ7NV_Z1Lwqqs.avif);--darkUrl: url(/_astro/workgroups.CGbkWAXL_Z1m0ybJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>工作组</div> <div class="desc" data-astro-cid-lm33vczh>与 Monero 的专门工作组在开发、研究和社区工作方面进行合作。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/community/sponsorships/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>赞助商</div> <div class="desc" data-astro-cid-lm33vczh>支持 Monero 项目的企业列表。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/community/hangouts/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/hangouts.CiWxE-i9_ZeEICj.avif);--darkUrl: url(/_astro/hangouts.Do4DJEA1_257lPw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>社交场所</div> <div class="desc" data-astro-cid-lm33vczh>加入 Monero 社区聚会和活动，与其他爱好者和开发者交流。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-wjdfmv699" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-wjdfmv699-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 资源 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-wjdfmv699" class="mobile-open" aria-label="Open 资源 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-wjdfmv699-close" class="mobile-close" aria-label="Close 资源 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="资源 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/resources/knowledge-base/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/moneropedia.7o-c8ZX4_lSmb.avif);--darkUrl: url(/_astro/moneropedia.CYJm2-Q5_1KG40X.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>知识库</div> <div class="desc" data-astro-cid-lm33vczh>书籍、出版物、杂志、Moneropedia。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/roadmap/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/roadmap.DoSq9h9o_Z1QuQpv.avif);--darkUrl: url(/_astro/roadmap.BONb2rwk_2hroDR.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>路线图</div> <div class="desc" data-astro-cid-lm33vczh>了解最新的 Monero 开发计划和进展。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/research-lab/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/research-lab.D90VAC3d_WkkdD.avif);--darkUrl: url(/_astro/research-lab.uv3a8gpS_Z7cyXJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>研究实验室</div> <div class="desc" data-astro-cid-lm33vczh>探索 Monero 研究实验室的出版物和研究。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/tools/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/tools.CTqUs9cD_Z1hqOiO.avif);--darkUrl: url(/_astro/tools.BW4KRKDW_Z6Gril.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero 工具</div> <div class="desc" data-astro-cid-lm33vczh>为 Monero 用户和开发者精选的工具和软件列表。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="https://docs.getmonero.org" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/developer-guides.DD6ipv0S_Yls1B.avif);--darkUrl: url(/_astro/developer-guides.Cdg0NOVs_Z2h2V29.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero 文档</div> <div class="desc" data-astro-cid-lm33vczh>用户和开发者有效、安全使用 Monero 的综合指南。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/press-kit/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/press-kit.C4VjegyX_2aPbOF.avif);--darkUrl: url(/_astro/press-kit.CVdfPwCA_1oXHhF.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>媒体资料包</div> <div class="desc" data-astro-cid-lm33vczh>媒体联系方式、标志、图片和其他媒体资源。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="https://ccs.getmonero.org" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 众筹  </a>  </div>  </li>  </ul> </fieldset> </nav> <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="关闭菜单" data-astro-cid-dm2weclu></label> <div class="utils" aria-label="工具" data-astro-cid-dm2weclu> <div class="lang" data-astro-cid-dm2weclu> <details class="lang-container" data-astro-cid-g6d27pgi> <summary class="lang" aria-label="更改语言" aria-haspopup="true" role="button" data-astro-cid-g6d27pgi> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/globe.FI0_gjXP_xUiUM.avif);--iconColor: currentColor;"></div>  </summary> <div class="lang-dropdown" aria-label="语言" data-astro-cid-g6d27pgi> <ul class="lang-list" data-astro-cid-g6d27pgi> <li data-astro-cid-g6d27pgi> <a href="/blog/2019/02/04/logs-for-the-Monero-Research-Lab-meeting-held-on-2019-02-04/" class data-astro-cid-g6d27pgi> English </a> </li><li data-astro-cid-g6d27pgi> <a href="/ar/blog/2019/02/04/logs-for-the-Monero-Research-Lab-meeting-held-on-2019-02-04/" class data-astro-cid-g6d27pgi> العربية </a> </li><li data-astro-cid-g6d27pgi> <a href="/zh/blog/2019/02/04/logs-for-the-Monero-Research-Lab-meeting-held-on-2019-02-04/" class="active" aria-current="true" data-astro-cid-g6d27pgi> 中文 </a> </li> </ul> </div> </details>  </div> <label for="nav-toggle" class="hamburger" aria-controls="primary-nav" aria-label="打开菜单" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/hamburger.CkIM-2PU_xmMpy.avif);--iconColor: currentColor;"></div>  </label> </div> </div> </header>  <main data-astro-cid-sckkx6r4>   <div class="blog-container" data-astro-cid-ndejf7ww> <article class="blog-post" data-astro-cid-ndejf7ww> <div id="post-header" data-astro-cid-7dcwcvhl> <h1 data-astro-cid-7dcwcvhl>Logs for the Monero Research Lab Meeting Held on 2019-02-04</h1> <div id="meta" data-astro-cid-7dcwcvhl> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/calendar.BXaSv3Jk_Z1NrB7E.avif);--iconColor: currentColor;"></div>  </div> <time datetime="2019-02-04" data-astro-cid-7dcwcvhl>2019年2月4日</time> </div> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/user.Cx6bTnUm_FhCof.avif);--iconColor: currentColor;"></div>  </div> el00ruobuob / sarang </div> </div> <div class="tag-container" data-astro-cid-7dcwcvhl> <a class="tag" href="/zh/blog/tags/dev-diaries/" data-astro-cid-7dcwcvhl> 开发日志 </a><a class="tag" href="/zh/blog/tags/crypto/" data-astro-cid-7dcwcvhl> 加密 </a><a class="tag" href="/zh/blog/tags/research/" data-astro-cid-7dcwcvhl> 研究 </a> </div> </div>   <div id="blog-content" lang="en" dir="ltr">  <h1 id="logs">Logs</h1>
+<p><strong>&#x3C;sarang></strong> OK, let’s begin<br>
+<strong>&#x3C;sarang></strong> 1. GREETINGS<br>
+<strong>&#x3C;sarang></strong> hello everyone<br>
+<strong>&#x3C;ArticMine></strong> Hi<br>
+<strong>&#x3C;sgp_></strong> hello!<br>
+<strong>&#x3C;Xeagu></strong> Hey!<br>
+<strong>&#x3C;chron0></strong> oi<br>
+<strong>&#x3C;sarang></strong> a special ping to moneromooo as well, since he has a PR that I wish to discuss<br>
+<strong>&#x3C;sarang></strong> Since it approaches, let’s discuss 2. NETWORK UPGRADE REVIEW<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;serhack></strong> Hi!<br>
+<strong>&#x3C;sgp_></strong> we know the topic is important since it’s in ALL CAPS<br>
+<strong>&#x3C;suraeNoether></strong> hi guys!<br>
+<strong>&#x3C;sarang></strong> As linked in the agenda, the current plan for payment IDs has been subject to much discussion, so please read through the notes at that link<br>
+<strong>&#x3C;sarang></strong> I don’t want to discuss opinions on that at this meeting, only to remind of what the timeline has been<br>
+<strong>&#x3C;needmoney90></strong> Hey!<br>
+<strong>&#x3C;sarang></strong> Of more pressing interest is the block size algorithm<br>
+<strong>&#x3C;Mochi101></strong> You guys going to introduce more tools for sub-addresses too?<br>
+<strong>&#x3C;Mochi101></strong> Like being able to query last sub-address generated?<br>
+<strong>&#x3C;sarang></strong> You may recall that we were looking at a few different options for block size scaling, to allow for growth while protecting from cheap spam<br>
+<strong>&#x3C;suraeNoether></strong> for the audience: The current pull request for changing the dynamic block size adjustment method is proposed by ArticMine (see PR 5124 here: <a href="https://github.com/monero-project/monero/pull/5124/files" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/monero/pull/5124/files</a> ) and it occurs to me that we are intricately in the weeds of fees, incentives, and block sizes right now.<br>
+<strong>&#x3C;sarang></strong> Mochi101: probably better for #monero-dev<br>
+<strong>&#x3C;Mochi101></strong> ah ok<br>
+<strong>&#x3C;suraeNoether></strong> I have concerns about this proposal for a few reasons.<br>
+<strong>&#x3C;sarang></strong> The reason I bring this up is because we have essentially two methods on the table: a simple dual-median approach, and the one linked in the PR which uses a long-term median weighting<br>
+<strong>&#x3C;sarang></strong> The PR contains moneromooo’s implementation of the latter<br>
+<strong>&#x3C;ArticMine></strong> Actually There were 3 option for block weight scaling<br>
+<strong>&#x3C;ArticMine></strong> That were formalized<br>
+<strong>&#x3C;ArticMine></strong> 1) The double median<br>
+<strong>&#x3C;ArticMine></strong> 2) The double median with smooths change<br>
+<strong>&#x3C;sarang></strong> Please remind the room of the change for (2)<br>
+<strong>&#x3C;suraeNoether></strong> ^ thanks sarang :P<br>
+<strong>&#x3C;ArticMine></strong> 3) My last proposal that moneromooo implemented in PR 5124<br>
+<strong>&#x3C;suraeNoether></strong> i far prefer the dual median approach than PR 5124<br>
+<strong>&#x3C;ArticMine></strong> In the first option the full blockweight including the burst portion was used to scale the long term median<br>
+<strong>&#x3C;ArticMine></strong> This allowed the burst to work with scaling but had the problem of using the entire burst to scale the long term median<br>
+<strong>&#x3C;suraeNoether></strong> PR 5124 concerns me for a couple of reasons. firstly, demonstrating the long-term stability of it… proving that stability… is difficult, and finding parameters that seem to be good is an exercise in hand-tuning. additionally, it’s not clear what we gain from using the more complicated method in the short term. if we are pushing more complicated code, it should be because we have a clear advantage from<br>
+<strong>&#x3C;suraeNoether></strong> using it, some clear efficiency or security gain<br>
+<strong>&#x3C;sarang></strong> Given an unbounded adversary, all proposals allow chain bloat of O(10-100 GB) over, say, a weeklong sustained max-bloat attack<br>
+<strong>&#x3C;sarang></strong> With resulting block sizes 15-30 MB<br>
+<strong>&#x3C;suraeNoether></strong> how much does it cost to do that in all the proposals?<br>
+<strong>&#x3C;ArticMine></strong> 2) smooth’s modification was to not use the 50x burst in scaling the long term median<br>
+<strong>&#x3C;suraeNoether></strong> if all proposals have the same total consequence for the blockchain and the same approximate cost for the attacker, there is zero reason to use something complicated instead of something simple.<br>
+<strong>&#x3C;sarang></strong> O($1-10 M) depending on whether you assume the miners are purely breaking even or not<br>
+<strong>&#x3C;sarang></strong> Under ArticMine’s 4x-rational-miner assumption, they scale 4x from that<br>
+<strong>&#x3C;ArticMine></strong> This had the serious problem of killing the burst over time.<br>
+<strong>&#x3C;moneromooo></strong> If all proposals have the same total consequence for the blockchain and the same approximate cost for the attacker, then you use “normal use” behaviour to select which one is the best.<br>
+<strong>&#x3C;moneromooo></strong> It’s not enough to resist attacks, it must also be useful for normal use.<br>
+<strong>&#x3C;ArticMine></strong> My final proposal addressed the problem in both 1) and 2) b only using the portion of the block weight that would have been allowed under the long term median to scale the long term median<br>
+<strong>&#x3C;sarang></strong> ArticMine: does moneromooo’s code accurately reflect your proposal?<br>
+<strong>&#x3C;sarang></strong> And does my Python code?<br>
+<strong>&#x3C;sarang></strong> I want to make absolutely sure we are all operating on the same assumptions for bloat and cost possibilities<br>
+<strong>&#x3C;sarang></strong> Otherwise we are debating unknowns<br>
+<strong>&#x3C;suraeNoether></strong> ^<br>
+<strong>&#x3C;moneromooo></strong> The python code I saw from… sarang I assume, can’t recall now :) and my code agreed on the results when pushing blocks with the max allowed weight.<br>
+<strong>&#x3C;moneromooo></strong> Also agreed with some python code I made.<br>
+<strong>&#x3C;sarang></strong> For example, a recent change in minimum fee computation to include the long-term weight (and not short-term median) switches from applying the 4x penalty to using the min fee, for example<br>
+<strong>&#x3C;ArticMine></strong> sarang Your python code uses the penalty rather than 4x the penalty<br>
+<strong>&#x3C;sarang></strong> and that spiked the total cost<br>
+<strong>&#x3C;suraeNoether></strong> i am so wildly uncomfortable with this conversation, tbh<br>
+<strong>&#x3C;ArticMine></strong> But it was switched to 4x penalty<br>
+<strong>&#x3C;sarang></strong> Let’s assume we are all talking about this paste: <a href="http://paste.debian.net/hidden/292e473f/" rel="noopener noreferrer external" target="_blank">http://paste.debian.net/hidden/292e473f/</a><br>
+<strong>&#x3C;sarang></strong> Note line 56 please<br>
+<strong>&#x3C;Xeagu></strong> Whatever is implemented should have a clear way to explain to the rest of the ecosystem.<br>
+<strong>&#x3C;sarang></strong> It used the short-term median in the min fee computation, but was changed in line 57 to the lt-weight<br>
+<strong>&#x3C;sarang></strong> This spikes the total cost by order of magnitude, so clearly it means the min fee is applying, rather than the 4x penalty<br>
+<strong>&#x3C;sarang></strong> We should ensure that we are clear of this<br>
+<strong>&#x3C;sarang></strong> *clear on this<br>
+<strong>&#x3C;sarang></strong> So my current questions are: ArticMine is this your intention? moneromooo is the current paste (not the commented-out line) what is in the PR?<br>
+<strong>&#x3C;moneromooo></strong> AFAIK, yes.<br>
+<strong>&#x3C;ArticMine></strong> The past reflect the rational miner so yes<br>
+<strong>&#x3C;ArticMine></strong> paste<br>
+<strong>&#x3C;moneromooo></strong> I do not agre with the rational miner comment though :P<br>
+<strong>&#x3C;sarang></strong> ArticMine: what about the difference between lines 56 and 57?<br>
+<strong>&#x3C;moneromooo></strong> A rational miner would also accept smaller fees, unless I can be convinced otherwise.<br>
+<strong>&#x3C;sarang></strong> That has a _massive_ effect on the cost assumption<br>
+<strong>&#x3C;ArticMine></strong> The difference is between 4x penalty and 1x<br>
+<strong>&#x3C;sarang></strong> No<br>
+<strong>&#x3C;sarang></strong> The difference between 56 and 57 is in how the min fee is scaling<br>
+<strong>&#x3C;sarang></strong> the penalty applies in the next line<br>
+<strong>&#x3C;suraeNoether></strong> there has not been an effort to formalize the design goals of our blocksize adjustment algorithm, so even if we have a new proposal, all we do is say “hmm, how fast can the blockchain grow? hmm how much does that cost?”<br>
+<strong>&#x3C;suraeNoether></strong> we may as well be picking random functions and seeing if they do what we want them to do, if we aren’t going to start with design principles or urgent needs first and move forward from there.<br>
+<strong>&#x3C;suraeNoether></strong> With that in mind, our primary urgent need is to prevent a bloatocalypse before the next fork. Keeping next block size at something like R*Median(N) is still rational, we just need to boost N and decrease R to make it so that 6 months can’t give us more than a certain growth over the trendline, selecting N to dictate how long the attacker needs to blow fees.<br>
+<strong>&#x3C;oneiric_></strong> what is the practical urgency of implementing one of the suggested modifications to blocksize adjustment?<br>
+<strong>&#x3C;suraeNoether></strong> in the meantime, I am willing to make a formal bet that the only reason we could possibly need a 50x boost in block size in the next 180 days is a bloat attack. i see no good reason to take the short-term xmas day factor into account for this immediate next hard fork, for a lot of design reasons<br>
+<strong>&#x3C;ArticMine></strong> No it is not<br>
+<strong>&#x3C;suraeNoether></strong> ArticMine: ??<br>
+<strong>&#x3C;ArticMine></strong> The urgency here is questionable at most<br>
+<strong>&#x3C;suraeNoether></strong> ArticMine: i absolutely disagree<br>
+<strong>&#x3C;oneiric_></strong> so postponing for 1-2 forks is not the worst-case scenario?<br>
+<strong>&#x3C;suraeNoether></strong> i don’t want to be chicken little here<br>
+<strong>&#x3C;suraeNoether></strong> the sky is falling yada yada<br>
+<strong>&#x3C;suraeNoether></strong> but guys, for essentially the cost of an apartment building, someone could take the monero blockchain and make it bigger than ethereum’s<br>
+<strong>&#x3C;suraeNoether></strong> i find this to be an intolerably insecure property of our block size adjustment algorithm<br>
+<strong>&#x3C;suraeNoether></strong> it’s a whim for the winklevii<br>
+<strong>&#x3C;ArticMine></strong> If we rush into this without taking into consideration the implication on Monero ability to scale we can destroy a critical component of Monero’s social covenant<br>
+<strong>&#x3C;ArticMine></strong> Or cripple it<br>
+<strong>&#x3C;suraeNoether></strong> ArticMine: our social contract is to ensure that our currency remains functional<br>
+<strong>&#x3C;suraeNoether></strong> a 160GB blockchain is not functional<br>
+<strong>&#x3C;ArticMine></strong> It has been functional for 4 years<br>
+<strong>&#x3C;moneromooo></strong> The fees were just dropped to ~nothing recently though.<br>
+<strong>&#x3C;oneiric_></strong> is there any indication that 160GB is near?<br>
+<strong>&#x3C;suraeNoether></strong> “the attack hasn’t happened yet” != “the attack will not happen or is not incentivized to happen”<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;serhack></strong> ArticMine: Yes, but that does not mean that could work for the next years.<br>
+<strong>&#x3C;moneromooo></strong> Actually I take that back. It was still the same penalty.<br>
+<strong>&#x3C;suraeNoether></strong> since any change we make in this fork can be undone in the next fork, your argument about long term scaling and the social contract doesn’t hold up<br>
+<strong>&#x3C;ArticMine></strong> This is a theoretical attack that is more expensive than a 51% attack<br>
+<strong>&#x3C;Xeagu></strong> Do we have simulations of upper bound organic growth in x time? Say Monero gets added to Open Bazaar or something - what is the realistic transaction growth we might expect?<br>
+<strong>&#x3C;suraeNoether></strong> it’s about as expensive as a 51% attack, with the difference that it requires no hardware<br>
+<strong>&#x3C;suraeNoether></strong> xeagu no, we have no data on adoption rate into new markets, although we could ballpark some estimates of what we think are reasonable, we are still just hand-tuning our approach<br>
+<strong>&#x3C;ArticMine></strong> a 515 attack include the cost of hardware<br>
+<strong>&#x3C;ArticMine></strong> 51%<br>
+<strong>&#x3C;suraeNoether></strong> ArticMine: in order to pull off a 51% attack, i need i) the money and ii) some miners willing to take my bribe at the cost of the value of their xmr<br>
+<strong>&#x3C;suraeNoether></strong> in order to do a bloat attack, i just need a bunch of xmr outputs<br>
+<strong>&#x3C;ArticMine></strong> You have to pay for both<br>
+<strong>&#x3C;suraeNoether></strong> so the cost may be equivalent in terms of USD, but the social friction to one attack is much lower compared to the other<br>
+<strong>&#x3C;Xeagu></strong> One is permissionless<br>
+<strong>&#x3C;ArticMine></strong> So it the other<br>
+<strong>&#x3C;ArticMine></strong> is<br>
+<strong>&#x3C;suraeNoether></strong> ArticMine: nah, you need to go find miners to work with<br>
+<strong>&#x3C;ArticMine></strong> Rent the hard ware<br>
+<strong>&#x3C;suraeNoether></strong> even if you have to spin up AWS, that means you have to go through amazon<br>
+<strong>&#x3C;suraeNoether></strong> that isn’t permissionless<br>
+<strong>&#x3C;suraeNoether></strong> anyway<br>
+<strong>&#x3C;ArticMine></strong> or buy it<br>
+<strong>&#x3C;suraeNoether></strong> we are going down a rabbit hole<br>
+<strong>&#x3C;sarang></strong> OK, so<br>
+<strong>&#x3C;suraeNoether></strong> I’m advocating that we merely modify our growth rate and sample size and then spend the next 6 months making a non-rushed decision<br>
+<strong>&#x3C;sarang></strong> What is on the table right now is a proposed PR, which you may or may not think is too complex<br>
+<strong>&#x3C;sarang></strong> I want to know that PR 5124 matches the linked paste<br>
+<strong>&#x3C;sarang></strong> and that the cost computation in the paste is accurate<br>
+<strong>&#x3C;sarang></strong> then we _at least_ know what the cost and bloat effects of 5124 are<br>
+<strong>&#x3C;ArticMine></strong> My point is we have created artificial urgency and as a consequence could destroy a critical component of Monero<br>
+<strong>&#x3C;suraeNoether></strong> articmine: tweaking R and N can not destroy a critical component of monero<br>
+<strong>&#x3C;suraeNoether></strong> but implementing a complicated blocksize adjustment algorithm with 18 parantheses that is hard to intuit or reason about? that could.<br>
+<strong>&#x3C;ArticMine></strong> That is the trouble with the artificial urgency<br>
+<strong>&#x3C;suraeNoether></strong> okay, i said my piece<br>
+<strong>&#x3C;moneromooo></strong> Having ArticMine’s change in does not prevent it being changed later if something more appropriate is found. Which may be the case if suraeNoether does the study he advocated earlier.<br>
+<strong>&#x3C;sarang></strong> I am currently advocating for nothing, since I have received no satisfactory guidance about whether 5124 matches the numbers we have been basing assumptions on<br>
+<strong>&#x3C;ArticMine></strong> I am in the process of evaluating just that<br>
+<strong>&#x3C;moneromooo></strong> It matches the numbers for max sized blocks.<br>
+<strong>&#x3C;moneromooo></strong> I did not try non-max size blocks though. I will try that.<br>
+<strong>&#x3C;sarang></strong> ty ArticMine. In particular: please try switching between lines 56 and 57 and note the cost change<br>
+<strong>&#x3C;sarang></strong> and ensure we are comfortable with that<br>
+<strong>&#x3C;ArticMine></strong> In hour paste<br>
+<strong>&#x3C;ArticMine></strong> your<br>
+<strong>&#x3C;sarang></strong> moneromooo: right, the question is fee and cost, not blocksize, between those lines’ changes<br>
+<strong>&#x3C;Xeagu></strong> If we implement ArticMine’s change, can we also come up with a ELI5 explanation of what is going on?<br>
+<strong>&#x3C;sarang></strong> ArticMine: yes, 56-57 in my paste, linked again here: <a href="http://paste.debian.net/hidden/292e473f/" rel="noopener noreferrer external" target="_blank">http://paste.debian.net/hidden/292e473f/</a><br>
+<strong>&#x3C;sarang></strong> Xeagu: yes<br>
+<strong>&#x3C;moneromooo></strong> Oh OK. I did not do anything with fee with my code.<br>
+<strong>&#x3C;sarang></strong> moneromooo: you had specifically requested the line 57 change<br>
+<strong>&#x3C;sarang></strong> IIRC<br>
+<strong>&#x3C;moneromooo></strong> s/do/test, log, etc/<br>
+<strong>&#x3C;moneromooo></strong> Yes, the change is what ArticMine suggested a while back to make the attack more expensive.<br>
+<strong>&#x3C;moneromooo></strong> (and I do not agree it does make it more expensive fwiw)<br>
+<strong>&#x3C;moneromooo></strong> That change is what the second commit in 5124 does.<br>
+<strong>&#x3C;ArticMine></strong> Yes 57 addresses maintenance cost of keeping the locks bloated<br>
+<strong>&#x3C;ArticMine></strong> Which is what I recommended<br>
+<strong>&#x3C;sarang></strong> OK, so in your opinion ArticMine, running that paste in its current form will provide the cost to an attacker, assuming rational miners<br>
+<strong>&#x3C;sarang></strong> ?<br>
+<strong>&#x3C;ArticMine></strong> Yes<br>
+<strong>&#x3C;sarang></strong> thank you<br>
+<strong>&#x3C;sarang></strong> note to moneromooo ^<br>
+<strong>&#x3C;moneromooo></strong> who still does not think it works<br>
+<strong>&#x3C;sarang></strong> At least we agree on the final bloat and blocksize :/<br>
+<strong>&#x3C;sarang></strong> (using the “attacker with infinite money and rage” model)<br>
+<strong>&#x3C;ArticMine></strong> This all comes back to suraeNoether point what are our design parameters?<br>
+<strong>&#x3C;sarang></strong> We have not formally defined them<br>
+<strong>&#x3C;suraeNoether></strong> after the meeting i’m going to host an impromptu brain session on that i think articmine<br>
+<strong>&#x3C;Xeagu></strong> Fwiw none of these measures seem to prevent slower bloat with min fee txs flooding the mempool and eventually getting confirmed over time<br>
+<strong>&#x3C;ArticMine></strong> Yes<br>
+<strong>&#x3C;suraeNoether></strong> i have some formal ideas<br>
+<strong>&#x3C;sarang></strong> OK, so let’s move on for now perhaps. Right now we have the current scheme, and the PR, and a dual-median idea that’s not in a PR<br>
+<strong>&#x3C;sarang></strong> After meeting, more discussion<br>
+<strong>&#x3C;sarang></strong> Output selection is also being worked on, with no final changes yet<br>
+<strong>&#x3C;sarang></strong> The idea being to weight block selection for ring decoys by the number of outputs, consistent with our gamma spend distribution<br>
+<strong>&#x3C;suraeNoether></strong> isthmus and i had some discussion on output selection<br>
+<strong>&#x3C;ArticMine></strong> If we are trying to minimize the risk of bloat without any other considerations then we end up destroying the adaptive blocksize<br>
+<strong>&#x3C;sarang></strong> ArticMine: let’s discuss after meeting<br>
+<strong>&#x3C;ArticMine></strong> Sure<br>
+<strong>&#x3C;sarang></strong> Please go ahead with output selection suraeNoether<br>
+<strong>&#x3C;suraeNoether></strong> one thing isthmus pointed out is the classic problem with multi-input transactions<br>
+<strong>&#x3C;suraeNoether></strong> for example, if I produce a ring signature with ring {A, B, C} and a ring signature with ring {D, E, F} in the same transaction, and A and D both have the same age, then it’s “obvious” who the true spender is<br>
+<strong>&#x3C;suraeNoether></strong> or rather, allows for heuristic’in<br>
+<strong>&#x3C;sarang></strong> monerocoinjoin helps to break this, fwiw<br>
+<strong>&#x3C;suraeNoether></strong> and after more and more discussion, i’m finally coming around on the idea of binning inputs<br>
+<strong>&#x3C;suraeNoether></strong> sarang ^ yes<br>
+<strong>&#x3C;sarang></strong> s/helps/could help someday<br>
+<strong>&#x3C;sarang></strong> The major issue at hand _that was recently introduced_ is biased coinbase selection (and biased selection in general)<br>
+<strong>&#x3C;Xeagu></strong> Input age heuristic for multi ring transactions is an interesting consideration<br>
+<strong>&#x3C;Inge-></strong> 18:25 &#x3C; ArticMine> is<br>
+<strong>&#x3C;sarang></strong> IMO we should iteratively first focus on removing some of the selection bias, and then later move to address other multi-in heuristics<br>
+<strong>&#x3C;Xeagu></strong> Got it<br>
+<strong>&#x3C;sarang></strong> Is there opposition to a move to a weighted selection that accounts for this bias?<br>
+<strong>&#x3C;Xeagu></strong> What is the biased coinbase selection problem?<br>
+<strong>&#x3C;sarang></strong> If you select a block and then an output within it, you are likely to have bad distributions that aren’t representative of the whole chain, due to variance in block sizes<br>
+<strong>&#x3C;moneromooo></strong> The fewer outputs in a block, the more likely they are to be chosen as fake outs.<br>
+<strong>&#x3C;sarang></strong> If you weight based on # of outputs, you can remove this<br>
+<strong>&#x3C;sarang></strong> doing it efficiently is the tricky part, due to the gamma requirement<br>
+<strong>&#x3C;sarang></strong> I only bring it up here to see if there is opposition to moving to such an approach, and then later continuing to iterate if needed<br>
+<strong>&#x3C;Xeagu></strong> It’s almost like you need extra decoy outputs as padding in each block so there is not much variance in total outputs between blocks<br>
+<strong>&#x3C;suraeNoether></strong> i can spend about 30 minutes today writing up some pseudocode if that helps with the distribution stuff…<br>
+<strong>&#x3C;sgp_></strong> I think it’s a good stopgap<br>
+<strong>&#x3C;suraeNoether></strong> xeagu no, extra decoy outputs have their own security problems<br>
+<strong>&#x3C;moneromooo></strong> No. Do not spam the chain.<br>
+<strong>&#x3C;suraeNoether></strong> ^<br>
+<strong>&#x3C;sarang></strong> Xeagu: we really don’t<br>
+<strong>&#x3C;sarang></strong> weighting accounts for variance<br>
+<strong>&#x3C;sarang></strong> that’s the point<br>
+<strong>&#x3C;Xeagu></strong> Noted<br>
+<strong>&#x3C;sarang></strong> suraeNoether: please write up your pseudocode ASAP, and I will as well<br>
+<strong>&#x3C;sarang></strong> this is not consensus, but the upgrade is a good time to do it if possible<br>
+<strong>&#x3C;suraeNoether></strong> yeah, essentially, for the stats nerds in the audience<br>
+<strong>&#x3C;moneromooo></strong> If someone tells me how to calculate the gamma CDF (or something that’s close enough), I can do that code. It’s the only thing I’m missing.<br>
+<strong>&#x3C;sarang></strong> moneromooo: this assumes you’re recalculating the product (this block’s gamma factor)*(this block’s weight) for each block, every time a new block arrives?<br>
+<strong>&#x3C;sarang></strong> that was the inefficiency I wanted to address<br>
+<strong>&#x3C;moneromooo></strong> Every time someone wants to make a tx. Which is hopefully less often.<br>
+<strong>&#x3C;sarang></strong> OK, but it’s for the entire chain?<br>
+<strong>&#x3C;moneromooo></strong> OK. Good to have if you can, sure.<br>
+<strong>&#x3C;moneromooo></strong> Yes.<br>
+<strong>&#x3C;sarang></strong> got it<br>
+<strong>&#x3C;sarang></strong> there was talk about a cutoff point, but that renders old outputs detectable<br>
+<strong>&#x3C;moneromooo></strong> Well, technically the whole chain since rct started.<br>
+<strong>&#x3C;sarang></strong> heh sure<br>
+<strong>&#x3C;suraeNoether></strong> we are transitioning from “drawing randomly from an ideal distribution ignoring the current blockchain state (in terms of density of txns per block)” to “drawing randomly from a partially empirical distribution based both on an ideal distribution and the observation of the current blockchain state.<br>
+<strong>&#x3C;sarang></strong> so in fact that does allow a cutoff of sorts…<br>
+<strong>&#x3C;sarang></strong> Cool, we shall prioritize that to get it in before freeze<br>
+<strong>&#x3C;sarang></strong> Let’s move to 3. OTHER WORK<br>
+<strong>&#x3C;sarang></strong> I continue to work on a few things listed in the agenda<br>
+<strong>&#x3C;moneromooo></strong> I’ll use some interpolation as smooth suggested, so you’ll have to calc gamma for 1/100 points or whatever in practice.<br>
+<strong>&#x3C;sarang></strong> in addition to the upgrade items<br>
+<strong>&#x3C;suraeNoether></strong> but i do want to go back to the multi-input thing this week, because i think it’s a critical security concern that we have merely gotten used to because we’ve known about it for awhile and didn’t have a solution for… but we have more pressing stuff to take care of immediately<br>
+<strong>&#x3C;sarang></strong> Yes we do<br>
+<strong>&#x3C;sarang></strong> an interesting point is Dandelion, which I’ve been looking into more deeply<br>
+<strong>&#x3C;oneiric_></strong> ^<br>
+<strong>&#x3C;sarang></strong> there was talk among btc devs about possible DoS avenues in the stem phase of routing<br>
+<strong>&#x3C;suraeNoether></strong> the more i read about dandelion++ the more i like it, but hte more i wish they stuck with a single +<br>
+<strong>&#x3C;sarang></strong> having to do with the mempool<br>
+<strong>&#x3C;sarang></strong> These may not apply to us, but I’m reading up on their concerns<br>
+<strong>&#x3C;sarang></strong> They also had issues relating to unconfirmed txs relying on each other that we don’t care about<br>
+<strong>&#x3C;sarang></strong> Any specific questions for me regarding my agenda-listed items?<br>
+<strong>&#x3C;sarang></strong> My first priorities are upgrade items, of course<br>
+<strong>&#x3C;Xeagu></strong> Not mentioned is mining algo. Is that planning on being changed next fork?<br>
+<strong>&#x3C;sarang></strong> yes<br>
+<strong>&#x3C;moneromooo></strong> Yes.<br>
+<strong>&#x3C;sarang></strong> details tbd<br>
+<strong>&#x3C;Xeagu></strong> Got it<br>
+<strong>&#x3C;oneiric_></strong> are the candidates known atm?<br>
+<strong>&#x3C;sarang></strong> I also consider that outside the scope of this room, for the most part<br>
+<strong>&#x3C;sarang></strong> I hear CN-R with tbd tweak(s)<br>
+<strong>&#x3C;oneiric_></strong> thanks sarang<br>
+<strong>&#x3C;sarang></strong> OK, suraeNoether ?<br>
+<strong>&#x3C;sarang></strong> your updates?<br>
+<strong>&#x3C;suraeNoether></strong> Well, I finally realized how to formally hypothesize about the EAE attack in the bipartite graph setting for MRL11, which has allowed me to start writing up simulations<br>
+<strong>&#x3C;sarang></strong> neat!<br>
+<strong>&#x3C;suraeNoether></strong> basically: i’m assuming blocks arrive one at a time linearly for the sake of simplicity, i assume transaction density in each block is poisson distributed, and i assume each transaction is M-in, N-out according to some distribution I haven’t selected yet (but will probably be empirical from our blockchain)<br>
+<strong>&#x3C;suraeNoether></strong> I do this for a number of blocks T, to simulate a fake blockchain that exists before the game begins<br>
+<strong>&#x3C;suraeNoether></strong> then, in addition to the random block density I just described, a single user is going to churn K times<br>
+<strong>&#x3C;sarang></strong> What timing distribution?<br>
+<strong>&#x3C;suraeNoether></strong> the wallet distribution<br>
+<strong>&#x3C;sarang></strong> define plz<br>
+<strong>&#x3C;sarang></strong> I mean, how often do they churn?<br>
+<strong>&#x3C;suraeNoether></strong> oh, i’m going to explore that as a parameter with K=1 to K=15 or so<br>
+<strong>&#x3C;sarang></strong> roger<br>
+<strong>&#x3C;suraeNoether></strong> then i’m going to run the matching algorithm and see the probability that the person “gets caught” meaning their transactions are labeled/matched<br>
+<strong>&#x3C;sarang></strong> sweet<br>
+<strong>&#x3C;suraeNoether></strong> we already have ideas on timing, so we can figure out how this scales to a big parallel process, and we can generate a confusion table<br>
+<strong>&#x3C;moneromooo></strong> Is this the same thing as a confusion matrix ?<br>
+<strong>&#x3C;suraeNoether></strong> yeash<br>
+<strong>&#x3C;suraeNoether></strong> yes*<br>
+<strong>&#x3C;suraeNoether></strong> so the idea is to ask the question ‘under certain user behavior, which is what we recommend for churn, what sort of security can someone practically expect?’<br>
+<strong>&#x3C;suraeNoether></strong> concretely<br>
+<strong>&#x3C;sarang></strong> Awesome, please keep us updated on the sim results. This will be very useful to those needing to churn safely<br>
+<strong>&#x3C;suraeNoether></strong> i also have an alternative model where only coinbase outputs are added to the system but they get sent with wait-times equal to the wallet distribution also<br>
+<strong>&#x3C;suraeNoether></strong> will do<br>
+<strong>&#x3C;Xeagu></strong> You testing if there is a limit to churning that begins to weaken security?<br>
+<strong>&#x3C;suraeNoether></strong> xeagu trying to formalize “how much should you churn for the following security level”<br>
+<strong>&#x3C;Xeagu></strong> Got it<br>
+<strong>&#x3C;suraeNoether></strong> it’d be interesting to see if churning too much gives it away<br>
+<strong>&#x3C;suraeNoether></strong> which is an old hypothesis of mine :D<br>
+<strong>&#x3C;sarang></strong> Anything else you’re working on?<br>
+<strong>&#x3C;suraeNoether></strong> the blocksize dynamic adaptability problem, of course, and my December + January end of month report<br>
+<strong>&#x3C;sarang></strong> Neat<br>
+<strong>&#x3C;suraeNoether></strong> i like giving plenty of time for comments. *cough*<br>
+<strong>&#x3C;sarang></strong> Before we review action items, any specific directed questions, or other work to share?<br>
+<strong>&#x3C;suraeNoether></strong> oh i read a paper<br>
+<strong>&#x3C;suraeNoether></strong> oh oh<br>
+<strong>&#x3C;needmoney90></strong> Have you considered the alternative funding avenue discussed in Palo alto?<br>
+<strong>&#x3C;suraeNoether></strong> <a href="https://eprint.iacr.org/2018/379" rel="noopener noreferrer external" target="_blank">https://eprint.iacr.org/2018/379</a><br>
+<strong>&#x3C;sarang></strong> our old friend Liu<br>
+<strong>&#x3C;sarang></strong> needmoney90: remind the room of this funding avenue<br>
+<strong>&#x3C;needmoney90></strong> Patreon or a similar system<br>
+<strong>&#x3C;suraeNoether></strong> oh yes<br>
+<strong>&#x3C;needmoney90></strong> With the unfunded part going to the MFS<br>
+<strong>&#x3C;needmoney90></strong> Gives more assurance of future funding<br>
+<strong>&#x3C;sarang></strong> It would increase the funding timeline<br>
+<strong>&#x3C;suraeNoether></strong> needmoney90 brought up the idea of doing a patreon for MRL so that researchers can get a little bit of reliability in getting paid in USD<br>
+<strong>&#x3C;sarang></strong> Keep in mind we can now also request immediate MFS payout if this is clearly stated<br>
+<strong>&#x3C;suraeNoether></strong> i honestl haven’t thought about it much, but the centralization risk of going through patreon is a concern… even though it’s mitigated by the MFS<br>
+<strong>&#x3C;sarang></strong> suraeNoether: nobody has to use patreon<br>
+<strong>&#x3C;sarang></strong> they can donate via mfs<br>
+<strong>&#x3C;needmoney90></strong> Yup, this prevents the whole ‘Will we get funded’ thing, where you know you have a baseline level of contribution even if the MFS falls through<br>
+<strong>&#x3C;moneromooo></strong> What is MFS ?<br>
+<strong>&#x3C;sarang></strong> Nice. I’m not opposed to it as another option<br>
+<strong>&#x3C;sarang></strong> apparently the renaming for NewFFS<br>
+<strong>&#x3C;needmoney90></strong> Monero funding system<br>
+<strong>&#x3C;needmoney90></strong> It’s no longer on a forum<br>
+<strong>&#x3C;sgp_></strong> I thought it was the CCS<br>
+<strong>&#x3C;sarang></strong> -_____-<br>
+<strong>&#x3C;needmoney90></strong> No one told me :(<br>
+<strong>&#x3C;Xeagu></strong> For F*** Sake I liked FFS<br>
+<strong>&#x3C;sarang></strong> Anyway<br>
+<strong>&#x3C;oneiric_></strong> lol<br>
+<strong>&#x3C;sarang></strong> To keep things tight, 5. ACTION ITEMS<br>
+<strong>&#x3C;sarang></strong> Deciding on block size algorithm, if any, should be a priority<br>
+<strong>&#x3C;sarang></strong> otherwise nothing will happen<br>
+<strong>&#x3C;sarang></strong> After meeting will be a chance to discuss formal requirements for this<br>
+<strong>&#x3C;sarang></strong> Next<br>
+<strong>&#x3C;sarang></strong> suraeNoether and I have different ideas on weighted output selection that need to be tested and shared for possible inclusion in the upgrade<br>
+<strong>&#x3C;sarang></strong> suraeNoether will be working on churn sims<br>
+<strong>&#x3C;sarang></strong> I will be trying my darndest to get back to the bulletproofs MPC, and understanding DoS risks in Dandelion routing<br>
+<strong>&#x3C;sarang></strong> Any last comments before we officially adjourn?<br>
+<strong>&#x3C;oneiric_></strong> what are the chances of something like the btc key-reuse in monero?<br>
+<strong>&#x3C;sarang></strong> what does this mean<br>
+<strong>&#x3C;oneiric_></strong> there was that paper recently about computing btc addresses iirc<br>
+<strong>&#x3C;moneromooo></strong> About weighted output selection: if I have the code for calculating gamma before any fancy opt is found, I can add the code already. Then add the fancy opts on top.<br>
+<strong>&#x3C;sarang></strong> ty moneromooo<br>
+<strong>&#x3C;sarang></strong> oneiric_: linkylinky<br>
+<strong>&#x3C;sarang></strong> We can at least get a series approximation for later interpolation<br>
+<strong>&#x3C;oneiric_></strong> <a href="https://eprint.iacr.org/2019/023.pdf" rel="noopener noreferrer external" target="_blank">https://eprint.iacr.org/2019/023.pdf</a><br>
+<strong>&#x3C;sarang></strong> any bias in that approximation will be a wash<br>
+<strong>&#x3C;sarang></strong> Ah yes. Don’t use silly RNGs<br>
+<strong>&#x3C;moneromooo></strong> I’m fine with a way to compute an approximation.<br>
+<strong>&#x3C;oneiric_></strong> right, but is monero vulnerable to that style of attack?<br>
+<strong>&#x3C;sarang></strong> Thanks, everyone. Meeting adjourned</p>  </div>  </article> <aside data-border="true" data-transparent="true" style="--card-padding: var(--space-xl); --card-radius: var(--radius-md)" data-astro-cid-ndejf7ww="true" data-astro-cid-dd5txfcy="true" class="card sidebar">  <h2 data-astro-cid-ndejf7ww>近期文章</h2> <ul class="recent-posts" data-astro-cid-ndejf7ww> <li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/03/04/monero-GUI-0.18.4.7-released/" data-astro-cid-ndejf7ww> Monero GUI 0.18.4.7 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-ndejf7ww> 2026年3月4日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/03/04/monero-0.18.4.6-released/" data-astro-cid-ndejf7ww> Monero 0.18.4.6 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-ndejf7ww> 2026年3月4日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/01/07/monero-GUI-0.18.4.5-released/" data-astro-cid-ndejf7ww> Monero GUI 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-ndejf7ww> 2026年1月7日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/01/07/monero-0.18.4.5-released/" data-astro-cid-ndejf7ww> Monero 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-ndejf7ww> 2026年1月7日 </time> </li> </ul>  </aside>  </div>  </main> <footer class="footer" aria-label="页脚" data-astro-cid-mh6itkc3> <div class="items" data-astro-cid-mh6itkc3> <nav class="grid" aria-label="页脚导航" data-astro-cid-mh6itkc3> <section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>资源</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/zh/get-started/what-is-monero/" data-astro-cid-mh6itkc3> 关于 Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/moneropedia/" data-astro-cid-mh6itkc3> Moneropedia  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://docs.getmonero.org" data-astro-cid-mh6itkc3> Monero 文档  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/get-started/faq/" data-astro-cid-mh6itkc3> 常见问题  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>联系我们</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/zh/community/workgroups/" data-astro-cid-mh6itkc3> 工作组  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/community/hangouts/" data-astro-cid-mh6itkc3> 社交场所  </a> </li><li data-astro-cid-mh6itkc3> <a href="/postorius/lists/monero-announce.lists.getmonero.org" data-astro-cid-mh6itkc3> 邮件列表  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>社区</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://monero.stackexchange.com/" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Stack Exchange  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://bitcointalk.org/index.php?topic=583449.0" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Bitcoin Talk  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://translate.getmonero.org" data-astro-cid-mh6itkc3> 翻译  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>Monero 项目</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://openalias.org" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Open Alias  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/research-lab/" data-astro-cid-mh6itkc3> Monero 研究实验室 (MRL)  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/press-kit/" data-astro-cid-mh6itkc3> 媒体资料包  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://ccs.getmonero.org" data-astro-cid-mh6itkc3> 社区众筹系统  </a> </li> </ul> </section> </nav> <nav class="bottom" aria-label="次要页脚导航" data-astro-cid-mh6itkc3> <ul class="inline-list" data-astro-cid-mh6itkc3> <li class="inline-item" data-astro-cid-mh6itkc3> <a href="#" data-astro-cid-mh6itkc3> Tor 洋葱服务 <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/tor.D04gt7iP_278xXg.avif);--iconColor: #7d4698;--spacing: 0.25em;"></div>  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> 漏洞响应  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/zh/legal/" data-astro-cid-mh6itkc3> 法律  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> 源代码  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/feed.xml" data-astro-cid-mh6itkc3> RSS 订阅 <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/rss.jnIu9F4x_Z28u6pV.avif);--iconColor: var(--monero-orange);--spacing: 0.25em;"></div>  </a> </li> </ul> </nav> </div> </footer>   </body></html> 

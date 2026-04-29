@@ -1,0 +1,328 @@
+<!DOCTYPE html><html lang="zh" dir="ltr" data-astro-cid-sckkx6r4> <head><title>博客 | Overview and Logs for the Dev Meeting Held on 2019-09-22</title><meta charset="UTF-8"><link rel="canonical" href="https://beta.monerodevs.org/zh/blog/2019/09/22/logs-for-the-dev-meeting-held-on-2019-09-22/"><meta name="description" content="Development status, 0.15 release discussion, Network upgrade planning, and miscellaneous"><meta name="robots" content="index, follow"><meta property="og:title" content="Overview and Logs for the Dev Meeting Held on 2019-09-22"><meta property="og:type" content="article"><meta property="og:image" content="https://beta.monerodevs.org/open-graph/blog/2019/09/22/logs-for-the-dev-meeting-held-on-2019-09-22.png"><meta property="og:url" content="https://beta.monerodevs.org/zh/blog/2019/09/22/logs-for-the-dev-meeting-held-on-2019-09-22/"><meta property="og:locale" content="zh"><meta property="og:locale:alternate" content="en"><meta property="og:locale:alternate" content="ar"><meta property="og:site_name" content="Monero"><meta property="og:image:url" content="https://beta.monerodevs.org/open-graph/blog/2019/09/22/logs-for-the-dev-meeting-held-on-2019-09-22.png"><meta property="og:image:alt" content="OpenGraph image for Monero blog post titled &#34;Overview and Logs for the Dev Meeting Held on 2019-09-22&#34;"><meta property="article:published_time" content="2019-09-22T00:00:00.000Z"><meta property="article:author" content="el00ruobuob / rehrar"><meta property="article:tag" content="dev diaries"><meta property="article:tag" content="core"><meta property="article:tag" content="crypto"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@monero"><meta name="twitter:title" content="Overview and Logs for the Dev Meeting Held on 2019-09-22"><meta name="twitter:image" content="https://beta.monerodevs.org/open-graph/blog/2019/09/22/logs-for-the-dev-meeting-held-on-2019-09-22.png"><meta name="twitter:description" content="Development status, 0.15 release discussion, Network upgrade planning, and miscellaneous"><link rel="preload" as="font" type="font/woff2" href="/_astro/dm-sans-latin-wght-normal.Xz1IZZA0.woff2" crossorigin="anonymous"><link rel="icon" href="/meta/favicon-16x16.png" sizes="16x16"><link rel="icon" href="/meta/favicon-32x32.png" sizes="32x32"><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.18.0"><meta name="color-scheme" content="light dark"><link rel="alternate" hreflang="en" href="https://beta.monerodevs.org/blog/2019/09/22/logs-for-the-dev-meeting-held-on-2019-09-22/"><link rel="alternate" hreflang="ar" href="https://beta.monerodevs.org/ar/blog/2019/09/22/logs-for-the-dev-meeting-held-on-2019-09-22/"><link rel="alternate" hreflang="zh" href="https://beta.monerodevs.org/zh/blog/2019/09/22/logs-for-the-dev-meeting-held-on-2019-09-22/"><link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="https://beta.monerodevs.org/feed.xml"><style>#blog-content{line-height:var(--line-height-body);word-wrap:break-word;color:light-dark(inherit,var(--paragraph-main));:where(h2,h3,h4){font-weight:var(--font-weight-bold)}img{border-radius:var(--radius-md)}a:not(.moneropedia-link){color:light-dark(var(--text-primary),var(--paragraph-main));font-weight:var(--font-weight-medium);text-decoration-line:underline;text-decoration-style:dotted;&:hover{color:light-dark(var(--text-secondary),var(--heading-color))}}h1{font-size:var(--font-size-2xl)}h2{font-size:var(--font-size-xl)}h3{font-size:var(--font-size-lg)}h4{font-size:var(--font-size-md)}p{margin-bottom:1em}li{margin-bottom:.25em}pre{padding:1em;border-radius:var(--radius-md);overflow-x:auto;background:var(--footer-color);code{background:none;padding:0;border-radius:0}}code:not(pre code){font-family:monospace;background-color:var(--footer-color);padding:.1em .3em;border-radius:var(--radius-sm)}blockquote{margin:1.5em 0;padding-inline:1.5em 1em;border-inline-start:3px solid var(--border-color);font-style:italic;color:var(--text-secondary)}strong{font-weight:var(--font-weight-bold)}em{font-style:italic}}h1[data-astro-cid-7dcwcvhl]{font-size:var(--font-size-3xl);margin:0}#post-header[data-astro-cid-7dcwcvhl]{margin-bottom:var(--page-top-margin)}#meta[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-2xl);color:var(--text-secondary);margin-top:var(--space-md);margin-bottom:var(--space-xl);font-size:var(--font-size-lg);font-weight:var(--font-weight-normal)}.meta-item[data-astro-cid-7dcwcvhl]{display:flex;align-items:center;gap:var(--space-xs);>.icon{display:grid;place-items:center;color:var(--monero-orange)}}.tag-container[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-xs);font-size:var(--font-size-sm);flex-wrap:wrap;.tag{text-align:center;padding:var(--space-2xs) var(--space-sm);background:var(--footer-color);border-radius:var(--radius-md);text-transform:uppercase;font-weight:var(--font-weight-semibold);text-decoration:none;color:inherit;white-space:nowrap;&:hover{color:var(--text-secondary)}}}@media(width<=600px){#meta[data-astro-cid-7dcwcvhl]{flex-direction:column;font-size:var(--font-size-md);font-weight:var(--font-weight-medium);gap:var(--space-md)}.meta-item[data-astro-cid-7dcwcvhl]{>.icon{font-size:var(--font-size-lg)}}}
+.card[data-astro-cid-dd5txfcy]{background:var(--card-color);padding:var(--card-padding);border-radius:var(--card-radius);&[data-border]{border:1px solid var(--border-color)}&[data-transparent]{background:transparent}&[data-hover]{transition:background .15s ease;&[data-astro-cid-dd5txfcy]:hover,&[data-astro-cid-dd5txfcy]:focus-visible{background:var(--card-hover-color)}}}
+.icon[data-astro-cid-bpjkz5as]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);margin-inline-start:var(--spacing);background:var(--iconColor);mask:var(--iconSrc) no-repeat center / contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}
+</style>
+<link rel="stylesheet" href="/_astro/_page_.DxMr-0dd.css">
+<style>.blog-container[data-astro-cid-ndejf7ww]{display:grid;grid-template-columns:1fr;gap:var(--space-2xl);>*{min-width:0}}.sidebar[data-astro-cid-ndejf7ww]{height:fit-content;& h2[data-astro-cid-ndejf7ww]{font-size:var(--font-size-xl);margin-top:0}}.recent-posts[data-astro-cid-ndejf7ww]{list-style:none;padding:0;margin-bottom:0;display:flex;flex-direction:column;gap:var(--space-md);li{margin-bottom:var(--space-xs)}.post-title{font-size:var(--font-size-md);color:var(--paragraph-main);text-decoration-line:underline;text-decoration-style:dotted;&:hover{text-decoration:underline}}.post-date{display:block;font-size:var(--font-size-sm);color:var(--paragraph-subtitle);margin-top:var(--space-2xs)}}@media(width>=1200px){.blog-container[data-astro-cid-ndejf7ww]{grid-template-columns:1fr 65ch 1fr}.blog-post[data-astro-cid-ndejf7ww]{grid-column:2}.sidebar[data-astro-cid-ndejf7ww]{grid-column:2;grid-row:2}}@media(width>=1600px){.sidebar[data-astro-cid-ndejf7ww]{grid-column:3;grid-row:1}}
+:where([data-astro-image]){object-fit:var(--fit);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+.moneropedia-link{position:relative;display:inline-block;color:var(--monero-orange);text-decoration-line:underline;text-decoration-style:dotted;cursor:help;font-weight:var(--font-weight-medium)}.moneropedia-link:hover,.moneropedia-link:focus-visible{text-decoration:none}.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{content:none}@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{position:absolute;left:50%;opacity:0;pointer-events:none;transform:translate(-50%) translateY(0);transition:opacity .18s ease-out,transform .18s ease-out;z-index:10}.moneropedia-link[data-tooltip]:before{content:attr(data-tooltip);bottom:calc(100% + .5rem);padding:.5rem .75rem;background:var(--card-color);border:1px solid var(--border-color);border-radius:.25rem;box-sizing:border-box;overflow-wrap:break-word;min-inline-size:25ch;max-inline-size:min(35ch,calc(100vw - 2.5rem));font-size:var(--font-size-sm);line-height:var(--line-height-caption);color:var(--text-primary);box-shadow:0 2px 8px #0000004d}.moneropedia-link[data-tooltip]:after{content:"";bottom:calc(100% + .25rem);border-width:.35rem .35rem 0;border-style:solid;border-color:var(--card-color) transparent transparent transparent}.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):before,.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):after{opacity:1;transform:translate(-50%) translateY(-2px)}}@media(prefers-reduced-motion:reduce){@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{transition:none}}}
+.icon[data-astro-cid-7wapxsvo]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);aspect-ratio:1 / 1;vertical-align:middle;--iconUrl: var(--lightUrl);background-image:var(--iconUrl);background-repeat:no-repeat;background-position:center;background-size:contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}@media(prefers-color-scheme:dark){.icon[data-astro-cid-7wapxsvo]{--iconUrl: var(--darkUrl)}}
+</style></head> <body data-astro-cid-sckkx6r4> <header class="header" data-astro-cid-dm2weclu> <div class="header-inner" data-astro-cid-dm2weclu> <a class="brand" href="/zh/" data-astro-cid-dm2weclu> <img src="/_astro/monerologo.CMdKQEkN_10Rm8s.avif" srcset="/_astro/monerologo.CMdKQEkN_10Rm8s.avif 64w, /_astro/monerologo.CMdKQEkN_10Rm8s.avif 128w" alt aria-hidden="true" data-astro-cid-dm2weclu="true" loading="eager" decoding="sync" fetchpriority="high" sizes="(min-width: 64px) 64px, 100vw" style="--fit: cover; --pos: center;" data-astro-image="constrained" width="64" height="64" class="mark"> <span data-astro-cid-dm2weclu>MONERO</span> </a> <input id="nav-toggle" class="nav-toggle" type="checkbox" data-astro-cid-dm2weclu> <nav id="primary-nav" class="nav" aria-label="主要" data-astro-cid-dm2weclu> <div class="drawer-header" data-astro-cid-dm2weclu> <label for="nav-toggle" class="close" aria-controls="primary-nav" aria-label="关闭菜单" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/close.CneAMmXr_ZaFGrm.avif);--iconColor: currentColor;"></div>  </label> </div> <fieldset data-astro-cid-dm2weclu> <legend class="sr-only" data-astro-cid-dm2weclu>主要导航部分</legend> <ul class="nav-list" data-astro-cid-dm2weclu> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-0d9itl8wp" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-0d9itl8wp-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 入门 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-0d9itl8wp" class="mobile-open" aria-label="Open 入门 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-0d9itl8wp-close" class="mobile-close" aria-label="Close 入门 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="入门 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/get-started/what-is-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--darkUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>什么是 Monero？</div> <div class="desc" data-astro-cid-lm33vczh>关于 Monero 您需要了解的一切概览。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/exchanges/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/merchants-exchanges.DN61YseO_ZQ3Km9.avif);--darkUrl: url(/_astro/merchants-exchanges.BjKEmUcz_1O8q9G.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>购买 Monero</div> <div class="desc" data-astro-cid-lm33vczh>允许您购买或交易 Monero 的加密货币交易所。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/merchants/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>使用 Monero</div> <div class="desc" data-astro-cid-lm33vczh>查找接受 Monero 支付的地点和服务。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/accept-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/accept-monero.COXM8aHM_Z1II116.avif);--darkUrl: url(/_astro/accept-monero.C3WCFfqe_Z2tp8Kw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>接受 Monero</div> <div class="desc" data-astro-cid-lm33vczh>了解如何作为商家或个人接受 XMR。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/mining/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/mining.DBRk7HAe_Zd3ukV.avif);--darkUrl: url(/_astro/mining.B54FNZld_Z2jnjrG.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>挖矿</div> <div class="desc" data-astro-cid-lm33vczh>了解如何在您的电脑上挖掘 Monero。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/contribute/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/contribute.DKeO9Dve_Z2vEvfu.avif);--darkUrl: url(/_astro/contribute.zLqiOwb5_Z1qe0gS.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>贡献</div> <div class="desc" data-astro-cid-lm33vczh>帮助 Monero 项目为每个人带来隐私。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/faq/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/faq.C8QObR1A_1A5Irh.avif);--darkUrl: url(/_astro/faq.BNcLqXOJ_ZaSdVI.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>常见问题</div> <div class="desc" data-astro-cid-lm33vczh>查找关于 Monero 常见问题的答案。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/zh/downloads/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 下载  </a>  </div>  </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/zh/blog/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 博客  </a>  </div>  </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-lvfh9haz3" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-lvfh9haz3-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 社区 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-lvfh9haz3" class="mobile-open" aria-label="Open 社区 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-lvfh9haz3-close" class="mobile-close" aria-label="Close 社区 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="社区 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/community/workgroups/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/workgroups.OzoDQ7NV_Z1Lwqqs.avif);--darkUrl: url(/_astro/workgroups.CGbkWAXL_Z1m0ybJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>工作组</div> <div class="desc" data-astro-cid-lm33vczh>与 Monero 的专门工作组在开发、研究和社区工作方面进行合作。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/community/sponsorships/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>赞助商</div> <div class="desc" data-astro-cid-lm33vczh>支持 Monero 项目的企业列表。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/community/hangouts/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/hangouts.CiWxE-i9_ZeEICj.avif);--darkUrl: url(/_astro/hangouts.Do4DJEA1_257lPw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>社交场所</div> <div class="desc" data-astro-cid-lm33vczh>加入 Monero 社区聚会和活动，与其他爱好者和开发者交流。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-7uim1pcaf" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-7uim1pcaf-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 资源 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-7uim1pcaf" class="mobile-open" aria-label="Open 资源 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-7uim1pcaf-close" class="mobile-close" aria-label="Close 资源 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="资源 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/resources/knowledge-base/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/moneropedia.7o-c8ZX4_lSmb.avif);--darkUrl: url(/_astro/moneropedia.CYJm2-Q5_1KG40X.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>知识库</div> <div class="desc" data-astro-cid-lm33vczh>书籍、出版物、杂志、Moneropedia。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/roadmap/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/roadmap.DoSq9h9o_Z1QuQpv.avif);--darkUrl: url(/_astro/roadmap.BONb2rwk_2hroDR.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>路线图</div> <div class="desc" data-astro-cid-lm33vczh>了解最新的 Monero 开发计划和进展。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/research-lab/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/research-lab.D90VAC3d_WkkdD.avif);--darkUrl: url(/_astro/research-lab.uv3a8gpS_Z7cyXJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>研究实验室</div> <div class="desc" data-astro-cid-lm33vczh>探索 Monero 研究实验室的出版物和研究。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/tools/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/tools.CTqUs9cD_Z1hqOiO.avif);--darkUrl: url(/_astro/tools.BW4KRKDW_Z6Gril.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero 工具</div> <div class="desc" data-astro-cid-lm33vczh>为 Monero 用户和开发者精选的工具和软件列表。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="https://docs.getmonero.org" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/developer-guides.DD6ipv0S_Yls1B.avif);--darkUrl: url(/_astro/developer-guides.Cdg0NOVs_Z2h2V29.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero 文档</div> <div class="desc" data-astro-cid-lm33vczh>用户和开发者有效、安全使用 Monero 的综合指南。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/press-kit/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/press-kit.C4VjegyX_2aPbOF.avif);--darkUrl: url(/_astro/press-kit.CVdfPwCA_1oXHhF.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>媒体资料包</div> <div class="desc" data-astro-cid-lm33vczh>媒体联系方式、标志、图片和其他媒体资源。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="https://ccs.getmonero.org" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 众筹  </a>  </div>  </li>  </ul> </fieldset> </nav> <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="关闭菜单" data-astro-cid-dm2weclu></label> <div class="utils" aria-label="工具" data-astro-cid-dm2weclu> <div class="lang" data-astro-cid-dm2weclu> <details class="lang-container" data-astro-cid-g6d27pgi> <summary class="lang" aria-label="更改语言" aria-haspopup="true" role="button" data-astro-cid-g6d27pgi> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/globe.FI0_gjXP_xUiUM.avif);--iconColor: currentColor;"></div>  </summary> <div class="lang-dropdown" aria-label="语言" data-astro-cid-g6d27pgi> <ul class="lang-list" data-astro-cid-g6d27pgi> <li data-astro-cid-g6d27pgi> <a href="/blog/2019/09/22/logs-for-the-dev-meeting-held-on-2019-09-22/" class data-astro-cid-g6d27pgi> English </a> </li><li data-astro-cid-g6d27pgi> <a href="/ar/blog/2019/09/22/logs-for-the-dev-meeting-held-on-2019-09-22/" class data-astro-cid-g6d27pgi> العربية </a> </li><li data-astro-cid-g6d27pgi> <a href="/zh/blog/2019/09/22/logs-for-the-dev-meeting-held-on-2019-09-22/" class="active" aria-current="true" data-astro-cid-g6d27pgi> 中文 </a> </li> </ul> </div> </details>  </div> <label for="nav-toggle" class="hamburger" aria-controls="primary-nav" aria-label="打开菜单" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/hamburger.CkIM-2PU_xmMpy.avif);--iconColor: currentColor;"></div>  </label> </div> </div> </header>  <main data-astro-cid-sckkx6r4>   <div class="blog-container" data-astro-cid-ndejf7ww> <article class="blog-post" data-astro-cid-ndejf7ww> <div id="post-header" data-astro-cid-7dcwcvhl> <h1 data-astro-cid-7dcwcvhl>Overview and Logs for the Dev Meeting Held on 2019-09-22</h1> <div id="meta" data-astro-cid-7dcwcvhl> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/calendar.BXaSv3Jk_Z1NrB7E.avif);--iconColor: currentColor;"></div>  </div> <time datetime="2019-09-22" data-astro-cid-7dcwcvhl>2019年9月22日</time> </div> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/user.Cx6bTnUm_FhCof.avif);--iconColor: currentColor;"></div>  </div> el00ruobuob / rehrar </div> </div> <div class="tag-container" data-astro-cid-7dcwcvhl> <a class="tag" href="/zh/blog/tags/dev-diaries/" data-astro-cid-7dcwcvhl> 开发日志 </a><a class="tag" href="/zh/blog/tags/core/" data-astro-cid-7dcwcvhl> 核心 </a><a class="tag" href="/zh/blog/tags/crypto/" data-astro-cid-7dcwcvhl> 加密 </a> </div> </div>   <div id="blog-content" lang="en" dir="ltr">  <h1 id="logs">Logs</h1>
+<p><strong>&#x3C;rehrar></strong> ok<br>
+<strong>&#x3C;rehrar></strong> it’s time<br>
+<strong>&#x3C;rehrar></strong> 1. Greetings<br>
+<strong>&#x3C;rehrar></strong> who all is here?<br>
+<strong>&#x3C;sgp_></strong> hello :)<br>
+<strong>&#x3C;needmonero90></strong> Hi<br>
+<strong>&#x3C;xmrscott[m]></strong> Hey hey hey<br>
+<strong>&#x3C;rbrunner></strong> Hi<br>
+<strong>&#x3C;tevador></strong> hey<br>
+<strong>&#x3C;sech1></strong> \o/<br>
+<strong>&#x3C;ErCiccione[m]></strong> Hi<br>
+<strong>&#x3C;ferretinjapan></strong> so everyone except the people rehrar pinged are here, nice.<br>
+<strong>&#x3C;rehrar></strong> it would seem so<br>
+<strong>&#x3C;rehrar></strong> moneromooo: do we have you at least? :P<br>
+<strong>&#x3C;moneromooo></strong> Yes.<br>
+<strong>&#x3C;rehrar></strong> one last round for fluffypony luigi1111 ArticMine binaryFate<br>
+<strong>&#x3C;rehrar></strong> please join us ASAP<br>
+<strong>&#x3C;rehrar></strong> in the meantime, we can move on to 2. What’s been completed since last meeting?<br>
+<strong>&#x3C;vtnerd__></strong> here<br>
+<strong>&#x3C;sech1></strong> I’ve finished RandomX JIT compiler for ARM CPUs. Verification time is even better than CN/R on ARM.<br>
+<strong>&#x3C;moneromooo></strong> Pretty good stuff here.<br>
+<strong>&#x3C;rbrunner></strong> Nice<br>
+<strong>&#x3C;ArticMine></strong> Hi<br>
+<strong>&#x3C;dEBRUYNE></strong> I am here<br>
+<strong>&#x3C;meksi></strong> Hi<br>
+<strong>&#x3C;tevador></strong> so I guess we are including the ARM JIT in the release?<br>
+<strong>&#x3C;tevador></strong> probably no reason not to<br>
+<strong>&#x3C;moneromooo></strong> It can be disabled with an env var AFAIK so sure.<br>
+<strong>&#x3C;tevador></strong> just it hasn’t been heavily tested as the x86 JIT<br>
+<strong>&#x3C;SoiMatter></strong> Sirs! ferretinjapan asked moi to join.<br>
+<strong>&#x3C;hyc></strong> since it’s easily toggled off, I’d say we run with it<br>
+<strong>&#x3C;jtgrassie></strong> hi<br>
+<strong>&#x3C;SoiMatter></strong> o7 I will keep still :)<br>
+<strong>&#x3C;moneromooo></strong> monerod can now synced from pruned blocks (optional). I’d like this to go in before release if reviewed.<br>
+<strong>&#x3C;rehrar></strong> Honest question to everyone, now that CLI has reproducible builds, can we as a community decide on a date without input from Core?<br>
+<strong>&#x3C;selsta></strong> GUI?<br>
+<strong>&#x3C;rehrar></strong> that’s next selsta :P<br>
+<strong>&#x3C;selsta></strong> yes but it would be nice to release both the CLI and GUI at the same time and that depends on core<br>
+<strong>&#x3C;moneromooo></strong> Pony still controls the website (for binaries to be uploaded), and the DNS records (for the hashes of the binaries).<br>
+<strong>&#x3C;rehrar></strong> ok so there’s distribution and GUI to consider<br>
+<strong>&#x3C;dEBRUYNE></strong> Pony said he’d be around for the CLI &#x26; GUI release<br>
+<strong>&#x3C;rehrar></strong> I mean, ultimately we want to go along this road at some point to reduce centralization anyways, no?<br>
+<strong>&#x3C;moneromooo></strong> Also needs people to build for random OSes. Does Windows have repro builds too ?<br>
+<strong>&#x3C;ArticMine></strong> Do we have a release date in mind?<br>
+<strong>&#x3C;dEBRUYNE></strong> moneromooo: Yes<br>
+<strong>&#x3C;dEBRUYNE></strong> At least for the CLI<br>
+<strong>&#x3C;ErCiccione[m]></strong> ArticMine: i think the idea was to set a date today<br>
+<strong>&#x3C;rehrar></strong> so let’s set one<br>
+<strong>&#x3C;rehrar></strong> ArticMine can represent the core team here<br>
+<strong>&#x3C;sgp_></strong> October 26?<br>
+<strong>&#x3C;rehrar></strong> Are we thinking mid-October? End of October?<br>
+<strong>&#x3C;dEBRUYNE></strong> I would personally prefer a bit more towards the end of October, as that gives us a bit more leeway<br>
+<strong>&#x3C;ArticMine></strong> I do not ave an issue with setting a release date at this meeting<br>
+<strong>&#x3C;ErCiccione[m]></strong> i agree<br>
+<strong>&#x3C;hyc></strong> Let’s go with October 31, Halloween<br>
+<strong>&#x3C;tevador></strong> is this the release date of the fork date?<br>
+<strong>&#x3C;tevador></strong> or*<br>
+<strong>&#x3C;hyc></strong> it’ll be scary<br>
+<strong>&#x3C;moneromooo></strong> I have some reservations about the stability of randomx-in-monerod. Bugs are still coming in fast.<br>
+<strong>&#x3C;needmonero90></strong> Monero’s spoopy fork<br>
+<strong>&#x3C;rehrar></strong> tevador: fork date<br>
+<strong>&#x3C;dEBRUYNE></strong> tevador: fork date<br>
+<strong>&#x3C;sech1></strong> October 31 is a bit too late<br>
+<strong>&#x3C;moneromooo></strong> So pushing back would be good in my view :)<br>
+<strong>&#x3C;ArticMine></strong> and code freeze?<br>
+<strong>&#x3C;rehrar></strong> if mooo has reservations then maybe 31 is a decent date?<br>
+<strong>&#x3C;rehrar></strong> sech1: what’s your reasoning?<br>
+<strong>&#x3C;tevador></strong> so better to not do it in the middle of the week<br>
+<strong>&#x3C;luigi1111></strong> I’m sorta here<br>
+<strong>&#x3C;sech1></strong> October 31 is kind of an edge of publicly promised “fork in October”<br>
+<strong>&#x3C;sech1></strong> October 26 sounds better<br>
+<strong>&#x3C;moneromooo></strong> I don’t anyone (who counts) ever promised.<br>
+<strong>&#x3C;hyc></strong> assuming it’s actually ready by then<br>
+<strong>&#x3C;needmonero90></strong> Welcome to decentralization sech1.<br>
+<strong>&#x3C;rehrar></strong> I am fine with 26th<br>
+<strong>&#x3C;tevador></strong> yeah, 26 October would be better if it’s doable<br>
+<strong>&#x3C;needmonero90></strong> Community won’t be too mad if we don’t hit deadlines<br>
+<strong>&#x3C;SoiMatter></strong> Go with the date of the next UK election<br>
+<strong>&#x3C;hyc></strong> testnet has been disturbingly unstable the past few weeks.<br>
+<strong>&#x3C;hyc></strong> but most of the problems were unrelated to randomX<br>
+<strong>&#x3C;Inge-></strong> Better a safe launch than an october launch.<br>
+<strong>&#x3C;ArticMine></strong> One key point is the time between release and fork date<br>
+<strong>&#x3C;rbrunner></strong> Normal testnet or the RandomX testnet?<br>
+<strong>&#x3C;hyc></strong> randomX testnet<br>
+<strong>&#x3C;hyc></strong> but the issues with peers being disconnected and banned would have happened on public testnet too if anyone bothered to exercise that<br>
+<strong>&#x3C;hyc></strong> basically current git master is unstable, recent changes to the networking code broke a lot.<br>
+<strong>&#x3C;sech1></strong> if fork is October 26 (4 weeks), would 2 weeks be enough to fix all that?<br>
+<strong>&#x3C;sech1></strong> and would additional 5 days help?<br>
+<strong>&#x3C;ErCiccione[m]></strong> i’m starting to think would be better to posticipate to after october<br>
+<strong>&#x3C;tevador></strong> so it looks more like November<br>
+<strong>&#x3C;ArticMine></strong> Release and fork date ware very different<br>
+<strong>&#x3C;dEBRUYNE></strong> hyc: Those recent changes will be reverted by 5905 right?<br>
+<strong>&#x3C;moneromooo></strong> Yes.<br>
+<strong>&#x3C;ArticMine></strong> We need to give people time to update<br>
+<strong>&#x3C;ErCiccione[m]></strong> if there are so many doubts i would just wait. No reason to rush it, this is a big fork<br>
+<strong>&#x3C;hyc></strong> agreed, safer to wait<br>
+<strong>&#x3C;rehrar></strong> so really all of this should have been discussed two weeks to a month ago<br>
+<strong>&#x3C;sgp_></strong> I don’t think the optics of a “late” Oct 31 date will be terrible. We can get ahead of it with the Halloween marketing. If people prefer November, then I think we should still pick a date<br>
+<strong>&#x3C;M5M400></strong> will this release discontinue legacy payment IDs?<br>
+<strong>&#x3C;rehrar></strong> so for next time we really need to start seriously discussing the fork two months prior to “planned” date<br>
+<strong>&#x3C;moneromooo></strong> Yes.<br>
+<strong>&#x3C;moneromooo></strong> Though currently not banned, just code removed.<br>
+<strong>&#x3C;dEBRUYNE></strong> rehrar: I don’t think we could have foreseen the issues arosen on testnet<br>
+<strong>&#x3C;moneromooo></strong> Are any large exchanges still using them ?<br>
+<strong>&#x3C;ArticMine></strong> I suggest an October 31 release date with a fork date 4 weeks later<br>
+<strong>&#x3C;luigi1111></strong> late is far better than broken<br>
+<strong>&#x3C;sgp_></strong> I can try to compile a list<br>
+<strong>&#x3C;sech1></strong> We still need to decide fork date and release schedule today<br>
+<strong>&#x3C;rehrar></strong> dEBRUYNE: literally every single fork there is a “I don’t think we could have foreseen” situation?<br>
+<strong>&#x3C;needmonero90></strong> What happened to move fast and break things? This is tech!<br>
+<strong>&#x3C;dEBRUYNE></strong> Yes because there will simply be things that cannot be foreseen<br>
+<strong>&#x3C;dEBRUYNE></strong> You cannot perfectly plan such a thing<br>
+<strong>&#x3C;luigi1111></strong> I too enjoy breaking money when possible<br>
+<strong>&#x3C;rehrar></strong> ok, ArticMine has made a concrete suggestion<br>
+<strong>&#x3C;rehrar></strong> 31st release date, one month later fork date<br>
+<strong>&#x3C;sgp_></strong> one month? why one month?<br>
+<strong>&#x3C;needmonero90></strong> I think its reasonable.<br>
+<strong>&#x3C;needmonero90></strong> No objection here.<br>
+<strong>&#x3C;ferretinjapan></strong> luigi1111, I agree, late and working is far better than on time and buggy…<br>
+<strong>&#x3C;hyc></strong> is that the same offset we used in previous releases?<br>
+<strong>&#x3C;M5M400></strong> moneromooo: i have about 330 miners still mining to payment_id addresses. that’s 5 %<br>
+<strong>&#x3C;sgp_></strong> no, closer to two weeks I think<br>
+<strong>&#x3C;ArticMine></strong> To give people proper notice to upgrade<br>
+<strong>&#x3C;luigi1111></strong> that’s what it ended up being<br>
+<strong>&#x3C;needmonero90></strong> We were pushing to the wire last time<br>
+<strong>&#x3C;needmonero90></strong> To be fair<br>
+<strong>&#x3C;luigi1111></strong> we never targeted two weeks that’s simply not ideal<br>
+<strong>&#x3C;needmonero90></strong> Two weeks was cutting it close<br>
+<strong>&#x3C;ArticMine></strong> This has been an issue many times before<br>
+<strong>&#x3C;ErCiccione[m]></strong> yeah, one month seems fair<br>
+<strong>&#x3C;sech1></strong> October 31st release and November 30th fork then?<br>
+<strong>&#x3C;luigi1111></strong> yes we’ve always pushed releases to late but doesn’t mean we shouldn’t try to do better<br>
+<strong>&#x3C;ArticMine></strong> sounds fine to me<br>
+<strong>&#x3C;sgp_></strong> So what specific fork date?<br>
+<strong>&#x3C;tevador></strong> 30th Nov<br>
+<strong>&#x3C;rbrunner></strong> November 30 is again Saturday, which is nice<br>
+<strong>&#x3C;sech1></strong> let’s hope CN/R holds without ASICs until then :)<br>
+<strong>&#x3C;ArticMine></strong> So when is code freeze?<br>
+<strong>&#x3C;moneromooo></strong> Whenever we don’t have anything left we want to merge :)<br>
+<strong>&#x3C;ErCiccione[m]></strong> now with reproducible build releases should be much faster, at least for CLI. We rarely managed to release at the time we decided<br>
+<strong>&#x3C;needmonero90></strong> October 31st makes sense imo<br>
+<strong>&#x3C;sgp_></strong> I think having a release in October will help with optics. And a 31st update is easy to brand<br>
+<strong>&#x3C;rehrar></strong> alright, it looks like we have a loose consensus, unless anyone would like to speak now<br>
+<strong>&#x3C;ArticMine></strong> Sure but how much time is needed between code freeze and release?<br>
+<strong>&#x3C;rehrar></strong> in opposition<br>
+<strong>&#x3C;luigi1111></strong> like a week<br>
+<strong>&#x3C;luigi1111></strong> but fluffy fluffy fluffy<br>
+<strong>&#x3C;selsta></strong> +1<br>
+<strong>&#x3C;selsta></strong> long code freezes never work<br>
+<strong>&#x3C;rehrar></strong> luigi1111: did not show<br>
+<strong>&#x3C;dEBRUYNE></strong> We only need fluffy to upload the bins though for the CLI release<br>
+<strong>&#x3C;dEBRUYNE></strong> (and do the website)<br>
+<strong>&#x3C;luigi1111></strong> I know but if he’s building he has to be able to commit to a schedule<br>
+<strong>&#x3C;sgp_></strong> so Thanksgiving weekend hardfork (Nov 30)<br>
+<strong>&#x3C;sech1></strong> yes, better safe than sorry<br>
+<strong>&#x3C;hyc></strong> since we have reproducible builds we don’t need him to build<br>
+<strong>&#x3C;dEBRUYNE></strong> rehrar: He said he’d be available for the release (he’d prefer to have a timeline a bit in advance though)<br>
+<strong>&#x3C;rehrar></strong> luigi1111: if he’s unable to commit to a schedule, then we can do the deterministic builds thing, and just make sure they get uploaded<br>
+<strong>&#x3C;luigi1111></strong> ok cool<br>
+<strong>&#x3C;luigi1111></strong> then just gooey<br>
+<strong>&#x3C;rehrar></strong> which is you<br>
+<strong>&#x3C;ArticMine></strong> The time between code freeze and release need to be set buy those closest to the code<br>
+<strong>&#x3C;rehrar></strong> can you commit to this schedule?<br>
+<strong>&#x3C;dEBRUYNE></strong> GUI gets build by pony<br>
+<strong>&#x3C;rehrar></strong> oof<br>
+<strong>&#x3C;needmonero90></strong> Speaking of build privs, I would like to formally propose that some of the GUI repo privileges be transferred to dsc (the non deterministic build part at the very least)<br>
+<strong>&#x3C;M5M400></strong> how can fluffy still be the only person able to do some vital things?<br>
+<strong>&#x3C;luigi1111></strong> I’m the one going to be doing all the merges in both projects so heh<br>
+<strong>&#x3C;dEBRUYNE></strong> rehrar: Third time and last time I will say -> He said he’d be available for the release<br>
+<strong>&#x3C;rehrar></strong> M5M400: that’s why deterministic builds is top priority<br>
+<strong>&#x3C;rehrar></strong> dEBRUYNE: ok<br>
+<strong>&#x3C;ferretinjapan></strong> M5M400, mainly because reproducible builds were never a thing before now.<br>
+<strong>&#x3C;needmonero90></strong> luigi1111: we really should move some of those responsibilities to dsc.<br>
+<strong>&#x3C;dEBRUYNE></strong> needmonero90: I disagree, then we would have coders merging their own stuff<br>
+<strong>&#x3C;needmonero90></strong> He would be the new maintainer/lead of gui<br>
+<strong>&#x3C;needmonero90></strong> Or something<br>
+<strong>&#x3C;rehrar></strong> ok, any other questions in regards to the set dates? October 31st release, November 30th fork.<br>
+<strong>&#x3C;moneromooo></strong> So what do we need for the release ? readline fixes for repro builds, randomx. The pay-for-service stuff. Payment ID changes. Hopefully the sync-pruned-blocks. Anything else that’s large or really needed ?<br>
+<strong>&#x3C;ferretinjapan></strong> freeze date?<br>
+<strong>&#x3C;rehrar></strong> needmonero90: that would be the first time a non-core team member will have done this. Not impossible, but certainly unprecedented and worthy of a bigger discussion which we don’t have time for here in this meeting<br>
+<strong>&#x3C;dEBRUYNE></strong> Once we branch the code is basically frozen right? Because then only fixes go in<br>
+<strong>&#x3C;ErCiccione[m]></strong> one week code freeze would be appreciated. Let’s remember that there are the translation to deal with (and i beg for a code freeze since ever :D)<br>
+<strong>&#x3C;needmonero90></strong> Okay, tabled for now rehrar<br>
+<strong>&#x3C;moneromooo></strong> vtnerd__: are you planning to have some more network stuff ready for the release ?<br>
+<strong>&#x3C;ferretinjapan></strong> I guess the #monero-pow guys would have a better idea when to freeze…<br>
+<strong>&#x3C;ArticMine></strong> Oct 24th as per luigi1111 selsta?<br>
+<strong>&#x3C;luigi1111></strong> he’s not the only one with access to a couple things but the only one that actively used his access<br>
+<strong>&#x3C;dEBRUYNE></strong> moneromooo: The readline fix is 5892 right?<br>
+<strong>&#x3C;selsta></strong> ArticMine: yes<br>
+<strong>&#x3C;luigi1111></strong> until recently where him and pigeons have both not been to active<br>
+<strong>&#x3C;moneromooo></strong> Could be. Depends on what people who have the problem say after testing it :)<br>
+<strong>&#x3C;dEBRUYNE></strong> ArticMine: I think we can branch earlier, but moneromooo probably has a better view on that<br>
+<strong>&#x3C;ArticMine></strong> moneromooo does Oct 24 work for code freeze?<br>
+<strong>&#x3C;ErCiccione[m]></strong> pigeons is active. I asked him to update the server of getmonero last time<br>
+<strong>&#x3C;moneromooo></strong> That sounds plausible to me.<br>
+<strong>&#x3C;M5M400></strong> moneromooo: it appears bittrex and binance still use payment_id’s<br>
+<strong>&#x3C;ErCiccione[m]></strong> and he also gave me a hand with weblate<br>
+<strong>&#x3C;moneromooo></strong> Thanks.<br>
+<strong>&#x3C;vtnerd__></strong> moneromooo : yes, the split mempool is jst about done (finishing core tests nows)<br>
+<strong>&#x3C;rehrar></strong> wow<br>
+<strong>&#x3C;dEBRUYNE></strong> M5M400: Binance is working on upgrading their system, needmonero90 is in touch with them<br>
+<strong>&#x3C;rehrar></strong> vtnerd__: so your stuff will make it in this one?<br>
+<strong>&#x3C;vtnerd__></strong> and the dandelion++ remnants _shouldn’t_ be too painful - although I always say that :/<br>
+<strong>&#x3C;M5M400></strong> dEBRUYNE: saifu. great.<br>
+<strong>&#x3C;needmonero90></strong> Binance indicated they should be ready by fork in October. Pushing the date back shouldnt hurt the timeline.<br>
+<strong>&#x3C;M5M400></strong> anyone in touch with bittrex?<br>
+<strong>&#x3C;dEBRUYNE></strong> They are aware as far as I know<br>
+<strong>&#x3C;vtnerd__></strong> I can’t say whether it will “make it in”, because theres always a chance something comes up during review, etc<br>
+<strong>&#x3C;vtnerd__></strong> but the split mempool for the i2p/tor is close to ready. my concern is that its kind of tough the way it got shoved in<br>
+<strong>&#x3C;rbrunner></strong> You mean in a technical sense?<br>
+<strong>&#x3C;vtnerd__></strong> I took hyc’s approach of adding a tag to the metadata, but I had to inspect a bunch of code paths to make sure stuff didn’t leak<br>
+<strong>&#x3C;binaryFate></strong> hi all, sorry got late to the party<br>
+<strong>&#x3C;vtnerd__></strong> ultimately a true “physical” or “logical” split would be ideal, but it seemed kind of tough at the momnent when I tried to think about hwo to do it<br>
+<strong>&#x3C;moneromooo></strong> Oh so it’s a single txpool, just txes have a flag ?<br>
+<strong>&#x3C;vtnerd__></strong> yeah, unfortunately<br>
+<strong>&#x3C;M5M400></strong> are we aware of any GPU miner in the works for randX that will be ready in time for spork?<br>
+<strong>&#x3C;moneromooo></strong> That’s what I did for the sync-from-pruned :)<br>
+<strong>&#x3C;hyc></strong> M5M400: xmrig is ready<br>
+<strong>&#x3C;luigi1111></strong> 24th and 31st targets are good with me for 30th fork<br>
+<strong>&#x3C;sech1></strong> M5M400 xmrig 4.0 is combined CPU + OpenCL miner<br>
+<strong>&#x3C;vtnerd__></strong> if thats worth a reject, then I can go back and try again, but its a little dicey otherwise (it requires a slightly larger refactor and possibly a second lmdb database)<br>
+<strong>&#x3C;luigi1111></strong> mostly afk now<br>
+<strong>&#x3C;rehrar></strong> vtnerd__: if this does make it in this time, it can be iterated on in the future no?<br>
+<strong>&#x3C;M5M400></strong> hyc: sech1: nice<br>
+<strong>&#x3C;moneromooo></strong> It’s not IMHO. I’d have done that too.<br>
+<strong>&#x3C;moneromooo></strong> But then I tend to shove things in :)<br>
+<strong>&#x3C;vtnerd__></strong> yes, I don’t think the patch makes it harder to refactor, its probably neutral from that perspective<br>
+<strong>&#x3C;hyc></strong> I don’t really see other approaches to that as being a good idea<br>
+<strong>&#x3C;tevador></strong> btw, fork height could be 1978433, which is exactly the start of a RandomX epoch and should be in the afternoon CET on Nov 30th<br>
+<strong>&#x3C;vtnerd__></strong> as an example of what I mean - one of the weird cases is that fluffy blocks request can leak the anonymity channel, etc, so yeah<br>
+<strong>&#x3C;dEBRUYNE></strong> tevador: Afternoon CET would allow most people to be online, because it would basically be late evening for Asia and morning for US<br>
+<strong>&#x3C;moneromooo></strong> And let’s reset testnet to fork on an epoch boundary too ?<br>
+<strong>&#x3C;tevador></strong> dEBRUYNE: yeah, nice coincidence<br>
+<strong>&#x3C;ErCiccione[m]></strong> i guess we have a fork height. Nice<br>
+<strong>&#x3C;rbrunner></strong> With a testnet fork around release, end of October?<br>
+<strong>&#x3C;hyc></strong> sounds good<br>
+<strong>&#x3C;dEBRUYNE></strong> To summarize the timeline, this is approximately correct right? Branch within 2-3 weeks, freeze October 24, release October 31, fork November 30<br>
+<strong>&#x3C;moneromooo></strong> I think we have everything we need for v12 now, apart from randomx, so we can fork the real testnet as soon as it gets merged.<br>
+<strong>&#x3C;rbrunner></strong> Even better then<br>
+<strong>&#x3C;tevador></strong> that looks like a sensible schedule<br>
+<strong>&#x3C;sech1></strong> yes, plenty of time to iron out all issues<br>
+<strong>&#x3C;rbrunner></strong> Famous last words :)<br>
+<strong>&#x3C;dEBRUYNE></strong> It at least feels we are better prepared now than last time :-P<br>
+<strong>&#x3C;tevador></strong> someone should strictly enforce code freeze this time<br>
+<strong>&#x3C;rehrar></strong> penalty of death<br>
+<strong>&#x3C;ErCiccione[m]></strong> tevador: i strongly agree<br>
+<strong>&#x3C;dEBRUYNE></strong> moneromooo: Do we need pony around to fork the real testnet?<br>
+<strong>&#x3C;PauleBert></strong> can we reset stagenet too? it is getting quite huge<br>
+<strong>&#x3C;moneromooo></strong> Yes, the miner’s one of his nodes, and seed nodes need updating too.<br>
+<strong>&#x3C;moneromooo></strong> The former’s not a big problem, but the latter kinda is.<br>
+<strong>&#x3C;needmonero90></strong> Don’t reset stagenet :(<br>
+<strong>&#x3C;dEBRUYNE></strong> Ok, I will send him a message then<br>
+<strong>&#x3C;needmonero90></strong> Telegram tipbot uses it<br>
+<strong>&#x3C;rbrunner></strong> “Reset” means here dropping a few hundreds of blocks probably, no new genesis block<br>
+<strong>&#x3C;needmonero90></strong> It’ll wipe all our balances ;_;<br>
+<strong>&#x3C;rbrunner></strong> Back to the latest epoc date, that is<br>
+<strong>&#x3C;needmonero90></strong> (yes, I know, it’s stagenet)<br>
+<strong>&#x3C;rbrunner></strong> Or a few thousands …<br>
+<strong>&#x3C;M5M400></strong> are we in any way concerned about the probably 10x hashrate post fork and the amount of blocks being spit out quickly? might it be a good idea to set a ballpark initial diff?<br>
+<strong>&#x3C;hyc></strong> I’m guessing that will be offset by the typical hashrate drop due to not everyone updating<br>
+<strong>&#x3C;moneromooo></strong> I am not.<br>
+<strong>&#x3C;sech1></strong> I don’t think so. It’ll rather grow slowly.<br>
+<strong>&#x3C;rbrunner></strong> I think to remember from earlier forks that “doctoring” the diff is not trivial<br>
+<strong>&#x3C;sech1></strong> Even with higher hashrate from CPUs, hard fork drop in hashrate will make initial diff roughly the same as now<br>
+<strong>&#x3C;ferretinjapan></strong> I wouldn’t be worried un less ASICs were currently saturating the network, but by the sounds of it, theres been no indication of that being the case…<br>
+<strong>&#x3C;M5M400></strong> I’ve seen a few big miners on the pool that are most likely CPU based. one instance of 17MH cn/r. these operations don’t miss forks, as opposed to casual miners<br>
+<strong>&#x3C;sech1></strong> No signs of ASICs<br>
+<strong>&#x3C;ferretinjapan></strong> thats good.<br>
+<strong>&#x3C;rehrar></strong> alright, is there anything else of note to discuss?<br>
+<strong>&#x3C;ErCiccione[m]></strong> minor: is it fine for everybody if we take down the current warning on getmonero, it’s there since last fork<br>
+<strong>&#x3C;needmonero90></strong> We need to talk about extending the Monero Foundation’s Dev tax, and the Monero name trademark issue<br>
+<strong>&#x3C;ErCiccione[m]></strong> i want to avoid people not reading it because they are used to it when we put up the new one<br>
+<strong>&#x3C;needmonero90></strong> Oh wait wrong coin<br>
+<strong>&#x3C;needmonero90></strong> We good<br>
+<strong>&#x3C;hyc></strong> ErCiccione[m]: good idea<br>
+<strong>&#x3C;rbrunner></strong> Yeah, take it down before it gets a running gag or something<br>
+<strong>&#x3C;rbrunner></strong> “Monero mixes up its hardforks”<br>
+<strong>&#x3C;rehrar></strong> alright<br>
+<strong>&#x3C;ErCiccione[m]></strong> alright, will open a PR tomorrow<br>
+<strong>&#x3C;rehrar></strong> alright friends, it would seem we’re all good<br>
+<strong>&#x3C;needmonero90></strong> Is Gui considered core?<br>
+<strong>&#x3C;needmonero90></strong> Or is it it’s own thing<br>
+<strong>&#x3C;hyc></strong> dEBRUYNE: now that randomx has quieted down I’ll get to rebasing that gitian PR of mine<br>
+<strong>&#x3C;ErCiccione[m]></strong> needmonero90: that’s actually a good question. See <a href="https://github.com/monero-project/meta/issues/384" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/meta/issues/384</a><br>
+<strong>&#x3C;selsta></strong> Please no renaming discussion.<br>
+<strong>&#x3C;selsta></strong> The github issue is a better place for that.<br>
+<strong>&#x3C;rehrar></strong> alright everyone, we’ll officially break for today<br>
+<strong>&#x3C;rehrar></strong> thanks for coming. Good discussion, and got a lot done.<br>
+<strong>&#x3C;hyc></strong> who’s posting meeting logs?<br>
+<strong>&#x3C;rehrar></strong> We can continue on a two weeks schedule for now? Or want to go to one week mini-check in on off weeks?<br>
+<strong>&#x3C;ErCiccione[m]></strong> hyc: el00ruobuob, usually<br>
+<strong>&#x3C;hyc></strong> ok.<br>
+<strong>&#x3C;hyc></strong> I think next mtg in 2 weeks is fine. after that, we can decide again<br>
+<strong>&#x3C;rehrar></strong> ok<br>
+<strong>&#x3C;ErCiccione[m]></strong> unles you didn’t mean on getmonero<br>
+<strong>&#x3C;rehrar></strong> sounds good<br>
+<strong>&#x3C;dEBRUYNE></strong> hyc: Thanks<br>
+<strong>&#x3C;dEBRUYNE></strong> ErCiccione[m]: I’d prefer to update it with a general information thread regarding the upcoming fork<br>
+<strong>&#x3C;dEBRUYNE></strong> I can have that ready next week<br>
+<strong>&#x3C;ErCiccione[m]></strong> dEBRUYNE: sure! will you PR it on repo.getmonero?<br>
+<strong>&#x3C;IRC-Source_89></strong> guys sorry for the question , but i missed the begining of the discussion… Have you already choosen a block height for the fork?<br>
+<strong>&#x3C;scoobybejesus></strong> tevador> btw, fork height could be 1978433, which is exactly the start of a RandomX epoch and should be in the afternoon CET on Nov 30th<br>
+<strong>&#x3C;dEBRUYNE></strong> ErCiccione[m]: Sure<br>
+<strong>&#x3C;scoobybejesus></strong> there seemed to be rough consensus on that<br>
+<strong>&#x3C;IRC-Source_89></strong> thank you<br>
+<strong>&#x3C;ErCiccione[m]></strong> dEBRUYNE: great, thank you. Ping el00ruobuob_ so he remembers to not PR it<br>
+<strong>&#x3C;dEBRUYNE></strong> I don’t mind if he PRs it<br>
+<strong>&#x3C;ErCiccione[m]></strong> he usally PR them after more than one week, should be fine<br>
+<strong>&#x3C;dEBRUYNE></strong> Are we talking about the same thing? :P<br>
+<strong>&#x3C;dEBRUYNE></strong> I was referring to the new information thread regarding the fork<br>
+<strong>&#x3C;ErCiccione[m]></strong> I was talking about the logs :P i understood you wanted to include them in the thread.<br>
+<strong>&#x3C;ErCiccione[m]></strong> but anyway, we should really make a blog post about it.<br>
+<strong>&#x3C;sech1></strong> So will the schedule be officially announced soon?<br>
+<strong>&#x3C;rbrunner></strong> sgp_ was fast: <a href="https://old.reddit.com/r/Monero/comments/d7twle/tentative%5C_monero%5C_015%5C_release%5C_schedule/" rel="noopener noreferrer external" target="_blank">https://old.reddit.com/r/Monero/comments/d7twle/tentative\_monero\_015\_release\_schedule/</a><br>
+<strong>&#x3C;hyc></strong> sgp already announced it<br>
+<strong>&#x3C;dEBRUYNE></strong> sgp_: Perhaps worthwhile to mention in the comments why there is a bit of a delay<br>
+<strong>&#x3C;sgp_></strong> I don’t know what happened with testnet<br>
+<strong>&#x3C;ErCiccione[m]></strong> el00ruobuob_ ignore what i said earlier, we need the logs :P</p>  </div>  </article> <aside data-border="true" data-transparent="true" style="--card-padding: var(--space-xl); --card-radius: var(--radius-md)" data-astro-cid-ndejf7ww="true" data-astro-cid-dd5txfcy="true" class="card sidebar">  <h2 data-astro-cid-ndejf7ww>近期文章</h2> <ul class="recent-posts" data-astro-cid-ndejf7ww> <li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/03/04/monero-GUI-0.18.4.7-released/" data-astro-cid-ndejf7ww> Monero GUI 0.18.4.7 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-ndejf7ww> 2026年3月4日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/03/04/monero-0.18.4.6-released/" data-astro-cid-ndejf7ww> Monero 0.18.4.6 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-ndejf7ww> 2026年3月4日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/01/07/monero-GUI-0.18.4.5-released/" data-astro-cid-ndejf7ww> Monero GUI 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-ndejf7ww> 2026年1月7日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/01/07/monero-0.18.4.5-released/" data-astro-cid-ndejf7ww> Monero 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-ndejf7ww> 2026年1月7日 </time> </li> </ul>  </aside>  </div>  </main> <footer class="footer" aria-label="页脚" data-astro-cid-mh6itkc3> <div class="items" data-astro-cid-mh6itkc3> <nav class="grid" aria-label="页脚导航" data-astro-cid-mh6itkc3> <section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>资源</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/zh/get-started/what-is-monero/" data-astro-cid-mh6itkc3> 关于 Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/moneropedia/" data-astro-cid-mh6itkc3> Moneropedia  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://docs.getmonero.org" data-astro-cid-mh6itkc3> Monero 文档  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/get-started/faq/" data-astro-cid-mh6itkc3> 常见问题  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>联系我们</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/zh/community/workgroups/" data-astro-cid-mh6itkc3> 工作组  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/community/hangouts/" data-astro-cid-mh6itkc3> 社交场所  </a> </li><li data-astro-cid-mh6itkc3> <a href="/postorius/lists/monero-announce.lists.getmonero.org" data-astro-cid-mh6itkc3> 邮件列表  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>社区</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://monero.stackexchange.com/" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Stack Exchange  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://bitcointalk.org/index.php?topic=583449.0" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Bitcoin Talk  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://translate.getmonero.org" data-astro-cid-mh6itkc3> 翻译  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>Monero 项目</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://openalias.org" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Open Alias  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/research-lab/" data-astro-cid-mh6itkc3> Monero 研究实验室 (MRL)  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/press-kit/" data-astro-cid-mh6itkc3> 媒体资料包  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://ccs.getmonero.org" data-astro-cid-mh6itkc3> 社区众筹系统  </a> </li> </ul> </section> </nav> <nav class="bottom" aria-label="次要页脚导航" data-astro-cid-mh6itkc3> <ul class="inline-list" data-astro-cid-mh6itkc3> <li class="inline-item" data-astro-cid-mh6itkc3> <a href="#" data-astro-cid-mh6itkc3> Tor 洋葱服务 <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/tor.D04gt7iP_278xXg.avif);--iconColor: #7d4698;--spacing: 0.25em;"></div>  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> 漏洞响应  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/zh/legal/" data-astro-cid-mh6itkc3> 法律  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> 源代码  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/feed.xml" data-astro-cid-mh6itkc3> RSS 订阅 <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/rss.jnIu9F4x_Z28u6pV.avif);--iconColor: var(--monero-orange);--spacing: 0.25em;"></div>  </a> </li> </ul> </nav> </div> </footer>   </body></html> 

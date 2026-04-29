@@ -1,0 +1,498 @@
+<!DOCTYPE html><html lang="zh" dir="ltr" data-astro-cid-sckkx6r4> <head><title>博客 | Overview and Logs for the Dev Meeting Held on 2017-08-20</title><meta charset="UTF-8"><link rel="canonical" href="https://beta.monerodevs.org/zh/blog/2017/08/20/overview-and-logs-for-the-dev-meeting-held-on-2017-08-20/"><meta name="description" content="Discussion of open PRs and issues, RuffCT, mobile wallets, upcoming release + scheduled protocol upgrade, dedicated hardware wallet, and miscellaneous"><meta name="robots" content="index, follow"><meta property="og:title" content="Overview and Logs for the Dev Meeting Held on 2017-08-20"><meta property="og:type" content="article"><meta property="og:image" content="https://beta.monerodevs.org/open-graph/blog/2017/08/20/overview-and-logs-for-the-dev-meeting-held-on-2017-08-20.png"><meta property="og:url" content="https://beta.monerodevs.org/zh/blog/2017/08/20/overview-and-logs-for-the-dev-meeting-held-on-2017-08-20/"><meta property="og:locale" content="zh"><meta property="og:locale:alternate" content="en"><meta property="og:locale:alternate" content="ar"><meta property="og:site_name" content="Monero"><meta property="og:image:url" content="https://beta.monerodevs.org/open-graph/blog/2017/08/20/overview-and-logs-for-the-dev-meeting-held-on-2017-08-20.png"><meta property="og:image:alt" content="OpenGraph image for Monero blog post titled &#34;Overview and Logs for the Dev Meeting Held on 2017-08-20&#34;"><meta property="article:published_time" content="2017-08-20T00:00:00.000Z"><meta property="article:author" content="dEBRUYNE / fluffypony"><meta property="article:tag" content="dev diaries"><meta property="article:tag" content="core"><meta property="article:tag" content="crypto"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@monero"><meta name="twitter:title" content="Overview and Logs for the Dev Meeting Held on 2017-08-20"><meta name="twitter:image" content="https://beta.monerodevs.org/open-graph/blog/2017/08/20/overview-and-logs-for-the-dev-meeting-held-on-2017-08-20.png"><meta name="twitter:description" content="Discussion of open PRs and issues, RuffCT, mobile wallets, upcoming release + scheduled protocol upgrade, dedicated hardware wallet, and miscellaneous"><link rel="preload" as="font" type="font/woff2" href="/_astro/dm-sans-latin-wght-normal.Xz1IZZA0.woff2" crossorigin="anonymous"><link rel="icon" href="/meta/favicon-16x16.png" sizes="16x16"><link rel="icon" href="/meta/favicon-32x32.png" sizes="32x32"><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.18.0"><meta name="color-scheme" content="light dark"><link rel="alternate" hreflang="en" href="https://beta.monerodevs.org/blog/2017/08/20/overview-and-logs-for-the-dev-meeting-held-on-2017-08-20/"><link rel="alternate" hreflang="ar" href="https://beta.monerodevs.org/ar/blog/2017/08/20/overview-and-logs-for-the-dev-meeting-held-on-2017-08-20/"><link rel="alternate" hreflang="zh" href="https://beta.monerodevs.org/zh/blog/2017/08/20/overview-and-logs-for-the-dev-meeting-held-on-2017-08-20/"><link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="https://beta.monerodevs.org/feed.xml"><style>#blog-content{line-height:var(--line-height-body);word-wrap:break-word;color:light-dark(inherit,var(--paragraph-main));:where(h2,h3,h4){font-weight:var(--font-weight-bold)}img{border-radius:var(--radius-md)}a:not(.moneropedia-link){color:light-dark(var(--text-primary),var(--paragraph-main));font-weight:var(--font-weight-medium);text-decoration-line:underline;text-decoration-style:dotted;&:hover{color:light-dark(var(--text-secondary),var(--heading-color))}}h1{font-size:var(--font-size-2xl)}h2{font-size:var(--font-size-xl)}h3{font-size:var(--font-size-lg)}h4{font-size:var(--font-size-md)}p{margin-bottom:1em}li{margin-bottom:.25em}pre{padding:1em;border-radius:var(--radius-md);overflow-x:auto;background:var(--footer-color);code{background:none;padding:0;border-radius:0}}code:not(pre code){font-family:monospace;background-color:var(--footer-color);padding:.1em .3em;border-radius:var(--radius-sm)}blockquote{margin:1.5em 0;padding-inline:1.5em 1em;border-inline-start:3px solid var(--border-color);font-style:italic;color:var(--text-secondary)}strong{font-weight:var(--font-weight-bold)}em{font-style:italic}}h1[data-astro-cid-7dcwcvhl]{font-size:var(--font-size-3xl);margin:0}#post-header[data-astro-cid-7dcwcvhl]{margin-bottom:var(--page-top-margin)}#meta[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-2xl);color:var(--text-secondary);margin-top:var(--space-md);margin-bottom:var(--space-xl);font-size:var(--font-size-lg);font-weight:var(--font-weight-normal)}.meta-item[data-astro-cid-7dcwcvhl]{display:flex;align-items:center;gap:var(--space-xs);>.icon{display:grid;place-items:center;color:var(--monero-orange)}}.tag-container[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-xs);font-size:var(--font-size-sm);flex-wrap:wrap;.tag{text-align:center;padding:var(--space-2xs) var(--space-sm);background:var(--footer-color);border-radius:var(--radius-md);text-transform:uppercase;font-weight:var(--font-weight-semibold);text-decoration:none;color:inherit;white-space:nowrap;&:hover{color:var(--text-secondary)}}}@media(width<=600px){#meta[data-astro-cid-7dcwcvhl]{flex-direction:column;font-size:var(--font-size-md);font-weight:var(--font-weight-medium);gap:var(--space-md)}.meta-item[data-astro-cid-7dcwcvhl]{>.icon{font-size:var(--font-size-lg)}}}
+.card[data-astro-cid-dd5txfcy]{background:var(--card-color);padding:var(--card-padding);border-radius:var(--card-radius);&[data-border]{border:1px solid var(--border-color)}&[data-transparent]{background:transparent}&[data-hover]{transition:background .15s ease;&[data-astro-cid-dd5txfcy]:hover,&[data-astro-cid-dd5txfcy]:focus-visible{background:var(--card-hover-color)}}}
+.icon[data-astro-cid-bpjkz5as]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);margin-inline-start:var(--spacing);background:var(--iconColor);mask:var(--iconSrc) no-repeat center / contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}
+</style>
+<link rel="stylesheet" href="/_astro/_page_.DxMr-0dd.css">
+<style>.blog-container[data-astro-cid-ndejf7ww]{display:grid;grid-template-columns:1fr;gap:var(--space-2xl);>*{min-width:0}}.sidebar[data-astro-cid-ndejf7ww]{height:fit-content;& h2[data-astro-cid-ndejf7ww]{font-size:var(--font-size-xl);margin-top:0}}.recent-posts[data-astro-cid-ndejf7ww]{list-style:none;padding:0;margin-bottom:0;display:flex;flex-direction:column;gap:var(--space-md);li{margin-bottom:var(--space-xs)}.post-title{font-size:var(--font-size-md);color:var(--paragraph-main);text-decoration-line:underline;text-decoration-style:dotted;&:hover{text-decoration:underline}}.post-date{display:block;font-size:var(--font-size-sm);color:var(--paragraph-subtitle);margin-top:var(--space-2xs)}}@media(width>=1200px){.blog-container[data-astro-cid-ndejf7ww]{grid-template-columns:1fr 65ch 1fr}.blog-post[data-astro-cid-ndejf7ww]{grid-column:2}.sidebar[data-astro-cid-ndejf7ww]{grid-column:2;grid-row:2}}@media(width>=1600px){.sidebar[data-astro-cid-ndejf7ww]{grid-column:3;grid-row:1}}
+:where([data-astro-image]){object-fit:var(--fit);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+.moneropedia-link{position:relative;display:inline-block;color:var(--monero-orange);text-decoration-line:underline;text-decoration-style:dotted;cursor:help;font-weight:var(--font-weight-medium)}.moneropedia-link:hover,.moneropedia-link:focus-visible{text-decoration:none}.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{content:none}@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{position:absolute;left:50%;opacity:0;pointer-events:none;transform:translate(-50%) translateY(0);transition:opacity .18s ease-out,transform .18s ease-out;z-index:10}.moneropedia-link[data-tooltip]:before{content:attr(data-tooltip);bottom:calc(100% + .5rem);padding:.5rem .75rem;background:var(--card-color);border:1px solid var(--border-color);border-radius:.25rem;box-sizing:border-box;overflow-wrap:break-word;min-inline-size:25ch;max-inline-size:min(35ch,calc(100vw - 2.5rem));font-size:var(--font-size-sm);line-height:var(--line-height-caption);color:var(--text-primary);box-shadow:0 2px 8px #0000004d}.moneropedia-link[data-tooltip]:after{content:"";bottom:calc(100% + .25rem);border-width:.35rem .35rem 0;border-style:solid;border-color:var(--card-color) transparent transparent transparent}.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):before,.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):after{opacity:1;transform:translate(-50%) translateY(-2px)}}@media(prefers-reduced-motion:reduce){@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{transition:none}}}
+.icon[data-astro-cid-7wapxsvo]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);aspect-ratio:1 / 1;vertical-align:middle;--iconUrl: var(--lightUrl);background-image:var(--iconUrl);background-repeat:no-repeat;background-position:center;background-size:contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}@media(prefers-color-scheme:dark){.icon[data-astro-cid-7wapxsvo]{--iconUrl: var(--darkUrl)}}
+</style></head> <body data-astro-cid-sckkx6r4> <header class="header" data-astro-cid-dm2weclu> <div class="header-inner" data-astro-cid-dm2weclu> <a class="brand" href="/zh/" data-astro-cid-dm2weclu> <img src="/_astro/monerologo.CMdKQEkN_10Rm8s.avif" srcset="/_astro/monerologo.CMdKQEkN_10Rm8s.avif 64w, /_astro/monerologo.CMdKQEkN_10Rm8s.avif 128w" alt aria-hidden="true" data-astro-cid-dm2weclu="true" loading="eager" decoding="sync" fetchpriority="high" sizes="(min-width: 64px) 64px, 100vw" style="--fit: cover; --pos: center;" data-astro-image="constrained" width="64" height="64" class="mark"> <span data-astro-cid-dm2weclu>MONERO</span> </a> <input id="nav-toggle" class="nav-toggle" type="checkbox" data-astro-cid-dm2weclu> <nav id="primary-nav" class="nav" aria-label="主要" data-astro-cid-dm2weclu> <div class="drawer-header" data-astro-cid-dm2weclu> <label for="nav-toggle" class="close" aria-controls="primary-nav" aria-label="关闭菜单" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/close.CneAMmXr_ZaFGrm.avif);--iconColor: currentColor;"></div>  </label> </div> <fieldset data-astro-cid-dm2weclu> <legend class="sr-only" data-astro-cid-dm2weclu>主要导航部分</legend> <ul class="nav-list" data-astro-cid-dm2weclu> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-9z5tqptn6" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-9z5tqptn6-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 入门 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-9z5tqptn6" class="mobile-open" aria-label="Open 入门 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-9z5tqptn6-close" class="mobile-close" aria-label="Close 入门 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="入门 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/get-started/what-is-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--darkUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>什么是 Monero？</div> <div class="desc" data-astro-cid-lm33vczh>关于 Monero 您需要了解的一切概览。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/exchanges/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/merchants-exchanges.DN61YseO_ZQ3Km9.avif);--darkUrl: url(/_astro/merchants-exchanges.BjKEmUcz_1O8q9G.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>购买 Monero</div> <div class="desc" data-astro-cid-lm33vczh>允许您购买或交易 Monero 的加密货币交易所。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/merchants/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>使用 Monero</div> <div class="desc" data-astro-cid-lm33vczh>查找接受 Monero 支付的地点和服务。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/accept-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/accept-monero.COXM8aHM_Z1II116.avif);--darkUrl: url(/_astro/accept-monero.C3WCFfqe_Z2tp8Kw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>接受 Monero</div> <div class="desc" data-astro-cid-lm33vczh>了解如何作为商家或个人接受 XMR。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/mining/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/mining.DBRk7HAe_Zd3ukV.avif);--darkUrl: url(/_astro/mining.B54FNZld_Z2jnjrG.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>挖矿</div> <div class="desc" data-astro-cid-lm33vczh>了解如何在您的电脑上挖掘 Monero。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/contribute/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/contribute.DKeO9Dve_Z2vEvfu.avif);--darkUrl: url(/_astro/contribute.zLqiOwb5_Z1qe0gS.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>贡献</div> <div class="desc" data-astro-cid-lm33vczh>帮助 Monero 项目为每个人带来隐私。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/faq/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/faq.C8QObR1A_1A5Irh.avif);--darkUrl: url(/_astro/faq.BNcLqXOJ_ZaSdVI.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>常见问题</div> <div class="desc" data-astro-cid-lm33vczh>查找关于 Monero 常见问题的答案。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/zh/downloads/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 下载  </a>  </div>  </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/zh/blog/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 博客  </a>  </div>  </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-2iaz0uiwh" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-2iaz0uiwh-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 社区 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-2iaz0uiwh" class="mobile-open" aria-label="Open 社区 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-2iaz0uiwh-close" class="mobile-close" aria-label="Close 社区 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="社区 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/community/workgroups/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/workgroups.OzoDQ7NV_Z1Lwqqs.avif);--darkUrl: url(/_astro/workgroups.CGbkWAXL_Z1m0ybJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>工作组</div> <div class="desc" data-astro-cid-lm33vczh>与 Monero 的专门工作组在开发、研究和社区工作方面进行合作。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/community/sponsorships/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>赞助商</div> <div class="desc" data-astro-cid-lm33vczh>支持 Monero 项目的企业列表。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/community/hangouts/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/hangouts.CiWxE-i9_ZeEICj.avif);--darkUrl: url(/_astro/hangouts.Do4DJEA1_257lPw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>社交场所</div> <div class="desc" data-astro-cid-lm33vczh>加入 Monero 社区聚会和活动，与其他爱好者和开发者交流。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-5ssa4we2z" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-5ssa4we2z-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 资源 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-5ssa4we2z" class="mobile-open" aria-label="Open 资源 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-5ssa4we2z-close" class="mobile-close" aria-label="Close 资源 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="资源 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/resources/knowledge-base/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/moneropedia.7o-c8ZX4_lSmb.avif);--darkUrl: url(/_astro/moneropedia.CYJm2-Q5_1KG40X.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>知识库</div> <div class="desc" data-astro-cid-lm33vczh>书籍、出版物、杂志、Moneropedia。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/roadmap/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/roadmap.DoSq9h9o_Z1QuQpv.avif);--darkUrl: url(/_astro/roadmap.BONb2rwk_2hroDR.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>路线图</div> <div class="desc" data-astro-cid-lm33vczh>了解最新的 Monero 开发计划和进展。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/research-lab/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/research-lab.D90VAC3d_WkkdD.avif);--darkUrl: url(/_astro/research-lab.uv3a8gpS_Z7cyXJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>研究实验室</div> <div class="desc" data-astro-cid-lm33vczh>探索 Monero 研究实验室的出版物和研究。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/tools/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/tools.CTqUs9cD_Z1hqOiO.avif);--darkUrl: url(/_astro/tools.BW4KRKDW_Z6Gril.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero 工具</div> <div class="desc" data-astro-cid-lm33vczh>为 Monero 用户和开发者精选的工具和软件列表。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="https://docs.getmonero.org" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/developer-guides.DD6ipv0S_Yls1B.avif);--darkUrl: url(/_astro/developer-guides.Cdg0NOVs_Z2h2V29.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero 文档</div> <div class="desc" data-astro-cid-lm33vczh>用户和开发者有效、安全使用 Monero 的综合指南。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/press-kit/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/press-kit.C4VjegyX_2aPbOF.avif);--darkUrl: url(/_astro/press-kit.CVdfPwCA_1oXHhF.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>媒体资料包</div> <div class="desc" data-astro-cid-lm33vczh>媒体联系方式、标志、图片和其他媒体资源。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="https://ccs.getmonero.org" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 众筹  </a>  </div>  </li>  </ul> </fieldset> </nav> <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="关闭菜单" data-astro-cid-dm2weclu></label> <div class="utils" aria-label="工具" data-astro-cid-dm2weclu> <div class="lang" data-astro-cid-dm2weclu> <details class="lang-container" data-astro-cid-g6d27pgi> <summary class="lang" aria-label="更改语言" aria-haspopup="true" role="button" data-astro-cid-g6d27pgi> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/globe.FI0_gjXP_xUiUM.avif);--iconColor: currentColor;"></div>  </summary> <div class="lang-dropdown" aria-label="语言" data-astro-cid-g6d27pgi> <ul class="lang-list" data-astro-cid-g6d27pgi> <li data-astro-cid-g6d27pgi> <a href="/blog/2017/08/20/overview-and-logs-for-the-dev-meeting-held-on-2017-08-20/" class data-astro-cid-g6d27pgi> English </a> </li><li data-astro-cid-g6d27pgi> <a href="/ar/blog/2017/08/20/overview-and-logs-for-the-dev-meeting-held-on-2017-08-20/" class data-astro-cid-g6d27pgi> العربية </a> </li><li data-astro-cid-g6d27pgi> <a href="/zh/blog/2017/08/20/overview-and-logs-for-the-dev-meeting-held-on-2017-08-20/" class="active" aria-current="true" data-astro-cid-g6d27pgi> 中文 </a> </li> </ul> </div> </details>  </div> <label for="nav-toggle" class="hamburger" aria-controls="primary-nav" aria-label="打开菜单" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/hamburger.CkIM-2PU_xmMpy.avif);--iconColor: currentColor;"></div>  </label> </div> </div> </header>  <main data-astro-cid-sckkx6r4>   <div class="blog-container" data-astro-cid-ndejf7ww> <article class="blog-post" data-astro-cid-ndejf7ww> <div id="post-header" data-astro-cid-7dcwcvhl> <h1 data-astro-cid-7dcwcvhl>Overview and Logs for the Dev Meeting Held on 2017-08-20</h1> <div id="meta" data-astro-cid-7dcwcvhl> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/calendar.BXaSv3Jk_Z1NrB7E.avif);--iconColor: currentColor;"></div>  </div> <time datetime="2017-08-20" data-astro-cid-7dcwcvhl>2017年8月20日</time> </div> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/user.Cx6bTnUm_FhCof.avif);--iconColor: currentColor;"></div>  </div> dEBRUYNE / fluffypony </div> </div> <div class="tag-container" data-astro-cid-7dcwcvhl> <a class="tag" href="/zh/blog/tags/dev-diaries/" data-astro-cid-7dcwcvhl> 开发日志 </a><a class="tag" href="/zh/blog/tags/core/" data-astro-cid-7dcwcvhl> 核心 </a><a class="tag" href="/zh/blog/tags/crypto/" data-astro-cid-7dcwcvhl> 加密 </a> </div> </div>   <div id="blog-content" lang="en" dir="ltr">  <h1 id="overview">Overview</h1>
+<p>An overview can be found on <a href="https://monerobase.com/wiki/DevMeeting_2017-08-20" rel="noopener noreferrer external" target="_blank">MoneroBase</a>.</p>
+<h1 id="logs">Logs</h1>
+<p><strong>&#x3C;fluffypony></strong> 1. Greetings<br>
+<strong>&#x3C;fluffypony></strong> 2. Brief review of what’s been completed since the previous meeting<br>
+<strong>&#x3C;fluffypony></strong> 3. Code + ticket discussion / Q &#x26; A<br>
+<strong>&#x3C;fluffypony></strong> 4. Any additional meeting items<br>
+<strong>&#x3C;fluffypony></strong> 5. Confirm next meeting date/time<br>
+<strong>&#x3C;fluffypony></strong> rehrar can do it next time :)<br>
+<strong>&#x3C;rehrar></strong> I can, sorry for the confusion<br>
+<strong>&#x3C;fluffypony></strong> 1. Greetings<br>
+<strong>&#x3C;fluffypony></strong> can all the people who aren’t here just say nay<br>
+<strong>&#x3C;fluffypony></strong> :-P<br>
+<strong>&#x3C;hyc></strong> neigh<br>
+<strong>&#x3C;surae></strong> we never get past this part :<br>
+<strong>&#x3C;fluffypony></strong> it’s a fun part<br>
+<strong>&#x3C;fluffypony></strong> we can move on to 2<br>
+<strong>&#x3C;fluffypony></strong> 2. Brief review of what’s been completed since the previous meeting<br>
+<strong>&#x3C;fluffypony></strong> I guess the big thing is that we’ve branched<br>
+<strong>&#x3C;surae></strong> well<br>
+<strong>&#x3C;surae></strong> from MRL<br>
+<strong>&#x3C;surae></strong> we got contacted by RingCT2.0 people, and we got contacted by a rsearcher named Tim Ruffing, each of them presenting improved set-ups for our current implementations<br>
+<strong>&#x3C;surae></strong> not sure if I should just jump in or what..<br>
+<strong>&#x3C;dEBRUYNE></strong> Yeah go ahead<br>
+<strong>&#x3C;hyc></strong> sure, go<br>
+<strong>&#x3C;surae></strong> ok so<br>
+<strong>&#x3C;surae></strong> I have a .txt file describing the pseudocode of Ruffing’s sublinear ring sig + CT set-up<br>
+<strong>&#x3C;surae></strong> knaccc has been going through it and implementing it in Java<br>
+<strong>&#x3C;surae></strong> we have a surprising amount of it debugged<br>
+<strong>&#x3C;hyc></strong> ^ note, we’re walking away from the RingCT2.0 stuff because it requires a trusted setup<br>
+<strong>&#x3C;surae></strong> Ah, I didn’t look into it because Ruffing’s doesn’t have a trusted set-up or any “new” crytpo. it just doubles all our key lengths<br>
+<strong>&#x3C;iDunk></strong> surae: fpaste.org or pastebin.mozilla.org<br>
+<strong>&#x3C;sn0wmonster></strong> has the meeting started?<br>
+<strong>&#x3C;endogenic></strong> yes<br>
+<strong>&#x3C;sn0wmonster></strong> where does it say it started? jesus<br>
+<strong>&#x3C;surae></strong> iDunk is 0bin not good enough? :P<br>
+<strong>&#x3C;iDunk></strong> It requires java.<br>
+<strong>&#x3C;iDunk></strong> js actually<br>
+<strong>&#x3C;moneromooo></strong> I think it needs to be encrypted due to agreement with Tim Ruffing.<br>
+<strong>&#x3C;surae></strong> oh i didn’t realize that<br>
+<strong>&#x3C;DaveyJones></strong> surae … the mooo wants javaless paste<br>
+<strong>&#x3C;surae></strong> moneromooo no, just habit<br>
+<strong>&#x3C;surae></strong> ok one sec<br>
+<strong>&#x3C;moneromooo></strong> Oh, ok. I’m dying to see it then :D<br>
+<strong>&#x3C;moneromooo></strong> ty<br>
+<strong>&#x3C;surae></strong> we are in the midst of debugging knaccc’s java code<br>
+<strong>&#x3C;dEBRUYNE></strong> surae: Could you perhaps give an ELI5 (for anyone that reads the logs later) how RuffCT will improve our protocol?<br>
+<strong>&#x3C;surae></strong> well, roughly, (ruffly)<br>
+<strong>&#x3C;knaccc></strong> lol<br>
+<strong>&#x3C;surae></strong> signature sizes are O(N) right now. So signature sizes take up “as much space” as the number of public keys implicated in the signature<br>
+<strong>&#x3C;surae></strong> Ruffing’s set-up, for N=n^m, has signature sizes O(n*m). Verification and computation <em>it appears</em> to be on the same order. so, for example, to sign a ring signature with N=10^17 signers, which is freaking absurd, you would need “as much space” as 10*17 = 170 public keys<br>
+<strong>&#x3C;surae></strong> there are constants and stuff, so it’s not exact, but at the very least, Ruffing’s set-up is looking at really absurdly large ring signatures<br>
+<strong>&#x3C;hyc></strong> … without taking absurdly large amount of space<br>
+<strong>&#x3C;surae></strong> with a set-up like this, there should be no good reason to not simply sign every transaction with the top half of the blockchain every time<br>
+<strong>&#x3C;surae></strong> or taking absurdly large amounts of time to verify or compute<br>
+<strong>&#x3C;dEBRUYNE></strong> So we can easily use ring size 100k for instance?<br>
+<strong>&#x3C;dEBRUYNE></strong> Or even higher<br>
+<strong>&#x3C;hyc></strong> even higher<br>
+<strong>&#x3C;fluffypony></strong> EVEN HIGHER<br>
+<strong>&#x3C;surae></strong> assuming his set-up actually works (the math seems tight) and assuming his security proofs hold up (I am going to try to make independent security proofs and then later compare them), and after six months to a year of testing, etc etc<br>
+<strong>&#x3C;surae></strong> i mean<br>
+<strong>&#x3C;JollyMort[m]></strong> UNLIMITED RINGSIZE<br>
+<strong>&#x3C;endogenic></strong> fluffypony: what does the scouter say about monero’s ringsize level?<br>
+<strong>&#x3C;moneromooo></strong> log(infinity) is infinity…<br>
+<strong>&#x3C;surae></strong> in a certain sense, this is like an alien came down and gifted us faster than light travel. yeah, we can go out there and start traveling around, but we have to consider consequences for the timeline. :P haha<br>
+<strong>&#x3C;fluffypony></strong> endogenic: I give up?<br>
+<strong>&#x3C;endogenic></strong> it’s over 9000<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;DaveyJones></strong> the puns are ruff today<br>
+<strong>&#x3C;fluffypony></strong> also to add to what surae’s said<br>
+<strong>&#x3C;moneromooo></strong> Would be need (pretty much) all pubkeys/commitments in RAM all the time, in order to verify such sigs ?<br>
+<strong>&#x3C;moneromooo></strong> Or can some precomp be done ?<br>
+<strong>&#x3C;fluffypony></strong> multisig isn’t baked in right now, it would need to be re-done from scratch<br>
+<strong>&#x3C;rehrar></strong> the room fell silent<br>
+<strong>&#x3C;hyc></strong> I’ll precompute it all for ya. trust me.<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: Are we certain it has to be re-done from scratch or would it possible to just tweak the current implementation?<br>
+<strong>&#x3C;surae></strong> moneromooo the signature itself only uses the commitments from the column of the signer<br>
+<strong>&#x3C;fluffypony></strong> dEBRUYNE: we’re certain<br>
+<strong>&#x3C;dEBRUYNE></strong> k<br>
+<strong>&#x3C;DaveyJones></strong> fluffypony - can it be dual run like pre-ct and ring-ct till the fork?<br>
+<strong>&#x3C;dEBRUYNE></strong> I think we shouldn’t forego the current implementation, because we’re already quite far in<br>
+<strong>&#x3C;surae></strong> debruyne the shen-luigi multisig set-up which is a version of the schnorr multisig, might lead us to a similar set-up for RuffCT, but it’s not a simple gluing like one would hope<br>
+<strong>&#x3C;dEBRUYNE></strong> In addition, it may take a year before RuffCT is actually implemented<br>
+<strong>&#x3C;DaveyJones></strong> so that we could keep luigi ms till ruff ms is done ?<br>
+<strong>&#x3C;dEBRUYNE></strong> And even longer before we have a multisig that is compatible with ruffct<br>
+<strong>&#x3C;JollyMort[m]></strong> you can always convert later<br>
+<strong>&#x3C;fluffypony></strong> DaveyJones: I don’t think so, at least not trivially<br>
+<strong>&#x3C;JollyMort[m]></strong> i mean if we have to do RCT->RuffCT<br>
+<strong>&#x3C;surae></strong> dEBRUYNE I’m actually with you on that. chances are good RuffCT is about 1 year out from being live, and I wouldn’t be <em>shocked</em> if we could make a threshold scheme out of it before that year is up<br>
+<strong>&#x3C;JollyMort[m]></strong> same can be done for wallets<br>
+<strong>&#x3C;JollyMort[m]></strong> RCT multisig -> RuffCT multisig<br>
+<strong>&#x3C;fluffypony></strong> well, basically this isn’t going in to a hardfork until we have multisig<br>
+<strong>&#x3C;msvb-lab></strong> JollyMort[m]: hardware or software wallets?<br>
+<strong>&#x3C;tyrionmcmmaster></strong> i agree with the majority, that multisig pre-ruffct should be implemented for the time being<br>
+<strong>&#x3C;JollyMort[m]></strong> and shen/luigi multisig can work regardless of consensus rules<br>
+<strong>&#x3C;dEBRUYNE></strong> &#x3C;msvb-lab> JollyMort[m]: hardware or software wallets? &#x3C;= Doesn’t matter<br>
+<strong>&#x3C;JollyMort[m]></strong> by means of one-time multisig wallets<br>
+<strong>&#x3C;surae></strong> so i’m happy finsihing up the shen-luigi multisig scheme, letting wallets use it until RuffCT goes live, they’ll still be able to use it for whatever RCT outputs are still floating around if they like… and maybe users may miss out on threshold signatures for one hardfork, but probably not two.<br>
+<strong>&#x3C;hyc></strong> that sounds decent<br>
+<strong>&#x3C;fluffypony></strong> ok<br>
+<strong>&#x3C;DaveyJones></strong> ^+1<br>
+<strong>&#x3C;fluffypony></strong> guys let’s move on<br>
+<strong>&#x3C;surae></strong> excellente<br>
+<strong>&#x3C;fluffypony></strong> 3. Code + ticket discussion / Q &#x26; A<br>
+<strong>&#x3C;DaveyJones></strong> can i chime in for the AFK devs?<br>
+<strong>&#x3C;fluffypony></strong> before we discuss any specific PRs / issues<br>
+<strong>&#x3C;fluffypony></strong> I wanted to get a feel as to how we should handle the branch wrt PRs<br>
+<strong>&#x3C;fluffypony></strong> ie. do we want people to push PRs to both branches where relevant<br>
+<strong>&#x3C;fluffypony></strong> or must I just cherry-pick commits?<br>
+<strong>&#x3C;moneromooo></strong> Push to both, or the GPG signature drops.<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: I meant cherry-pick to my fork and then PR it<br>
+<strong>&#x3C;hyc></strong> ok. but tat this pre-release time, how are we deciding which PRs are eligible for the release branch?<br>
+<strong>&#x3C;moneromooo></strong> fluffypony: I don’t understand that.<br>
+<strong>&#x3C;moneromooo></strong> If someone wants a patch to the release branch, they PR it to that branch too.<br>
+<strong>&#x3C;vtnerd></strong> bug fixes should automatically be considered … everything else is subjective<br>
+<strong>&#x3C;fluffypony></strong> vtnerd: it’s bug fixes only<br>
+<strong>&#x3C;moneromooo></strong> I guess you can cherry-pick if the commit isn’t signed in the first place.<br>
+<strong>&#x3C;fluffypony></strong> nothing else goes in, we’re in code freeze on the branch<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: if I cherry-pick and I sign it then it’s still signed?<br>
+<strong>&#x3C;vtnerd></strong> ok good, at least we are in agreement on that<br>
+<strong>&#x3C;moneromooo></strong> Well, it’s signed by you, yes…<br>
+<strong>&#x3C;moneromooo></strong> But you’re kinda not the author ? :)<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: with cherry-pick it lists both myself and the aithor iirc<br>
+<strong>&#x3C;fluffypony></strong> *author<br>
+<strong>&#x3C;moneromooo></strong> I guess nobody really cares anyway.<br>
+<strong>&#x3C;moneromooo></strong> Yes, but the author’s signature drops AFAIK.<br>
+<strong>&#x3C;moneromooo></strong> So you could modify a large patch, sign it, and nobody would notice.<br>
+<strong>&#x3C;iDunk></strong> I agree with moneromooo, that’s not the way to do it.<br>
+<strong>&#x3C;hyc></strong> ok, so PR directly to release branch<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: <a href="https://i.imgur.com/PG0YmsF.png" rel="noopener noreferrer external" target="_blank">https://i.imgur.com/PG0YmsF.png</a> &#x3C;- like that<br>
+<strong>&#x3C;hyc></strong> there’s 22 open PRs at the moment. only a few seem to be current bugfixes<br>
+<strong>&#x3C;moneromooo></strong> Most people will just PR to master anyway, so not much trouble.<br>
+<strong>&#x3C;moneromooo></strong> I’m not sure I get the point.<br>
+<strong>&#x3C;fluffypony></strong> ok this is more about the fallback if the contributor doesn’t PR to the branch in a timeous fashion<br>
+<strong>&#x3C;moneromooo></strong> In that case, if it’s really needed for the branch, cherry-pick is OK I suppose.<br>
+<strong>&#x3C;fluffypony></strong> ok cool<br>
+<strong>&#x3C;hyc></strong> but re: the branch, I’d like #2313 and #2314 to go into the release. should help further reduce chance of corruption on powerfail.<br>
+<strong>&#x3C;moneromooo></strong> Agreed.<br>
+<strong>&#x3C;moneromooo></strong> I’ll just fixup the target thing too.<br>
+<strong>&#x3C;hyc></strong> cool<br>
+<strong>&#x3C;moneromooo></strong> I think just removing the state check will be fine.<br>
+<strong>&#x3C;fluffypony></strong> yes<br>
+<strong>&#x3C;fluffypony></strong> if those can be PRd to the branch that would be great<br>
+<strong>&#x3C;hyc></strong> willdo<br>
+<strong>&#x3C;fluffypony></strong> ok - anything else?<br>
+<strong>&#x3C;JollyMort[m]></strong> about GUI cold signing<br>
+<strong>&#x3C;JollyMort[m]></strong> any plans to add import/export outputs&#x26;keyimage stuffs<br>
+<strong>&#x3C;msvb-lab></strong> fluffypony: Not sure when it’s appropriate to ask for consensus on (yes) increase efforts towards a hardware wallet or (no) maintain status quo.<br>
+<strong>&#x3C;fluffypony></strong> what’s everyone’s feelings on merging 0MQ into master?<br>
+<strong>&#x3C;DaveyJones></strong> so tewinget only said that he just wants further feedback<br>
+<strong>&#x3C;dEBRUYNE></strong> JollyMort[m]: Jaquee isn’t here afaik<br>
+<strong>&#x3C;DaveyJones></strong> and jaquee asked this<br>
+<strong>&#x3C;Jaquee></strong> i’m here now<br>
+<strong>&#x3C;hyc></strong> I thought merging 0MQ is slated for after the release<br>
+<strong>&#x3C;DaveyJones></strong> &#x3C;Jaquee> not sure if i can make it to the meeting. have two questions. 1. updates on disk space on build machines (when can we have an android apk available for download?) 2. updates on app store and transifex accounts?<br>
+<strong>&#x3C;Jaquee></strong> reading backlog<br>
+<strong>&#x3C;moneromooo></strong> After the release is done, yes.<br>
+<strong>&#x3C;DaveyJones></strong> oh your here :D<br>
+<strong>&#x3C;fluffypony></strong> we’ve already branched, tho, so surely we can merge to master?<br>
+<strong>&#x3C;moneromooo></strong> his here.<br>
+<strong>&#x3C;fluffypony></strong> msvb-lab: the dev working group don’t really control external manufacturers<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: moneromooo wants to put in an additional review afaik<br>
+<strong>&#x3C;moneromooo></strong> I’ve not looked at the latest changes yet.<br>
+<strong>&#x3C;dEBRUYNE></strong> And tewinget is waiting for further feedback<br>
+<strong>&#x3C;fluffypony></strong> ok<br>
+<strong>&#x3C;Jaquee></strong> but maybe lightwallets PR can be merged? (in masteR)<br>
+<strong>&#x3C;pigeons1[m]></strong> Jaquee we got the build machine so early this week on the android jobs<br>
+<strong>&#x3C;rehrar></strong> regarding the transifex account, I’ve found an open-source, self-hosted alternative in weblate.org<br>
+<strong>&#x3C;medusa></strong> i dont think the fact if we branched mathers too much regradiing 0mq<br>
+<strong>&#x3C;Jaquee></strong> pigeons1[m]: Great!<br>
+<strong>&#x3C;rehrar></strong> just waiting on the new server infrastructure :)<br>
+<strong>&#x3C;medusa></strong> we should play it safe<br>
+<strong>&#x3C;moneromooo></strong> If the lightwallet stuff is the same I reviewed already, it was OK to merge IIRC.<br>
+<strong>&#x3C;Jaquee></strong> it’s the same<br>
+<strong>&#x3C;fluffypony></strong> kk<br>
+<strong>&#x3C;dEBRUYNE></strong> ^ Not sure we should put that up on SE already<br>
+<strong>&#x3C;sn0wmonster></strong> i have a suggestion for future meetings, let me know when i can make it.<br>
+<strong>&#x3C;JollyMort[m]></strong> yeah i thought that too dEBRUYNE<br>
+<strong>&#x3C;JollyMort[m]></strong> surae what do you think?<br>
+<strong>&#x3C;fluffypony></strong> yeah I think some of this is confidential-ish<br>
+<strong>&#x3C;hyc></strong> are we still on ticket discussion?<br>
+<strong>&#x3C;DaveyJones></strong> aye<br>
+<strong>&#x3C;JollyMort[m]></strong> i mean, putting it in the meeting logs also makes it public<br>
+<strong>&#x3C;JollyMort[m]></strong> the genie is out of the bottle<br>
+<strong>&#x3C;dEBRUYNE></strong> I can just remove it from the logs<br>
+<strong>&#x3C;fluffypony></strong> hyc: about to move on, but you can still bring stuff up<br>
+<strong>&#x3C;hyc></strong> no that’s fine<br>
+<strong>&#x3C;dEBRUYNE></strong> JollyMort[m] ^<br>
+<strong>&#x3C;hyc></strong> let’s move on<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: Jaquee wanted to know about the appstore accounts btw<br>
+<strong>&#x3C;fluffypony></strong> surae should weigh in on that<br>
+<strong>&#x3C;dEBRUYNE></strong> If you have any update on that<br>
+<strong>&#x3C;Jaquee></strong> ^^<br>
+<strong>&#x3C;fluffypony></strong> app store accounts are waiting on the D-U-N-S number to be sent to Apple, I’ve sent scans of docs to Google and M$<br>
+<strong>&#x3C;fluffypony></strong> so Two Weeks™ ?<br>
+<strong>&#x3C;fluffypony></strong> 4. Any additional meeting items &#x3C;- moving on to that<br>
+<strong>&#x3C;fluffypony></strong> since it’s part of it anyway<br>
+<strong>&#x3C;sn0wmonster></strong> is this where i can make a suggestion?<br>
+<strong>&#x3C;fluffypony></strong> sn0wmonster wanted to make a suggestion<br>
+<strong>&#x3C;sn0wmonster></strong> yay<br>
+<strong>&#x3C;sn0wmonster></strong> so, i noticed the meeting started only after it was obvious it was a meeting<br>
+<strong>&#x3C;sn0wmonster></strong> i don’t see a Meetbot (which apparently is a package in Debian),<br>
+<strong>&#x3C;sn0wmonster></strong> so if you must do it this way, i was wondering if you wouldn’t make it painfully obvious to everyone with a header of some kind, like this:<br>
+<strong>&#x3C;othe></strong> msvb-lab asked a question but got overrun, i am willing to help sponsor his hw wallet stufdlf<br>
+<strong>&#x3C;fluffypony></strong> also the time is set two weeks in advance<br>
+<strong>&#x3C;sn0wmonster></strong> /flushq<br>
+<strong>&#x3C;pigeons1[m]></strong> Sn0wmonster makes a great meeting bot<br>
+<strong>&#x3C;hyc></strong> it’s also announced on reddit and github<br>
+<strong>&#x3C;sn0wmonster></strong> beep bop boop<br>
+<strong>&#x3C;othe></strong> Ffs sake, there are 2 hw wallet proposals. Feedback appreciated.<br>
+<strong>&#x3C;msvb-lab></strong> othe: If anyone has advice on what to change in those FFS, the URLs are:<br>
+<strong>&#x3C;msvb-lab></strong> <a href="https://forum.getmonero.org/7/open-tasks/88149/dedicated-monero-hardware-wallet/" rel="noopener noreferrer external" target="_blank">https://forum.getmonero.org/7/open-tasks/88149/dedicated-monero-hardware-wallet/</a><br>
+<strong>&#x3C;hyc></strong> and was announced here a few hours earlier<br>
+<strong>&#x3C;msvb-lab></strong> <a href="https://forum.getmonero.org/7/open-tasks/88160/monero-firmware-for-ledger-wallet/" rel="noopener noreferrer external" target="_blank">https://forum.getmonero.org/7/open-tasks/88160/monero-firmware-for-ledger-wallet/</a><br>
+<strong>&#x3C;endogenic></strong> sn0wmonster: <a href="https://github.com/monero-project/meta/issues" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/meta/issues</a><br>
+<strong>&#x3C;fluffypony></strong> sn0wmonster: <a href="https://www.reddit.com/r/Monero/comments/6uvu94/dev_kovri_meetings_later_today_1700_1800_utc/" rel="noopener noreferrer external" target="_blank">https://www.reddit.com/r/Monero/comments/6uvu94/dev_kovri_meetings_later_today_1700_1800_utc/</a><br>
+<strong>&#x3C;DaveyJones></strong> shhh listen to othe and msvb-lab<br>
+<strong>&#x3C;sn0wmonster></strong> i didn’t say it wasn’t known, i said the *chatlog* had no introduction that the meeting had started really<br>
+<strong>&#x3C;endogenic></strong> sn0wmonster: it did though ?<br>
+<strong>&#x3C;JollyMort[m]></strong> i’m saying it had :) first post by fluffypony with the agenda 0. .. 1. .. 2.. …<br>
+<strong>&#x3C;JollyMort[m]></strong> maybe you missed it<br>
+<strong>&#x3C;msvb-lab></strong> DaveyJones: Rather than listen, please speak whoever is interested in hardware crypto and border searches.<br>
+<strong>&#x3C;rehrar></strong> but it didn’t have the Monero symbol<br>
+<strong>&#x3C;endogenic></strong> msvb-lab: doesn’t quite seem like a dev item tho<br>
+<strong>&#x3C;hyc></strong> yeah, I think we can put that meeting announcement topic to rest.<br>
+<strong>&#x3C;DaveyJones></strong> msvb-lab they cannot speak if they don`t listen :D<br>
+<strong>&#x3C;moneromooo></strong> In other code news: I’m still debugging sync niggles with iDunk’s help (who’s been doing a LOT of testing, so many thanks). It’ll be ready soon (both branch and master).<br>
+<strong>&#x3C;rehrar></strong> msvb-lab: we can talk about it in Community meeting next week?<br>
+<strong>&#x3C;msvb-lab></strong> endogenic: Okay, let’s postpone. Good idea rehrar.<br>
+<strong>&#x3C;JollyMort[m]></strong> about the gui cold signing<br>
+<strong>&#x3C;iDunk></strong> Yw :)<br>
+<strong>&#x3C;JollyMort[m]></strong> it’s still missing features<br>
+<strong>&#x3C;moneromooo></strong> If someone feels like syncing, please try the sync-standby3 branch :)<br>
+<strong>&#x3C;endogenic></strong> msvb-lab: no need to post-pone. maybe bring it up in #Monero ?<br>
+<strong>&#x3C;dEBRUYNE></strong> rehrar, endogenic: If there’s room left, why not give msvb-lab the floor for a few minutes?<br>
+<strong>&#x3C;moneromooo></strong> It may not be code per se, but it’s tech. I think it’s fine here. Still 10 minutes.<br>
+<strong>&#x3C;othe></strong> I’ll just sponsor it, its hilarious that there’s no secure way to store xmr.<br>
+<strong>&#x3C;endogenic></strong> kk<br>
+<strong>&#x3C;fluffypony></strong> msvb-lab: a dedicated wallet would be cool<br>
+<strong>&#x3C;rehrar></strong> well that’s decided then isn’t it?<br>
+<strong>&#x3C;msvb-lab></strong> So the question is if we can achieve consensus on how to lower risk of another year with no wallet.<br>
+<strong>&#x3C;hyc></strong> there are two proposals tho, do we have to pick one, or do both?<br>
+<strong>&#x3C;msvb-lab></strong> hw wallet, i mean.<br>
+<strong>&#x3C;fluffypony></strong> Ledger are already working on it, not sure if we need to double up efforts there<br>
+<strong>&#x3C;dEBRUYNE></strong> Perhaps it’d be more beneficial if we have some general firmware that hw wallets could implement<br>
+<strong>&#x3C;surae></strong> gosh, sorry, i got distracted. no, please don’t put up a stackexchange yet. a few weeks, no problem, but right now we should maybe keep it a little quieter~<br>
+<strong>&#x3C;surae></strong> if possible<br>
+<strong>&#x3C;surae></strong> cat’s out of the bag, but i mean<br>
+<strong>&#x3C;msvb-lab></strong> hyc: One deals with dedicated hardware design, the other with porting to existing hardware.<br>
+<strong>&#x3C;fluffypony></strong> msvb-lab: <a href="https://www.reddit.com/r/Monero/comments/6thv8j/ledger_hardware_wallet_monero_integration/" rel="noopener noreferrer external" target="_blank">https://www.reddit.com/r/Monero/comments/6thv8j/ledger_hardware_wallet_monero_integration/</a> &#x3C;- this is from 6 days ago<br>
+<strong>&#x3C;endogenic></strong> 2quick4u fyi<br>
+<strong>&#x3C;msvb-lab></strong> fluffypony: That’s probably Cedric’s document Blue-something, quite good.<br>
+<strong>&#x3C;dEBRUYNE></strong> &#x3C;msvb-lab> hyc: One deals with dedicated hardware design, the other with porting to existing hardware. &#x3C;= Even though the former would be pretty cool, the latter is probably more beneficial<br>
+<strong>&#x3C;JollyMort[m]></strong> and debruyne out the link then; i feel like simply removing stuff from the logs goes against some principle on transparency<br>
+<strong>&#x3C;hyc></strong> looks to me like Ledger has done the hard part of figuring out the division of labor between hw wallet and Monero libraries<br>
+<strong>&#x3C;Jaquee></strong> ledger said alpha around end of september iirc.<br>
+<strong>&#x3C;fluffypony></strong> I don’t think there’s value in doubling up on the Ledger effort<br>
+<strong>&#x3C;hyc></strong> ^^ agreed<br>
+<strong>&#x3C;dEBRUYNE></strong> What about porting to Trezor and Keepkey though?<br>
+<strong>&#x3C;Jaquee></strong> +1<br>
+<strong>&#x3C;msvb-lab></strong> There have been firmware ports (to Trezor) before that have not met Monero’s feature set (RingCT) or unmaintained.<br>
+<strong>&#x3C;dEBRUYNE></strong> Perhaps msvb-lab is interested in finishing noodle’s code?<br>
+<strong>&#x3C;fluffypony></strong> msvb-lab: Trezor was more complicated than that<br>
+<strong>&#x3C;msvb-lab></strong> I just hope if Cedric completes the port, that there is maintenance after that.<br>
+<strong>&#x3C;fluffypony></strong> NoodleDoodle did the Trezor firmware<br>
+<strong>&#x3C;JollyMort[m]></strong> Cedric is the Ledger crypto-guy<br>
+<strong>&#x3C;ferretinjapan></strong> fluffypony, choice is always a good thing WRT HWE wallets, otherwise we may get centralisation of support/development/monopoly of service, etc.<br>
+<strong>&#x3C;hyc></strong> I’d say we pick up whatever changes ledger comes up with and use that as a basis for other hw projects<br>
+<strong>&#x3C;fluffypony></strong> then there was a bit of a disagreement between Trezor and us<br>
+<strong>&#x3C;JollyMort[m]></strong> afaik<br>
+<strong>&#x3C;fwrttrukjwtrijdh></strong> sorry, noticed objections above to SE questions. Will delete for now. Does same objection apply to both Ruffling and RingCT2.0 paper?<br>
+<strong>&#x3C;fluffypony></strong> and then I met up with them 33c3, and they said that it’s not worth us moving forward on it till Trezor 2.0<br>
+<strong>&#x3C;hyc></strong> if all the wallets use the same handshakes that saves everyone effort<br>
+<strong>&#x3C;fluffypony></strong> which was Coming Soon™<br>
+<strong>&#x3C;moneromooo></strong> Tim Ruffing requested keeping is internal as a courtesy. I don’t think anhything like that applies to Ringct 2.0.<br>
+<strong>&#x3C;dEBRUYNE></strong> The 2.0 paper was posted on reddit too :P<br>
+<strong>&#x3C;hyc></strong> that’s as close as we’ll get to a “common firmware” - other hw wallets will be based on different chips anyway<br>
+<strong>&#x3C;msvb-lab></strong> Not sure how stable (management or technically) Trezor is, hoping Cedric follows through on the Ledger work is a possibility. We then do little or nothing and wait for results.<br>
+<strong>&#x3C;fluffypony></strong> msvb-lab: I’d support effort on a dedicated HW wallet<br>
+<strong>&#x3C;JollyMort[m]></strong> chip design etc? that sounds good<br>
+<strong>&#x3C;JollyMort[m]></strong> especially if all the schematics are published<br>
+<strong>&#x3C;msvb-lab></strong> Something that interests me is adding Monero specific features to a dedicated wallet, and make it as border search proof as possible (not supported by Ledger.)<br>
+<strong>&#x3C;JollyMort[m]></strong> so anyone can buy the parts and build it<br>
+<strong>&#x3C;hyc></strong> lol. I’m not soldering surface-mount chips by myself.<br>
+<strong>&#x3C;msvb-lab></strong> JollyMort[m]: Everything would be designed with KiCad and published in a github or similar.<br>
+<strong>&#x3C;sn0wmonster></strong> what is not border-proof about ledger?<br>
+<strong>&#x3C;msvb-lab></strong> hyc: I have a SMD lab, reflow and all.<br>
+<strong>&#x3C;ferretinjapan></strong> hyc, what’s the problem? All you do is put it in the oven ;)<br>
+<strong>&#x3C;msvb-lab></strong> sn0wmonster: No ability to destroy the private key without battery.<br>
+<strong>&#x3C;fluffypony></strong> avoiding the glitching attacks just demonstrated against Trezor will be fun<br>
+<strong>&#x3C;hyc></strong> let’s just say I’ve overcooked a few microcontrollers in my day…<br>
+<strong>&#x3C;endogenic></strong> hyc: you need an intern or two<br>
+<strong>&#x3C;JollyMort[m]></strong> hyc baking bad :)<br>
+<strong>&#x3C;msvb-lab></strong> fluffypony: Yes, glitch defense is part of the design. I’m not sure it’s possible at all, but there will be research.<br>
+<strong>&#x3C;fluffypony></strong> cool beans<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: Do we still have time, I wanted to suggest something more generally?<br>
+<strong>&#x3C;msvb-lab></strong> fluffypony: Randomness probably plays an important role, so we have chips like ATSHA240A.<br>
+<strong>&#x3C;DaveyJones></strong> so dedicated hw of the two it will be ? so we can come to a conclusion before the end of meeting<br>
+<strong>&#x3C;JollyMort[m]></strong> Jaquee: would it be too much effort to add the import/export stuffs into gui<br>
+<strong>&#x3C;msvb-lab></strong> dEBRUYNE: Let’s close off hw wallets now, but everyone please add a post to the FFS if you have a strong opinion.<br>
+<strong>&#x3C;msvb-lab></strong> Thanks for the floor folks!<br>
+<strong>&#x3C;JollyMort[m]></strong> would be nice to avoid depending on the CLI to fix cold signing glitches<br>
+<strong>&#x3C;dEBRUYNE></strong> All right, I’ll leave a comment later msvb-lab :)<br>
+<strong>&#x3C;JollyMort[m]></strong> and some use cases require import/export stuffs<br>
+<strong>&#x3C;dEBRUYNE></strong> I personally wanted to raise the idea to release more often (e.g. a new release every quarter) to (i) tighten and improve the feedback loop and (ii) decrease time spend on helping out people that incur issues that are already long fixed in master<br>
+<strong>&#x3C;Jaquee></strong> JollyMort[m]: not that much effort. problem is that code is frozen in monero. so wont make into this coming release<br>
+<strong>&#x3C;dEBRUYNE></strong> I spoke with fluffypony about this in private and he was concerned it would put too much pressure on contributors<br>
+<strong>&#x3C;JollyMort[m]></strong> :(<br>
+<strong>&#x3C;dEBRUYNE></strong> So I’d like to hear their opinion about it<br>
+<strong>&#x3C;Jaquee></strong> i added some improvements yesterday<br>
+<strong>&#x3C;dEBRUYNE></strong> I guess I should mainly page Jaquee, moneromooo, hyc, iDunk<br>
+<strong>&#x3C;JollyMort[m]></strong> i saw, haven’t tested it yet<br>
+<strong>&#x3C;dEBRUYNE></strong> ^ apologies if I forgot someone :P<br>
+<strong>&#x3C;hyc></strong> “release early, release often”<br>
+<strong>&#x3C;JollyMort[m]></strong> i’ll check it out<br>
+<strong>&#x3C;moneromooo></strong> I think it’d put too much pressure on the pony.<br>
+<strong>&#x3C;dEBRUYNE></strong> hyc: Right, that was kind of my basis for the idea<br>
+<strong>&#x3C;Jaquee></strong> i’d love to release more often<br>
+<strong>&#x3C;hyc></strong> I think having another interim release would be nice<br>
+<strong>&#x3C;moneromooo></strong> He barely has the time to do anything AIUI.<br>
+<strong>&#x3C;dEBRUYNE></strong> moneromooo: Could this be mitigated if we had an additional maintainer?<br>
+<strong>&#x3C;endogenic></strong> i think it’s funny when people say “fail fast”<br>
+<strong>&#x3C;fluffypony></strong> we need to bear in mind that this is security software<br>
+<strong>&#x3C;dEBRUYNE></strong> I think luigi wanted to do an FFS soon for it<br>
+<strong>&#x3C;moneromooo></strong> Who would you trust which can do it ?<br>
+<strong>&#x3C;moneromooo></strong> hyc!<br>
+<strong>* moneromooo</strong> flees<br>
+<strong>&#x3C;hyc></strong> :P<br>
+<strong>&#x3C;dEBRUYNE></strong> Well luigi could merge stuff and FP release?<br>
+<strong>&#x3C;fluffypony></strong> I don’t think we should be pushing to release unstable software :-P<br>
+<strong>&#x3C;DaveyJones></strong> hyc or the luigi1115<br>
+<strong>&#x3C;fluffypony></strong> an additional maintainer won’t make software magically stable :-P<br>
+<strong>&#x3C;hyc></strong> true<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: No, but it would take time away that you have to spend on merging and reviewing stuff<br>
+<strong>&#x3C;ferretinjapan></strong> I’d just like to say that a backup maintainer should be seriously considered, even if the release schedule stays the same, there’s nothing like redundancy…<br>
+<strong>&#x3C;fluffypony></strong> we need way more eyes on PRs than that<br>
+<strong>&#x3C;fluffypony></strong> ferretinjapan: we already have backups<br>
+<strong>&#x3C;dEBRUYNE></strong> Also, those large merging waves inhibit the momentum of the project imo<br>
+<strong>&#x3C;ferretinjapan></strong> ah, goodo<br>
+<strong>&#x3C;medusa></strong> the lack of follow up bugfix releases causes huuge amunt of support work<br>
+<strong>&#x3C;fluffypony></strong> the Core Team have access, and luigi1115 is my direct backup<br>
+<strong>&#x3C;fluffypony></strong> medusa: we’ve already solved that<br>
+<strong>&#x3C;medusa></strong> how?<br>
+<strong>&#x3C;rehrar></strong> What if one release added content, and the intermin is just bug fixes?<br>
+<strong>&#x3C;fluffypony></strong> with the branch<br>
+<strong>&#x3C;dEBRUYNE></strong> &#x3C;fluffypony> I don’t think we should be pushing to release unstable software :-P &#x3C;= Not saying we should, but if master is deemed stable we could put out a release with a few new features right?<br>
+<strong>&#x3C;medusa></strong> so this time we going to have a follow up release 100% ?<br>
+<strong>&#x3C;medusa></strong> like 2 weeks later<br>
+<strong>&#x3C;fluffypony></strong> medusa: it depends on if there are bug fixes<br>
+<strong>&#x3C;dEBRUYNE></strong> There are always bug fixes<br>
+<strong>&#x3C;dEBRUYNE></strong> :P<br>
+<strong>&#x3C;medusa></strong> well depends on severity i agree<br>
+<strong>&#x3C;medusa></strong> of the bug<br>
+<strong>&#x3C;ferretinjapan></strong> dEBRUYNE, what about early beta releases? Say just before the freeze?<br>
+<strong>&#x3C;JollyMort[m]></strong> for one thing, i would love to see cold signing stuffs added asap; feel like it’s an important feature to those who don’t want to use CLI for the same thing<br>
+<strong>&#x3C;JollyMort[m]></strong> and be able to resolve any problem people may have by using GUI functions<br>
+<strong>&#x3C;ferretinjapan></strong> or an “experimental” release?<br>
+<strong>&#x3C;hyc></strong> can we just get people to use a nightly build, for bugfix verification?<br>
+<strong>&#x3C;dEBRUYNE></strong> ferretinjapan: That seems suboptimal, as there would be new binaries a few weeks later<br>
+<strong>&#x3C;bigreddmachine></strong> Isn’t that what the nightly builds are?<br>
+<strong>&#x3C;hyc></strong> and then at some point we can decide if we have something stable enough for another release<br>
+<strong>&#x3C;medusa></strong> if we potentially want to keep the branch that long, we should also slow down with merging stuff in trunk (especially 0mg)<br>
+<strong>&#x3C;medusa></strong> until we can estimate the quality of the branch somehow<br>
+<strong>&#x3C;fluffypony></strong> just looking at the recent releases, I don’t think there have been a lack of them<br>
+<strong>&#x3C;fluffypony></strong> Sep 19, 2016: 0.10.0<br>
+<strong>&#x3C;fluffypony></strong> Dec 13, 2016: 0.10.1<br>
+<strong>&#x3C;fluffypony></strong> Feb 23, 2017: 0.10.2<br>
+<strong>&#x3C;fluffypony></strong> Feb 24, 2017: 0.10.2.1<br>
+<strong>&#x3C;fluffypony></strong> Mar 26, 2017: 0.10.3<br>
+<strong>&#x3C;fluffypony></strong> Mar 26, 2017: 0.10.3.1<br>
+<strong>&#x3C;medusa></strong> otherwise we risk, dpeending on buigs we have after release, to end up in a hairy position<br>
+<strong>&#x3C;hyc></strong> so it sounds like release-as-needed is working<br>
+<strong>&#x3C;fluffypony></strong> yeah, I’m not really seeing a lack of releases there<br>
+<strong>&#x3C;moneromooo></strong> especially on march the 26th.<br>
+<strong>&#x3C;hyc></strong> heh<br>
+<strong>&#x3C;JollyMort[m]></strong> release density == nan<br>
+<strong>&#x3C;ferretinjapan></strong> The last 5 months have been rather quiet, but I don’t think it’s all bad.<br>
+<strong>&#x3C;medusa></strong> those 1d releases dont yount<br>
+<strong>&#x3C;medusa></strong> they fix emergency stuff<br>
+<strong>&#x3C;ferretinjapan></strong> You guys were busy with making sure ringct was solid after all…<br>
+<strong>&#x3C;medusa></strong> we talk about follow up releases, with 2 weeks in between<br>
+<strong>&#x3C;medusa></strong> we enever do that<br>
+<strong>&#x3C;ferretinjapan></strong> and then there was that bug…<br>
+<strong>&#x3C;hyc></strong> 2 weeks seems too soon for a scheduled followup<br>
+<strong>&#x3C;bigreddmachine></strong> Q before meeting is over. What kinds of things need to be studied on the PoW change proposal? I’m happy to dig into that but would like some direction if possible.<br>
+<strong>&#x3C;hyc></strong> and 5 months since the last release seems too long<br>
+<strong>&#x3C;endogenic></strong> bidreddmachine: what problem necessitates that?<br>
+<strong>&#x3C;dEBRUYNE></strong> hyc: If the release merely intends to fix bugs of the latest release, is two weeks too soon?<br>
+<strong>&#x3C;endogenic></strong> the PoW change<br>
+<strong>&#x3C;hyc></strong> dEBRUYNE: I presume bug fix releases go out as soon as available<br>
+<strong>&#x3C;dEBRUYNE></strong> But we haven’t done that in the past<br>
+<strong>&#x3C;hyc></strong> e.g., for emergency fixes<br>
+<strong>&#x3C;dEBRUYNE></strong> That’s the issue medusa is raising<br>
+<strong>&#x3C;hyc></strong> otherwise, if it’s not urgent, 2 weeks seems short.<br>
+<strong>&#x3C;msvb-lab></strong> has the meeting officially ended, one hour right?<br>
+<strong>&#x3C;fluffypony></strong> well in the past 5 months we haven’t really been able to release stable + bug fixes<br>
+<strong>&#x3C;DaveyJones></strong> afaik the GUI had/has a bug that freeze’s the wallet on some system thats already fixed but never got released … thats what your talking about medusa?<br>
+<strong>&#x3C;bigreddmachine></strong> endogenic: some things were raised in the thread on GitHub. I wouldn’t be going into it saying “this needs to happen” but rather trying to dissect the potential issues and see if there is anything to be gained.<br>
+<strong>&#x3C;fluffypony></strong> because we didn’t branch<br>
+<strong>&#x3C;fluffypony></strong> now we branch<br>
+<strong>&#x3C;fluffypony></strong> so it seems like we’re discussing something we’ve already fixed…?<br>
+<strong>&#x3C;dEBRUYNE></strong> DaveyJones: Yes, which causes a lot of support issues<br>
+<strong>&#x3C;medusa></strong> well we expect you to be around and build a bin<br>
+<strong>&#x3C;medusa></strong> if thats all fine that its all good<br>
+<strong>&#x3C;hyc></strong> yeah sounds like it’s fixed already<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: For the GUI, for example, we’re still helping people that incur bugs from GUI beta 2<br>
+<strong>&#x3C;dEBRUYNE></strong> That were fixed a week after the release<br>
+<strong>&#x3C;hyc></strong> 3 months from now we can raise the question of an interim release if there haven’t already been a slew of releases<br>
+<strong>&#x3C;fluffypony></strong> dEBRUYNE: I know what the issue was, hence the branching thing<br>
+<strong>&#x3C;medusa></strong> its also a time and tacting thing<br>
+<strong>&#x3C;medusa></strong> if we plan to let the branch live that long you will need to thread the trunk differently<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: So if I understand the branching correctly, we’ll release from the branch and if too much annoying bugs are found in the release version, we’ll do a follow up point release to include fixes?<br>
+<strong>&#x3C;medusa></strong> it has a lof of effects<br>
+<strong>&#x3C;msvb-lab></strong> netsplit for me i guess…<br>
+<strong>&#x3C;bigreddmachine></strong> With branching now, couldn’t we just have monthly release candidates or something?<br>
+<strong>&#x3C;fluffypony></strong> dEBRUYNE: yes - follow-up releases are based off the branch<br>
+<strong>&#x3C;rehrar></strong> I know we’re already over, but can we get a brief update regarding Sarang’s FFS?<br>
+<strong>&#x3C;moneromooo></strong> How about we don’t spam the pony yet ? Let’s wait, and maybe do a release from the branch if there are bugs we want fixed.<br>
+<strong>&#x3C;fluffypony></strong> @bigreddmachine no need to timeframe it, we’ll release when there are bug fixes part of the branch that make it worth releasing<br>
+<strong>&#x3C;fluffypony></strong> ie. major bug fixes<br>
+<strong>&#x3C;hyc></strong> agreed<br>
+<strong>&#x3C;bigreddmachine></strong> Fluffy, I just meant a pseudostable branch that’s a bit more tested than the nightlies.<br>
+<strong>&#x3C;dEBRUYNE></strong> &#x3C;fluffypony> dEBRUYNE: yes - follow-up releases are based off the branch &#x3C;= All right, well, let’s see how that will go then<br>
+<strong>&#x3C;fluffypony></strong> not spelling errors or whatevs<br>
+<strong>&#x3C;bigreddmachine></strong> But not an actual release.<br>
+<strong>&#x3C;bigreddmachine></strong> Maybe that’s a “2 years down the road” thing<br>
+<strong>&#x3C;fluffypony></strong> @bigreddmachine you mean off the main branch or the release branch?<br>
+<strong>&#x3C;moneromooo></strong> We tried that before, it was a massive pita.<br>
+<strong>&#x3C;hyc></strong> can the build system do nightlies of the release branch too?<br>
+<strong>&#x3C;fluffypony></strong> hyc: pretty sure, yeah<br>
+<strong>&#x3C;bigreddmachine></strong> I meant as its own branch… Commits get tested, when somewhat sure moved to release candidates, which is still unstable, and then when that’s tested moves to the actual release. Probably a pita like mooo said<br>
+<strong>&#x3C;fluffypony></strong> pigeons1[m]: ^^<br>
+<strong>&#x3C;fluffypony></strong> yeah complete PITA<br>
+<strong>&#x3C;bigreddmachine></strong> Okay just brainstorming<br>
+<strong>&#x3C;pigeons></strong> yes, i’ll setup jobs for the release branch<br>
+<strong>&#x3C;hyc></strong> that ought to be good enough then as far as release candidates go<br>
+<strong>&#x3C;fluffypony></strong> re: sarang, pero were your questions satisfied?<br>
+<strong>&#x3C;pizzasushibeer></strong> As a supporter of Ledger see nothing wrong with the community funding a 2nd hw wallet initiative. More options are beneficial and im sure many of us already own multiple Bitcoin hw wallet types for a variety of reasons<br>
+<strong>&#x3C;DaveyJones></strong> pero is rarely available this week @ fluffypony<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: I think sarang was rewriting the proposal, but I am not sure if he has finished yet<br>
+<strong>&#x3C;fluffypony></strong> ok<br>
+<strong>&#x3C;pizzasushibeer></strong> If the community is willing to fund, it I see nothing wrong with moving proposal to funding required (after any more required clarifications are made)<br>
+<strong>&#x3C;sn0wmonster></strong> i think i’m gonna bother these guys to make a patch for their box for Monero <a href="http://bitseed.org/" rel="noopener noreferrer external" target="_blank">http://bitseed.org/</a><br>
+<strong>&#x3C;sn0wmonster></strong> wrong channel<br>
+<strong>&#x3C;pizzasushibeer></strong> I would help contribute to the hardware wallet proposal. Im sure others agree<br>
+<strong>&#x3C;pigeons></strong> if pero’s questions aren’t answered maybe post a forum reply reminding him that so sarang can see clearly its outstanding still<br>
+<strong>&#x3C;hyc></strong> yeah I recall pero was going to be unavailable for the next week or two<br>
+<strong>&#x3C;ferretinjapan></strong> pizzasushibeer, I’m another person and I agree.<br>
+<strong>&#x3C;scoobybejesus></strong> sarang was about to post clarifications to his ffs a couple times recently. it’s been mentioned more than once on #mrl<br>
+<strong>&#x3C;hyc></strong> ok, we’re 25minutes over. any more stuff?<br>
+<strong>&#x3C;dEBRUYNE></strong> Guess not :-P<br>
+<strong>&#x3C;DaveyJones></strong> would it be possible that -site maybe gets an additional maintainer ?<br>
+<strong>&#x3C;DaveyJones></strong> afaik it less to no coding stuff and maybe people like dEBRUYNE or rehrar would be able to maintain it… so no need to bother you fluffypony ^ ^<br>
+<strong>&#x3C;fluffypony></strong> DaveyJones: we’re working on alternatives, probably doing something based off issue helper<br>
+<strong>&#x3C;DaveyJones></strong> fine :)<br>
+<strong>&#x3C;JollyMort[m]></strong> binaries and .raw downloads are high-sec<br>
+<strong>&#x3C;fluffypony></strong> ^^<br>
+<strong>&#x3C;rehrar></strong> Ye. Responsibility is scary.<br>
+<strong>&#x3C;fluffypony></strong> so issue helper could be used to trigger merges where it doesn’t touch sensitive parts of the site<br>
+<strong>&#x3C;rehrar></strong> Dude, that’s awesome.<br>
+<strong>&#x3C;rehrar></strong> For all those little merchant merges<br>
+<strong>&#x3C;DaveyJones></strong> yeah i had things like merchants in mind<br>
+<strong>&#x3C;dEBRUYNE></strong> And then we could give the issue helper trusted community members access to the issue helper right?<br>
+<strong>&#x3C;dEBRUYNE></strong> ^ fluffypony<br>
+<strong>&#x3C;rehrar></strong> We eventually should drop support for Merchants on the site tbh imo<br>
+<strong>&#x3C;fluffypony></strong> dEBRUYNE: yes<br>
+<strong>&#x3C;fluffypony></strong> rehrar: why?<br>
+<strong>&#x3C;moneromooo></strong> It’s a good, if small, incentive for people to support monero.<br>
+<strong>&#x3C;moneromooo></strong> And for connecting monero spenders with monero earners.<br>
+<strong>&#x3C;rehrar></strong> As Monero grows it will become gigantic eventually, but maybe that’s not a huge issue.<br>
+<strong>&#x3C;rehrar></strong> Just my thoughts.<br>
+<strong>&#x3C;hyc></strong> success problems are nice to have. we’re not there yet<br>
+<strong>&#x3C;moneromooo></strong> Oh, sure. Once Monero’s world reserve currency, it can go :)<br>
+<strong>&#x3C;DaveyJones></strong> ^ but only then<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: All right, seems cool. That’d also relieve you from some “low hanging fruit” work<br>
+<strong>&#x3C;dEBRUYNE></strong> Which still can be quite time consuming<br>
+<strong>&#x3C;fluffypony></strong> yup<br>
+<strong>&#x3C;DaveyJones></strong> but maybe we should put up some kind of Disclaimer<br>
+<strong>&#x3C;DaveyJones></strong> in case some service goes rogue<br>
+<strong>&#x3C;sn0wmonster></strong> which judging by bitcoin’s history, is not a matter of if, but when<br>
+<strong>&#x3C;DaveyJones></strong> “this is just a list of merchants, and no appraisement by the core team”<br>
+<strong>&#x3C;rehrar></strong> I’m actually going to be going g through all the Merchants this week to find the dead websites.<br>
+<strong>&#x3C;moneromooo></strong> Warning: the monero team does not control Amazon, odd as it might seem to you.<br>
+<strong>&#x3C;pigeons></strong> cryptokingdoms<br>
+<strong>&#x3C;pigeons></strong> for example<br>
+<strong>&#x3C;moneromooo></strong> CK’s kinda back from the moribund actually.<br>
+<strong>&#x3C;pigeons></strong> ok<br>
+<strong>&#x3C;rehrar></strong> Meeting = end?<br>
+<strong>&#x3C;DaveyJones></strong> sure</p>  </div>  </article> <aside data-border="true" data-transparent="true" style="--card-padding: var(--space-xl); --card-radius: var(--radius-md)" data-astro-cid-ndejf7ww="true" data-astro-cid-dd5txfcy="true" class="card sidebar">  <h2 data-astro-cid-ndejf7ww>近期文章</h2> <ul class="recent-posts" data-astro-cid-ndejf7ww> <li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/03/04/monero-GUI-0.18.4.7-released/" data-astro-cid-ndejf7ww> Monero GUI 0.18.4.7 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-ndejf7ww> 2026年3月4日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/03/04/monero-0.18.4.6-released/" data-astro-cid-ndejf7ww> Monero 0.18.4.6 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-ndejf7ww> 2026年3月4日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/01/07/monero-GUI-0.18.4.5-released/" data-astro-cid-ndejf7ww> Monero GUI 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-ndejf7ww> 2026年1月7日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/01/07/monero-0.18.4.5-released/" data-astro-cid-ndejf7ww> Monero 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-ndejf7ww> 2026年1月7日 </time> </li> </ul>  </aside>  </div>  </main> <footer class="footer" aria-label="页脚" data-astro-cid-mh6itkc3> <div class="items" data-astro-cid-mh6itkc3> <nav class="grid" aria-label="页脚导航" data-astro-cid-mh6itkc3> <section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>资源</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/zh/get-started/what-is-monero/" data-astro-cid-mh6itkc3> 关于 Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/moneropedia/" data-astro-cid-mh6itkc3> Moneropedia  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://docs.getmonero.org" data-astro-cid-mh6itkc3> Monero 文档  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/get-started/faq/" data-astro-cid-mh6itkc3> 常见问题  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>联系我们</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/zh/community/workgroups/" data-astro-cid-mh6itkc3> 工作组  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/community/hangouts/" data-astro-cid-mh6itkc3> 社交场所  </a> </li><li data-astro-cid-mh6itkc3> <a href="/postorius/lists/monero-announce.lists.getmonero.org" data-astro-cid-mh6itkc3> 邮件列表  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>社区</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://monero.stackexchange.com/" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Stack Exchange  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://bitcointalk.org/index.php?topic=583449.0" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Bitcoin Talk  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://translate.getmonero.org" data-astro-cid-mh6itkc3> 翻译  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>Monero 项目</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://openalias.org" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Open Alias  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/research-lab/" data-astro-cid-mh6itkc3> Monero 研究实验室 (MRL)  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/press-kit/" data-astro-cid-mh6itkc3> 媒体资料包  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://ccs.getmonero.org" data-astro-cid-mh6itkc3> 社区众筹系统  </a> </li> </ul> </section> </nav> <nav class="bottom" aria-label="次要页脚导航" data-astro-cid-mh6itkc3> <ul class="inline-list" data-astro-cid-mh6itkc3> <li class="inline-item" data-astro-cid-mh6itkc3> <a href="#" data-astro-cid-mh6itkc3> Tor 洋葱服务 <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/tor.D04gt7iP_278xXg.avif);--iconColor: #7d4698;--spacing: 0.25em;"></div>  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> 漏洞响应  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/zh/legal/" data-astro-cid-mh6itkc3> 法律  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> 源代码  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/feed.xml" data-astro-cid-mh6itkc3> RSS 订阅 <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/rss.jnIu9F4x_Z28u6pV.avif);--iconColor: var(--monero-orange);--spacing: 0.25em;"></div>  </a> </li> </ul> </nav> </div> </footer>   </body></html> 
