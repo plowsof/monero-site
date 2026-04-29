@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="ar" dir="rtl" data-astro-cid-sckkx6r4> <head><title>المدونة | Overview and Logs for the Dev Meeting Held on 2017-03-26</title><meta charset="UTF-8"><link rel="canonical" href="https://beta.monerodevs.org/ar/blog/2017/03/26/overview-and-logs-for-the-dev-meeting-held-on-2017-03-26/"><meta name="description" content="0.10.3.1 release, light wallets, fireice-uk's proposal, and 0MQ"><meta name="robots" content="index, follow"><meta property="og:title" content="Overview and Logs for the Dev Meeting Held on 2017-03-26"><meta property="og:type" content="article"><meta property="og:image" content="https://beta.monerodevs.org/open-graph/blog/2017/03/26/overview-and-logs-for-the-dev-meeting-held-on-2017-03-26.png"><meta property="og:url" content="https://beta.monerodevs.org/ar/blog/2017/03/26/overview-and-logs-for-the-dev-meeting-held-on-2017-03-26/"><meta property="og:locale" content="ar"><meta property="og:locale:alternate" content="en"><meta property="og:locale:alternate" content="zh"><meta property="og:site_name" content="Monero"><meta property="og:image:url" content="https://beta.monerodevs.org/open-graph/blog/2017/03/26/overview-and-logs-for-the-dev-meeting-held-on-2017-03-26.png"><meta property="og:image:alt" content="OpenGraph image for Monero blog post titled &#34;Overview and Logs for the Dev Meeting Held on 2017-03-26&#34;"><meta property="article:published_time" content="2017-03-26T00:00:00.000Z"><meta property="article:author" content="dEBRUYNE / fluffypony"><meta property="article:tag" content="dev diaries"><meta property="article:tag" content="core"><meta property="article:tag" content="crypto"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@monero"><meta name="twitter:title" content="Overview and Logs for the Dev Meeting Held on 2017-03-26"><meta name="twitter:image" content="https://beta.monerodevs.org/open-graph/blog/2017/03/26/overview-and-logs-for-the-dev-meeting-held-on-2017-03-26.png"><meta name="twitter:description" content="0.10.3.1 release, light wallets, fireice-uk's proposal, and 0MQ"><link rel="preload" as="font" type="font/woff2" href="/_astro/dm-sans-latin-wght-normal.Xz1IZZA0.woff2" crossorigin="anonymous"><link rel="icon" href="/meta/favicon-16x16.png" sizes="16x16"><link rel="icon" href="/meta/favicon-32x32.png" sizes="32x32"><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.18.0"><meta name="color-scheme" content="light dark"><link rel="alternate" hreflang="en" href="https://beta.monerodevs.org/blog/2017/03/26/overview-and-logs-for-the-dev-meeting-held-on-2017-03-26/"><link rel="alternate" hreflang="ar" href="https://beta.monerodevs.org/ar/blog/2017/03/26/overview-and-logs-for-the-dev-meeting-held-on-2017-03-26/"><link rel="alternate" hreflang="zh" href="https://beta.monerodevs.org/zh/blog/2017/03/26/overview-and-logs-for-the-dev-meeting-held-on-2017-03-26/"><link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="https://beta.monerodevs.org/feed.xml"><style>#blog-content{line-height:var(--line-height-body);word-wrap:break-word;color:light-dark(inherit,var(--paragraph-main));:where(h2,h3,h4){font-weight:var(--font-weight-bold)}img{border-radius:var(--radius-md)}a:not(.moneropedia-link){color:light-dark(var(--text-primary),var(--paragraph-main));font-weight:var(--font-weight-medium);text-decoration-line:underline;text-decoration-style:dotted;&:hover{color:light-dark(var(--text-secondary),var(--heading-color))}}h1{font-size:var(--font-size-2xl)}h2{font-size:var(--font-size-xl)}h3{font-size:var(--font-size-lg)}h4{font-size:var(--font-size-md)}p{margin-bottom:1em}li{margin-bottom:.25em}pre{padding:1em;border-radius:var(--radius-md);overflow-x:auto;background:var(--footer-color);code{background:none;padding:0;border-radius:0}}code:not(pre code){font-family:monospace;background-color:var(--footer-color);padding:.1em .3em;border-radius:var(--radius-sm)}blockquote{margin:1.5em 0;padding-inline:1.5em 1em;border-inline-start:3px solid var(--border-color);font-style:italic;color:var(--text-secondary)}strong{font-weight:var(--font-weight-bold)}em{font-style:italic}}h1[data-astro-cid-7dcwcvhl]{font-size:var(--font-size-3xl);margin:0}#post-header[data-astro-cid-7dcwcvhl]{margin-bottom:var(--page-top-margin)}#meta[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-2xl);color:var(--text-secondary);margin-top:var(--space-md);margin-bottom:var(--space-xl);font-size:var(--font-size-lg);font-weight:var(--font-weight-normal)}.meta-item[data-astro-cid-7dcwcvhl]{display:flex;align-items:center;gap:var(--space-xs);>.icon{display:grid;place-items:center;color:var(--monero-orange)}}.tag-container[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-xs);font-size:var(--font-size-sm);flex-wrap:wrap;.tag{text-align:center;padding:var(--space-2xs) var(--space-sm);background:var(--footer-color);border-radius:var(--radius-md);text-transform:uppercase;font-weight:var(--font-weight-semibold);text-decoration:none;color:inherit;white-space:nowrap;&:hover{color:var(--text-secondary)}}}@media(width<=600px){#meta[data-astro-cid-7dcwcvhl]{flex-direction:column;font-size:var(--font-size-md);font-weight:var(--font-weight-medium);gap:var(--space-md)}.meta-item[data-astro-cid-7dcwcvhl]{>.icon{font-size:var(--font-size-lg)}}}
+.card[data-astro-cid-dd5txfcy]{background:var(--card-color);padding:var(--card-padding);border-radius:var(--card-radius);&[data-border]{border:1px solid var(--border-color)}&[data-transparent]{background:transparent}&[data-hover]{transition:background .15s ease;&[data-astro-cid-dd5txfcy]:hover,&[data-astro-cid-dd5txfcy]:focus-visible{background:var(--card-hover-color)}}}
+.icon[data-astro-cid-bpjkz5as]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);margin-inline-start:var(--spacing);background:var(--iconColor);mask:var(--iconSrc) no-repeat center / contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}
+</style>
+<link rel="stylesheet" href="/_astro/_page_.DxMr-0dd.css">
+<style>.blog-container[data-astro-cid-jbepnj6h]{display:grid;grid-template-columns:1fr;gap:var(--space-2xl);>*{min-width:0}}.sidebar[data-astro-cid-jbepnj6h]{height:fit-content;& h2[data-astro-cid-jbepnj6h]{font-size:var(--font-size-xl);margin-top:0}}.recent-posts[data-astro-cid-jbepnj6h]{list-style:none;padding:0;margin-bottom:0;display:flex;flex-direction:column;gap:var(--space-md);li{margin-bottom:var(--space-xs)}.post-title{font-size:var(--font-size-md);color:var(--paragraph-main);text-decoration-line:underline;text-decoration-style:dotted;&:hover{text-decoration:underline}}.post-date{display:block;font-size:var(--font-size-sm);color:var(--paragraph-subtitle);margin-top:var(--space-2xs)}}@media(width>=1200px){.blog-container[data-astro-cid-jbepnj6h]{grid-template-columns:1fr 65ch 1fr}.blog-post[data-astro-cid-jbepnj6h]{grid-column:2}.sidebar[data-astro-cid-jbepnj6h]{grid-column:2;grid-row:2}}@media(width>=1600px){.sidebar[data-astro-cid-jbepnj6h]{grid-column:3;grid-row:1}}
+:where([data-astro-image]){object-fit:var(--fit);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+.moneropedia-link{position:relative;display:inline-block;color:var(--monero-orange);text-decoration-line:underline;text-decoration-style:dotted;cursor:help;font-weight:var(--font-weight-medium)}.moneropedia-link:hover,.moneropedia-link:focus-visible{text-decoration:none}.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{content:none}@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{position:absolute;left:50%;opacity:0;pointer-events:none;transform:translate(-50%) translateY(0);transition:opacity .18s ease-out,transform .18s ease-out;z-index:10}.moneropedia-link[data-tooltip]:before{content:attr(data-tooltip);bottom:calc(100% + .5rem);padding:.5rem .75rem;background:var(--card-color);border:1px solid var(--border-color);border-radius:.25rem;box-sizing:border-box;overflow-wrap:break-word;min-inline-size:25ch;max-inline-size:min(35ch,calc(100vw - 2.5rem));font-size:var(--font-size-sm);line-height:var(--line-height-caption);color:var(--text-primary);box-shadow:0 2px 8px #0000004d}.moneropedia-link[data-tooltip]:after{content:"";bottom:calc(100% + .25rem);border-width:.35rem .35rem 0;border-style:solid;border-color:var(--card-color) transparent transparent transparent}.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):before,.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):after{opacity:1;transform:translate(-50%) translateY(-2px)}}@media(prefers-reduced-motion:reduce){@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{transition:none}}}
+.icon[data-astro-cid-7wapxsvo]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);aspect-ratio:1 / 1;vertical-align:middle;--iconUrl: var(--lightUrl);background-image:var(--iconUrl);background-repeat:no-repeat;background-position:center;background-size:contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}@media(prefers-color-scheme:dark){.icon[data-astro-cid-7wapxsvo]{--iconUrl: var(--darkUrl)}}
+</style></head> <body data-astro-cid-sckkx6r4> <header class="header" data-astro-cid-dm2weclu> <div class="header-inner" data-astro-cid-dm2weclu> <a class="brand" href="/ar/" data-astro-cid-dm2weclu> <img src="/_astro/monerologo.CMdKQEkN_10Rm8s.avif" srcset="/_astro/monerologo.CMdKQEkN_10Rm8s.avif 64w, /_astro/monerologo.CMdKQEkN_10Rm8s.avif 128w" alt aria-hidden="true" data-astro-cid-dm2weclu="true" loading="eager" decoding="sync" fetchpriority="high" sizes="(min-width: 64px) 64px, 100vw" style="--fit: cover; --pos: center;" data-astro-image="constrained" width="64" height="64" class="mark"> <span data-astro-cid-dm2weclu>MONERO</span> </a> <input id="nav-toggle" class="nav-toggle" type="checkbox" data-astro-cid-dm2weclu> <nav id="primary-nav" class="nav" aria-label="التنقل الأساسي" data-astro-cid-dm2weclu> <div class="drawer-header" data-astro-cid-dm2weclu> <label for="nav-toggle" class="close" aria-controls="primary-nav" aria-label="أغلق القائمة" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/close.CneAMmXr_ZaFGrm.avif);--iconColor: currentColor;"></div>  </label> </div> <fieldset data-astro-cid-dm2weclu> <legend class="sr-only" data-astro-cid-dm2weclu>أقسام التنقل الأساسي</legend> <ul class="nav-list" data-astro-cid-dm2weclu> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-n945ct81o" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-n945ct81o-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> ابدأ <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-n945ct81o" class="mobile-open" aria-label="Open ابدأ menu" data-astro-cid-pbmdh2tw></label> <label for="dd-n945ct81o-close" class="mobile-close" aria-label="Close ابدأ menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="ابدأ menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/get-started/what-is-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--darkUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>ما هو Monero؟</div> <div class="desc" data-astro-cid-lm33vczh>كل ما تحتاجه لمعرفة Monero في لمحة.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/exchanges/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/merchants-exchanges.DN61YseO_ZQ3Km9.avif);--darkUrl: url(/_astro/merchants-exchanges.BjKEmUcz_1O8q9G.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>اشترِ Monero</div> <div class="desc" data-astro-cid-lm33vczh>بورصات العملات المشفرة التي تتيح لك شراء أو تداول Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/merchants/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>أنفق Monero</div> <div class="desc" data-astro-cid-lm33vczh>ابحث عن أماكن وخدمات تقبل Monero كدفع.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/accept-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/accept-monero.COXM8aHM_Z1II116.avif);--darkUrl: url(/_astro/accept-monero.C3WCFfqe_Z2tp8Kw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>اقبل Monero</div> <div class="desc" data-astro-cid-lm33vczh>تعلم كيفية قبول XMR كتاجر أو فرد.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/mining/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/mining.DBRk7HAe_Zd3ukV.avif);--darkUrl: url(/_astro/mining.B54FNZld_Z2jnjrG.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>التعدين</div> <div class="desc" data-astro-cid-lm33vczh>تعلم كيفية تعدين Monero على جهاز الكمبيوتر الخاص بك.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/contribute/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/contribute.DKeO9Dve_Z2vEvfu.avif);--darkUrl: url(/_astro/contribute.zLqiOwb5_Z1qe0gS.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>ساهم</div> <div class="desc" data-astro-cid-lm33vczh>ساعد مشروع Monero في جلب الخصوصية للجميع.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/faq/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/faq.C8QObR1A_1A5Irh.avif);--darkUrl: url(/_astro/faq.BNcLqXOJ_ZaSdVI.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الأسئلة الشائعة</div> <div class="desc" data-astro-cid-lm33vczh>ابحث عن إجابات للأسئلة الشائعة حول Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/ar/downloads/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> التحميلات  </a>  </div>  </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/ar/blog/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> المدونة  </a>  </div>  </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-fe90h5lsw" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-fe90h5lsw-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> المجتمع <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-fe90h5lsw" class="mobile-open" aria-label="Open المجتمع menu" data-astro-cid-pbmdh2tw></label> <label for="dd-fe90h5lsw-close" class="mobile-close" aria-label="Close المجتمع menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="المجتمع menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/community/workgroups/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/workgroups.OzoDQ7NV_Z1Lwqqs.avif);--darkUrl: url(/_astro/workgroups.CGbkWAXL_Z1m0ybJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مجموعات العمل</div> <div class="desc" data-astro-cid-lm33vczh>تعاون مع مجموعات عمل Monero المخصصة في التطوير والبحث والجهود المجتمعية.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/community/sponsorships/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الرعايات</div> <div class="desc" data-astro-cid-lm33vczh>قائمة الشركات التي تدعم مشروع Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/community/hangouts/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/hangouts.CiWxE-i9_ZeEICj.avif);--darkUrl: url(/_astro/hangouts.Do4DJEA1_257lPw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الأماكن</div> <div class="desc" data-astro-cid-lm33vczh>انضم إلى أماكن تجمع مجتمع Monero والفعاليات للاتصال بالمتحمسين والمطورين الآخرين.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-ffgj5zu12" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-ffgj5zu12-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> الموارد <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-ffgj5zu12" class="mobile-open" aria-label="Open الموارد menu" data-astro-cid-pbmdh2tw></label> <label for="dd-ffgj5zu12-close" class="mobile-close" aria-label="Close الموارد menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="الموارد menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/resources/knowledge-base/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/moneropedia.7o-c8ZX4_lSmb.avif);--darkUrl: url(/_astro/moneropedia.CYJm2-Q5_1KG40X.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>قاعدة المعرفة</div> <div class="desc" data-astro-cid-lm33vczh>الكتب والمنشورات والمجلات، مونيروبيديا.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/roadmap/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/roadmap.DoSq9h9o_Z1QuQpv.avif);--darkUrl: url(/_astro/roadmap.BONb2rwk_2hroDR.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>خارطة الطريق</div> <div class="desc" data-astro-cid-lm33vczh>ابقَ على اطلاع بأحدث خطط وتقدم تطوير Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/research-lab/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/research-lab.D90VAC3d_WkkdD.avif);--darkUrl: url(/_astro/research-lab.uv3a8gpS_Z7cyXJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مختبر البحث</div> <div class="desc" data-astro-cid-lm33vczh>استكشف منشورات مختبر بحث Monero وأبحاثه.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/tools/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/tools.CTqUs9cD_Z1hqOiO.avif);--darkUrl: url(/_astro/tools.BW4KRKDW_Z6Gril.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>أدوات Monero</div> <div class="desc" data-astro-cid-lm33vczh>قائمة منتقاة من الأدوات والبرمجيات لمستخدمي ومطوري Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="https://docs.getmonero.org" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/developer-guides.DD6ipv0S_Yls1B.avif);--darkUrl: url(/_astro/developer-guides.Cdg0NOVs_Z2h2V29.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>وثائق Monero</div> <div class="desc" data-astro-cid-lm33vczh>دليل شامل للمستخدمين والمطورين لاستخدام Monero بفعالية وأمان.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/press-kit/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/press-kit.C4VjegyX_2aPbOF.avif);--darkUrl: url(/_astro/press-kit.CVdfPwCA_1oXHhF.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مجموعة الصحافة</div> <div class="desc" data-astro-cid-lm33vczh>اتصالات الصحافة والشعارات والصور والموارد الإعلامية الأخرى.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="https://ccs.getmonero.org" class="link" tabindex="0" data-astro-cid-pbmdh2tw> التمويل الجماعي  </a>  </div>  </li>  </ul> </fieldset> </nav> <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="أغلق القائمة" data-astro-cid-dm2weclu></label> <div class="utils" aria-label="الأدوات" data-astro-cid-dm2weclu> <div class="lang" data-astro-cid-dm2weclu> <details class="lang-container" data-astro-cid-g6d27pgi> <summary class="lang" aria-label="غير اللغة" aria-haspopup="true" role="button" data-astro-cid-g6d27pgi> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/globe.FI0_gjXP_xUiUM.avif);--iconColor: currentColor;"></div>  </summary> <div class="lang-dropdown" aria-label="اللغات" data-astro-cid-g6d27pgi> <ul class="lang-list" data-astro-cid-g6d27pgi> <li data-astro-cid-g6d27pgi> <a href="/blog/2017/03/26/overview-and-logs-for-the-dev-meeting-held-on-2017-03-26/" class data-astro-cid-g6d27pgi> English </a> </li><li data-astro-cid-g6d27pgi> <a href="/ar/blog/2017/03/26/overview-and-logs-for-the-dev-meeting-held-on-2017-03-26/" class="active" aria-current="true" data-astro-cid-g6d27pgi> العربية </a> </li><li data-astro-cid-g6d27pgi> <a href="/zh/blog/2017/03/26/overview-and-logs-for-the-dev-meeting-held-on-2017-03-26/" class data-astro-cid-g6d27pgi> 中文 </a> </li> </ul> </div> </details>  </div> <label for="nav-toggle" class="hamburger" aria-controls="primary-nav" aria-label="افتح القائمة" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/hamburger.CkIM-2PU_xmMpy.avif);--iconColor: currentColor;"></div>  </label> </div> </div> </header>  <main data-astro-cid-sckkx6r4>   <div class="blog-container" data-astro-cid-jbepnj6h> <article class="blog-post" data-astro-cid-jbepnj6h> <div id="post-header" data-astro-cid-7dcwcvhl> <h1 data-astro-cid-7dcwcvhl>Overview and Logs for the Dev Meeting Held on 2017-03-26</h1> <div id="meta" data-astro-cid-7dcwcvhl> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/calendar.BXaSv3Jk_Z1NrB7E.avif);--iconColor: currentColor;"></div>  </div> <time datetime="2017-03-26" data-astro-cid-7dcwcvhl>٢٦ مارس ٢٠١٧</time> </div> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/user.Cx6bTnUm_FhCof.avif);--iconColor: currentColor;"></div>  </div> dEBRUYNE / fluffypony </div> </div> <div class="tag-container" data-astro-cid-7dcwcvhl> <a class="tag" href="/ar/blog/tags/dev-diaries/" data-astro-cid-7dcwcvhl> يوميات التطوير </a><a class="tag" href="/ar/blog/tags/core/" data-astro-cid-7dcwcvhl> الأساسي </a><a class="tag" href="/ar/blog/tags/crypto/" data-astro-cid-7dcwcvhl> التشفير </a> </div> </div>   <div id="blog-content" lang="en" dir="ltr">  <h3 id="overview">Overview</h3>
+<p>An overview <a href="https://monerobase.com/wiki/DevMeeting_2017-03-26" rel="noopener noreferrer external" target="_blank">can be found on MoneroBase</a>.</p>
+<h3 id="logs">Logs</h3>
+<p><strong>&#x3C;fluffypony></strong> 2. Brief review of what’s been completed since the previous meeting<br>
+<strong>&#x3C;fluffypony></strong> ok so since the last meeting I guess the main thing is we tagged and released 0.10.3<br>
+<strong>&#x3C;fluffypony></strong> which we’re about to deprecate<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;fluffypony></strong> are there any issues with 0.10.3 besides the cumulative block size thing?<br>
+<strong>&#x3C;fluffypony></strong> now’s the time to point them out<br>
+<strong>&#x3C;hyc></strong> no idea, but I’m running a build from a couple days ago<br>
+<strong>&#x3C;Jaquee></strong> me too. no issues so far<br>
+<strong>&#x3C;johnalan></strong> Been running on OSX since yesterday. No issue.<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: any idea why the issue seems to affect so few?<br>
+<strong>&#x3C;hundehausen></strong> Smart Mining is not working for me on newest macOS<br>
+<strong>&#x3C;moneromooo></strong> Dunno. Low level processor specifics I guess, but… shrug.<br>
+<strong>&#x3C;fluffypony></strong> hundehausen: it only works on Linux<br>
+<strong>&#x3C;fluffypony></strong> not on anything else<br>
+<strong>&#x3C;samsunggalaxyplayer></strong> I have smart mining running on Windows right now<br>
+<strong>&#x3C;Jaquee></strong> yeah. windows + linux iirc<br>
+<strong>&#x3C;Jaquee></strong> but not osx i think<br>
+<strong>&#x3C;luigi1112></strong> lunch time<br>
+<strong>&#x3C;fluffypony></strong> I like to pretend that Windows doesn’t exist<br>
+<strong>&#x3C;fluffypony></strong> :-P<br>
+<strong>&#x3C;Jaquee></strong> lol<br>
+<strong>&#x3C;moneromooo></strong> What is it ?<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: you open them to let air in<br>
+<strong>&#x3C;moneromooo></strong> Ah, doors.<br>
+<strong>&#x3C;hyc></strong> usually lets bugs in too<br>
+<strong>&#x3C;amiuhle></strong> smaller sized doors basically<br>
+<strong>&#x3C;gingeropolous></strong> drumroll<br>
+<strong>&#x3C;fluffypony></strong> lol hyc<br>
+<strong>&#x3C;btcltcxmrmaximal></strong> winblows sucks<br>
+<strong>&#x3C;hyc></strong> windows and doors in Ireland have no screens. I dunno what’s with these people.<br>
+<strong>&#x3C;fluffypony></strong> anyhoo<br>
+<strong>&#x3C;fluffypony></strong> let’s move on<br>
+<strong>&#x3C;fluffypony></strong> 3. Discussion of fireice-uk’s proposal (as started in #1828<br>
+<strong>&#x3C;fluffypony></strong> I’d like to move this to Funding Required<br>
+<strong>&#x3C;fluffypony></strong> and fireice-uk updated the funding costs based on current pricing<br>
+<strong>&#x3C;fluffypony></strong> obviously there are some consensus-critical aspects to it, so I think it’s worth discussing<br>
+<strong>&#x3C;moneromooo></strong> Wasn’t this a wallet thing ?<br>
+<strong>&#x3C;btcltcxmrmaximal></strong> <a href="https://github.com/monero-project/monero/issues/1828" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/monero/issues/1828</a><br>
+<strong>&#x3C;xmreric></strong> Yes. Speedup on Intel/AMD processors, which is helpful considering RingCT has slowed sync down.<br>
+<strong>&#x3C;fireice-uk></strong> it is a wallet thing (unless you want to use it somewhere else)<br>
+<strong>&#x3C;hyc></strong> ringCT has slowed wallet sync?<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: if we replace SUPERCOP then it’s consensus critical<br>
+<strong>&#x3C;vtnerd></strong> I don’t see how ringct slowed down wallet sync … ?<br>
+<strong>&#x3C;moneromooo></strong> Then no consensus issue. And if it proves good for a while, <em>then</em> it can be used in consensus.<br>
+<strong>&#x3C;pigeons></strong> xmreric: how has ringct slowed down sync?<br>
+<strong>&#x3C;xmreric></strong> I thought I had heard that from others<br>
+<strong>&#x3C;vtnerd></strong> the additional work comes when a output match is found<br>
+<strong>&#x3C;fluffypony></strong> so I guess wallets with thousands and thousands of ringct outputs?<br>
+<strong>&#x3C;xmreric></strong> <a href="https://monero.stackexchange.com/questions/3718/when-syncing-moneros-blockchain-from-scratch-why-does-it-begin-fast-and-end-sl" rel="noopener noreferrer external" target="_blank">https://monero.stackexchange.com/questions/3718/when-syncing-moneros-blockchain-from-scratch-why-does-it-begin-fast-and-end-sl</a><br>
+<strong>&#x3C;fluffypony></strong> xmreric: that’s daemon, not wallet<br>
+<strong>&#x3C;fluffypony></strong> 1828 is a proposal for a wallet change<br>
+<strong>&#x3C;xmreric></strong> ok<br>
+<strong>&#x3C;vtnerd></strong> its more work on the node verifying the block, but not the wallet since its not reading it. I suppose there is some additional time for transmission/marshalling/unmarshalling, but this is smaller than any crypto<br>
+<strong>&#x3C;moneromooo></strong> The bottleneck’s the daemon anyway.<br>
+<strong>&#x3C;btcltcxmrmaximal></strong> daemon sync time seems a lot more important than wallet sync time (in comparison) if our primary goal was to encourage more full nodes.<br>
+<strong>&#x3C;vertp></strong> Unless you’re using a remote node, no?<br>
+<strong>&#x3C;hyc></strong> this complicates the build if we want a crypto/ subtree just for wallet and one just for daemon<br>
+<strong>&#x3C;moneromooo></strong> Hmm, fair point.<br>
+<strong>&#x3C;fluffypony></strong> ok so then here’s a suggestion<br>
+<strong>&#x3C;Jaquee></strong> the amount of tx’s/day is higher since the date around ringct was activated. So wallet sync slows down. but not really related to ringct<br>
+<strong>&#x3C;fluffypony></strong> what if we had cryptoopsbuilder run on build<br>
+<strong>&#x3C;fireice-uk></strong> build won’t be more more complicated - just more symbols<br>
+<strong>&#x3C;fluffypony></strong> and use the existing stuff by default, but optionally use the newer SUPERCOP / whatever<br>
+<strong>&#x3C;fireice-uk></strong> my suggestion would be to use ge64* symbols for the new code<br>
+<strong>&#x3C;moneromooo></strong> BTW, is that not what you wanted to replace by… tweetnacl or whatver it was ?<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: yes<br>
+<strong>&#x3C;fluffypony></strong> but only when TweetNaCl has finished formal verification<br>
+<strong>&#x3C;moneromooo></strong> And that proposal replaces it with this, or another replacement ?<br>
+<strong>&#x3C;moneromooo></strong> Alright…<br>
+<strong>&#x3C;hyc></strong> I’d prefer we just keep the generated code statically committed to git<br>
+<strong>&#x3C;hyc></strong> no idea what environment the builder might break on<br>
+<strong>&#x3C;fluffypony></strong> hyc: the builder is pretty simple (just splicing text really), but it does add a python dep to the build process<br>
+<strong>&#x3C;hyc></strong> yeah, let’s not do that.<br>
+<strong>&#x3C;moneromooo></strong> fireice-uk: did you try running a wallet refresh without any crypto to see how much faster it was at best possible gain ? IIRC, my bottleneck is the daemon (SSD, though CoW fs).<br>
+<strong>&#x3C;fluffypony></strong> either way, in the long run I’d like to have a default “safe” crypto implementation, and an optional fast one<br>
+<strong>&#x3C;moneromooo></strong> s/without any crypto/with the actual tx scanning disabled/<br>
+<strong>&#x3C;fireice-uk></strong> moneromoo: bottleneck is the poor fetching from the daemon<br>
+<strong>&#x3C;moneromooo></strong> So changing the crypto won’t do a thing right now, right ?<br>
+<strong>&#x3C;fireice-uk></strong> it somehow mananges not to max anything<br>
+<strong>&#x3C;fireice-uk></strong> that is the part 2<br>
+<strong>&#x3C;fireice-uk></strong> crypto is part 1<br>
+<strong>&#x3C;pigeons></strong> so likely this is a premature optimization for now<br>
+<strong>&#x3C;fireice-uk></strong> pigeons: want to swap round the order?<br>
+<strong>&#x3C;vertp></strong> why not swap the orders fireice-uk? And do daemon fetching optimization<br>
+<strong>&#x3C;fluffypony></strong> not a bad idea<br>
+<strong>&#x3C;moneromooo></strong> Oh ok. There are two things that should be easy win there: store non prunable separately, and maybe fetch a bunch of them at once (wallet refresh always has pretty much N..N+dN txes).<br>
+<strong>&#x3C;gingeropolous></strong> so part 2 is the actual optimization? and part 1 is… ?<br>
+<strong>&#x3C;moneromooo></strong> I wanted to do the daemon thing for a while, but looks like I won’t have to :D<br>
+<strong>&#x3C;fireice-uk></strong> gingeropolous: part 1 is crypto optimziation, part 2 is parallelism opt<br>
+<strong>&#x3C;hyc></strong> but current discussion says crypto opt will be overshadowed by daemon<br>
+<strong>&#x3C;fluffypony></strong> ok so we swap them around and do part 2 first, and then revisit how to structure part 1 after that?<br>
+<strong>&#x3C;hyc></strong> makes sense<br>
+<strong>&#x3C;fluffypony></strong> fireice-uk: that sound ok?<br>
+<strong>&#x3C;moneromooo></strong> Well, that’s my recollection of my particular machine anyway. Might differ for others.<br>
+<strong>&#x3C;fireice-uk></strong> my suggestion would be to do part 1 first - this way you can have a loot at it before merging<br>
+<strong>&#x3C;fireice-uk></strong> *look<br>
+<strong>&#x3C;moneromooo></strong> I want to have a look at 2 also before merging.<br>
+<strong>&#x3C;hyc></strong> lol<br>
+<strong>&#x3C;vertp></strong> lol.<br>
+<strong>&#x3C;fireice-uk></strong> of course, but i assume 1 will require more time<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;vertp></strong> but if its has more immediate benefits, why not go with 2 first?<br>
+<strong>&#x3C;hyc></strong> yeah it’s sounding like 1’s benefits will be unmeasurable for now<br>
+<strong>&#x3C;vertp></strong> it makes even more sense to do part 2 first if it is less complex/faster to implement.<br>
+<strong>&#x3C;Jaquee></strong> +1<br>
+<strong>&#x3C;moneromooo></strong> Yes, do the easy wins first, and the possibly dangerous stuff might not be needed (and will only work on x8664 anyway AIUI).<br>
+<strong>&#x3C;fireice-uk></strong> ok, that’s fine with me<br>
+<strong>&#x3C;moneromooo></strong> Keeping in mind you also need the full blocks to serve syncing peers.<br>
+<strong>&#x3C;vertp></strong> great!<br>
+<strong>&#x3C;fluffypony></strong> ok cool - I’ll move the proposal to funding after the 0.10.3.1 tag<br>
+<strong>&#x3C;samsunggalaxyplayer></strong> so in like 3 months /s<br>
+<strong>&#x3C;fluffypony></strong> hah hah<br>
+<strong>&#x3C;fluffypony></strong> touché<br>
+<strong>&#x3C;vertp></strong> Since we are on a similar topic, could I bring up ZMQ? That should also speed up sync time/provide faster wallet func at some point no?<br>
+<strong>&#x3C;tewinget></strong> nah, fluffypony doesn’t run on tewinget Time™<br>
+<strong>&#x3C;fluffypony></strong> vertp: it should provide better scalability for multiple wallets hitting the same daemon<br>
+<strong>&#x3C;fluffypony></strong> but I don’t think it’ll provide speed benefits beyond that<br>
+<strong>&#x3C;vertp></strong> so light-wallets. Is there anything new on that front tewinget.<br>
+<strong>&#x3C;tewinget></strong> agreed<br>
+<strong>&#x3C;tewinget></strong> well, I’ve been working on merging from upstream this morning<br>
+<strong>&#x3C;tewinget></strong> I think I’ve <em>just</em> got it sorted<br>
+<strong>&#x3C;hyc></strong> yay<br>
+<strong>&#x3C;vertp></strong> woo!<br>
+<strong>&#x3C;gingeropolous></strong> !!!!<br>
+<strong>&#x3C;johnalan></strong> Nice<br>
+<strong>&#x3C;fluffypony></strong> let’s stick to the schedule plx<br>
+<strong>&#x3C;tewinget></strong> few things changed in core that threw wrenches in the merge ><strong>></strong><br>
+<strong>&#x3C;tewinget></strong> sorry fluffypony :)<br>
+<strong>&#x3C;vertp></strong> yes, sorry.<br>
+<strong>&#x3C;fluffypony></strong> ok so<br>
+<strong>&#x3C;fluffypony></strong> 4. Remote nodes (ie. a discussion of #605)<br>
+<strong>&#x3C;moneromooo></strong> Well, I was thinking about this, and I will do a wallet mode where a full wallet (ie, phone) can connect to a view wallet (ie, home server), and update from it. That should be super fast.<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: that’s exactly what vtnerd is doing<br>
+<strong>&#x3C;moneromooo></strong> tewinget: I think I kinda added a new RPC… a few days ago…<br>
+<strong>&#x3C;fluffypony></strong> so would be duplication of work<br>
+<strong>&#x3C;moneromooo></strong> Oh, OK.<br>
+<strong>&#x3C;johnalan></strong> Won’t that only show incoming though?<br>
+<strong>&#x3C;fluffypony></strong> but let’s back up a second<br>
+<strong>&#x3C;hyc></strong> so a wallet can sync from another wallet?<br>
+<strong>&#x3C;fluffypony></strong> because I think that maybe there’s some value in the <em>idea</em> of 605<br>
+<strong>&#x3C;moneromooo></strong> In my idea, yes (really, transfer output data).<br>
+<strong>&#x3C;fluffypony></strong> but the specifics aren’t great<br>
+<strong>&#x3C;fluffypony></strong> for eg.<br>
+<strong>&#x3C;moneromooo></strong> But I dunno what vtnerd is doing.<br>
+<strong>&#x3C;xmreric></strong> Lots of GUI users want this on some level or another.<br>
+<strong>&#x3C;xmreric></strong> I’m pretty big on emphasizing away from using remote nodes as best-practice.<br>
+<strong>&#x3C;fluffypony></strong> what if an unsynced daemon, when it has a wallet client requesting outputs from a certain height, picks a random peer and asks that peer for the data<br>
+<strong>&#x3C;xmreric></strong> But for people in developing nations, etc it’s a good option to offer<br>
+<strong>&#x3C;samsunggalaxyplayer></strong> I know that we all want everyone to run a full node, but I imagine less than half actually will, and that percentage will only decrease over time with new, non-technical users<br>
+<strong>&#x3C;fluffypony></strong> ie. without range proofs / sigs / etc.<br>
+<strong>&#x3C;gingeropolous></strong> the random peer has its rpc open?<br>
+<strong>&#x3C;fluffypony></strong> the peer could lie, but the node will eventually know that it has<br>
+<strong>&#x3C;fluffypony></strong> gingeropolous: no<br>
+<strong>&#x3C;fluffypony></strong> we don’t need RPC for this, we’re already talking to the peer using the p2p protocol<br>
+<strong>&#x3C;moneromooo></strong> Why would the wallet request outputs for a given height, if the daemon isn’t synced to that yet ?<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: restored wallet, or loading a wallet file<br>
+<strong>&#x3C;Jaquee></strong> if the daemon isnt synced it shouldnt be used by the wallet<br>
+<strong>&#x3C;fluffypony></strong> or creating a new wallet<br>
+<strong>&#x3C;moneromooo></strong> Restored wallet would not, it has no idea about where it has outputs.<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: restored from seed has a hardcoded restore height<br>
+<strong>&#x3C;guzzi></strong> It is similar to how hadoop works<br>
+<strong>&#x3C;moneromooo></strong> New wallet wouldn’t either. They’d get that info from the daemon, who’d necessarily be synced up to that point.<br>
+<strong>&#x3C;guzzi></strong> Here is the first answer it may be wrong<br>
+<strong>&#x3C;moneromooo></strong> Unless you delete your blockchain after the wallet learns abvout those. But then, your problem.<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: in each of the instances we either have a block height or we have a date that we can correlate<br>
+<strong>&#x3C;moneromooo></strong> Oh, you want <em>all</em> outputs ?<br>
+<strong>&#x3C;fluffypony></strong> from that height or date, yes<br>
+<strong>&#x3C;guzzi></strong> I like it. The attack would bre someone setting up a ton of fake nodes.<br>
+<strong>&#x3C;fluffypony></strong> basically have the daemon tunnel “remote node” functionality to a peer<br>
+<strong>&#x3C;moneromooo></strong> OK, so essentially, syncing the chain with no vcerification whatsoever.<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: yes - “pre-syncing” it<br>
+<strong>&#x3C;fluffypony></strong> because the node will catch up, and then the wallet will know if outputs have been withheld<br>
+<strong>&#x3C;moneromooo></strong> I actually had an idea about this a few days ago, where you could sync to a daily set of key images and outputs. Daily, verifying nodes hash it into the blockchain.<br>
+<strong>&#x3C;guzzi></strong> Basically a no lock read<br>
+<strong>&#x3C;moneromooo></strong> So you can sync to that, check hash, then sync the last day’s chain on top.<br>
+<strong>&#x3C;gingeropolous></strong> but this would leave the wallet in a state where it can’t create transactions until proper sync’d?<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: the problem with that model are the oracles<br>
+<strong>&#x3C;moneromooo></strong> It does require <em>some</em> trust, though.<br>
+<strong>&#x3C;moneromooo></strong> Go on ?<br>
+<strong>&#x3C;pigeons></strong> so the tricky part is the rules to make the block invalid if the miner lies<br>
+<strong>&#x3C;gingeropolous></strong> er, until the daemon is proper syncd?<br>
+<strong>&#x3C;fluffypony></strong> gingeropolous: the daemon could also tunnel requests for ring outputs or whatever<br>
+<strong>&#x3C;fluffypony></strong> the trust model is the same as using some random guy’s remote node<br>
+<strong>&#x3C;Jaquee></strong> good idea. but still doesnt help users without enough disk or those on a slow connection<br>
+<strong>&#x3C;guzzi></strong> True<br>
+<strong>&#x3C;samsunggalaxyplayer></strong> That’s what I proposed #602 for<br>
+<strong>&#x3C;samsunggalaxyplayer></strong> People who do not want to run a full node<br>
+<strong>&#x3C;pero></strong> i had a kind of mostly trustless idea for this<br>
+<strong>&#x3C;fluffypony></strong> people that don’t want to run a full node at all have to then use something like the MyMonero apps using the MyMonero backend instead of their own<br>
+<strong>&#x3C;fluffypony></strong> or Exodus or Coinomi or whatever else exists<br>
+<strong>&#x3C;pero></strong> that would poll multiple nodes for the same outputs and verify them<br>
+<strong>&#x3C;pero></strong> and store those locally<br>
+<strong>&#x3C;fluffypony></strong> pero: that’s even worse than a remote node<br>
+<strong>&#x3C;pero></strong> fluffypony: +1<br>
+<strong>* pero</strong> sees himself out<br>
+<strong>&#x3C;guzzi></strong> Or this and never sync tge daemon<br>
+<strong>&#x3C;guzzi></strong> Lol<br>
+<strong>&#x3C;rehrar></strong> What if the time connected to a remote node is limited? Just setting up the GUI it connects to a remote node, and they can use right away, while stuff is going on in the background? (Sorry, just an idea I had. Not a developer so I don’t know if possible)<br>
+<strong>&#x3C;fluffypony></strong> the larger issue here is that we can’t do something like SPV<br>
+<strong>&#x3C;fluffypony></strong> so we really have nothing between “run your own node” and “use a centralised service”<br>
+<strong>&#x3C;rehrar></strong> Stuff = syncing<br>
+<strong>&#x3C;ArticMine></strong> Should we looking at people connecting to their own remote node form say a mobile device?<br>
+<strong>&#x3C;fluffypony></strong> rehrar: that’s exactly what I’m suggesting, but let the daemon “tunnel” the requests through<br>
+<strong>&#x3C;fluffypony></strong> ArticMine: the model here is people who don’t want to run a node at all, not at home, not on a VPS, not at all<br>
+<strong>&#x3C;Jaquee></strong> rehrar: that’s what #605 does<br>
+<strong>&#x3C;fluffypony></strong> we already have a solution for people who are willing to run a node<br>
+<strong>&#x3C;rehrar></strong> Sorry. A lot of the tech is going above my head to catch it all. :)<br>
+<strong>&#x3C;moneromooo></strong> Well, they can use paypal, and come back in 5 years.<br>
+<strong>&#x3C;rehrar></strong> Tech talk<br>
+<strong>&#x3C;Jaquee></strong> #605 connects to a remote node while local node is syncing<br>
+<strong>&#x3C;jacobjeweler></strong> I agree, fluffy. I think the real issue is people not having enough knwoledge to install nodes. An installer on windows and .deb in apt would increase full nodes immensly.<br>
+<strong>&#x3C;gingeropolous></strong> i like it. the pre-sync idea. using the daemon. it opens up the whole network as a source of remote nodes, which decentralizes the effort<br>
+<strong>&#x3C;xmreric></strong> What if all this work gets done, but then this audience just uses web/mobile wallets anyways<br>
+<strong>&#x3C;pigeons></strong> keep improving the ability for people to run their own node before making it easier for people to use a different model<br>
+<strong>&#x3C;gingeropolous></strong> and because the daemon <em>is</em> running<br>
+<strong>&#x3C;gingeropolous></strong> it will be synchronizing its own copy of the blockchain<br>
+<strong>&#x3C;fluffypony></strong> @xmreric that’s the most likely outcome<br>
+<strong>&#x3C;hyc></strong> that is trickier<br>
+<strong>&#x3C;fluffypony></strong> people *are* going to use MyMonero / Exodus / Coinomi even if we have a magical remote node model that doesn’t vampire the network<br>
+<strong>&#x3C;guzzi></strong> It could even hold part of the chain and randomly ask for missing parts<br>
+<strong>&#x3C;hyc></strong> block data sync’d this way will need to be stored differently than from regular syncing<br>
+<strong>&#x3C;pigeons></strong> peopl are going to use worse options than those even<br>
+<strong>&#x3C;fluffypony></strong> hyc: agreed<br>
+<strong>&#x3C;fluffypony></strong> pigeons: store on an exchange :-P<br>
+<strong>&#x3C;samsunggalaxyplayer></strong> I like the pre-sync as well. But until we have MyMonero/Edodus/Coinomi, people will use a remote node in an inefficient way<br>
+<strong>&#x3C;fluffypony></strong> @samsunggalaxyplayer then let’s not make it easier by having a drop-down<br>
+<strong>&#x3C;gingeropolous></strong> ^<br>
+<strong>&#x3C;Jaquee></strong> why not make it easy while waiting for a better solution?<br>
+<strong>&#x3C;fluffypony></strong> remember that a lot of decisions we make today, we’re stuck with for 5+ years<br>
+<strong>&#x3C;gingeropolous></strong> the effort wall to hack the system to use a remote node isn’t that steep anyway<br>
+<strong>&#x3C;fluffypony></strong> Jaquee: because ^^<br>
+<strong>&#x3C;fluffypony></strong> people become reliant on quick fixes<br>
+<strong>&#x3C;hyc></strong> So somewhere we need the doc to say “you must have a computer with at least xx GB of disk space that you are willing to leave running 24/7”<br>
+<strong>* tewinget</strong> knows this, and as such leaves most decision making to fluffypony so he can be blamed in 5 years.<br>
+<strong>&#x3C;moneromooo></strong> Ah, tewinget the Wise.<br>
+<strong>&#x3C;endogenic></strong> in 2023<br>
+<strong>&#x3C;Jaquee></strong> i just don’t think we should be holding back on UX just because we don’t have a better solution yet<br>
+<strong>&#x3C;pigeons></strong> have a nice message, now that you have verified the blockchain, we notice you have been screwed, pick a better node next time<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;moneromooo></strong> Anyway, this has turned to a disparate set of confusing stuff now.<br>
+<strong>&#x3C;guzzi></strong> Lol<br>
+<strong>&#x3C;fluffypony></strong> Jaquee: the GUI is meant to operate with a full node that you operate, it’s not a lightweight GUI<br>
+<strong>&#x3C;ArticMine></strong> Do we want to encourage people connecting to a untrusted random node<br>
+<strong>&#x3C;fluffypony></strong> ArticMine: no we don’t<br>
+<strong>&#x3C;samsunggalaxyplayer></strong> Summary: for smart syncing with fluffy’s “pre-sync” approach, against anything that makes using a remote node easier<br>
+<strong>&#x3C;guzzi></strong> For ppl who want to use a phone could it never sync?<br>
+<strong>&#x3C;cryptocomicon></strong> sounds like we need a monero node appliance, like the wifi router that everyone has in their house / flat<br>
+<strong>&#x3C;samsunggalaxyplayer></strong> I agree #602 is a short-term solution. I think it’s better than telling people to go to MoneroWorld to get a random node, but if we have a better solution going forward, that’s preferable<br>
+<strong>&#x3C;johnalan></strong> Good idea<br>
+<strong>&#x3C;hyc></strong> yes but wifi routers tend to be 32bit<br>
+<strong>&#x3C;jacobjeweler></strong> Thats why i think installer for windows and adding .deb to apt repositories will have it so people can be guided through an install and proper installation can be verified<br>
+<strong>&#x3C;guzzi></strong> And always use a random?<br>
+<strong>&#x3C;fluffypony></strong> guzzi: phone would be MyMonero + your own node / MyMonero backend OR Exodus OR Coinomi<br>
+<strong>&#x3C;gingeropolous></strong> and they’re not cheap<br>
+<strong>&#x3C;guzzi></strong> Ok thanks<br>
+<strong>&#x3C;jacobjeweler></strong> Adoption rate will increase full node usage<br>
+<strong>&#x3C;fluffypony></strong> @JacobJeweler we’re definitely working on improving that with the GUI<br>
+<strong>&#x3C;ArticMine></strong> I say make it easy for people to set up their own node to connect to. Appliance like<br>
+<strong>&#x3C;guzzi></strong> That is horse poop<br>
+<strong>&#x3C;fluffypony></strong> with the auto-update thing<br>
+<strong>&#x3C;pero></strong> perhaps there’s room for an unofficial gui fork<br>
+<strong>&#x3C;guzzi></strong> No way ppl walñnt full nodes<br>
+<strong>&#x3C;fluffypony></strong> gingeropolous: <a href="http://imgur.com/a/3mMBE" rel="noopener noreferrer external" target="_blank">http://imgur.com/a/3mMBE</a><br>
+<strong>&#x3C;gingeropolous></strong> in my mind the remote node thing has 2 components: 1) instant on 2) no blockchain storage.<br>
+<strong>&#x3C;fluffypony></strong> gingeropolous: pigeons is working on it<br>
+<strong>&#x3C;hyc></strong> right now the only way I see to make this easy is with kovri, so we can ignore firewall and port forwarding issues<br>
+<strong>&#x3C;fluffypony></strong> hyc: +1<br>
+<strong>&#x3C;gingeropolous></strong> we can address instant on with lots of things<br>
+<strong>&#x3C;gingeropolous></strong> we can’t address no blockchain storage. And those that don’t want to store the blockchain will always use some lighter weight thing, so … i think im rambling.<br>
+<strong>&#x3C;jacobjeweler></strong> Good point hyc!<br>
+<strong>&#x3C;amiuhle></strong> How about creating SD card images with the blockchain preloaded for a specific monerod release. You’d “just” have to download the image, flash it and start up monerod<br>
+<strong>&#x3C;johnalan></strong> +1 hyc<br>
+<strong>&#x3C;amiuhle></strong> ah, like for the Pine64 or something similar<br>
+<strong>&#x3C;hyc></strong> pretty big downloads. they don’t compress well at all.<br>
+<strong>&#x3C;hyc></strong> 13GB now<br>
+<strong>&#x3C;Jaquee></strong> and pine64 is to slow<br>
+<strong>&#x3C;johnalan></strong> Does it even have native AES?<br>
+<strong>&#x3C;fluffypony></strong> pine64 isn’t too slow?<br>
+<strong>&#x3C;amiuhle></strong> hyc: didn’t you say you’re running your full node fine on yours?<br>
+<strong>&#x3C;hyc></strong> pine64 yes<br>
+<strong>&#x3C;pero></strong> pine64 can run a node<br>
+<strong>&#x3C;hyc></strong> yeah pine64 works ok as a fullnode. buy an expensive microSD<br>
+<strong>&#x3C;fluffypony></strong> alright<br>
+<strong>&#x3C;tewinget></strong> I’ll brb in like 10 min, fyi<br>
+<strong>&#x3C;fluffypony></strong> let’s move on<br>
+<strong>&#x3C;fluffypony></strong> 5. Code + ticket discussion / Q &#x26; A<br>
+<strong>&#x3C;Jaquee></strong> ok. so #605 will not be merged?<br>
+<strong>&#x3C;fluffypony></strong> (we can carry on discussing this after the Kovri meeting)<br>
+<strong>&#x3C;Jaquee></strong> all right<br>
+<strong>&#x3C;fluffypony></strong> Jaquee: no not with the drop down<br>
+<strong>&#x3C;hyc></strong> you can release the bootleg edition<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;amiuhle></strong> I’ve gotten the impression that there should be more unit tests from reading the last dev meeting<br>
+<strong>&#x3C;fluffypony></strong> amiuhle: yes<br>
+<strong>&#x3C;jacobjeweler></strong> Lets be honest, most users have windows. And harddisks that can easily fit the lmdb database. If you want great adoption and more full nodes on the network (people installing and usong their local node for gui/cli). Thats where the focus on something like an installer should be at.<br>
+<strong>&#x3C;amiuhle></strong> what if we at least request tests for new PRs?<br>
+<strong>&#x3C;moneromooo></strong> Then you won’t get PRs.<br>
+<strong>&#x3C;vtnerd></strong> that would help, but could be frustrating in a few components<br>
+<strong>&#x3C;fluffypony></strong> amiuhle: we don’t want PRs from new contributors mired in a list of things-the-PR-must-have<br>
+<strong>&#x3C;vtnerd></strong> for instance, I added some to epee::stringtools, but those are isolated functions so its easy to setup the test env<br>
+<strong>&#x3C;hyc></strong> some of this stuff won’t be easily detected in tests anyway. race condition with mining blocks, etc.<br>
+<strong>&#x3C;fireice-uk></strong> one more thing regarding wallet2.cpp<br>
+<strong>&#x3C;jacobjeweler></strong> Sorry am on phone typing, slow to respond.<br>
+<strong>&#x3C;vtnerd></strong> hyc: yup. but figuring out a base framework for some areas might be helpful to get a baseline. but its decent chunk of work<br>
+<strong>&#x3C;fireice-uk></strong> it is already at an unwieldy 5kloc, what’s the opinion on splitting it into smaller parts?<br>
+<strong>&#x3C;hyc></strong> can’t detect some of these with code coverage testing either. code cov can’t tell you about logic you’re missing.<br>
+<strong>&#x3C;moneromooo></strong> Tests can be added after the fact btw.<br>
+<strong>&#x3C;moneromooo></strong> Is there a split that makes sense ?<br>
+<strong>&#x3C;moneromooo></strong> And 5k is wieldy for any sane editor.<br>
+<strong>&#x3C;fireice-uk></strong> moneomoo: takes 2gb+ to compile<br>
+<strong>&#x3C;hyc></strong> yeah I wouldn’t worry about wallet2.cpp at the moment.<br>
+<strong>&#x3C;vtnerd></strong> mooo Im guessing vim ?<br>
+<strong>&#x3C;hyc></strong> 2GB+ to compile comes from all the boost headers and shit<br>
+<strong>&#x3C;moneromooo></strong> What I want is avoiding spamming the git log, as I use it a lot.<br>
+<strong>&#x3C;fireice-uk></strong> ok<br>
+<strong>&#x3C;moneromooo></strong> vim works fine with 5k, but most other editors are also not shit.<br>
+<strong>&#x3C;vtnerd></strong> fireice-uk: thats partially coming from the epee headers though, but some split may help a bit<br>
+<strong>&#x3C;moneromooo></strong> Or… I assume. 5k is not much.<br>
+<strong>&#x3C;hyc></strong> I’ve done the experiment before.<br>
+<strong>&#x3C;fluffypony></strong> bbedit handles it fine<br>
+<strong>* anonimal</strong> coughs<br>
+<strong>&#x3C;hyc></strong> splitting the file up to try to fit it under 2GB<br>
+<strong>&#x3C;fluffypony></strong> ok guys<br>
+<strong>&#x3C;fluffypony></strong> Kovri meeting<br>
+<strong>&#x3C;hyc></strong> made no diff. it’s the headers, not the cpp source<br>
+<strong>&#x3C;fluffypony></strong> next meeting in 2 weeks, no time for Q&#x26;A, thanks for coming</p>  </div>  </article> <aside data-border="true" data-transparent="true" style="--card-padding: var(--space-xl); --card-radius: var(--radius-md)" data-astro-cid-jbepnj6h="true" data-astro-cid-dd5txfcy="true" class="card sidebar">  <h2 data-astro-cid-jbepnj6h>المنشورات الأخيرة</h2> <ul class="recent-posts" data-astro-cid-jbepnj6h> <li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/03/04/monero-GUI-0.18.4.7-released/" data-astro-cid-jbepnj6h> Monero GUI 0.18.4.7 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-jbepnj6h> ٤ مارس ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/03/04/monero-0.18.4.6-released/" data-astro-cid-jbepnj6h> Monero 0.18.4.6 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-jbepnj6h> ٤ مارس ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/01/07/monero-GUI-0.18.4.5-released/" data-astro-cid-jbepnj6h> Monero GUI 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-jbepnj6h> ٧ يناير ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/01/07/monero-0.18.4.5-released/" data-astro-cid-jbepnj6h> Monero 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-jbepnj6h> ٧ يناير ٢٠٢٦ </time> </li> </ul>  </aside>  </div>  </main> <footer class="footer" aria-label="التذييل" data-astro-cid-mh6itkc3> <div class="items" data-astro-cid-mh6itkc3> <nav class="grid" aria-label="تنقل التذييل" data-astro-cid-mh6itkc3> <section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>الموارد</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/ar/get-started/what-is-monero/" data-astro-cid-mh6itkc3> حول Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/moneropedia/" data-astro-cid-mh6itkc3> مونيروبيديا  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://docs.getmonero.org" data-astro-cid-mh6itkc3> وثائق Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/get-started/faq/" data-astro-cid-mh6itkc3> الأسئلة الشائعة  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>تواصل</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/ar/community/workgroups/" data-astro-cid-mh6itkc3> مجموعات العمل  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/community/hangouts/" data-astro-cid-mh6itkc3> الأماكن  </a> </li><li data-astro-cid-mh6itkc3> <a href="/postorius/lists/monero-announce.lists.getmonero.org" data-astro-cid-mh6itkc3> قائمة البريد  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>المجتمع</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://monero.stackexchange.com/" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Stack Exchange  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://bitcointalk.org/index.php?topic=583449.0" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Bitcoin Talk  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://translate.getmonero.org" data-astro-cid-mh6itkc3> ترجم  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>مشروع Monero</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://openalias.org" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Open Alias  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/research-lab/" data-astro-cid-mh6itkc3> مختبر بحث Monero (MRL)  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/press-kit/" data-astro-cid-mh6itkc3> مجموعة الصحافة  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://ccs.getmonero.org" data-astro-cid-mh6itkc3> نظام التمويل الجماعي المجتمعي  </a> </li> </ul> </section> </nav> <nav class="bottom" aria-label="تنقل التذييل الثانوي" data-astro-cid-mh6itkc3> <ul class="inline-list" data-astro-cid-mh6itkc3> <li class="inline-item" data-astro-cid-mh6itkc3> <a href="#" data-astro-cid-mh6itkc3> خدمة Tor Onion <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/tor.D04gt7iP_278xXg.avif);--iconColor: #7d4698;--spacing: 0.25em;"></div>  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> استجابة الثغرات  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/ar/legal/" data-astro-cid-mh6itkc3> القانوني  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> رمز المصدر  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/feed.xml" data-astro-cid-mh6itkc3> تغذية RSS <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/rss.jnIu9F4x_Z28u6pV.avif);--iconColor: var(--monero-orange);--spacing: 0.25em;"></div>  </a> </li> </ul> </nav> </div> </footer>   </body></html> 

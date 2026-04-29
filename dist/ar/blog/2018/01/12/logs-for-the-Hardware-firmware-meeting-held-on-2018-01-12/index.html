@@ -1,0 +1,386 @@
+<!DOCTYPE html><html lang="ar" dir="rtl" data-astro-cid-sckkx6r4> <head><title>المدونة | Logs for the Hardware Firmware Meeting Held on 2018-01-12</title><meta charset="UTF-8"><link rel="canonical" href="https://beta.monerodevs.org/ar/blog/2018/01/12/logs-for-the-Hardware-firmware-meeting-held-on-2018-01-12/"><meta name="description" content="Discussion of the firmware for the dedicated hardware wallet and a discussion of Ledger's approach"><meta name="robots" content="index, follow"><meta property="og:title" content="Logs for the Hardware Firmware Meeting Held on 2018-01-12"><meta property="og:type" content="article"><meta property="og:image" content="https://beta.monerodevs.org/open-graph/blog/2018/01/12/logs-for-the-Hardware-firmware-meeting-held-on-2018-01-12.png"><meta property="og:url" content="https://beta.monerodevs.org/ar/blog/2018/01/12/logs-for-the-Hardware-firmware-meeting-held-on-2018-01-12/"><meta property="og:locale" content="ar"><meta property="og:locale:alternate" content="en"><meta property="og:locale:alternate" content="zh"><meta property="og:site_name" content="Monero"><meta property="og:image:url" content="https://beta.monerodevs.org/open-graph/blog/2018/01/12/logs-for-the-Hardware-firmware-meeting-held-on-2018-01-12.png"><meta property="og:image:alt" content="OpenGraph image for Monero blog post titled &#34;Logs for the Hardware Firmware Meeting Held on 2018-01-12&#34;"><meta property="article:published_time" content="2018-01-12T00:00:00.000Z"><meta property="article:author" content="dEBRUYNE / fluffypony"><meta property="article:tag" content="dev diaries"><meta property="article:tag" content="crypto"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@monero"><meta name="twitter:title" content="Logs for the Hardware Firmware Meeting Held on 2018-01-12"><meta name="twitter:image" content="https://beta.monerodevs.org/open-graph/blog/2018/01/12/logs-for-the-Hardware-firmware-meeting-held-on-2018-01-12.png"><meta name="twitter:description" content="Discussion of the firmware for the dedicated hardware wallet and a discussion of Ledger's approach"><link rel="preload" as="font" type="font/woff2" href="/_astro/dm-sans-latin-wght-normal.Xz1IZZA0.woff2" crossorigin="anonymous"><link rel="icon" href="/meta/favicon-16x16.png" sizes="16x16"><link rel="icon" href="/meta/favicon-32x32.png" sizes="32x32"><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.18.0"><meta name="color-scheme" content="light dark"><link rel="alternate" hreflang="en" href="https://beta.monerodevs.org/blog/2018/01/12/logs-for-the-Hardware-firmware-meeting-held-on-2018-01-12/"><link rel="alternate" hreflang="ar" href="https://beta.monerodevs.org/ar/blog/2018/01/12/logs-for-the-Hardware-firmware-meeting-held-on-2018-01-12/"><link rel="alternate" hreflang="zh" href="https://beta.monerodevs.org/zh/blog/2018/01/12/logs-for-the-Hardware-firmware-meeting-held-on-2018-01-12/"><link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="https://beta.monerodevs.org/feed.xml"><style>#blog-content{line-height:var(--line-height-body);word-wrap:break-word;color:light-dark(inherit,var(--paragraph-main));:where(h2,h3,h4){font-weight:var(--font-weight-bold)}img{border-radius:var(--radius-md)}a:not(.moneropedia-link){color:light-dark(var(--text-primary),var(--paragraph-main));font-weight:var(--font-weight-medium);text-decoration-line:underline;text-decoration-style:dotted;&:hover{color:light-dark(var(--text-secondary),var(--heading-color))}}h1{font-size:var(--font-size-2xl)}h2{font-size:var(--font-size-xl)}h3{font-size:var(--font-size-lg)}h4{font-size:var(--font-size-md)}p{margin-bottom:1em}li{margin-bottom:.25em}pre{padding:1em;border-radius:var(--radius-md);overflow-x:auto;background:var(--footer-color);code{background:none;padding:0;border-radius:0}}code:not(pre code){font-family:monospace;background-color:var(--footer-color);padding:.1em .3em;border-radius:var(--radius-sm)}blockquote{margin:1.5em 0;padding-inline:1.5em 1em;border-inline-start:3px solid var(--border-color);font-style:italic;color:var(--text-secondary)}strong{font-weight:var(--font-weight-bold)}em{font-style:italic}}h1[data-astro-cid-7dcwcvhl]{font-size:var(--font-size-3xl);margin:0}#post-header[data-astro-cid-7dcwcvhl]{margin-bottom:var(--page-top-margin)}#meta[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-2xl);color:var(--text-secondary);margin-top:var(--space-md);margin-bottom:var(--space-xl);font-size:var(--font-size-lg);font-weight:var(--font-weight-normal)}.meta-item[data-astro-cid-7dcwcvhl]{display:flex;align-items:center;gap:var(--space-xs);>.icon{display:grid;place-items:center;color:var(--monero-orange)}}.tag-container[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-xs);font-size:var(--font-size-sm);flex-wrap:wrap;.tag{text-align:center;padding:var(--space-2xs) var(--space-sm);background:var(--footer-color);border-radius:var(--radius-md);text-transform:uppercase;font-weight:var(--font-weight-semibold);text-decoration:none;color:inherit;white-space:nowrap;&:hover{color:var(--text-secondary)}}}@media(width<=600px){#meta[data-astro-cid-7dcwcvhl]{flex-direction:column;font-size:var(--font-size-md);font-weight:var(--font-weight-medium);gap:var(--space-md)}.meta-item[data-astro-cid-7dcwcvhl]{>.icon{font-size:var(--font-size-lg)}}}
+.card[data-astro-cid-dd5txfcy]{background:var(--card-color);padding:var(--card-padding);border-radius:var(--card-radius);&[data-border]{border:1px solid var(--border-color)}&[data-transparent]{background:transparent}&[data-hover]{transition:background .15s ease;&[data-astro-cid-dd5txfcy]:hover,&[data-astro-cid-dd5txfcy]:focus-visible{background:var(--card-hover-color)}}}
+.icon[data-astro-cid-bpjkz5as]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);margin-inline-start:var(--spacing);background:var(--iconColor);mask:var(--iconSrc) no-repeat center / contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}
+</style>
+<link rel="stylesheet" href="/_astro/_page_.DxMr-0dd.css">
+<style>.blog-container[data-astro-cid-jbepnj6h]{display:grid;grid-template-columns:1fr;gap:var(--space-2xl);>*{min-width:0}}.sidebar[data-astro-cid-jbepnj6h]{height:fit-content;& h2[data-astro-cid-jbepnj6h]{font-size:var(--font-size-xl);margin-top:0}}.recent-posts[data-astro-cid-jbepnj6h]{list-style:none;padding:0;margin-bottom:0;display:flex;flex-direction:column;gap:var(--space-md);li{margin-bottom:var(--space-xs)}.post-title{font-size:var(--font-size-md);color:var(--paragraph-main);text-decoration-line:underline;text-decoration-style:dotted;&:hover{text-decoration:underline}}.post-date{display:block;font-size:var(--font-size-sm);color:var(--paragraph-subtitle);margin-top:var(--space-2xs)}}@media(width>=1200px){.blog-container[data-astro-cid-jbepnj6h]{grid-template-columns:1fr 65ch 1fr}.blog-post[data-astro-cid-jbepnj6h]{grid-column:2}.sidebar[data-astro-cid-jbepnj6h]{grid-column:2;grid-row:2}}@media(width>=1600px){.sidebar[data-astro-cid-jbepnj6h]{grid-column:3;grid-row:1}}
+:where([data-astro-image]){object-fit:var(--fit);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+.moneropedia-link{position:relative;display:inline-block;color:var(--monero-orange);text-decoration-line:underline;text-decoration-style:dotted;cursor:help;font-weight:var(--font-weight-medium)}.moneropedia-link:hover,.moneropedia-link:focus-visible{text-decoration:none}.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{content:none}@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{position:absolute;left:50%;opacity:0;pointer-events:none;transform:translate(-50%) translateY(0);transition:opacity .18s ease-out,transform .18s ease-out;z-index:10}.moneropedia-link[data-tooltip]:before{content:attr(data-tooltip);bottom:calc(100% + .5rem);padding:.5rem .75rem;background:var(--card-color);border:1px solid var(--border-color);border-radius:.25rem;box-sizing:border-box;overflow-wrap:break-word;min-inline-size:25ch;max-inline-size:min(35ch,calc(100vw - 2.5rem));font-size:var(--font-size-sm);line-height:var(--line-height-caption);color:var(--text-primary);box-shadow:0 2px 8px #0000004d}.moneropedia-link[data-tooltip]:after{content:"";bottom:calc(100% + .25rem);border-width:.35rem .35rem 0;border-style:solid;border-color:var(--card-color) transparent transparent transparent}.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):before,.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):after{opacity:1;transform:translate(-50%) translateY(-2px)}}@media(prefers-reduced-motion:reduce){@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{transition:none}}}
+.icon[data-astro-cid-7wapxsvo]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);aspect-ratio:1 / 1;vertical-align:middle;--iconUrl: var(--lightUrl);background-image:var(--iconUrl);background-repeat:no-repeat;background-position:center;background-size:contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}@media(prefers-color-scheme:dark){.icon[data-astro-cid-7wapxsvo]{--iconUrl: var(--darkUrl)}}
+</style></head> <body data-astro-cid-sckkx6r4> <header class="header" data-astro-cid-dm2weclu> <div class="header-inner" data-astro-cid-dm2weclu> <a class="brand" href="/ar/" data-astro-cid-dm2weclu> <img src="/_astro/monerologo.CMdKQEkN_10Rm8s.avif" srcset="/_astro/monerologo.CMdKQEkN_10Rm8s.avif 64w, /_astro/monerologo.CMdKQEkN_10Rm8s.avif 128w" alt aria-hidden="true" data-astro-cid-dm2weclu="true" loading="eager" decoding="sync" fetchpriority="high" sizes="(min-width: 64px) 64px, 100vw" style="--fit: cover; --pos: center;" data-astro-image="constrained" width="64" height="64" class="mark"> <span data-astro-cid-dm2weclu>MONERO</span> </a> <input id="nav-toggle" class="nav-toggle" type="checkbox" data-astro-cid-dm2weclu> <nav id="primary-nav" class="nav" aria-label="التنقل الأساسي" data-astro-cid-dm2weclu> <div class="drawer-header" data-astro-cid-dm2weclu> <label for="nav-toggle" class="close" aria-controls="primary-nav" aria-label="أغلق القائمة" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/close.CneAMmXr_ZaFGrm.avif);--iconColor: currentColor;"></div>  </label> </div> <fieldset data-astro-cid-dm2weclu> <legend class="sr-only" data-astro-cid-dm2weclu>أقسام التنقل الأساسي</legend> <ul class="nav-list" data-astro-cid-dm2weclu> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-ova5vchfy" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-ova5vchfy-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> ابدأ <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-ova5vchfy" class="mobile-open" aria-label="Open ابدأ menu" data-astro-cid-pbmdh2tw></label> <label for="dd-ova5vchfy-close" class="mobile-close" aria-label="Close ابدأ menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="ابدأ menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/get-started/what-is-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--darkUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>ما هو Monero؟</div> <div class="desc" data-astro-cid-lm33vczh>كل ما تحتاجه لمعرفة Monero في لمحة.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/exchanges/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/merchants-exchanges.DN61YseO_ZQ3Km9.avif);--darkUrl: url(/_astro/merchants-exchanges.BjKEmUcz_1O8q9G.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>اشترِ Monero</div> <div class="desc" data-astro-cid-lm33vczh>بورصات العملات المشفرة التي تتيح لك شراء أو تداول Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/merchants/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>أنفق Monero</div> <div class="desc" data-astro-cid-lm33vczh>ابحث عن أماكن وخدمات تقبل Monero كدفع.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/accept-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/accept-monero.COXM8aHM_Z1II116.avif);--darkUrl: url(/_astro/accept-monero.C3WCFfqe_Z2tp8Kw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>اقبل Monero</div> <div class="desc" data-astro-cid-lm33vczh>تعلم كيفية قبول XMR كتاجر أو فرد.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/mining/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/mining.DBRk7HAe_Zd3ukV.avif);--darkUrl: url(/_astro/mining.B54FNZld_Z2jnjrG.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>التعدين</div> <div class="desc" data-astro-cid-lm33vczh>تعلم كيفية تعدين Monero على جهاز الكمبيوتر الخاص بك.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/contribute/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/contribute.DKeO9Dve_Z2vEvfu.avif);--darkUrl: url(/_astro/contribute.zLqiOwb5_Z1qe0gS.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>ساهم</div> <div class="desc" data-astro-cid-lm33vczh>ساعد مشروع Monero في جلب الخصوصية للجميع.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/faq/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/faq.C8QObR1A_1A5Irh.avif);--darkUrl: url(/_astro/faq.BNcLqXOJ_ZaSdVI.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الأسئلة الشائعة</div> <div class="desc" data-astro-cid-lm33vczh>ابحث عن إجابات للأسئلة الشائعة حول Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/ar/downloads/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> التحميلات  </a>  </div>  </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/ar/blog/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> المدونة  </a>  </div>  </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-l7mkgkp6n" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-l7mkgkp6n-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> المجتمع <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-l7mkgkp6n" class="mobile-open" aria-label="Open المجتمع menu" data-astro-cid-pbmdh2tw></label> <label for="dd-l7mkgkp6n-close" class="mobile-close" aria-label="Close المجتمع menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="المجتمع menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/community/workgroups/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/workgroups.OzoDQ7NV_Z1Lwqqs.avif);--darkUrl: url(/_astro/workgroups.CGbkWAXL_Z1m0ybJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مجموعات العمل</div> <div class="desc" data-astro-cid-lm33vczh>تعاون مع مجموعات عمل Monero المخصصة في التطوير والبحث والجهود المجتمعية.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/community/sponsorships/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الرعايات</div> <div class="desc" data-astro-cid-lm33vczh>قائمة الشركات التي تدعم مشروع Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/community/hangouts/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/hangouts.CiWxE-i9_ZeEICj.avif);--darkUrl: url(/_astro/hangouts.Do4DJEA1_257lPw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الأماكن</div> <div class="desc" data-astro-cid-lm33vczh>انضم إلى أماكن تجمع مجتمع Monero والفعاليات للاتصال بالمتحمسين والمطورين الآخرين.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-ogisinh4a" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-ogisinh4a-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> الموارد <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-ogisinh4a" class="mobile-open" aria-label="Open الموارد menu" data-astro-cid-pbmdh2tw></label> <label for="dd-ogisinh4a-close" class="mobile-close" aria-label="Close الموارد menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="الموارد menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/resources/knowledge-base/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/moneropedia.7o-c8ZX4_lSmb.avif);--darkUrl: url(/_astro/moneropedia.CYJm2-Q5_1KG40X.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>قاعدة المعرفة</div> <div class="desc" data-astro-cid-lm33vczh>الكتب والمنشورات والمجلات، مونيروبيديا.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/roadmap/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/roadmap.DoSq9h9o_Z1QuQpv.avif);--darkUrl: url(/_astro/roadmap.BONb2rwk_2hroDR.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>خارطة الطريق</div> <div class="desc" data-astro-cid-lm33vczh>ابقَ على اطلاع بأحدث خطط وتقدم تطوير Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/research-lab/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/research-lab.D90VAC3d_WkkdD.avif);--darkUrl: url(/_astro/research-lab.uv3a8gpS_Z7cyXJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مختبر البحث</div> <div class="desc" data-astro-cid-lm33vczh>استكشف منشورات مختبر بحث Monero وأبحاثه.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/tools/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/tools.CTqUs9cD_Z1hqOiO.avif);--darkUrl: url(/_astro/tools.BW4KRKDW_Z6Gril.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>أدوات Monero</div> <div class="desc" data-astro-cid-lm33vczh>قائمة منتقاة من الأدوات والبرمجيات لمستخدمي ومطوري Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="https://docs.getmonero.org" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/developer-guides.DD6ipv0S_Yls1B.avif);--darkUrl: url(/_astro/developer-guides.Cdg0NOVs_Z2h2V29.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>وثائق Monero</div> <div class="desc" data-astro-cid-lm33vczh>دليل شامل للمستخدمين والمطورين لاستخدام Monero بفعالية وأمان.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/press-kit/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/press-kit.C4VjegyX_2aPbOF.avif);--darkUrl: url(/_astro/press-kit.CVdfPwCA_1oXHhF.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مجموعة الصحافة</div> <div class="desc" data-astro-cid-lm33vczh>اتصالات الصحافة والشعارات والصور والموارد الإعلامية الأخرى.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="https://ccs.getmonero.org" class="link" tabindex="0" data-astro-cid-pbmdh2tw> التمويل الجماعي  </a>  </div>  </li>  </ul> </fieldset> </nav> <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="أغلق القائمة" data-astro-cid-dm2weclu></label> <div class="utils" aria-label="الأدوات" data-astro-cid-dm2weclu> <div class="lang" data-astro-cid-dm2weclu> <details class="lang-container" data-astro-cid-g6d27pgi> <summary class="lang" aria-label="غير اللغة" aria-haspopup="true" role="button" data-astro-cid-g6d27pgi> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/globe.FI0_gjXP_xUiUM.avif);--iconColor: currentColor;"></div>  </summary> <div class="lang-dropdown" aria-label="اللغات" data-astro-cid-g6d27pgi> <ul class="lang-list" data-astro-cid-g6d27pgi> <li data-astro-cid-g6d27pgi> <a href="/blog/2018/01/12/logs-for-the-Hardware-firmware-meeting-held-on-2018-01-12/" class data-astro-cid-g6d27pgi> English </a> </li><li data-astro-cid-g6d27pgi> <a href="/ar/blog/2018/01/12/logs-for-the-Hardware-firmware-meeting-held-on-2018-01-12/" class="active" aria-current="true" data-astro-cid-g6d27pgi> العربية </a> </li><li data-astro-cid-g6d27pgi> <a href="/zh/blog/2018/01/12/logs-for-the-Hardware-firmware-meeting-held-on-2018-01-12/" class data-astro-cid-g6d27pgi> 中文 </a> </li> </ul> </div> </details>  </div> <label for="nav-toggle" class="hamburger" aria-controls="primary-nav" aria-label="افتح القائمة" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/hamburger.CkIM-2PU_xmMpy.avif);--iconColor: currentColor;"></div>  </label> </div> </div> </header>  <main data-astro-cid-sckkx6r4>   <div class="blog-container" data-astro-cid-jbepnj6h> <article class="blog-post" data-astro-cid-jbepnj6h> <div id="post-header" data-astro-cid-7dcwcvhl> <h1 data-astro-cid-7dcwcvhl>Logs for the Hardware Firmware Meeting Held on 2018-01-12</h1> <div id="meta" data-astro-cid-7dcwcvhl> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/calendar.BXaSv3Jk_Z1NrB7E.avif);--iconColor: currentColor;"></div>  </div> <time datetime="2018-01-12" data-astro-cid-7dcwcvhl>١٢ يناير ٢٠١٨</time> </div> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/user.Cx6bTnUm_FhCof.avif);--iconColor: currentColor;"></div>  </div> dEBRUYNE / fluffypony </div> </div> <div class="tag-container" data-astro-cid-7dcwcvhl> <a class="tag" href="/ar/blog/tags/dev-diaries/" data-astro-cid-7dcwcvhl> يوميات التطوير </a><a class="tag" href="/ar/blog/tags/crypto/" data-astro-cid-7dcwcvhl> التشفير </a> </div> </div>   <div id="blog-content" lang="en" dir="ltr">  <h1 id="logs">Logs</h1>
+<p><strong>&#x3C;i-a></strong> Hello all, it is time for our firmware meeting to start. I am not sure if it is not too early to have a meeting like this, but let’s see.<br>
+<strong>&#x3C;i-a></strong> Strange, there were so many people saying they have questions about code and now nobody is here:) So I will give a quick update on our project:<br>
+<strong>&#x3C;i-a></strong> Ok here is the quick update: USB communications is working, alse we can generate wallet by using internal random number generator (thanks god for m2049r, nice job)<br>
+<strong>&#x3C;i-a></strong> Maybe you have some recommendation how to move from here? My questions could look silly, but thats because I am personally just learning monero.<br>
+<strong>&#x3C;m2049r[m]></strong> :)<br>
+<strong>&#x3C;i-a></strong> On the other hand, there are other people working and maybe my questions could help also to them.<br>
+<strong>&#x3C;m2049r[m]></strong> is there anyone here who is actually taking part in this meeting besides us two?<br>
+<strong>&#x3C;hotoatmeal></strong> is the plan to use the same strategy that the ledger guy came up with, where private keys are sent (encrypted) from the device to the wallet?<br>
+<strong>&#x3C;qqitty></strong> CS noob looking to study xmr code this weekend. any design books/web guides to read like Huang’s dissecting BTC?<br>
+<strong>&#x3C;hotoatmeal></strong> m2049r[m]: I’m mostly passively participating, until that question<br>
+<strong>&#x3C;dEBRUYNE></strong> m2049r[m]: Most people will probably just read until they want to say something :p<br>
+<strong>&#x3C;i-a></strong> hotoatmeal: We are here to speak about the plan.. I think if we want to do all the signing stuff in the device, we would need more memory.In case we need more memory, we will just setup a new device with bigger mcu.<br>
+<strong>&#x3C;m2049r[m]></strong> i would like an implementation where the keys never ever leave the device - we have to see if thats possible with the hardware constraints we have.<br>
+<strong>&#x3C;hotoatmeal></strong> I would like that too!<br>
+<strong>&#x3C;i-a></strong> It is still organic and you have perfect opportunity to bend the way how it is being developped:)<br>
+<strong>&#x3C;i-a></strong> Me too.<br>
+<strong>&#x3C;m2049r[m]></strong> there may be multiple implementations, with different roads to success.<br>
+<strong>&#x3C;hotoatmeal></strong> I don’t yet understand how to find transaction outputs without revealing the view key<br>
+<strong>&#x3C;m2049r[m]></strong> without having studies the code i think it should be possible to hook into the code and have the device take over when keys are in play.<br>
+<strong>&#x3C;hotoatmeal></strong> if that’s not possible, then the entire blockchain would have to be fed through the device over usb… might be quite slow.<br>
+<strong>&#x3C;m2049r[m]></strong> (into the wallet client code)<br>
+<strong>&#x3C;m2049r[m]></strong> yes - but thats probably not a good idea - and were back to sending the keys to the client<br>
+<strong>&#x3C;hotoatmeal></strong> yeah :/<br>
+<strong>&#x3C;hotoatmeal></strong> too bad homeomorphic encryption systems are so slow<br>
+<strong>&#x3C;hotoatmeal></strong> otherwise you could trustlessly give the client an encrypted version of your view key, let it scan the blockchain for you, and provide the relevant txo’s (also encrypted)<br>
+<strong>&#x3C;hotoatmeal></strong> and have the device decrypt the computed result<br>
+<strong>&#x3C;m2049r[m]></strong> i need to read up on how exactly the keys are used in the clients - any specific hint on where to get started?<br>
+<strong>&#x3C;hotoatmeal></strong> cryptonote paper is where I got started<br>
+<strong>&#x3C;hotoatmeal></strong> also looking at the ledger guy’s patch<br>
+<strong>&#x3C;m2049r[m]></strong> i am not sure the communication to &#x26; from the device needs to be encrypted - are you worried about usb sniffers?<br>
+<strong>&#x3C;jbdatko></strong> hotoatmeal, can you link that patch?<br>
+<strong>&#x3C;m2049r[m]></strong> and if yes, whats the attack?<br>
+<strong>&#x3C;hotoatmeal></strong> so two separate things, both with different reasons for encryption<br>
+<strong>&#x3C;qqitty2></strong> Thanks @hotoatmeal. I’ll go dive into the cryptonote WP<br>
+<strong>&#x3C;m2049r[m]></strong> cryptonote paper seems mostly vague<br>
+<strong>&#x3C;hotoatmeal></strong> ledger guy’s patch encrypts the communication because it’s transferring raw key data<br>
+<strong>&#x3C;hotoatmeal></strong> should be a no-brainer that that should be encrypted<br>
+<strong>&#x3C;luigi1111></strong> Paper is pretty clear unless you want implementation specifics<br>
+<strong>&#x3C;m2049r[m]></strong> heh yes<br>
+<strong>&#x3C;hotoatmeal></strong> this other thing about H-E, is a separate idea, and that’s to allow someone else to scan the blockchain on your behalf, without revealing your view key to them (losing your privacy)<br>
+<strong>&#x3C;m2049r[m]></strong> paper is clear - i meant vague in the sense of implementation specifics<br>
+<strong>&#x3C;m2049r[m]></strong> H-E?<br>
+<strong>&#x3C;luigi1111></strong> I think you pretty much have to have client do the scanning<br>
+<strong>&#x3C;luigi1111></strong> Not the hw<br>
+<strong>&#x3C;hotoatmeal></strong> homeomorphic encryption<br>
+<strong>&#x3C;dEBRUYNE></strong> jbdatko: It’s under open PRs on the monero repository<br>
+<strong>&#x3C;luigi1111></strong> Unless you have some hw acceleration it’s just too slow<br>
+<strong>&#x3C;i-a></strong> luigi1111: yes but is there a way how to do it?<br>
+<strong>&#x3C;luigi1111></strong> How to do which<br>
+<strong>&#x3C;hotoatmeal></strong> i.e. someone else performs math on encrypted values that they can’t see, and returns the result to you<br>
+<strong>&#x3C;i-a></strong> how to let PC scan the whole blockchain and prepare outgoing tx in a way, that the are sent to device just for signing.<br>
+<strong>&#x3C;luigi1111></strong> Sure<br>
+<strong>&#x3C;luigi1111></strong> The cold wallet signing basically does this already<br>
+<strong>&#x3C;hotoatmeal></strong> the problem is that H-E implementations of crypto algos are really really really slow<br>
+<strong>&#x3C;hotoatmeal></strong> like hours for a single round of AES<br>
+<strong>&#x3C;luigi1111></strong> That’d probably be slower than the device doing the scanning ^^<br>
+<strong>&#x3C;luigi1111></strong> :)<br>
+<strong>&#x3C;hotoatmeal></strong> yeah<br>
+<strong>&#x3C;i-a></strong> :(<br>
+<strong>&#x3C;hotoatmeal></strong> but in terms of mathematical purity / elegance… I really want that kind of solution to work :)<br>
+<strong>&#x3C;hotoatmeal></strong> jbdatko: <a href="https://github.com/monero-project/monero/pull/3095" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/monero/pull/3095</a><br>
+<strong>&#x3C;i-a></strong> Ok, another question: If device did he whole scanning. How much memory we need on the device? I think that downlink from peers is usually slower than USB, so limitations is more in memory requirement at the device.<br>
+<strong>&#x3C;m2049r[m]></strong> how big of a problem would it be to reveal the viewkey to the client?<br>
+<strong>&#x3C;luigi1111></strong> Not memory<br>
+<strong>&#x3C;luigi1111></strong> Cpu<br>
+<strong>&#x3C;luigi1111></strong> I don’t think it’s an issue<br>
+<strong>&#x3C;luigi1111></strong> I mean it isn’t perfect<br>
+<strong>&#x3C;luigi1111></strong> But it has the benefit of being workable<br>
+<strong>&#x3C;hotoatmeal></strong> revealing to the client just means that you can’t have a non-daemon client<br>
+<strong>&#x3C;luigi1111></strong> Sure you can<br>
+<strong>&#x3C;i-a></strong> yes but it is fine for now I think.<br>
+<strong>&#x3C;luigi1111></strong> You could have a remote node<br>
+<strong>&#x3C;hotoatmeal></strong> well, yeah<br>
+<strong>&#x3C;luigi1111></strong> All the way to mymonero<br>
+<strong>&#x3C;m2049r[m]></strong> the client wallet cache - is that encrypted?<br>
+<strong>&#x3C;moneromooo></strong> Yes.<br>
+<strong>&#x3C;m2049r[m]></strong> thought so - so the device would need to do that as well.<br>
+<strong>&#x3C;hotoatmeal></strong> is it possible to give the client an image of the view key, and then have it search the blockchain for some subset of txo’s that /might/ match (as a coarse filter)?<br>
+<strong>&#x3C;endogenic></strong> vtnerd<br>
+<strong>&#x3C;jbdatko></strong> hotoatmeal, thank you<br>
+<strong>&#x3C;hotoatmeal></strong> (reducing the amount of work the device has to do, but not giving up the full key data?)<br>
+<strong>&#x3C;m2049r[m]></strong> how would that work?<br>
+<strong>&#x3C;jbdatko></strong> AES accelerators on MCU are pretty good now, so depending on the MCU it might not be completely horrible (sorry I’m jumping in w/o knowing the full context)<br>
+<strong>&#x3C;endogenic></strong> hotoatmeal: mrl has been workin on this problem for some time<br>
+<strong>&#x3C;hotoatmeal></strong> endogenic: anything I’m saying known not to be worth pursuing? (by proofs that it doesn’t work, or somesuch)<br>
+<strong>&#x3C;m2049r[m]></strong> we have space for secure elements on the board - things which can do aes and other things in hardware.<br>
+<strong>&#x3C;luigi1111w></strong> you need ed25519 acceleration<br>
+<strong>&#x3C;luigi1111w></strong> which I doubt exists<br>
+<strong>&#x3C;m2049r[m]></strong> yeah, except that.<br>
+<strong>&#x3C;hotoatmeal></strong> heh. now it needs an fpga<br>
+<strong>&#x3C;luigi1111w></strong> I don’t really see any way around it<br>
+<strong>&#x3C;luigi1111w></strong> mymonero as a hw client would actually be quite desirable<br>
+<strong>&#x3C;luigi1111w></strong> and quite an upgrade<br>
+<strong>&#x3C;luigi1111w></strong> well it all depends on perspective :)<br>
+<strong>&#x3C;endogenic></strong> :)<br>
+<strong>&#x3C;luigi1111w></strong> the most secure/private arrangement would be user owned daemon -> wallet/client -> hw<br>
+<strong>&#x3C;luigi1111w></strong> but you can delegate the first two for privacy loss<br>
+<strong>&#x3C;luigi1111w></strong> well the first one isn’t really privacy loss<br>
+<strong>&#x3C;i-a></strong> our nordic semiconductor candidate has ed25519 hw block, but we still didnt get them.<br>
+<strong>&#x3C;luigi1111w></strong> or a different type or of privacy<br>
+<strong>&#x3C;luigi1111w></strong> i-a that’s interesting<br>
+<strong>&#x3C;luigi1111w></strong> I’d be curious to see perf numbers<br>
+<strong>&#x3C;m2049r[m]></strong> i-a but thats with an nda so we cant be open source, no?<br>
+<strong>&#x3C;luigi1111w></strong> for some usable ed25519 operation<br>
+<strong>&#x3C;i-a></strong> luigi1111w: nRF52840, it has secure crypto cell or something like that.<br>
+<strong>&#x3C;i-a></strong> Of course there are other problems, like a non open design and so on.<br>
+<strong>&#x3C;msvb-mob></strong> cryptocell is available without nda.<br>
+<strong>&#x3C;luigi1111w></strong> I mean something like signatures/sec<br>
+<strong>&#x3C;i-a></strong> another question is if this cryptocell ed25519 is fast enough to be usable.<br>
+<strong>&#x3C;luigi1111w></strong> that was my only question :)<br>
+<strong>&#x3C;i-a></strong> Unfortunately I dont know now. But I will try to find out. It seems like as-fast-as-possibe ed25529 od device is a must.<br>
+<strong>&#x3C;hotoatmeal></strong> do you have a ballpark for how fast it would have to be to be usable?<br>
+<strong>&#x3C;msvb-mob></strong> cec1702 has the cuve too.<br>
+<strong>&#x3C;i-a></strong> msvb-mob: nice, can we somehow determine their performance?<br>
+<strong>&#x3C;m2049r[m]></strong> they sortof claim its 10x a software solution but dont show numbers<br>
+<strong>&#x3C;luigi1111w></strong> software solution on that power of hw?<br>
+<strong>&#x3C;luigi1111w></strong> IDK, something similar to an older cpu<br>
+<strong>&#x3C;msvb-mob></strong> i-a: I don’t know how to measure performance without testing the devices on real hardware, unfortunately.<br>
+<strong>&#x3C;i-a></strong> <a href="https://www.microchip.com/wwwproducts/en/CEC1702" rel="noopener noreferrer external" target="_blank">https://www.microchip.com/wwwproducts/en/CEC1702</a><br>
+<strong>&#x3C;i-a></strong> this is it ^<br>
+<strong>&#x3C;m2049r[m]></strong> thats the question luigi - its blabla<br>
+<strong>&#x3C;m2049r[m]></strong> can we GET real hardware?<br>
+<strong>&#x3C;luigi1111w></strong> :)<br>
+<strong>&#x3C;i-a></strong> msvb-mob: hmm:( are we going to have cec1702 to do some testing?<br>
+<strong>&#x3C;luigi1111w></strong> I think it would be really cool if such a device could be made<br>
+<strong>&#x3C;luigi1111w></strong> but I’m skeptical<br>
+<strong>&#x3C;msvb-mob></strong> m2049r[m]: I can send you a nRF52840-DK if you want.<br>
+<strong>&#x3C;luigi1111w></strong> we know the viewkey delegation works, at least<br>
+<strong>&#x3C;msvb-mob></strong> i-a: The nRF is easy (there’s a devkit for that) but to test the CEC1702 we must make the boards ourselves first.<br>
+<strong>&#x3C;luigi1111w></strong> (mymonero and openmonero both use the exact same idea already)<br>
+<strong>&#x3C;msvb-mob></strong> I think the MCUs are already in my lab.<br>
+<strong>&#x3C;i-a></strong> msvb-mob: that is not a big deal, if you know the are comming, i can send you a board asap.<br>
+<strong>&#x3C;i-a></strong> (lets say gerbers on monday/tuesday)<br>
+<strong>&#x3C;i-a></strong> msvb-mob: what about nda on this cec1702? Or do they have some problem?<br>
+<strong>&#x3C;msvb-mob></strong> The CEC1702 is not NDA encumbered.<br>
+<strong>&#x3C;i-a></strong> perfect candidate -_-<br>
+<strong>&#x3C;msvb-mob></strong> Yes, I think so too.<br>
+<strong>&#x3C;m2049r[m]></strong> the CEC1702 &#x26; the nRF52840 would replace our MCU?<br>
+<strong>&#x3C;i-a></strong> m2049r[m]: I think yes, because our mcu is lacking ed25519<br>
+<strong>&#x3C;msvb-mob></strong> m2049r[m]: They are both Cortex-M4 MCUs so they could do so. If they aren’t large enough to contain transactions in memory or code in program storage we could use them as coprocessors probably.<br>
+<strong>&#x3C;msvb-mob></strong> Would be a bit weird.<br>
+<strong>&#x3C;m2049r[m]></strong> we have to see what they mean by ed25519. do we need just signing &#x26; verifying or do we also need curve arithmetic luigi1111w<br>
+<strong>&#x3C;luigi1111w></strong> signing and verifying sorta-mostly-ish include all the operations needed<br>
+<strong>&#x3C;luigi1111w></strong> I guess that’s not really true<br>
+<strong>&#x3C;luigi1111w></strong> but the operations that need accelerated would be, mostly<br>
+<strong>&#x3C;m2049r[m]></strong> the data sheets says:<br>
+<strong>&#x3C;m2049r[m]></strong> Elliptic Curve point multiply with Curve25519<br>
+<strong>&#x3C;m2049r[m]></strong> The Edwards-curve Digital Signature Algorithm (EdDSA), using Curve25519<br>
+<strong>&#x3C;m2049r[m]></strong> (CEC1702)<br>
+<strong>&#x3C;iDunk></strong> ed25519 != Curve25519.<br>
+<strong>&#x3C;i-a></strong> nRF does both i think<br>
+<strong>&#x3C;i-a></strong> yes<br>
+<strong>&#x3C;i-a></strong> but cec1702 doesn’t have ed25519:( or I cannot find it in datasheet.<br>
+<strong>&#x3C;m2049r[m]></strong> the nrf can create keys, sign &#x26; verify. “The generation is performed using EC Edwards ed25519 algorithm.”<br>
+<strong>&#x3C;i-a></strong> cec1702 has only Curve25519<br>
+<strong>&#x3C;luigi1111w></strong> if they are going off of nacl or similar they have both<br>
+<strong>&#x3C;luigi1111w></strong> the signing is ed<br>
+<strong>&#x3C;luigi1111w></strong> and the box stuff is curve255<br>
+<strong>&#x3C;msvb-mob></strong> i-a: No ECDSA on CEC1702? I don’t have the documents with me now.<br>
+<strong>&#x3C;i-a></strong> ok so to be clear:<br>
+<strong>&#x3C;i-a></strong> The Elliptic Curve Digital Signature Algorit<br>
+<strong>&#x3C;i-a></strong> hm (ECDSA), using all supported NIST curves<br>
+<strong>&#x3C;i-a></strong> he Edwards-curve Digital Signatur<br>
+<strong>&#x3C;i-a></strong> e Algorithm (EdDSA), using Curve25519<br>
+<strong>&#x3C;luigi1111w></strong> that could be naming issues though :)<br>
+<strong>&#x3C;i-a></strong> maybe ed25519 is hidden somewhere, but it isn explicitly mentioned, Curve25519 is mentioned.<br>
+<strong>&#x3C;i-a></strong> *isnt<br>
+<strong>&#x3C;luigi1111w></strong> yeah they are often bundled together<br>
+<strong>&#x3C;m2049r[m]></strong> so you are saying we need new hardware in any case?<br>
+<strong>&#x3C;luigi1111w></strong> to attempt to “do everyone on device”, yes (and I’m doubtful it’s possible)<br>
+<strong>&#x3C;luigi1111w></strong> to do a client-delegated arrangement, no<br>
+<strong>&#x3C;hotoatmeal></strong> these slides say they can do ~1400 ECDH’s /s on a cortex A8: <a href="https://cr.yp.to/talks/2012.11.29/slides.pdf" rel="noopener noreferrer external" target="_blank">https://cr.yp.to/talks/2012.11.29/slides.pdf</a><br>
+<strong>&#x3C;msvb-mob></strong> i-a: The ED25519 API is on pages 60-61 of the CEC/MEC Family Devices ROM API Users Guide.<br>
+<strong>&#x3C;i-a></strong> msvb-mob: thank you,)<br>
+<strong>&#x3C;msvb-mob></strong> For example ed25519_valid_sig (validate signature) is a function.<br>
+<strong>&#x3C;hotoatmeal></strong> and Ed25519 was only a bit slower<br>
+<strong>&#x3C;hotoatmeal></strong> what’s the rough size of the blockchain, counted in txo’s?<br>
+<strong>&#x3C;luigi1111w></strong> total size isn’t that useful<br>
+<strong>&#x3C;luigi1111w></strong> size over past month much more so<br>
+<strong>&#x3C;hotoatmeal></strong> growth rate too<br>
+<strong>&#x3C;luigi1111w></strong> yeah with some assumed groth<br>
+<strong>&#x3C;luigi1111w></strong> growth<br>
+<strong>&#x3C;luigi1111w></strong> 200k txs last month<br>
+<strong>&#x3C;luigi1111w></strong> so maybe 450k outputs<br>
+<strong>&#x3C;luigi1111w></strong> double that at least gets you 1mi/mo<br>
+<strong>&#x3C;luigi1111w></strong> checking an output is something like 2x ECDH<br>
+<strong>&#x3C;hotoatmeal></strong> so it’ll get slower by 20 mins, every month<br>
+<strong>&#x3C;hotoatmeal></strong> ouch<br>
+<strong>&#x3C;luigi1111w></strong> if you don’t use it<br>
+<strong>&#x3C;luigi1111w></strong> but yeah<br>
+<strong>&#x3C;hotoatmeal></strong> (assuming you need to re-scan the entire chain each time… but maybe that can be cached)<br>
+<strong>&#x3C;luigi1111w></strong> there would be quite some catchup time<br>
+<strong>&#x3C;i-a></strong> not sure if relevant, but this could be ECDSA performance on CEC device: <a href="https://imgur.com/a/WQKqp" rel="noopener noreferrer external" target="_blank">https://imgur.com/a/WQKqp</a> ?<br>
+<strong>&#x3C;luigi1111w></strong> if you leave it unplugged for some time<br>
+<strong>&#x3C;luigi1111w></strong> oh<br>
+<strong>&#x3C;luigi1111w></strong> I would sure assume you cache<br>
+<strong>&#x3C;luigi1111w></strong> if you don’t it<br>
+<strong>&#x3C;luigi1111w></strong> it’s pretty unworkable<br>
+<strong>&#x3C;hotoatmeal></strong> yeah<br>
+<strong>&#x3C;luigi1111w></strong> you’d have to leave it plugged in a few hours before you could spend each time :)<br>
+<strong>&#x3C;hotoatmeal></strong> the worst case of initializing a new device though is pretty bad<br>
+<strong>&#x3C;hotoatmeal></strong> though I guess you could just sweep everything to it, and ignore all of the chain that happened before then<br>
+<strong>&#x3C;luigi1111w></strong> restored device<br>
+<strong>&#x3C;luigi1111w></strong> new device has no txs<br>
+<strong>&#x3C;hotoatmeal></strong> right<br>
+<strong>&#x3C;hotoatmeal></strong> at least the restore point is something you can make note of, encrypt, and then store like any other backup<br>
+<strong>&#x3C;m2049r[m]></strong> are you suggesting we keep the chain/cache on the device?<br>
+<strong>&#x3C;luigi1111w></strong> no<br>
+<strong>&#x3C;luigi1111w></strong> definitely not the chain<br>
+<strong>&#x3C;luigi1111w></strong> I’m still skeptical it’s workable at all, just exploring the idea<br>
+<strong>&#x3C;m2049r[m]></strong> gottit<br>
+<strong>&#x3C;hotoatmeal></strong> do bulletproofs change the costs here?<br>
+<strong>&#x3C;hotoatmeal></strong> s.do.will.<br>
+<strong>&#x3C;m2049r[m]></strong> do we have constraints about how big the device may be?<br>
+<strong>&#x3C;endogenic></strong> yes<br>
+<strong>&#x3C;luigi1111w></strong> hotoatmeal no<br>
+<strong>&#x3C;endogenic></strong> :P<br>
+<strong>&#x3C;luigi1111w></strong> m2049r[m] just tote a computer around<br>
+<strong>&#x3C;luigi1111w></strong> NP<br>
+<strong>&#x3C;luigi1111w></strong> “this is my hardware wallet”<br>
+<strong>&#x3C;m2049r[m]></strong> what if we use a rpi3 to do all the work &#x26; store the caches for all the wallets onboard?<br>
+<strong>&#x3C;m2049r[m]></strong> :)<br>
+<strong>&#x3C;endogenic></strong> now we’re cookin with gas<br>
+<strong>&#x3C;luigi1111w></strong> it’s pretty slow too<br>
+<strong>&#x3C;luigi1111w></strong> normal client scanning on computer seems pretty ok to me<br>
+<strong>&#x3C;m2049r[m]></strong> how fast does it need to be? do we want full USB3 speeds?<br>
+<strong>&#x3C;luigi1111w></strong> by compromising your computer, the hacker now compromises just your privacy<br>
+<strong>&#x3C;luigi1111w></strong> rather than<br>
+<strong>&#x3C;luigi1111w></strong> you know<br>
+<strong>&#x3C;luigi1111w></strong> all your money<br>
+<strong>&#x3C;i-a></strong> you can run node on rp3, so it probably isnt so slow..?<br>
+<strong>&#x3C;hotoatmeal></strong> m2049r[m]: delegating the viewkey to the computer means it doesn’t have to be very quick at all<br>
+<strong>&#x3C;luigi1111w></strong> i-a how long does initial sync take<br>
+<strong>&#x3C;hotoatmeal></strong> (the device / usb, that is)<br>
+<strong>&#x3C;luigi1111w></strong> how long would it take to scan a restored wallet<br>
+<strong>&#x3C;m2049r[m]></strong> that would have been the first path to explore<br>
+<strong>&#x3C;i-a></strong> luigi1111w: ok, got it:/<br>
+<strong>&#x3C;endogenic></strong> i-a no no that’s just bc node is fast… because it’s asynchronous (now it’s my turn to troll)<br>
+<strong>&#x3C;luigi1111w></strong> is an rpi significantly better than a normal computer?<br>
+<strong>&#x3C;luigi1111w></strong> m2049r[m] if you slim the data down to close to minimum I don’t think bandwidth is much concern<br>
+<strong>&#x3C;luigi1111w></strong> lemme see<br>
+<strong>&#x3C;m2049r[m]></strong> so bottleneck is always computation then. and we want it fast so we dont take forever to sync up again.<br>
+<strong>&#x3C;luigi1111w></strong> I’d guess around 240 bytes per tx<br>
+<strong>&#x3C;m2049r[m]></strong> if we keep cache on device (sdcard or whatnot) then it can be shared between clients.<br>
+<strong>&#x3C;luigi1111w></strong> so even .25MBps would overwhelm the device most likely<br>
+<strong>&#x3C;m2049r[m]></strong> 240 either way?<br>
+<strong>&#x3C;luigi1111w></strong> no just computer->**device<br>
+<strong>&#x3C;hotoatmeal></strong> another idea: put the viewkey on a separate device that’s always connected to a computer<br>
+<strong>&#x3C;msvb-mob></strong> There have been some requests for SD cards, so it would be nice to try to put one on at least the developer edition board (since it has more space.)<br>
+<strong>&#x3C;m2049r[m]></strong> yes - use a viewonly wallet.<br>
+<strong>&#x3C;msvb-mob></strong> m2049r[m]: Shift devices makes quite a nice hardware wallet (Bitbox) with a SD card.<br>
+<strong>&#x3C;endogenic></strong> do you guys suppose there’s any reason why this isn’t a match for the mymonero lightwallet server you run alongside the daemon?<br>
+<strong>&#x3C;luigi1111w></strong> I don’t<br>
+<strong>&#x3C;endogenic></strong> i might be misunderstanding<br>
+<strong>&#x3C;luigi1111w></strong> I think it’s great<br>
+<strong>&#x3C;luigi1111w></strong> it’s also great for existing mymonero users (privacy issues notwithstanding, of course)<br>
+<strong>&#x3C;luigi1111w></strong> but I guess we’re discussing the edge of what’s possible<br>
+<strong>&#x3C;luigi1111w></strong> for having a device that does basically no delegation for maximal security and privacy in all cases<br>
+<strong>&#x3C;m2049r[m]></strong> you are saying to have the device connect to an openmonero instance?<br>
+<strong>&#x3C;luigi1111w></strong> or maybe just rainbows and unicorns<br>
+<strong>&#x3C;endogenic></strong> m2049r[m]: no<br>
+<strong>&#x3C;endogenic></strong> i was envisioning some sort of stripped down protocol…vtnerd and i are working on that anyway in the api overhaul<br>
+<strong>&#x3C;m2049r[m]></strong> ok, what are you saying?<br>
+<strong>&#x3C;luigi1111w></strong> he’s talking about mymonero not openmonero<br>
+<strong>&#x3C;endogenic></strong> so if you’re running your own local server<br>
+<strong>&#x3C;luigi1111w></strong> though in theory they are similar<br>
+<strong>&#x3C;endogenic></strong> which is written in C++ and in the monero-cli repo alongside the official daemon<br>
+<strong>&#x3C;endogenic></strong> it almost seems like it’s more a question of protocol and transport<br>
+<strong>&#x3C;endogenic></strong> that is<br>
+<strong>&#x3C;endogenic></strong> if we really are talking about delegating scanning<br>
+<strong>&#x3C;endogenic></strong> of course you have the view key disclosure tradeoff but that’s why you run your own server locally<br>
+<strong>&#x3C;m2049r[m]></strong> i thought mymonero was closed source and not for anyone to run their own?<br>
+<strong>&#x3C;luigi1111w></strong> it is<br>
+<strong>&#x3C;luigi1111w></strong> but it won’t be for much longer<br>
+<strong>&#x3C;luigi1111w></strong> supposedly :)<br>
+<strong>&#x3C;endogenic></strong> yep<br>
+<strong>&#x3C;endogenic></strong> vtnerd’s prioritized it recently<br>
+<strong>&#x3C;m2049r[m]></strong> heh<br>
+<strong>&#x3C;endogenic></strong> he hadnt been able to before<br>
+<strong>&#x3C;endogenic></strong> too many pesky users!<br>
+<strong>&#x3C;endogenic></strong> but anyway<br>
+<strong>&#x3C;endogenic></strong> this idea does seem to overlap with simplewallet/monero-gui’s job too<br>
+<strong>&#x3C;luigi1111w></strong> the theory of mymonero locally vs gui/cli is pretty similar<br>
+<strong>&#x3C;luigi1111w></strong> yes<br>
+<strong>&#x3C;endogenic></strong> does that count as a jinx?<br>
+<strong>&#x3C;luigi1111w></strong> slow motion<br>
+<strong>&#x3C;endogenic></strong> mm<br>
+<strong>&#x3C;endogenic></strong> anyway, whatever software we need, we can build<br>
+<strong>&#x3C;endogenic></strong> might be a good idea to just ask what the ideal situation is for the capabilities we have on the hardware side then fill the gaps<br>
+<strong>&#x3C;m2049r[m]></strong> we agree that we need lots of well-performing ed25519 operations on the device - no matter which road is taken?<br>
+<strong>&#x3C;m2049r[m]></strong> and possibly some form of storage (sdcard,eMMC?)<br>
+<strong>&#x3C;luigi1111w></strong> m2049r[m] more is better<br>
+<strong>&#x3C;luigi1111w></strong> but it doesn’t need to be “a lot” for the delegated road<br>
+<strong>&#x3C;luigi1111w></strong> which includes basically everything that’s not “do it all on device”<br>
+<strong>&#x3C;luigi1111w></strong> whether local client or some mymonero type<br>
+<strong>&#x3C;m2049r[m]></strong> signing would be on device for example - how large are the messages to be signed / verified?<br>
+<strong>&#x3C;luigi1111w></strong> it does need to be able to hash some KBs yes<br>
+<strong>&#x3C;luigi1111w></strong> 50 max, maybe<br>
+<strong>&#x3C;luigi1111w></strong> theoretically more, but shouldn’t really happen anymore, in most cases<br>
+<strong>&#x3C;m2049r[m]></strong> the cec1702 has 24k of “cryptographic ram” which seems to be the ram where cryptomagic happens.<br>
+<strong>&#x3C;m2049r[m]></strong> “in most cases” - one case is enough to break it though - so for such cases we would need a software solution to kick in and have the hardware do 99% of cases.<br>
+<strong>&#x3C;m2049r[m]></strong> (this is not a problem)<br>
+<strong>&#x3C;m2049r[m]></strong> do you have a particular testcase i could run just to see how slow the current device is performing?<br>
+<strong>&#x3C;luigi1111w></strong> no I mean you can just disallow<br>
+<strong>&#x3C;luigi1111w></strong> would need some research to really know how annoying that would be though<br>
+<strong>&#x3C;luigi1111w></strong> (problem comes from having many inputs)<br>
+<strong>&#x3C;luigi1111w></strong> ((I guess mining to the wallet could cause it))<br>
+<strong>&#x3C;luigi1111w></strong> m2049r[m] well if you have ed25519 code working on it<br>
+<strong>&#x3C;m2049r[m]></strong> i do<br>
+<strong>&#x3C;luigi1111w></strong> a simple scalarmult<br>
+<strong>&#x3C;m2049r[m]></strong> regardless of parameters?<br>
+<strong>&#x3C;luigi1111w></strong> random secret key<br>
+<strong>&#x3C;luigi1111w></strong> public key needs to be valid at least<br>
+<strong>&#x3C;luigi1111w></strong> or a simple scalarmult_base if you have that<br>
+<strong>&#x3C;m2049r[m]></strong> including convesion from/to 256-bit scalars or the mult by itself?<br>
+<strong>&#x3C;luigi1111w></strong> including<br>
+<strong>&#x3C;cslashm></strong> m2049r[m]: hotoatmeal: Yes All secret value are passed encrypted from device to PC. When PC need perform operation with those values, there are retransmitted to the device<br>
+<strong>&#x3C;luigi1111w></strong> <a href="https://github.com/monero-project/monero/blob/master/src/crypto/crypto.cpp#L127" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/monero/blob/master/src/crypto/crypto.cpp#L127</a><br>
+<strong>&#x3C;luigi1111w></strong> if you can match that<br>
+<strong>&#x3C;m2049r[m]></strong> ok - like the operation need to make a public key out of a secret key (eg. viewkey)?<br>
+<strong>&#x3C;luigi1111w></strong> yes<br>
+<strong>&#x3C;luigi1111w></strong> that includes a conversion from fe to bytes at the end<br>
+<strong>&#x3C;m2049r[m]></strong> i can do that. need to add time measuring stuff.<br>
+<strong>&#x3C;m2049r[m]></strong> will do that tomorrow and get back with results.<br>
+<strong>&#x3C;luigi1111w></strong> cool<br>
+<strong>&#x3C;luigi1111w></strong> might as well do arbitrary base too if it’s not much more work<br>
+<strong>&#x3C;luigi1111w></strong> <a href="https://github.com/monero-project/monero/blob/master/src/crypto/crypto.cpp#L127" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/monero/blob/master/src/crypto/crypto.cpp#L127</a><br>
+<strong>&#x3C;luigi1111w></strong> you can use any valid point for the pubkey param<br>
+<strong>&#x3C;luigi1111w></strong> I can give you one in hex if you want<br>
+<strong>&#x3C;luigi1111w></strong> or you can just gen one from the above function<br>
+<strong>&#x3C;m2049r[m]></strong> will pm you for more details<br>
+<strong>&#x3C;m2049r[m]></strong> cslashm: what encryption is used for the transmission of the keys over usb?<br>
+<strong>&#x3C;cslashm></strong> It will be AES128<br>
+<strong>&#x3C;cslashm></strong> the key will new at each app usage and dedicated to session when transfer is performed<br>
+<strong>&#x3C;cslashm></strong> But I try to send even encrypted the view and spend key<br>
+<strong>&#x3C;cslashm></strong> <em>not send</em><br>
+<strong>&#x3C;m2049r[m]></strong> and the key exchange is DH?<br>
+<strong>&#x3C;cslashm></strong> which DH? The AES key never leave the device<br>
+<strong>&#x3C;m2049r[m]></strong> maybe i dont understand aes. isnt that symmetric? how does the pc decode the ciphertext?<br>
+<strong>&#x3C;cslashm></strong> PC never decode, I try to explain<br>
+<strong>&#x3C;luigi1111w></strong> he’s using the pc for encrypted cache only it sounds like<br>
+<strong>&#x3C;luigi1111w></strong> but I don’t think you need to send spend key ever<br>
+<strong>&#x3C;luigi1111w></strong> device has enough memory for that, surely<br>
+<strong>&#x3C;cslashm></strong> voila. PC is just a encrypted holder<br>
+<strong>&#x3C;cslashm></strong> The advantage is that it keep the secret at the right place<br>
+<strong>&#x3C;m2049r[m]></strong> a storage.<br>
+<strong>&#x3C;cslashm></strong> for exemple in RCT, it request n secret key, store in the right vector place, and when it use it, it resend the encrypted secret key to device, which decrypt and do the op<br>
+<strong>&#x3C;cslashm></strong> @luigi1111w: yes spend/view key never leave the device<br>
+<strong>&#x3C;cslashm></strong> I use special value 00..00 and FF…FF for them on PC side<br>
+<strong>&#x3C;m2049r[m]></strong> ok, gotta go - it’s been great :)<br>
+<strong>&#x3C;cslashm></strong> basic idea is to hav no memory restriction, on easly follow the PC code evolution with minimal code device modification<br>
+<strong>&#x3C;cslashm></strong> <em>and easly</em> (end of day in FR :) )<br>
+<strong>&#x3C;dEBRUYNE></strong> cslashm: I’ve been wondering. Did you run any performance tests? For example, how long does it take to scan / refresh 10k blocks?<br>
+<strong>&#x3C;cslashm></strong> for now it’s a OMG part<br>
+<strong>&#x3C;cslashm></strong> I start some perf test yes but didnot remenber<br>
+<strong>&#x3C;dEBRUYNE></strong> Approximately? :p<br>
+<strong>&#x3C;cslashm></strong> It is just impossible to rescan the whole blockchain<br>
+<strong>&#x3C;cslashm></strong> holdon, deep search in paper on my desk<br>
+<strong>&#x3C;dEBRUYNE></strong> Yeah, but that won’t be necessary for 99% of the users :P<br>
+<strong>&#x3C;cslashm></strong> 10 min for 20 000 block, but app in -0O and level 4 log<br>
+<strong>&#x3C;cslashm></strong> wallet cli also in O0<br>
+<strong>&#x3C;dEBRUYNE></strong> I see, that doesn’t seem too bad tbh<br>
+<strong>&#x3C;luigi1111w></strong> that is scanning by cli, not ledger, right?<br>
+<strong>&#x3C;cslashm></strong> Its acceptable if you dont move in vacation for 1 month without refresh :D<br>
+<strong>&#x3C;cslashm></strong> no wallet cli scan the bc but delegate all keyderivation/keyimage computation to ledger to no disclose the view key<br>
+<strong>&#x3C;dEBRUYNE></strong> well, 1 month is 22k blocks give or take<br>
+<strong>&#x3C;cslashm></strong> So for each block, device compute some scalmul and hash<br>
+<strong>&#x3C;dEBRUYNE></strong> So that’d be 10 minutes wait<br>
+<strong>&#x3C;luigi1111w></strong> you can’t really use blocks<br>
+<strong>&#x3C;luigi1111w></strong> you have to use txs<br>
+<strong>&#x3C;luigi1111w></strong> are those current numbers<br>
+<strong>&#x3C;luigi1111w></strong> what will it look like if usage goes up (which it historically has)<br>
+<strong>&#x3C;luigi1111w></strong> I personally don’t really see a lot of benefit for disclosing the viewkey<br>
+<strong>&#x3C;cslashm></strong> yes for each txes. basically scan involves get_key_derivation and generate_key_image, those two op are done by the device. The rest is done by the PC as usual<br>
+<strong>&#x3C;cslashm></strong> view key is so never disclose<br>
+**&#x3C;cslashm>** So, I need to leave. Be back on monday. you can mail, PM reddit or put githib issue if you need long tech desc</p>  </div>  </article> <aside data-border="true" data-transparent="true" style="--card-padding: var(--space-xl); --card-radius: var(--radius-md)" data-astro-cid-jbepnj6h="true" data-astro-cid-dd5txfcy="true" class="card sidebar">  <h2 data-astro-cid-jbepnj6h>المنشورات الأخيرة</h2> <ul class="recent-posts" data-astro-cid-jbepnj6h> <li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/03/04/monero-GUI-0.18.4.7-released/" data-astro-cid-jbepnj6h> Monero GUI 0.18.4.7 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-jbepnj6h> ٤ مارس ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/03/04/monero-0.18.4.6-released/" data-astro-cid-jbepnj6h> Monero 0.18.4.6 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-jbepnj6h> ٤ مارس ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/01/07/monero-GUI-0.18.4.5-released/" data-astro-cid-jbepnj6h> Monero GUI 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-jbepnj6h> ٧ يناير ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/01/07/monero-0.18.4.5-released/" data-astro-cid-jbepnj6h> Monero 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-jbepnj6h> ٧ يناير ٢٠٢٦ </time> </li> </ul>  </aside>  </div>  </main> <footer class="footer" aria-label="التذييل" data-astro-cid-mh6itkc3> <div class="items" data-astro-cid-mh6itkc3> <nav class="grid" aria-label="تنقل التذييل" data-astro-cid-mh6itkc3> <section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>الموارد</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/ar/get-started/what-is-monero/" data-astro-cid-mh6itkc3> حول Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/moneropedia/" data-astro-cid-mh6itkc3> مونيروبيديا  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://docs.getmonero.org" data-astro-cid-mh6itkc3> وثائق Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/get-started/faq/" data-astro-cid-mh6itkc3> الأسئلة الشائعة  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>تواصل</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/ar/community/workgroups/" data-astro-cid-mh6itkc3> مجموعات العمل  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/community/hangouts/" data-astro-cid-mh6itkc3> الأماكن  </a> </li><li data-astro-cid-mh6itkc3> <a href="/postorius/lists/monero-announce.lists.getmonero.org" data-astro-cid-mh6itkc3> قائمة البريد  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>المجتمع</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://monero.stackexchange.com/" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Stack Exchange  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://bitcointalk.org/index.php?topic=583449.0" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Bitcoin Talk  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://translate.getmonero.org" data-astro-cid-mh6itkc3> ترجم  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>مشروع Monero</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://openalias.org" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Open Alias  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/research-lab/" data-astro-cid-mh6itkc3> مختبر بحث Monero (MRL)  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/press-kit/" data-astro-cid-mh6itkc3> مجموعة الصحافة  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://ccs.getmonero.org" data-astro-cid-mh6itkc3> نظام التمويل الجماعي المجتمعي  </a> </li> </ul> </section> </nav> <nav class="bottom" aria-label="تنقل التذييل الثانوي" data-astro-cid-mh6itkc3> <ul class="inline-list" data-astro-cid-mh6itkc3> <li class="inline-item" data-astro-cid-mh6itkc3> <a href="#" data-astro-cid-mh6itkc3> خدمة Tor Onion <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/tor.D04gt7iP_278xXg.avif);--iconColor: #7d4698;--spacing: 0.25em;"></div>  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> استجابة الثغرات  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/ar/legal/" data-astro-cid-mh6itkc3> القانوني  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> رمز المصدر  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/feed.xml" data-astro-cid-mh6itkc3> تغذية RSS <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/rss.jnIu9F4x_Z28u6pV.avif);--iconColor: var(--monero-orange);--spacing: 0.25em;"></div>  </a> </li> </ul> </nav> </div> </footer>   </body></html> 

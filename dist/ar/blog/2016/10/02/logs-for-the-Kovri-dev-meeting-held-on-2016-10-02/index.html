@@ -1,0 +1,443 @@
+<!DOCTYPE html><html lang="ar" dir="rtl" data-astro-cid-sckkx6r4> <head><title>المدونة | Logs for the Kovri Dev Meeting Held on 2016-10-02</title><meta charset="UTF-8"><link rel="canonical" href="https://beta.monerodevs.org/ar/blog/2016/10/02/logs-for-the-Kovri-dev-meeting-held-on-2016-10-02/"><meta name="description" content="Brief review of what has been completed since last meeting, Salti (a Firefox extension similiar to the Tor Browser Bundle), Kovri Logo, code &#38; open tickets discussion, Kovri API discussion, Kovri and Monero integration"><meta name="robots" content="index, follow"><meta property="og:title" content="Logs for the Kovri Dev Meeting Held on 2016-10-02"><meta property="og:type" content="article"><meta property="og:image" content="https://beta.monerodevs.org/open-graph/blog/2016/10/02/logs-for-the-Kovri-dev-meeting-held-on-2016-10-02.png"><meta property="og:url" content="https://beta.monerodevs.org/ar/blog/2016/10/02/logs-for-the-Kovri-dev-meeting-held-on-2016-10-02/"><meta property="og:locale" content="ar"><meta property="og:locale:alternate" content="en"><meta property="og:locale:alternate" content="zh"><meta property="og:site_name" content="Monero"><meta property="og:image:url" content="https://beta.monerodevs.org/open-graph/blog/2016/10/02/logs-for-the-Kovri-dev-meeting-held-on-2016-10-02.png"><meta property="og:image:alt" content="OpenGraph image for Monero blog post titled &#34;Logs for the Kovri Dev Meeting Held on 2016-10-02&#34;"><meta property="article:published_time" content="2016-10-02T00:00:00.000Z"><meta property="article:author" content="dEBRUYNE / fluffypony"><meta property="article:tag" content="dev diaries"><meta property="article:tag" content="i2p"><meta property="article:tag" content="crypto"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@monero"><meta name="twitter:title" content="Logs for the Kovri Dev Meeting Held on 2016-10-02"><meta name="twitter:image" content="https://beta.monerodevs.org/open-graph/blog/2016/10/02/logs-for-the-Kovri-dev-meeting-held-on-2016-10-02.png"><meta name="twitter:description" content="Brief review of what has been completed since last meeting, Salti (a Firefox extension similiar to the Tor Browser Bundle), Kovri Logo, code &#38; open tickets discussion, Kovri API discussion, Kovri and Monero integration"><link rel="preload" as="font" type="font/woff2" href="/_astro/dm-sans-latin-wght-normal.Xz1IZZA0.woff2" crossorigin="anonymous"><link rel="icon" href="/meta/favicon-16x16.png" sizes="16x16"><link rel="icon" href="/meta/favicon-32x32.png" sizes="32x32"><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.18.0"><meta name="color-scheme" content="light dark"><link rel="alternate" hreflang="en" href="https://beta.monerodevs.org/blog/2016/10/02/logs-for-the-Kovri-dev-meeting-held-on-2016-10-02/"><link rel="alternate" hreflang="ar" href="https://beta.monerodevs.org/ar/blog/2016/10/02/logs-for-the-Kovri-dev-meeting-held-on-2016-10-02/"><link rel="alternate" hreflang="zh" href="https://beta.monerodevs.org/zh/blog/2016/10/02/logs-for-the-Kovri-dev-meeting-held-on-2016-10-02/"><link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="https://beta.monerodevs.org/feed.xml"><style>#blog-content{line-height:var(--line-height-body);word-wrap:break-word;color:light-dark(inherit,var(--paragraph-main));:where(h2,h3,h4){font-weight:var(--font-weight-bold)}img{border-radius:var(--radius-md)}a:not(.moneropedia-link){color:light-dark(var(--text-primary),var(--paragraph-main));font-weight:var(--font-weight-medium);text-decoration-line:underline;text-decoration-style:dotted;&:hover{color:light-dark(var(--text-secondary),var(--heading-color))}}h1{font-size:var(--font-size-2xl)}h2{font-size:var(--font-size-xl)}h3{font-size:var(--font-size-lg)}h4{font-size:var(--font-size-md)}p{margin-bottom:1em}li{margin-bottom:.25em}pre{padding:1em;border-radius:var(--radius-md);overflow-x:auto;background:var(--footer-color);code{background:none;padding:0;border-radius:0}}code:not(pre code){font-family:monospace;background-color:var(--footer-color);padding:.1em .3em;border-radius:var(--radius-sm)}blockquote{margin:1.5em 0;padding-inline:1.5em 1em;border-inline-start:3px solid var(--border-color);font-style:italic;color:var(--text-secondary)}strong{font-weight:var(--font-weight-bold)}em{font-style:italic}}h1[data-astro-cid-7dcwcvhl]{font-size:var(--font-size-3xl);margin:0}#post-header[data-astro-cid-7dcwcvhl]{margin-bottom:var(--page-top-margin)}#meta[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-2xl);color:var(--text-secondary);margin-top:var(--space-md);margin-bottom:var(--space-xl);font-size:var(--font-size-lg);font-weight:var(--font-weight-normal)}.meta-item[data-astro-cid-7dcwcvhl]{display:flex;align-items:center;gap:var(--space-xs);>.icon{display:grid;place-items:center;color:var(--monero-orange)}}.tag-container[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-xs);font-size:var(--font-size-sm);flex-wrap:wrap;.tag{text-align:center;padding:var(--space-2xs) var(--space-sm);background:var(--footer-color);border-radius:var(--radius-md);text-transform:uppercase;font-weight:var(--font-weight-semibold);text-decoration:none;color:inherit;white-space:nowrap;&:hover{color:var(--text-secondary)}}}@media(width<=600px){#meta[data-astro-cid-7dcwcvhl]{flex-direction:column;font-size:var(--font-size-md);font-weight:var(--font-weight-medium);gap:var(--space-md)}.meta-item[data-astro-cid-7dcwcvhl]{>.icon{font-size:var(--font-size-lg)}}}
+.card[data-astro-cid-dd5txfcy]{background:var(--card-color);padding:var(--card-padding);border-radius:var(--card-radius);&[data-border]{border:1px solid var(--border-color)}&[data-transparent]{background:transparent}&[data-hover]{transition:background .15s ease;&[data-astro-cid-dd5txfcy]:hover,&[data-astro-cid-dd5txfcy]:focus-visible{background:var(--card-hover-color)}}}
+.icon[data-astro-cid-bpjkz5as]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);margin-inline-start:var(--spacing);background:var(--iconColor);mask:var(--iconSrc) no-repeat center / contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}
+</style>
+<link rel="stylesheet" href="/_astro/_page_.DxMr-0dd.css">
+<style>.blog-container[data-astro-cid-jbepnj6h]{display:grid;grid-template-columns:1fr;gap:var(--space-2xl);>*{min-width:0}}.sidebar[data-astro-cid-jbepnj6h]{height:fit-content;& h2[data-astro-cid-jbepnj6h]{font-size:var(--font-size-xl);margin-top:0}}.recent-posts[data-astro-cid-jbepnj6h]{list-style:none;padding:0;margin-bottom:0;display:flex;flex-direction:column;gap:var(--space-md);li{margin-bottom:var(--space-xs)}.post-title{font-size:var(--font-size-md);color:var(--paragraph-main);text-decoration-line:underline;text-decoration-style:dotted;&:hover{text-decoration:underline}}.post-date{display:block;font-size:var(--font-size-sm);color:var(--paragraph-subtitle);margin-top:var(--space-2xs)}}@media(width>=1200px){.blog-container[data-astro-cid-jbepnj6h]{grid-template-columns:1fr 65ch 1fr}.blog-post[data-astro-cid-jbepnj6h]{grid-column:2}.sidebar[data-astro-cid-jbepnj6h]{grid-column:2;grid-row:2}}@media(width>=1600px){.sidebar[data-astro-cid-jbepnj6h]{grid-column:3;grid-row:1}}
+:where([data-astro-image]){object-fit:var(--fit);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+.moneropedia-link{position:relative;display:inline-block;color:var(--monero-orange);text-decoration-line:underline;text-decoration-style:dotted;cursor:help;font-weight:var(--font-weight-medium)}.moneropedia-link:hover,.moneropedia-link:focus-visible{text-decoration:none}.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{content:none}@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{position:absolute;left:50%;opacity:0;pointer-events:none;transform:translate(-50%) translateY(0);transition:opacity .18s ease-out,transform .18s ease-out;z-index:10}.moneropedia-link[data-tooltip]:before{content:attr(data-tooltip);bottom:calc(100% + .5rem);padding:.5rem .75rem;background:var(--card-color);border:1px solid var(--border-color);border-radius:.25rem;box-sizing:border-box;overflow-wrap:break-word;min-inline-size:25ch;max-inline-size:min(35ch,calc(100vw - 2.5rem));font-size:var(--font-size-sm);line-height:var(--line-height-caption);color:var(--text-primary);box-shadow:0 2px 8px #0000004d}.moneropedia-link[data-tooltip]:after{content:"";bottom:calc(100% + .25rem);border-width:.35rem .35rem 0;border-style:solid;border-color:var(--card-color) transparent transparent transparent}.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):before,.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):after{opacity:1;transform:translate(-50%) translateY(-2px)}}@media(prefers-reduced-motion:reduce){@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{transition:none}}}
+.icon[data-astro-cid-7wapxsvo]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);aspect-ratio:1 / 1;vertical-align:middle;--iconUrl: var(--lightUrl);background-image:var(--iconUrl);background-repeat:no-repeat;background-position:center;background-size:contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}@media(prefers-color-scheme:dark){.icon[data-astro-cid-7wapxsvo]{--iconUrl: var(--darkUrl)}}
+</style></head> <body data-astro-cid-sckkx6r4> <header class="header" data-astro-cid-dm2weclu> <div class="header-inner" data-astro-cid-dm2weclu> <a class="brand" href="/ar/" data-astro-cid-dm2weclu> <img src="/_astro/monerologo.CMdKQEkN_10Rm8s.avif" srcset="/_astro/monerologo.CMdKQEkN_10Rm8s.avif 64w, /_astro/monerologo.CMdKQEkN_10Rm8s.avif 128w" alt aria-hidden="true" data-astro-cid-dm2weclu="true" loading="eager" decoding="sync" fetchpriority="high" sizes="(min-width: 64px) 64px, 100vw" style="--fit: cover; --pos: center;" data-astro-image="constrained" width="64" height="64" class="mark"> <span data-astro-cid-dm2weclu>MONERO</span> </a> <input id="nav-toggle" class="nav-toggle" type="checkbox" data-astro-cid-dm2weclu> <nav id="primary-nav" class="nav" aria-label="التنقل الأساسي" data-astro-cid-dm2weclu> <div class="drawer-header" data-astro-cid-dm2weclu> <label for="nav-toggle" class="close" aria-controls="primary-nav" aria-label="أغلق القائمة" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/close.CneAMmXr_ZaFGrm.avif);--iconColor: currentColor;"></div>  </label> </div> <fieldset data-astro-cid-dm2weclu> <legend class="sr-only" data-astro-cid-dm2weclu>أقسام التنقل الأساسي</legend> <ul class="nav-list" data-astro-cid-dm2weclu> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-cvdqnrpn4" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-cvdqnrpn4-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> ابدأ <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-cvdqnrpn4" class="mobile-open" aria-label="Open ابدأ menu" data-astro-cid-pbmdh2tw></label> <label for="dd-cvdqnrpn4-close" class="mobile-close" aria-label="Close ابدأ menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="ابدأ menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/get-started/what-is-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--darkUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>ما هو Monero؟</div> <div class="desc" data-astro-cid-lm33vczh>كل ما تحتاجه لمعرفة Monero في لمحة.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/exchanges/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/merchants-exchanges.DN61YseO_ZQ3Km9.avif);--darkUrl: url(/_astro/merchants-exchanges.BjKEmUcz_1O8q9G.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>اشترِ Monero</div> <div class="desc" data-astro-cid-lm33vczh>بورصات العملات المشفرة التي تتيح لك شراء أو تداول Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/merchants/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>أنفق Monero</div> <div class="desc" data-astro-cid-lm33vczh>ابحث عن أماكن وخدمات تقبل Monero كدفع.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/accept-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/accept-monero.COXM8aHM_Z1II116.avif);--darkUrl: url(/_astro/accept-monero.C3WCFfqe_Z2tp8Kw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>اقبل Monero</div> <div class="desc" data-astro-cid-lm33vczh>تعلم كيفية قبول XMR كتاجر أو فرد.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/mining/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/mining.DBRk7HAe_Zd3ukV.avif);--darkUrl: url(/_astro/mining.B54FNZld_Z2jnjrG.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>التعدين</div> <div class="desc" data-astro-cid-lm33vczh>تعلم كيفية تعدين Monero على جهاز الكمبيوتر الخاص بك.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/contribute/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/contribute.DKeO9Dve_Z2vEvfu.avif);--darkUrl: url(/_astro/contribute.zLqiOwb5_Z1qe0gS.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>ساهم</div> <div class="desc" data-astro-cid-lm33vczh>ساعد مشروع Monero في جلب الخصوصية للجميع.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/faq/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/faq.C8QObR1A_1A5Irh.avif);--darkUrl: url(/_astro/faq.BNcLqXOJ_ZaSdVI.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الأسئلة الشائعة</div> <div class="desc" data-astro-cid-lm33vczh>ابحث عن إجابات للأسئلة الشائعة حول Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/ar/downloads/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> التحميلات  </a>  </div>  </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/ar/blog/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> المدونة  </a>  </div>  </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-x3jpzmwj2" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-x3jpzmwj2-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> المجتمع <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-x3jpzmwj2" class="mobile-open" aria-label="Open المجتمع menu" data-astro-cid-pbmdh2tw></label> <label for="dd-x3jpzmwj2-close" class="mobile-close" aria-label="Close المجتمع menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="المجتمع menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/community/workgroups/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/workgroups.OzoDQ7NV_Z1Lwqqs.avif);--darkUrl: url(/_astro/workgroups.CGbkWAXL_Z1m0ybJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مجموعات العمل</div> <div class="desc" data-astro-cid-lm33vczh>تعاون مع مجموعات عمل Monero المخصصة في التطوير والبحث والجهود المجتمعية.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/community/sponsorships/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الرعايات</div> <div class="desc" data-astro-cid-lm33vczh>قائمة الشركات التي تدعم مشروع Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/community/hangouts/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/hangouts.CiWxE-i9_ZeEICj.avif);--darkUrl: url(/_astro/hangouts.Do4DJEA1_257lPw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الأماكن</div> <div class="desc" data-astro-cid-lm33vczh>انضم إلى أماكن تجمع مجتمع Monero والفعاليات للاتصال بالمتحمسين والمطورين الآخرين.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-vds5slgv9" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-vds5slgv9-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> الموارد <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-vds5slgv9" class="mobile-open" aria-label="Open الموارد menu" data-astro-cid-pbmdh2tw></label> <label for="dd-vds5slgv9-close" class="mobile-close" aria-label="Close الموارد menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="الموارد menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/resources/knowledge-base/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/moneropedia.7o-c8ZX4_lSmb.avif);--darkUrl: url(/_astro/moneropedia.CYJm2-Q5_1KG40X.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>قاعدة المعرفة</div> <div class="desc" data-astro-cid-lm33vczh>الكتب والمنشورات والمجلات، مونيروبيديا.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/roadmap/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/roadmap.DoSq9h9o_Z1QuQpv.avif);--darkUrl: url(/_astro/roadmap.BONb2rwk_2hroDR.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>خارطة الطريق</div> <div class="desc" data-astro-cid-lm33vczh>ابقَ على اطلاع بأحدث خطط وتقدم تطوير Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/research-lab/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/research-lab.D90VAC3d_WkkdD.avif);--darkUrl: url(/_astro/research-lab.uv3a8gpS_Z7cyXJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مختبر البحث</div> <div class="desc" data-astro-cid-lm33vczh>استكشف منشورات مختبر بحث Monero وأبحاثه.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/tools/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/tools.CTqUs9cD_Z1hqOiO.avif);--darkUrl: url(/_astro/tools.BW4KRKDW_Z6Gril.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>أدوات Monero</div> <div class="desc" data-astro-cid-lm33vczh>قائمة منتقاة من الأدوات والبرمجيات لمستخدمي ومطوري Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="https://docs.getmonero.org" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/developer-guides.DD6ipv0S_Yls1B.avif);--darkUrl: url(/_astro/developer-guides.Cdg0NOVs_Z2h2V29.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>وثائق Monero</div> <div class="desc" data-astro-cid-lm33vczh>دليل شامل للمستخدمين والمطورين لاستخدام Monero بفعالية وأمان.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/press-kit/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/press-kit.C4VjegyX_2aPbOF.avif);--darkUrl: url(/_astro/press-kit.CVdfPwCA_1oXHhF.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مجموعة الصحافة</div> <div class="desc" data-astro-cid-lm33vczh>اتصالات الصحافة والشعارات والصور والموارد الإعلامية الأخرى.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="https://ccs.getmonero.org" class="link" tabindex="0" data-astro-cid-pbmdh2tw> التمويل الجماعي  </a>  </div>  </li>  </ul> </fieldset> </nav> <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="أغلق القائمة" data-astro-cid-dm2weclu></label> <div class="utils" aria-label="الأدوات" data-astro-cid-dm2weclu> <div class="lang" data-astro-cid-dm2weclu> <details class="lang-container" data-astro-cid-g6d27pgi> <summary class="lang" aria-label="غير اللغة" aria-haspopup="true" role="button" data-astro-cid-g6d27pgi> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/globe.FI0_gjXP_xUiUM.avif);--iconColor: currentColor;"></div>  </summary> <div class="lang-dropdown" aria-label="اللغات" data-astro-cid-g6d27pgi> <ul class="lang-list" data-astro-cid-g6d27pgi> <li data-astro-cid-g6d27pgi> <a href="/blog/2016/10/02/logs-for-the-Kovri-dev-meeting-held-on-2016-10-02/" class data-astro-cid-g6d27pgi> English </a> </li><li data-astro-cid-g6d27pgi> <a href="/ar/blog/2016/10/02/logs-for-the-Kovri-dev-meeting-held-on-2016-10-02/" class="active" aria-current="true" data-astro-cid-g6d27pgi> العربية </a> </li><li data-astro-cid-g6d27pgi> <a href="/zh/blog/2016/10/02/logs-for-the-Kovri-dev-meeting-held-on-2016-10-02/" class data-astro-cid-g6d27pgi> 中文 </a> </li> </ul> </div> </details>  </div> <label for="nav-toggle" class="hamburger" aria-controls="primary-nav" aria-label="افتح القائمة" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/hamburger.CkIM-2PU_xmMpy.avif);--iconColor: currentColor;"></div>  </label> </div> </div> </header>  <main data-astro-cid-sckkx6r4>   <div class="blog-container" data-astro-cid-jbepnj6h> <article class="blog-post" data-astro-cid-jbepnj6h> <div id="post-header" data-astro-cid-7dcwcvhl> <h1 data-astro-cid-7dcwcvhl>Logs for the Kovri Dev Meeting Held on 2016-10-02</h1> <div id="meta" data-astro-cid-7dcwcvhl> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/calendar.BXaSv3Jk_Z1NrB7E.avif);--iconColor: currentColor;"></div>  </div> <time datetime="2016-10-02" data-astro-cid-7dcwcvhl>٢ أكتوبر ٢٠١٦</time> </div> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/user.Cx6bTnUm_FhCof.avif);--iconColor: currentColor;"></div>  </div> dEBRUYNE / fluffypony </div> </div> <div class="tag-container" data-astro-cid-7dcwcvhl> <a class="tag" href="/ar/blog/tags/dev-diaries/" data-astro-cid-7dcwcvhl> يوميات التطوير </a><a class="tag" href="/ar/blog/tags/i2p/" data-astro-cid-7dcwcvhl> I2P </a><a class="tag" href="/ar/blog/tags/crypto/" data-astro-cid-7dcwcvhl> التشفير </a> </div> </div>   <div id="blog-content" lang="en" dir="ltr">  <h3 id="overview">Overview</h3>
+<p>An overview <a href="https://hellomonero.com/article/monero-and-kovri-dev-meeting-note-highlights-2016-10-02" rel="noopener noreferrer external" target="_blank">can be found on Hello Monero</a></p>
+<h3 id="logs">Logs</h3>
+<p><strong>&#x3C;fluffypony></strong> anonimal: all yours :)<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 1. Greetings<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 2. Brief review of what’s been completed since the previous meeting<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 3. ∫alti <a href="https://github.com/EinMByte/salti" rel="noopener noreferrer external" target="_blank">https://github.com/EinMByte/salti</a><br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 4. “Kovri Garlic Router Project” + logo<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 5. #46<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 6. #337 <a href="https://geti2p.net/en/docs/naming" rel="noopener noreferrer external" target="_blank">https://geti2p.net/en/docs/naming</a><br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 7. API discussion with <code>#monero-dev</code> (#350 #351)<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 8. Code + ticket discussion / Q &#x26; A<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 9. Any additional meeting items<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 10. Confirm next meeting date/time<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 1. Greetings<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> UDP meeting<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Hi<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Hi<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 2. Brief review of what’s been completed since the previous meeting<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Areas of work done or completed since last meeting 3 weeks ago:<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> - Transports improvements/fixes and EinMByte’s SSU branch was merged!<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> - Client/app improvements/fixes and client-crypto related (client signing type, https ciphers, etc.)<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> - Almost all Coverity issues resolved, still a handful left<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> - Fixes/enhancements and more<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> - pero’s fantastic work with the logo<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Oh, .ny new open issues - that’s a good thing though, right? ;)<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Anything else did I miss for 2. or move onto 3.?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> No, go ahead. I have only limited time so let’s be productive<br>
+<strong>&#x3C;fluffypony></strong> 3 plz<br>
+<strong>&#x3C;meeting-bot> * anonimal</strong> having hard time keeping track of all the work that passes over several weeks; its usually a very broad range of areas<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 3. ∫alti <a href="https://github.com/EinMByte/salti" rel="noopener noreferrer external" target="_blank">https://github.com/EinMByte/salti</a><br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> So, EinMByte and I are starting preliminary work on a firefox extension that will tremendously help Kovri and I2P<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I just want to mention this here in case there are any interested webdevs<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Anything you want to add EinMByte?<br>
+<strong>&#x3C;fluffypony></strong> Salti is basically like the Kovri GUI :-P<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> fluffypony: No it isn’t<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> The kovri GUI is called qtoopie<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> EinMByte: no, the GUI does not exist yet.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> qtoopie is an i2pcontrol client.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Salti is a firefox add-on similar to Tor browser bundle<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> anonimal: Yes (but see also the relevant zzz.i2p thread from long ago)<br>
+<strong>* fluffypony</strong> was making a joke<br>
+<strong>&#x3C;meeting-bot> * anonimal</strong> doesn’t have time to search zzz.i2p, link appreciated<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Any webdevs present?<br>
+<strong>&#x3C;meeting-bot> * EinMByte</strong> doesn’t have time to find zzz.i2p topic<br>
+<strong>&#x3C;patthehuman></strong> i could technically be a webdev<br>
+<strong>&#x3C;patthehuman></strong> im c/c++ swift/obj-c nodejs/MEAN stack<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Hi patthehuman. Have you done any work with firefox add-ons?<br>
+<strong>&#x3C;patthehuman></strong> no, however, i dont think it would be very difficult<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> We won’t be needing very complex stuff by the way, just using the webextensions API<br>
+<strong>&#x3C;patthehuman></strong> would it be chrome and firefox..?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> patthehuman: webext I believe could support both? but we’re aiming for firefox.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> (we’ll be setting a few settings and intercepting a few requests)<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> patthehuman: yes<br>
+<strong>&#x3C;patthehuman></strong> mk<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> patthehuman: we can give more details after the meeting if you idle #kovri-dev<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> (although initially firefox, but the API should be mostly the same)<br>
+<strong>&#x3C;patthehuman></strong> ok<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Anything else on 3.?<br>
+<strong>&#x3C;patthehuman></strong> ill stick around, interested in hearing full scale<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Let’s move to 4<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 4. “Kovri Garlic Router Project” + logo<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> pero: you there?<br>
+<strong>&#x3C;pero></strong> yep<br>
+<strong>&#x3C;pero></strong> want me to take over?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> What do you have for us today?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Let’s spend very little time with the visual aspect, we have bigger issues to tackle with kovri<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Just a run down so everyone knows where we are<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> And links if possible<br>
+<strong>&#x3C;pero></strong> <a href="http://imgur.com/a/ptOHb" rel="noopener noreferrer external" target="_blank">http://imgur.com/a/ptOHb</a><br>
+<strong>&#x3C;pero></strong> after a ‘long’ process we’re down to 3 fonts<br>
+<strong>&#x3C;pero></strong> the idea is to pick the font with the best looking letters that comprise the word kovri<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> And what about <a href="https://i.imgur.com/UDsSuTg.png" rel="noopener noreferrer external" target="_blank">https://i.imgur.com/UDsSuTg.png</a><br>
+<strong>&#x3C;pero></strong> and/or eliminate some concepts<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I guess Coral is out of the question<br>
+<strong>&#x3C;patthehuman></strong> lato second from bottom<br>
+<strong>&#x3C;pero></strong> yea coral was cut<br>
+<strong>&#x3C;pero></strong> work sans is largely similar and coral seemed inferior on some letters as well as less versatile at smaller font sizes iirc<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> I’d also drop open sans<br>
+<strong>&#x3C;pero></strong> in the ‘a’ system<br>
+<strong>&#x3C;pero></strong> exo 2 is the logo font - but it doesn’t work as well for text<br>
+<strong>&#x3C;pero></strong> so i chose open sans to complement it<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Sorry, I mean the exp 2 / open sans combination<br>
+<strong>&#x3C;pero></strong> a5 features exo2 as subtext so you can see how that would look like<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> But overall, the differences are really minor. Just trying to reduce the search space<br>
+<strong>&#x3C;pero></strong> i personally think not going with A or B would be a mistake<br>
+<strong>&#x3C;pero></strong> their K is really nice and adds a subtle touch of personality<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> pero: its unfair because I can’t accurately compare c4 because of orange subtext<br>
+<strong>&#x3C;pero></strong> hmm<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I prefer work sans because the k contracts with the orange curve in the garlic<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> So is our next step font?<br>
+<strong>&#x3C;pero></strong> <a href="http://imgur.com/a/DOcyy" rel="noopener noreferrer external" target="_blank">http://imgur.com/a/DOcyy</a><br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Is subtext really that thick with work sans? Eww<br>
+<strong>* fluffypony</strong> isn’t wild about the orange subtext<br>
+<strong>&#x3C;pero></strong> yea the orange subtext sucks imo<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Ok, let’s handle this another time<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> (or use a random number generator)<br>
+<strong>&#x3C;pero></strong> no it could be thinner<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Let’s go with column b then<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> lol no way on the random gen<br>
+<strong>&#x3C;fluffypony></strong> lol random number gen could be fun<br>
+<strong>&#x3C;pero></strong> imgur is also ‘optimizing’ the png<br>
+<strong>&#x3C;fluffypony></strong> “best of 3?”<br>
+<strong>&#x3C;pero></strong> keep in mind ^^^<br>
+<strong>&#x3C;endogenic></strong> just my two cents - you probably want the text to be relatively heavier than the logo so it jumps out because it’s not an english or otherwise generally known word, and so the logo imo should be visually secondary when composed with the name. think about readability, especially if the user doesn’t have 20/20 vision or is in a hurry<br>
+<strong>&#x3C;endogenic></strong> the actual face itself is not a huge issue imo<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> pero: let’s narrow down our options to rows 2, 4, and 6<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Can you throw those onto a page?<br>
+<strong>&#x3C;pero></strong> there probably will be instances where the ‘router project’ text is unnecessary<br>
+<strong>&#x3C;fluffypony></strong> I think rows 3 and 4 won’t work because, as endogenic pointed out, kovri is not an English word<br>
+<strong>&#x3C;fluffypony></strong> looks like kavri<br>
+<strong>&#x3C;pero></strong> and just the logo and kovri would suffice<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Are we all talking about <a href="https://i.imgur.com/Ge1FZTp.png" rel="noopener noreferrer external" target="_blank">https://i.imgur.com/Ge1FZTp.png</a> ?<br>
+<strong>&#x3C;pero></strong> ideally as a brand it should be able to stand out on its own<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Yes, the garlic as an “o” could be confusing<br>
+<strong>&#x3C;fluffypony></strong> anonimal no, I’m looking at <a href="http://imgur.com/a/DOcyy" rel="noopener noreferrer external" target="_blank">http://imgur.com/a/DOcyy</a><br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Same thing<br>
+<strong>&#x3C;endogenic></strong> pero: for that reason consider favoring options with tighter kerning<br>
+<strong>&#x3C;fluffypony></strong> oh<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Who in their right mind things that garlic is an ‘A’?<br>
+<strong>&#x3C;pero></strong> another thing to add<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> So let’s narrow it down to 2 and 6<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-ArticMine}</strong> 2 in Open Sans is the most readable<br>
+<strong>&#x3C;pero></strong> the garlic wasn’t designed with this use in mind<br>
+<strong>&#x3C;pero></strong> the garlic could be optimized down the road<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> anonimal: Remember that the spectator potentially doesn’t know “kovri”<br>
+<strong>&#x3C;pero></strong> ideally after a font has been chosen<br>
+<strong>&#x3C;pero></strong> to more resemble an o and to slide seamlessly into the font<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> At least it might add additional confusion, which is bad<br>
+<strong>&#x3C;endogenic></strong> EinMByte: exactly. the question is how it could be confirmed it’s not an A<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Ok, all in favor of exo2<br>
+<strong>&#x3C;pero></strong> i’m however not qualified to do that<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Any votes for exo2/open sans?<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-ArticMine}</strong> Yes<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> exo2 is fine for me, but I also agree that the “Garlic Routing Project” text should be optional<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-ArticMine}</strong> exo2 is fine<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> (So on the website, for example, we should have the text. But potentially not everywhere)<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Any objections against exo2?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I count 2 votes for exo2/open sans.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Any votes for Lato?<br>
+<strong>&#x3C;pero></strong> i vote lato<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Any votes for work sans?<br>
+<strong>&#x3C;endogenic></strong> i also like lato<br>
+<strong>&#x3C;fluffypony></strong> lato from my side<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Ok, let’s eliminate work sans.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 3 votes for Lato.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Any votes for Work Sans?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 0 votes for Work Sans<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I haven’t voted<br>
+<strong>&#x3C;meeting-bot> * anonimal</strong> looks<br>
+<strong>&#x3C;patthehuman></strong> i vote for Lato<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Are we going to decide on the logo today or not? If so, we should hurry (if we want to discuss API still)<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> pero: why does a6 look so fat?<br>
+<strong>&#x3C;pero></strong> shouldn’t be that difficult to throw up exo2 versions of lato variants in the future<br>
+<strong>&#x3C;pero></strong> in case that’s still up for debatable<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> EinMByte that’s up to moneromooo because I really don’t think anyone else there is interested in API chat (afaict)<br>
+<strong>&#x3C;pero></strong> because it is fat :P<br>
+<strong>&#x3C;patthehuman></strong> yb<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-ArticMine}</strong> I have to leave<br>
+**&#x3C;patthehuman> im interested in api cha<br>
+<strong>&#x3C;endogenic></strong> maybe we should have a #monero-design? :)<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> EinMByte if we don’t decide soon, website doesn’t get done<br>
+<strong>&#x3C;pero></strong> i went with a heavier weight for that variant arbitrarily<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> I have no particular wish about that, don’t mind me.<br>
+<strong>&#x3C;fluffypony></strong> let’s move ahead<br>
+<strong>&#x3C;fluffypony></strong> the logo already took up the entire last meeting<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 3 minutes<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Let me vote please!<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> We should at least plan when to discuss the API, so let’s decide quickly on the logo :)<br>
+<strong>&#x3C;patthehuman></strong> LATO<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> pero: why should I choose exo2<br>
+<strong>&#x3C;pero></strong> its advantage seems to be technological look<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> anonimal: Please decide, we’re moving too slowly here<br>
+<strong>&#x3C;pero></strong> a secondary adv is that we can pair with open sans which is extremely versatile<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> EinMByte, we have 30 minutes, please be patient.<br>
+<strong>&#x3C;pero></strong> can be used at extremely small sizes for things like massive tables of data<br>
+<strong>&#x3C;pero></strong> whereas using open sans to complement a lato branding scheme wouldn’t make much sense<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> pero: how about this: can you whip up another sample for after the meeting but <em>only</em> exo2 and lato and doing various sizes that you think are appropriate?<br>
+<strong>&#x3C;pero></strong> i think that makes the most sense as a next step<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> We can probably come to a final conclusion post-meeting or sometime this week.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Ok, thanks pero.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Moving on,<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 5. #46<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> fluffypony: ^<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> fluffypony…<br>
+<strong>&#x3C;pero></strong> did you skip over the ‘garlic router’ discussion?<br>
+<strong>&#x3C;fluffypony></strong> ok - got a first draft to push up, but need to finish fixing the forum first<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> pero: just go with it for now but also do without subtext too please<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> ETA?<br>
+<strong>&#x3C;patthehuman></strong> whats wrong with the forum?<br>
+<strong>&#x3C;pero></strong> ok<br>
+<strong>&#x3C;fluffypony></strong> EinMByte: no clue<br>
+<strong>&#x3C;fluffypony></strong> patthehuman: PHP7 broke a bunch of stuff<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> patthehuman: fluffypony is fixing it<br>
+**&#x3C;patthehuman> ok<br>
+<strong>&#x3C;fluffypony></strong> some of it was non-obvious until we had a new dep and composer wrecked everything<br>
+<strong>&#x3C;patthehuman></strong> ill be around if you need help<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Let’s not discuss the monero forum here<br>
+<strong>&#x3C;patthehuman></strong> php7 wrecked a lot of my shit at work so ive been down this path<br>
+<strong>&#x3C;patthehuman></strong> sure<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> fluffypony: should EinMByte and I not ask for ETA for website?<br>
+<strong>&#x3C;fluffypony></strong> anonimal: I’ll push my changes once the forum is back up, since all static objects are served off that repo anyway<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Worst case scenario, we release with just a repo and wiki.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Ok, moving on<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 6. #337 <a href="https://geti2p.net/en/docs/naming" rel="noopener noreferrer external" target="_blank">https://geti2p.net/en/docs/naming</a><br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> What happens is that any addresses that are saved with an addresshelper are simply inserted into ./addressbook but not user<em>hosts.txt (or similar)<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> There are also various other issues, let me pull up the ticket<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> “For this ticket, we should discuss if we’re to have separate subscription files because we currently only use hosts.txt. Also, if we hand edit the file, it will be overridden upon next fetch from a any publisher.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> With a little design work, we can easily implement other files that won’t be overridden. There’s also the question of whether we want to have separate files for separate publishers.”<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Easiest would be to add an additional file that’s user-configurable, but maybe it’s nicer to just update incrementally<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> hosts.txt is updated every 12 hours. I think we should have user-configurable too.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> (although that prings additonal problems)<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> *brings additional<br>
+<strong>&#x3C;meeting-bot> [Zenified]</strong> >prings?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> So lets have “hosts.txt” and several other files for the different subscriptions?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Yes, that was the idea. I guess the question was how many:<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> one for each subscription<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> If there’s conflicts, they would ideally be reported to the user<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> That’ll be tricky if each publisher calls their subscription hosts.txt, we can rename/adjust as needed or concatenate it into on user_hosts.txt<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> *a user_hosts.txt<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> And duplicates would be wasteful<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> (this whole I2P naming scheme is annoying)<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> We should rename the files locally<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> You mean expect the user to call it whatever they want?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> The only hosts.txt file would be the one that the user can change?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> No, hosts.txt would always be static and provided upstream, always overridden every 12 hours<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> No, when downloading a subscription, put it in a dedicated file?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I’m not sure what you’re getting at<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Ok, so you want “user_hosts.txt” to be a wile with custom hosts?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> *file<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> That would also work, sure.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> We only need 2: one that’s always clobbered every 12 hours, and one that’s never clobbered<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> The one that’s never clobbered needs a name. It’s “custom” and “private” though.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Also, should every address added with i2paddresshelper *also* be inserted into said custom file.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Yes, but we want multiple subscriptions right?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I don’t even think java i2p does that, but I think it should be done.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> But not all publishers provide the same set of hosts<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Hence, the need for several hosts.txt files that care clobbered every 12 hours<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> *are<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Ok, we’ll just have to name subscriptions by uri.host()<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Yes, I guess so<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> and make a private_hosts.txt that is <em>never</em> clobbered<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> That actually makes the most sense now, imho.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Yes, that or have an actual database of hosts rather than a bunch of files<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> We can deal with duplicates and effiency later unless it becomes a massively huge issue.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Yeah, a <em>real</em> Db<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> While we’re at it we can consider that for ./NetDb<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> But if we get a real database, it should also be used for profiles etc<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Didn’t i2pcpp do something like that?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Yes, it used sqlite<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Why was that not continued/exploited?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Was it not ‘efficient’ enough for the magician?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> For the same reason that i2pcpp was not continued<br>
+<strong>&#x3C;fluffypony></strong> you can always use LMDB<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> i2pd isn’t based on i2pcpp at all<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I know, but he obviously looked at it.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I don’t like how one can’t use network filesystems with LMDB<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Yes, but decided not add the dependency or so<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> So let’s create an issue for using an actual database?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> EinMByte then I think we should research sqlite or LMDB or some other option for a longterm database solution. Sound reasonable?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Yes<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Ok, anything else on addressbook?<br>
+<strong>&#x3C;fluffypony></strong> I think it’s all been addressed<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Can you create the issue? If so, let’s move on to 7<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Done, #385<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 7. API discussion with #monero-dev (#350 #351)<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Monero developers here?<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> Yes<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> What I mainly want is a clear set of requirements for the API<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> Oh I see. Oh. Hmm.<br>
+<strong>&#x3C;fluffypony></strong> yes<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> Well, I’m not very much acquainted with the way CN P2P works in the first place…<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> e.g. do you want to use streaming, I2NP directly, datagrams…?<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> It’s all TCP, with a simple HTTP server at hte moment.<br>
+<strong>&#x3C;meeting-bot> [Zenified]</strong> LMDB is the the real deal<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> Doesn’t mean it has to stay that way though.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> So you need connections? Probably streaming then<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Question: how is monero-core currently talking with monerod?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> The main question to ask is whether you need 1) reliability 2) connections<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> fluffypony: did you intend to replace the P2P stuff with 0MQ ?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> EinMByte I thought we discussed not doing network-based API<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> anonimal: JSON RPC AFAIK.<br>
+<strong>&#x3C;fluffypony></strong> anonimal: JSON RPC API, but we’re replacing that with 0MQ<br>
+<strong>&#x3C;fluffypony></strong> but Kovri will serve the p2p layer<br>
+<strong>&#x3C;fluffypony></strong> not the RPC layer<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: yes with ZMTP<br>
+<strong>&#x3C;fluffypony></strong> <a href="http://zmtp.org" rel="noopener noreferrer external" target="_blank">http://zmtp.org</a><br>
+<strong>&#x3C;fluffypony></strong> maybe we bundle the ZMTP change and Kovri integration together ?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> anonimal: No, but we need to know what aspects of the API are most important<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> e.g. do we need to focus on making I2NP accessible, or on making streaming accessible<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Or does monero want to be able to create tunnels, etc.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I think monero wants something as simple as a SOCKS proxy<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> We need to be able to find peers without knowing their address in advance.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> If connection isn’t made, tough luck and try again later<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Oh, nevermind then<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> At the moment, this is done by bootstrapping from a seed server.<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: DNS seeds<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> So 0MQ would be TCP-based, so would use streaming<br>
+<strong>&#x3C;fluffypony></strong> yeah so we can do the same<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> That… might be DNS ? I’m not sure.<br>
+<strong>&#x3C;fluffypony></strong> we get seed nodes from DNS seeds with hardcoded fallbacks<br>
+<strong>&#x3C;fluffypony></strong> and then we connect to their .i2p address on the appropriate port<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> And all the DNSSEC or DNScrypt that fluffypony knows about.<br>
+<strong>&#x3C;fluffypony></strong> and request peers<br>
+<strong>&#x3C;fluffypony></strong> and we get a list of .i2p addresses and ports<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Do you want to create a tunnel and then connect to that, or do you want to have a C++ API to also send messages?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Has monero-side drawn up any diagrams for these ideas?<br>
+<strong>&#x3C;fluffypony></strong> anonimal: that’s how it currently works, not ideas<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> Is there a concept of “multicast”, where we could send a query to “whomever it may concern” ?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> fluffypony: you currently get a list of .i2p address and ports?<br>
+<strong>&#x3C;fluffypony></strong> EinMByte: we can do either<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> moneromooo: No, don’t think so<br>
+<strong>&#x3C;fluffypony></strong> anonimal: we currently get ipv4 addresses, but we’d perform exactly the same function to get i2p-based peers<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> moneromooo: But I can think about multicast in future I2P and even get a proposal going, but it would take years before we actually get it<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> The intent, in this case, would be to request replies from peers that run monero.<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> (without having to rely on centralized seeds)<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> So for DNS, you could use repliable datagrams or streaming.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> EinMByte moneromooo: multicast is mentioned in future work <a href="https://geti2p.net/en/docs/how/garlic-routing" rel="noopener noreferrer external" target="_blank">https://geti2p.net/en/docs/how/garlic-routing</a><br>
+<strong>&#x3C;fluffypony></strong> DNS seed nodes work, I really don’t think we need to replace that<br>
+<strong>&#x3C;fluffypony></strong> but what we would do on first sync is get both ipv4 <em>and</em> i2p peers<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> anonimal: Yes, but there’s no decent proposal right now. I also need to check out the LS2 proposal, it somewhat relates<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> fluffypony: Ok, assuming you can store I2P addresses in DNS records<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> moneromooo: proposals also sit there for years so I wouldn’t expect anything to happen anytime soon<br>
+<strong>&#x3C;fluffypony></strong> after that a node maintains its own white / black / gray lists, and gets a peerlist every time it connects to a new peer<br>
+<strong>&#x3C;fluffypony></strong> EinMByte: TXT records :)<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> fluffypony: Ok.<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> It’s something that seems fairly self contained anyway, so could be changed at a later date.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> So you need to decide between 1) use I2P direcly with a C++ API 2) create tunnels using a C++ API and then connect to them with SOCKS or so<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> I don’t know the difference between these options.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I don’t think they need to care about creating tunnels<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> In any case kovri wants to provide the API to do 1<br>
+<strong>&#x3C;fluffypony></strong> yes - and I’d probably lean towards the C++ API<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> They need to know if they can get through or not, that’s a given though.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> So it looks like monero would be using esentially use the streaming API?<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> I’d imagine something that looks like a socket API, just using I2P addresses instead of IP:port :)<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> s/use//<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> By streaming, do you mean TCP ?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> But maybe for DNS you’d also want repliable datagrams<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I can’t answer for them until one of them sits down and reads the spec<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> moneromooo: streaming is something that looks a lot like TCP but over I2P<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> Then that’s what we’d use in a straight port, modulo the seed stuff.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Most applications use streaming one way or another<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> I don’t know your architecture, but it may be simpler to create a tunnel if you want to route everything to I2P<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> *through<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> fluffypony moneromooo: what were the arugments against using SOCKS proxy?<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> By creating a tunnel, do you mean selecting the hoops directly ?<br>
+<strong>&#x3C;fluffypony></strong> no arguments - we have no idea what you’d recommend :)<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> EinMByte: KISS<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> moneromooo: using tunnel in the client-like context here, like a local SOCKS proxy which delivers to a dedicated I2P endpoint<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> monero: we have to meet half-way somehow. I’ll try to dig into more monero if you guys can dig into more kovri.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> SOCKS seems overly complicaed<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> *complicated<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> IMHO, we should be more on a level playing field at least term wise by now.<br>
+<strong>&#x3C;fluffypony></strong> anonimal: we’ll implement whatever you guys recommend<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> If you need many connections, you can’t use the “create a local SOCKS proxy” or so<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> EinMByte: how so? In terms of providing useful feedback and control, yes.<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> We need several, yes. They’re fairly long term. Some will go down, and will be replaced.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Then it would be a lot easier to create tunnels (which use e.g. the streaming protocol) using the C++ API<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> Both directions, btw. No client/server.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Streaming is both ways, sure<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> datagrams can also be (if repliable)<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Ok, so easiest for us is C++ API but is ZMTP worth the extra work?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> anonimal: I don’t think ZMTP matters to us.<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> I’d imagine ZMTP is a layer above, and kovri would be oblivious to it.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Good.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> So streaming or datagrams or both?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Question is whether using ZMTP would actually be useful when used above I2P, but I’ll leave that to monero devs<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> Both, please :)<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> But let’s focus on streaming<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> (since most I2P applications currently use streaming)<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> But streaming first, yes. We can hardcode peer ids to start with.<br>
+<strong>&#x3C;fluffypony></strong> I guess parts of ZMTP would be useless (eg. end-to-end encryption)<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Ok, C++ API for streaming. That’s entirely on us then, for starters.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Is this written in stone now EinMByte moneromooo fluffypony?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Let’s say it is and move to 8<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> To the extent I know of how CN uses the network… -</em>- :D<br>
+<strong>&#x3C;fluffypony></strong> yes<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Yay, big decision step done.<br>
+<strong>&#x3C;yardman></strong> whats set in stone?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Anything else on 7.?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I have one question:<br>
+<strong>&#x3C;fluffypony></strong> nope<br>
+<strong>&#x3C;fluffypony></strong> yardman: using the i2p C++ API for streaming<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> What homework can we all do so our next API meeting is more productive?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> kovri c++ API<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Design it<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> Well, I have that feeling that the next month or two will be spent on rct performance from my side…<br>
+<strong>&#x3C;fluffypony></strong> anonimal: we haven’t really focused on our current p2p layer because of the ZMTP plan<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> moneromooo: you mentioned I should look at networking code?<br>
+<strong>&#x3C;yardman></strong> thanks<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> I didn’t, I think. I mentioned I should :D<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Oh, lol ok<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> IIRC that p2p code is also kinda new and unfinished.<br>
+<strong>&#x3C;fluffypony></strong> so I don’t know if we should waste much time on analysis of it, or rather look at i2p as a ZMTP transport<br>
+<strong>&#x3C;fluffypony></strong> which could be a VERY nice generalised solution<br>
+<strong>&#x3C;fluffypony></strong> that isn’t Monero-specific<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Ok, I’ll add API for first thing next meeting.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Anything else for 7.?<br>
+<strong>&#x3C;fluffypony></strong> nope<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Nope, 8 please (need to leave soon)<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 8. Code + ticket discussion / Q &#x26; A<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> We’re in overtime, I have nothing to say at the moment really.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> fluffypony I think there’s an assigned ticket you can easily close<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Me neither, let’s discuss when appropriate<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> (the codedocs one)<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Will see how much time I get to do v6 peer testing<br>
+<strong>&#x3C;fluffypony></strong> ok will do<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I’ll get to more assigned tickets as well.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Ok, moving on.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Also not sure if #187 should still be open<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 9. Any additional meeting items<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> EinMByte, ok I’ll take a look after the meeting.<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> Ok, no additional meeting items from me<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Nor I. fluffypony?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> moneromooo?<br>
+<strong>&#x3C;fluffypony></strong> nope<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> #monero-dev?<br>
+<strong>&#x3C;meeting-bot> [i2p-relay] {-moneromooo}</strong> No<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> 10. Confirm next meeting date/time<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Next week or two weeks?<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> 2<br>
+<strong>&#x3C;meeting-bot> [EinMByte]</strong> (if we want the API on the list of topics)<br>
+<strong>&#x3C;fluffypony></strong> 2 weeks<br>
+<strong>&#x3C;fluffypony></strong> Oct 16<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Same for #monero-dev?<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> I’d like to coincide<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> fluffypony: ^<br>
+<strong>&#x3C;fluffypony></strong> yes<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> Ok, 2 weeks works for me.<br>
+<strong>&#x3C;meeting-bot> [anonimal]</strong> THANKS EVERYONE!<br>
+<strong>&#x3C;fluffypony></strong> shutting meeting bot down</p>  </div>  </article> <aside data-border="true" data-transparent="true" style="--card-padding: var(--space-xl); --card-radius: var(--radius-md)" data-astro-cid-jbepnj6h="true" data-astro-cid-dd5txfcy="true" class="card sidebar">  <h2 data-astro-cid-jbepnj6h>المنشورات الأخيرة</h2> <ul class="recent-posts" data-astro-cid-jbepnj6h> <li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/03/04/monero-GUI-0.18.4.7-released/" data-astro-cid-jbepnj6h> Monero GUI 0.18.4.7 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-jbepnj6h> ٤ مارس ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/03/04/monero-0.18.4.6-released/" data-astro-cid-jbepnj6h> Monero 0.18.4.6 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-jbepnj6h> ٤ مارس ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/01/07/monero-GUI-0.18.4.5-released/" data-astro-cid-jbepnj6h> Monero GUI 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-jbepnj6h> ٧ يناير ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/01/07/monero-0.18.4.5-released/" data-astro-cid-jbepnj6h> Monero 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-jbepnj6h> ٧ يناير ٢٠٢٦ </time> </li> </ul>  </aside>  </div>  </main> <footer class="footer" aria-label="التذييل" data-astro-cid-mh6itkc3> <div class="items" data-astro-cid-mh6itkc3> <nav class="grid" aria-label="تنقل التذييل" data-astro-cid-mh6itkc3> <section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>الموارد</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/ar/get-started/what-is-monero/" data-astro-cid-mh6itkc3> حول Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/moneropedia/" data-astro-cid-mh6itkc3> مونيروبيديا  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://docs.getmonero.org" data-astro-cid-mh6itkc3> وثائق Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/get-started/faq/" data-astro-cid-mh6itkc3> الأسئلة الشائعة  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>تواصل</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/ar/community/workgroups/" data-astro-cid-mh6itkc3> مجموعات العمل  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/community/hangouts/" data-astro-cid-mh6itkc3> الأماكن  </a> </li><li data-astro-cid-mh6itkc3> <a href="/postorius/lists/monero-announce.lists.getmonero.org" data-astro-cid-mh6itkc3> قائمة البريد  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>المجتمع</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://monero.stackexchange.com/" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Stack Exchange  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://bitcointalk.org/index.php?topic=583449.0" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Bitcoin Talk  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://translate.getmonero.org" data-astro-cid-mh6itkc3> ترجم  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>مشروع Monero</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://openalias.org" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Open Alias  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/research-lab/" data-astro-cid-mh6itkc3> مختبر بحث Monero (MRL)  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/press-kit/" data-astro-cid-mh6itkc3> مجموعة الصحافة  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://ccs.getmonero.org" data-astro-cid-mh6itkc3> نظام التمويل الجماعي المجتمعي  </a> </li> </ul> </section> </nav> <nav class="bottom" aria-label="تنقل التذييل الثانوي" data-astro-cid-mh6itkc3> <ul class="inline-list" data-astro-cid-mh6itkc3> <li class="inline-item" data-astro-cid-mh6itkc3> <a href="#" data-astro-cid-mh6itkc3> خدمة Tor Onion <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/tor.D04gt7iP_278xXg.avif);--iconColor: #7d4698;--spacing: 0.25em;"></div>  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> استجابة الثغرات  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/ar/legal/" data-astro-cid-mh6itkc3> القانوني  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> رمز المصدر  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/feed.xml" data-astro-cid-mh6itkc3> تغذية RSS <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/rss.jnIu9F4x_Z28u6pV.avif);--iconColor: var(--monero-orange);--spacing: 0.25em;"></div>  </a> </li> </ul> </nav> </div> </footer>   </body></html> 

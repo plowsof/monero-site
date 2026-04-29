@@ -1,0 +1,333 @@
+<!DOCTYPE html><html lang="ar" dir="rtl" data-astro-cid-sckkx6r4> <head><title>المدونة | Overview and Logs for the Kovri Dev Meeting Held on 2018-06-07</title><meta charset="UTF-8"><link rel="canonical" href="https://beta.monerodevs.org/ar/blog/2018/06/07/logs-for-the-kovri-dev-meeting-held-on-2018-06-07/"><meta name="description" content="Discussion of the latest Kovri development updates and the alpha release"><meta name="robots" content="index, follow"><meta property="og:title" content="Overview and Logs for the Kovri Dev Meeting Held on 2018-06-07"><meta property="og:type" content="article"><meta property="og:image" content="https://beta.monerodevs.org/open-graph/blog/2018/06/07/logs-for-the-kovri-dev-meeting-held-on-2018-06-07.png"><meta property="og:url" content="https://beta.monerodevs.org/ar/blog/2018/06/07/logs-for-the-kovri-dev-meeting-held-on-2018-06-07/"><meta property="og:locale" content="ar"><meta property="og:locale:alternate" content="en"><meta property="og:locale:alternate" content="zh"><meta property="og:site_name" content="Monero"><meta property="og:image:url" content="https://beta.monerodevs.org/open-graph/blog/2018/06/07/logs-for-the-kovri-dev-meeting-held-on-2018-06-07.png"><meta property="og:image:alt" content="OpenGraph image for Monero blog post titled &#34;Overview and Logs for the Kovri Dev Meeting Held on 2018-06-07&#34;"><meta property="article:published_time" content="2018-06-07T00:00:00.000Z"><meta property="article:author" content="selsta / anonimal"><meta property="article:tag" content="dev diaries"><meta property="article:tag" content="i2p"><meta property="article:tag" content="crypto"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@monero"><meta name="twitter:title" content="Overview and Logs for the Kovri Dev Meeting Held on 2018-06-07"><meta name="twitter:image" content="https://beta.monerodevs.org/open-graph/blog/2018/06/07/logs-for-the-kovri-dev-meeting-held-on-2018-06-07.png"><meta name="twitter:description" content="Discussion of the latest Kovri development updates and the alpha release"><link rel="preload" as="font" type="font/woff2" href="/_astro/dm-sans-latin-wght-normal.Xz1IZZA0.woff2" crossorigin="anonymous"><link rel="icon" href="/meta/favicon-16x16.png" sizes="16x16"><link rel="icon" href="/meta/favicon-32x32.png" sizes="32x32"><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.18.0"><meta name="color-scheme" content="light dark"><link rel="alternate" hreflang="en" href="https://beta.monerodevs.org/blog/2018/06/07/logs-for-the-kovri-dev-meeting-held-on-2018-06-07/"><link rel="alternate" hreflang="ar" href="https://beta.monerodevs.org/ar/blog/2018/06/07/logs-for-the-kovri-dev-meeting-held-on-2018-06-07/"><link rel="alternate" hreflang="zh" href="https://beta.monerodevs.org/zh/blog/2018/06/07/logs-for-the-kovri-dev-meeting-held-on-2018-06-07/"><link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="https://beta.monerodevs.org/feed.xml"><style>#blog-content{line-height:var(--line-height-body);word-wrap:break-word;color:light-dark(inherit,var(--paragraph-main));:where(h2,h3,h4){font-weight:var(--font-weight-bold)}img{border-radius:var(--radius-md)}a:not(.moneropedia-link){color:light-dark(var(--text-primary),var(--paragraph-main));font-weight:var(--font-weight-medium);text-decoration-line:underline;text-decoration-style:dotted;&:hover{color:light-dark(var(--text-secondary),var(--heading-color))}}h1{font-size:var(--font-size-2xl)}h2{font-size:var(--font-size-xl)}h3{font-size:var(--font-size-lg)}h4{font-size:var(--font-size-md)}p{margin-bottom:1em}li{margin-bottom:.25em}pre{padding:1em;border-radius:var(--radius-md);overflow-x:auto;background:var(--footer-color);code{background:none;padding:0;border-radius:0}}code:not(pre code){font-family:monospace;background-color:var(--footer-color);padding:.1em .3em;border-radius:var(--radius-sm)}blockquote{margin:1.5em 0;padding-inline:1.5em 1em;border-inline-start:3px solid var(--border-color);font-style:italic;color:var(--text-secondary)}strong{font-weight:var(--font-weight-bold)}em{font-style:italic}}h1[data-astro-cid-7dcwcvhl]{font-size:var(--font-size-3xl);margin:0}#post-header[data-astro-cid-7dcwcvhl]{margin-bottom:var(--page-top-margin)}#meta[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-2xl);color:var(--text-secondary);margin-top:var(--space-md);margin-bottom:var(--space-xl);font-size:var(--font-size-lg);font-weight:var(--font-weight-normal)}.meta-item[data-astro-cid-7dcwcvhl]{display:flex;align-items:center;gap:var(--space-xs);>.icon{display:grid;place-items:center;color:var(--monero-orange)}}.tag-container[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-xs);font-size:var(--font-size-sm);flex-wrap:wrap;.tag{text-align:center;padding:var(--space-2xs) var(--space-sm);background:var(--footer-color);border-radius:var(--radius-md);text-transform:uppercase;font-weight:var(--font-weight-semibold);text-decoration:none;color:inherit;white-space:nowrap;&:hover{color:var(--text-secondary)}}}@media(width<=600px){#meta[data-astro-cid-7dcwcvhl]{flex-direction:column;font-size:var(--font-size-md);font-weight:var(--font-weight-medium);gap:var(--space-md)}.meta-item[data-astro-cid-7dcwcvhl]{>.icon{font-size:var(--font-size-lg)}}}
+.card[data-astro-cid-dd5txfcy]{background:var(--card-color);padding:var(--card-padding);border-radius:var(--card-radius);&[data-border]{border:1px solid var(--border-color)}&[data-transparent]{background:transparent}&[data-hover]{transition:background .15s ease;&[data-astro-cid-dd5txfcy]:hover,&[data-astro-cid-dd5txfcy]:focus-visible{background:var(--card-hover-color)}}}
+.icon[data-astro-cid-bpjkz5as]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);margin-inline-start:var(--spacing);background:var(--iconColor);mask:var(--iconSrc) no-repeat center / contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}
+</style>
+<link rel="stylesheet" href="/_astro/_page_.DxMr-0dd.css">
+<style>.blog-container[data-astro-cid-jbepnj6h]{display:grid;grid-template-columns:1fr;gap:var(--space-2xl);>*{min-width:0}}.sidebar[data-astro-cid-jbepnj6h]{height:fit-content;& h2[data-astro-cid-jbepnj6h]{font-size:var(--font-size-xl);margin-top:0}}.recent-posts[data-astro-cid-jbepnj6h]{list-style:none;padding:0;margin-bottom:0;display:flex;flex-direction:column;gap:var(--space-md);li{margin-bottom:var(--space-xs)}.post-title{font-size:var(--font-size-md);color:var(--paragraph-main);text-decoration-line:underline;text-decoration-style:dotted;&:hover{text-decoration:underline}}.post-date{display:block;font-size:var(--font-size-sm);color:var(--paragraph-subtitle);margin-top:var(--space-2xs)}}@media(width>=1200px){.blog-container[data-astro-cid-jbepnj6h]{grid-template-columns:1fr 65ch 1fr}.blog-post[data-astro-cid-jbepnj6h]{grid-column:2}.sidebar[data-astro-cid-jbepnj6h]{grid-column:2;grid-row:2}}@media(width>=1600px){.sidebar[data-astro-cid-jbepnj6h]{grid-column:3;grid-row:1}}
+:where([data-astro-image]){object-fit:var(--fit);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+.moneropedia-link{position:relative;display:inline-block;color:var(--monero-orange);text-decoration-line:underline;text-decoration-style:dotted;cursor:help;font-weight:var(--font-weight-medium)}.moneropedia-link:hover,.moneropedia-link:focus-visible{text-decoration:none}.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{content:none}@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{position:absolute;left:50%;opacity:0;pointer-events:none;transform:translate(-50%) translateY(0);transition:opacity .18s ease-out,transform .18s ease-out;z-index:10}.moneropedia-link[data-tooltip]:before{content:attr(data-tooltip);bottom:calc(100% + .5rem);padding:.5rem .75rem;background:var(--card-color);border:1px solid var(--border-color);border-radius:.25rem;box-sizing:border-box;overflow-wrap:break-word;min-inline-size:25ch;max-inline-size:min(35ch,calc(100vw - 2.5rem));font-size:var(--font-size-sm);line-height:var(--line-height-caption);color:var(--text-primary);box-shadow:0 2px 8px #0000004d}.moneropedia-link[data-tooltip]:after{content:"";bottom:calc(100% + .25rem);border-width:.35rem .35rem 0;border-style:solid;border-color:var(--card-color) transparent transparent transparent}.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):before,.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):after{opacity:1;transform:translate(-50%) translateY(-2px)}}@media(prefers-reduced-motion:reduce){@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{transition:none}}}
+.icon[data-astro-cid-7wapxsvo]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);aspect-ratio:1 / 1;vertical-align:middle;--iconUrl: var(--lightUrl);background-image:var(--iconUrl);background-repeat:no-repeat;background-position:center;background-size:contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}@media(prefers-color-scheme:dark){.icon[data-astro-cid-7wapxsvo]{--iconUrl: var(--darkUrl)}}
+</style></head> <body data-astro-cid-sckkx6r4> <header class="header" data-astro-cid-dm2weclu> <div class="header-inner" data-astro-cid-dm2weclu> <a class="brand" href="/ar/" data-astro-cid-dm2weclu> <img src="/_astro/monerologo.CMdKQEkN_10Rm8s.avif" srcset="/_astro/monerologo.CMdKQEkN_10Rm8s.avif 64w, /_astro/monerologo.CMdKQEkN_10Rm8s.avif 128w" alt aria-hidden="true" data-astro-cid-dm2weclu="true" loading="eager" decoding="sync" fetchpriority="high" sizes="(min-width: 64px) 64px, 100vw" style="--fit: cover; --pos: center;" data-astro-image="constrained" width="64" height="64" class="mark"> <span data-astro-cid-dm2weclu>MONERO</span> </a> <input id="nav-toggle" class="nav-toggle" type="checkbox" data-astro-cid-dm2weclu> <nav id="primary-nav" class="nav" aria-label="التنقل الأساسي" data-astro-cid-dm2weclu> <div class="drawer-header" data-astro-cid-dm2weclu> <label for="nav-toggle" class="close" aria-controls="primary-nav" aria-label="أغلق القائمة" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/close.CneAMmXr_ZaFGrm.avif);--iconColor: currentColor;"></div>  </label> </div> <fieldset data-astro-cid-dm2weclu> <legend class="sr-only" data-astro-cid-dm2weclu>أقسام التنقل الأساسي</legend> <ul class="nav-list" data-astro-cid-dm2weclu> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-9ruyt2tlv" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-9ruyt2tlv-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> ابدأ <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-9ruyt2tlv" class="mobile-open" aria-label="Open ابدأ menu" data-astro-cid-pbmdh2tw></label> <label for="dd-9ruyt2tlv-close" class="mobile-close" aria-label="Close ابدأ menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="ابدأ menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/get-started/what-is-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--darkUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>ما هو Monero؟</div> <div class="desc" data-astro-cid-lm33vczh>كل ما تحتاجه لمعرفة Monero في لمحة.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/exchanges/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/merchants-exchanges.DN61YseO_ZQ3Km9.avif);--darkUrl: url(/_astro/merchants-exchanges.BjKEmUcz_1O8q9G.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>اشترِ Monero</div> <div class="desc" data-astro-cid-lm33vczh>بورصات العملات المشفرة التي تتيح لك شراء أو تداول Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/merchants/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>أنفق Monero</div> <div class="desc" data-astro-cid-lm33vczh>ابحث عن أماكن وخدمات تقبل Monero كدفع.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/accept-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/accept-monero.COXM8aHM_Z1II116.avif);--darkUrl: url(/_astro/accept-monero.C3WCFfqe_Z2tp8Kw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>اقبل Monero</div> <div class="desc" data-astro-cid-lm33vczh>تعلم كيفية قبول XMR كتاجر أو فرد.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/mining/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/mining.DBRk7HAe_Zd3ukV.avif);--darkUrl: url(/_astro/mining.B54FNZld_Z2jnjrG.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>التعدين</div> <div class="desc" data-astro-cid-lm33vczh>تعلم كيفية تعدين Monero على جهاز الكمبيوتر الخاص بك.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/contribute/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/contribute.DKeO9Dve_Z2vEvfu.avif);--darkUrl: url(/_astro/contribute.zLqiOwb5_Z1qe0gS.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>ساهم</div> <div class="desc" data-astro-cid-lm33vczh>ساعد مشروع Monero في جلب الخصوصية للجميع.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/faq/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/faq.C8QObR1A_1A5Irh.avif);--darkUrl: url(/_astro/faq.BNcLqXOJ_ZaSdVI.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الأسئلة الشائعة</div> <div class="desc" data-astro-cid-lm33vczh>ابحث عن إجابات للأسئلة الشائعة حول Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/ar/downloads/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> التحميلات  </a>  </div>  </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/ar/blog/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> المدونة  </a>  </div>  </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-js79dpyva" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-js79dpyva-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> المجتمع <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-js79dpyva" class="mobile-open" aria-label="Open المجتمع menu" data-astro-cid-pbmdh2tw></label> <label for="dd-js79dpyva-close" class="mobile-close" aria-label="Close المجتمع menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="المجتمع menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/community/workgroups/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/workgroups.OzoDQ7NV_Z1Lwqqs.avif);--darkUrl: url(/_astro/workgroups.CGbkWAXL_Z1m0ybJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مجموعات العمل</div> <div class="desc" data-astro-cid-lm33vczh>تعاون مع مجموعات عمل Monero المخصصة في التطوير والبحث والجهود المجتمعية.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/community/sponsorships/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الرعايات</div> <div class="desc" data-astro-cid-lm33vczh>قائمة الشركات التي تدعم مشروع Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/community/hangouts/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/hangouts.CiWxE-i9_ZeEICj.avif);--darkUrl: url(/_astro/hangouts.Do4DJEA1_257lPw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الأماكن</div> <div class="desc" data-astro-cid-lm33vczh>انضم إلى أماكن تجمع مجتمع Monero والفعاليات للاتصال بالمتحمسين والمطورين الآخرين.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-ktot6k9lo" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-ktot6k9lo-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> الموارد <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-ktot6k9lo" class="mobile-open" aria-label="Open الموارد menu" data-astro-cid-pbmdh2tw></label> <label for="dd-ktot6k9lo-close" class="mobile-close" aria-label="Close الموارد menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="الموارد menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/resources/knowledge-base/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/moneropedia.7o-c8ZX4_lSmb.avif);--darkUrl: url(/_astro/moneropedia.CYJm2-Q5_1KG40X.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>قاعدة المعرفة</div> <div class="desc" data-astro-cid-lm33vczh>الكتب والمنشورات والمجلات، مونيروبيديا.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/roadmap/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/roadmap.DoSq9h9o_Z1QuQpv.avif);--darkUrl: url(/_astro/roadmap.BONb2rwk_2hroDR.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>خارطة الطريق</div> <div class="desc" data-astro-cid-lm33vczh>ابقَ على اطلاع بأحدث خطط وتقدم تطوير Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/research-lab/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/research-lab.D90VAC3d_WkkdD.avif);--darkUrl: url(/_astro/research-lab.uv3a8gpS_Z7cyXJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مختبر البحث</div> <div class="desc" data-astro-cid-lm33vczh>استكشف منشورات مختبر بحث Monero وأبحاثه.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/tools/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/tools.CTqUs9cD_Z1hqOiO.avif);--darkUrl: url(/_astro/tools.BW4KRKDW_Z6Gril.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>أدوات Monero</div> <div class="desc" data-astro-cid-lm33vczh>قائمة منتقاة من الأدوات والبرمجيات لمستخدمي ومطوري Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="https://docs.getmonero.org" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/developer-guides.DD6ipv0S_Yls1B.avif);--darkUrl: url(/_astro/developer-guides.Cdg0NOVs_Z2h2V29.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>وثائق Monero</div> <div class="desc" data-astro-cid-lm33vczh>دليل شامل للمستخدمين والمطورين لاستخدام Monero بفعالية وأمان.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/press-kit/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/press-kit.C4VjegyX_2aPbOF.avif);--darkUrl: url(/_astro/press-kit.CVdfPwCA_1oXHhF.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مجموعة الصحافة</div> <div class="desc" data-astro-cid-lm33vczh>اتصالات الصحافة والشعارات والصور والموارد الإعلامية الأخرى.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="https://ccs.getmonero.org" class="link" tabindex="0" data-astro-cid-pbmdh2tw> التمويل الجماعي  </a>  </div>  </li>  </ul> </fieldset> </nav> <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="أغلق القائمة" data-astro-cid-dm2weclu></label> <div class="utils" aria-label="الأدوات" data-astro-cid-dm2weclu> <div class="lang" data-astro-cid-dm2weclu> <details class="lang-container" data-astro-cid-g6d27pgi> <summary class="lang" aria-label="غير اللغة" aria-haspopup="true" role="button" data-astro-cid-g6d27pgi> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/globe.FI0_gjXP_xUiUM.avif);--iconColor: currentColor;"></div>  </summary> <div class="lang-dropdown" aria-label="اللغات" data-astro-cid-g6d27pgi> <ul class="lang-list" data-astro-cid-g6d27pgi> <li data-astro-cid-g6d27pgi> <a href="/blog/2018/06/07/logs-for-the-kovri-dev-meeting-held-on-2018-06-07/" class data-astro-cid-g6d27pgi> English </a> </li><li data-astro-cid-g6d27pgi> <a href="/ar/blog/2018/06/07/logs-for-the-kovri-dev-meeting-held-on-2018-06-07/" class="active" aria-current="true" data-astro-cid-g6d27pgi> العربية </a> </li><li data-astro-cid-g6d27pgi> <a href="/zh/blog/2018/06/07/logs-for-the-kovri-dev-meeting-held-on-2018-06-07/" class data-astro-cid-g6d27pgi> 中文 </a> </li> </ul> </div> </details>  </div> <label for="nav-toggle" class="hamburger" aria-controls="primary-nav" aria-label="افتح القائمة" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/hamburger.CkIM-2PU_xmMpy.avif);--iconColor: currentColor;"></div>  </label> </div> </div> </header>  <main data-astro-cid-sckkx6r4>   <div class="blog-container" data-astro-cid-jbepnj6h> <article class="blog-post" data-astro-cid-jbepnj6h> <div id="post-header" data-astro-cid-7dcwcvhl> <h1 data-astro-cid-7dcwcvhl>Overview and Logs for the Kovri Dev Meeting Held on 2018-06-07</h1> <div id="meta" data-astro-cid-7dcwcvhl> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/calendar.BXaSv3Jk_Z1NrB7E.avif);--iconColor: currentColor;"></div>  </div> <time datetime="2018-06-07" data-astro-cid-7dcwcvhl>٧ يونيو ٢٠١٨</time> </div> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/user.Cx6bTnUm_FhCof.avif);--iconColor: currentColor;"></div>  </div> selsta / anonimal </div> </div> <div class="tag-container" data-astro-cid-7dcwcvhl> <a class="tag" href="/ar/blog/tags/dev-diaries/" data-astro-cid-7dcwcvhl> يوميات التطوير </a><a class="tag" href="/ar/blog/tags/i2p/" data-astro-cid-7dcwcvhl> I2P </a><a class="tag" href="/ar/blog/tags/crypto/" data-astro-cid-7dcwcvhl> التشفير </a> </div> </div>   <div id="blog-content" lang="en" dir="ltr">  <h1 id="logs">Logs</h1>
+<p><strong>&#x3C;anonimal></strong> 1. Greetings<br>
+<strong>&#x3C;anonimal></strong> 2. Brief review of what’s been completed since the previous meeting<br>
+<strong>&#x3C;anonimal></strong> 3. Contributor FFS check-in / status<br>
+<strong>&#x3C;anonimal></strong> 4. Alpha release discussion<br>
+<strong>&#x3C;anonimal></strong> 5. Public relations discussion<br>
+<strong>&#x3C;anonimal></strong> 6. Code + ticket discussion / Q &#x26; A<br>
+<strong>&#x3C;anonimal></strong> 7. Any additional meeting items<br>
+<strong>&#x3C;anonimal></strong> 8. Confirm next meeting date/time<br>
+<strong>&#x3C;anonimal></strong> Hi<br>
+<strong>&#x3C;oneiric_></strong> Hi<br>
+<strong>&#x3C;rehrar></strong> Heyo<br>
+<strong>&#x3C;rehrar></strong> #kovrifam<br>
+<strong>&#x3C;rehrar></strong> stolen from Verge<br>
+<strong>&#x3C;anonimal></strong> I don’t think fluffypony has been to a kovri meeting since at least 2016.<br>
+<strong>&#x3C;_Slack> &#x3C;sean></strong> Hey<br>
+<strong>&#x3C;anonimal></strong> He name-drops kovri/kovri-related in interviews all the time and shows up to monero meetings.<br>
+<strong>&#x3C;anonimal></strong> Hi sean<br>
+<strong>&#x3C;rehrar></strong> like the Queen of England<br>
+<strong>&#x3C;rehrar></strong> shall I ping him?<br>
+<strong>&#x3C;_Slack> &#x3C;sean></strong> Hey anonimal.<br>
+<strong>&#x3C;anonimal></strong> rehrar: you already did, during the prep<br>
+<strong>&#x3C;rehrar></strong> he’s not in the room, and I guess he doesn’t have any other IRC bridges<br>
+<strong>&#x3C;anonimal></strong> Anyone else here? Big channel, lots of lurkers<br>
+<strong>&#x3C;anonimal></strong> NSA bots, how’s it going?<br>
+<strong>&#x3C;oneiric_></strong> lol +badbot<br>
+<strong>&#x3C;anonimal></strong> Hi iDunk<br>
+<strong>&#x3C;iDunk></strong> o/<br>
+<strong>&#x3C;rottensalty07></strong> I’m here, but I’m not a three-lettered botnet.<br>
+<strong>&#x3C;anonimal></strong> Damn<br>
+<strong>&#x3C;anonimal></strong> They could at least speak up more<br>
+<strong>&#x3C;anonimal></strong> We know you’re there<br>
+<strong>&#x3C;anonimal></strong> Some poor sap sitting behind a monitor sifting through regexps<br>
+<strong>&#x3C;anonimal></strong> Oh well<br>
+<strong>&#x3C;anonimal></strong> 2. Brief review of what’s been completed since the previous meeting<br>
+<strong>&#x3C;anonimal></strong> If you look at the old logs, I used to prepare very detailed records for item 2.<br>
+<strong>&#x3C;rottensalty07></strong> Lol.<br>
+<strong>&#x3C;anonimal></strong> I then realized that A) most people didn’t care B) the people who did care already knew what I was going to say.<br>
+<strong>&#x3C;anonimal></strong> So, I stopped preparing for item 2 :)<br>
+<strong>&#x3C;anonimal></strong> Here’s a recent item I can easily grab:<br>
+<strong>&#x3C;anonimal></strong> <a href="https://twitter.com/getkovri/status/1004568146139865089" rel="noopener noreferrer external" target="_blank">https://twitter.com/getkovri/status/1004568146139865089</a><br>
+<strong>&#x3C;anonimal></strong> Which links to <a href="https://t.co/7fDhUBt75d" rel="noopener noreferrer external" target="_blank">https://t.co/7fDhUBt75d</a><br>
+<strong>&#x3C;anonimal></strong> Oops<br>
+<strong>&#x3C;anonimal></strong> <a href="http://forum.getmonero.org/6/ideas/90300/oneiric-june-august-part-time-kovri-junior-developer" rel="noopener noreferrer external" target="_blank">http://forum.getmonero.org/6/ideas/90300/oneiric-june-august-part-time-kovri-junior-developer</a><br>
+<strong>&#x3C;rottensalty07></strong> Those t.co shady links. Shame.<br>
+<strong>&#x3C;anonimal></strong> The tco link points to the forum link<br>
+<strong>&#x3C;rottensalty07></strong> I’m reading through.<br>
+<strong>&#x3C;anonimal></strong> So that needs more input and should be moved to funding.<br>
+<strong>&#x3C;anonimal></strong> Alex058 responded with thumbs up<br>
+<strong>&#x3C;anonimal></strong> I’ll go ahead and retweet the getkovri tweet<br>
+<strong>&#x3C;oneiric_></strong> Much appreciation anonimal and Alex058 :)<br>
+<strong>&#x3C;rottensalty07></strong> Retweeted by wheel too.<br>
+<strong>&#x3C;anonimal></strong> No problem<br>
+<strong>&#x3C;rehrar></strong> I support oneiric_, but I’m biased since he is bae<br>
+<strong>&#x3C;rottensalty07></strong> oneiric_: I’m happy to see others coming out to help rehrar and anonimal labor. We are nothing but a community.<br>
+<strong>&#x3C;rottensalty07></strong> rehrar: No homo.<br>
+<strong>&#x3C;rehrar></strong> all the homo<br>
+<strong>&#x3C;oneiric_></strong> lol rehrar<br>
+<strong>&#x3C;anonimal></strong> oneiric_ is British Aerospace?<br>
+<strong>&#x3C;oneiric_></strong> ?<br>
+<strong>&#x3C;anonimal></strong> “bae” ;)<br>
+<strong>&#x3C;oneiric_></strong> lol<br>
+<strong>&#x3C;anonimal></strong> Anyway, aside from that, lots has happened between now and the previous meeting. Lots of development.<br>
+<strong>&#x3C;anonimal></strong> Anything else on point 2.?<br>
+<strong>&#x3C;rehrar></strong> not sure if I should report here<br>
+<strong>&#x3C;rehrar></strong> or in 3.<br>
+<strong>&#x3C;rehrar></strong> they kinda bleed together<br>
+<strong>&#x3C;anonimal></strong> 3. Contributor FFS check-in / status<br>
+<strong>&#x3C;anonimal></strong> Go<br>
+<strong>&#x3C;rehrar></strong> I been working<br>
+<strong>&#x3C;rehrar></strong> end<br>
+<strong>&#x3C;rehrar></strong> no but really<br>
+<strong>&#x3C;rehrar></strong> so my last payout was delayed because kovri died down for about a month or two. So rather than try to just do busywork that wouldn’t help anyone, I decided to delay my work and payment until we got the band back together so we can make sure we’re all working toward a common goal<br>
+<strong>&#x3C;anonimal></strong> A month or two?! Umm, no.<br>
+<strong>&#x3C;rehrar></strong> but I was doing some build work with oneiric, particularly documenting<br>
+<strong>&#x3C;anonimal></strong> When was this?<br>
+<strong>&#x3C;rehrar></strong> *a month<br>
+<strong>&#x3C;anonimal></strong> Two weeks is a month now?<br>
+<strong>&#x3C;rehrar></strong> intermittent people in #kovri from mid April to near end of May?<br>
+<strong>&#x3C;anonimal></strong> What does #kovri have to do with your FFS?<br>
+<strong>&#x3C;rehrar></strong> ummm…I’m just explaining why I felt it would be better to hold up on the work :/<br>
+<strong>&#x3C;anonimal></strong> If I can’t make it for ~2 weeks, that’s when other people are needed most; not the other way around.<br>
+<strong>&#x3C;anonimal></strong> Well, whatever your rationale, I don’t think anyone else cares if you weren’t working on your FFS so, you probably won’t hear any other complaints.<br>
+<strong>&#x3C;rehrar></strong> I have been working on my FFS. In fact it should be done today or tomorrow.<br>
+<strong>&#x3C;anonimal></strong> Sucks for me though because I get the brunt of it.<br>
+<strong>&#x3C;anonimal></strong> You just said you delayed your work, and now you’re telling me you’ve been working…<br>
+<strong>&#x3C;anonimal></strong> Which one is it?<br>
+<strong>&#x3C;rehrar></strong> …<br>
+<strong>&#x3C;rehrar></strong> it hasn’t been delayed the entire time anonimal<br>
+<strong>&#x3C;rottensalty07_></strong> anonimal: I believe you got twisted there…<br>
+<strong>&#x3C;rottensalty07_></strong> He didn’t work on the main thing for few days, but was working documenting under the table…<br>
+<strong>&#x3C;rehrar></strong> I was working on it for a couple weeks, then took a break while things died down, and then resumed recently when things picked back up<br>
+<strong>&#x3C;anonimal></strong> If your last payout was 2 months ago, and you said you delayed your work for 2 months, that equals 0 work if I understand correctly that 2 - 2 = 0<br>
+<strong>&#x3C;anonimal></strong> Ok<br>
+<strong>&#x3C;rehrar></strong> yes, but as you corrected, it wasn’t two months, and my “month or two” comment wasn’t correct as you said<br>
+<strong>&#x3C;anonimal></strong> I can’t account for under the table work.<br>
+<strong>&#x3C;rehrar></strong> excuse me for speaking flippantly<br>
+<strong>&#x3C;rehrar></strong> I can PR the documentation work that I’ve done, but you had said that you weren’t liking the whole “DO NOT MERGE” culture that had happened last time I did a PR to prove work<br>
+<strong>&#x3C;anonimal></strong> So what’s been done.<br>
+<strong>&#x3C;rehrar></strong> this is what I have been trying to explain :P<br>
+<strong>&#x3C;anonimal></strong> DO NOT MERGE equals not complete so why be paid for something that hasn’t been completed.<br>
+<strong>&#x3C;anonimal></strong> WIP is one thing, but you’re off the hook after this FFS.<br>
+<strong>&#x3C;anonimal></strong> So, is it done?<br>
+<strong>&#x3C;anonimal></strong> You set the deadlines of Q1, not me. I just want to see where we are.<br>
+<strong>&#x3C;rehrar></strong> Documenation with oneiric_, which is in progress, sent a PR with the recent multilingual changes that were on the getmonero.og site, lots and lots of logo work, fielding a few dev people that contacted out of interest, serhack collab for Mastering Monero, kovri defcon work<br>
+<strong>&#x3C;rehrar></strong> documentation is not done, but fairly far along. oneiric_ can attest that we spent quite some time working through various OS’s, as not all the instrutions worked 100% and there was a large amount of trouble shooting<br>
+<strong>&#x3C;rehrar></strong> *instructions<br>
+<strong>&#x3C;oneiric_></strong> That’s true, we worked on Debian builds, and a couple of the build options.<br>
+<strong>&#x3C;anonimal></strong> Ok<br>
+<strong>&#x3C;rehrar></strong> the OS specific documentation also requires a custom HTML/CSS scheme for the Get Started page, which I have experimented with and not found a solution for<br>
+<strong>&#x3C;anonimal></strong> I don’t think all of this is needed though.<br>
+<strong>&#x3C;oneiric_></strong> I was a bit unsure of a couple flags, and why the build was failing without them.<br>
+<strong>&#x3C;anonimal></strong> We have a table in the readme<br>
+<strong>&#x3C;anonimal></strong> What’s the goal?<br>
+<strong>&#x3C;rehrar></strong> one of the things we discussed was the rewrite the kovri docs<br>
+<strong>&#x3C;rehrar></strong> and to do it in a more user friendly wa<br>
+<strong>&#x3C;rehrar></strong> *way<br>
+<strong>&#x3C;rehrar></strong> I do indeed have a table as well, sitting in my branch of kovri docs<br>
+<strong>&#x3C;rehrar></strong> I can PR it right this second for proof<br>
+<strong>&#x3C;anonimal></strong> I ended up having to do the docs myself. <a href="https://github.com/monero-project/kovri-docs/pull/48" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/kovri-docs/pull/48</a><br>
+<strong>&#x3C;anonimal></strong> It’s June. This kind of stuff needed to be done Q1.<br>
+<strong>&#x3C;anonimal></strong> The user-guide could use improving though.<br>
+<strong>&#x3C;anonimal></strong> Anyway, whatever. What’s done is done.<br>
+<strong>&#x3C;rehrar></strong> the new multilingual scheme also requires different stuff for the way the site is handled<br>
+<strong>&#x3C;rehrar></strong> PR sent<br>
+<strong>&#x3C;anonimal></strong> Ok<br>
+<strong>&#x3C;rehrar></strong> the Kovri site is quite different from the Monero site, in that it relies on the pulled docs, which has pros and cons. Simplifies some things and complicates others.<br>
+<strong>&#x3C;anonimal></strong> Yes, but this doesn’t change that I’m having to do things myself; things you said you would do.<br>
+<strong>&#x3C;anonimal></strong> Also, what have you done with r/kovri?<br>
+<strong>&#x3C;anonimal></strong> AFAICT nothing for this FFS.<br>
+<strong>&#x3C;anonimal></strong> In fact, someone else had to come and moderate because of spam.<br>
+<strong>&#x3C;anonimal></strong> Have you done any r/kovri work that I’m unaware of?<br>
+<strong>&#x3C;rehrar></strong> no<br>
+<strong>&#x3C;anonimal></strong> “/r/Kovri design moderation and upkeep” &#x3C;— <a href="https://forum.getmonero.org/9/work-in-progress/89677/rehrar-s-2018-q1-kovri-proposal" rel="noopener noreferrer external" target="_blank">https://forum.getmonero.org/9/work-in-progress/89677/rehrar-s-2018-q1-kovri-proposal</a><br>
+<strong>&#x3C;anonimal></strong> Ok<br>
+<strong>&#x3C;anonimal></strong> Anything else for point 3. Contributor FFS check-in / status ?<br>
+<strong>&#x3C;oneiric_></strong> We already talked about mine, nothing else from me<br>
+<strong>&#x3C;anonimal></strong> 4. Alpha release discussion<br>
+<strong>&#x3C;anonimal></strong> The date is by defcon.<br>
+<strong>&#x3C;anonimal></strong> I have no clue where pigeons is.<br>
+<strong>&#x3C;anonimal></strong> I can’t develop on BSD nor windows. These meta issue tickets are piling up.<br>
+<strong>&#x3C;anonimal></strong> The alpha will be a sum result of what the community can handle.<br>
+<strong>&#x3C;anonimal></strong> s/I can’t develop on BSD nor windows/I can’t develop on BSD nor windows because of <a href="https://github.com/monero-project/meta/issues/178" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/meta/issues/178</a> and <a href="https://github.com/monero-project/meta/issues/238" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/meta/issues/238</a><br>
+<strong>&#x3C;rehrar></strong> I’ll ping pigeons right now<br>
+<strong>&#x3C;anonimal></strong> These shouldn’t be issues. This is why we need to move on <a href="https://github.com/monero-project/meta/issues/237" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/meta/issues/237</a><br>
+<strong>&#x3C;anonimal></strong> I’m already donating my time. If I wasn’t donating that, then I’d be donating my money.<br>
+<strong>&#x3C;rehrar></strong> hmmm…ok. Do you think it’s worthwhile to have us kovri people set up some stuff and maintain them?<br>
+<strong>&#x3C;anonimal></strong> That’s the point of #237, or at least one of the points.<br>
+<strong>&#x3C;anonimal></strong> We’re running out of time, anything else on 4. Alpha release discussion?<br>
+<strong>&#x3C;rehrar></strong> right, but we can get an action item on that in that we can have someone do it specifically for Kovri. Other workgroups can follow suit as they want.<br>
+<strong>&#x3C;anonimal></strong> Moving the issue from Monero Project Meta to Monero Project Taiga defeats the purpose of decentralization.<br>
+<strong>&#x3C;anonimal></strong> But no one is stopping you from doing that.<br>
+<strong>&#x3C;rehrar></strong> I can set up a Kovri taiga :)<br>
+<strong>&#x3C;rehrar></strong> and we can have our various Kovri related tasks on there instead of on the getmonero one<br>
+<strong>&#x3C;anonimal></strong> That won’t work, because you’re paid by Ric do work for Monero Project.<br>
+<strong>&#x3C;anonimal></strong> Me or someone else would need to host it.<br>
+<strong>&#x3C;anonimal></strong> But you can do whatever you want.<br>
+<strong>&#x3C;anonimal></strong> 10 minutes left, we need to move on.<br>
+<strong>&#x3C;anonimal></strong> 5. Public relations discussion<br>
+<strong>&#x3C;anonimal></strong> _4matter is doing some great work behind the scenes in this area.<br>
+<strong>&#x3C;anonimal></strong> He couldn’t make the meeting but I’m assuming he’ll make the next one.<br>
+<strong>&#x3C;anonimal></strong> I like his ideas/approach. He can speak more when he returns.<br>
+<strong>&#x3C;anonimal></strong> I advised him that he shouldn’t repeat the work that rehrar’s done. rehrar did a ton of work in the outreach area and, no fault of his own, it had mixed results.<br>
+<strong>&#x3C;rehrar></strong> it was an eye opening experience :D<br>
+<strong>&#x3C;anonimal></strong> I’ll add an item to the next meeting regarding public relations.<br>
+<strong>&#x3C;anonimal></strong> rehrar got to learn that developers are like violinists:<br>
+<strong>&#x3C;anonimal></strong> they all think they’re hot shit or that they are soloist material - but many are not :)<br>
+<strong>&#x3C;anonimal></strong> s/violinists/young classical violinists/<br>
+<strong>&#x3C;anonimal></strong> Anyway, inside classical humor.<br>
+<strong>&#x3C;anonimal></strong> I watched rehrar’s jitsi meeting recently. I think you have a penchant for sales.<br>
+<strong>&#x3C;anonimal></strong> If you haven’t successfully done that, I wouldn’t be surprised if you do more of that.<br>
+<strong>&#x3C;rehrar></strong> sales? Like selling stuff?<br>
+<strong>&#x3C;rehrar></strong> Selling people on stuff, I guess.<br>
+<strong>&#x3C;anonimal></strong> Yeah, and PR.<br>
+<strong>&#x3C;rehrar></strong> <em>shrug</em> not really one of my interests, but thanks.<br>
+<strong>&#x3C;rehrar></strong> :)<br>
+<strong>&#x3C;ErCiccione></strong> sorry, just finished to read the logs, i’m a bit late to the party. anything you guys want to tell me about translating getkovri?<br>
+<strong>&#x3C;anonimal></strong> Well it’s come in handy.<br>
+<strong>&#x3C;anonimal></strong> Hi ErCiccione<br>
+<strong>&#x3C;rehrar></strong> PR sent ErCiccione with the newest updates similar to getmonero.org<br>
+<strong>&#x3C;ErCiccione></strong> hello :)<br>
+<strong>&#x3C;rehrar></strong> but since getkovri is set up differently, there is still a substantial amount that is not done via tags<br>
+<strong>&#x3C;rehrar></strong> handled via kovri-docs<br>
+<strong>&#x3C;ErCiccione></strong> seen it, tomorrow i will give it a better look and i will change the instructions on taiga if needed<br>
+<strong>&#x3C;rehrar></strong> I’m updating the README for the site after this meeting<br>
+<strong>&#x3C;ErCiccione></strong> ok, perfect will read the workflow changes from there<br>
+<strong>&#x3C;anonimal></strong> Thanks for all the work you’ve done too, ErCiccione.<br>
+<strong>&#x3C;_4matter></strong> anonimal: saw the ping above. On mobile and out of town for a wedding, but I will read through the above.<br>
+<strong>&#x3C;_4matter></strong> :)<br>
+<strong>&#x3C;anonimal></strong> _4matter: ok, I said that you weren’t around and other things. No rush.<br>
+<strong>&#x3C;anonimal></strong> ErCiccione: anything else?<br>
+<strong>&#x3C;rehrar></strong> question: should we have a Kovri defcon meeting on the weekday so it’s easier to attend? Separate from the overall defcon meeting on Saturdays?<br>
+<strong>&#x3C;ErCiccione></strong> anonimal: happy to help. no, not from me. Will try to find some more contributors for translations in future. didn’t have much luck with that last reddit post<br>
+<strong>&#x3C;anonimal></strong> Yes, or move the defcon meetings to a later time on Saturdays.<br>
+<strong>&#x3C;rehrar></strong> I can request it. What time is good?<br>
+<strong>&#x3C;rehrar></strong> This time?<br>
+<strong>&#x3C;anonimal></strong> Good luck ErCiccione, you’ll find them.<br>
+<strong>&#x3C;ErCiccione></strong> :)<br>
+<strong>&#x3C;anonimal></strong> I know where michael is geographically so I understand 15:00 UTC. It’s really up to him since he’s heading the show.<br>
+<strong>&#x3C;rehrar></strong> alright, I’ll send him a message.<br>
+<strong>&#x3C;anonimal></strong> But if the community wants me involved, then they’ll have to budge just a little.<br>
+<strong>&#x3C;anonimal></strong> If not, then they’ll be leaving me out and a big chunk of the project.<br>
+<strong>&#x3C;anonimal></strong> Which has been the case.<br>
+<strong>&#x3C;rehrar></strong> Honestly, Kovri is one of the bigger things that should be at Defcon, at least imo.<br>
+<strong>&#x3C;anonimal></strong> Even though I repeatedly asked if the community meetings could be moved slightly.<br>
+<strong>&#x3C;anonimal></strong> For months. And months.<br>
+<strong>&#x3C;anonimal></strong> But here we are.<br>
+<strong>&#x3C;rehrar></strong> And I’ll fight to make sure you and Kovri are fairly represented there.<br>
+<strong>&#x3C;rehrar></strong> For community meetings, would an hour or two later be better?<br>
+<strong>&#x3C;rehrar></strong> my client refuses to respond<br>
+<strong>&#x3C;anonimal></strong> 17:00 UTC if possible, but that conflicts with the community meetings.<br>
+<strong>&#x3C;anonimal></strong> sgp has always been pretty staunch about that timeslot.<br>
+<strong>&#x3C;rehrar></strong> I’ll tweak a few nipples and see what I can’t get done<br>
+<strong>&#x3C;anonimal></strong> ouch<br>
+<strong>&#x3C;rehrar></strong> sometimes you gotta pull out the big guns<br>
+<strong>&#x3C;anonimal></strong> tweezers<br>
+<strong>&#x3C;anonimal></strong> If they won’t budge, whatever we did worked last time rehrar<br>
+<strong>&#x3C;anonimal></strong> Was it a Tuesday at 20:00 or around there<br>
+<strong>&#x3C;anonimal></strong> Yeah, that.<br>
+<strong>&#x3C;rehrar></strong> after the meeting, we can discuss your meta issues for decentralization. I’ve got a few ideas (that don’t involve me or Core Team).<br>
+<strong>&#x3C;anonimal></strong> Defcon is a lot of work, that’s for sure.<br>
+<strong>&#x3C;rehrar></strong> or whenever you have the time<br>
+<strong>&#x3C;rehrar></strong> dude, what makes defcon a bigger headache is that BCOS won’t communicate with us :(<br>
+<strong>&#x3C;anonimal></strong> I don’t have any time for anything. I don’t even have time to get to “6. Code + ticket discussion / Q &#x26; A”<br>
+<strong>&#x3C;anonimal></strong> Ideas are welcome though, of course.<br>
+<strong>&#x3C;rehrar></strong> ok. I’ll put it in the Issue<br>
+<strong>&#x3C;anonimal></strong> What’s the deal with BCOS?<br>
+<strong>&#x3C;rehrar></strong> they…aren’t responding to emails in a timely manner (or at all)<br>
+<strong>&#x3C;_Slack> &#x3C;sean></strong> background Seinfeld music<br>
+<strong>&#x3C;anonimal></strong> Or you can paste here if you want and I’ll respond<br>
+<strong>&#x3C;anonimal></strong> lol sean<br>
+<strong>&#x3C;anonimal></strong> “So what’s the deal with BCOS?!”<br>
+<strong>&#x3C;rehrar></strong> Alright, i will be fairly unavailable starting tomorrow and through the 14th<br>
+<strong>&#x3C;anonimal></strong> “Can the NOT afford to communicate with Monero?!”<br>
+<strong>&#x3C;rehrar></strong> fyi for everyone here :)<br>
+<strong>&#x3C;rehrar></strong> will respond to Wire or Signal if need be, but limited IRC<br>
+<strong>&#x3C;anonimal></strong> Sorry sean, I can’t top your line with anything funnier.<br>
+<strong>&#x3C;_Slack> &#x3C;sean></strong> BCOS.<br>
+<strong>&#x3C;_Slack></strong> Command sent from Slack by sean:<br>
+<strong>&#x3C;_Slack></strong> …that’s the joke.<br>
+<strong>&#x3C;anonimal></strong> Ok. Thanks for the headsup rehrar.<br>
+<strong>&#x3C;rehrar></strong> it’s crazy that nobody’s ever heard of them before this<br>
+<strong>&#x3C;anonimal></strong> lol sean<br>
+<strong>&#x3C;rehrar></strong> but they got such a prominent spot at Defcon<br>
+<strong>&#x3C;rehrar></strong> <em>shrug</em> oh well<br>
+<strong>&#x3C;anonimal></strong> rehrar: and will anyone ever hear about them after defcon…<br>
+<strong>&#x3C;rehrar></strong> evidently they were at last defcon in a village or something<br>
+<strong>&#x3C;rehrar></strong> disappeared for a y ear<br>
+<strong>&#x3C;rehrar></strong> then came back for the next one :D<br>
+<strong>&#x3C;_Slack> &#x3C;sean></strong> They did post that Coinbase is a sponsor, so I’m wondering why they’re so damn disorganized.<br>
+<strong>&#x3C;anonimal></strong> I don’t know.<br>
+<strong>&#x3C;rehrar></strong> anyways<br>
+<strong>&#x3C;oneiric_></strong> For 6, I spent most of late-April to May working on multiple subscriptions. Few unit tests left, break it up into smaller chunks for review, and it should be ready.<br>
+<strong>&#x3C;anonimal></strong> Ok, anything else before we move on? We’re in overdrive.<br>
+<strong>&#x3C;anonimal></strong> Thank you oneiric_, keeping us on track.<br>
+<strong>&#x3C;anonimal></strong> 6. Code + ticket discussion / Q &#x26; A<br>
+<strong>&#x3C;anonimal></strong> Ok<br>
+<strong>&#x3C;anonimal></strong> Oh, I didn’t mention, for this and for the FFS check-in, I’ll be submitting the next milestone too.<br>
+<strong>&#x3C;rehrar></strong> woohoo!<br>
+<strong>&#x3C;rehrar></strong> you pushing the limits, man<br>
+<strong>&#x3C;anonimal></strong> lol, I’m glad <em>someone</em> is excited, haha<br>
+<strong>&#x3C;anonimal></strong> Well at close to 180 hours, yes, I’ll be submitting.<br>
+<strong>&#x3C;rehrar></strong> for real, the community doesn’t appreciate the stupid amounts of work you put in to this project<br>
+<strong>&#x3C;anonimal></strong> I’m tired of the free handouts and I also just want this FFS done as I’m sure everyone else wants too.<br>
+<strong>&#x3C;anonimal></strong> Thanks rehrar.<br>
+<strong>&#x3C;anonimal></strong> Yes, they don’t.<br>
+<strong>&#x3C;anonimal></strong> And most people also think fluffypony is the CEO and lead developer of Monero.<br>
+<strong>&#x3C;anonimal></strong> As seen in every recent interview.<br>
+<strong>&#x3C;rehrar></strong> isn’t that the most bizarre thing?<br>
+<strong>&#x3C;anonimal></strong> Or post somewhere.<br>
+<strong>&#x3C;rehrar></strong> I see a lot of people post that he started monero too<br>
+<strong>&#x3C;anonimal></strong> I think he’s given up on correcting them.<br>
+<strong>&#x3C;anonimal></strong> Anyway, so I’m the CEO and lead developer of Monero too.<br>
+<strong>&#x3C;rehrar></strong> Creator, lead dev, and CEO. Must be nice. :P<br>
+<strong>&#x3C;anonimal></strong> And I have several lambos and boats.<br>
+<strong>&#x3C;anonimal></strong> Hey, this fantasy land is pretty sweet.<br>
+<strong>&#x3C;rehrar></strong> let me in :(<br>
+<strong>&#x3C;oneiric_></strong> Any jets flown by unicorns?<br>
+<strong>&#x3C;anonimal></strong> 7. Any additional meeting items<br>
+<strong>&#x3C;anonimal></strong> rehrar: it’s simple: just say it and it appears.<br>
+<strong>&#x3C;anonimal></strong> oneiric_: yes. As many as you want.<br>
+<strong>&#x3C;rehrar></strong> No other items from me.<br>
+<strong>&#x3C;anonimal></strong> Nothing from me but I’m on autopilot right now anyway. If I missed something, please yell.<br>
+<strong>&#x3C;anonimal></strong> Shall we schedule a kovri defcon meeting and if the community channel agrees to be flexible, we just cancel the kovri defcon meeting, rehrar?<br>
+<strong>&#x3C;oneiric_></strong> Same, anything else I have can be discussed outside meeting, or wait until the next one.<br>
+<strong>&#x3C;rehrar></strong> that sounds like a sane thing to do<br>
+<strong>&#x3C;rehrar></strong> pinging sgp_[m] now<br>
+<strong>&#x3C;anonimal></strong> I’ll open the github issue.<br>
+<strong>&#x3C;anonimal></strong> 8. Confirm next meeting date/time<br>
+<strong>&#x3C;rehrar></strong> Google calendar knows all<br>
+<strong>&#x3C;anonimal></strong> July 5th?<br>
+<strong>&#x3C;anonimal></strong> Or sooner?<br>
+<strong>&#x3C;anonimal></strong> I can’t do 21st but can do 14th and 28th.<br>
+<strong>&#x3C;anonimal></strong> rehrar probably can’t do the 14th<br>
+<strong>&#x3C;rehrar></strong> can’t do 14th as stated, but can do 28th<br>
+<strong>&#x3C;rehrar></strong> ^ mind reader<br>
+<strong>&#x3C;anonimal></strong> oneiric_: 28th?<br>
+<strong>&#x3C;oneiric_></strong> 28th works for me too<br>
+<strong>&#x3C;sgp_[m]></strong> anonimal I must have missed your repeated desire to move the commubity meetings. I didn’t realize they conflicted with your schedule, especially since there was a significant period without kovri meetings. I’m open to working out a schedule that works for everyone<br>
+<strong>&#x3C;anonimal></strong> sgp_[m]: this goes back to the beginning of the year if not later<br>
+<strong>&#x3C;anonimal></strong> Whenever you started the community channel.<br>
+<strong>&#x3C;anonimal></strong> It’s all on github and/or irc logs.<br>
+<strong>&#x3C;anonimal></strong> I just gave up complaining.<br>
+<strong>&#x3C;anonimal></strong> rehrar: oneiric_ I’ll open a new issue for the next kovri meeting<br>
+<strong>&#x3C;rehrar></strong> ok, great<br>
+<strong>&#x3C;anonimal></strong> I do look forward to resolving the Meeting Solutions issue though.<br>
+<strong>&#x3C;oneiric_></strong> right on<br>
+<strong>&#x3C;anonimal></strong> One simple solution is a meeting bot which uploads logs to a website automatically.<br>
+<strong>&#x3C;anonimal></strong> This is old-school, done-to-death solution and works well.<br>
+<strong>&#x3C;anonimal></strong> And when you want to know the next meeting: !meeting<br>
+<strong>&#x3C;rehrar></strong> that’s pretty neat<br>
+<strong>&#x3C;anonimal></strong> supybot did/does this, as did others<br>
+<strong>&#x3C;anonimal></strong> I have no idea who’s doing what anymore<br>
+<strong>&#x3C;anonimal></strong> I haven’t been to a Tor meeting in ages but they had their bot the last I saw.<br>
+<strong>&#x3C;anonimal></strong> Anyway, simple solution; but doesn’t satisfy the modern age very well afaict<br>
+<strong>&#x3C;rehrar></strong> ICO a solution<br>
+<strong>&#x3C;anonimal></strong> That’s always the solution<br>
+<strong>&#x3C;rehrar></strong> it’s never not the solution<br>
+<strong>&#x3C;anonimal></strong> “Honey can you grab me milk from the store?” “Sure, startup an ICO.”<br>
+<strong>&#x3C;anonimal></strong> Alright, meeting done?<br>
+<strong>&#x3C;rehrar></strong> Ye<br>
+<strong>&#x3C;rehrar></strong> bai everyone<br>
+<strong>&#x3C;rehrar></strong> kisses for all<br>
+<strong>&#x3C;anonimal></strong> Thanks everyone</p>  </div>  </article> <aside data-border="true" data-transparent="true" style="--card-padding: var(--space-xl); --card-radius: var(--radius-md)" data-astro-cid-jbepnj6h="true" data-astro-cid-dd5txfcy="true" class="card sidebar">  <h2 data-astro-cid-jbepnj6h>المنشورات الأخيرة</h2> <ul class="recent-posts" data-astro-cid-jbepnj6h> <li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/03/04/monero-GUI-0.18.4.7-released/" data-astro-cid-jbepnj6h> Monero GUI 0.18.4.7 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-jbepnj6h> ٤ مارس ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/03/04/monero-0.18.4.6-released/" data-astro-cid-jbepnj6h> Monero 0.18.4.6 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-jbepnj6h> ٤ مارس ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/01/07/monero-GUI-0.18.4.5-released/" data-astro-cid-jbepnj6h> Monero GUI 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-jbepnj6h> ٧ يناير ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/01/07/monero-0.18.4.5-released/" data-astro-cid-jbepnj6h> Monero 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-jbepnj6h> ٧ يناير ٢٠٢٦ </time> </li> </ul>  </aside>  </div>  </main> <footer class="footer" aria-label="التذييل" data-astro-cid-mh6itkc3> <div class="items" data-astro-cid-mh6itkc3> <nav class="grid" aria-label="تنقل التذييل" data-astro-cid-mh6itkc3> <section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>الموارد</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/ar/get-started/what-is-monero/" data-astro-cid-mh6itkc3> حول Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/moneropedia/" data-astro-cid-mh6itkc3> مونيروبيديا  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://docs.getmonero.org" data-astro-cid-mh6itkc3> وثائق Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/get-started/faq/" data-astro-cid-mh6itkc3> الأسئلة الشائعة  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>تواصل</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/ar/community/workgroups/" data-astro-cid-mh6itkc3> مجموعات العمل  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/community/hangouts/" data-astro-cid-mh6itkc3> الأماكن  </a> </li><li data-astro-cid-mh6itkc3> <a href="/postorius/lists/monero-announce.lists.getmonero.org" data-astro-cid-mh6itkc3> قائمة البريد  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>المجتمع</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://monero.stackexchange.com/" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Stack Exchange  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://bitcointalk.org/index.php?topic=583449.0" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Bitcoin Talk  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://translate.getmonero.org" data-astro-cid-mh6itkc3> ترجم  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>مشروع Monero</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://openalias.org" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Open Alias  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/research-lab/" data-astro-cid-mh6itkc3> مختبر بحث Monero (MRL)  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/press-kit/" data-astro-cid-mh6itkc3> مجموعة الصحافة  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://ccs.getmonero.org" data-astro-cid-mh6itkc3> نظام التمويل الجماعي المجتمعي  </a> </li> </ul> </section> </nav> <nav class="bottom" aria-label="تنقل التذييل الثانوي" data-astro-cid-mh6itkc3> <ul class="inline-list" data-astro-cid-mh6itkc3> <li class="inline-item" data-astro-cid-mh6itkc3> <a href="#" data-astro-cid-mh6itkc3> خدمة Tor Onion <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/tor.D04gt7iP_278xXg.avif);--iconColor: #7d4698;--spacing: 0.25em;"></div>  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> استجابة الثغرات  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/ar/legal/" data-astro-cid-mh6itkc3> القانوني  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> رمز المصدر  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/feed.xml" data-astro-cid-mh6itkc3> تغذية RSS <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/rss.jnIu9F4x_Z28u6pV.avif);--iconColor: var(--monero-orange);--spacing: 0.25em;"></div>  </a> </li> </ul> </nav> </div> </footer>   </body></html> 

@@ -1,0 +1,362 @@
+<!DOCTYPE html><html lang="zh" dir="ltr" data-astro-cid-sckkx6r4> <head><title>博客 | Overview and Logs for the Dev Meeting Held on 2016-10-16</title><meta charset="UTF-8"><link rel="canonical" href="https://beta.monerodevs.org/zh/blog/2016/10/16/overview-and-logs-for-the-dev-meeting-held-on-2016-10-16/"><meta name="description" content="Review and discussion of Open PRs, contribution guidelines, and official GUI"><meta name="robots" content="index, follow"><meta property="og:title" content="Overview and Logs for the Dev Meeting Held on 2016-10-16"><meta property="og:type" content="article"><meta property="og:image" content="https://beta.monerodevs.org/open-graph/blog/2016/10/16/overview-and-logs-for-the-dev-meeting-held-on-2016-10-16.png"><meta property="og:url" content="https://beta.monerodevs.org/zh/blog/2016/10/16/overview-and-logs-for-the-dev-meeting-held-on-2016-10-16/"><meta property="og:locale" content="zh"><meta property="og:locale:alternate" content="en"><meta property="og:locale:alternate" content="ar"><meta property="og:site_name" content="Monero"><meta property="og:image:url" content="https://beta.monerodevs.org/open-graph/blog/2016/10/16/overview-and-logs-for-the-dev-meeting-held-on-2016-10-16.png"><meta property="og:image:alt" content="OpenGraph image for Monero blog post titled &#34;Overview and Logs for the Dev Meeting Held on 2016-10-16&#34;"><meta property="article:published_time" content="2016-10-16T00:00:00.000Z"><meta property="article:author" content="dEBRUYNE / fluffypony"><meta property="article:tag" content="dev diaries"><meta property="article:tag" content="core"><meta property="article:tag" content="crypto"><meta property="article:tag" content="0mq"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@monero"><meta name="twitter:title" content="Overview and Logs for the Dev Meeting Held on 2016-10-16"><meta name="twitter:image" content="https://beta.monerodevs.org/open-graph/blog/2016/10/16/overview-and-logs-for-the-dev-meeting-held-on-2016-10-16.png"><meta name="twitter:description" content="Review and discussion of Open PRs, contribution guidelines, and official GUI"><link rel="preload" as="font" type="font/woff2" href="/_astro/dm-sans-latin-wght-normal.Xz1IZZA0.woff2" crossorigin="anonymous"><link rel="icon" href="/meta/favicon-16x16.png" sizes="16x16"><link rel="icon" href="/meta/favicon-32x32.png" sizes="32x32"><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.18.0"><meta name="color-scheme" content="light dark"><link rel="alternate" hreflang="en" href="https://beta.monerodevs.org/blog/2016/10/16/overview-and-logs-for-the-dev-meeting-held-on-2016-10-16/"><link rel="alternate" hreflang="ar" href="https://beta.monerodevs.org/ar/blog/2016/10/16/overview-and-logs-for-the-dev-meeting-held-on-2016-10-16/"><link rel="alternate" hreflang="zh" href="https://beta.monerodevs.org/zh/blog/2016/10/16/overview-and-logs-for-the-dev-meeting-held-on-2016-10-16/"><link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="https://beta.monerodevs.org/feed.xml"><style>#blog-content{line-height:var(--line-height-body);word-wrap:break-word;color:light-dark(inherit,var(--paragraph-main));:where(h2,h3,h4){font-weight:var(--font-weight-bold)}img{border-radius:var(--radius-md)}a:not(.moneropedia-link){color:light-dark(var(--text-primary),var(--paragraph-main));font-weight:var(--font-weight-medium);text-decoration-line:underline;text-decoration-style:dotted;&:hover{color:light-dark(var(--text-secondary),var(--heading-color))}}h1{font-size:var(--font-size-2xl)}h2{font-size:var(--font-size-xl)}h3{font-size:var(--font-size-lg)}h4{font-size:var(--font-size-md)}p{margin-bottom:1em}li{margin-bottom:.25em}pre{padding:1em;border-radius:var(--radius-md);overflow-x:auto;background:var(--footer-color);code{background:none;padding:0;border-radius:0}}code:not(pre code){font-family:monospace;background-color:var(--footer-color);padding:.1em .3em;border-radius:var(--radius-sm)}blockquote{margin:1.5em 0;padding-inline:1.5em 1em;border-inline-start:3px solid var(--border-color);font-style:italic;color:var(--text-secondary)}strong{font-weight:var(--font-weight-bold)}em{font-style:italic}}h1[data-astro-cid-7dcwcvhl]{font-size:var(--font-size-3xl);margin:0}#post-header[data-astro-cid-7dcwcvhl]{margin-bottom:var(--page-top-margin)}#meta[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-2xl);color:var(--text-secondary);margin-top:var(--space-md);margin-bottom:var(--space-xl);font-size:var(--font-size-lg);font-weight:var(--font-weight-normal)}.meta-item[data-astro-cid-7dcwcvhl]{display:flex;align-items:center;gap:var(--space-xs);>.icon{display:grid;place-items:center;color:var(--monero-orange)}}.tag-container[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-xs);font-size:var(--font-size-sm);flex-wrap:wrap;.tag{text-align:center;padding:var(--space-2xs) var(--space-sm);background:var(--footer-color);border-radius:var(--radius-md);text-transform:uppercase;font-weight:var(--font-weight-semibold);text-decoration:none;color:inherit;white-space:nowrap;&:hover{color:var(--text-secondary)}}}@media(width<=600px){#meta[data-astro-cid-7dcwcvhl]{flex-direction:column;font-size:var(--font-size-md);font-weight:var(--font-weight-medium);gap:var(--space-md)}.meta-item[data-astro-cid-7dcwcvhl]{>.icon{font-size:var(--font-size-lg)}}}
+.card[data-astro-cid-dd5txfcy]{background:var(--card-color);padding:var(--card-padding);border-radius:var(--card-radius);&[data-border]{border:1px solid var(--border-color)}&[data-transparent]{background:transparent}&[data-hover]{transition:background .15s ease;&[data-astro-cid-dd5txfcy]:hover,&[data-astro-cid-dd5txfcy]:focus-visible{background:var(--card-hover-color)}}}
+.icon[data-astro-cid-bpjkz5as]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);margin-inline-start:var(--spacing);background:var(--iconColor);mask:var(--iconSrc) no-repeat center / contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}
+</style>
+<link rel="stylesheet" href="/_astro/_page_.DxMr-0dd.css">
+<style>.blog-container[data-astro-cid-ndejf7ww]{display:grid;grid-template-columns:1fr;gap:var(--space-2xl);>*{min-width:0}}.sidebar[data-astro-cid-ndejf7ww]{height:fit-content;& h2[data-astro-cid-ndejf7ww]{font-size:var(--font-size-xl);margin-top:0}}.recent-posts[data-astro-cid-ndejf7ww]{list-style:none;padding:0;margin-bottom:0;display:flex;flex-direction:column;gap:var(--space-md);li{margin-bottom:var(--space-xs)}.post-title{font-size:var(--font-size-md);color:var(--paragraph-main);text-decoration-line:underline;text-decoration-style:dotted;&:hover{text-decoration:underline}}.post-date{display:block;font-size:var(--font-size-sm);color:var(--paragraph-subtitle);margin-top:var(--space-2xs)}}@media(width>=1200px){.blog-container[data-astro-cid-ndejf7ww]{grid-template-columns:1fr 65ch 1fr}.blog-post[data-astro-cid-ndejf7ww]{grid-column:2}.sidebar[data-astro-cid-ndejf7ww]{grid-column:2;grid-row:2}}@media(width>=1600px){.sidebar[data-astro-cid-ndejf7ww]{grid-column:3;grid-row:1}}
+:where([data-astro-image]){object-fit:var(--fit);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+.moneropedia-link{position:relative;display:inline-block;color:var(--monero-orange);text-decoration-line:underline;text-decoration-style:dotted;cursor:help;font-weight:var(--font-weight-medium)}.moneropedia-link:hover,.moneropedia-link:focus-visible{text-decoration:none}.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{content:none}@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{position:absolute;left:50%;opacity:0;pointer-events:none;transform:translate(-50%) translateY(0);transition:opacity .18s ease-out,transform .18s ease-out;z-index:10}.moneropedia-link[data-tooltip]:before{content:attr(data-tooltip);bottom:calc(100% + .5rem);padding:.5rem .75rem;background:var(--card-color);border:1px solid var(--border-color);border-radius:.25rem;box-sizing:border-box;overflow-wrap:break-word;min-inline-size:25ch;max-inline-size:min(35ch,calc(100vw - 2.5rem));font-size:var(--font-size-sm);line-height:var(--line-height-caption);color:var(--text-primary);box-shadow:0 2px 8px #0000004d}.moneropedia-link[data-tooltip]:after{content:"";bottom:calc(100% + .25rem);border-width:.35rem .35rem 0;border-style:solid;border-color:var(--card-color) transparent transparent transparent}.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):before,.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):after{opacity:1;transform:translate(-50%) translateY(-2px)}}@media(prefers-reduced-motion:reduce){@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{transition:none}}}
+.icon[data-astro-cid-7wapxsvo]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);aspect-ratio:1 / 1;vertical-align:middle;--iconUrl: var(--lightUrl);background-image:var(--iconUrl);background-repeat:no-repeat;background-position:center;background-size:contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}@media(prefers-color-scheme:dark){.icon[data-astro-cid-7wapxsvo]{--iconUrl: var(--darkUrl)}}
+</style></head> <body data-astro-cid-sckkx6r4> <header class="header" data-astro-cid-dm2weclu> <div class="header-inner" data-astro-cid-dm2weclu> <a class="brand" href="/zh/" data-astro-cid-dm2weclu> <img src="/_astro/monerologo.CMdKQEkN_10Rm8s.avif" srcset="/_astro/monerologo.CMdKQEkN_10Rm8s.avif 64w, /_astro/monerologo.CMdKQEkN_10Rm8s.avif 128w" alt aria-hidden="true" data-astro-cid-dm2weclu="true" loading="eager" decoding="sync" fetchpriority="high" sizes="(min-width: 64px) 64px, 100vw" style="--fit: cover; --pos: center;" data-astro-image="constrained" width="64" height="64" class="mark"> <span data-astro-cid-dm2weclu>MONERO</span> </a> <input id="nav-toggle" class="nav-toggle" type="checkbox" data-astro-cid-dm2weclu> <nav id="primary-nav" class="nav" aria-label="主要" data-astro-cid-dm2weclu> <div class="drawer-header" data-astro-cid-dm2weclu> <label for="nav-toggle" class="close" aria-controls="primary-nav" aria-label="关闭菜单" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/close.CneAMmXr_ZaFGrm.avif);--iconColor: currentColor;"></div>  </label> </div> <fieldset data-astro-cid-dm2weclu> <legend class="sr-only" data-astro-cid-dm2weclu>主要导航部分</legend> <ul class="nav-list" data-astro-cid-dm2weclu> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-bmoz9cuhv" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-bmoz9cuhv-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 入门 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-bmoz9cuhv" class="mobile-open" aria-label="Open 入门 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-bmoz9cuhv-close" class="mobile-close" aria-label="Close 入门 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="入门 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/get-started/what-is-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--darkUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>什么是 Monero？</div> <div class="desc" data-astro-cid-lm33vczh>关于 Monero 您需要了解的一切概览。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/exchanges/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/merchants-exchanges.DN61YseO_ZQ3Km9.avif);--darkUrl: url(/_astro/merchants-exchanges.BjKEmUcz_1O8q9G.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>购买 Monero</div> <div class="desc" data-astro-cid-lm33vczh>允许您购买或交易 Monero 的加密货币交易所。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/merchants/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>使用 Monero</div> <div class="desc" data-astro-cid-lm33vczh>查找接受 Monero 支付的地点和服务。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/accept-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/accept-monero.COXM8aHM_Z1II116.avif);--darkUrl: url(/_astro/accept-monero.C3WCFfqe_Z2tp8Kw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>接受 Monero</div> <div class="desc" data-astro-cid-lm33vczh>了解如何作为商家或个人接受 XMR。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/mining/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/mining.DBRk7HAe_Zd3ukV.avif);--darkUrl: url(/_astro/mining.B54FNZld_Z2jnjrG.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>挖矿</div> <div class="desc" data-astro-cid-lm33vczh>了解如何在您的电脑上挖掘 Monero。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/contribute/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/contribute.DKeO9Dve_Z2vEvfu.avif);--darkUrl: url(/_astro/contribute.zLqiOwb5_Z1qe0gS.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>贡献</div> <div class="desc" data-astro-cid-lm33vczh>帮助 Monero 项目为每个人带来隐私。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/get-started/faq/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/faq.C8QObR1A_1A5Irh.avif);--darkUrl: url(/_astro/faq.BNcLqXOJ_ZaSdVI.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>常见问题</div> <div class="desc" data-astro-cid-lm33vczh>查找关于 Monero 常见问题的答案。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/zh/downloads/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 下载  </a>  </div>  </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/zh/blog/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 博客  </a>  </div>  </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-r58m2222m" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-r58m2222m-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 社区 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-r58m2222m" class="mobile-open" aria-label="Open 社区 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-r58m2222m-close" class="mobile-close" aria-label="Close 社区 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="社区 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/community/workgroups/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/workgroups.OzoDQ7NV_Z1Lwqqs.avif);--darkUrl: url(/_astro/workgroups.CGbkWAXL_Z1m0ybJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>工作组</div> <div class="desc" data-astro-cid-lm33vczh>与 Monero 的专门工作组在开发、研究和社区工作方面进行合作。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/community/sponsorships/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>赞助商</div> <div class="desc" data-astro-cid-lm33vczh>支持 Monero 项目的企业列表。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/community/hangouts/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/hangouts.CiWxE-i9_ZeEICj.avif);--darkUrl: url(/_astro/hangouts.Do4DJEA1_257lPw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>社交场所</div> <div class="desc" data-astro-cid-lm33vczh>加入 Monero 社区聚会和活动，与其他爱好者和开发者交流。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-o43vk2fdt" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-o43vk2fdt-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> 资源 <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-o43vk2fdt" class="mobile-open" aria-label="Open 资源 menu" data-astro-cid-pbmdh2tw></label> <label for="dd-o43vk2fdt-close" class="mobile-close" aria-label="Close 资源 menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="资源 menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/zh/resources/knowledge-base/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/moneropedia.7o-c8ZX4_lSmb.avif);--darkUrl: url(/_astro/moneropedia.CYJm2-Q5_1KG40X.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>知识库</div> <div class="desc" data-astro-cid-lm33vczh>书籍、出版物、杂志、Moneropedia。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/roadmap/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/roadmap.DoSq9h9o_Z1QuQpv.avif);--darkUrl: url(/_astro/roadmap.BONb2rwk_2hroDR.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>路线图</div> <div class="desc" data-astro-cid-lm33vczh>了解最新的 Monero 开发计划和进展。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/research-lab/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/research-lab.D90VAC3d_WkkdD.avif);--darkUrl: url(/_astro/research-lab.uv3a8gpS_Z7cyXJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>研究实验室</div> <div class="desc" data-astro-cid-lm33vczh>探索 Monero 研究实验室的出版物和研究。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/tools/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/tools.CTqUs9cD_Z1hqOiO.avif);--darkUrl: url(/_astro/tools.BW4KRKDW_Z6Gril.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero 工具</div> <div class="desc" data-astro-cid-lm33vczh>为 Monero 用户和开发者精选的工具和软件列表。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="https://docs.getmonero.org" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/developer-guides.DD6ipv0S_Yls1B.avif);--darkUrl: url(/_astro/developer-guides.Cdg0NOVs_Z2h2V29.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero 文档</div> <div class="desc" data-astro-cid-lm33vczh>用户和开发者有效、安全使用 Monero 的综合指南。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/zh/resources/press-kit/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/press-kit.C4VjegyX_2aPbOF.avif);--darkUrl: url(/_astro/press-kit.CVdfPwCA_1oXHhF.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>媒体资料包</div> <div class="desc" data-astro-cid-lm33vczh>媒体联系方式、标志、图片和其他媒体资源。</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="https://ccs.getmonero.org" class="link" tabindex="0" data-astro-cid-pbmdh2tw> 众筹  </a>  </div>  </li>  </ul> </fieldset> </nav> <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="关闭菜单" data-astro-cid-dm2weclu></label> <div class="utils" aria-label="工具" data-astro-cid-dm2weclu> <div class="lang" data-astro-cid-dm2weclu> <details class="lang-container" data-astro-cid-g6d27pgi> <summary class="lang" aria-label="更改语言" aria-haspopup="true" role="button" data-astro-cid-g6d27pgi> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/globe.FI0_gjXP_xUiUM.avif);--iconColor: currentColor;"></div>  </summary> <div class="lang-dropdown" aria-label="语言" data-astro-cid-g6d27pgi> <ul class="lang-list" data-astro-cid-g6d27pgi> <li data-astro-cid-g6d27pgi> <a href="/blog/2016/10/16/overview-and-logs-for-the-dev-meeting-held-on-2016-10-16/" class data-astro-cid-g6d27pgi> English </a> </li><li data-astro-cid-g6d27pgi> <a href="/ar/blog/2016/10/16/overview-and-logs-for-the-dev-meeting-held-on-2016-10-16/" class data-astro-cid-g6d27pgi> العربية </a> </li><li data-astro-cid-g6d27pgi> <a href="/zh/blog/2016/10/16/overview-and-logs-for-the-dev-meeting-held-on-2016-10-16/" class="active" aria-current="true" data-astro-cid-g6d27pgi> 中文 </a> </li> </ul> </div> </details>  </div> <label for="nav-toggle" class="hamburger" aria-controls="primary-nav" aria-label="打开菜单" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/hamburger.CkIM-2PU_xmMpy.avif);--iconColor: currentColor;"></div>  </label> </div> </div> </header>  <main data-astro-cid-sckkx6r4>   <div class="blog-container" data-astro-cid-ndejf7ww> <article class="blog-post" data-astro-cid-ndejf7ww> <div id="post-header" data-astro-cid-7dcwcvhl> <h1 data-astro-cid-7dcwcvhl>Overview and Logs for the Dev Meeting Held on 2016-10-16</h1> <div id="meta" data-astro-cid-7dcwcvhl> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/calendar.BXaSv3Jk_Z1NrB7E.avif);--iconColor: currentColor;"></div>  </div> <time datetime="2016-10-16" data-astro-cid-7dcwcvhl>2016年10月16日</time> </div> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/user.Cx6bTnUm_FhCof.avif);--iconColor: currentColor;"></div>  </div> dEBRUYNE / fluffypony </div> </div> <div class="tag-container" data-astro-cid-7dcwcvhl> <a class="tag" href="/zh/blog/tags/dev-diaries/" data-astro-cid-7dcwcvhl> 开发日志 </a><a class="tag" href="/zh/blog/tags/core/" data-astro-cid-7dcwcvhl> 核心 </a><a class="tag" href="/zh/blog/tags/crypto/" data-astro-cid-7dcwcvhl> 加密 </a><a class="tag" href="/zh/blog/tags/0mq/" data-astro-cid-7dcwcvhl> 0MQ </a> </div> </div>   <div id="blog-content" lang="en" dir="ltr">  <h3 id="overview">Overview</h3>
+<p>An overview <a href="https://hellomonero.com/article/monero-dev-meeting-note-highlights-2016-10-16" rel="noopener noreferrer external" target="_blank">can be found on Hello Monero</a>.</p>
+<h3 id="logs">Logs</h3>
+<p><strong>&#x3C;moneromooo></strong> So, fluffypony asked if I could talk. I have no relay bot, so #kovri-dev will have to be here to listen.<br>
+<strong>&#x3C;moneromooo></strong> He suggested I talk about guidelines for submitting patches. So we’ll see if everyone mostly agrees.<br>
+<strong>&#x3C;+hyc></strong> cool<br>
+<strong>&#x3C;moneromooo></strong> I would like to encourage people to make clean changes, which mean:<br>
+<strong>&#x3C;moneromooo></strong> - try to keep patches self contained where appropriate<br>
+<strong>&#x3C;moneromooo></strong> - no random whitespace changes interspersed with other changes<br>
+<strong>&#x3C;moneromooo></strong> - sensible commit message (ie, no “update wallet.cpp”)<br>
+<strong>&#x3C;moneromooo></strong> - properly rebased patches (ie, if you authored three patches in a PR, don’t send 20 patches from someone else at the same time, so “git rebase master” first)<br>
+<strong>&#x3C;+hyc></strong> that all makes sense<br>
+<strong>&#x3C;moneromooo></strong> If you make a buggy patch and then fix it in a second patch, squash those (see git rebase -i, but that starts being a bit complex)<br>
+<strong>&#x3C;moneromooo></strong> Does anyone disagree ?<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Nope<br>
+<strong>&#x3C;Jaquee_></strong> nope<br>
+<strong>&#x3C;tompole></strong> nope<br>
+<strong>&#x3C;+hyc></strong> no disagreement here. that’s standard stuff.<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Can I ask a little more about what you mean by ‘self contained’<br>
+<strong>&#x3C;moneromooo></strong> (We’ll make an exception for tewinget who’s got a massive non rebased patchset for 0mq though)<br>
+<strong>&#x3C;+hyc></strong> sure, patches of such large scope are going to have their exceptions<br>
+<strong>&#x3C;moneromooo></strong> I mean, if you’ve got two changes, make them two patches. I like small patches, one per “logical change”.<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Makes sense. Single-issue patches.<br>
+<strong>&#x3C;moneromooo></strong> It’s easier to review, to debug, to revert it necessary.<br>
+<strong>&#x3C;+hyc></strong> but usually PRs should be one issue per patch, one patch per issue<br>
+<strong>&#x3C;moneromooo></strong> Yes. However, when in the middle of a large thing, you sometimes see something that needs fixing and would otherwise conflict. That can go (as a separate patch) in that PR, depends on the circumstances.<br>
+<strong>&#x3C;moneromooo></strong> especially for those PRs that can take weeks to be merged.<br>
+<strong>&#x3C;+hyc></strong> sure<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> OK<br>
+<strong>&#x3C;moneromooo></strong> But yes, 1/1 in general.<br>
+<strong>&#x3C;moneromooo></strong> So, nobody seems to disagree, I’ll write a little thingie about this for the repo. Thanks.<br>
+<strong>&#x3C;moneromooo></strong> So, I guess… anyone has anything to say about progress, or other dev related stuff ? :)<br>
+<strong>&#x3C;Fireice></strong> I’ve got a question to the devs - do you think Monero is mature enough for applications improving usability? I’m an independent software dev, and I’m thinking of committing about 6 months of full-time work on Monero. First application that I’m thinking of is a lightweight Windows GUI wallet for Monero.<br>
+<strong>&#x3C;moneromooo></strong> Another one, yay! :)<br>
+<strong>&#x3C;moneromooo></strong> First, read up on what lightweight may involve for monero.<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Do we have a common wiki or other info page for devs to describe things like prefixes e.g. m* and others<br>
+<strong>&#x3C;TedTheFicus></strong> Yes, this is needed<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> stuff<br>
+<strong>&#x3C;moneromooo></strong> And mature enough is pretty subjective. It can be used, for sure.<br>
+<strong>&#x3C;Fireice></strong> lol, bazaar project usually have a lot of traffic<br>
+<strong>&#x3C;moneromooo></strong> There is none. Some people use m* for class data members.<br>
+<strong>&#x3C;hiall></strong> hi all<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> What would you think about standardising that aspect of development? Variable/class/etc. nomenclature?<br>
+<strong>&#x3C;moneromooo></strong> Fireice: also, ask athan (or ethan), he’s got a wallte in development which you might want to have a look at.<br>
+<strong>&#x3C;hiall></strong> when is meeting starting?<br>
+<strong>&#x3C;dEBRUYNE></strong> it already started<br>
+<strong>&#x3C;+hyc></strong> nanoakron: that sounds like a lot of busywork<br>
+<strong>&#x3C;hiall></strong> where is it?<br>
+<strong>&#x3C;moneromooo></strong> Well, my opinion on that is to follow the existing, but I’m not super bothered about it. I certaonly don’t subscribe to the minutiae crap. But I know many disagree :)<br>
+<strong>&#x3C;Fireice></strong> ok will do, how do i get hold of him?<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Fireice: Take a look at how the existing GUI wallet is coming along at <a href="https://github.com/monero-project/monero-core" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/monero-core</a> - maybe integration into an existing service such as open bazaar would be cool<br>
+<strong>&#x3C;moneromooo></strong> Fireice: he’s around on IRC pretty often.<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> hyc: I know :( But standards can be good too<br>
+<strong>&#x3C;moneromooo></strong> integration would need th plugin system first. That is yet to be design.<br>
+<strong>&#x3C;moneromooo></strong> designed.<br>
+<strong>&#x3C;dEBRUYNE></strong> Fireice: His contact details are on Github too: <a href="https://github.com/athanclark" rel="noopener noreferrer external" target="_blank">https://github.com/athanclark</a><br>
+<strong>&#x3C;imans></strong> There is no instruction for windows compilation in the github<br>
+<strong>&#x3C;endogenic></strong> I tend to agree with nanoakron in the sense that changes to the API, especially w/o corresponding documentation updates, makes integration pretty darn tough and not necessarily viable for third parties<br>
+<strong>&#x3C;moneromooo></strong> Well, that’s true. It’s not API stable, that’s certain.<br>
+<strong>&#x3C;dEBRUYNE></strong> imans: <a href="https://monero.stackexchange.com/questions/2346/compiling-gui-from-source-differences-by-os" rel="noopener noreferrer external" target="_blank">https://monero.stackexchange.com/questions/2346/compiling-gui-from-source-differences-by-os</a><br>
+<strong>&#x3C;+hyc></strong> not at the binary level, and not even at the RPC level<br>
+<strong>&#x3C;moneromooo></strong> The RPC is <em>mostly</em> backward compatible though.<br>
+<strong>&#x3C;endogenic></strong> Fireice: that may be your answer then :)<br>
+<strong>&#x3C;imans></strong> ty dEBRUYNE<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> @hyc or @moneromooo on a similar note, is there a list of all available functions? E.g. call tools::simplewallet::is<em>it_true() to clean true/false user inputs<br>
+<strong>&#x3C;+hyc></strong> I think it’s OK to establish guidelines now for future development<br>
+<strong>&#x3C;Fireice></strong> ty for your help, do you know if the qt wallet targets win and linux systems or just linux?<br>
+<strong>&#x3C;+hyc></strong> but it’s too early to make hard rules<br>
+<strong>&#x3C;hiall></strong> is this the meeting?<br>
+<strong>&#x3C;pero></strong> conference, dev conference<br>
+<strong>&#x3C;moneromooo></strong> A list of all available functions, beyond the source ?<br>
+<strong>&#x3C;jaquee></strong> Fireice: the official targets linux, osx and windows<br>
+<strong>&#x3C;dEBRUYNE></strong> Fireice: The official GUI will be available for Linux, os x, and windows<br>
+<strong>&#x3C;moneromooo></strong> That sounds like it’d go stale pretty fast.<br>
+<strong>&#x3C;moneromooo></strong> But no, there is none.<br>
+<strong>&#x3C;endogenic></strong> perhaps the API documentation stuff should wait until the 0mq changes have been made?<br>
+<strong>&#x3C;+hyc></strong> at least that, yes<br>
+<strong>&#x3C;+hyc></strong> (endogenic)<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> @moneromooo yes. I don’t think you’re going to find key functions going stale that fast, so long as you require people who update or add functions to make corresponding changes to the documentation before their PR gets accepted.<br>
+<strong>&#x3C;moneromooo></strong> I think tewinget is doing doc as he codes.<br>
+<strong>&#x3C;imans></strong> IMO third party integrations must be made simple and easy to plug with any kind of party or platform<br>
+<strong>&#x3C;moneromooo></strong> I’m not sure holding PRs for documentation is best, but I’m a bit on the fence tbh.<br>
+<strong>&#x3C;moneromooo></strong> What do people think ?<br>
+<strong>&#x3C;+hyc></strong> sounds like a Would Be Nice when there is a larger developer base<br>
+<strong>&#x3C;+hyc></strong> and the dev base is certainly growing now<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Documentation is boring bullshit but necessary to make it easier for new devs to get involved. We don’t want to get into a situation like a certain other coin where only an inner cabal actually knows the code without deep reading<br>
+<strong>&#x3C;TedTheFicus></strong> If documentation is going to make it easier to attract API + other users than I think we need it up to date always<br>
+<strong>&#x3C;endogenic></strong> moneromooo: documentation should be done by particularly able people IMHO<br>
+<strong>&#x3C;gingeropolous></strong> so, not accepting a pull request because of poor documentation?<br>
+<strong>&#x3C;xmrcoma></strong> tewinget practice of documenting while coding is a best practice<br>
+<strong>&#x3C;endogenic></strong> and it can degrade in quality if an owner or class of developer is not designated<br>
+<strong>&#x3C;imans></strong> I do agree with that. good documentation can seemlessly help new devs get involved easily<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> @gingeropoulos I mean something like ‘I’ve written this new function to calculate X but haven’t given any documentation’ and then 2 months later someone new comes along, never realised that function existed because there was no documentation, and then just trying to rewrite their own version.<br>
+<strong>&#x3C;moneromooo></strong> But how would you find it in the doc, if you don’t find it in the source ?<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> What we need is a common documentation site and to pay someone to do about a week’s work to pore over the code and fully document every function<br>
+<strong>&#x3C;+hyc></strong> exactly<br>
+<strong>&#x3C;+hyc></strong> new devs must search, regardless.<br>
+<strong>&#x3C;moneromooo></strong> (not saying it’s a bad idea here, mind)<br>
+<strong>&#x3C;gingeropolous></strong> nanoakron, i think thats what tewinget was up to at one point :)<br>
+<strong>&#x3C;+hyc></strong> on the other hand, I like tools like doxygen, document as you code is always a good approach<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Would be easier to search a wiki for ‘check hard fork version’ and get a bunch of matching functions from which you can pick<br>
+<strong>&#x3C;moneromooo></strong> I do: git grep check.<em>hard.<em>fork :)<br>
+<strong>&#x3C;moneromooo></strong> But ok, fair enough.<br>
+<strong>&#x3C;moneromooo></strong> I think encouraging doc is good, ust not sure it should be enforced, at least for now.<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> But again, it’s a bit chicken and egg - good documentation begets good documentation. It’s getting over that original hurdle to actually make it happen<br>
+<strong>&#x3C;gingeropolous></strong> yeah I think its a “Would Be Nice” thing, and during a PR review, it would be noted - like “hey, you should totally comment this up”<br>
+<strong>&#x3C;gingeropolous></strong> and then if the dev doesn’t comment it up, then its a judgement call over how important the feature is<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> I agree moneromooo, we can’t enforce without a good standard or common place to record the documentation<br>
+<strong>&#x3C;endogenic></strong> nanoakron: +1<br>
+<strong>&#x3C;+hyc></strong> I’m cool with mandating Doxygen comments, moving forward.<br>
+<strong>&#x3C;moneromooo></strong> I agree than modifying a function with a doxygen doc thing should also change to doc thing to match. That’s a NAK offense :)<br>
+<strong>&#x3C;endogenic></strong> another thing to consider is that git commit messages are a kind of documentation. maybe we need to codify the standards in a public official place<br>
+<strong>&#x3C;moneromooo></strong> So I’ll add language to encourage documenting stuff.<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Starting off a forum funding goal for someone to pull together all the function, variable and class lists would be worthwhile<br>
+<strong>&#x3C;+hyc></strong> nanoakron: I disagree.<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Could you also add language telling us how to do the documentation - I’ve never used doxygen<br>
+<strong>&#x3C;+hyc></strong> lots of effort to maintain a moving target.<br>
+<strong>&#x3C;moneromooo></strong> I just copy/paste an existing one and adapt.<br>
+<strong>&#x3C;TedTheFicus></strong> Yes, I’d contribute funding to that<br>
+<strong>&#x3C;+hyc></strong> but that’s the sort of thing doxygen already takes care of<br>
+<strong>&#x3C;moneromooo></strong> And I agree with hyc here. An inventory now would be wasted, mostly.<br>
+<strong>&#x3C;+hyc></strong> so if we start using it now, then over time it will build itself<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> The target won’t move though. Let me choose a random example. Do you really think cryptonote_core::blockchain::pop_block_from_blockchain is going to be deprecated any time soon?<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Someone had to write the domesday book…<br>
+<strong>&#x3C;imans></strong> But, this is going to be a big sub project if you document everything. You need lot of time and effort<br>
+<strong>&#x3C;moneromooo></strong> Unlikely. I would look suspiciously at a patch using it though :P<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> In which case the person patching could just fix up the doc at the same time :slightly_smiling_face:<br>
+<strong>&#x3C;+hyc></strong> indeed, most of the existing functions only have legitimate use internally, not by 3rd parties<br>
+<strong>&#x3C;imans></strong> If you add use cases it would be very much helpful<br>
+<strong>&#x3C;moneromooo></strong> But hey, if you want to do that, feel free. Maybe it will turn out to be a great idea in retrospect.<br>
+<strong>&#x3C;endogenic></strong> what are the problems for which we need to provide documentation at this moment? if we categorize the instances of those problems we might find that it can work quite well to have task- or case-based documentation as a distinct project from going through the source and applying doxygen comments to everything for a whole-API reference<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Do we have anywhere common where I can read about doxygen or using doxygen wrt monero now?<br>
+<strong>&#x3C;moneromooo></strong> Well, applying doxygen comments is, by itself, pointless (even worse, as it makes it harder to read the API). Semantics in the doxygen comments are what’s good, and that needs understanding of the code.<br>
+<strong>&#x3C;imans></strong> An errata list is good which will help people to trace out the errors they meet<br>
+<strong>&#x3C;+hyc></strong> what errata list? the github issues list?<br>
+<strong>&#x3C;imans></strong> Also, a stackexchange like documentation system which will enable users to post their comments and also raise issues they face.<br>
+<strong>&#x3C;imans></strong> Yes, hyc similar to that<br>
+<strong>&#x3C;moneromooo></strong> endogenic: I think nanoakron originally wanted a map from “I want to do that” to “use this”. I think.<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> @moneromooo yes<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> @imans Not entirely sure how that would be different from the existing github<br>
+<strong>&#x3C;imans></strong> It will not be different. But it aids new comers and users to interact more closely<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> @imans …<br>
+<strong>&#x3C;endogenic></strong> imans: thought we already have a SE?<br>
+<strong>&#x3C;imans></strong> I mean it for API + third party integrations<br>
+<strong>&#x3C;endogenic></strong> why not just create a new category?<br>
+<strong>&#x3C;+hyc></strong> yes, at a certain point, new devs are just going to have to learn to use the tools that already exist<br>
+<strong>&#x3C;imans></strong> yes, the same I say<br>
+<strong>&#x3C;+hyc></strong> otherwise we spin our wheels adding infrastructure instead of functionality<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> @hyc That’s absolutely fine…so long as those tools themselves are well documented :slightly_smiling_face:<br>
+<strong>&#x3C;gingeropolous></strong> well the github wiki was requested for (i think) something related to this purpose, and it hasn’t received any attention<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> afk 10 mins<br>
+<strong>&#x3C;moneromooo></strong> That sounds like a good idea. Start with a “list of useful functions someone may need” in that wiki. See how it goes.<br>
+<strong>&#x3C;moneromooo></strong> And it doesn’t seem like a huge waste of time.<br>
+<strong>&#x3C;gingeropolous></strong> yeah, i mean if a random dev stumbles into monero, presumably they goto the github for code, so that wiki is probably where they’ll go first<br>
+<strong>&#x3C;+hyc></strong> I’ve never seen it… :P<br>
+<strong>&#x3C;moneromooo></strong> I’ve only seen it because I was given alink to it :D<br>
+<strong>&#x3C;gingeropolous></strong> hehehe. at the minimu, I can dump the rpc documentation thats on getmonero.org into it via the power of copy and paste<br>
+<strong>&#x3C;+hyc></strong> sounds like a good start<br>
+<strong>&#x3C;+hyc></strong> most 3rd party integrations should be RPC anyway<br>
+<strong>&#x3C;gingeropolous></strong> so i missed the beginning. is this the general topic of “where’s the docs?”<br>
+<strong>&#x3C;imans></strong> If development work for API is finished and you want it to take to third parties. Create illustrations about integration for every industry you want to focus or you think monero should be a partner with. Attach it to the wiki<br>
+<strong>&#x3C;moneromooo></strong> And that’s going to totally change soon.<br>
+<strong>&#x3C;gingeropolous></strong> right.<br>
+<strong>&#x3C;moneromooo></strong> Anyway, any other arguments/ideas about documentation ?<br>
+<strong>&#x3C;gingeropolous></strong> well the 2 will co-exist for a while, right?<br>
+<strong>&#x3C;moneromooo></strong> Yes.<br>
+<strong>&#x3C;imans></strong> I think documentation is not the main focus for this meeting? What is aimed to discuss today?<br>
+<strong>&#x3C;moneromooo></strong> Whatever development related stuff people want to talk about.<br>
+<strong>&#x3C;pero></strong> the documentary i think<br>
+<strong>&#x3C;imans></strong> nice<br>
+<strong>&#x3C;moneromooo></strong> hyc: have you had some more thoughts about how to make a lmdb based wallet data file ?<br>
+**&#x3C;medusa</em>></em></em> i have nothing to say about documentation, but i want to encourage everybody to build and try the gui :-)<br>
+<em><em>&#x3C;dEBRUYNE>*</em> <strong>&#x3C;moneromooo></strong> Whatever development related stuff people want to talk about. &#x3C;= jaquee and I can give a few GUI updates soon^tm<br>
+<strong>&#x3C;+hyc></strong> I’ve been thinking about how to integrate encryption, yes<br>
+<strong>&#x3C;+hyc></strong> but no new code written yet<br>
+<strong>&#x3C;pero></strong> soon is a little ambiguous - closer to 10min or 10weeks?<br>
+<strong>&#x3C;dEBRUYNE></strong> pero: whenever the current topic of the meeting is finished :P<br>
+<strong>&#x3C;moneromooo></strong> Well, let’s have dEBRUYNE and jaquee then.<br>
+<strong>&#x3C;dEBRUYNE></strong> So right now<br>
+<strong>&#x3C;dEBRUYNE></strong> Ok so, fluffypony is in the process of building beta binaries<br>
+<strong>&#x3C;dEBRUYNE></strong> Building went fine, but there is a little issue on windows with hardware acceleration, i.e., the GUI won’t run if that is disabled<br>
+<strong>&#x3C;dEBRUYNE></strong> However, we suspect that on “normal” systems it won’t be an issue, because it’s enabled by default there<br>
+<strong>&#x3C;moneromooo></strong> Mesa might help ?<br>
+<strong>&#x3C;dEBRUYNE></strong> luigi and Articmine are going to test this tomorrow when Fluffypony returns<br>
+<strong>&#x3C;moneromooo></strong> Cool, thanks all :)<br>
+<strong>&#x3C;+hyc></strong> sheesh, it’s a wallet nota videogame. what acceleration does it want…<br>
+<strong>&#x3C;xmrcoma></strong> lets waive a magic want that will cause all windows users worldwide to swtich to linux overnight. issue solved<br>
+<strong>&#x3C;moneromooo></strong> It’s using OpenGL for its widget set apparently.<br>
+<strong>&#x3C;dEBRUYNE></strong> It’s fairly trivial to enable too on windows systems<br>
+<strong>&#x3C;moneromooo></strong> Got had by this when I tried it a few days back.<br>
+<strong>&#x3C;dEBRUYNE></strong> Fluffypony ran into the issue because he was building on a windows server<br>
+<strong>&#x3C;@ArticMine></strong> Basically Windows computers with really ancient graphics and certain virtual machine implementations of Windows have this hardware acceleration issue<br>
+<strong>&#x3C;eyejay></strong> a clear deal breaker. it’s ded<br>
+<strong>&#x3C;jaquee></strong> exactly. so it’s not a really big issue imo<br>
+<strong>&#x3C;+hyc></strong> QT is requiring this dependency?<br>
+<strong>&#x3C;@ArticMine></strong> Windows server is the other case since it uses very minimal graphics by design<br>
+<strong>&#x3C;jaquee></strong> yes some QT widgets requires it<br>
+<strong>&#x3C;@ArticMine></strong> Yes the dependency is from QT on Windows<br>
+<strong>&#x3C;moneromooo></strong> <a href="http://stackoverflow.com/questions/18794201/using-qt-without-opengl" rel="noopener noreferrer external" target="_blank">http://stackoverflow.com/questions/18794201/using-qt-without-opengl</a> seems to imply Qt can be built without opengl.<br>
+<strong>&#x3C;+hyc></strong> nuts… I mean, OpenGL isn’t even intended for 2D graphics. It’s 3D gaming stuff.<br>
+<strong>&#x3C;gingeropolous></strong> based on my statistical analysis of the clouds I’m sure 95% of people requiring windows GUI are running windows 10 because they upgrade because it told them to<br>
+<strong>&#x3C;gingeropolous></strong> that said, the remaining 5% will be the loudest<br>
+<strong>&#x3C;medusa_></strong> i bet its that truning thing when refreshing<br>
+<strong>&#x3C;moneromooo></strong> AFAICT, 2D acceleration in new GPUs is a bit shit, and using 3D with orthonormal projection is actually faster.<br>
+<strong>&#x3C;imans></strong> isn’t it designed to support all windows version?<br>
+<strong>&#x3C;@ArticMine></strong> Windows 10 is not an issue unless some very special customization’s are made<br>
+<strong>&#x3C;iDunk></strong> but all windows versions are not designed to support it<br>
+<strong>&#x3C;imans></strong> Haha, iDunk clever<br>
+<strong>&#x3C;iDunk></strong> ;)<br>
+<strong>&#x3C;imans></strong> Enable switches or options to turn on/off opengl support and its related stuff in the wallet.<br>
+<strong>&#x3C;dEBRUYNE></strong> I think realistically speaking, only a negligible percentage of users will run into the issue<br>
+<strong>&#x3C;@ArticMine></strong> Well XP will support it on most later XP computers<br>
+<strong>&#x3C;dEBRUYNE></strong> And they can turn it on fairly easy<br>
+<strong>&#x3C;dEBRUYNE></strong> (in the rare case it’s disabled by default)<br>
+<strong>&#x3C;moneromooo></strong> Anything else about the GUI ?<br>
+<strong>&#x3C;pero></strong> i was hoping the default file path -related issues on linux would be fixed before any binaries got into the wild - the github issues are still open so i take it that hasn’t happened?<br>
+<strong>&#x3C;dEBRUYNE></strong> <strong>&#x3C;moneromooo></strong> Anything else about the GUI ? &#x3C;= I think jaquee wanted to tell a bit on what he is working on and what he’ll be working on in the future<br>
+<strong>&#x3C;jaquee></strong> yes<br>
+<strong>&#x3C;moneromooo></strong> jaquee: please do :)<br>
+<strong>&#x3C;imans></strong> Well, I would also like to add another option. Add an option to sync from the local blockchain or simply act as a light wallet. This will help the gui to both work as light or core wallet.<br>
+<strong>&#x3C;moneromooo></strong> (14 minutes till kovri meeting)<br>
+<strong>&#x3C;imans></strong> okay, waiting<br>
+<strong>&#x3C;TedTheFicus></strong> Yes, that is a good idea<br>
+<strong>&#x3C;jaquee></strong> i’m currently working on the wallet selector issue<br>
+<strong>&#x3C;jaquee></strong> open wallet form file… switch wallet etc<br>
+<strong>&#x3C;imans></strong> good to hear<br>
+<strong>&#x3C;jaquee></strong> and i will also fix the default path on linux<br>
+<strong>&#x3C;imans></strong> fine.<br>
+<strong>&#x3C;jaquee></strong> hower i won’t be finished today<br>
+<strong>&#x3C;pero></strong> o/<br>
+<strong>&#x3C;jaquee></strong> so it has ot wait until next release<br>
+<strong>&#x3C;imans></strong> It won’t be an issue<br>
+<strong>&#x3C;xmrcoma></strong> no neeed to finish today jaquee. thanks for your hard work. From a strategic point of view GUI release before Oct 28 (zcash release) would be helpful<br>
+<strong>&#x3C;jaquee></strong> if the windows binaries gets built tomorrow<br>
+<strong>&#x3C;jaquee></strong> and after that i’m gonna work on whatever the commuity feels most prioritized<br>
+<strong>&#x3C;moneromooo></strong> That’s cool, thanks jaquee.<br>
+<strong>&#x3C;jaquee></strong> like the plugin system or better integration with daemon<br>
+<strong>&#x3C;TedTheFicus></strong> Can anyone in the know comment on (xmrcomas) statement?<br>
+<strong>&#x3C;moneromooo></strong> If we’re going to have binaries flying around, I think things like validation, avoiding user being dumb, etc, are a good thing to focus on.<br>
+<strong>&#x3C;jaquee></strong> yes. we could improve the ux with better validation<br>
+<strong>&#x3C;moneromooo></strong> About what ? Wanting binaries before 28 ?<br>
+<strong>&#x3C;imans></strong> Create use cases<br>
+<strong>&#x3C;medusa_></strong> yes personally i think all the dangerous stuff is fixed, at least im not aware of any<br>
+<strong>&#x3C;endogenic></strong> i was also concerned to see that someone attempting to run a macos binary of the gui wallet the other day got a crash about a dynamic library not having been able to be loaded — and i believe we found out that it was boost which wasn’t installed — for the gui release, will there be an installer for mac os to take care of such dependencies?<br>
+<strong>&#x3C;medusa_></strong> the mian thing is that the “open from keys file” usecase is missing and windows suers chan not easily switch wallets<br>
+<strong>&#x3C;moneromooo></strong> Niece. Thanks for testing medusa</em> :)<br>
+<strong>&#x3C;moneromooo></strong> Probably just build boost statically.<br>
+<strong>&#x3C;jaquee></strong> endogenic: I think that’s a build issue. Won’t affect the binaries afaik<br>
+<strong>&#x3C;+hyc></strong> shouldn’t we be building this with statically linked libboost?<br>
+<strong>&#x3C;endogenic></strong> jaquee: ok, excellent<br>
+<strong>&#x3C;hiall></strong> when official gui wallet out?<br>
+<strong>&#x3C;gingeropolous></strong> about 2 weeks<br>
+<strong>&#x3C;moneromooo></strong> Anything else you want to add, jaquee ?<br>
+<strong>&#x3C;jaquee></strong> nope<br>
+<strong>&#x3C;TedTheFicus></strong> There is no date, it was just discussed now and testing is being done.<br>
+<strong>&#x3C;moneromooo></strong> Anyone else want to talk about dev stuff for 6 minutes ?<br>
+<strong>&#x3C;dEBRUYNE></strong> hiall: Read the backlogs :P<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Thanks @jaquee for all the GUI work. Two other issues I wanted to raise during this meeting were (a) killing dead issues on github and (b) formalising the log levels. WRT log levels, I don’t mind going through the code and changing all log outputs to the correct level if we can agree what those should be, in advance of a better programmer changing the logging subsystem itself. Please see and comment on <a href="https://github.com/monero-project/monero" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/monero</a><br>
+<strong>&#x3C;tompole></strong> Can someone confirm that the languages page has been scrubbed from the GUI?<br>
+<strong>&#x3C;endogenic></strong> i do want to mention i don’t think any normal user would install boost on their own — and the crash itself wouldn’t be acceptable as a graceful failure fmpov as a product guy<br>
+<strong>&#x3C;moneromooo></strong> I’d leave any level change till after the log system change, let’s not waste work.<br>
+<strong>&#x3C;hiall></strong> so GUI release this month? :O<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> @moneromooo OK makes sense<br>
+<strong>&#x3C;moneromooo></strong> tompole: it’s here as of today, just with only en_US IIRC.<br>
+<strong>&#x3C;dEBRUYNE></strong> &#x3C;tompole>** Can someone confirm that the languages page has been scrubbed from the GUI? <em><em>&#x3C;= Yeah, translations aren’t done yet<br>
+<strong>&#x3C;jaquee></strong> tompole: yes we’ve removed all languages except english for now until translations are finsihed<br>
+<strong>&#x3C;sdgsdug9sd></strong> if the issues with hardware acceleration get fixed in time, the gui should come out before oct 28 right?<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Still inviting comments on the discussion though<br>
+<strong>&#x3C;tompole></strong> Okay cool, thanks.<br>
+<strong>&#x3C;dEBRUYNE></strong> I’ll put the strings on transifex next week<br>
+<strong>&#x3C;dEBRUYNE></strong> Such that the community can help translating<br>
+<strong>&#x3C;dEBRUYNE></strong> then we can enable them again<br>
+<strong>&#x3C;moneromooo></strong> As for killing closed bugs, that’ll happen, once the pony gets a minute. He has logs with issues list.<br>
+<strong>&#x3C;imans></strong> I just started to compile one for my ubuntu 15.10<br>
+<strong>&#x3C;endogenic></strong> i’m curious to know how qt was chosen as the gui lib, if anyone can comment<br>
+<strong>&#x3C;moneromooo></strong> For people wanting to read the kovri meeting a 3 minutes, that’ll be on #kovri-dev<br>
+<strong>&#x3C;+hyc></strong> qt is multi-platform, seems a reasonable choice<br>
+<strong>&#x3C;_Slack> &#x3C;nanoakron></strong> Thanks all. See you around!<br>
+<strong>&#x3C;moneromooo></strong> The other main one is GTK. Or.. custom :D<br>
+<strong>&#x3C;moneromooo></strong> WxWidgets maybe.<br>
+<strong>&#x3C;i2p-relay></strong> {-anonimal} #kovri-dev topics today will be API and resolving the logo.<br>
+<strong>&#x3C;+hyc></strong> gtk is atrocious. yeah mebbe wxwidgets<br>
+<strong>&#x3C;moneromooo></strong> Java :o<br>
+<strong>&#x3C;_Slack> &#x3C;dadude></strong> libgui?<br>
+<strong>&#x3C;hiall></strong> so there is a possibility that we see gui before end of october?<br>
+<strong>&#x3C;sdgsdug9sd></strong> expected date for release of the gui?<br>
+<strong>&#x3C;_Slack> &#x3C;dadude></strong> libui sorry <a href="https://github.com/andlabs/libui" rel="noopener noreferrer external" target="_blank">https://github.com/andlabs/libui</a><br>
+<strong>&#x3C;gingeropolous></strong> there’s always a possibility<br>
+<strong>&#x3C;moneromooo></strong> Oh my. Maybe in november.<br>
+<strong>&#x3C;TedTheFicus></strong> It is possible yes. Have a look on GitHub under project MonerCore to gauge the status<br>
+<strong>&#x3C;moneromooo></strong> December, otherwise.<br>
+**&#x3C;medusa</em>></em>* next year guys<br>
+<strong>&#x3C;sdgsdug9sd></strong> lol<br>
+<strong>&#x3C;tompole></strong> 2018<br>
+<strong>&#x3C;@ArticMine></strong> hiall A possibility Yes; Promises: No<br>
+<strong>&#x3C;gingeropolous></strong> now the probability of that possibility is a different story<br>
+<strong>&#x3C;xmrcoma></strong> 2018 sounds like fud. I say 2017 at the latest<br>
+<strong>&#x3C;TedTheFicus></strong> Thanks for all your hard work everyone!<br>
+<strong>&#x3C;moneromooo></strong> For people wanting to read the kovri meeting 1 a minute, that’ll be on #kovri-dev<br>
+<strong>&#x3C;moneromooo></strong> Thanks all<br>
+<strong>&#x3C;tompole></strong> Monero doesn’t need to be concerned with tending to deadlines that relate to other projects.<br>
+<strong>&#x3C;gingeropolous></strong> ONWARD MONERO!<br>
+<em><em>&#x3C;kali</em>></em>* Thanks guys!<br>
+<strong>&#x3C;+hyc></strong> bye all<br>
+<strong>&#x3C;@ArticMine></strong> I am going there now.<br>
+<em><em>&#x3C;medusa</em>></em>* thaks people, good luck and rock on<br>
+<strong>&#x3C;sdgsdug9sd></strong> on a serious note though, can someone just tell whats the anticipated date for gui release?<br>
+<strong>&#x3C;gingeropolous></strong> no<br>
+<strong>&#x3C;kkhugs></strong> @moneromoo thanks for that address verification wallet API pr<br>
+<strong>&#x3C;sdgsdug9sd></strong> why?<br>
+<strong>&#x3C;gingeropolous></strong> because development<br>
+<strong>&#x3C;notyomomma></strong> monero should be concerned with the needs of the user - which is the gui. I think the questions on timing are relevant<br>
+<strong>&#x3C;_Slack> &#x3C;xmr_eric></strong> lol<br>
+<strong>&#x3C;xmrcoma></strong> gui will be done when it is done. not 1 day before or after<br>
+<strong>&#x3C;moneromooo></strong> sdgsdug9sd: apparently tomorrow<br>
+<strong>&#x3C;xmrcoma></strong> soon. tm<br>
+<strong>&#x3C;moneromooo></strong> (or so I read above)<br>
+<strong>&#x3C;gingeropolous></strong> well, its been 2.5 years<br>
+<strong>&#x3C;pero></strong> before the documentary<br>
+<strong>&#x3C;pero></strong> i think everyone can commit to that?<br>
+<strong>&#x3C;dEBRUYNE></strong> Like I said above, luigi &#x26; ArticMine will test on windows systems tomorrow<br>
+<strong>&#x3C;moneromooo></strong> it’s a bit rickety still though<br>
+<strong>&#x3C;dEBRUYNE></strong> if there is no issue there, I see no reason to not put the beta release out<br>
+<strong>&#x3C;endogenic></strong> exciting<br>
+<strong>&#x3C;dEBRUYNE></strong> there can be a subsequent release when the linux path issue, wallet choosing issue, are fixed<br>
+<strong>&#x3C;xmrcoma></strong> I saw forget windows. just release for linux and make everyone convert:)<br>
+<strong>&#x3C;sdgsdug9sd></strong> hmmm, not sure im getting this clear. so, its expected to be released tomorrow but no later than oct 28?<br>
+<strong>&#x3C;xmrcoma></strong> f miscrosoft<br>
+<strong>&#x3C;moneromooo></strong> Unless tomorrow forgets to end, I guess.<br>
+<strong>&#x3C;xmrcoma></strong> sdg 2017 at the latest<br>
+<strong>&#x3C;pero></strong> the reason behind the prioritizing the file paths is that we’ll see an influx of ‘noobs’ asking if this or that directory can be safely deleted<br>
+<strong>&#x3C;xmrcoma></strong> but maybe tomorrow:)<br>
+<strong>&#x3C;gingeropolous></strong> moneromooo, lulz<br>
+<strong>&#x3C;dEBRUYNE></strong> No testing is tomorrow, if that is fine the bins can be put out<br>
+<strong>&#x3C;dEBRUYNE></strong> but that isn’t necesarily tomorrow too<br>
+<strong>&#x3C;dEBRUYNE></strong> :P<br>
+<strong>&#x3C;hiall></strong> gui testing tomorrow?<br>
+<strong>&#x3C;moneromooo></strong> Oh, multi day testing. Fair enough. Ignore me.<br>
+<strong>&#x3C;ontario></strong> noob question here , when the gui is released can we mine directly to gui wallet?<br>
+<strong>&#x3C;moneromooo></strong> Later, yes. Not yet.<br>
+<strong>&#x3C;sdgsdug9sd></strong> alrighty, what about kovri release? shouldnt it be december 2016?<br>
+<strong>&#x3C;dEBRUYNE></strong> moneromooo: you could put your GUI wallet address in the daemon though<br>
+<strong>&#x3C;xmrcoma></strong> can someone comment on this? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" rel="noopener noreferrer external" target="_blank">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a><br>
+<strong>&#x3C;moneromooo></strong> dEBRUYNE: what do you mean ?<br>
+<strong>&#x3C;_Slack> &#x3C;dadude></strong> rickrooool!<br>
+<strong>&#x3C;dEBRUYNE></strong> moneromooo: just start_mining in the daemon<br>
+<strong>&#x3C;_Slack> &#x3C;dadude></strong> it ends in XcQ<br>
+<strong>&#x3C;dEBRUYNE></strong> and then your GUI address<br>
+<strong>&#x3C;dEBRUYNE></strong> you need a daemon running to use the GUi anyway<br>
+<strong>&#x3C;moneromooo></strong> Hmm, yes. That was not the question though I think.<br>
+<strong>&#x3C;dEBRUYNE></strong> But that’s more of a way around :P I think the guy meant mining directly in the GUI<br>
+**&#x3C;moneromooo>** Oh, *to*, actually you’re right.<br>
+<strong>&#x3C;tompole></strong> You mean you still need a terminal window open in order for the GUI to work?</p>  </div>  </article> <aside data-border="true" data-transparent="true" style="--card-padding: var(--space-xl); --card-radius: var(--radius-md)" data-astro-cid-ndejf7ww="true" data-astro-cid-dd5txfcy="true" class="card sidebar">  <h2 data-astro-cid-ndejf7ww>近期文章</h2> <ul class="recent-posts" data-astro-cid-ndejf7ww> <li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/03/04/monero-GUI-0.18.4.7-released/" data-astro-cid-ndejf7ww> Monero GUI 0.18.4.7 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-ndejf7ww> 2026年3月4日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/03/04/monero-0.18.4.6-released/" data-astro-cid-ndejf7ww> Monero 0.18.4.6 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-ndejf7ww> 2026年3月4日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/01/07/monero-GUI-0.18.4.5-released/" data-astro-cid-ndejf7ww> Monero GUI 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-ndejf7ww> 2026年1月7日 </time> </li><li data-astro-cid-ndejf7ww> <a class="post-title" href="/zh/blog/2026/01/07/monero-0.18.4.5-released/" data-astro-cid-ndejf7ww> Monero 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-ndejf7ww> 2026年1月7日 </time> </li> </ul>  </aside>  </div>  </main> <footer class="footer" aria-label="页脚" data-astro-cid-mh6itkc3> <div class="items" data-astro-cid-mh6itkc3> <nav class="grid" aria-label="页脚导航" data-astro-cid-mh6itkc3> <section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>资源</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/zh/get-started/what-is-monero/" data-astro-cid-mh6itkc3> 关于 Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/moneropedia/" data-astro-cid-mh6itkc3> Moneropedia  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://docs.getmonero.org" data-astro-cid-mh6itkc3> Monero 文档  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/get-started/faq/" data-astro-cid-mh6itkc3> 常见问题  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>联系我们</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/zh/community/workgroups/" data-astro-cid-mh6itkc3> 工作组  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/community/hangouts/" data-astro-cid-mh6itkc3> 社交场所  </a> </li><li data-astro-cid-mh6itkc3> <a href="/postorius/lists/monero-announce.lists.getmonero.org" data-astro-cid-mh6itkc3> 邮件列表  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>社区</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://monero.stackexchange.com/" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Stack Exchange  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://bitcointalk.org/index.php?topic=583449.0" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Bitcoin Talk  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://translate.getmonero.org" data-astro-cid-mh6itkc3> 翻译  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>Monero 项目</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://openalias.org" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Open Alias  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/research-lab/" data-astro-cid-mh6itkc3> Monero 研究实验室 (MRL)  </a> </li><li data-astro-cid-mh6itkc3> <a href="/zh/resources/press-kit/" data-astro-cid-mh6itkc3> 媒体资料包  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://ccs.getmonero.org" data-astro-cid-mh6itkc3> 社区众筹系统  </a> </li> </ul> </section> </nav> <nav class="bottom" aria-label="次要页脚导航" data-astro-cid-mh6itkc3> <ul class="inline-list" data-astro-cid-mh6itkc3> <li class="inline-item" data-astro-cid-mh6itkc3> <a href="#" data-astro-cid-mh6itkc3> Tor 洋葱服务 <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/tor.D04gt7iP_278xXg.avif);--iconColor: #7d4698;--spacing: 0.25em;"></div>  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> 漏洞响应  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/zh/legal/" data-astro-cid-mh6itkc3> 法律  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> 源代码  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/feed.xml" data-astro-cid-mh6itkc3> RSS 订阅 <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/rss.jnIu9F4x_Z28u6pV.avif);--iconColor: var(--monero-orange);--spacing: 0.25em;"></div>  </a> </li> </ul> </nav> </div> </footer>   </body></html> 

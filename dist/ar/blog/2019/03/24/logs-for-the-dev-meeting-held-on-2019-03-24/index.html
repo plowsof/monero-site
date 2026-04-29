@@ -1,0 +1,988 @@
+<!DOCTYPE html><html lang="ar" dir="rtl" data-astro-cid-sckkx6r4> <head><title>المدونة | Overview and Logs for the Dev Meeting Held on 2019-03-24</title><meta charset="UTF-8"><link rel="canonical" href="https://beta.monerodevs.org/ar/blog/2019/03/24/logs-for-the-dev-meeting-held-on-2019-03-24/"><meta name="description" content="Future of PoW algorithm discussion"><meta name="robots" content="index, follow"><meta property="og:title" content="Overview and Logs for the Dev Meeting Held on 2019-03-24"><meta property="og:type" content="article"><meta property="og:image" content="https://beta.monerodevs.org/open-graph/blog/2019/03/24/logs-for-the-dev-meeting-held-on-2019-03-24.png"><meta property="og:url" content="https://beta.monerodevs.org/ar/blog/2019/03/24/logs-for-the-dev-meeting-held-on-2019-03-24/"><meta property="og:locale" content="ar"><meta property="og:locale:alternate" content="en"><meta property="og:locale:alternate" content="zh"><meta property="og:site_name" content="Monero"><meta property="og:image:url" content="https://beta.monerodevs.org/open-graph/blog/2019/03/24/logs-for-the-dev-meeting-held-on-2019-03-24.png"><meta property="og:image:alt" content="OpenGraph image for Monero blog post titled &#34;Overview and Logs for the Dev Meeting Held on 2019-03-24&#34;"><meta property="article:published_time" content="2019-03-24T00:00:00.000Z"><meta property="article:author" content="el00ruobuob / dEBRUYNE"><meta property="article:tag" content="dev diaries"><meta property="article:tag" content="core"><meta property="article:tag" content="crypto"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@monero"><meta name="twitter:title" content="Overview and Logs for the Dev Meeting Held on 2019-03-24"><meta name="twitter:image" content="https://beta.monerodevs.org/open-graph/blog/2019/03/24/logs-for-the-dev-meeting-held-on-2019-03-24.png"><meta name="twitter:description" content="Future of PoW algorithm discussion"><link rel="preload" as="font" type="font/woff2" href="/_astro/dm-sans-latin-wght-normal.Xz1IZZA0.woff2" crossorigin="anonymous"><link rel="icon" href="/meta/favicon-16x16.png" sizes="16x16"><link rel="icon" href="/meta/favicon-32x32.png" sizes="32x32"><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.18.0"><meta name="color-scheme" content="light dark"><link rel="alternate" hreflang="en" href="https://beta.monerodevs.org/blog/2019/03/24/logs-for-the-dev-meeting-held-on-2019-03-24/"><link rel="alternate" hreflang="ar" href="https://beta.monerodevs.org/ar/blog/2019/03/24/logs-for-the-dev-meeting-held-on-2019-03-24/"><link rel="alternate" hreflang="zh" href="https://beta.monerodevs.org/zh/blog/2019/03/24/logs-for-the-dev-meeting-held-on-2019-03-24/"><link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="https://beta.monerodevs.org/feed.xml"><style>#blog-content{line-height:var(--line-height-body);word-wrap:break-word;color:light-dark(inherit,var(--paragraph-main));:where(h2,h3,h4){font-weight:var(--font-weight-bold)}img{border-radius:var(--radius-md)}a:not(.moneropedia-link){color:light-dark(var(--text-primary),var(--paragraph-main));font-weight:var(--font-weight-medium);text-decoration-line:underline;text-decoration-style:dotted;&:hover{color:light-dark(var(--text-secondary),var(--heading-color))}}h1{font-size:var(--font-size-2xl)}h2{font-size:var(--font-size-xl)}h3{font-size:var(--font-size-lg)}h4{font-size:var(--font-size-md)}p{margin-bottom:1em}li{margin-bottom:.25em}pre{padding:1em;border-radius:var(--radius-md);overflow-x:auto;background:var(--footer-color);code{background:none;padding:0;border-radius:0}}code:not(pre code){font-family:monospace;background-color:var(--footer-color);padding:.1em .3em;border-radius:var(--radius-sm)}blockquote{margin:1.5em 0;padding-inline:1.5em 1em;border-inline-start:3px solid var(--border-color);font-style:italic;color:var(--text-secondary)}strong{font-weight:var(--font-weight-bold)}em{font-style:italic}}h1[data-astro-cid-7dcwcvhl]{font-size:var(--font-size-3xl);margin:0}#post-header[data-astro-cid-7dcwcvhl]{margin-bottom:var(--page-top-margin)}#meta[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-2xl);color:var(--text-secondary);margin-top:var(--space-md);margin-bottom:var(--space-xl);font-size:var(--font-size-lg);font-weight:var(--font-weight-normal)}.meta-item[data-astro-cid-7dcwcvhl]{display:flex;align-items:center;gap:var(--space-xs);>.icon{display:grid;place-items:center;color:var(--monero-orange)}}.tag-container[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-xs);font-size:var(--font-size-sm);flex-wrap:wrap;.tag{text-align:center;padding:var(--space-2xs) var(--space-sm);background:var(--footer-color);border-radius:var(--radius-md);text-transform:uppercase;font-weight:var(--font-weight-semibold);text-decoration:none;color:inherit;white-space:nowrap;&:hover{color:var(--text-secondary)}}}@media(width<=600px){#meta[data-astro-cid-7dcwcvhl]{flex-direction:column;font-size:var(--font-size-md);font-weight:var(--font-weight-medium);gap:var(--space-md)}.meta-item[data-astro-cid-7dcwcvhl]{>.icon{font-size:var(--font-size-lg)}}}
+.card[data-astro-cid-dd5txfcy]{background:var(--card-color);padding:var(--card-padding);border-radius:var(--card-radius);&[data-border]{border:1px solid var(--border-color)}&[data-transparent]{background:transparent}&[data-hover]{transition:background .15s ease;&[data-astro-cid-dd5txfcy]:hover,&[data-astro-cid-dd5txfcy]:focus-visible{background:var(--card-hover-color)}}}
+.icon[data-astro-cid-bpjkz5as]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);margin-inline-start:var(--spacing);background:var(--iconColor);mask:var(--iconSrc) no-repeat center / contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}
+</style>
+<link rel="stylesheet" href="/_astro/_page_.DxMr-0dd.css">
+<style>.blog-container[data-astro-cid-jbepnj6h]{display:grid;grid-template-columns:1fr;gap:var(--space-2xl);>*{min-width:0}}.sidebar[data-astro-cid-jbepnj6h]{height:fit-content;& h2[data-astro-cid-jbepnj6h]{font-size:var(--font-size-xl);margin-top:0}}.recent-posts[data-astro-cid-jbepnj6h]{list-style:none;padding:0;margin-bottom:0;display:flex;flex-direction:column;gap:var(--space-md);li{margin-bottom:var(--space-xs)}.post-title{font-size:var(--font-size-md);color:var(--paragraph-main);text-decoration-line:underline;text-decoration-style:dotted;&:hover{text-decoration:underline}}.post-date{display:block;font-size:var(--font-size-sm);color:var(--paragraph-subtitle);margin-top:var(--space-2xs)}}@media(width>=1200px){.blog-container[data-astro-cid-jbepnj6h]{grid-template-columns:1fr 65ch 1fr}.blog-post[data-astro-cid-jbepnj6h]{grid-column:2}.sidebar[data-astro-cid-jbepnj6h]{grid-column:2;grid-row:2}}@media(width>=1600px){.sidebar[data-astro-cid-jbepnj6h]{grid-column:3;grid-row:1}}
+:where([data-astro-image]){object-fit:var(--fit);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+.moneropedia-link{position:relative;display:inline-block;color:var(--monero-orange);text-decoration-line:underline;text-decoration-style:dotted;cursor:help;font-weight:var(--font-weight-medium)}.moneropedia-link:hover,.moneropedia-link:focus-visible{text-decoration:none}.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{content:none}@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{position:absolute;left:50%;opacity:0;pointer-events:none;transform:translate(-50%) translateY(0);transition:opacity .18s ease-out,transform .18s ease-out;z-index:10}.moneropedia-link[data-tooltip]:before{content:attr(data-tooltip);bottom:calc(100% + .5rem);padding:.5rem .75rem;background:var(--card-color);border:1px solid var(--border-color);border-radius:.25rem;box-sizing:border-box;overflow-wrap:break-word;min-inline-size:25ch;max-inline-size:min(35ch,calc(100vw - 2.5rem));font-size:var(--font-size-sm);line-height:var(--line-height-caption);color:var(--text-primary);box-shadow:0 2px 8px #0000004d}.moneropedia-link[data-tooltip]:after{content:"";bottom:calc(100% + .25rem);border-width:.35rem .35rem 0;border-style:solid;border-color:var(--card-color) transparent transparent transparent}.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):before,.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):after{opacity:1;transform:translate(-50%) translateY(-2px)}}@media(prefers-reduced-motion:reduce){@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{transition:none}}}
+.icon[data-astro-cid-7wapxsvo]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);aspect-ratio:1 / 1;vertical-align:middle;--iconUrl: var(--lightUrl);background-image:var(--iconUrl);background-repeat:no-repeat;background-position:center;background-size:contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}@media(prefers-color-scheme:dark){.icon[data-astro-cid-7wapxsvo]{--iconUrl: var(--darkUrl)}}
+</style></head> <body data-astro-cid-sckkx6r4> <header class="header" data-astro-cid-dm2weclu> <div class="header-inner" data-astro-cid-dm2weclu> <a class="brand" href="/ar/" data-astro-cid-dm2weclu> <img src="/_astro/monerologo.CMdKQEkN_10Rm8s.avif" srcset="/_astro/monerologo.CMdKQEkN_10Rm8s.avif 64w, /_astro/monerologo.CMdKQEkN_10Rm8s.avif 128w" alt aria-hidden="true" data-astro-cid-dm2weclu="true" loading="eager" decoding="sync" fetchpriority="high" sizes="(min-width: 64px) 64px, 100vw" style="--fit: cover; --pos: center;" data-astro-image="constrained" width="64" height="64" class="mark"> <span data-astro-cid-dm2weclu>MONERO</span> </a> <input id="nav-toggle" class="nav-toggle" type="checkbox" data-astro-cid-dm2weclu> <nav id="primary-nav" class="nav" aria-label="التنقل الأساسي" data-astro-cid-dm2weclu> <div class="drawer-header" data-astro-cid-dm2weclu> <label for="nav-toggle" class="close" aria-controls="primary-nav" aria-label="أغلق القائمة" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/close.CneAMmXr_ZaFGrm.avif);--iconColor: currentColor;"></div>  </label> </div> <fieldset data-astro-cid-dm2weclu> <legend class="sr-only" data-astro-cid-dm2weclu>أقسام التنقل الأساسي</legend> <ul class="nav-list" data-astro-cid-dm2weclu> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-s9wjwzext" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-s9wjwzext-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> ابدأ <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-s9wjwzext" class="mobile-open" aria-label="Open ابدأ menu" data-astro-cid-pbmdh2tw></label> <label for="dd-s9wjwzext-close" class="mobile-close" aria-label="Close ابدأ menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="ابدأ menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/get-started/what-is-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--darkUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>ما هو Monero؟</div> <div class="desc" data-astro-cid-lm33vczh>كل ما تحتاجه لمعرفة Monero في لمحة.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/exchanges/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/merchants-exchanges.DN61YseO_ZQ3Km9.avif);--darkUrl: url(/_astro/merchants-exchanges.BjKEmUcz_1O8q9G.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>اشترِ Monero</div> <div class="desc" data-astro-cid-lm33vczh>بورصات العملات المشفرة التي تتيح لك شراء أو تداول Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/merchants/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>أنفق Monero</div> <div class="desc" data-astro-cid-lm33vczh>ابحث عن أماكن وخدمات تقبل Monero كدفع.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/accept-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/accept-monero.COXM8aHM_Z1II116.avif);--darkUrl: url(/_astro/accept-monero.C3WCFfqe_Z2tp8Kw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>اقبل Monero</div> <div class="desc" data-astro-cid-lm33vczh>تعلم كيفية قبول XMR كتاجر أو فرد.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/mining/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/mining.DBRk7HAe_Zd3ukV.avif);--darkUrl: url(/_astro/mining.B54FNZld_Z2jnjrG.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>التعدين</div> <div class="desc" data-astro-cid-lm33vczh>تعلم كيفية تعدين Monero على جهاز الكمبيوتر الخاص بك.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/contribute/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/contribute.DKeO9Dve_Z2vEvfu.avif);--darkUrl: url(/_astro/contribute.zLqiOwb5_Z1qe0gS.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>ساهم</div> <div class="desc" data-astro-cid-lm33vczh>ساعد مشروع Monero في جلب الخصوصية للجميع.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/get-started/faq/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/faq.C8QObR1A_1A5Irh.avif);--darkUrl: url(/_astro/faq.BNcLqXOJ_ZaSdVI.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الأسئلة الشائعة</div> <div class="desc" data-astro-cid-lm33vczh>ابحث عن إجابات للأسئلة الشائعة حول Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/ar/downloads/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> التحميلات  </a>  </div>  </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/ar/blog/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> المدونة  </a>  </div>  </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-wbbkcypvt" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-wbbkcypvt-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> المجتمع <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-wbbkcypvt" class="mobile-open" aria-label="Open المجتمع menu" data-astro-cid-pbmdh2tw></label> <label for="dd-wbbkcypvt-close" class="mobile-close" aria-label="Close المجتمع menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="المجتمع menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/community/workgroups/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/workgroups.OzoDQ7NV_Z1Lwqqs.avif);--darkUrl: url(/_astro/workgroups.CGbkWAXL_Z1m0ybJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مجموعات العمل</div> <div class="desc" data-astro-cid-lm33vczh>تعاون مع مجموعات عمل Monero المخصصة في التطوير والبحث والجهود المجتمعية.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/community/sponsorships/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الرعايات</div> <div class="desc" data-astro-cid-lm33vczh>قائمة الشركات التي تدعم مشروع Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/community/hangouts/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/hangouts.CiWxE-i9_ZeEICj.avif);--darkUrl: url(/_astro/hangouts.Do4DJEA1_257lPw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>الأماكن</div> <div class="desc" data-astro-cid-lm33vczh>انضم إلى أماكن تجمع مجتمع Monero والفعاليات للاتصال بالمتحمسين والمطورين الآخرين.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-xn5fa30rr" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-xn5fa30rr-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> الموارد <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-xn5fa30rr" class="mobile-open" aria-label="Open الموارد menu" data-astro-cid-pbmdh2tw></label> <label for="dd-xn5fa30rr-close" class="mobile-close" aria-label="Close الموارد menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="الموارد menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/ar/resources/knowledge-base/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/moneropedia.7o-c8ZX4_lSmb.avif);--darkUrl: url(/_astro/moneropedia.CYJm2-Q5_1KG40X.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>قاعدة المعرفة</div> <div class="desc" data-astro-cid-lm33vczh>الكتب والمنشورات والمجلات، مونيروبيديا.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/roadmap/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/roadmap.DoSq9h9o_Z1QuQpv.avif);--darkUrl: url(/_astro/roadmap.BONb2rwk_2hroDR.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>خارطة الطريق</div> <div class="desc" data-astro-cid-lm33vczh>ابقَ على اطلاع بأحدث خطط وتقدم تطوير Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/research-lab/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/research-lab.D90VAC3d_WkkdD.avif);--darkUrl: url(/_astro/research-lab.uv3a8gpS_Z7cyXJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مختبر البحث</div> <div class="desc" data-astro-cid-lm33vczh>استكشف منشورات مختبر بحث Monero وأبحاثه.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/tools/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/tools.CTqUs9cD_Z1hqOiO.avif);--darkUrl: url(/_astro/tools.BW4KRKDW_Z6Gril.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>أدوات Monero</div> <div class="desc" data-astro-cid-lm33vczh>قائمة منتقاة من الأدوات والبرمجيات لمستخدمي ومطوري Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="https://docs.getmonero.org" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/developer-guides.DD6ipv0S_Yls1B.avif);--darkUrl: url(/_astro/developer-guides.Cdg0NOVs_Z2h2V29.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>وثائق Monero</div> <div class="desc" data-astro-cid-lm33vczh>دليل شامل للمستخدمين والمطورين لاستخدام Monero بفعالية وأمان.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/ar/resources/press-kit/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/press-kit.C4VjegyX_2aPbOF.avif);--darkUrl: url(/_astro/press-kit.CVdfPwCA_1oXHhF.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>مجموعة الصحافة</div> <div class="desc" data-astro-cid-lm33vczh>اتصالات الصحافة والشعارات والصور والموارد الإعلامية الأخرى.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="https://ccs.getmonero.org" class="link" tabindex="0" data-astro-cid-pbmdh2tw> التمويل الجماعي  </a>  </div>  </li>  </ul> </fieldset> </nav> <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="أغلق القائمة" data-astro-cid-dm2weclu></label> <div class="utils" aria-label="الأدوات" data-astro-cid-dm2weclu> <div class="lang" data-astro-cid-dm2weclu> <details class="lang-container" data-astro-cid-g6d27pgi> <summary class="lang" aria-label="غير اللغة" aria-haspopup="true" role="button" data-astro-cid-g6d27pgi> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/globe.FI0_gjXP_xUiUM.avif);--iconColor: currentColor;"></div>  </summary> <div class="lang-dropdown" aria-label="اللغات" data-astro-cid-g6d27pgi> <ul class="lang-list" data-astro-cid-g6d27pgi> <li data-astro-cid-g6d27pgi> <a href="/blog/2019/03/24/logs-for-the-dev-meeting-held-on-2019-03-24/" class data-astro-cid-g6d27pgi> English </a> </li><li data-astro-cid-g6d27pgi> <a href="/ar/blog/2019/03/24/logs-for-the-dev-meeting-held-on-2019-03-24/" class="active" aria-current="true" data-astro-cid-g6d27pgi> العربية </a> </li><li data-astro-cid-g6d27pgi> <a href="/zh/blog/2019/03/24/logs-for-the-dev-meeting-held-on-2019-03-24/" class data-astro-cid-g6d27pgi> 中文 </a> </li> </ul> </div> </details>  </div> <label for="nav-toggle" class="hamburger" aria-controls="primary-nav" aria-label="افتح القائمة" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/hamburger.CkIM-2PU_xmMpy.avif);--iconColor: currentColor;"></div>  </label> </div> </div> </header>  <main data-astro-cid-sckkx6r4>   <div class="blog-container" data-astro-cid-jbepnj6h> <article class="blog-post" data-astro-cid-jbepnj6h> <div id="post-header" data-astro-cid-7dcwcvhl> <h1 data-astro-cid-7dcwcvhl>Overview and Logs for the Dev Meeting Held on 2019-03-24</h1> <div id="meta" data-astro-cid-7dcwcvhl> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/calendar.BXaSv3Jk_Z1NrB7E.avif);--iconColor: currentColor;"></div>  </div> <time datetime="2019-03-24" data-astro-cid-7dcwcvhl>٢٤ مارس ٢٠١٩</time> </div> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/user.Cx6bTnUm_FhCof.avif);--iconColor: currentColor;"></div>  </div> el00ruobuob / dEBRUYNE </div> </div> <div class="tag-container" data-astro-cid-7dcwcvhl> <a class="tag" href="/ar/blog/tags/dev-diaries/" data-astro-cid-7dcwcvhl> يوميات التطوير </a><a class="tag" href="/ar/blog/tags/core/" data-astro-cid-7dcwcvhl> الأساسي </a><a class="tag" href="/ar/blog/tags/crypto/" data-astro-cid-7dcwcvhl> التشفير </a> </div> </div>   <div id="blog-content" lang="en" dir="ltr">  <h1 id="logs">Logs</h1>
+<p><strong>&#x3C;dEBRUYNE></strong> It’s 5:00 PM utc, let’s begin<br>
+<strong>&#x3C;dEBRUYNE></strong> I made a few notes, that I think will be worthwhile to start the meeting<br>
+<strong>&#x3C;dEBRUYNE></strong> - The tweaks are inherently centralizing and potentially dangerous. They thus need to stop.<br>
+<strong>&#x3C;dEBRUYNE></strong> - Dual PoW, in its current form, is considered unsafe and therefore undesired.<br>
+<strong>&#x3C;dEBRUYNE></strong> - The path of least resistance seems to be adopting RandomX as soon as viably possible (October perhaps) and switching to SHA3 in case it fails (i.e. no pre-commitment to SHA3 unless RandomX fails) or switching to SHA3 when the tail emission starts.<br>
+<strong>&#x3C;dEBRUYNE></strong> - In order to be proactive, we need a back up plan in case RandomX fails. Preferred current back-up plan seems to be SHA3, as a RandomX failure would mean we’ve basically exhausted our options.<br>
+<strong>&#x3C;dEBRUYNE></strong> - In case RandomX fails, no further tweaks should be made.<br>
+<strong>&#x3C;dEBRUYNE></strong> - We need to come up with some heuristics that define failure. In my opinion, the easiest heuristic is ASIC miners taking over the network and thus driving out all other miners, thereby showing a significant efficiency advantage.<br>
+<strong>&#x3C;dEBRUYNE></strong> If anyone has remarks, please let them hear and let’s start :)<br>
+<strong>&#x3C;moneromooo></strong> Tweaks are no more centralizing and potentially dangerous than randomx.<br>
+<strong>&#x3C;moneromooo></strong> If you disagree, you get to give arguments for it.<br>
+<strong>&#x3C;hyc></strong> randomX has been in development longer than 6 months<br>
+<strong>&#x3C;el00ruobuob_[m]></strong> “ASIC miners taking over the network” would you use the “unknow hash” metric here?<br>
+<strong>&#x3C;hyc></strong> and won’t be changing every 6 months<br>
+<strong>&#x3C;tevador></strong> I should add that there are ways in which RandomX could be tweaked in the future if it lasts a few year to match the progress in CPU design<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: they are highly centralised, they require a small group of people to collaborate on it and dictate what the network should do<br>
+<strong>&#x3C;gingeropolous></strong> “the easiest heuristic is ASIC miners taking over the network” how will we get evidence of this? there’s some thoughts that what we saw recently wasn’t asics but some kind of fpga<br>
+<strong>&#x3C;vp11></strong> It might be hard to define how ASICs are in the network. Maybe if the top CPU in the market not becoming profitable anymore? That would mean no normal user should be profitable do we can assume ASICS are in the network<br>
+<strong>&#x3C;dEBRUYNE></strong> Also tweaks have to occur every 6 months, whereas RandomX envisions to be a long-term algorithm<br>
+<strong>&#x3C;moneromooo></strong> I dispute not the claim they are centralized, but the imlication that randomx is better because of it.<br>
+<strong>&#x3C;gingeropolous></strong> are the pow forks more or less centralizing than the consensus changes we’ve been making every 6 months regardless of PoW?<br>
+<strong>&#x3C;dEBRUYNE></strong> + we can let it get audited<br>
+<strong>&#x3C;dEBRUYNE></strong> gingeropolous: Definintely more in my opinion<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: fair - I don’t have strong feelings on RandomX<br>
+<strong>&#x3C;hyc></strong> re: ASIC miners taking over the network - are we relying on miners to self-report?<br>
+<strong>&#x3C;hyc></strong> “Hey, my profitability sucks, I’m abandoning XMR and mining something else now”<br>
+<strong>&#x3C;dEBRUYNE></strong> I don’t think we should absolutely rely on that, but we can certainly take it into account as a factor<br>
+<strong>&#x3C;el00ruobuob_[m]></strong> hyc, <a href="https://minexmr.com/pools.html" rel="noopener noreferrer external" target="_blank">https://minexmr.com/pools.html</a> should give a good idea of how profitable for random miner it is.<br>
+<strong>&#x3C;endogenic></strong> can we examine the question of whether randomx has as much flexibility in being tweaked as the existing algo?<br>
+<strong>&#x3C;sech1></strong> steep increase in hashrate (and profitability drop) without price changing is a strong indicator of more efficient hardware (ASICs)<br>
+<strong>&#x3C;ArticMine></strong> I see the reason behind tweaks as key here. Making a hard fork to improve the algorithm makes sense. Changing the algorithm for the sole purpose of breaking ASICs with no improvement is a no no<br>
+<strong>&#x3C;el00ruobuob_[m]></strong> the more “unknown” source of hasrate there is, the worst it is.<br>
+<strong>&#x3C;moneromooo></strong> Ideally all hash rate would have an unknown source.<br>
+<strong>&#x3C;dEBRUYNE></strong> ^ I disagree with that one actually<br>
+<strong>&#x3C;dEBRUYNE></strong> It’s an easy metric to be gamed<br>
+<strong>&#x3C;dEBRUYNE></strong> (was referring to el00ruobuob_[m], not moneromooo)<br>
+<strong>&#x3C;fluffypony></strong> el00ruobuob_[m]: profitability is trivially gamed<br>
+<strong>&#x3C;jtgrassie></strong> “unknown source” is a terrible metric.<br>
+<strong>&#x3C;gingeropolous></strong> ^<br>
+<strong>&#x3C;oneiric_></strong> could have been private pools or temp switch of large mining farms too<br>
+<strong>&#x3C;el00ruobuob_[m]></strong> so what kind of metric?<br>
+<strong>&#x3C;fluffypony></strong> el00ruobuob_[m]: no clue, it’s been ENTIRELY subjective thus far<br>
+<strong>&#x3C;jtgrassie></strong> It just means an unlisted pool or solo-miners<br>
+<strong>&#x3C;dEBRUYNE></strong> there’s some thoughts that what we saw recently wasn’t asics but some kind of fpga &#x3C;= Does that matter though? A single group secretly gaining the majority of the network hashrate is inherently bad<br>
+<strong>&#x3C;hyc></strong> ^ agreed with dEBRUYNE<br>
+<strong>&#x3C;dEBRUYNE></strong> el00ruobuob_[m]: we’re trying to discuss probable heuristics currently<br>
+<strong>&#x3C;oneiric_></strong> it matters in the approach taken to counteract<br>
+<strong>&#x3C;hyc></strong> we don’t care if it’s ASICs or FPGAs, if it’s not CPUs or GPUs it’s a threat<br>
+<strong>&#x3C;gingeropolous></strong> ^, agreed, but … it’d be nice to get specific<br>
+<strong>&#x3C;moneromooo></strong> Changing the algorithm to prevent a 51% makes sense to me. That is a definite, explicit improvement.<br>
+<strong>&#x3C;dEBRUYNE></strong> One more note I forgot to add, tevador recently changed some parameters for RandomX, which significantly improved verification time -> <a href="https://github.com/monero-project/meta/issues/316#issuecomment-475651654" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/meta/issues/316#issuecomment-475651654</a><br>
+<strong>&#x3C;gingeropolous></strong> is this the 4 gb to 1 gb switch?<br>
+<strong>&#x3C;oneiric_></strong> if it was fpga, reaction should be different than a big cpu farm swatiching over<br>
+<strong>&#x3C;fluffypony></strong> that makes me happy<br>
+<strong>&#x3C;tevador></strong> verification time is on par or better than CN<br>
+<strong>&#x3C;dEBRUYNE></strong> gingeropolous: 2 GB iirc<br>
+<strong>&#x3C;tevador></strong> much better on low end hardware<br>
+<strong>&#x3C;hyc></strong> yes, 4GB to 2GB<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: out of interest, what would it take to make you comfortable with RandomX?<br>
+<strong>&#x3C;rbrunner></strong> Yes, 4 GB was crazy<br>
+<strong>&#x3C;moneromooo></strong> I’m not sure. I also have not looked at it yet.<br>
+<strong>&#x3C;dEBRUYNE></strong> moneromooo: Whilst I agree, last time the entity had already gained the majority of the hashrate before we set a fork date with a new PoW tweak<br>
+<strong>&#x3C;dEBRUYNE></strong> Imo we were just praying at that point they wouldn’t do anything malicious<br>
+<strong>&#x3C;needmoney90></strong> ^<br>
+<strong>&#x3C;needmoney90></strong> Agree, that was an uncomfortable period of time<br>
+<strong>&#x3C;fluffypony></strong> yeah<br>
+<strong>&#x3C;gingeropolous></strong> aye<br>
+<strong>&#x3C;moneromooo></strong> I’m not necessarily unfomfortable with it per se. I’m more opposed to the claim that it is less centralized and dangerous, at least without good arguments.<br>
+<strong>&#x3C;fluffypony></strong> that said, I don’t think RandomX solves the economies of scale problem at all<br>
+<strong>&#x3C;hyc></strong> ^^ probably true<br>
+<strong>&#x3C;dEBRUYNE></strong> moneromooo: Arguably it is less centralized because we don’t have to change it every 6 months<br>
+<strong>&#x3C;gingeropolous></strong> well, for me, the commodity hw PoW has an interesting thing in that scenario, right?<br>
+<strong>&#x3C;fluffypony></strong> ^^<br>
+<strong>&#x3C;needmoney90></strong> Switching the PoW at the same time as making consensus changes is basically forcing compulsory adoption of those changes, it centralizes everything with the devs<br>
+<strong>&#x3C;dEBRUYNE></strong> RandomX envisions to be an algorithm which can sustain ASIC resistance for a long time<br>
+<strong>&#x3C;moneromooo></strong> You’re guessing as much as we did before.<br>
+<strong>&#x3C;needmoney90></strong> I’ve been thinking about this for a bit now<br>
+<strong>&#x3C;fluffypony></strong> gingeropolous: there is no such thing<br>
+<strong>&#x3C;ArticMine></strong> There is a good change it will lead to ASIC co existence rather than domination<br>
+<strong>&#x3C;gingeropolous></strong> if we supposedly had some massive hr gain and we’re locked into randomx, someone could buy a bunch of server time etc.<br>
+<strong>&#x3C;fluffypony></strong> any “commodity hardware PoW” will cease to be “mostly commodity hardware” within short order if Monero continues to become increasingly valuable. it’s a battle that is already lost, give it up.<br>
+<strong>&#x3C;gingeropolous></strong> if its gets to that situation in an asic dominated networ, what then?<br>
+<strong>&#x3C;dEBRUYNE></strong> ArticMine: Depends on what kind of efficiency gain they get though<br>
+<strong>&#x3C;ArticMine></strong> That is the fundamental key<br>
+<strong>&#x3C;dEBRUYNE></strong> I think this is a reasonable heuristic -> &#x3C;sech1> steep increase in hashrate (and profitability drop) without price changing is a strong indicator of more efficient hardware (ASICs)<br>
+<strong>&#x3C;dEBRUYNE></strong> Especially if it drives out all other miners<br>
+<strong>&#x3C;hyc></strong> ^ makes sense<br>
+<strong>&#x3C;gingeropolous></strong> what happens if , in a world where we go sha3, we figure out the network is pwned?<br>
+<strong>&#x3C;ErCiccione[m]></strong> dEBRUYNE: I agree that’s the best way to look at it<br>
+<strong>&#x3C;fluffypony></strong> gingeropolous: pwned by whom? at 7nm the ASIC performance gap evens out<br>
+<strong>&#x3C;ArticMine></strong> It also means if I can say 30% of my home heating bill I mine but for only 0.5% why bother<br>
+<strong>&#x3C;ArticMine></strong> save<br>
+<strong>&#x3C;vp11></strong> But then, again, ASICS coexistence might even be desirable if they’re not hundreds times faster than the fastest cpu on market<br>
+<strong>&#x3C;moneromooo></strong> ASICs are good if they do not cause a party to have control over too much of the network hash rate.<br>
+<strong>&#x3C;ArticMine></strong> It is better than no ASICs<br>
+<strong>&#x3C;midipoet></strong> can i ask how likely it would be that someone develops an ASIC for SHA-3 with substantial efficiency gaines, before everyone else, patents it, secretely mines with it, and leads us to exactly the same situation with regards the potential for 51%?<br>
+<strong>&#x3C;fluffypony></strong> gingeropolous: and if a single entity amasses 70% of all the hashrate in existence at 7nm then, frankly, they have enough money to amass 70% of the hashrate regardless of what we do - depressing, but true<br>
+<strong>&#x3C;oneiric_></strong> dEBRUYNE: that does make sense. sech1 what metric would one use to tell the difference b/w fpga &#x26; asic?<br>
+<strong>&#x3C;gingeropolous></strong> true fluffypony , true<br>
+<strong>&#x3C;dEBRUYNE></strong> oneiric_: Arguably, if RandomX is dominated by FPGAs, it may make more sense to switch to SHA3<br>
+<strong>&#x3C;gingeropolous></strong> but its pow, so its a constant burn. so it would have to be a long fight<br>
+<strong>&#x3C;fluffypony></strong> midipoet: we’re pretty close to 7nm, which means that improvements from competitors will be marginal - the braintrust in the big players is substantial<br>
+<strong>&#x3C;gingeropolous></strong> if its an asic world, its no different than a PoS world<br>
+<strong>&#x3C;sech1></strong> oneiric_ FPGA can’t be efficient at RandomX, forget it<br>
+<strong>&#x3C;ph4r05></strong> moneromooo: you are right about the “const size_t len_chunks”<br>
+<strong>&#x3C;gingeropolous></strong> asic dominated is PoS, there i said it<br>
+<strong>&#x3C;fluffypony></strong> gingeropolous: word<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: Especially with an algorithm such as SHA3<br>
+<strong>&#x3C;needmoney90></strong> dEBRUYNE: I’m not sure. FPGA commoditization is at least a discussion avenue that’s relatively unexplored.<br>
+<strong>&#x3C;dEBRUYNE></strong> Which is one of the simplest algorithms<br>
+<strong>&#x3C;oneiric_></strong> can you give some details?<br>
+<strong>&#x3C;needmoney90></strong> I realize they aren’t even really commoditized yet, which makes it more concerning<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> Surely that heuristic could could be games easily. If the ASIC Dev knew we would switch to their preferred algorithm the moment there is a spike in HR, it would be in their interest to cause such a spike for delayed profits.<br>
+<strong>&#x3C;oneiric_></strong> saw hyc’s softcore post, is it for those reasons?<br>
+<strong>&#x3C;tevador></strong> dEBRUYNE: FPGAs cannot run RandomX at anywhere near CPU efficiency<br>
+<strong>&#x3C;sech1></strong> oneiric_ yes<br>
+<strong>&#x3C;fluffypony></strong> learninandlurkin: which heuristic?<br>
+<strong>&#x3C;oneiric_></strong> ok thanks<br>
+<strong>&#x3C;dEBRUYNE></strong> tevador, sech1: Thanks for clarifying<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: This one -> &#x3C;sech1> steep increase in hashrate (and profitability drop) without price changing is a strong indicator of more efficient hardware (ASICs)<br>
+<strong>&#x3C;fluffypony></strong> oh, yeah<br>
+<strong>&#x3C;fluffypony></strong> they could just hire a botnet to cause a spike<br>
+<strong>&#x3C;ArticMine></strong> fluffypony We need to consider 3D chips both on the ASIC and non ASIC side 7 nm is not a limit<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: Do you think there would be botnets out there that would be vastly bigger than Monero’s total hashrate?<br>
+<strong>&#x3C;dEBRUYNE></strong> Because that’s what needed to increase the hashrate steeply<br>
+<strong>&#x3C;oneiric_></strong> guess my question applies now though, how would one tell the difference b/w fpga and asic being responsible for hash increase?<br>
+<strong>&#x3C;dEBRUYNE></strong> I am kind of skeptical about that<br>
+<strong>&#x3C;fluffypony></strong> ArticMine: 7nm is a pretty practical limit right now<br>
+<strong>&#x3C;hyc></strong> what would that botnet have been doing before they hired it? why would it not have been mining the whole time?<br>
+<strong>&#x3C;ArticMine></strong> but not long term<br>
+<strong>&#x3C;oneiric_></strong> pre-cnr<br>
+<strong>&#x3C;fluffypony></strong> dEBRUYNE: no clue, maybe Craig Wright’s supercomputer :-P<br>
+<strong>&#x3C;dEBRUYNE></strong> Hah<br>
+<strong>&#x3C;moneromooo></strong> Botnets spawn. It might not have existed before.<br>
+<strong>&#x3C;fluffypony></strong> hyc: could be hiring a few botnets that were doing other things before<br>
+<strong>&#x3C;ArticMine></strong> INTEL is looking at 3D for this ear<br>
+<strong>&#x3C;ArticMine></strong> year<br>
+<strong>&#x3C;midipoet></strong> gingeropolous: if “asic dominated” is essentially POS - just in a different format, then i hate to say it, but its a very big waste of energy.<br>
+<strong>&#x3C;hyc></strong> oneiric_: FPGA would be on par with GPU. not better. FPGA is irrelevant.<br>
+<strong>&#x3C;needmoney90></strong> For sure Hyc?<br>
+<strong>&#x3C;fluffypony></strong> midipoet: non-ASIC is essentially PoS<br>
+<strong>&#x3C;fluffypony></strong> midipoet: that’s how economies of scale work<br>
+<strong>&#x3C;oneiric_></strong> ok, so no way a fpga farm could have looked like asics?<br>
+<strong>&#x3C;fluffypony></strong> midipoet: the people with the most money win<br>
+<strong>&#x3C;tevador></strong> ArticMine: it’s still many years away and no ASIC manufacturer will use immature technology<br>
+<strong>&#x3C;gingeropolous></strong> i meant in the attack vector. you buy asics once, they work, you own the network<br>
+<strong>&#x3C;ArticMine></strong> 3D is already in our cellphone<br>
+<strong>&#x3C;gingeropolous></strong> in a non-asic network, you develop asics, but others can do other stuff<br>
+<strong>&#x3C;gingeropolous></strong> i really don’t understand keeping the keys to the system behind a locked door<br>
+<strong>&#x3C;midipoet></strong> fluffypony: not if the hardware requirements meant that mining could be a “side” process as apposed to a fixed process<br>
+<strong>&#x3C;fluffypony></strong> midipoet: we already tried background mining, nobody is going to do it<br>
+<strong>&#x3C;gingeropolous></strong> honestly, i can’t get the argument, so i just gotta watch this from afar. good luck everyone!<br>
+<strong>&#x3C;fluffypony></strong> midipoet: even if they do, they will be out-competed by manufacturers spinning up boards with 36x embedded GPUs or whatever<br>
+<strong>&#x3C;fluffypony></strong> at ~some high marketcap it becomes feasible to do so<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> In the interest of adding some structure to the debate/meeting, might it be a good idea if the RandomX folks can describe the state of RandomX, their own detailed opinions, maybe how close to audit-ready it is. Then everyone else can comment upon that and work from there?<br>
+<strong>&#x3C;ArticMine></strong> fluffypony At a high enough marketcap ASIC become competitive with RandomX I agree with that. the real question is by how much<br>
+<strong>&#x3C;rbrunner></strong> Yes, a state summary would be really nice<br>
+<strong>&#x3C;hyc></strong> tevador?<br>
+<strong>&#x3C;tevador></strong> we have more or less complete specification here: <a href="https://github.com/tevador/RandomX/blob/master/doc/specs.md" rel="noopener noreferrer external" target="_blank">https://github.com/tevador/RandomX/blob/master/doc/specs.md</a><br>
+<strong>&#x3C;tevador></strong> also design notes: <a href="https://github.com/tevador/RandomX/blob/master/doc/design.md" rel="noopener noreferrer external" target="_blank">https://github.com/tevador/RandomX/blob/master/doc/design.md</a><br>
+<strong>&#x3C;sech1></strong> RandomX has working implementation and documentation<br>
+<strong>&#x3C;tevador></strong> + working code of course<br>
+<strong>&#x3C;sgp_></strong> Can someone link the chart I made? It’s a good overview<br>
+<strong>&#x3C;fluffypony></strong> ArticMine: it’s not ASICs necessarily, could just be large custom boards with embedded GPUs suspended in oil, mining on “free” renewable energy in sub-zero climates, which leads to either (1) hashrate is dominated by a single entity, or (2) if commercialised it completely crowds out home miners<br>
+<strong>&#x3C;hyc></strong> I’ve been rustling the bushes of CPU/hardware design forums looking for reviewers/auditors<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> But maybe for people who haven’t poked their heads into #monero-pow in a while, what’s recently been going on? I saw there were some interesting test results from many people<br>
+<strong>&#x3C;dEBRUYNE></strong> Would it be preferable if the community hired an audit firm to perform an audit of randomx? We could ask either kudelski or quarkslab<br>
+<strong>&#x3C;tevador></strong> code includes: reference interpreter (portable, but slow), x86 JIT compiler for fast verification and mining<br>
+<strong>&#x3C;dEBRUYNE></strong> Additionally, I think wownere is set to implement RandomX on their mainnet, which should yield some test data as well<br>
+<strong>&#x3C;fluffypony></strong> dEBRUYNE: are either of them well-suited to it?<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: Well, there’s two reviews needed basically<br>
+<strong>&#x3C;fluffypony></strong> I wonder if Halong or Innosilicon or whoever would be up to audit it for pay<br>
+<strong>&#x3C;dEBRUYNE></strong> 1. We need to review the algorithm for bugs / exploits etc.<br>
+<strong>&#x3C;ArticMine></strong> fluffypony Yes I agree but again the question again becomes what is the advantage<br>
+<strong>&#x3C;hyc></strong> ^ good suggestion but I wonder about their incentive to be forthright / honest<br>
+<strong>&#x3C;dEBRUYNE></strong> 2. We need to review the algorithm with a view of how asic resistant it is<br>
+<strong>&#x3C;fluffypony></strong> hyc: true<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> I think hardware experts would be needed as well as traditional code auditors, for sure<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: I think Tim Olsen wanted to provide a free review of RandomX<br>
+<strong>&#x3C;oneiric_></strong> a prof crypto consulting firm with pow specialists would be good<br>
+<strong>&#x3C;tevador></strong> Tim Olson promised a free review, but hasn’t delivered yet<br>
+<strong>&#x3C;fluffypony></strong> oneiric_: there isn’t really such a thing<br>
+<strong>&#x3C;oneiric_></strong> erm<br>
+<strong>&#x3C;ArticMine></strong> The small player can get effective free electricity by displacing electric resistance heating for example<br>
+<strong>&#x3C;oneiric_></strong> im almost certain there is<br>
+<strong>&#x3C;midipoet></strong> we should make one!<br>
+<strong>&#x3C;ArticMine></strong> or surplus solar power<br>
+<strong>&#x3C;midipoet></strong> lol<br>
+<strong>&#x3C;fluffypony></strong> oneiric_: a “PoW specialist” ?<br>
+<strong>&#x3C;oneiric_></strong> yeah pow been around for before cryptocurrency<br>
+<strong>&#x3C;fluffypony></strong> yes but largely ignored<br>
+<strong>&#x3C;oneiric_></strong> surely there is a consultancy firm with such an expert<br>
+<strong>&#x3C;fluffypony></strong> Adam Back is about the closest you’ll get to a PoW expert :-P<br>
+<strong>&#x3C;oneiric_></strong> if that’s accurate, we should get him<br>
+<strong>&#x3C;dEBRUYNE></strong> Btw, we also have to think about what course of action to take if we get a report from an expert that clearly states the algorithm wouldn’t hold<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> Surely that depends on the nature of the failure<br>
+<strong>&#x3C;jtgrassie></strong> I dont think we need a PoW expert, rather a hardware expert.<br>
+<strong>&#x3C;tevador></strong> depends on what you mean by wouldn’t hold<br>
+<strong>&#x3C;sech1></strong> This expert should also propose ways to improve RandomX<br>
+<strong>&#x3C;jtgrassie></strong> ^ excatly<br>
+<strong>&#x3C;jtgrassie></strong> *exactly<br>
+<strong>&#x3C;tevador></strong> Tim Olson said a good estimate of ASIC efficiency requires several months of work on the design and costs six figures<br>
+<strong>&#x3C;dEBRUYNE></strong> tevador: basically a large efficiency advantage that would surely drive out all other miners<br>
+<strong>&#x3C;oneiric_></strong> jtgrassie: disagree, domain specialization is key in cryptanalysis<br>
+<strong>&#x3C;dEBRUYNE></strong> x4-x5 and you can be reasonably sure that all other miners are driven out<br>
+<strong>&#x3C;fluffypony></strong> jtgrassie: I agree<br>
+<strong>&#x3C;fluffypony></strong> jtgrassie: a hardware designer, someone who’s actually built ASICs from algorithms<br>
+<strong>&#x3C;oneiric_></strong> also would prefer outside the monero-sphere<br>
+<strong>&#x3C;oneiric_></strong> someone known independent from the community<br>
+<strong>&#x3C;ArticMine></strong> x5 means a 20% rebate on my heating bill in XMR<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: The problem is to find someone reliable though :-P<br>
+<strong>&#x3C;jtgrassie></strong> oneiric_: this is about efficiency to perform a hash though on certain hardware rather than consensus.<br>
+<strong>&#x3C;fluffypony></strong> I know that OhGodAGirl / Kristy-Leigh Minehan has glanced at it<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> six figures? can the CCS take that in a bear market? might take longer than october lol<br>
+<strong>&#x3C;fluffypony></strong> and I can ask her how much she’d charge to give it a thorough look<br>
+<strong>&#x3C;oneiric_></strong> its also about the cryptographic strength of a new hashing algo jtgrassie<br>
+<strong>&#x3C;fluffypony></strong> oneiric_: cryptographically it’s fine<br>
+<strong>&#x3C;dEBRUYNE></strong> oneiric_: I think it uses well known algorithms<br>
+<strong>&#x3C;fluffypony></strong> the underlying hash is Keccak or whatever<br>
+<strong>&#x3C;dEBRUYNE></strong> tevador can probably clarify<br>
+<strong>&#x3C;tevador></strong> it uses Blake2b under the hood<br>
+<strong>&#x3C;oneiric_></strong> has a pro cryptographer outside monero signed off on that?<br>
+<strong>&#x3C;fluffypony></strong> oneiric_: it’s pretty easy to see that internally<br>
+<strong>&#x3C;oneiric_></strong> in unique and new ways<br>
+<strong>&#x3C;tevador></strong> basically we need 2 reviews: one will include only the specification and the other one will review the code for bugs<br>
+<strong>&#x3C;oneiric_></strong> my point is, until an outside professional looks at it, would just be taking your word. no offense<br>
+<strong>&#x3C;fluffypony></strong> the contention isn’t whether it correctly uses Blake2b, but whether it’ll survive first passes by ASIC designers<br>
+<strong>&#x3C;hyc></strong> any auditor can do the bug review<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> with hardware/ASIC/PoW “experts” being needed for the spec review?<br>
+<strong>&#x3C;midipoet></strong> and also a review by an ASIC designer, no?<br>
+<strong>&#x3C;dEBRUYNE></strong> tevador: I fear a specification review will still be somewhat subjective<br>
+<strong>&#x3C;fluffypony></strong> oneiric_: there are enough people in this room that can confirm that, we don’t need to waste time on that<br>
+<strong>&#x3C;dEBRUYNE></strong> Also a reviewer might miss stuff<br>
+<strong>&#x3C;dEBRUYNE></strong> We won’t know how asic resistant it actually is until we see it in practice<br>
+<strong>&#x3C;oneiric_></strong> again my point is they shouldn’t be in this room<br>
+<strong>&#x3C;dEBRUYNE></strong> midipoet: that’s basically specification review<br>
+<strong>&#x3C;midipoet></strong> dEBRUYNE: ok, thanks<br>
+<strong>&#x3C;hyc></strong> you really aren’t going to know unless you pay a hardware design house to actually design an ASIC for it<br>
+<strong>&#x3C;oneiric_></strong> the point of a review isn’t to pat oneself on the back. it’s to have a disinterested party look at the code/algos critically<br>
+<strong>&#x3C;hyc></strong> and see what it’s projected performance and cost are<br>
+<strong>&#x3C;oneiric_></strong> +1 to hyc’s point<br>
+<strong>&#x3C;dEBRUYNE></strong> oneiric_: That’s basically covered by a code review<br>
+<strong>&#x3C;fluffypony></strong> oneiric_: you’re focusing on the wrong aspect - if you don’t trust the people in this room to get something that basic right then you should be reviewing PRs, many of which have only my review on them before they’re merged<br>
+<strong>&#x3C;ferretinjapan></strong> oneiric_, not everyone in this room is on the same side. Theres plenty of sceptics alreay here.<br>
+<strong>&#x3C;midipoet></strong> is paying a HW deisgn house to design an ASIC out of the question?<br>
+<strong>&#x3C;dEBRUYNE></strong> One more thing we have to keep in mind is that we cannot stop the network and have to decide on what to do in October within a few months. Would people prefer another tweak or implementing RandomX (it is probably ready by then)?<br>
+<strong>&#x3C;oneiric_></strong> ok, maybe what i said is coming off wrong. i didn’t mean any devs didn’t know how to use blake2b, that’s dumb. i was saying whoever does the audit shouldn’t be associated with monero-project at all<br>
+<strong>&#x3C;rbrunner></strong> Any idea of cost of that ASIC design? six figures?<br>
+<strong>&#x3C;fluffypony></strong> midipoet: they’d charge us for tape-out probably<br>
+<strong>&#x3C;dEBRUYNE></strong> I personally think the tweaks ought to stop, hence my preference for RandomX<br>
+<strong>&#x3C;fluffypony></strong> so call it $1m+<br>
+<strong>&#x3C;tevador></strong> just a 16 nm mask costs ~5M<br>
+<strong>&#x3C;dEBRUYNE></strong> oneiric_: An external audit firm will be hired to review the code<br>
+<strong>&#x3C;fluffypony></strong> tevador: we can work at 28nm for this purpose, surely<br>
+<strong>&#x3C;hyc></strong> I would stop short of prodction, just get a design that runs in a simulator is fine<br>
+<strong>&#x3C;fluffypony></strong> it’s just to get a feel on how it would perform<br>
+<strong>&#x3C;dEBRUYNE></strong> hyc: Even that would be quite costly I think<br>
+<strong>&#x3C;hyc></strong> yes, but probably under $1M<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> So could we maybe get Tim Olson &#x26; Kristy-Leigh Minehan and whoever else people know into a meeting to talk about the practicalities of a spec review and/or ASIC commissioning?<br>
+<strong>&#x3C;dEBRUYNE></strong> I don’t think the community would be able to fund $500k at the moment though<br>
+<strong>&#x3C;dEBRUYNE></strong> Especially given that we have a lot of other proposals seeking funding as well<br>
+<strong>&#x3C;hyc></strong> Tim has declined the project for pay<br>
+<strong>&#x3C;tevador></strong> funding an ASIC design for RandomX makes no sense<br>
+<strong>&#x3C;tevador></strong> we need some experts to review the specification<br>
+<strong>&#x3C;dEBRUYNE></strong> Hopefully Tim Olsen will provide the review soon, that would already set us a big step forward<br>
+<strong>&#x3C;rbrunner></strong> Well, and if the only way to get them to seriously review *is* making an ASIC design?<br>
+<strong>&#x3C;hyc></strong> tevador: so far we’ve had several experts give casual response. I’m not sure anything less rigorous than a working design will tell us more<br>
+<strong>&#x3C;oneiric_></strong> an expert look at specs + design + impl could produce better results than a “casual response”<br>
+<strong>&#x3C;oneiric_></strong> or you’re paying the wrong firm<br>
+<strong>&#x3C;tevador></strong> the problem is finding those experts<br>
+<strong>&#x3C;oneiric_></strong> agreed, doesn’t seem easy<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> what have those casual responses been like? any valuable and constructive suggestions so far? and negative responses?<br>
+<strong>&#x3C;tevador></strong> Linzhi already refused to make any comments about RandomX because they clearly don’t want it adopted<br>
+<strong>&#x3C;rbrunner></strong> :)<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> Just “we can 10x this, I swear”, right?<br>
+<strong>&#x3C;hyc></strong> right<br>
+<strong>&#x3C;oneiric_></strong> mebbe they can<br>
+<strong>&#x3C;tevador></strong> causal responses from Tim Olson were “you are on the right track”<br>
+<strong>&#x3C;midipoet></strong> ASIC designers would also have the incentive to tell you its an effective design, even it it wasnt.<br>
+<strong>&#x3C;oneiric_></strong> yeah, another narrowing of the candidate field<br>
+<strong>&#x3C;hyc></strong> yes, we already touched on this. element of trust is lacking.<br>
+<strong>&#x3C;tevador></strong> also we have modified the design slightly based on critical reviews on one hardware forum<br>
+<strong>&#x3C;ArticMine></strong> or if they are hones refuse to comment<br>
+<strong>&#x3C;ArticMine></strong> honest<br>
+<strong>&#x3C;kovri-slack> &#x3C;woodser></strong> Just voicing my support for RandomX, being the best known asic resistant option we have.  If it fails an audit or in practice, and nothing better has come along, then I’d support throwing in the towel with an asic friendly algorithm.<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> link? I doubt I’ll understand it but could be valuable for the logs<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> to the hardware forum discussion I mean<br>
+<strong>&#x3C;endogenic></strong> how about gmaxwell’s criticisms of algos like randomx?<br>
+<strong>&#x3C;fluffypony></strong> woodser: ProgPoW has good pedigree too, so I would say it’s among the best<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: There is some speculation ProgPow is finetuned for Nvidia though<br>
+<strong>&#x3C;tevador></strong> <a href="https://www.realworldtech.com/forum/?threadid=183905" rel="noopener noreferrer external" target="_blank">https://www.realworldtech.com/forum/?threadid=183905</a><br>
+<strong>&#x3C;kovri-slack> &#x3C;woodser></strong> @endogenic can you reference or elaborate on gmaxwell’s criticisms of algos like randomx?<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> If we just wait for the inevitable collapse of ETH, we would have the option of switching to ProgPow without being minority chain! lol<br>
+<strong>&#x3C;tevador></strong> take those responses with a grain of salt, though<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> thanks I’ll bookmark for reading<br>
+<strong>&#x3C;tevador></strong> the only valuable thing was their criticism of the lack of branches in RandomX, which we have since fixed<br>
+<strong>&#x3C;hyc></strong> right, most of those responses are hand-waving. the devil is in the details, and none of them will account for the details.<br>
+<strong>&#x3C;rbrunner></strong> Hah, in 10 years we will have a Spectre-like bug in RandomX<br>
+<strong>&#x3C;hyc></strong> lol<br>
+<strong>&#x3C;onlycoffee></strong> didn’t randomx change on their nonce grinding suggestion?<br>
+<strong>&#x3C;hyc></strong> randomX changed nonce approach based on gmaxwell critique<br>
+<strong>&#x3C;ferretinjapan></strong> rbrunner, that assumes monero is still around in 10 years :P<br>
+<strong>&#x3C;onlycoffee></strong> alright, so they did have some fair criticisms, which I think can be summarized as concerns over non-obvious “shortcuts” in the algorithm<br>
+<strong>&#x3C;hyc></strong> we’re coming up on 50 minutes. what do we need to accomplish in this meeting? action items?<br>
+<strong>&#x3C;tevador></strong> more like shortcuts in the design of an ASIC<br>
+<strong>&#x3C;tevador></strong> compared to a CPU<br>
+<strong>&#x3C;tevador></strong> we should find reviewers<br>
+<strong>&#x3C;hyc></strong> I am still searching for reviewers<br>
+<strong>&#x3C;ArticMine></strong> can we come up with an action plan. or example RandomX if fail then SHA-3?<br>
+<strong>&#x3C;rbrunner></strong> I am a little wondering that nobody drives in and shouts bloody murder on behalf of GPU miners …<br>
+<strong>&#x3C;dEBRUYNE></strong> ArticMine: That’s one thing I wanted to discuss in this  meeting<br>
+<strong>&#x3C;hyc></strong>  … due to the controversy around progpow I would prefer to avoid hiring Kristy-Leigh for this<br>
+<strong>&#x3C;vp11></strong> But then we need a very clear definition of “failure”<br>
+<strong>&#x3C;dEBRUYNE></strong> As far as I can see, the path of least resistance in the (Dev) community is either:<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> Touching on a point dEBRUYNE brought up, if getting proper reviews/audits stalls and the network is rekt before October, could CN-R be tweaked as a stopgap?<br>
+<strong>&#x3C;vp11></strong> Because you don’t want people saying “oh well I don’t consider this as a failure” and divide the community.<br>
+<strong>&#x3C;jtgrassie></strong> ^ hyc ditto<br>
+<strong>&#x3C;dEBRUYNE></strong> - Implement RandomX, switch to SHA3 in case RandomX fails, do not precommit to a set date<br>
+<strong>&#x3C;dEBRUYNE></strong> or:<br>
+<strong>&#x3C;ferretinjapan></strong> vp11, indeed.<br>
+<strong>&#x3C;dEBRUYNE></strong> - Implement RandomX, switch to SHA3 in case RandomX fails, precommit to a set date for SHA3<br>
+<strong>&#x3C;dEBRUYNE></strong> vp11: The metric sech1 described is probably the best we can get in my opinion<br>
+<strong>&#x3C;ArticMine></strong> I would say  Implement RandomX, switch to SHA3 in case RandomX fails, do not precommit to a set date.<br>
+<strong>&#x3C;dEBRUYNE></strong> Also if an asic manufacturer, for some reason, publishes an actual device, we can compare efficiency numbers<br>
+<strong>&#x3C;rbrunner></strong> - Implement RandomX, do not yet pre-commit to any further action because too early / too unsecure?<br>
+<strong>&#x3C;dEBRUYNE></strong> rbrunner: We have to be proactive, not reactive imo<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony explained why in the Github issue (#316)<br>
+<strong>&#x3C;oneiric_></strong> rbrunner: gpu miners probably realize their concerns will be ignored anyway<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> the second option seems like a contradiction because how can you only switch in the case of failure, yet also have a predetermined date to switch?<br>
+<strong>&#x3C;ferretinjapan></strong> proactive can’t predicct the future is the problem there.<br>
+<strong>&#x3C;tevador></strong> it would be better to say there will be no reactive tweaks anymore, so we can at least see the ASIC being offered publicly…<br>
+<strong>&#x3C;fluffypony></strong> ferretinjapan: and reactive is centralised<br>
+<strong>&#x3C;fluffypony></strong> choose the lesser of two evils<br>
+<strong>&#x3C;dEBRUYNE></strong> learninandlurking: if it fails before the precommited date<br>
+<strong>&#x3C;kovri-slack> &#x3C;woodser></strong> I don’t see how we can commit to a date without knowing if it will be necessary<br>
+<strong>&#x3C;ferretinjapan></strong> fluffypony, indeed, theres always a tradeoff.<br>
+<strong>&#x3C;vp11></strong> I agree with not precommitting to a date. I think other coins are switching to SHA3 so manufacturers could start hw development without Monero precomitting<br>
+<strong>&#x3C;ErCiccione></strong> oneiric_: why ignored? i noticed not many in the community seems to be against a cpu-only algo<br>
+<strong>&#x3C;hyc></strong> I’m with ArticMine, first option<br>
+<strong>&#x3C;moneromooo></strong> I *really* don’t like this “centralised” pseudo argument, when the claimed point of centralization is to remove a greater centralization.<br>
+<strong>&#x3C;ferretinjapan></strong> the thing is you have more flexibility being reactive.<br>
+<strong>&#x3C;ArticMine></strong> GPU miners win vs ASIC and loose vs CPU. I am not sure they come out as looses with RandomX<br>
+<strong>&#x3C;jtgrassie></strong> hyc ArticMine +1<br>
+<strong>&#x3C;ferretinjapan></strong> proactive could see you walking off alciff too.<br>
+<strong>&#x3C;dEBRUYNE></strong> Being proactive also means a greater risk of community split imo<br>
+<strong>&#x3C;ferretinjapan></strong> cliff*<br>
+<strong>&#x3C;oneiric_></strong> ErCiccione: i noticed anyone voicing concerns about keeping gpu being ignored, ridiculed, or downvoted<br>
+<strong>&#x3C;dEBRUYNE></strong> Uh reactive*<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: there’s serious regulatory risk with having a small group of people dictate changes to the network, at worst we’re making sure nobody comes after you or I<br>
+<strong>&#x3C;oneiric_></strong> those in control of this community give 0phux bout gpu miners<br>
+<strong>&#x3C;fluffypony></strong> oneiric_: you’re starting to sound like MoneroCrusher :-P<br>
+<strong>&#x3C;jtgrassie></strong> haha<br>
+<strong>&#x3C;oneiric_></strong> exactly lol<br>
+<strong>&#x3C;moneromooo></strong> Are those risks particularly about PoW, or also about any other consensus change, or also about any major non-consensus change ?<br>
+<strong>&#x3C;fluffypony></strong> WHEN DUAL POW<br>
+<strong>&#x3C;oneiric_></strong> and it begins<br>
+<strong>&#x3C;ErCiccione></strong> oneiric_: that’s not what i’ve seen, but i could have missed it. But we are having meetings and multiple discussions on multiple platforms, and i don’t see their voice being silenced.<br>
+<strong>&#x3C;dEBRUYNE></strong> oneiric_: As far as I can see, gpuminers are not totally alienated. sech1 estimated a CPU advantage of 2:1 and I think that gap can be closed further by a competent GPU miner developer<br>
+<strong>&#x3C;vp11></strong> Monero can express the intent to switch to SHA3 keeping the two variables that I don’t know the name an incognito which would let manufacturers get almost everything ready “just in case”. Other coins are switching to SHA3 so I don’t really see that much gain by precommitting to a date<br>
+<strong>&#x3C;dEBRUYNE></strong> Also GPUs are easier to scale<br>
+<strong>&#x3C;oneiric_></strong> didn’t say silenced<br>
+<strong>&#x3C;fluffypony></strong> moneromooo: particularly about PoW because of the need for last-minute changes (or secrecy on tweaks, equally undesireable)<br>
+<strong>&#x3C;dEBRUYNE></strong> vp11: Do you mean Monero will choose it’s own custom parameters for SHA3?<br>
+<strong>&#x3C;oneiric_></strong> dEBRUYNE: if thats true i’m all for it<br>
+<strong>&#x3C;dEBRUYNE></strong> will/can<br>
+<strong>&#x3C;fluffypony></strong> with non-PoW consensus changes we can plan them well in advance<br>
+<strong>&#x3C;vp11></strong> Yes dEBRUYNE<br>
+<strong>&#x3C;ArticMine></strong> fluffypony I agree which is why a hard fork change has to be justified by overall improvement in the algo<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> surely these centralisation risks of forks would be somewhat mitigated by reproducible builds? Maybe that should be kicked up in the list of priorities<br>
+<strong>&#x3C;fluffypony></strong> learninandlurkin: nope, builds don’t even factor into it<br>
+<strong>&#x3C;el00ruobuob_[m]></strong> couldn’t we: Implement randomX and precommit to a SHA3 ASIC, without a clearly defined date first? And set the date later?<br>
+<strong>&#x3C;vp11></strong> I think Tim Olson commented something about it in the github issue<br>
+<strong>&#x3C;dEBRUYNE></strong> vp11: Yes I remember, that would work I guess<br>
+<strong>&#x3C;dEBRUYNE></strong> Though that doesn’t render any ‘design’ invalid<br>
+<strong>&#x3C;el00ruobuob_[m]></strong> by later, i mean, in a 6 month to 1 year window<br>
+<strong>&#x3C;rbrunner></strong> I don’t understand why people already want to set a fixed successor for RandomX. What if none is needed?<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> fluffypony: could you explalin why not? Surely it lessens the fundamental reliance on “lead” maintainers and devs, and hence lowers the risks you were talking about?<br>
+<strong>&#x3C;kovri-slack> &#x3C;woodser></strong> wouldn’t SHA3 be unecessary if RandomX delivers all our hopes and dreams?<br>
+<strong>&#x3C;moneromooo></strong> I believe one of the “legal” tests for a decentralized cryptocurrency is that anyone has a chance at mining. Arguably, not trying to fix a party having >> 50% means we stop being such.<br>
+<strong>&#x3C;dEBRUYNE></strong> rbrunner: Again, in order to be proactive<br>
+<strong>&#x3C;vp11></strong> Precommitting to a date for me is akin as maybe finding the cure for a disease but kill your patient anyway.<br>
+<strong>&#x3C;dEBRUYNE></strong> woodser: Yes, but we still need a backup plan in case it fails<br>
+<strong>&#x3C;needmoney90></strong> rbrunner: The point is mainly signalling to the community that forking more than once a year has become untenable, and we need to make a choice if things break<br>
+<strong>&#x3C;ferretinjapan></strong> rbrunner, hence my concerns of “walking off a cliff” someone could manipulate such a timetable.<br>
+<strong>&#x3C;needmoney90></strong> many people assume things are fine<br>
+<strong>&#x3C;fluffypony></strong> learninandlurkin: it does nothing to lessen the reliance on maintainers and devs - even if every node compiled its own software they’re still running software from a “central” repository dictated by the people who work on that<br>
+<strong>&#x3C;rbrunner></strong> Ok, the condition “if RandomX breaks” went missing. With that in I can agree<br>
+<strong>&#x3C;kovri-slack> &#x3C;woodser></strong> Agreed, then we’d need to clearly signal an action plan<br>
+<strong>&#x3C;needmoney90></strong> Yeah, If RandomX pans out I’m all in, but I’m being realistic that this is basically our last shot<br>
+<strong>&#x3C;needmoney90></strong> and the community needs to realize that<br>
+<strong>&#x3C;needmoney90></strong> the number of people advocating for a 4-6 month fork schedule is insane<br>
+<strong>&#x3C;needmoney90></strong> And they need to be let down gently<br>
+<strong>&#x3C;rbrunner></strong> A little behind that the whole concept of PoW is put into question, if you ask me<br>
+<strong>&#x3C;needmoney90></strong> thats a bigger discussion<br>
+<strong>&#x3C;rbrunner></strong> With no clear alternative in sight, of course<br>
+<strong>&#x3C;ferretinjapan></strong> needmoney90, that in itself can cause a schism.<br>
+<strong>&#x3C;ArticMine></strong> We cannot create a dependence on 4-6 months forks.<br>
+<strong>&#x3C;fluffypony></strong> needmoney90: I agree<br>
+<strong>&#x3C;sech1></strong> I think “RandomX failed” condition comes true only when there is no debate about it in the community at all. Like when hashrate spiked so much and for so long time that everyone gets 20% (at best) from money spent on electricity.<br>
+<strong>&#x3C;needmoney90></strong> With who? People who want to fork constantly?<br>
+<strong>&#x3C;needmoney90></strong> Let ‘em, they wont keep our market cap<br>
+<strong>&#x3C;needmoney90></strong> they cant, we’re too big<br>
+<strong>&#x3C;fluffypony></strong> ferretinjapan: anyone who wants 4 month forks are welcome to fork off<br>
+<strong>&#x3C;fluffypony></strong> :-P<br>
+<strong>&#x3C;rbrunner></strong> Lol<br>
+<strong>&#x3C;midipoet></strong> we could just let ASICS rule Monero, and move the whole community to a brand new implementation of MimbleWimble<br>
+<strong>&#x3C;ferretinjapan></strong> needmoney90, with trying to give a “gentle” ultimatum<br>
+<strong>&#x3C;needmoney90></strong> the only way to fork that often is to drop the market cap / ecosystem size<br>
+<strong>&#x3C;needmoney90></strong> go for it<br>
+<strong>&#x3C;ferretinjapan></strong> fluffypony, I’ve never advocated a 4 month fork schedule.<br>
+<strong>&#x3C;fluffypony></strong> ferretinjapan: was joke<br>
+<strong>&#x3C;needmoney90></strong> then you tacitly allow asics if randomx fails<br>
+<strong>&#x3C;tevador></strong> even if there was a 2x ASIC, it doesn’t require the same response as a 50x ASIC<br>
+<strong>&#x3C;needmoney90></strong> If you advocate asic resistance and not a 4-month fork schedule, you’re willfully ignoring reality<br>
+<strong>&#x3C;ferretinjapan></strong> iKnow :) but some people might think I’m opf that mind<br>
+<strong>&#x3C;fluffypony></strong> midipoet: MW is already coming via Tari, not sure if doubling down on that is helpful - also MW requires interactivity, where Monero does not, it would be a fundamentally different thing<br>
+<strong>&#x3C;dEBRUYNE></strong> sech1: Yeah that sounds reasonable<br>
+<strong>&#x3C;needmoney90></strong> this is not counting randomx of course*<br>
+<strong>&#x3C;ferretinjapan></strong> needmoney90, aaaand theres the ulimatium :)<br>
+<strong>&#x3C;needmoney90></strong> RX is our prescription for asic resistance<br>
+<strong>&#x3C;moneromooo></strong> tevador: if randomx appeared to fail, would you want to continue trying to get a better algorithm, hypothetically ?<br>
+<strong>&#x3C;tevador></strong> depends on how it fails<br>
+<strong>&#x3C;midipoet></strong> fluffypony: ah i was just joking. i lked the idea od taking all our devs and community and starting on a 2nd/3rd generation tech.<br>
+<strong>&#x3C;needmoney90></strong> Mcash would be interesting, but they’ll run into the same issues if they get big<br>
+<strong>&#x3C;tevador></strong> I wouldn’t consider a 2x more efficient ASIC a failure<br>
+<strong>&#x3C;moneromooo></strong> If it fails by having a party suddenly seem to get close to 50% of the network hash rate.<br>
+<strong>&#x3C;needmoney90></strong> mooo, I think its a “we’ll cross that bridge when we get to it” issue<br>
+<strong>&#x3C;tevador></strong> and we could still make annual PoW upgrade as new CPUs are introduced<br>
+<strong>&#x3C;moneromooo></strong> I’m not asking to start now :)<br>
+<strong>&#x3C;dEBRUYNE></strong> I’d be strongly opposed to an “annual PoW upgrade”<br>
+<strong>&#x3C;ArticMine></strong> a 2x ASIC is not a RandomX failure Would you accept a 50% rebate payable in XMR on your heating cost by running a peice of software on our computer? 30% 10% 5% 1% .1% This becomes the question<br>
+<strong>&#x3C;dEBRUYNE></strong> ArticMine: You also have to factor in that not everyone uses their miner for heating<br>
+<strong>&#x3C;ferretinjapan></strong> annual POW would probably be too late.<br>
+<strong>&#x3C;fluffypony></strong> dEBRUYNE: as would I<br>
+<strong>&#x3C;tevador></strong> dEBRUYNE: what time scale would you be comfortable with? no changes at all until the end of time?<br>
+<strong>&#x3C;needmoney90></strong> Anything under annual PoW is basically off the table right now<br>
+<strong>&#x3C;needmoney90></strong> barring emergency forks<br>
+<strong>&#x3C;needmoney90></strong> we can maybe get one more off<br>
+<strong>&#x3C;dEBRUYNE></strong> tevador: Yes, no changes<br>
+<strong>&#x3C;dEBRUYNE></strong> Reintroducing tweaks reintroduces the same risks smooth described here -> <a href="https://github.com/monero-project/monero/issues/3387#issue-304296870" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/monero/issues/3387#issue-304296870</a><br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> I think it is clear that even a perfect CPU favouring algorithm would eventually need to be changed, because CPUs will eventually change<br>
+<strong>&#x3C;dEBRUYNE></strong> Which we’re trying to get away from with a long-term algorithm<br>
+<strong>&#x3C;ArticMine></strong> This is an example why 2x or even 10x may not be a failure. 100x Yes that is a failure<br>
+<strong>&#x3C;dEBRUYNE></strong> 10x will invariable drive out all other miners<br>
+<strong>&#x3C;tevador></strong> well, what if CPUs start routinely ship with 4 MB of cache per core<br>
+<strong>&#x3C;ArticMine></strong> There are a host of other situation where a small miner would have an advantage. Excess solar is another case<br>
+<strong>&#x3C;dEBRUYNE></strong> tevador: Aren’t we then finding ourselves in a situation where new CPUs are more suitable for the algorithm than old CPUs?<br>
+<strong>&#x3C;sech1></strong> Botnets have 0 power costs, don’t forget it. They can always compete with ASICs.<br>
+<strong>&#x3C;ArticMine></strong> 10x is marginal<br>
+<strong>&#x3C;dEBRUYNE></strong> I don’t think that is necessarily a problem that requires tweaking<br>
+<strong>&#x3C;ferretinjapan></strong> I’ll just say I think it’s naieve to think that its “randomX because nothing else is viable in the future. Ever.”.<br>
+<strong>&#x3C;rbrunner></strong> I’d like to throw in that looking far into the future is nice and all, but we have an urgent problem *now* - somebody owned our network, and maybe will again …<br>
+<strong>&#x3C;needmoney90></strong> ferretinjapan: If you have any actionable directions as opposed to “its gotta exist because I want it”, I’m all ears.<br>
+<strong>&#x3C;needmoney90></strong> we are all ears*<br>
+<strong>&#x3C;ferretinjapan></strong> that kind if thinking eradicate all future innovateions ever.<br>
+<strong>&#x3C;dEBRUYNE></strong> sech1: Sure, but at some point they only own a negligible amount of the hashrate<br>
+<strong>&#x3C;dEBRUYNE></strong> In the last 3 months leading up to the hard fork, they were probably still mining, but probably owned only like 5-10%<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> If newer generation widespread CPUs perform better than older simpler ones, then older simpler ones become a form of ASIC, right?<br>
+<strong>&#x3C;dEBRUYNE> &#x3C;ferretinjapan></strong> that kind if thinking eradicate all future innovateions ever. &#x3C;= That seems more like wishful thinking imo<br>
+<strong>&#x3C;ferretinjapan></strong> needmoney90, you didn’t understand what I said. I said taking all options off the table forever is naieve.<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> but yeah looking that far ahead is kinda pointless right now<br>
+<strong>&#x3C;needmoney90></strong> The ecosystem size and market cap are taking the options off the table, my dude<br>
+<strong>&#x3C;needmoney90></strong> we cant keep forking like this<br>
+<strong>&#x3C;ferretinjapan></strong> Dead2, Ring CT is wishful thinking?<br>
+<strong>&#x3C;ferretinjapan></strong> dEBRUYNE, ^<br>
+<strong>&#x3C;dEBRUYNE></strong> Arguably that’s different than PoW algorithms<br>
+<strong>&#x3C;ferretinjapan></strong> the point is, things improve, even though you ccan’t see an alternative right now.<br>
+<strong>&#x3C;sgp_></strong> It’s good to have an idea and plan even if it may change<br>
+<strong>&#x3C;ferretinjapan></strong> ^<br>
+<strong>&#x3C;needmoney90></strong> you’re free to make a coin that forks constantly to resist asics, and piss off exchanges/wallet providers/the ecosystem.<br>
+<strong>&#x3C;fluffypony></strong> ferretinjapan: nobody is suggesting it will never change<br>
+<strong>&#x3C;hyc></strong> yeah, saying PoW will never change again is a bit shortsighted<br>
+<strong>&#x3C;fluffypony></strong> but I think planning for it to change regularly vs. planning for it to change infrequently are different<br>
+<strong>&#x3C;moneromooo></strong> I’d rather pissed off exchanges than a party with 51% of the hash rate.<br>
+<strong>&#x3C;ferretinjapan></strong> ^<br>
+<strong>&#x3C;needmoney90></strong> Suggesting you want asic resistance and also not being willing/able to fork more than once a year is a direct contradiction<br>
+<strong>&#x3C;needmoney90></strong> you need to choose one<br>
+<strong>&#x3C;fluffypony></strong> I also don’t think that the Monero protocol should ossify because we need to constantly improve privacy<br>
+<strong>&#x3C;fluffypony></strong> but I do think that PoW should ossify, for reasons that I hope are obvious<br>
+<strong>&#x3C;ArticMine></strong> The difference is an improvement POW is no different in this respect. Endless tweaks with no improvement in POW is very different<br>
+<strong>&#x3C;needmoney90></strong> And we can’t do the latter<br>
+<strong>&#x3C;ferretinjapan></strong> needmoney90, you’re cutting off your nose to spite your face. You could very well box the entire network into a corner.<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> A future where we have annual protocol upgrades which occasionally also involve a PoW upgrade to better reflect innovations in the CPU market sounds pretty good to me<br>
+<strong>&#x3C;dEBRUYNE></strong> ArticMine: sure, but imo we don’t need to tweak if a new generation of CPUs simply outclasses the old generation of CPUs<br>
+<strong>&#x3C;needmoney90></strong> What are you even suggesting ferret?<br>
+<strong>&#x3C;dEBRUYNE></strong> Isn’t that basically natural evolvement<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> at a FIXED date<br>
+<strong>&#x3C;needmoney90></strong> You keep saying “no, reality sucks, choose a different reality”<br>
+<strong>&#x3C;needmoney90></strong> theres only one reality<br>
+<strong>&#x3C;hyc></strong> dEBRUYNE: yeah I basically agree with this<br>
+<strong>&#x3C;ferretinjapan></strong> needmoney90, I’ve already made myself clear. I said it above.<br>
+<strong>&#x3C;needmoney90></strong> fork every 4 months, I know<br>
+<strong>&#x3C;ArticMine></strong> So if we find a way to lower the ASIC advantage from say 5x to 1.5x with RandomX that is a valid “tweak”<br>
+<strong>&#x3C;needmoney90></strong> If you dont want 4-month forks, you dont want asic resistance<br>
+<strong>&#x3C;needmoney90></strong> asics will be de facto present on the network<br>
+<strong>&#x3C;dEBRUYNE></strong> ArticMine: How do you know that tweak will work out though?<br>
+<strong>&#x3C;dEBRUYNE></strong> Only practice will tell and we may be at risk of another manufacturer again gaining a x5 advantage<br>
+<strong>&#x3C;oneiric_></strong> needmoney90: even with cnr?<br>
+<strong>&#x3C;needmoney90></strong> im not sure.<br>
+<strong>&#x3C;ArticMine></strong> One can test an verify ahead of time<br>
+<strong>&#x3C;needmoney90></strong> we’ll see<br>
+<strong>&#x3C;sgp_></strong> dEBRUYNE: I think this was a hypothetical example<br>
+<strong>&#x3C;dEBRUYNE></strong> In my opinion, if RandomX gets overrun by ASICs, we should just switch to an asic friendly algorithm and not try to apply band-aid<br>
+<strong>&#x3C;needmoney90></strong> but I’m suspecting its 4-6m<br>
+<strong>&#x3C;needmoney90></strong> and then asics are out again<br>
+<strong>&#x3C;dEBRUYNE></strong> ArticMine: Not fully, only practice can tell<br>
+<strong>&#x3C;ArticMine></strong> One can also argue intent<br>
+<strong>&#x3C;oneiric_></strong> if cnr keeps at 6+ mo fork, that at least buys time for review + discussion about RandomX and other alternatives<br>
+<strong>&#x3C;sgp_></strong> dEBRUYNE: I think it depends on the circumstances of it being overrun, but I largely agree except for bug-like fixes<br>
+<strong>&#x3C;kovri-slack> &#x3C;woodser></strong> also agreed<br>
+<strong>&#x3C;ArticMine></strong> If on the other hand the tweak leaves the ASIC advantage at 5x and only bricks the ASICs that is not a valid tweak<br>
+<strong>&#x3C;sgp_></strong> Agreed<br>
+<strong>&#x3C;ArticMine></strong> This is the key difference Intent is critical<br>
+<strong>&#x3C;moneromooo></strong> It is, if the ASICs were, or were threating to be, at > 50% of the network hash rate.<br>
+<strong>&#x3C;dEBRUYNE></strong> We also have to weigh off the risks involved with a tweak against the risks of switching to SHA3 at that point<br>
+<strong>&#x3C;moneromooo></strong> It is a short term fix, but it is one nonetheless.<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> MONERO 2039 NETWORK UPGRADE CHANGELOG: 1) Changed to QuantumX to lower the advantage of Quantum ASIC advantage, and slow the encroachment of the Terminator hoards.<br>
+<strong>&#x3C;fluffypony></strong> LOL<br>
+<strong>&#x3C;ArticMine></strong> moneromooo then one tweak followed by SHA-3<br>
+<strong>&#x3C;dEBRUYNE></strong> At that point it may be better to just introduce SHA3 in a few months<br>
+<strong>&#x3C;sgp_></strong> ArticMine: yes, only as an emergency option to buy ~3 months before SHA3 if needed<br>
+<strong>&#x3C;oneiric_></strong> lol skynet is online<br>
+<strong>&#x3C;dEBRUYNE></strong> It will be sufficient for manufacturers to tape out a device<br>
+<strong>&#x3C;dEBRUYNE></strong> Reacting to a party gaining the majority of the hashrate with tweaking may also raise the possibility of them acting maliciously<br>
+<strong>&#x3C;moneromooo></strong> I am far from confident SHA-3 will lead to a healthy non oligopolistic market. Though it might, but that’s wholesale speculation.<br>
+<strong>&#x3C;midipoet></strong> ^<br>
+<strong>&#x3C;needmoney90></strong> I do not disagree mooo<br>
+<strong>&#x3C;moneromooo></strong> And it loses us the “ease of starting mining”, for sure.<br>
+<strong>&#x3C;rbrunner></strong> Agree<br>
+<strong>&#x3C;midipoet></strong> at tpd<br>
+<strong>&#x3C;dEBRUYNE></strong> Don’t disagree either, but I think it’s a better option than trying to apply band-aid to RandomX in case it fails<br>
+<strong>&#x3C;hyc></strong> agreed. that’s why I’ve opposed any plan that unconditionally says “we shift to SHA3”<br>
+<strong>&#x3C;dEBRUYNE></strong> To kind of conclude this subject, I think most are in favor of ”- Implement RandomX, switch to SHA3 in case RandomX fails, do not precommit to a set date” right?<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> It really really depends on the nature of the failure and the band-aid. Audits, audits, audits…<br>
+<strong>&#x3C;oneiric_></strong> maybe, but maybe the market matures enough in the next 1-2 years that asic-friendliness makes sense. maybe it doesn’t. agree with flexible algo for asic-friendly<br>
+<strong>&#x3C;midipoet></strong> unless we manfacture SHA-3 ASICS. but am not sure how that worked for SIA.<br>
+<strong>&#x3C;dEBRUYNE></strong> Band-aids are per definition tweaks, which we’re arguably trying to get away from<br>
+<strong>&#x3C;dEBRUYNE></strong> midipoet: SIA is a poor example, they forked off other manufacturers that made more efficient devices<br>
+<strong>&#x3C;dEBRUYNE></strong> Also they used a relatively complex algorithm<br>
+<strong>&#x3C;fluffypony></strong> I’m of the opinion that we need to precommit to a SHA-3 date so that manufacturers start working towards it<br>
+<strong>&#x3C;jwinterm></strong> moneromooo: I agree, but I think I’m more confident that sha3 will lead to a non-oligopolistic market than I am that randomx will not lead to a single entity producing custom hw leading to that entity controlling 51% of the network hashrate<br>
+<strong>&#x3C;hyc></strong> fluffypony: there are already other coins using SHA3<br>
+<strong>&#x3C;fluffypony></strong> hyc: no, there really aren’t<br>
+<strong>&#x3C;fluffypony></strong> Shitcoin #7 doesn’t count<br>
+<strong>&#x3C;hyc></strong> why do manufacturers need to wait for us?<br>
+<strong>&#x3C;sgp_></strong> Two tweak types: 1) narrow ASIC advantage, 2) break existing ASICs. I think most agree 1 is highly preferable to 2<br>
+<strong>&#x3C;jwinterm></strong> max keiser would like a word with you fluffypony<br>
+<strong>&#x3C;fluffypony></strong> lol jwinterm<br>
+<strong>&#x3C;needmoney90></strong> Fluffypony, keccack has some actual adoption<br>
+<strong>&#x3C;oneiric_></strong> fluffypony: what about not committing to algo, and selecting one that has highest likelihood of adoption at the time of the decision?<br>
+<strong>&#x3C;needmoney90></strong> not top-20 adoption<br>
+<strong>&#x3C;vp11></strong> Band-aids are different from technological evolution too. ArticMine is correct that we should be open to improve the algorithm even if ASICS are not dominating. We don’t need a schedule for that nor a specific PoW fork. This could be added to a “normal” network upgrade.<br>
+<strong>&#x3C;dEBRUYNE></strong> vp11: “improvement” is a tweak<br>
+<strong>&#x3C;needmoney90></strong> nvm, keccack has no real adoption<br>
+<strong>&#x3C;dEBRUYNE></strong> And who can objectively determine that it is an improvement?<br>
+<strong>&#x3C;oneiric_></strong> keccack is used by eth no?<br>
+<strong>&#x3C;needmoney90></strong> statement retracted its all garbage<br>
+<strong>&#x3C;fluffypony></strong> needmoney90: was about to say<br>
+<strong>&#x3C;fluffypony></strong> lol<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> Not really a tweak if it’s something like “Made the Randomness of RandomX more Random”<br>
+<strong>&#x3C;ArticMine></strong> fluffypony A few months is all manufactures need. Pre commit makes no sense if RandomX is working<br>
+<strong>&#x3C;dEBRUYNE></strong> I thikn a lot of people are underestimating the risks involved with a tweak<br>
+<strong>&#x3C;needmoney90></strong> ^^^^^^^^^<br>
+<strong>&#x3C;vp11></strong> These improvements can be tested in stagenet, test net, other coins, etc.<br>
+<strong>&#x3C;fluffypony></strong> ArticMine: for them to truly compete and reduce large differences they need more time<br>
+<strong>&#x3C;fluffypony></strong> the arms race is about being first to market<br>
+<strong>&#x3C;oneiric_></strong> +1 for Articmine<br>
+<strong>&#x3C;jwinterm></strong> sha-3 ip is available through numerous asic producers (not just cryptocurrency asics), for instance: <a href="https://www.silexinsight.com/products/security/sha-3-ip-core/" rel="noopener noreferrer external" target="_blank">https://www.silexinsight.com/products/security/sha-3-ip-core/</a> or <a href="https://www.xilinx.com/products/intellectual-property/1-gex6yw.html" rel="noopener noreferrer external" target="_blank">https://www.xilinx.com/products/intellectual-property/1-gex6yw.html</a><br>
+<strong>&#x3C;vp11></strong> Yes, improvements are tweaks if you want, but intent is different. Do you think Bill Gates was right when he said that 640k was enough for everyone? Evolution happens.<br>
+<strong>&#x3C;sgp_></strong> dEBRUYNE: ironically I think we understand this better than ASICs given the past actions and observed behaviors<br>
+<strong>&#x3C;fluffypony></strong> by pre-committing we get rid of the “first to market” race<br>
+<strong>&#x3C;moneromooo></strong> jwinterm: based on particular reasons ?<br>
+<strong>&#x3C;jwinterm></strong> I think it would be trivial to turnaround an asic for sha-3 in under three months by simply licensing ip<br>
+<strong>&#x3C;dEBRUYNE></strong> sgp_: The fact that some people are still advocating for them makes me think we don’t<br>
+<strong>&#x3C;sech1></strong> fluffypony no one is going to work on SHA3 ASIC 2 years in advance, it’s an eternity in crypto<br>
+<strong>&#x3C;jwinterm></strong> based on the experience with cryptonight and tweaks moneromooo mostly<br>
+<strong>&#x3C;moneromooo></strong> fluffypony: if it’s all about being first to market, then we WILL end up with a monopoly.<br>
+<strong>&#x3C;dEBRUYNE> &#x3C;fluffypony></strong> the arms race is about being first to market &#x3C;= I don’t think that is necessary a problem in the beginning<br>
+<strong>&#x3C;hyc></strong> and an eternity in silicon<br>
+<strong>&#x3C;dEBRUYNE></strong> As long as it doens’t lead to a manufacturer dominating<br>
+<strong>&#x3C;tevador></strong> I don’t think we need to precommit to a date for SHA-3 at the moment<br>
+<strong>&#x3C;dEBRUYNE></strong> moneromooo: most manufacturers have similar tape out times<br>
+<strong>&#x3C;tevador></strong> 6-month advance notice should be enough if we want to switch in the future<br>
+<strong>&#x3C;fluffypony></strong> sech1: I know, but I also don’t see value in precommitting to a short-term date because then RandomX is largely pointless<br>
+<strong>&#x3C;sgp_></strong> dEBRUYNE: I think it’s important to distinguish between planned tweaks with the intent of breaking (current) and RandomX improvements. These have very different impacts and implications<br>
+<strong>&#x3C;vp11></strong> We’re already precommitting to the possibility of SHA3. Isn’t that enough? :)<br>
+<strong>&#x3C;fluffypony></strong> tevador: if RandomX is broken and someone manufacturers a 10x ASIC then it will be a panic-switch and NOBODY will be ready on the manufacturing side<br>
+<strong>&#x3C;fluffypony></strong> then it’ll be the Bitcoin ASIC arms race all over again<br>
+<strong>&#x3C;needmoney90></strong> Vp11: it’s a process, this is Signalling<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> I’m general afraid of commitment, so I vote against committing to a date<br>
+<strong>&#x3C;el00ruobuob_[m]></strong> vp11 +1<br>
+<strong>&#x3C;dEBRUYNE></strong> sgp_: “Improvements” are still tweaks, same risks involved. Besides, who can objectively determine they are actually improvements?<br>
+<strong>&#x3C;needmoney90></strong> If it’s not in the consensus layer, this is the best we can do<br>
+<strong>&#x3C;needmoney90></strong> Gauge consensus and get everyone on the same page<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: If that happens, we can plan a fork 6 months in the future I presume<br>
+<strong>&#x3C;oneiric_></strong> having a set of viable alternative for backup makes more sense than precommiting to me<br>
+<strong>&#x3C;jtgrassie></strong> ^<br>
+<strong>&#x3C;ferretinjapan></strong> ^<br>
+<strong>&#x3C;dEBRUYNE></strong> Imo the only viable option if RandomX fails is SHA3<br>
+<strong>&#x3C;fluffypony></strong> dEBRUYNE: given the history I STRONGLY DOUBT everyone will be able to chill whilst someone takes over the hashrate<br>
+<strong>&#x3C;sgp_></strong> dEBRUYNE: I disagree with grouping a possible 2 year off improvement that isn’t rushed to have the same risks and annoyances that we have now<br>
+<strong>&#x3C;dEBRUYNE></strong> There’s certainly a lot of overlap<br>
+<strong>&#x3C;oneiric_></strong> dEBRUYNE: and if in 6-months something better comes up?<br>
+<strong>&#x3C;dEBRUYNE></strong> ^ sgp_<br>
+<strong>&#x3C;vp11></strong> dEBRUYNE: who can objectively determine if the current improvements on the protocol are actual improvements? The answer should be because there are tests, research and audits. Why it should be different to pow research?<br>
+<strong>&#x3C;dEBRUYNE></strong> oneiric_: It’s a risk, but a slight one<br>
+<strong>&#x3C;dEBRUYNE></strong> vp11: That doesn’t rule out the “improvement” yielding an advantage for an ASIC manufacturer<br>
+<strong>&#x3C;fluffypony></strong> ok so consider these two scenarios:<br>
+<strong>&#x3C;oneiric_></strong> just don’t see the harm in saying: “we’ll fallback to one of SHA3, Blake2b, ChaCha, etc.”<br>
+<strong>&#x3C;vp11></strong> That doesn’t rule out the improvement (on protocol) yielding a possibility of breaking the whole thing.<br>
+<strong>&#x3C;fluffypony></strong> 1. RandomX fails and a 10x ASIC appears, we decide to fork in 6 months and in the meantime a single manufacturer controls 90% of the hashrate<br>
+<strong>&#x3C;dEBRUYNE></strong> vp11: I don’t see how that is related<br>
+<strong>&#x3C;fluffypony></strong> 2. We have precommited to SHA3 in 2 years. 6 months in, RandomX fails and a 10x ASIC appears, we decide to emergency fork in 8 weeks, and at least some manufacturers already have plans in place and can accelerate them.<br>
+<strong>&#x3C;fluffypony></strong> option 3 is no precommit + emergency fork, which is untenable<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony: Do you think asic manufacturers will realistically start designing 18 months in advance?<br>
+<strong>&#x3C;dEBRUYNE></strong> I am kind of skeptical about that<br>
+<strong>&#x3C;tevador></strong> I don;t think anyone would make any work on SHA-3 ASIC 1.5 years in advance<br>
+<strong>&#x3C;mrantrax></strong> that would be a waste of time<br>
+<strong>&#x3C;rbrunner></strong> And what in those arguments speaks for SHA3? Why not piggyback on Bitcoin ASICs?<br>
+<strong>&#x3C;ArticMine></strong> In case 2 the creator of the 90% takeover starts making the SHA-3 ASIC since they know a head of time that is the fall back<br>
+<strong>&#x3C;moneromooo></strong> Because someone would have 99% of the hash rate.<br>
+<strong>&#x3C;ferretinjapan></strong> fluffypony, I’m for 3. otherwise, a miner could decide to game the network by hiring a huge botnet to spike the HR and fake RandomX asics, thus triggering a non-rollbackable switchover. Remember Miners do NOT like RandomX they’ll be incentivised to nerf it.<br>
+<strong>&#x3C;fluffypony></strong> dEBRUYNE: they will start the process of raising money, designing, aiming for 7nm, etc<br>
+<strong>&#x3C;jwinterm></strong> rbrunner: that puts monero at the mercy of f2pool or whatever<br>
+<strong>&#x3C;vp11></strong> The same argument against the tweaks in PoW can be used against the tweaks in the protocol. If someone finds a better way to improve RandomX in the future (while we’re on it) we should consider implementing it in a responsible way, the same way we do for the protocol improvements.<br>
+<strong>&#x3C;vp11></strong> dEBRUYNE:<br>
+<strong>&#x3C;ArticMine></strong> Out of the frying pan 10x into the fire 100x<br>
+<strong>&#x3C;dEBRUYNE></strong> It’s vastly different<br>
+<strong>&#x3C;oneiric_></strong> if asic manufacturers can already do &#x3C;6 mo design on something as complicated as cryptonight, dont see sha3 asic taking more than a couple weeks<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> Any announcement of a switch date relies on (SHA-3 ASICs produced to sell freely)>>(SHA-3 ASICs produced to mine fore profit at the moment of the fork)<br>
+<strong>&#x3C;fluffypony></strong> vp11: the argument being made is that RandomX is the be-all and end-all of ASICs<br>
+<strong>&#x3C;dEBRUYNE></strong> There’s no way you can compare improvements in the protocol to “improvements” in the PoW algorithm<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> so the a fair market emerging is quite an assumption, especially immediately<br>
+<strong>&#x3C;fluffypony></strong> sorry of ASIC resistance<br>
+<strong>&#x3C;vp11></strong> I just did :)<br>
+<strong>&#x3C;ArticMine></strong> fluffypony RandomX is not the be-all and end all of all ASICs far from it<br>
+<strong>&#x3C;hyc></strong> RandomX will kill single-purpose fixed function hardware. That’s unequivocal.<br>
+<strong>&#x3C;tevador></strong> there are already SHA-3 designs available, ETH ASIC contains Keccak cores; the only investment would be the tapeout/mask which nobody would do 2 years in advance<br>
+<strong>&#x3C;fluffypony></strong> vp11: no, I mean that there is expected to not be a “better way to improve RandomX” much, if at all<br>
+<strong>&#x3C;hyc></strong> the only open question is how efficient you can make a programmable chip<br>
+<strong>&#x3C;moneromooo></strong> randomx is the best we have. But then 6 months ago (or wahtever) it was somehting else. Years ago it was CN. Maybe a better way will be found in the next year or two. Claiming randomx is the last now does not seem too productive. It might be the last you’re willing to countenance, but that is another claim.<br>
+<strong>&#x3C;rbrunner></strong> There must be some logical contradiction somewhere in using RandomX first and already committing to SHA3<br>
+<strong>&#x3C;hyc></strong> rbrunner: agreed<br>
+<strong>&#x3C;hyc></strong> precommit to SHA3 before knowing how well randomX performed is illogical<br>
+<strong>&#x3C;ferretinjapan></strong> ^<br>
+<strong>&#x3C;rbrunner></strong> Or use it at all if SHA3 is so good …<br>
+<strong>&#x3C;oneiric_></strong> ^<br>
+<strong>&#x3C;jtgrassie></strong> agreed<br>
+<strong>&#x3C;fluffypony></strong> hyc: RandomX *will* eventually fail, though<br>
+<strong>&#x3C;ferretinjapan></strong> And theres incentives for miners to (pardon pun) undermine RandomX<br>
+<strong>&#x3C;fluffypony></strong> rbrunner: I’m for side-stepping it, but few others are<br>
+<strong>&#x3C;sech1></strong> fluffypony you can’t be 100% sure about that<br>
+<strong>&#x3C;needmoney90></strong> Moneromooo: it’s the last we can realistically use before we succumb to ASICs due to ecosystem size<br>
+<strong>&#x3C;sgp_></strong> fluffypony: yes, which is why I think it’s good to share an intent to switch if it breaks<br>
+<strong>&#x3C;dEBRUYNE></strong> fluffypony, sech1: Only practice will tell I guess<br>
+<strong>&#x3C;needmoney90></strong> Even if we find another option or two, the network will be de facto ASIC mined until then. And it would take a lot of time to switch over.<br>
+<strong>&#x3C;fluffypony></strong> sech1: yes, I can. It will not achieve its stated objective in the long run - a custom motherboard with a bunch of CPUs or GPUs on it is indistinguishable from an expensive ASIC.<br>
+<strong>&#x3C;hyc></strong> fluffypony: theoretically yes. Even if an ASIC was only 1% more efficient, there is presumably a marketcap value where it becomes profitable to build that ASIC<br>
+<strong>&#x3C;dEBRUYNE></strong> But it is prudent to have a back up plan in case it fails<br>
+<strong>&#x3C;hyc></strong> but those outcomes are far away<br>
+<strong>&#x3C;needmoney90></strong> Moneromooo in years past we had the benefit of being small/flexible, we could adapt rapidly<br>
+<strong>&#x3C;needmoney90></strong> We’re kind of a billion dollars now<br>
+<strong>&#x3C;sech1></strong> fluffypony then we have different definitions of failure<br>
+<strong>&#x3C;tevador></strong> custom montherboard with a 1.5 efficiency advantage can hardly be called an ASIC<br>
+<strong>&#x3C;fluffypony></strong> needmoney90: we’re over a billion Dollars in a bear market<br>
+<strong>&#x3C;ArticMine></strong> fluffypony hyc: RandomX *will* eventually fail, though &#x3C;---- that is very debatable It may well lead to co existence in the 1.5x to 10x range<br>
+<strong>&#x3C;fluffypony></strong> tevador: it’s functionally equivalent<br>
+<strong>&#x3C;needmoney90></strong> I’m trying not to overstate things Fluffy.<br>
+<strong>&#x3C;tevador></strong> the last batches of ASICs were 10-50x more efficient<br>
+<strong>&#x3C;tevador></strong> that’s a different situation<br>
+<strong>&#x3C;fluffypony></strong> ArticMine: 3x - 10x would be sufficient to allow a single manufacturer dominate hashrate<br>
+<strong>&#x3C;needmoney90></strong> Just pointing out the realoty that even if more asic resistant algos exist, we don’t have the luxury of algo hopping more than once a year at this point<br>
+<strong>&#x3C;hyc></strong> that’s really a different argument. it’s always true that whatever the mechanism, the one with the deepest pockets can buy the most of them<br>
+<strong>&#x3C;moneromooo></strong> I don’t see that as an impassable obstacle. Pissed off exchanges -> fewer exhanges; someone with > 50% hash rate -> pointless coin.<br>
+<strong>&#x3C;needmoney90></strong> Even then is reckless<br>
+<strong>&#x3C;sech1></strong> custom multi-cpu motherboard with 1.5x efficiency - no sense in keeping it in secret, much more sense in selling it to millions of miners<br>
+<strong>&#x3C;fluffypony></strong> sech1: no, keep it secret and mine for a while until you’ve made enough money, then blow off the dust and sell them<br>
+<strong>&#x3C;fluffypony></strong> that’s the Bitmain Model (tm)<br>
+<strong>&#x3C;ferretinjapan></strong> the other thing is RandomX has ubiquity on it’s side to balance out advantages ASICs can have.<br>
+<strong>&#x3C;needmoney90></strong> ?<br>
+<strong>&#x3C;sech1></strong> fluffypony this model doesn’t work with only 1.5-3x efficiency<br>
+<strong>&#x3C;ferretinjapan></strong> ASIC manufacturers can’t buy up ALL CPUs/GPUs.<br>
+<strong>&#x3C;ArticMine></strong> 3x is very debatable given the ETH experience 10x maybe<br>
+<strong>&#x3C;ArticMine></strong> This also assumes only one ASIC manufacturer for RandomX<br>
+<strong>&#x3C;needmoney90></strong> Articmine is it possible that the pos fork / difficulty bomb have delayed investment in asics<br>
+<strong>&#x3C;needmoney90></strong> Due to fears of their longevity on the network<br>
+<strong>&#x3C;dr-mike></strong> Current ETH ASICs available on the market are only 2.3x more efficient<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> yes ubiquity is a powerful force in stopping a 51% attack. Maybe it’s controversial but I’m actually in favour of botnets if they decentalize things with common hardware<br>
+<strong>&#x3C;ArticMine></strong> It did not. What is happening in ETH is the advantage is low 2x -4x<br>
+<strong>&#x3C;ArticMine></strong> Also while this is going on the CPU do not stay static<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> The barrier to entry for building a botnet is potentially much lower than the one to build an ASIC farm<br>
+<strong>&#x3C;moneromooo></strong> Is Ethereum mining feasible on CPU ?<br>
+<strong>&#x3C;dr-mike></strong> no.<br>
+<strong>&#x3C;sgp_></strong> If you don’t mind, would it be all right if I focus the discussion more into a few main topics? We can more reliably debate about the pros and cons under different scenarios and help predict actions. Otherwise this conversation can go on forever.<br>
+<strong>&#x3C;dr-mike></strong> GPU advantage is well over 10x<br>
+<strong>&#x3C;ArticMine></strong> It is on GPU well after a year of ASICs<br>
+<strong>&#x3C;dEBRUYNE></strong> I think only practice can tell what kind of efficiency advantage will drive out other miners<br>
+<strong>&#x3C;ArticMine></strong> So you ave co existence GPU / ASIC which also leads to competition between ASIC manufactures. The very thing SHA-3 is trying to engineer<br>
+<strong>&#x3C;ArticMine></strong> have<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> I think from reading this discussion that longer term plans are pretty much pointless until we’ve had some audits/reviews/testing of RandomX especially because people are against hard-coding failure by adding a date for SHA-3<br>
+<strong>&#x3C;moneromooo></strong> Then maybe if RandomX fails (to have small enough of a CPU-to-ASIC efficiciency gap), then switching to Ethereum’s hash might be better than SHA-3. We lose a lot of ease of access, but it’s still a lot better than ASIC or nohting.<br>
+<strong>&#x3C;moneromooo></strong> (once Ethereum is PoS, which it apparetnly is not yet)<br>
+<strong>&#x3C;dr-mike></strong> Sounds reasonable.<br>
+<strong>&#x3C;dEBRUYNE></strong> I am skeptical the asic advantage for ETH asics will remain at 2.3x though<br>
+<strong>&#x3C;ArticMine></strong> moneromooo That is a very interesting option if ETH goes POS<br>
+<strong>&#x3C;rbrunner></strong> Sounds reasonable today. Nobody knows about tomorrow.<br>
+<strong>&#x3C;ArticMine></strong> So another fall back<br>
+<strong>&#x3C;dr-mike></strong> dEBRUYNE, Me too.<br>
+<strong>&#x3C;tevador></strong> ETH ASIC with HBM will be 6x-10x more efficient than a GPU<br>
+<strong>&#x3C;hyc></strong> There are still a lot of factors. Even if ASICs can be 2-3x more efficient, they aren’t produced in volumes that can challenge GPUs<br>
+<strong>&#x3C;sgp_></strong> I think it will unfortunately become less reasonable over time, but it’s an option. Ethereum also needs to actually make the switch of course<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> (or if ETH just collapses)<br>
+<strong>&#x3C;hyc></strong> the ASIC companies are lower priority, don’t get the same access to chip fabs as the bigger players<br>
+<strong>&#x3C;sgp_></strong> hyc: plus the extra purposes of GPU/CPU and more stable market have added value that’s hard to calculate<br>
+<strong>&#x3C;moneromooo></strong> Do you need a GPU to (feasibly) sync the Ethereum blockchain ?<br>
+<strong>&#x3C;ferretinjapan></strong> almost seem more rational to do a mashup of multiple POWs as a stopgap to ensure decentralisation if RandomX fails, :P<br>
+<strong>&#x3C;moneromooo></strong> Or, rather, anyone knows how much verifying a hash on CPU costs ?<br>
+<strong>&#x3C;smooth></strong> moneromooo: GPU is of no benefit to syncing ETH<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> you need a time machine to feasibly syn the ETH blockchain<br>
+<strong>&#x3C;oneiric_></strong> lol<br>
+<strong>&#x3C;tevador></strong> moneromooo: no, but you need a quad core CPU, 32 GB of RAM and an SSD<br>
+<strong>&#x3C;dEBRUYNE></strong> ^ Even then syncing will be quite difficilt<br>
+<strong>&#x3C;dEBRUYNE></strong> difficult*<br>
+<strong>&#x3C;moneromooo></strong> It was a bad questiuon. The second question is what I intended :)<br>
+<strong>&#x3C;asymptotically></strong> ferretinjapan: i don’t think that really works. see DASH or other coins that uses X11<br>
+<strong>&#x3C;ferretinjapan></strong> asymptotically, was half joking for the record.<br>
+<strong>&#x3C;dr-mike></strong> moneromooo, Syncing eth chain takes 8 hours on a beefy i7 with a ssd and a 100mbit/s connection. No gpu required.<br>
+<strong>&#x3C;ArticMine></strong> … and you need to be near the ETH miners because of the 15 sec block time<br>
+<strong>&#x3C;dr-mike></strong> tevador, No you dont neewd 32GB ram, 4GB will do.<br>
+<strong>&#x3C;moneromooo></strong> I’m really interested in “if we had Ethereum’s hash in monero, how much would the PoW verification cost”. Hence why my first question was bad.<br>
+<strong>&#x3C;moneromooo></strong> Since ethereum has probably way more blocks than us, if 15 seconds.<br>
+<strong>&#x3C;tevador></strong> I think CPU verification of ethash is roughly 4 ms or so<br>
+<strong>&#x3C;moneromooo></strong> What’s CN on a similar CPU ?<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> to be clear, are we discussing ETHs current hash or ProgPow?<br>
+<strong>&#x3C;jwinterm></strong> ethhash<br>
+<strong>&#x3C;tevador></strong> CN is 12-15 ms on similar CPU<br>
+<strong>&#x3C;moneromooo></strong> Thanks.<br>
+<strong>&#x3C;dr-mike></strong> Why is ProgPow not an option for monero?<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> although feasibly we could steal either as a back up plan once they go PoS<br>
+<strong>&#x3C;moneromooo></strong> It could be, if randomx fails.<br>
+<strong>&#x3C;hyc></strong> dr-mike: GPU-centric<br>
+<strong>&#x3C;oneiric_></strong> not-invented-here<br>
+<strong>&#x3C;ArticMine></strong> if fluffypony were to mine an ETH block at home for me to mine also at home on top of his block there is ~500 msec for the speed of light and switching alone out of 15 sec<br>
+<strong>&#x3C;moneromooo></strong> (and no other suitable candidate is apparent)<br>
+<strong>&#x3C;hyc></strong> shrouded in controversy<br>
+<strong>&#x3C;dr-mike></strong> I agree RandomX should be given a chance, if it fails ProgPow is the next best thing.<br>
+<strong>&#x3C;hyc></strong> oneiric_: not true, it *was* invented here.<br>
+<strong>&#x3C;tevador></strong> nvidia sponsored PoW<br>
+<strong>&#x3C;ArticMine></strong> Mega orphan risk<br>
+<strong>&#x3C;oneiric_></strong> my mistake<br>
+<strong>&#x3C;rbrunner></strong> Why should RandomX fail and ProgPoW *not*?<br>
+<strong>&#x3C;rbrunner></strong> Isn’t the basic approach the same?<br>
+<strong>&#x3C;hyc></strong> rbrunner yes<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> No reason at all, but it’s nice to know there are other PoW that can be stolen if RandomX fails and a stopgap is needed<br>
+<strong>&#x3C;dEBRUYNE></strong> If randomx fails, isn’t progpow likely to fail as well?<br>
+<strong>&#x3C;moneromooo></strong> Progpow targets an arch that’s already optimized to be massively parallel.<br>
+<strong>&#x3C;sgp_></strong> learninandlurkin I think that’s a good way of looking at it, a stopgap<br>
+<strong>&#x3C;rbrunner></strong> No shortage of stopgaps. Take basically anything, just different<br>
+<strong>&#x3C;moneromooo></strong> (though I do not know what it does)<br>
+<strong>&#x3C;dEBRUYNE></strong> learninandlurkin: not sure why we would need a stopgap at that point though<br>
+<strong>&#x3C;hyc></strong> rbrunner but progpow claims to fully utilize a GPU, as randomX claims to fully utilize a CPU. progpow actually doesn’t use more than ~40% of a GPU tho<br>
+<strong>&#x3C;dEBRUYNE></strong> Imo it would be better to switch to asics then<br>
+<strong>&#x3C;crCr62U0></strong> How much does cost to pay ASIC manufacturer to build 10x more efficient miner of RandomX comparing to CPU?<br>
+<strong>&#x3C;crCr62U0></strong> 10e+6$?<br>
+<strong>&#x3C;tevador></strong> 10x more efficient? I don’t think even whole AMD R&#x26;D budget would be enough<br>
+<strong>&#x3C;dEBRUYNE></strong> We’re kind of digressing a bit from the original topics btw, I’d like to switch back to the initial points<br>
+<strong>&#x3C;rbrunner></strong> A bit? :)<br>
+<strong>&#x3C;oneiric_></strong> if feasible randomx + progpow seems to solve a lot of controversy. though i don’t know the technical consequence of something like that<br>
+<strong>&#x3C;dEBRUYNE></strong> First, does the randomx team think RandomX can be viably implemented in October?<br>
+<strong>&#x3C;dEBRUYNE></strong> And if so, would people prefer RandomX over another tweak?<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> Linzhi already has one ready to go apparently<br>
+<strong>&#x3C;ArticMine></strong> tevador?<br>
+<strong>&#x3C;sgp_></strong> dEBRUYNE: if it can be done, I prefer it over another tweak<br>
+<strong>&#x3C;hyc></strong> Pretty sure rnadomX will be ready codewise<br>
+<strong>&#x3C;hyc></strong> the only holdup now is reviewers<br>
+<strong>&#x3C;tevador></strong> it’s definitely possible for Oct<br>
+<strong>&#x3C;dr-mike></strong> When can we have RandomX on a testnet?<br>
+<strong>&#x3C;dEBRUYNE></strong> If the code is reviewed, is randomx not better than another tweak?<br>
+<strong>&#x3C;moneromooo></strong> With the large caveat that I did not look at randomx yet, I think I’d prefer a CNv4 tweak about 5 months (rather than 6) after the past march fork first, then randomx.<br>
+<strong>&#x3C;crCr62U0></strong> All those reviewers are mute now.<br>
+<strong>&#x3C;sgp_></strong> moneromooo: so you’re looking for RandomX addition around January 2020?<br>
+<strong>&#x3C;moneromooo></strong> Unless randomx is 100% ready.<br>
+<strong>&#x3C;moneromooo></strong> Yes, sounds plausible.<br>
+<strong>&#x3C;dr-mike></strong> RandomX must be ready before October.<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> Can we maybe get Outreach to bomb the whole internet with links to RandomX docs, just to get more eyes on it?<br>
+<strong>&#x3C;tevador></strong> daemon integration will be a bit more work than CNv4<br>
+<strong>&#x3C;dEBRUYNE></strong> moneromooo: Then it seems imperative for the community to ensure RandomX is 100% ready in october<br>
+<strong>&#x3C;sgp_></strong> dEBRUYNE: yes, everything would need to be a go<br>
+<strong>&#x3C;dEBRUYNE></strong> In my opinion, it is achievable, we’ve got about 6-7 months left<br>
+<strong>&#x3C;oneiric_></strong> &#x3C; will dedicate some time to RandomX review over the next weeks<br>
+<strong>&#x3C;jtgrassie></strong> learninandlurkin: I’d be highly suprosed if the Outreach team would find qualified reviewers.<br>
+<strong>&#x3C;jtgrassie></strong> *supprised<br>
+<strong>&#x3C;tevador></strong> also we need to prepare: pool software and a reference miner<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> Also maybe retitle the General Fund on CCS to “Desprately needed RandomX audit fund”<br>
+<strong>&#x3C;oneiric_></strong> ^<br>
+<strong>&#x3C;dr-mike></strong> We should hite the same auditors ethereum hires for progpow.<br>
+<strong>&#x3C;dr-mike></strong> *hire<br>
+<strong>&#x3C;jwinterm></strong> that seems fairly aggresive for oct release<br>
+<strong>&#x3C;jwinterm></strong> presumably you would want everything finalized by end of aug or so<br>
+<strong>&#x3C;oneiric_></strong> dr-mike: has that already happened, or will happen?<br>
+<strong>&#x3C;jwinterm></strong> that’s four or five months from now<br>
+<strong>&#x3C;dEBRUYNE></strong> jwinterm: Right, but according to tevador RandomX, in its current state, is basically ready<br>
+<strong>&#x3C;dEBRUYNE></strong> So we can use 4-5 months for testing and reviewing<br>
+<strong>&#x3C;dr-mike></strong> It will happen in the next 2-3 weeks<br>
+<strong>&#x3C;hyc></strong> afaik ETH has only recently decided to o ahead with audits for progpow<br>
+<strong>&#x3C;moneromooo></strong> Did it not add loops like a week ago ? That seems like a large change for it to be ready yet.<br>
+<strong>&#x3C;oneiric_></strong> has the auditor already been selected? if so, who?<br>
+<strong>&#x3C;tevador></strong> btw is there a need to rewrite RandomX into C for review?<br>
+<strong>&#x3C;tevador></strong> currently C++<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> or 4-5 months of looking for reviewers and failing to raise the funds for it :( it’s a possibility<br>
+<strong>&#x3C;dr-mike></strong> No, but it was given a GO, core devs will hire the auditors in the next 2-3 weeks and will notify the community.<br>
+<strong>&#x3C;ferretinjapan></strong> what would be the estimated cost to hire someone/some firm to do an independent review?<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> Are the auditors for ProgPow just Nvidia?<br>
+<strong>&#x3C;oneiric_></strong> thanks, look forward to seeing who they select, and reading the audit when it’s finished<br>
+<strong>&#x3C;hyc></strong> tevador: probably not needed. that was just a personal preference of mine<br>
+<strong>&#x3C;dEBRUYNE> &#x3C;moneromooo></strong> Did it not add loops like a week ago ? That seems like a large change for it to be ready yet. &#x3C;= tevador, any comment on this?<br>
+<strong>&#x3C;moneromooo></strong> I’m not asking for it to stop improving btw :)<br>
+<strong>&#x3C;tevador></strong> not loops, one instruction was modified to jump back in such way that loops are impossible<br>
+<strong>&#x3C;moneromooo></strong> OK, branches.<br>
+<strong>&#x3C;tevador></strong> it was not a major change from my point of view<br>
+<strong>&#x3C;moneromooo></strong> I thought it did not have branches before. But admittedly I mostly follow the backlog quickly.<br>
+<strong>&#x3C;tevador></strong> yes, it did not have branches before<br>
+<strong>&#x3C;sech1></strong> branches were added in respose to critics on HW forum<br>
+<strong>&#x3C;tevador></strong> now there are branches with a fixed 1/128 probability<br>
+<strong>&#x3C;moneromooo></strong> OK, so now it has, but in such a way that it is always “safe”. Right ?<br>
+<strong>&#x3C;tevador></strong> it was tuned to have almost no effect on CPU performance<br>
+<strong>&#x3C;hyc></strong> yes, safe, no loops<br>
+<strong>&#x3C;sech1></strong> yes, no infinite loops are possible with this type of branches<br>
+<strong>&#x3C;rbrunner></strong> So this is on the side of “nice to have”, not “damn, how we could forget that”<br>
+<strong>&#x3C;tevador></strong> it should be easy to prove that it cannot have an infinite cycle<br>
+<strong>&#x3C;sech1></strong> tevador these branches are even designed to not trigger after they’ve triggered, loops are simply impossible<br>
+<strong>&#x3C;dr-mike></strong> rbrunner asking tough questions :)<br>
+<strong>&#x3C;tevador></strong> the main purupose is to take advantage of the commit/retire stages in CPUs<br>
+<strong>&#x3C;moneromooo></strong> My understanding is that programs won’t be known in advance like what sech1 did with CNR. Correct ?<br>
+<strong>&#x3C;ferretinjapan></strong> dr-mike, someones gotta :)<br>
+<strong>&#x3C;tevador></strong> without this, ASIC could have a simplified pipeline<br>
+<strong>&#x3C;tevador></strong> moneromooo: 8 random programs per hash<br>
+<strong>&#x3C;tevador></strong> unique<br>
+<strong>&#x3C;sech1></strong> moneromooo it can be formally proved that branches are safe in RandomX, we made sure it’s easy to do<br>
+<strong>&#x3C;moneromooo></strong> Are these 8 random programs per hash knowable in advance, or not ?<br>
+<strong>&#x3C;sech1></strong> No, they’re generated on the fly<br>
+<strong>&#x3C;oneiric_></strong> having a formal verification tool as a deliverable from the audit would be awesome<br>
+<strong>&#x3C;tevador></strong> no, you have to execute Nth program to find out the code for the N+1st program<br>
+<strong>&#x3C;moneromooo></strong> Well, that does not necessarily preclude knowing in advance.<br>
+<strong>&#x3C;tevador></strong> and the first program is generated from the block header<br>
+<strong>&#x3C;moneromooo></strong> Right. That does. Thanks.<br>
+<strong>&#x3C;tevador></strong> full block header hash<br>
+<strong>&#x3C;needmoney90></strong> Wait, why do loops matter?<br>
+<strong>&#x3C;rbrunner></strong> Branches<br>
+<strong>&#x3C;needmoney90></strong> I thought it just took program state after X instruction executions<br>
+<strong>&#x3C;rbrunner></strong> Not loops :)<br>
+<strong>&#x3C;hyc></strong> loops make runtimes too variable<br>
+<strong>&#x3C;tevador></strong> it’s not so easy to have loops and keep approximately the same runtime per hash<br>
+<strong>&#x3C;moneromooo></strong> You can’t do that (fast) without a hardware insns counter + exception.<br>
+<strong>&#x3C;tevador></strong> we tried in RandomJS and it was not pretty<br>
+<strong>&#x3C;needmoney90></strong> This is better suited for -Pow, sorry<br>
+<strong>&#x3C;moneromooo></strong> “that” being “program state after X instructions[s]”.<br>
+<strong>&#x3C;hyc></strong> yeah we’re off in the weeds here<br>
+<strong>&#x3C;needmoney90></strong> Carry on, I’ll speak up if I have something useful to speak of<br>
+<strong>&#x3C;dEBRUYNE></strong> To sum up this point, people prefer RandomX in october as long as it is ready and audited.<br>
+<strong>&#x3C;notmike></strong> no<br>
+<strong>&#x3C;dr-mike></strong> yes.<br>
+<strong>&#x3C;notmike></strong> hard pass<br>
+<strong>&#x3C;hyc></strong> yes<br>
+<strong>&#x3C;jtgrassie></strong> yes<br>
+<strong>&#x3C;el00ruobuob_[m]></strong> yep<br>
+<strong>&#x3C;sech1></strong> yes<br>
+<strong>&#x3C;tevador></strong> yes, except stoffu<br>
+<strong>&#x3C;ferretinjapan></strong> ^<br>
+<strong>&#x3C;ArticMine></strong> yes<br>
+<strong>&#x3C;dEBRUYNE></strong> Let me switch to another point I’d like to get a bit of a vote on. Like I said, the path of least resistance seems to be either:<br>
+<strong>&#x3C;needmoney90></strong> It’s not just preference, the consensus is pretty much unanimous except for the gpu mining bloc<br>
+<strong>&#x3C;moneromooo></strong> I think so, the “ready and audited” being a bit subjective I suppose.<br>
+<strong>&#x3C;dEBRUYNE></strong> 1. RandomX -> Switch to SHA3 in case RandomX fails<br>
+<strong>&#x3C;dEBRUYNE></strong> 2. RandomX -> precommit to SHA3 on a set date<br>
+<strong>&#x3C;jwinterm></strong> I’d prefer going straight to sha-3 and being done with it, but obviously I’m in minority here with notmike and stoffu<br>
+<strong>&#x3C;dEBRUYNE></strong> Can I get a bit of a vote on this ^<br>
+<strong>&#x3C;hyc></strong> 1<br>
+<strong>&#x3C;dEBRUYNE></strong> If you don’t like either options, you can abstain and mention it<br>
+<strong>&#x3C;dr-mike></strong> 3. None of the above ?<br>
+<strong>&#x3C;ArticMine></strong> 1<br>
+<strong>&#x3C;jtgrassie></strong> 1<br>
+<strong>&#x3C;tevador></strong> 1<br>
+<strong>&#x3C;el00ruobuob_[m]></strong> 1<br>
+<strong>&#x3C;sech1></strong> 111<br>
+<strong>&#x3C;ferretinjapan></strong> abstain<br>
+<strong>&#x3C;jwinterm></strong> what does “fails” mean?<br>
+<strong>&#x3C;needmoney90></strong> 1, but with the caveat that failure be rigidly defined<br>
+<strong>&#x3C;jwinterm></strong> I don’t know that I saw resolution on that term<br>
+<strong>&#x3C;ferretinjapan></strong> jwinterm, thats the million dollar question.<br>
+<strong>&#x3C;sech1></strong> jwinterm we spent first 40 minutes to discuss it<br>
+<strong>&#x3C;ferretinjapan></strong> its way too vague.<br>
+<strong>&#x3C;dEBRUYNE></strong> jwinterm: This basically -> &#x3C;sech1> steep increase in hashrate (and profitability drop) without price changing is a strong indicator of more efficient hardware (ASICs)<br>
+<strong>&#x3C;hyc></strong> (if ETH has gone PoS by then, we could consider ETHash instead of SHA3. I’m still opposed to pre-committing to SHA3 in any form)<br>
+<strong>&#x3C;jwinterm></strong> in light of being too vague I’ll go 2, probably would go 2 anyway tbh<br>
+<strong>&#x3C;rbrunner></strong> 1, but with no dedicated successor yet<br>
+<strong>&#x3C;moneromooo></strong> RandomX, and then (1) if we have another contender ready, switch to that, or (2) if the apparently ASICs seem to be barely getting to 50%, then a tweak, or (3) SHA-3.<br>
+<strong>&#x3C;sgp_></strong> 1<br>
+<strong>&#x3C;dr-mike></strong> that sounds better moneromooo<br>
+<strong>&#x3C;ferretinjapan></strong> yeah, I’ like moo’s option better. Option M for me.<br>
+<strong>&#x3C;ErCiccione[m]></strong> 1<br>
+<strong>&#x3C;moneromooo></strong> And yes, ethhash maybe instead.<br>
+<strong>&#x3C;sgp_></strong> Again, I think the failure is up for some discussion, especially the nature of it. I’m for switching to SHA3 if RandomX catastrophically fails for sure<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> I vote for hyc’s last comment<br>
+<strong>&#x3C;dEBRUYNE></strong> My personal preference is option 1 fwiw<br>
+<strong>&#x3C;ferretinjapan></strong> I think the consensus is theres not enough of a plan to have a consensus :P<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> actually I vote for this -> &#x3C;moneromooo> RandomX, and then (1) if we have another contender ready, switch to that, or (2) if the apparently ASICs seem to be barely getting to 50%, then a tweak, or (3) SHA-3.<br>
+<strong>&#x3C;vtnerd___></strong> Fwiw -> Sha3 precommit (2)<br>
+<strong>&#x3C;ArticMine></strong> There is a very strong consensus to proceed with RandomX at this point.<br>
+<strong>&#x3C;sgp_></strong> Adding to this, there is about a 3 month turnaround time between when a failure is determined and Monero can move to SHA3, if that’s the desired action. Monero can generally either use a stopgap for those months or wait it out<br>
+<strong>&#x3C;sgp_></strong> I think the nature of the failure will determine which of the two actions are taken<br>
+<strong>&#x3C;sgp_></strong> ASICs control 90%? Stopgap maybe warranted<br>
+<strong>&#x3C;vtnerd___></strong> Randomx by October seems aggressive if daemon integration is complicated. And an x86 only optimized version is unfortunate<br>
+<strong>&#x3C;sgp_></strong> ASICs at 20%, proven advantage and growing? Maybe wait it out<br>
+<strong>&#x3C;dEBRUYNE></strong> tevador: Would you be able to integrate randomx with the daemon as well?<br>
+<strong>&#x3C;xmrmatterbridge> &#x3C;learninandlurkin></strong> The nature of theoretical failures is the big limitation to planning beyond auditing RandomX REALLY REALLY well<br>
+<strong>&#x3C;hyc></strong> vtnerd___: shouldn’t take long to get an ARMv8 version going<br>
+<strong>&#x3C;moneromooo></strong> And then if we switch to SHA-3 and we end up with a laughing > 50% ASIC manufcaturer, what do we do ? Go home ? Resurrect Cryptonite and ask MRL to find how to make it private ?<br>
+<strong>&#x3C;vtnerd___></strong> Eh, not April yet so might be doable<br>
+<strong>&#x3C;ferretinjapan></strong> sgp_, yeah, “failure” could mean literally anything.<br>
+<strong>&#x3C;ArticMine></strong> The question I possible see is 1a RandomX if fail SHA-3 vs 1b RandomX if fail ETHhash / ProgPOW if fail SHA-3<br>
+<strong>&#x3C;sgp_></strong> moneromooo: the switch to SHA3 should ideally be the final option, at least for a long while. We would probably out of options after that<br>
+<strong>&#x3C;jwinterm></strong> moneromooo: considering sia and decred each have at least three asic manufacturers and they are lower on the totem pole that seems unlikely, imo<br>
+<strong>&#x3C;vtnerd___></strong> There seems to be plenty of fear driving the decisions which could result in a worse outcome<br>
+<strong>&#x3C;dEBRUYNE></strong> jwinterm: Plus both of those coins have more complex algorithms<br>
+<strong>&#x3C;jwinterm></strong> not by much, I think they both use variants of blake, which is another sha3 finalist I think<br>
+<strong>&#x3C;sgp_></strong> The intent is that before the SHA3 switch, Monero can have resources that help meet the manufacturers halfway and lower the barriers to entry<br>
+<strong>&#x3C;moneromooo></strong> jwinterm: ok, 3 still seems not good though, but I suppose beggars can’t be choosers…<br>
+<strong>&#x3C;tevador></strong> if one manufacturer is 2-3x more efficient that’s exactly like a RandomX ‘failure’ situation, at least temporarily<br>
+<strong>&#x3C;jwinterm></strong> at least four for decred - ffminer, bitmain, innosilicon, and obelisk<br>
+<strong>&#x3C;sgp_></strong> tevador: yes, I agree that the mere existence of ASICs isn’t necessarily failure<br>
+<strong>&#x3C;dEBRUYNE></strong> tevador: I doubt any manufacturer will be 2-3x more effficient though at this stage<br>
+<strong>&#x3C;dEBRUYNE></strong> Especially with a friendly algorithm like SHA3<br>
+<strong>&#x3C;dEBRUYNE></strong> jwinterm: Thanks for correcting me<br>
+<strong>&#x3C;rbrunner></strong> Yeah, at some point PoW itself is a failure, even if that insight does not help much<br>
+<strong>&#x3C;ferretinjapan></strong> sgp_, SHA3 might not be the best though. Its just the “safest/easiest” right now.<br>
+<strong>&#x3C;moneromooo></strong> ferretinjapan: for “ease of entry into ASIC manufacturer club” ? If you have better, feel free to list :)<br>
+<strong>&#x3C;sgp_></strong> ferretinjapan: that’s why I’m not for a set sunset date. We could say “switch to the best ASIC-friendly PoW algorithm” instead. But we would need to keep making resources for whatever that is to not be caught off-guard<br>
+<strong>&#x3C;DaveyJones></strong> +1 ^<br>
+<strong>&#x3C;ferretinjapan></strong> moneromooo, well, my money is on RandomX :P<br>
+<strong>&#x3C;tevador></strong> WhatsMiner is about 2x more efficient than Bitmain at SHA256 at 16 nm, so it’s not impossible to have one manufacturer dominate even a simple algorithm<br>
+<strong>&#x3C;dEBRUYNE></strong> Arguably sha256 is relatively mroe complex though :p<br>
+<strong>&#x3C;dEBRUYNE></strong> more*<br>
+<strong>&#x3C;nioc></strong> sgp +1<br>
+<strong>&#x3C;ferretinjapan></strong> But that said, who knows, QC could put a monkey wrench in SHA3 for all I know, and 5 -10 years later, and we’re back here again.<br>
+<strong>&#x3C;moneromooo></strong> ph4r05: so {} inits to NULL for sure, right ?<br>
+<strong>&#x3C;dEBRUYNE></strong> To sum up this point, people mostly prefer this course of action -> “RandomX -> Switch to SHA3 in case RandomX fails”, where I suppose SHA3 can be substituted by “an asic friendly algorithm”<br>
+<strong>&#x3C;sgp_></strong> ferretinjapan: that’s possible, which is why it’s important to focus on the logic of the decisions rather than the specific implementations as much for these high-level discussions<br>
+<strong>&#x3C;sgp_></strong> dEBRUYNE: yes, I think that’s mostly fair<br>
+<strong>&#x3C;hyc></strong> dEBRUYNE: +1 with that modification<br>
+<strong>&#x3C;rbrunner></strong> Agree more or less<br>
+<strong>&#x3C;sech1></strong> yes, it doesn’t have to be fixed at SHA3<br>
+<strong>&#x3C;sgp_></strong> I added a summary of our thoughts a little over a week ago here: <a href="https://github.com/monero-project/meta/issues/316#issuecomment-472589586" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/meta/issues/316#issuecomment-472589586</a><br>
+<strong>&#x3C;ph4r05></strong> moneromooo: to be sure, I set it to null now<br>
+<strong>&#x3C;ferretinjapan></strong> sgp_, not that I think QCs will be viable for a long time (if ever) but if we wanted to hedge against the possibility, RandomX would probably be much better than SHA3.<br>
+<strong>&#x3C;sgp_></strong> You can substitute “SHA3” for “an ASIC-friendly algorithm” in it<br>
+<strong>&#x3C;dEBRUYNE></strong> On an administrative note, would people like for me to open a new issue on Github where we can further discuss stuff?<br>
+<strong>&#x3C;ferretinjapan></strong> Though I could be talking out my backside on that point…<br>
+<strong>&#x3C;dEBRUYNE></strong> One thing I’d like to see a more in depth discussion on is how to classify failure of RandomX<br>
+<strong>&#x3C;moneromooo></strong> Cool. It might well be it’s for sure, I’m still confused by this construct :) Thanks.<br>
+<strong>&#x3C;hyc></strong> sure. new issue, summary from today<br>
+<strong>&#x3C;sgp_></strong> dEBRUYNE: I recommend focusing the discussion on more specific points. Possibly several issues. Eg: what if RandomX fails day 1 of implementation?<br>
+<strong>&#x3C;sgp_></strong> that way we can focus the discussions and cut through the general nonsense<br>
+<strong>&#x3C;moneromooo></strong> Then gmaxwell gets to laugh mercilessly at us for months :P<br>
+<strong>&#x3C;dEBRUYNE></strong> The previous ticket had a pretty good signal to noise ratio tbh<br>
+<strong>&#x3C;dEBRUYNE></strong> Until shortly before the end :p<br>
+<strong>&#x3C;sgp_></strong> dEBRUYNE: yes, the last week was useless :(<br>
+<strong>&#x3C;dEBRUYNE></strong> That being said, I’ll try to list some more specific points<br>
+<strong>&#x3C;ferretinjapan></strong> yeah, there’ll probably be a whole spectrum of different “failures” you’d want to define.<br>
+<strong>&#x3C;sgp_></strong> ferretinjapan: exactly<br>
+<strong>&#x3C;sgp_></strong> fwiw, at the bottom of the chart I added “emergency tweak to break ASICs.” I think we can have a good discussion about that<br>
+<strong>&#x3C;sgp_></strong> some more background:<br>
+<strong>&#x3C;dEBRUYNE></strong> I’d like to conclude the meeting soon fwiw :-P<br>
+<strong>&#x3C;sgp_></strong> this situation would be triggered if 1) Monero implemented RandomX, and 2) Monero doesn’t have a good ability for a quick ASIC-friendly turnaround<br>
+<strong>&#x3C;dEBRUYNE></strong> I am goign to call an end to this meetings. Thanks all for coming and participating!<br>
+<strong>&#x3C;dEBRUYNE></strong> I’ll create a new Github issue tomorrow where we can further discuss some stuff in detail<br>
+<strong>&#x3C;sgp_></strong> Thanks dEBRUYNE for setting it up<br>
+<strong>&#x3C;el00ruobuob_[m]></strong> Thank you all, i’ll be posting those logs in a minute</p>  </div>  </article> <aside data-border="true" data-transparent="true" style="--card-padding: var(--space-xl); --card-radius: var(--radius-md)" data-astro-cid-jbepnj6h="true" data-astro-cid-dd5txfcy="true" class="card sidebar">  <h2 data-astro-cid-jbepnj6h>المنشورات الأخيرة</h2> <ul class="recent-posts" data-astro-cid-jbepnj6h> <li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/03/04/monero-GUI-0.18.4.7-released/" data-astro-cid-jbepnj6h> Monero GUI 0.18.4.7 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-jbepnj6h> ٤ مارس ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/03/04/monero-0.18.4.6-released/" data-astro-cid-jbepnj6h> Monero 0.18.4.6 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-jbepnj6h> ٤ مارس ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/01/07/monero-GUI-0.18.4.5-released/" data-astro-cid-jbepnj6h> Monero GUI 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-jbepnj6h> ٧ يناير ٢٠٢٦ </time> </li><li data-astro-cid-jbepnj6h> <a class="post-title" href="/ar/blog/2026/01/07/monero-0.18.4.5-released/" data-astro-cid-jbepnj6h> Monero 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-jbepnj6h> ٧ يناير ٢٠٢٦ </time> </li> </ul>  </aside>  </div>  </main> <footer class="footer" aria-label="التذييل" data-astro-cid-mh6itkc3> <div class="items" data-astro-cid-mh6itkc3> <nav class="grid" aria-label="تنقل التذييل" data-astro-cid-mh6itkc3> <section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>الموارد</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/ar/get-started/what-is-monero/" data-astro-cid-mh6itkc3> حول Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/moneropedia/" data-astro-cid-mh6itkc3> مونيروبيديا  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://docs.getmonero.org" data-astro-cid-mh6itkc3> وثائق Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/get-started/faq/" data-astro-cid-mh6itkc3> الأسئلة الشائعة  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>تواصل</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/ar/community/workgroups/" data-astro-cid-mh6itkc3> مجموعات العمل  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/community/hangouts/" data-astro-cid-mh6itkc3> الأماكن  </a> </li><li data-astro-cid-mh6itkc3> <a href="/postorius/lists/monero-announce.lists.getmonero.org" data-astro-cid-mh6itkc3> قائمة البريد  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>المجتمع</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://monero.stackexchange.com/" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Stack Exchange  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://bitcointalk.org/index.php?topic=583449.0" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Bitcoin Talk  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://translate.getmonero.org" data-astro-cid-mh6itkc3> ترجم  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>مشروع Monero</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://openalias.org" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Open Alias  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/research-lab/" data-astro-cid-mh6itkc3> مختبر بحث Monero (MRL)  </a> </li><li data-astro-cid-mh6itkc3> <a href="/ar/resources/press-kit/" data-astro-cid-mh6itkc3> مجموعة الصحافة  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://ccs.getmonero.org" data-astro-cid-mh6itkc3> نظام التمويل الجماعي المجتمعي  </a> </li> </ul> </section> </nav> <nav class="bottom" aria-label="تنقل التذييل الثانوي" data-astro-cid-mh6itkc3> <ul class="inline-list" data-astro-cid-mh6itkc3> <li class="inline-item" data-astro-cid-mh6itkc3> <a href="#" data-astro-cid-mh6itkc3> خدمة Tor Onion <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/tor.D04gt7iP_278xXg.avif);--iconColor: #7d4698;--spacing: 0.25em;"></div>  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> استجابة الثغرات  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/ar/legal/" data-astro-cid-mh6itkc3> القانوني  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> رمز المصدر  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/feed.xml" data-astro-cid-mh6itkc3> تغذية RSS <div class="icon" data-rtl="true" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/rss.jnIu9F4x_Z28u6pV.avif);--iconColor: var(--monero-orange);--spacing: 0.25em;"></div>  </a> </li> </ul> </nav> </div> </footer>   </body></html> 

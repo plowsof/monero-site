@@ -1,0 +1,412 @@
+<!DOCTYPE html><html lang="en" dir="ltr" data-astro-cid-sckkx6r4> <head><title>Blog | Logs for the Dev Meeting Held on 2018-01-14</title><meta charset="UTF-8"><link rel="canonical" href="https://beta.monerodevs.org/blog/2018/01/14/logs-for-the-dev-meeting-held-on-2018-01-14/"><meta name="description" content="Discussion of open PRs and issues, Bulletproofs, March HF, and miscellaneous"><meta name="robots" content="index, follow"><meta property="og:title" content="Logs for the Dev Meeting Held on 2018-01-14"><meta property="og:type" content="article"><meta property="og:image" content="https://beta.monerodevs.org/open-graph/blog/2018/01/14/logs-for-the-dev-meeting-held-on-2018-01-14.png"><meta property="og:url" content="https://beta.monerodevs.org/blog/2018/01/14/logs-for-the-dev-meeting-held-on-2018-01-14/"><meta property="og:locale" content="en"><meta property="og:locale:alternate" content="ar"><meta property="og:locale:alternate" content="zh"><meta property="og:site_name" content="Monero"><meta property="og:image:url" content="https://beta.monerodevs.org/open-graph/blog/2018/01/14/logs-for-the-dev-meeting-held-on-2018-01-14.png"><meta property="og:image:alt" content="OpenGraph image for Monero blog post titled &#34;Logs for the Dev Meeting Held on 2018-01-14&#34;"><meta property="article:published_time" content="2018-01-14T00:00:00.000Z"><meta property="article:author" content="dEBRUYNE / fluffypony"><meta property="article:tag" content="dev diaries"><meta property="article:tag" content="core"><meta property="article:tag" content="crypto"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@monero"><meta name="twitter:title" content="Logs for the Dev Meeting Held on 2018-01-14"><meta name="twitter:image" content="https://beta.monerodevs.org/open-graph/blog/2018/01/14/logs-for-the-dev-meeting-held-on-2018-01-14.png"><meta name="twitter:description" content="Discussion of open PRs and issues, Bulletproofs, March HF, and miscellaneous"><link rel="preload" as="font" type="font/woff2" href="/_astro/dm-sans-latin-wght-normal.Xz1IZZA0.woff2" crossorigin="anonymous"><link rel="icon" href="/meta/favicon-16x16.png" sizes="16x16"><link rel="icon" href="/meta/favicon-32x32.png" sizes="32x32"><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.18.0"><meta name="color-scheme" content="light dark"><link rel="alternate" hreflang="en" href="https://beta.monerodevs.org/blog/2018/01/14/logs-for-the-dev-meeting-held-on-2018-01-14/"><link rel="alternate" hreflang="ar" href="https://beta.monerodevs.org/ar/blog/2018/01/14/logs-for-the-dev-meeting-held-on-2018-01-14/"><link rel="alternate" hreflang="zh" href="https://beta.monerodevs.org/zh/blog/2018/01/14/logs-for-the-dev-meeting-held-on-2018-01-14/"><link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="https://beta.monerodevs.org/feed.xml"><style>#blog-content{line-height:var(--line-height-body);word-wrap:break-word;color:light-dark(inherit,var(--paragraph-main));:where(h2,h3,h4){font-weight:var(--font-weight-bold)}img{border-radius:var(--radius-md)}a:not(.moneropedia-link){color:light-dark(var(--text-primary),var(--paragraph-main));font-weight:var(--font-weight-medium);text-decoration-line:underline;text-decoration-style:dotted;&:hover{color:light-dark(var(--text-secondary),var(--heading-color))}}h1{font-size:var(--font-size-2xl)}h2{font-size:var(--font-size-xl)}h3{font-size:var(--font-size-lg)}h4{font-size:var(--font-size-md)}p{margin-bottom:1em}li{margin-bottom:.25em}pre{padding:1em;border-radius:var(--radius-md);overflow-x:auto;background:var(--footer-color);code{background:none;padding:0;border-radius:0}}code:not(pre code){font-family:monospace;background-color:var(--footer-color);padding:.1em .3em;border-radius:var(--radius-sm)}blockquote{margin:1.5em 0;padding-inline:1.5em 1em;border-inline-start:3px solid var(--border-color);font-style:italic;color:var(--text-secondary)}strong{font-weight:var(--font-weight-bold)}em{font-style:italic}}h1[data-astro-cid-7dcwcvhl]{font-size:var(--font-size-3xl);margin:0}#post-header[data-astro-cid-7dcwcvhl]{margin-bottom:var(--page-top-margin)}#meta[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-2xl);color:var(--text-secondary);margin-top:var(--space-md);margin-bottom:var(--space-xl);font-size:var(--font-size-lg);font-weight:var(--font-weight-normal)}.meta-item[data-astro-cid-7dcwcvhl]{display:flex;align-items:center;gap:var(--space-xs);>.icon{display:grid;place-items:center;color:var(--monero-orange)}}.tag-container[data-astro-cid-7dcwcvhl]{display:flex;gap:var(--space-xs);font-size:var(--font-size-sm);flex-wrap:wrap;.tag{text-align:center;padding:var(--space-2xs) var(--space-sm);background:var(--footer-color);border-radius:var(--radius-md);text-transform:uppercase;font-weight:var(--font-weight-semibold);text-decoration:none;color:inherit;white-space:nowrap;&:hover{color:var(--text-secondary)}}}@media(width<=600px){#meta[data-astro-cid-7dcwcvhl]{flex-direction:column;font-size:var(--font-size-md);font-weight:var(--font-weight-medium);gap:var(--space-md)}.meta-item[data-astro-cid-7dcwcvhl]{>.icon{font-size:var(--font-size-lg)}}}
+.card[data-astro-cid-dd5txfcy]{background:var(--card-color);padding:var(--card-padding);border-radius:var(--card-radius);&[data-border]{border:1px solid var(--border-color)}&[data-transparent]{background:transparent}&[data-hover]{transition:background .15s ease;&[data-astro-cid-dd5txfcy]:hover,&[data-astro-cid-dd5txfcy]:focus-visible{background:var(--card-hover-color)}}}
+.icon[data-astro-cid-bpjkz5as]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);margin-inline-start:var(--spacing);background:var(--iconColor);mask:var(--iconSrc) no-repeat center / contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}
+</style>
+<link rel="stylesheet" href="/_astro/_page_.DxMr-0dd.css">
+<style>.blog-container[data-astro-cid-qfuyyumy]{display:grid;grid-template-columns:1fr;gap:var(--space-2xl);>*{min-width:0}}.sidebar[data-astro-cid-qfuyyumy]{height:fit-content;& h2[data-astro-cid-qfuyyumy]{font-size:var(--font-size-xl);margin-top:0}}.recent-posts[data-astro-cid-qfuyyumy]{list-style:none;padding:0;margin-bottom:0;display:flex;flex-direction:column;gap:var(--space-md);li{margin-bottom:var(--space-xs)}.post-title{font-size:var(--font-size-md);color:var(--paragraph-main);text-decoration-line:underline;text-decoration-style:dotted;&:hover{text-decoration:underline}}.post-date{display:block;font-size:var(--font-size-sm);color:var(--paragraph-subtitle);margin-top:var(--space-2xs)}}@media(width>=1200px){.blog-container[data-astro-cid-qfuyyumy]{grid-template-columns:1fr 65ch 1fr}.blog-post[data-astro-cid-qfuyyumy]{grid-column:2}.sidebar[data-astro-cid-qfuyyumy]{grid-column:2;grid-row:2}}@media(width>=1600px){.sidebar[data-astro-cid-qfuyyumy]{grid-column:3;grid-row:1}}
+:where([data-astro-image]){object-fit:var(--fit);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+.moneropedia-link{position:relative;display:inline-block;color:var(--monero-orange);text-decoration-line:underline;text-decoration-style:dotted;cursor:help;font-weight:var(--font-weight-medium)}.moneropedia-link:hover,.moneropedia-link:focus-visible{text-decoration:none}.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{content:none}@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{position:absolute;left:50%;opacity:0;pointer-events:none;transform:translate(-50%) translateY(0);transition:opacity .18s ease-out,transform .18s ease-out;z-index:10}.moneropedia-link[data-tooltip]:before{content:attr(data-tooltip);bottom:calc(100% + .5rem);padding:.5rem .75rem;background:var(--card-color);border:1px solid var(--border-color);border-radius:.25rem;box-sizing:border-box;overflow-wrap:break-word;min-inline-size:25ch;max-inline-size:min(35ch,calc(100vw - 2.5rem));font-size:var(--font-size-sm);line-height:var(--line-height-caption);color:var(--text-primary);box-shadow:0 2px 8px #0000004d}.moneropedia-link[data-tooltip]:after{content:"";bottom:calc(100% + .25rem);border-width:.35rem .35rem 0;border-style:solid;border-color:var(--card-color) transparent transparent transparent}.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):before,.moneropedia-link[data-tooltip]:is(:hover,:focus-visible):after{opacity:1;transform:translate(-50%) translateY(-2px)}}@media(prefers-reduced-motion:reduce){@media(hover:hover)and (pointer:fine){.moneropedia-link[data-tooltip]:before,.moneropedia-link[data-tooltip]:after{transition:none}}}
+.icon[data-astro-cid-7wapxsvo]{display:inline-block;inline-size:var(--iconSize);block-size:var(--iconSize);aspect-ratio:1 / 1;vertical-align:middle;--iconUrl: var(--lightUrl);background-image:var(--iconUrl);background-repeat:no-repeat;background-position:center;background-size:contain;&[data-rtl]{transform:scaleX(-1);transform-origin:center}}@media(prefers-color-scheme:dark){.icon[data-astro-cid-7wapxsvo]{--iconUrl: var(--darkUrl)}}
+</style></head> <body data-astro-cid-sckkx6r4> <header class="header" data-astro-cid-dm2weclu> <div class="header-inner" data-astro-cid-dm2weclu> <a class="brand" href="/" data-astro-cid-dm2weclu> <img src="/_astro/monerologo.CMdKQEkN_10Rm8s.avif" srcset="/_astro/monerologo.CMdKQEkN_10Rm8s.avif 64w, /_astro/monerologo.CMdKQEkN_10Rm8s.avif 128w" alt aria-hidden="true" data-astro-cid-dm2weclu="true" loading="eager" decoding="sync" fetchpriority="high" sizes="(min-width: 64px) 64px, 100vw" style="--fit: cover; --pos: center;" data-astro-image="constrained" width="64" height="64" class="mark"> <span data-astro-cid-dm2weclu>MONERO</span> </a> <input id="nav-toggle" class="nav-toggle" type="checkbox" data-astro-cid-dm2weclu> <nav id="primary-nav" class="nav" aria-label="Primary" data-astro-cid-dm2weclu> <div class="drawer-header" data-astro-cid-dm2weclu> <label for="nav-toggle" class="close" aria-controls="primary-nav" aria-label="Close menu" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/close.CneAMmXr_ZaFGrm.avif);--iconColor: currentColor;"></div>  </label> </div> <fieldset data-astro-cid-dm2weclu> <legend class="sr-only" data-astro-cid-dm2weclu>Primary navigation sections</legend> <ul class="nav-list" data-astro-cid-dm2weclu> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-dm0z0jwzp" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-dm0z0jwzp-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> Get started <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-dm0z0jwzp" class="mobile-open" aria-label="Open Get started menu" data-astro-cid-pbmdh2tw></label> <label for="dd-dm0z0jwzp-close" class="mobile-close" aria-label="Close Get started menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="Get started menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/get-started/what-is-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--darkUrl: url(/_astro/monero.C34pdH81_2smXUz.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>What is Monero?</div> <div class="desc" data-astro-cid-lm33vczh>Everything you need to know about Monero in a nutshell.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/get-started/exchanges/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/merchants-exchanges.DN61YseO_ZQ3Km9.avif);--darkUrl: url(/_astro/merchants-exchanges.BjKEmUcz_1O8q9G.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Buy Monero</div> <div class="desc" data-astro-cid-lm33vczh>Cryptocurrency exchanges that let you buy or trade Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/get-started/merchants/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Spend Monero</div> <div class="desc" data-astro-cid-lm33vczh>Find places and services that accept Monero as payment.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/get-started/accept-monero/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/accept-monero.COXM8aHM_Z1II116.avif);--darkUrl: url(/_astro/accept-monero.C3WCFfqe_Z2tp8Kw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Accept Monero</div> <div class="desc" data-astro-cid-lm33vczh>Learn how to accept XMR as a merchant or individual.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/get-started/mining/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/mining.DBRk7HAe_Zd3ukV.avif);--darkUrl: url(/_astro/mining.B54FNZld_Z2jnjrG.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Mining</div> <div class="desc" data-astro-cid-lm33vczh>Learn how to mine Monero on your computer.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/get-started/contribute/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/contribute.DKeO9Dve_Z2vEvfu.avif);--darkUrl: url(/_astro/contribute.zLqiOwb5_Z1qe0gS.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Contribute</div> <div class="desc" data-astro-cid-lm33vczh>Help the Monero project bring privacy to everyone.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/get-started/faq/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/faq.C8QObR1A_1A5Irh.avif);--darkUrl: url(/_astro/faq.BNcLqXOJ_ZaSdVI.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>FAQ</div> <div class="desc" data-astro-cid-lm33vczh>Find answers to common questions about Monero.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/downloads/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> Downloads  </a>  </div>  </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="/blog/" class="link" tabindex="0" data-astro-cid-pbmdh2tw> Blog  </a>  </div>  </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-32iijdj4e" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-32iijdj4e-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> Community <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-32iijdj4e" class="mobile-open" aria-label="Open Community menu" data-astro-cid-pbmdh2tw></label> <label for="dd-32iijdj4e-close" class="mobile-close" aria-label="Close Community menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="Community menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/community/workgroups/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/workgroups.OzoDQ7NV_Z1Lwqqs.avif);--darkUrl: url(/_astro/workgroups.CGbkWAXL_Z1m0ybJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Workgroups</div> <div class="desc" data-astro-cid-lm33vczh>Collaborate with Monero&#39;s dedicated workgroups on development, research, and community efforts.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/community/sponsorships/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/sponsorships.B6ynHqH1_2lV3iC.avif);--darkUrl: url(/_astro/sponsorships.C6O-vhO7_JP9Sc.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Sponsorships</div> <div class="desc" data-astro-cid-lm33vczh>List of businesses that support The Monero Project.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/community/hangouts/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/hangouts.CiWxE-i9_ZeEICj.avif);--darkUrl: url(/_astro/hangouts.Do4DJEA1_257lPw.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Hangouts</div> <div class="desc" data-astro-cid-lm33vczh>Join Monero community hangouts and events to connect with fellow enthusiasts and developers.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-is-dropdown="true" data-astro-cid-pbmdh2tw>  <input id="dd-nvst4s73i" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw> <input id="dd-nvst4s73i-close" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a class="link" tabindex="0" data-astro-cid-pbmdh2tw> Resources <span class="caret" aria-hidden="true" data-astro-cid-pbmdh2tw> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/chevron-down.BHNc2uY8_ZaTA8d.avif);--iconColor: currentColor;"></div>  </span> </a>  <label for="dd-nvst4s73i" class="mobile-open" aria-label="Open Resources menu" data-astro-cid-pbmdh2tw></label> <label for="dd-nvst4s73i-close" class="mobile-close" aria-label="Close Resources menu" data-astro-cid-pbmdh2tw></label>  </div> <div class="dropdown" role="menu" aria-label="Resources menu" data-astro-cid-pbmdh2tw> <div class="dropdown-content" data-astro-cid-pbmdh2tw> <a href="/resources/knowledge-base/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/moneropedia.7o-c8ZX4_lSmb.avif);--darkUrl: url(/_astro/moneropedia.CYJm2-Q5_1KG40X.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Knowledge Base</div> <div class="desc" data-astro-cid-lm33vczh>Books, publications, magazines, Moneropedia.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/resources/roadmap/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/roadmap.DoSq9h9o_Z1QuQpv.avif);--darkUrl: url(/_astro/roadmap.BONb2rwk_2hroDR.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Roadmap</div> <div class="desc" data-astro-cid-lm33vczh>Stay up to date with the latest Monero development plans and progress.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/resources/research-lab/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/research-lab.D90VAC3d_WkkdD.avif);--darkUrl: url(/_astro/research-lab.uv3a8gpS_Z7cyXJ.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Research Lab</div> <div class="desc" data-astro-cid-lm33vczh>Explore the Monero Research Lab&#39;s publications and research.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/resources/tools/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/tools.CTqUs9cD_Z1hqOiO.avif);--darkUrl: url(/_astro/tools.BW4KRKDW_Z6Gril.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero Tools</div> <div class="desc" data-astro-cid-lm33vczh>A curated list of tools and software for Monero users and developers.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="https://docs.getmonero.org" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/developer-guides.DD6ipv0S_Yls1B.avif);--darkUrl: url(/_astro/developer-guides.Cdg0NOVs_Z2h2V29.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Monero Docs</div> <div class="desc" data-astro-cid-lm33vczh>Comprehensive guides for users and developers to use Monero effectively and securely.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a> <a href="/resources/press-kit/" class="dropdown-item" role="menuitem" data-astro-cid-lm33vczh> <div class="icon icon" aria-hidden="true" data-astro-cid-7wapxsvo style="--lightUrl: url(/_astro/press-kit.C4VjegyX_2aPbOF.avif);--darkUrl: url(/_astro/press-kit.CVdfPwCA_1oXHhF.avif);--iconSize: 2rem;"></div>  <div class="content" data-astro-cid-lm33vczh> <div class="title" data-astro-cid-lm33vczh>Press Kit</div> <div class="desc" data-astro-cid-lm33vczh>Press contacts, logos, images, and other media resources.</div> </div> <div class="arrow" data-astro-cid-lm33vczh> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/arrow-right.9v5rTsWk_23pSvH.avif);--iconColor: currentColor;"></div>  </div> </a>  </div> </div> </li> <li class="nav-item" data-astro-cid-pbmdh2tw>  <div class="row" data-astro-cid-pbmdh2tw> <a href="https://ccs.getmonero.org" class="link" tabindex="0" data-astro-cid-pbmdh2tw> Crowdfunding  </a>  </div>  </li>  </ul> </fieldset> </nav> <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="Close menu" data-astro-cid-dm2weclu></label> <div class="utils" aria-label="Utilities" data-astro-cid-dm2weclu> <div class="lang" data-astro-cid-dm2weclu> <details class="lang-container" data-astro-cid-g6d27pgi> <summary class="lang" aria-label="Change language" aria-haspopup="true" role="button" data-astro-cid-g6d27pgi> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/globe.FI0_gjXP_xUiUM.avif);--iconColor: currentColor;"></div>  </summary> <div class="lang-dropdown" aria-label="Languages" data-astro-cid-g6d27pgi> <ul class="lang-list" data-astro-cid-g6d27pgi> <li data-astro-cid-g6d27pgi> <a href="/blog/2018/01/14/logs-for-the-dev-meeting-held-on-2018-01-14/" class="active" aria-current="true" data-astro-cid-g6d27pgi> English </a> </li><li data-astro-cid-g6d27pgi> <a href="/ar/blog/2018/01/14/logs-for-the-dev-meeting-held-on-2018-01-14/" class data-astro-cid-g6d27pgi> العربية </a> </li><li data-astro-cid-g6d27pgi> <a href="/zh/blog/2018/01/14/logs-for-the-dev-meeting-held-on-2018-01-14/" class data-astro-cid-g6d27pgi> 中文 </a> </li> </ul> </div> </details>  </div> <label for="nav-toggle" class="hamburger" aria-controls="primary-nav" aria-label="Open menu" data-astro-cid-dm2weclu> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1.5rem;--iconSrc: url(/_astro/hamburger.CkIM-2PU_xmMpy.avif);--iconColor: currentColor;"></div>  </label> </div> </div> </header>  <main data-astro-cid-sckkx6r4>   <div class="blog-container" data-astro-cid-qfuyyumy> <article class="blog-post" data-astro-cid-qfuyyumy> <div id="post-header" data-astro-cid-7dcwcvhl> <h1 data-astro-cid-7dcwcvhl>Logs for the Dev Meeting Held on 2018-01-14</h1> <div id="meta" data-astro-cid-7dcwcvhl> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/calendar.BXaSv3Jk_Z1NrB7E.avif);--iconColor: currentColor;"></div>  </div> <time datetime="2018-01-14" data-astro-cid-7dcwcvhl>January 14, 2018</time> </div> <div class="meta-item" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-7dcwcvhl> <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1em;--iconSrc: url(/_astro/user.Cx6bTnUm_FhCof.avif);--iconColor: currentColor;"></div>  </div> dEBRUYNE / fluffypony </div> </div> <div class="tag-container" data-astro-cid-7dcwcvhl> <a class="tag" href="/blog/tags/dev-diaries/" data-astro-cid-7dcwcvhl> Dev Diaries </a><a class="tag" href="/blog/tags/core/" data-astro-cid-7dcwcvhl> Core </a><a class="tag" href="/blog/tags/crypto/" data-astro-cid-7dcwcvhl> Crypto </a> </div> </div>   <div id="blog-content" lang="en" dir="ltr">  <h1 id="logs">Logs</h1>
+<p><strong>&#x3C;rehrar></strong> <a href="https://github.com/monero-project/meta/issues/157" rel="noopener noreferrer external" target="_blank">https://github.com/monero-project/meta/issues/157</a><br>
+<strong>&#x3C;rehrar></strong> Here’s the agenda.<br>
+<strong>&#x3C;rehrar></strong> We kinda did greetings, but if anyone else is present, please say “hi”<br>
+<strong>&#x3C;gingeropolous></strong> hi<br>
+<strong>&#x3C;jtgrassie></strong> hi!<br>
+<strong>&#x3C;pigeons></strong> hi!<br>
+<strong>&#x3C;Maxithi></strong> hi<br>
+<strong>&#x3C;pebx></strong> hi<br>
+<strong>&#x3C;ferretinjapan></strong> hi<br>
+<strong>&#x3C;binaryFate></strong> hi<br>
+<strong>&#x3C;rehrar></strong> alright, so let’s get started then!<br>
+<strong>&#x3C;rehrar></strong> 2. Brief review of what’s been completed since the previous meeting<br>
+<strong>&#x3C;rehrar></strong> Anyone have anything exciting or fun to report since our last meeting a month ago?<br>
+<strong>&#x3C;rehrar></strong> Get any fun gifts for the holidays maybe?<br>
+<strong>&#x3C;Maxithi></strong> 24 commits 4 days ago.<br>
+<strong>&#x3C;Maxithi></strong> On the main core. Nothing special. Maybe a little cheering for cslashm and hist first Ledger PR.<br>
+<strong>&#x3C;endogenic></strong> well we’ve made some progress with apple, fyi … confirmed there was an account mixup on their side with a human being and we’re finally getting that sorted. will update you all as i hear things<br>
+<strong>&#x3C;rehrar></strong> that IS pretty exciting Maxithi<br>
+<strong>&#x3C;endogenic></strong> have to submit some docs, etc<br>
+<strong>&#x3C;hyc></strong> nothing much to report here<br>
+<strong>&#x3C;sgp></strong> hi<br>
+<strong>&#x3C;rehrar></strong> endogenic dude, that’s gotta be thrilling to get some news finally<br>
+<strong>&#x3C;rehrar></strong> ArticMine, do you want to speak briefly about Kiev?<br>
+<strong>&#x3C;endogenic></strong> rehrar yeah i mean these things usually happen instantly so once i called them they were like yeah that’s no good let’sget that sorted<br>
+<strong>&#x3C;ArticMine></strong> Sure, but it is not really dev related<br>
+<strong>&#x3C;rehrar></strong> just a brief four sentence thing should be alright<br>
+<strong>&#x3C;vtnerd></strong> after a discussion with luigi1111, I should be proposing an optimization for wallet scanning that mymonero is using - want to test with a standard wallet to give real world perf numbers before PR<br>
+<strong>&#x3C;vtnerd></strong> ah sorry ArticMine<br>
+<strong>&#x3C;rehrar></strong> no, go ahead vtnerd :) anyone and everyone with an update feel free to let us know<br>
+<strong>&#x3C;vtnerd></strong> ok, this optimization is separate from the ASM work in monero-project/supercop (still pending a PR), so it works with standard ref10 (i.e. all platforms)<br>
+<strong>&#x3C;vtnerd></strong> it will require a few changes to src/crypto.{h|c} so be on the lookout for that PR<br>
+<strong>&#x3C;gingeropolous></strong> is this just for your standard refresh? or related to remote viewkey scanning… or both?<br>
+<strong>&#x3C;vtnerd></strong> this is specifically for scanning receiving outputs on a primary address<br>
+<strong>&#x3C;vtnerd></strong> it does not benefit subaddresses, but does benefit simplewallet / GUI / anyone doing viewkey scanning<br>
+<strong>&#x3C;medusa></strong> lets talk about the elephant in the room ? bulletproof is in all varieties on testnet<br>
+<strong>&#x3C;rehrar></strong> Alright. Thanks. :) Anyone else? If not we’ll move on.<br>
+<strong>&#x3C;rehrar></strong> Ye, that’s next.<br>
+<strong>&#x3C;moneromooo></strong> Things of note since last time: build hardening (currently breaks static builds though), DNSSEC fix on windows, DB and sync hang fixes, secure memory wiping (wip), misc code review and fixes, updates now use HTTPS and can resume downloads<br>
+<strong>&#x3C;ArticMine></strong> In brief I attended BTC awards CIS and participated in the coins panel. There were two other coins present Dash, ZenCash. Overall it went very well and provided exposure to Monero among the CIS (Commonwealth of Independent state) crypto communities<br>
+<strong>&#x3C;endogenic></strong> medusa: last i heard MRL was looking for people to review and audit bulletproofs<br>
+<strong>&#x3C;endogenic></strong> sarang would be able to give you more information<br>
+<strong>&#x3C;ArticMine></strong> That is my brief update<br>
+<strong>&#x3C;ArticMine></strong> Whan it comes to bullteproof this has to move to September<br>
+<strong>&#x3C;endogenic></strong> moneromooo: beast mode<br>
+<strong>&#x3C;rehrar></strong> ArticMine, care to elaborate?<br>
+<strong>&#x3C;moneromooo></strong> Not all of this by me fwiw.<br>
+<strong>&#x3C;hyc></strong> Interesting ArticMine - CIS already has monero experience, thru the Karbo clone in Ukraine<br>
+<strong>&#x3C;medusa></strong> GUI is merging sub addresses finally, dsc is working on the black theme sucessfully and we hope to go live in march with 2 progress bars instead of 1 (sync and refresh separated). also we added a “change password” feature to the GUI<br>
+<strong>&#x3C;ArticMine></strong> FP spoke with Pieter Wuille who is recommending September<br>
+<strong>&#x3C;sarang></strong> Jumping in for any questions about BPs that I can answer<br>
+<strong>&#x3C;ArticMine></strong> Is there a plan for further review?<br>
+<strong>&#x3C;ArticMine></strong> of B<br>
+<strong>&#x3C;sarang></strong> Yes<br>
+<strong>&#x3C;ferretinjapan></strong> Are there any showstoppers on bullteproofs that would justify moving back rolling it out?<br>
+<strong>&#x3C;sarang></strong> Initiating contact w/ an audit group that fluffypony knows<br>
+<strong>&#x3C;sarang></strong> It’s not fully clear what their scope of review can be, but I will find out shortly on a phone meeting with them<br>
+<strong>&#x3C;sarang></strong> The goal being additional third-party review<br>
+<strong>&#x3C;hyc></strong> ferretinjapan: there’s no known problems. additional review is being planned to avoid unknown problems<br>
+<strong>&#x3C;rehrar></strong> Yeah, so we naturally moved onto third item on the agenda, which is code freeze, March hard fork. Bulletproof is the biggest one. Everyone’s thoughts?<br>
+<strong>&#x3C;binaryFate></strong> beyond code review, sarang what is your opinion on the need of review of the math itself? I’m worried the paper has little time to go through peer-review. But maybe match checks out so obviously that it’s not needed.<br>
+<strong>&#x3C;sarang></strong> The math is solid. Additional peer review is always a welcome thing, though with diminishing returns over time<br>
+<strong>&#x3C;binaryFate></strong> (talking about the BP paper — not the Monero specific implementation)<br>
+<strong>&#x3C;sarang></strong> yes<br>
+<strong>&#x3C;sarang></strong> In the meantime, moneromooo and I have been working on some additional optimizations for proof verification that are independent of the math or specific proof implementation<br>
+<strong>&#x3C;ferretinjapan></strong> I guess thats the thing, how much “value adding” is an additional audit for now justified?<br>
+<strong>&#x3C;binaryFate></strong> nice<br>
+<strong>&#x3C;sarang></strong> We’ve had a select number of informal reviews<br>
+<strong>&#x3C;sarang></strong> but no formal third-party review yet<br>
+<strong>&#x3C;ArticMine></strong> … but still this warrants a delay to September for BP<br>
+<strong>&#x3C;sarang></strong> To get the review done? Almost certainly<br>
+<strong>&#x3C;sarang></strong> The advantage to the delay is that we could bypass single-output BPs altogether<br>
+<strong>&#x3C;sarang></strong> figure out the multi-output fee structure, and release that<br>
+<strong>&#x3C;medusa></strong> multi output for march is a non option ?<br>
+<strong>&#x3C;sarang></strong> Correct<br>
+<strong>&#x3C;ferretinjapan></strong> seems incredibly wasteful :/<br>
+<strong>&#x3C;sarang></strong> It requires a change to the way fees are computed<br>
+<strong>&#x3C;hyc></strong> I’m in favor of skipping single-output. would be a lot of work for a very short-lived feature.<br>
+<strong>&#x3C;sarang></strong> Yes, though single-output proofs will verify with the multi-output code with no changes<br>
+<strong>&#x3C;ferretinjapan></strong> you’d be better served making sure that there is a fallback to BP instead of pushing back entirely.<br>
+<strong>&#x3C;rbrunner></strong> Isn’t the work almost all done anyway?<br>
+<strong>&#x3C;ferretinjapan></strong> this is a classic case of perfect being the enemy of good.<br>
+<strong>&#x3C;endogenic></strong> realized we didnt ping anonimal<br>
+<strong>&#x3C;sarang></strong> We have multi code working now<br>
+<strong>&#x3C;sarang></strong> it’s not in testnet yet<br>
+<strong>&#x3C;sarang></strong> and we don’t have consensus about the fee structure<br>
+<strong>&#x3C;hyc></strong> ^^<br>
+<strong>&#x3C;binaryFate></strong> I lean towards satefy in general. The ringct bug was close enough<br>
+<strong>&#x3C;Maxithi></strong> hyc Same, better safe than sorry.<br>
+<strong>&#x3C;iDunk></strong> Agreed.<br>
+<strong>&#x3C;dEBRUYNE></strong> sarang: have you considered contacting the paper authors for review?<br>
+<strong>&#x3C;gingeropolous></strong> ferretinjapan, the push to sept is about additional code review, not really about multiout<br>
+<strong>&#x3C;dEBRUYNE></strong> &#x3C;binaryFate> I lean towards satefy in general. The ringct bug was close enough &#x3C;= I can’t survive another mini heart-attack probably<br>
+<strong>&#x3C;sarang></strong> We’ve had informal review from one author, but the other authors are working on other implementations and I would not rely on them for a speedy review<br>
+<strong>&#x3C;hyc></strong> I suggested soliciting reviews on the Cryptography email list<br>
+<strong>&#x3C;endogenic></strong> nice idea<br>
+<strong>&#x3C;hyc></strong> could also solicit reviews on twitter<br>
+<strong>&#x3C;dEBRUYNE></strong> But presumably they would have some time somewhere between now and August?<br>
+<strong>&#x3C;endogenic></strong> that too<br>
+<strong>&#x3C;dEBRUYNE></strong> ^ sara<br>
+<strong>&#x3C;dEBRUYNE></strong> sarang*<br>
+<strong>&#x3C;sarang></strong> hyc: are you ok with making such a solicitation?<br>
+<strong>&#x3C;sarang></strong> I could certainly try the other paper authors just in case<br>
+<strong>&#x3C;moneromooo></strong> bypass single-output BPs is not an advantage.<br>
+<strong>&#x3C;hyc></strong> Yes, can do. we need to decide if we’ll offer a payment<br>
+<strong>&#x3C;sarang></strong> though they are much more of a long shot<br>
+<strong>&#x3C;moneromooo></strong> bypassing<br>
+<strong>&#x3C;ferretinjapan></strong> gingeropolous, yes, but noones really given a definitive reason to delay except for an overabundance of caution, and by then it’ll be unnecessary to even release. :/<br>
+<strong>&#x3C;endogenic></strong> is there a blurb/call-to-actionabout the request to review which i can pass to my relevant mailing lists?<br>
+<strong>&#x3C;hyc></strong> moneromooo: waiting till sept means we can settle on the fees without rushing<br>
+<strong>&#x3C;sarang></strong> hyc: fluffypony indicated we could make funds available for the review, but you’ll have to ask him for the details<br>
+<strong>&#x3C;moneromooo></strong> It’s not a lot of work, since it exists now.<br>
+<strong>&#x3C;ArticMine></strong> We are only delaying single output not multi output<br>
+<strong>&#x3C;moneromooo></strong> Multi output bulletproofs are in C++, but not plugged into the consensus, which is the annoying part.<br>
+<strong>&#x3C;sarang></strong> Anyone interested in doing a review and wanting details can contact me at <a href="mailto:sarang.noether@protonmail.com">sarang.noether@protonmail.com</a><br>
+<strong>&#x3C;endogenic></strong> such as indicating where to look in the code or repo, background docs, review process, submission format, etc?<br>
+<strong>&#x3C;hyc></strong> endogenic I’ll start drafting an email announcenemt<br>
+<strong>&#x3C;sarang></strong> I’ll contact the other paper authors separately<br>
+<strong>&#x3C;sarang></strong> and will still press on with the audit group to see what their scope is<br>
+<strong>&#x3C;luigi1111w></strong> there’s not much work saved by skipping single output BP<br>
+<strong>&#x3C;moneromooo></strong> waiting till sept does not change anything for fees, since multi out is september anyway.<br>
+<strong>&#x3C;luigi1111w></strong> but the review time is too close for my comfort for march<br>
+<strong>&#x3C;luigi1111w></strong> I think that’s the general thought anyway though<br>
+<strong>&#x3C;hyc></strong> alternatively we could delay the March release into April<br>
+<strong>&#x3C;sarang></strong> fluffypony was very opposed to that idea hyc<br>
+<strong>&#x3C;hyc></strong> ok<br>
+<strong>&#x3C;ferretinjapan></strong> could always push back the march hard fork a month or two like last time for RCT.<br>
+<strong>&#x3C;sarang></strong> not saying that’s the deciding factor though<br>
+<strong>&#x3C;luigi1111w></strong> rct was pushed forward actually<br>
+<strong>&#x3C;rbrunner></strong> What’s fp’s main argument?<br>
+<strong>&#x3C;ferretinjapan></strong> oops, I c.<br>
+<strong>&#x3C;sarang></strong> He thought that regular releases were an advantage<br>
+<strong>&#x3C;rehrar></strong> he says that people are getting used to the hard fork schedule<br>
+<strong>&#x3C;sarang></strong> due to predictability<br>
+<strong>&#x3C;endogenic></strong> rbrunner: for?<br>
+<strong>&#x3C;ferretinjapan></strong> rbrunner, probably his snity ;)<br>
+<strong>&#x3C;ferretinjapan></strong> *sanity<br>
+<strong>&#x3C;rbrunner></strong> Against the 1 month delay<br>
+<strong>&#x3C;luigi1111w></strong> my own shed says 3 months with fork in June :D<br>
+<strong>&#x3C;endogenic></strong> bc it c hanges the hard fork periodicity etc<br>
+<strong>&#x3C;endogenic></strong> guessing<br>
+<strong>&#x3C;rehrar></strong> I think six months is not super long to wait for bulletproofs. It’d be another thing entirely if we were discussing putting it off for a year or so, but not much is lost by being a bit safe and waiting.<br>
+<strong>&#x3C;gingeropolous></strong> ^^<br>
+<strong>&#x3C;ferretinjapan></strong> 6 months is a looong time in crypto<br>
+<strong>&#x3C;luigi1111w></strong> did someone mention future pruning<br>
+<strong>* luigi1111w</strong> runs<br>
+<strong>&#x3C;sarang></strong> sigh<br>
+<strong>&#x3C;gingeropolous></strong> future pruning? you mean double blob?<br>
+<strong>&#x3C;endogenic></strong> ferretinjapan: better than there being no crypto bc we broke it<br>
+<strong>* gingeropolous</strong> runs<br>
+<strong>&#x3C;sarang></strong> People also want Lower Fees Now<br>
+<strong>&#x3C;sarang></strong> (tm)<br>
+<strong>&#x3C;vtnerd></strong> we all want ponies sarang<br>
+<strong>&#x3C;sarang></strong> or at least, a vocal minority does<br>
+<strong>&#x3C;dEBRUYNE></strong> &#x3C;rehrar> he says that people are getting used to the hard fork schedule &#x3C;= I doubt most of the economically sensitive nodes are aware of our schedule<br>
+<strong>&#x3C;ferretinjapan></strong> endogenic, touche, but there comes a point wher you gain nothing by waiting.<br>
+<strong>&#x3C;ErCiccione></strong> I think in this phase keeping the scheduled 6 months shouldn’t be a priority. Agree with dEBRUYNE<br>
+<strong>&#x3C;rehrar></strong> If we were to push back by two months from March to May, would that be a good compromise in people’s opinions?<br>
+<strong>&#x3C;luigi1111w></strong> no, but 3 months from March to June…<br>
+<strong>&#x3C;sarang></strong> If we really want additional review, the timeline will need to be flexible to the reviewers<br>
+<strong>&#x3C;gingeropolous></strong> but not rushed<br>
+<strong>&#x3C;Maxithi></strong> I’d rather have 3 months than 6.<br>
+<strong>&#x3C;sarang></strong> academic review can be a frustratingly slow and unpredictable process<br>
+<strong>&#x3C;rehrar></strong> ok, from March to June then<br>
+<strong>&#x3C;endogenic></strong> i agree with sarang, we cant dictate when third parties deliver<br>
+<strong>&#x3C;iDunk></strong> This just looks like a repeat of the last meeting.<br>
+<strong>&#x3C;sarang></strong> basically<br>
+<strong>&#x3C;luigi1111w></strong> iDunk :)<br>
+<strong>&#x3C;rehrar></strong> it basically is :P<br>
+<strong>&#x3C;endogenic></strong> we also dont have enough info to know how long sufficient reviews would take at this stage<br>
+<strong>&#x3C;endogenic></strong> so not sure it’s a good idea to judge things yet<br>
+<strong>&#x3C;ferretinjapan></strong> rehrar, I think so, but I think it’s important to be realistic, rushing is bad I’ll admit (we don’t want stressed devs!), but unnecessarily putting it off is also bad<br>
+<strong>&#x3C;dEBRUYNE></strong> 8 months seems like ample time though<br>
+<strong>&#x3C;rehrar></strong> hard part of being decentralized with no leader is that consensus on stuff is hard<br>
+<strong>&#x3C;ArticMine></strong> Why not go ahead with March and if BP is ready then to an early September HF? for BP<br>
+<strong>&#x3C;endogenic></strong> oh yeah what about the meeting agenda?<br>
+<strong>&#x3C;luigi1111w></strong> well there’s really nothing left for march<br>
+<strong>&#x3C;sarang></strong> Maybe best to wait to hear about potential reviewer interest<br>
+<strong>&#x3C;sarang></strong> otherwise this is all moot<br>
+<strong>&#x3C;luigi1111w></strong> but we can fork anyway to keep schedule<br>
+<strong>&#x3C;sarang></strong> a totally moo point<br>
+<strong>&#x3C;rehrar></strong> how long do we wait though, since code freeze is soon?<br>
+<strong>&#x3C;sgp></strong> Why not plan a hardfork a month after the BP review is ready, whenever that is?<br>
+<strong>&#x3C;endogenic></strong> mooot*<br>
+<strong>&#x3C;ArticMine></strong> Multisig is in March<br>
+<strong>&#x3C;luigi1111w></strong> not forking<br>
+<strong>&#x3C;rehrar></strong> Multisig doesn’t require a hard fork though<br>
+<strong>&#x3C;dEBRUYNE></strong> Multisig doesn’t require a hard fork though<br>
+<strong>&#x3C;luigi1111w></strong> but in release yes<br>
+<strong>&#x3C;dEBRUYNE></strong> lol<br>
+<strong>&#x3C;luigi1111w></strong> you guys<br>
+<strong>&#x3C;rehrar></strong> lel dEBRUYNE<br>
+<strong>&#x3C;endogenic></strong> what the<br>
+<strong>&#x3C;rehrar></strong> of one mind<br>
+<strong>&#x3C;gingeropolous></strong> but still could provide bugs to squash<br>
+<strong>&#x3C;endogenic></strong> just got the heebies<br>
+<strong>&#x3C;dEBRUYNE></strong> bots rekt<br>
+<strong>&#x3C;pebx></strong> so we don’t need any hard fork in march without bp?<br>
+<strong>&#x3C;ferretinjapan></strong> sgp, I think thats a solid idea, but “consistency” may be a factor in that.<br>
+<strong>&#x3C;luigi1111w></strong> pebx part of the idea of scheduled forks is to do them anyway<br>
+<strong>&#x3C;rehrar></strong> can we go through the rest of the meeting and come back to this topic?<br>
+<strong>&#x3C;sgp></strong> I think the rewards are so large it’s worth considering breaking consistency<br>
+<strong>&#x3C;rehrar></strong> just so we make sure everything else gets done?<br>
+<strong>&#x3C;rehrar></strong> then we can discuss till the end of time at the end<br>
+<strong>&#x3C;luigi1111w></strong> or 1hr, whichever is less<br>
+<strong>&#x3C;endogenic></strong> rehrar: what are you, some kinda pragmatist?<br>
+<strong>&#x3C;ferretinjapan></strong> luigi1111w, noone said anything about FIXED schedules ;)<br>
+<strong>&#x3C;gingeropolous></strong> sgp, indeed, that was the logic begind the earlier than planned ringct fork<br>
+<strong>&#x3C;rehrar></strong> Some people gotta go or don’t want more than an hour<br>
+<strong>&#x3C;luigi1111w></strong> lol<br>
+<strong>&#x3C;dEBRUYNE></strong> What else is there to discuss though<br>
+<strong>&#x3C;endogenic></strong> dEBRUYNE: how about what kind of soda you’re going to get for rehrar?<br>
+<strong>&#x3C;iDunk></strong> Subaddresses and fees for the next fork.<br>
+<strong>&#x3C;rehrar></strong> <em>shrug</em> screw the agenda then. We’re not beholden to it right. ;) Just trying to think of people who might want to discuss code or issues.<br>
+<strong>&#x3C;ArticMine></strong> I do not see a fee change without BP<br>
+<strong>&#x3C;pebx></strong> i’m not a mathematician, however i would prefer single output bp in march/april/may than waiting for multi output with the even more controversial change in fee structure<br>
+<strong>&#x3C;iDunk></strong> Even if the value has gone up ~40x since the last adjustment ?<br>
+<strong>&#x3C;endogenic></strong> rehrar: dont be silly, no one wants to discuss issues… :P<br>
+<strong>&#x3C;rehrar></strong> troo, ok BP it is<br>
+<strong>&#x3C;sarang></strong> pebx: the fee change shouldn’t be that controversial<br>
+<strong>&#x3C;luigi1111w></strong> ArticMine smooth had some arguments for reducing fee<br>
+<strong>&#x3C;sarang></strong> the alternative is DOS<br>
+<strong>&#x3C;rehrar></strong> How soon should we be looking to come to a decision? This meeting? Next?<br>
+<strong>&#x3C;rbrunner></strong> What is DOS?<br>
+<strong>&#x3C;Maxithi></strong> endogenic: rehrar: dont be silly, no one wants to discuss issues… :P &#x3C;= I do, please label them so I don’t have to make lists and have dEBRUYNE tag 150 of them at once ;)<br>
+<strong>&#x3C;endogenic></strong> rbrunner: denial of service?<br>
+<strong>&#x3C;rbrunner></strong> Regarding fees?<br>
+<strong>&#x3C;ArticMine></strong> WE can lower the min fee but people are not using it anyway<br>
+<strong>&#x3C;endogenic></strong> i.e. spam?<br>
+<strong>&#x3C;serhack></strong> hi<br>
+<strong>&#x3C;dEBRUYNE></strong> For the current range proofs you’d need to tweak the penalty<br>
+<strong>&#x3C;luigi1111w></strong> not gonna happen<br>
+<strong>&#x3C;luigi1111w></strong> by march<br>
+<strong>&#x3C;ArticMine></strong> Spam to the txpool is a risk if we go too low on the min fee<br>
+<strong>&#x3C;dEBRUYNE></strong> What’s not going to happen by march luigi1111w?<br>
+<strong>&#x3C;luigi1111w></strong> tweaking the pentaly<br>
+<strong>&#x3C;pebx></strong> @ArticMine most users don’t know about a minimum fee…<br>
+<strong>&#x3C;luigi1111w></strong> penalty<br>
+<strong>&#x3C;pebx></strong> I see this all day in the Telegram groups “why is the fee so high?”<br>
+<strong>&#x3C;ArticMine></strong> One option change the wallet default to the min fee<br>
+<strong>&#x3C;dEBRUYNE></strong> The per kB fee isn’t even that high fwiw<br>
+<strong>&#x3C;pebx></strong> most services also use the default… like mymonero does<br>
+<strong>&#x3C;dEBRUYNE></strong> The transactions are just obscenely large<br>
+<strong>&#x3C;endogenic></strong> pebx: dont worry, i’m getting close to adding priority setting to new apps<br>
+<strong>&#x3C;pebx></strong> dEBURNE isn’t that why bp is so important?<br>
+<strong>&#x3C;dEBRUYNE></strong> Right, but we shouldn’t rush it<br>
+<strong>&#x3C;Maxithi></strong> @ArticMine: One option change the wallet default to the min fee &#x3C;= I actually consider that a good idea as no one uses that fee…<br>
+<strong>&#x3C;ErCiccione></strong> ^^<br>
+<strong>&#x3C;dEBRUYNE></strong> That’s going to result in a clogged mempool if we want to expand<br>
+<strong>&#x3C;luigi1111w></strong> I use that fee<br>
+<strong>&#x3C;moneromooo></strong> Then noone would use the current fee once it’s no longer the default.<br>
+<strong>&#x3C;iDunk></strong> So do I.<br>
+<strong>&#x3C;luigi1111w></strong> well I use both kinda depending<br>
+<strong>&#x3C;jtgrassie></strong> BP shoudnt be rushed but equally shouldnt be held back to a <em>schedule</em><br>
+<strong>&#x3C;luigi1111w></strong> dEBRUYNE some of that is unavoidable<br>
+<strong>&#x3C;Maxithi></strong> Yeah but I mean none of the people here do used it. That’s the issue<br>
+<strong>&#x3C;luigi1111w></strong> two opposing forces at work<br>
+<strong>&#x3C;rbrunner></strong> It’s nice to have a fee level below default to be able to say “I can wait”<br>
+<strong>&#x3C;dEBRUYNE></strong> luigi1111w: According to smooth miners will just pick the default or higher fees and leave everything else in the mempool<br>
+<strong>&#x3C;dEBRUYNE></strong> Because they can only use the last transaction for the penalty<br>
+<strong>&#x3C;luigi1111w></strong> well I’m pretty sure that was originally according to me :)<br>
+<strong>&#x3C;dEBRUYNE></strong> So you can’t have 23 min fee txes and then one default<br>
+<strong>&#x3C;binaryFate></strong> &#x3C;ArticMine> One option change the wallet default to the min fee &#x3C;— +1<br>
+<strong>&#x3C;endogenic></strong> isn’t that a bad idea? ^<br>
+<strong>&#x3C;moneromooo></strong> It is.<br>
+<strong>&#x3C;luigi1111w></strong> it’s an idea<br>
+<strong>&#x3C;luigi1111w></strong> I’m not sure if it’s bad or good<br>
+<strong>&#x3C;moneromooo></strong> Unless people don’t use monero much for half a year.<br>
+<strong>&#x3C;endogenic></strong> hm it would be cool to model this<br>
+<strong>&#x3C;Maxithi></strong> got to go, see you guys<br>
+<strong>&#x3C;endogenic></strong> but Maxithi you didnt get to chat issues<br>
+<strong>&#x3C;luigi1111w></strong> sorry I got lunch gotta run too<br>
+<strong>* luigi1111w</strong> grumbles about meeting time, again<br>
+<strong>&#x3C;ArticMine></strong> It is the human herd mentality<br>
+<strong>&#x3C;Maxithi></strong> endogenic Yeah never mind, just wanted to ask people to label more issues to make it easier to know which one require assistance.<br>
+<strong>* Maxithi</strong> agrees with luigi1111w<br>
+<strong>&#x3C;dEBRUYNE></strong> What if the wallet changes the level dependent on the backlog?<br>
+<strong>&#x3C;endogenic></strong> Maxithi: maybe you could make an issue about that?<br>
+<strong>&#x3C;dEBRUYNE></strong> So it’d use min fee if mempool is &#x3C; 1000 kB and default if > 1000 kB?<br>
+<strong>&#x3C;dEBRUYNE></strong> ^ just using arbitrary numbers<br>
+<strong>&#x3C;rbrunner></strong> Wouldn’t that just result in a lot of angry people, like “Why the hell I paid so much”?<br>
+<strong>&#x3C;rbrunner></strong> If you don’t make it <em>very</em> transparent<br>
+<strong>&#x3C;ArticMine></strong> dEBRUYNE What if the wallet changes the level dependent on the backlog? &#x3C;--- That would work<br>
+<strong>&#x3C;dEBRUYNE></strong> rbrunner: How so?<br>
+<strong>&#x3C;hyc></strong> endogenic, sarang: email draft <a href="https://pastebin.mozilla.org/9075994" rel="noopener noreferrer external" target="_blank">https://pastebin.mozilla.org/9075994</a><br>
+<strong>&#x3C;dEBRUYNE></strong> You can add a note in the wallet<br>
+<strong>&#x3C;pebx></strong> isn’t that even more confusing for users?<br>
+<strong>&#x3C;dEBRUYNE></strong> “changing fee level because of backlog”<br>
+<strong>&#x3C;rbrunner></strong> I am afraid people would not understand the mechanism<br>
+<strong>&#x3C;rbrunner></strong> compare fees, see that they are different for different people<br>
+<strong>&#x3C;rbrunner></strong> or different times<br>
+<strong>&#x3C;rbrunner></strong> and shout “scam” or so …<br>
+<strong>&#x3C;ArticMine></strong> It is what Bitcoin does<br>
+<strong>&#x3C;endogenic></strong> hyc: term “output” used before definition<br>
+<strong>&#x3C;dEBRUYNE></strong> That seems a bit too far stretched<br>
+<strong>&#x3C;rbrunner></strong> Well, people now even don’t “understand” they can go one level lower for the fee, right?<br>
+<strong>&#x3C;sarang></strong> hyc: I didn’t see any Java code from the authors. I wrote our Java proto code<br>
+<strong>&#x3C;rbrunner></strong> Many of them, anyway<br>
+<strong>&#x3C;DaveyJones></strong> rbunner i don’t think so … most people arn’t even schooled on default vs 0.25x fee<br>
+<strong>&#x3C;sarang></strong> hyc: line 5, I’d say “are confident” instead of “are pretty confident”<br>
+<strong>&#x3C;hyc></strong> sarang: ok<br>
+<strong>&#x3C;endogenic></strong> hyc: maybe capitalize ‘Java’ and add a ‘Therefore, ’ before “The Monero Project”<br>
+<strong>&#x3C;rbrunner></strong> Yes, how will they understand how that works if it get more complicated?<br>
+<strong>&#x3C;rbrunner></strong> That’s my fear, basically<br>
+<strong>&#x3C;endogenic></strong> oops<br>
+<strong>&#x3C;endogenic></strong> “mainnet. The Monero Project”<br>
+<strong>&#x3C;rehrar></strong> I’m torn tbh. I see both sides.<br>
+<strong>&#x3C;pebx></strong> @ArticMine what bitcoin does is one of the major reasons, why people are looking into Monero… fees are one thing the average bitcoin user is always confused about<br>
+<strong>&#x3C;DaveyJones></strong> basically they don’t need to understand most of people moaning about tax fee’s are people just count the $ value of the fee… not how it was achieved<br>
+<strong>&#x3C;endogenic></strong> otherwise looks great, tyvm!<br>
+<strong>&#x3C;DaveyJones></strong> so they basically dont care about the mechanism but the price<br>
+<strong>&#x3C;DaveyJones></strong> and wasnt the proposed mempool fee sth that should happen automatic? or did i misunderstand that<br>
+<strong>&#x3C;ArticMine></strong> pebx Bitcoin has fundamental fee problems that have nothing to do with wallet choices.<br>
+<strong>&#x3C;sarang></strong> hyc: maybe state that we “recognize the value of independent third-party review” to assure other readers that we’re doing this as a “belt and suspenders” approach, rather than a legitimate worry about correctness<br>
+<strong>&#x3C;binaryFate></strong> pebx Bitcoin is a clusterfuck of floating fees and fees competitiong for a fixed block size. Here it’s just about choosing the default among the 4 different levels, that’s it. Then flex block cap takes care of the rest so you don’t have your transaction in mempool for 14 days<br>
+<strong>&#x3C;sarang></strong> I don’t want some silly media report that we don’t trust our own code<br>
+<strong>&#x3C;jtgrassie></strong> IMO default fees should derived from mempool size and be completely transparent to user<br>
+<strong>&#x3C;endogenic></strong> but sarang mass media never selectively reports<br>
+<strong>&#x3C;sarang></strong> -_-<br>
+<strong>&#x3C;endogenic></strong> that wouldn’t be true journalism!<br>
+<strong>&#x3C;ArticMine></strong> It can be done at he wallet level.<br>
+<strong>&#x3C;binaryFate></strong> It’s just silly that when there is factually no backlog in the mempool, the fee does not default to low<br>
+<strong>&#x3C;rbrunner></strong> Can the wallet query tx pool size already?<br>
+<strong>&#x3C;endogenic></strong> binaryFate: simplewallet does warn at least<br>
+<strong>&#x3C;rbrunner></strong> Technically, is there a call?<br>
+<strong>&#x3C;endogenic></strong> “n block backlog at that fee”<br>
+<strong>&#x3C;endogenic></strong> oh, next meeting when? 2 wks?<br>
+<strong>&#x3C;sarang></strong> endogenic: I want to make it clear that we’re taking a careful but confident approach that uses peer review, just as any good academic work does<br>
+<strong>&#x3C;rehrar></strong> It was suggested earlier that if single output BP’s are not merged in March, that the fee should be adjusted. If we are saying that we don’t want to adjust the fee in March, I think single output BPs should be merged<br>
+<strong>&#x3C;endogenic></strong> sarang: i completely agree<br>
+<strong>&#x3C;jtgrassie></strong> 13:02 <strong>&#x3C; endogenic></strong> oh, next meeting when? 2 wks?<br>
+<strong>&#x3C;rehrar></strong> Ye, sorry. If anyone needs to leave. Next meeting two weeks.<br>
+<strong>&#x3C;rehrar></strong> 28th<br>
+<strong>&#x3C;binaryFate></strong> The warn makes people think “mmm should I use more fees”, not the opposite. Who when using normal and seeing 0/1 block backlog cancels, and come back to use low fees? Nobody I guess, should be automatic maybe with just a y/n confirmation<br>
+<strong>&#x3C;sarang></strong> hyc endogenic: move discussion of BP review to #monero-research-lab after meeting?<br>
+<strong>&#x3C;endogenic></strong> yes good point<br>
+<strong>&#x3C;endogenic></strong> binaryFate<br>
+<strong>&#x3C;hyc></strong> ok<br>
+<strong>&#x3C;endogenic></strong> though i dont know about automatic, from a ux standpoint, but thats just me<br>
+<strong>&#x3C;rbrunner></strong> Automatic always takes away some choice, right?<br>
+<strong>&#x3C;endogenic></strong> not necessarily<br>
+<strong>&#x3C;endogenic></strong> if the result is displayed clearly so the user can confirm before implicitly agreeing<br>
+<strong>&#x3C;endogenic></strong> then it can be ok<br>
+<strong>&#x3C;endogenic></strong> question is<br>
+<strong>&#x3C;endogenic></strong> how do you do that in a CLI?<br>
+<strong>&#x3C;binaryFate></strong> What we’re discussing is just selecting the default, not forcing the user<br>
+<strong>&#x3C;endogenic></strong> may end up needing some kind of prompt or to enhance it to update some kind of display in-place<br>
+<strong>&#x3C;endogenic></strong> yes<br>
+<strong>&#x3C;endogenic></strong> must be off, myself<br>
+<strong>&#x3C;endogenic></strong> o/<br>
+<strong>&#x3C;rehrar></strong> Can we maybe plan an “urgent” meeting sometime this week or next weekend?<br>
+<strong>&#x3C;rehrar></strong> Just to discuss BP’s and make a decision?<br>
+<strong>&#x3C;endogenic></strong> rehrar i’ll attend any meetings<br>
+<strong>&#x3C;rehrar></strong> Or is that not a good idea.<br>
+<strong>&#x3C;sarang></strong> rehrar: Do we want to wait on review feedback?<br>
+<strong>&#x3C;rbrunner></strong> It seems BP might merit that, a special meeting<br>
+<strong>&#x3C;sarang></strong> To at least see who if anyone will review?<br>
+<strong>&#x3C;endogenic></strong> sarang: personally i would<br>
+<strong>&#x3C;rehrar></strong> Sarang, do we have an ETA on that?<br>
+<strong>&#x3C;DaveyJones></strong> BP + fee talk ?<br>
+<strong>&#x3C;ArticMine></strong> I am fine with that say next Sunday<br>
+<strong>&#x3C;DaveyJones></strong> i guess both run a little short today<br>
+<strong>&#x3C;endogenic></strong> or else i would hold the meeting with the primary objective of resolving how we can solicit and accomplish the review<br>
+<strong>&#x3C;DaveyJones></strong> and need more thoughts<br>
+<strong>&#x3C;sarang></strong> rehrar: I have a phone meeting w/ the audit group on Tuesday<br>
+<strong>&#x3C;rehrar></strong> Perfect.<br>
+<strong>&#x3C;sarang></strong> I assume hyc can post the Call For Reviews after we finish proofreading it<br>
+<strong>&#x3C;rehrar></strong> I can make an issue depending on that.<br>
+<strong>&#x3C;sarang></strong> and I’ll contact the other paper authors today<br>
+<strong>&#x3C;rehrar></strong> I will put a “tentative” next meeting for next Sunday<br>
+<strong>&#x3C;sarang></strong> roger<br>
+<strong>&#x3C;rbrunner></strong> Sounds good<br>
+<strong>&#x3C;rehrar></strong> And if anything changes, I’ll change it.<br>
+<strong>&#x3C;sarang></strong> I’ll post any updates on the research IRC as I hear back<br>
+<strong>&#x3C;rehrar></strong> You can comment on the GitHub issue too plz.<br>
+<strong>&#x3C;sarang></strong> sure thing<br>
+<strong>&#x3C;rbrunner></strong> I am sure companies would arrange meetings of whole days for something of the importance of BP<br>
+<strong>&#x3C;rbrunner></strong> Just saying :)<br>
+<strong>&#x3C;rbrunner></strong> Just to reach consensus<br>
+<strong>&#x3C;rehrar></strong> Good idea rbrunner. 4 hour meeting planned. Followed by a small snack break. Then another four hours.<br>
+<strong>&#x3C;rbrunner></strong> :)<br>
+<strong>&#x3C;ErCiccione></strong> can we talk about code freeze now? I really need to know the date for both the localization team and the GUI guide that will go in the binaries<br>
+<strong>&#x3C;rehrar></strong> Harder to discuss now that lots of people are gone unfortunately. :/<br>
+<strong>&#x3C;rehrar></strong> BPs took most of the time.<br>
+<strong>&#x3C;rbrunner></strong> With breakthrough still somewheat elusive, if you ask me …<br>
+<strong>&#x3C;rbrunner></strong> But maybe that’s a good thing.<br>
+<strong>&#x3C;ErCiccione></strong> rehrar: yep..but that mess things up a bit for me. still around mid February btw, right?<br>
+<strong>&#x3C;rehrar></strong> rbrunner, shows we’re actually decentralized?<br>
+<strong>&#x3C;rehrar></strong> Dunno erciccione, I think it was supposed to be January, but don’t quote me.<br>
+<strong>&#x3C;rbrunner></strong> rehrar: Yes.<br>
+<strong>&#x3C;sgp></strong> iirc it’s supposed to be 2 months<br>
+<strong>&#x3C;sgp></strong> Before the hf<br>
+<strong>&#x3C;rbrunner></strong> Was one of the important points of fp’s speech in Zurich that I could attend. Impressed folks, I think<br>
+<strong>&#x3C;ErCiccione></strong> rerhrar: it was, but last time i asked dEBRUYNE he said more or less around February. i guess i’ll just wait to know more<br>
+<strong>&#x3C;binaryFate></strong> rbrunner what point?<br>
+<strong>&#x3C;sgp></strong> I think it’s a good idea<br>
+<strong>&#x3C;rbrunner></strong> The good decentralization of Monero<br>
+<strong>&#x3C;binaryFate></strong> ErCiccione as long as hard fork date still somewhat open and discussed, I think it’s fair to assume code freeze will not happen soon. That’s probably the most you can get now.<br>
+<strong>&#x3C;sgp></strong> I think some localization stuff is low-risk though and could be merged a bit later as long as the binaries can be built with sufficient time. Not my deceion though<br>
+<strong>&#x3C;Billy></strong> I do think we need to resolve the BP issue ASAP. It needs a special meeting because these general meetings aren’t going to do it.<br>
+<strong>&#x3C;rbrunner></strong> You could say that after two regular meetings, yes<br>
+<strong>&#x3C;rbrunner></strong> 1 hour is damn short, even if we don’t have to emulate endless corporate meetings<br>
+<strong>&#x3C;ErCiccione></strong> ok, thanks binaryfate sgp the problem is that some translator keep asking that because they need to organize their time, but they don’t want their work to be left out from the official release</p>  </div>  </article> <aside data-border="true" data-transparent="true" style="--card-padding: var(--space-xl); --card-radius: var(--radius-md)" data-astro-cid-qfuyyumy="true" data-astro-cid-dd5txfcy="true" class="card sidebar">  <h2 data-astro-cid-qfuyyumy>Recent Posts</h2> <ul class="recent-posts" data-astro-cid-qfuyyumy> <li data-astro-cid-qfuyyumy> <a class="post-title" href="/blog/2026/03/04/monero-GUI-0.18.4.7-released/" data-astro-cid-qfuyyumy> Monero GUI 0.18.4.7 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-qfuyyumy> March 4, 2026 </time> </li><li data-astro-cid-qfuyyumy> <a class="post-title" href="/blog/2026/03/04/monero-0.18.4.6-released/" data-astro-cid-qfuyyumy> Monero 0.18.4.6 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-03-04" data-astro-cid-qfuyyumy> March 4, 2026 </time> </li><li data-astro-cid-qfuyyumy> <a class="post-title" href="/blog/2026/01/07/monero-GUI-0.18.4.5-released/" data-astro-cid-qfuyyumy> Monero GUI 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-qfuyyumy> January 7, 2026 </time> </li><li data-astro-cid-qfuyyumy> <a class="post-title" href="/blog/2026/01/07/monero-0.18.4.5-released/" data-astro-cid-qfuyyumy> Monero 0.18.4.5 &#39;Fluorine Fermi&#39; released </a> <time class="post-date" datetime="2026-01-07" data-astro-cid-qfuyyumy> January 7, 2026 </time> </li> </ul>  </aside>  </div>  </main> <footer class="footer" aria-label="Footer" data-astro-cid-mh6itkc3> <div class="items" data-astro-cid-mh6itkc3> <nav class="grid" aria-label="Footer navigation" data-astro-cid-mh6itkc3> <section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>Resources</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/get-started/what-is-monero/" data-astro-cid-mh6itkc3> About Monero  </a> </li><li data-astro-cid-mh6itkc3> <a href="/resources/moneropedia/" data-astro-cid-mh6itkc3> Moneropedia  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://docs.getmonero.org" data-astro-cid-mh6itkc3> Monero Docs  </a> </li><li data-astro-cid-mh6itkc3> <a href="/get-started/faq/" data-astro-cid-mh6itkc3> FAQ  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>Reach out</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="/community/workgroups/" data-astro-cid-mh6itkc3> Workgroups  </a> </li><li data-astro-cid-mh6itkc3> <a href="/community/hangouts/" data-astro-cid-mh6itkc3> Hangouts  </a> </li><li data-astro-cid-mh6itkc3> <a href="/postorius/lists/monero-announce.lists.getmonero.org" data-astro-cid-mh6itkc3> Mailing list  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>Community</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://monero.stackexchange.com/" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Stack Exchange  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://bitcointalk.org/index.php?topic=583449.0" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Bitcoin Talk  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://translate.getmonero.org" data-astro-cid-mh6itkc3> Translate  </a> </li> </ul> </section><section class="col" data-astro-cid-mh6itkc3> <h3 class="title" data-astro-cid-mh6itkc3>The Monero Project</h3> <ul class="list" data-astro-cid-mh6itkc3> <li data-astro-cid-mh6itkc3> <a href="https://openalias.org" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Open Alias  </a> </li><li data-astro-cid-mh6itkc3> <a href="/resources/research-lab/" data-astro-cid-mh6itkc3> Monero Research Lab (MRL)  </a> </li><li data-astro-cid-mh6itkc3> <a href="/resources/press-kit/" data-astro-cid-mh6itkc3> Press Kit  </a> </li><li data-astro-cid-mh6itkc3> <a href="https://ccs.getmonero.org" data-astro-cid-mh6itkc3> Community Crowdfunding System  </a> </li> </ul> </section> </nav> <nav class="bottom" aria-label="Secondary footer navigation" data-astro-cid-mh6itkc3> <ul class="inline-list" data-astro-cid-mh6itkc3> <li class="inline-item" data-astro-cid-mh6itkc3> <a href="#" data-astro-cid-mh6itkc3> Tor Onion service <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/tor.D04gt7iP_278xXg.avif);--iconColor: #7d4698;--spacing: 0.25em;"></div>  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Vulnerability response  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/legal/" data-astro-cid-mh6itkc3> Legal  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="https://github.com/monero-project" target="_blank" rel="noopener noreferrer external" data-astro-cid-mh6itkc3> Source code  </a> </li><li class="inline-item" data-astro-cid-mh6itkc3> <a href="/feed.xml" data-astro-cid-mh6itkc3> RSS Feed <div class="icon" data-astro-cid-bpjkz5as style="--iconSize: 1rem;--iconSrc: url(/_astro/rss.jnIu9F4x_Z28u6pV.avif);--iconColor: var(--monero-orange);--spacing: 0.25em;"></div>  </a> </li> </ul> </nav> </div> </footer>   </body></html> 
