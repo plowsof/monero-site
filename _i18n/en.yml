@@ -121,25 +121,22 @@ home:
 hangouts:
   intro: The Monero community is diverse and varied. We come from all over, but we definitely have some places we like to hang out together. You'll find most of them below. Join us!
   resources: Workgroup Resources
-  resources_para: In an effort to support organic workgroups, Monero has several resources that the community can use to meet and plan projects,
-  resources_para1: like a Matrix server, a Taiga board and the translation platform Weblate.
-  irc: IRC Channels
-  irc_para: The Monero community utilizes a lot of IRC channels that each serve different purposes. Some to work, and some just to hang out. You'll find the more popular ones below.
+  resources_para: Are you looking for workgroups? Check out our workgroups page.
+  irc-matrix: IRC/Matrix Channels
+  irc_para: The Monero community utilizes a lot of IRC and Matrix channels that each serve different purposes. Some to work, and some just to hang out. You'll find the more popular ones below.
   bridges: These channels are bridged to a number of other platforms, allowing the community to communicate using their favourite chat service/protocol.
+  matrixspace: Matrix users can join our <a href="https://matrix.to/#/%23monerospace:monero.social">Monero space</a> to see a comprehensive list of channels.
   mailing_list: Mailing List
   mailing_list1: Do you want to receive important announcements directly on your email address? join our mailing lists!
   subscribe: Subscribe
+  matrixtutorial: We provide a step-by-step guide for <a href="/resources/user-guides/join-monero-matrix.html">Joining the Monero Community Matrix Server via Element</a>
   irc_channels:
     monero: This channel is used to discuss all things Monero related.
     monero-community: This channel is for the Monero community to congregate and discuss ideas.
-    monero-dev: The many contributors and developers come here to discuss dev-y things.
     monero-markets: We use this channel to talk about the price of Monero and other coins.
     monero-offtopic: Chatting with other Monero users about things not related to Monero.
-    monero-pools: This is the place for mining questions and discussion.
-    monero-research-lab: Research into financial privacy with cryptocurrency.
-    monero-translations: Localizing Monero into other languages.
-    monero-hardware: Building hardware wallets to keep your Monero safe.
-    monero-site: Where the development of this website is coordinated.
+    monero-mining: This is the place for mining questions and discussion.
+    monero-support: You can get support and ask questions in this channel from experienced users. Keep in your mind; Monero doesn't have official support, no one would ask your private keys and <a class="ext-noicon" href="https://dontasktoask.com/" target="_blank" rel="noreferrer noopener"> don't ask to ask.</a>
 
 merchants:
   descr: On this page you will find stores and merchants that accept Monero as payment, as well as exchanges that trade Monero for other currencies.
@@ -171,6 +168,9 @@ merchants:
   setreq: Setup required
   eigenwalletdescr: Exchange Bitcoin for Monero using Atomic Swaps.
   visiteigenwallet: Visit Eigen Wallet
+  havenodescr: Decentralized P2P exchange built on Tor and Monero. Non-custodial with direct fiat-to-XMR trading.
+  visithaveno: Visit Haveno
+  havenonetworks: "Active Networks:"
 
 sponsorships:
   intro: The following businesses actively support the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
@@ -195,8 +195,8 @@ team:
   core_start: The Core Team is a closed workgroup; it's not possible to join unless invited.
   community_descr: This workgroup is used by the community to organize and coordinate. Start here if you are a non-coder who wants to contribute to Monero.
   community_start: The best way to start contributing to this workgroup is to join the chatrooms and introduce yourself, stating your interests and the skills you would like to offer to the community.
-  devworkgroup: Development Workgroup
-  devworkgroup_descr: "This workgroup unites Monero developers working on the wallets and daemon maintained by the Core Team. It consists of two main parts: the CLI team and the GUI team. These teams coordinate using two different chatrooms."
+  devworkgroup: Development Workgroups
+  devworkgroup_descr: "This workgroup unites developers working on The Monero Project wallets and daemon. It consists of two main parts: the CLI team and the GUI team. These teams coordinate using two different chatrooms."
   devworkgroup_start: It's a good idea to take a look at open issues on both repositories to have an idea of what could be fixed or improved. Both codebases, but especially the core repository, can be quite challenging, so it's suggested to first write in the chatroom introducing yourself, your skills, and to what you wish to contribute.
   chatgeneral: "Chat (general):"
   chatgui: "Chat (GUI):"
@@ -221,6 +221,9 @@ team:
   mpwg_start: If you would like to take part or follow policy discussions, join Matrix/Libera chatroom.
   nwlb_descr: The Seraphis wallet workgroup is a group of developers working on implementing Seraphis and Jamtis in Monero, through developing a completely new type of wallet that will improve drastically Monero's privacy capabilities and usability.
   nwlb_start: The workgroup meets frequently and coordinates in the Matrix room (relayed to IRC). They are always looking for contributors willing to help.
+  docs: Monero Documentation Workgroup
+  docs_descr: This workgroup works on documentation of Monero and its tools.
+  docs_start: You can join the IRC or Matrix room.
 
 downloads:
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
@@ -585,7 +588,7 @@ mining:
     There are several options when it comes to mining software. As already said, to solo mine, the CLI or GUI wallets can be used (CPU only). If you want to mine to a pool or mine with a GPU, you'll need dedicated software. Miners supporting Monero:
   software_para: Note that some miners may have developer fees.
   support: Support
-  supportp: If you have questions or just want to confront with fellow miners, come chat on Monero Pools. On <a href="https://matrix.to/#/%23monero-pools:monero.social">Matrix</a> and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
+  supportp: If you have questions or just want to confront with fellow miners, come chat on Monero Mining. On <a href="https://matrix.to/#/%23xmrmine:matrix.org">Matrix</a> and <a href="irc://irc.libera.chat/#monero-mining">Libera</a>.
   p2poolh: "P2Pool: The best of both solo and pool mining"
   p2poolnew: >
     P2Pool is a clever new way of mining Monero, which allows miners to receive the frequent payouts offered by pools without needing to trust a centralized pool. P2Pool is a Peer-To-Peer mining pool that gives miners full control over their Monero node and what it mines. More details in <a href="/2021/10/05/p2pool-released.html">the announcement post</a>.
@@ -844,8 +847,11 @@ roadmap:
 
 research-lab:
   intro: Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.
-  intro_email: "To contact the Monero Research Lab, please email lab@getmonero.org."
-  mrl_papers: Published Papers
+  intro_contact: "To contact the Monero Research Lab, please join our <a href='https://matrix.to/#/#monero-research-lab:monero.social'>Matrix</a>/<a href='irc://irc.libera.chat/#monero-research-lab'>IRC channel</a>"
+  mrl_papers: Papers Written by MRL Researchers
+  related_mrl_papers: Papers Related to Monero
+  papersbutton: Visit MoneroResearch.info
+  papersp: Explore a broad range of research papers related to Monero.
   abstract: Abstract
   introduction: Introduction
   read-paper: Read Paper
@@ -879,6 +885,8 @@ research-lab:
   iacr2020312: "Arcturus: efficient proofs for confidential transactions"
   iacr2020312_note: "NOTE: this paper has been retracted, but it's possible to view it clicking on 'All versions of this report'."
   iacr2020312_abstract: Confidential transactions are used in distributed digital assets to demonstrate the balance of values hidden in commitments, while retaining signer ambiguity. Previous work describes a signer-ambiguous proof of knowledge of the opening of commitments to zero at the same index across multiple public commitment sets and the evaluation of a verifiable random function used as a linking tag, and uses this to build a linkable ring signature called Triptych that can be used as a building block for a confidential transaction model. In this work, we extend Triptych to build Arcturus, a proving system that proves knowledge of openings of multiple commitments to zero within a single set, correct construction of a verifiable random function evaluated at each opening, and value balance across a separate list of commitments within a single proof. While soundness depends on a novel dual discrete-logarithm hardness assumption, we use data from the Monero blockchain to show that Arcturus can be used in a confidential transaction model to provide faster total batch verification time than other state-of-the-art constructions without a trusted setup.
+  cypherstack202410: Uniformly Most Powerful Tests For Ad Hoc Transactions In Monero
+  cypherstack202410_abstract: We introduce a general, low-cost, low-power statistical test for transactions in transaction protocols with small anonymity set authentication (TPSASAs), such as Monero. The test classifies transactions as ad hoc (spontaneously constructed to spend a deterministically selected key) or self-churned (constructed from a probability distribution very close to that of the default wallet software, and with the same sender and receiver). The test is a uniformly most powerful (UMP) likelihood ratio tests (LRT) from the Neyman-Pearson Lemma, and makes no assumptions about user behavior. We extend these tests to exploit prior information about user behavior. We discuss test parameterization, as well as how anonymity set cardinality and user behavior impact test performance. We also describe a maximum-likelihood de-anonymization attack on Monero based on our test.
   cryptonote: Cryptonote Whitepapers
   cryptonote-whitepaper: Cryptonote Whitepaper
   cryptonote-whitepaper_para: This is the original cryptonote paper written by the cryptonote team. Reading it will give an understanding about how the cryptonote algorithm works in general.
@@ -919,7 +927,7 @@ library:
     Published: 4 April 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a><br>
     A comprehensive conceptual (and technical) explanation of Monero.<br>
     We endeavor to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
-  zerotomonerov2langs: Available in <a href="Zero-to-Monero-2-0-0-ru.pdf">Russian</a> and <a href="Zero-to-Monero-2-0-0-pt.pdf">Portuguese</a>.
+  zerotomonerov2langs: Available in <a href="Zero-to-Monero-2-0-0-ru.pdf">Russian</a>, <a href="Zero-to-Monero-2-0-0-pt.pdf">Portuguese</a>, and <a href="Zero-to-Monero-2-0-0-it.pdf">Italian</a>.
   zerotomonerov1: "Zero to Monero: First Edition"
   zerotomonerov1p: >
     Published: 26 June 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a>

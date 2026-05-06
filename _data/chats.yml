@@ -5,26 +5,14 @@ chats:
 - monero-community:
   matrix: https://matrix.to/#/%23monero-community:monero.social
 
-- monero-dev: 
-  matrix: https://matrix.to/#/%23monero-dev:monero.social
-
 - monero-markets:
   matrix: https://matrix.to/#/%23monero-markets:monero.social
 
 - monero-offtopic:
   matrix: https://matrix.to/#/%23monero-offtopic:monero.social
 
-- monero-pools:
-  matrix: https://matrix.to/#/%23monero-pools:monero.social
+- monero-mining:
+  matrix: https://matrix.to/#/%23xmrmine:matrix.org
 
-- monero-research-lab:
-  matrix: https://matrix.to/#/%23monero-research-lab:monero.social
-
-- monero-translations:
-  matrix: https://matrix.to/#/%23monero-translations:monero.social
-
-- monero-hardware:
-  matrix: https://matrix.to/#/%23monero-hardware:matrix.org
-
-- monero-site:
-  matrix: https://matrix.to/#/%23monero-site:monero.social
+- monero-support:
+  matrix: https://matrix.to/#/#monero-support:monero.social
