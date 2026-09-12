@@ -30,9 +30,7 @@
     "astro-og-canvas": "^0.13.1",
     "astro-seo": "^1.1.0",
     "canvaskit-wasm": "^0.42.0",
-    "escape-string-regexp": "^5.0.0",
     "fast-glob": "^3.3.3",
-    "gray-matter": "^4.0.3",
     "i18next": "^25.8.13",
     "i18next-fs-backend": "^2.6.1",
     "isomorphic-dompurify": "^2.36.0",
@@ -40,7 +38,8 @@
     "sass": "^1.97.3",
     "satteri": "^0.10.5",
     "sharp": "^0.34.5",
-    "unist-util-visit": "^5.1.0"
+    "unist-util-visit": "^5.1.0",
+    "yaml": "^2.9.0"
   },
   "packageManager": "pnpm@11.4.0",
   "devDependencies": {
