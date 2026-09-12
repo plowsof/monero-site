@@ -40,6 +40,7 @@ export default defineConfig({
     : {}),
   site: `https://${SITE_ROOTDOMAIN}`,
   trailingSlash: "always",
+  session: false,
   fonts: [
     {
       provider: fontProviders.npm({ remote: false }),
