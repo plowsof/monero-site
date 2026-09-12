@@ -19,7 +19,7 @@
     "prepare-build": "tsx scripts/prepare-build.ts"
   },
   "dependencies": {
-    "@astrojs/markdown-remark": "^7.3.1",
+    "@astrojs/markdown-satteri": "^0.4.1",
     "@astrojs/node": "^11.1.5",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
@@ -37,9 +37,8 @@
     "i18next-fs-backend": "^2.6.1",
     "isomorphic-dompurify": "^2.36.0",
     "marked": "^17.0.3",
-    "mdast-util-find-and-replace": "^3.0.2",
-    "rehype-external-links": "^3.0.0",
     "sass": "^1.97.3",
+    "satteri": "^0.10.5",
     "sharp": "^0.34.5",
     "unist-util-visit": "^5.1.0"
   },
@@ -47,7 +46,6 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
     "@eslint/js": "^9.39.3",
-    "@types/hast": "^3.0.4",
     "@types/mdast": "^4.0.4",
     "eslint": "^9.39.3",
     "eslint-config-prettier": "^10.1.8",
@@ -65,8 +63,6 @@
     "stylelint-no-unsupported-browser-features": "^8.1.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.1",
-    "unified": "^11.0.5",
-    "vfile": "^6.0.3"
+    "typescript-eslint": "^8.56.1"
   }
 }
