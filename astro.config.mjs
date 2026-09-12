@@ -2,7 +2,7 @@
 import { satteri } from "@astrojs/markdown-satteri";
 import sitemap from "@astrojs/sitemap";
 import { filterSitemapByDefaultLocale, i18n } from "astro-i18n-aut/integration";
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 import { defineHastPlugin } from "satteri";
 
 import { defaultLocale, locales } from "./src/i18n/config";
@@ -40,6 +40,19 @@ export default defineConfig({
     : {}),
   site: `https://${SITE_ROOTDOMAIN}`,
   trailingSlash: "always",
+  fonts: [
+    {
+      provider: fontProviders.npm({ remote: false }),
+      name: "DM Sans Variable",
+      cssVariable: "--font-dm-sans",
+      weights: ["100 1000"],
+      styles: ["normal"],
+      options: {
+        package: "@fontsource-variable/dm-sans",
+        file: "index.css",
+      },
+    },
+  ],
   markdown: {
     processor: satteri({
       mdastPlugins: [moneropediaLinks],
