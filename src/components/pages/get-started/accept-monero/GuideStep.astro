@@ -27,31 +27,27 @@ const { t } = Astro.locals;
 
 <section class="guide-step" data-align={align ?? null} data-reverse={reverse}>
   <div class="step-content">
-    <span class="step-label"
-      >{t("common:components.guideStep.step", { step })}</span
-    >
+    <span class="step-label">
+      {t("common:components.guideStep.step", { step })}
+    </span>
     <h2 class="step-title">{title}</h2>
     <div class="step-body">
       <slot />
     </div>
   </div>
   <div class="step-image">
-    {
-      image ? (
-        <Image src={image} alt={imageAlt} format="avif" />
-      ) : (
-        <div class="step-image-placeholder">
-          {icon && (
-            <div class="placeholder-icon">
-              <MaskIcon src={icon} size="4rem" />
-            </div>
-          )}
-          <div class="placeholder-number">
-            {step.toString().padStart(2, "0")}
+    {image ? (
+      <Image src={image} alt={imageAlt} format="avif" />
+    ) : (
+      <div class="step-image-placeholder">
+        {icon && (
+          <div class="placeholder-icon">
+            <MaskIcon src={icon} size="4rem" />
           </div>
-        </div>
-      )
-    }
+        )}
+        <div class="placeholder-number">{step.toString().padStart(2, "0")}</div>
+      </div>
+    )}
   </div>
 </section>
 
