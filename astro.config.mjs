@@ -1,4 +1,5 @@
 // @ts-check
+import { unified } from "@astrojs/markdown-remark";
 import sitemap from "@astrojs/sitemap";
 import { filterSitemapByDefaultLocale, i18n } from "astro-i18n-aut/integration";
 import { defineConfig } from "astro/config";
@@ -26,18 +27,20 @@ export default defineConfig({
   site: `https://${SITE_ROOTDOMAIN}`,
   trailingSlash: "always",
   markdown: {
-    remarkPlugins: [moneropediaLinks],
-    rehypePlugins: [
-      [
-        rehypeExternalLinks,
-        {
-          target: "_blank",
-          rel: ["noopener", "noreferrer", "external"],
-          /** @param {import('hast').Element} node*/
-          test: (node) => isExternal(node, SITE_ROOTDOMAIN),
-        },
+    processor: unified({
+      remarkPlugins: [moneropediaLinks],
+      rehypePlugins: [
+        [
+          rehypeExternalLinks,
+          {
+            target: "_blank",
+            rel: ["noopener", "noreferrer", "external"],
+            /** @param {import('hast').Element} node*/
+            test: (node) => isExternal(node, SITE_ROOTDOMAIN),
+          },
+        ],
       ],
-    ],
+    }),
   },
   build: {
     format: "directory",
