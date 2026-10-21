@@ -27,6 +27,8 @@ jobs:
           curl -sL https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc |
             gpg --import
           gpg --verify downloads/hashes.txt
+          [ "$(head -n1 downloads/hashes.txt)" = "-----BEGIN PGP SIGNED MESSAGE-----" ]
+          if sed '1,/^-----BEGIN PGP SIGNATURE-----$/d;$d' downloads/hashes.txt | grep -qvE '^[A-Za-z0-9+/=]*$'; then exit 1; fi
           gpg --verify _data/contributing.yml.asc
           gpg --verify resources/wallet-generator/wallet-generator.html.asc
           mkdir resources/wallet-generator/validate_sig
