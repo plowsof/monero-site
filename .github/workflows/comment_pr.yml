@@ -1,21 +1,67 @@
 name: PR Comment Workflow
 on:
-  workflow_dispatch:
   pull_request_target:
-    types: [opened]
+    types: [opened, reopened, synchronize, closed]
     branches: [beta]
+  workflow_dispatch: # post or refresh the comment of an open PR by hand
+    inputs:
+      pr:
+        description: Pull request number
+        required: true
+
+permissions:
+  pull-requests: write
+
+concurrency: # a new push: stop waiting for the old one
+  group: preview-comment-${{ github.event.pull_request.number || inputs.pr }}
+  cancel-in-progress: true
+
 jobs:
   comment-on-pr:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - name: Comment coolify preview URL.
-        uses: actions/github-script@v6
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: `|What|Link|\n|:---:|---|\n|🕵️‍♂️ Review|[Files changed](https://github.com/${context.repo.owner}/${context.repo.repo}/pull/${context.issue.number}/files)|\n|🌐 Deploy|[Preview #${context.issue.number}](https://${context.issue.number}.beta.monerodevs.org)|`
-            })
+      - name: Comment the preview's link and status
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number || inputs.pr }}
+          ACTION: ${{ github.event.action }}
+          SHA: ${{ github.event.pull_request.head.sha }}
+          MERGED: ${{ github.event.pull_request.merged }}
+        run: |
+          [[ $PR =~ ^[0-9]+$ ]] || { echo "error: not a PR number: $PR" >&2; exit 1; }
+          [[ $SHA ]] || SHA=$(gh pr view "$PR" -R "$GITHUB_REPOSITORY" --json headRefOid -q .headRefOid)
+          [[ $SHA =~ ^[0-9a-f]{40}$ ]] || { echo "error: not a commit: $SHA" >&2; exit 1; }
+          url=https://$PR.beta.monerodevs.org
+          api=repos/$GITHUB_REPOSITORY/issues
+          # body STATUS [offline]: offline, the preview without its link
+          body() {
+              local preview="[Preview #$PR]($url)"
+              [[ ${2:-} ]] && preview="Preview #$PR"
+              printf '<!-- preview -->\n|What|Link|\n|:---:|---|\n|🕵️‍♂️ Review|[Files changed](https://github.com/%s/pull/%s/files)|\n|🌐 Deploy|%s %s|\n' \
+                  "$GITHUB_REPOSITORY" "$PR" "$preview" "$1"
+          }
+          say() { gh api -X PATCH "$api/comments/$id" -f body="$(body "$@")" > /dev/null; }
+          # the comment: this bot's, found by its first line (which GitHub doesn't
+          # show), or the table this workflow posted before it had that line
+          id=$(gh api --paginate "$api/$PR/comments" --jq '.[] | select(.user.login == "github-actions[bot]")
+              | select(.body | startswith("<!-- preview -->") or startswith("|What|Link|")) | .id' | tail -n 1)
+          # merged or closed: the preview is gone
+          if [[ $ACTION == closed ]]; then
+              [[ $id ]] || exit 0
+              say "⚫ offline: the pull request was $([[ $MERGED == true ]] && echo merged || echo closed)" offline
+              exit 0
+          fi
+          if [[ $id ]]; then say "🟡 building \`${SHA::7}\`…"
+          else id=$(gh api "$api/$PR/comments" -f body="$(body "🟡 building \`${SHA::7}\`…")" --jq .id); fi
+          # live: the preview answers, and its banner links this commit
+          end=$((SECONDS + 10 * 60))
+          until curl -fsS --max-time 20 "$url/" 2> /dev/null | grep -q "/changes/$SHA\""; do
+              if ((SECONDS >= end)); then
+                  say "🔴 not live after 10 minutes (\`${SHA::7}\`): see Coolify"
+                  exit 0
+              fi
+              sleep 20
+          done
+          say "🟢 live (\`${SHA::7}\`)"
